@@ -1,6 +1,904 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><parsererror xmlns="http://www.w3.org/1999/xhtml" style="display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black"><h3>This page contains the following errors:</h3><div style="font-family:monospace;font-size:12px">error on line 5220 at column 423: Input is not proper UTF-8, indicate encoding !
-Bytes: 0x01 0x74 0x6F 0x20
-</div><h3>Below is a rendering of the page up to the first error.</h3></parsererror><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 23 Jun 2024 18:10:03 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 23 Jun 2024 18:09:04 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="Union-Find" href="algorithm/daa/algorithm/union-find.html" class="internal-link" target="_self" rel="noopener">Union-Find</a><sup data-footnote-id="fnref-1-b276bf7fd5740272" class="footnote-ref" id="fnref-1-b276bf7fd5740272"><a data-footref="[inline0" href="#fn-1-b276bf7fd5740272" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 23 Jun 2024 18:23:28 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 23 Jun 2024 18:23:26 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="珠海市经济产业分析" href="fix-income/珠海市经济产业分析.html" class="internal-link" target="_self" rel="noopener">珠海市经济产业分析</a>]]></title><description><![CDATA[ 
+ <br><br><br><br><br>珠海市是广东省下辖地级市，国务院确立的经济特区和珠江口西岸核心城市，也是粤港澳大湾区的涵盖城市之一。地处我国华南地区，位于广东省南部，珠江出海口西岸，濒临南海，陆地面积1725平方千米，占广东省总面积的0.958%，领海基线以内海域面积9348平方千米。&nbsp;下辖香洲区、斗门区、金湾区、3个行政区。<br>珠海是全国重要的口岸城市以及著名的滨海旅游城市。随着港珠澳大桥的开通，珠海成为中国内地唯一同时与香港、澳门以陆路相连的城市 重要的口岸城市，设有拱北、横琴、青茂、港珠澳大桥珠海公路、珠澳跨境工业区5个陆运口岸，九洲港、湾仔港轮渡客运、珠海港、斗门港、万山港5个水运口岸，共10个国家一类口岸，是仅次于深圳的中国第二大口岸城市。珠海在历史上就属于广府地区，是岭南文化重镇之一，珠海地域文化是香山文化的重要组成部分，珠海城市特质与广府文化契合。<br>珠海市是中国唯一以整体城市景观入选“全国旅游胜地四十佳”的城市。先后荣获“双拥模范城”“全国精神文明建设十佳城市”“国家园林城市”“国家环保模范城市”“国家卫生城市”“国家级生态示范区”“中国十大魅力城市”“中国优秀旅游城市”“中国最具幸福感城市”“中国和谐名城”“国家森林城市”“中国生态文明奖”称号、联合国人居中心颁发的“国际改善居住环境最佳范例奖”、“中国最具幸福感城市”“国家生态文明建设示范市”。<br><br>人口方面，珠海市人口总量近10年整体保持稳定增长趋势。2023年珠海市常住人口为<br>
+249.41万人，占广东省总人口数的1.96%。2014-2023年的十年间，珠海市人口整体保持稳定的增长趋势，年均增长率为2.96%，累计增加人口数63.09万。在城镇化率上，2014-2023年，珠海市城镇化率整体上行，2023年城镇化率达90.87%，高于全国平均水平24.71个百分点、全省平均水平15.45个百分点。<br><br><br>经济方面，2023年珠海市实现GDP 4233.22亿元，居广东省全省第6。GDP同比增速为3.80%，低于全省的GDP增速（4.8%），居全省第14，相较2022年增速提高1.5个百分点。2014-2023年珠海市GDP保持相对高速的增长状态，由2014年的2008.86亿元提升至2023年的4233.22亿元，年均增速达7.74%。此外，珠海2023年人均GDP和经济密度分别为16365435元和2.45亿元/平方千米，分别居于全省第2，全省第5，属于广东省上游水平。<br><br>消费方面，随着经济增长，珠海市居民收入水平不断提升，2023年城镇居民人均可支配收入65743元，同比增长3.09%。社零数据呈现出整体增长的态势，2023年实现社会消费品零售总额1079.0亿元，比上年增长3.28%。投资方面，2022年全市固定资产投资比上年下降8.8%。其中基础设施投资增长6.4%，工业投资增长56.4%，房地产开发投资下降34.9%。从三次产业看，第一产业固定资产投资下降37.1%，第二产业完成投资增长56.4%，第三产业投资增长-22.6%。<br>全省创新发展布局和珠三角国家自主创新示范区的定位，围绕珠海市城市主体功能区规划、产业布局规划以及创新资源的空间集聚特点，构建“一核、一环、一区”的区域功能布局：<br>以西部沿海高速（珠海段）、江珠高速（珠海段）、金海高速（在建）三大交通要道打造创新资源配置通道，将“东部”唐家湾高新区和横琴新区及香洲区中心城区优势创新资源向“西部”斗门区、金湾区和高栏港区辐射，促进珠海东西部互动发展，打造全面实施创新驱动发展新格局。<br>“一核”**，是以珠海高新区国家自主创新示范区为核心形成的创新辐射集聚核。<br>“一环”**，是以横琴新区-保税区-香洲主城区等环澳门地区形成的创新服务集聚环。<br>“一区”**，是以西部生态新区为依托打造先进装备制造创新集聚区。]]></description><link>https://blog.allenygy.vip/fix-income/珠海市经济产业分析.html</link><guid isPermaLink="false">Fix-Income/珠海市经济产业分析.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate></item><item><title><![CDATA[<a data-href="fixedincomeoverview" href="fix-income/fixedincomeoverview.html" class="internal-link" target="_self" rel="noopener">fixedincomeoverview</a>]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>权益证券
+
+<br>股票 持有公司所有权
+
+
+<br>债券<br>
+- 债务人 Borrower发行债券 向金融市场所有投资者借钱<br>
+- 借贷关系<br>
+- 本金并不在每期的现金流中<br>
+- 收益稳定
+与贷款不同 贷款通常不能在市场流通，本金在每期的现金流中
+
+<br>衍生证券
+
+<br>期权，期货...
+
+
+<br>债券，衍生证券 --- 固定收益证券<br>固定收益证券的定义：<br>
+<br>相对于权益证券而言，具有相对稳定的现金流
+<br>对未来发生的一系列现金流的所有
+<br>承诺未来还本付息的债务工具以及相关衍生产品的总称
+<br>常见形式：债券，债权人与债务人之间的一种契约
+<br><br>
+<br>基础性债务工具---- 按照期限分类
+
+<br>资本市场工具 VS 货币市场工具
+<br>时间长 --》资本市场工具
+<br>时间短 --》货币市场工具
+
+
+<br>衍生产品
+
+<br>利率衍生品 VS 信用衍生品
+<br>管理利率风险 --》利率衍生品
+<br>管理信用风险 --》信用衍生品
+
+
+<br>结构性债务工具
+
+<br>基础性债务证券 &amp; 衍生产品 --》 结构拆分
+
+<br>组合产品
+
+
+
+
+<br><img alt="Type" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/FI/Type.png" referrerpolicy="no-referrer"><br>
+<br>利率债券
+
+<br>国债
+<br>地方政府债券
+<br>政策性金融债
+<br>政府支持债券
+
+<br>城投债
+
+
+
+
+<br>公司发行债券
+
+<br>空开
+
+<br>企业债券
+<br>公司债券
+<br>可交换公司债券
+
+
+<br>非公开(私募)
+
+
+<br>债券回购
+
+<br>通用质押式回购
+<br>质押式协议回购
+<br>质押式三方回购
+
+
+<br>信用保护工具
+]]></description><link>https://blog.allenygy.vip/fix-income/fixedincomeoverview.html</link><guid isPermaLink="false">Fix-Income/fixedincomeoverview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:04:43 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/FI/Type.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/FI/Type.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
+ <br><br>
+<br><a data-tooltip-position="top" aria-label="Program/programlanguage.md" data-href="Program/programlanguage.md" href="https://blog.allenygy.vip/program/programlanguage.html" class="internal-link" target="_self" rel="noopener">programlanguage</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Assignment/As4/Co-Assignment-4.md" data-href="Computer-Organization/Assignment/As4/Co-Assignment-4.md" href="https://blog.allenygy.vip/computer-organization/assignment/as4/co-assignment-4.html" class="internal-link" target="_self" rel="noopener">Co-Assignment-4</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Assignment/As3/CO-Assignment-3.md" data-href="Computer-Organization/Assignment/As3/CO-Assignment-3.md" href="https://blog.allenygy.vip/computer-organization/assignment/as3/co-assignment-3.html" class="internal-link" target="_self" rel="noopener">CO-Assignment-3</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Assignment/As2/Co-Assignment-2.md" data-href="Computer-Organization/Assignment/As2/Co-Assignment-2.md" href="https://blog.allenygy.vip/computer-organization/assignment/as2/co-assignment-2.html" class="internal-link" target="_self" rel="noopener">Co-Assignment-2</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Assignment/As1/Co-Assignment-1.md" data-href="Computer-Organization/Assignment/As1/Co-Assignment-1.md" href="https://blog.allenygy.vip/computer-organization/assignment/as1/co-assignment-1.html" class="internal-link" target="_self" rel="noopener">Co-Assignment-1</a>
+<br><a data-tooltip-position="top" aria-label="Tools/shell/shell.md" data-href="Tools/shell/shell.md" href="https://blog.allenygy.vip/tools/shell/shell.html" class="internal-link" target="_self" rel="noopener">shell</a>
+<br><a data-tooltip-position="top" aria-label="Tools/tools.md" data-href="Tools/tools.md" href="https://blog.allenygy.vip/tools/tools.html" class="internal-link" target="_self" rel="noopener">tools</a>
+<br><a data-tooltip-position="top" aria-label="Tools/git/git-introduction.md" data-href="Tools/git/git-introduction.md" href="https://blog.allenygy.vip/tools/git/git-introduction.html" class="internal-link" target="_self" rel="noopener">git-introduction</a>
+<br><a data-tooltip-position="top" aria-label="Tools/git/git-remote-repository.md" data-href="Tools/git/git-remote-repository.md" href="https://blog.allenygy.vip/tools/git/git-remote-repository.html" class="internal-link" target="_self" rel="noopener">git-remote-repository</a>
+<br><a data-tooltip-position="top" aria-label="Tools/git/git-workflow-model.md" data-href="Tools/git/git-workflow-model.md" href="https://blog.allenygy.vip/tools/git/git-workflow-model.html" class="internal-link" target="_self" rel="noopener">git-workflow-model</a>
+<br><a data-tooltip-position="top" aria-label="Tools/docker/docker.md" data-href="Tools/docker/docker.md" href="https://blog.allenygy.vip/tools/docker/docker.html" class="internal-link" target="_self" rel="noopener">docker</a>
+<br><a data-tooltip-position="top" aria-label="Tools/git/git-for-beginners.md" data-href="Tools/git/git-for-beginners.md" href="https://blog.allenygy.vip/tools/git/git-for-beginners.html" class="internal-link" target="_self" rel="noopener">git-for-beginners</a>
+<br><a data-tooltip-position="top" aria-label="Tools/conda/conda.md" data-href="Tools/conda/conda.md" href="https://blog.allenygy.vip/tools/conda/conda.html" class="internal-link" target="_self" rel="noopener">conda</a>
+<br><a data-tooltip-position="top" aria-label="Share/manacher.md" data-href="Share/manacher.md" href="https://blog.allenygy.vip/share/manacher.html" class="internal-link" target="_self" rel="noopener">manacher</a>
+<br><a data-tooltip-position="top" aria-label="Research/ploidy/ploidy.md" data-href="Research/ploidy/ploidy.md" href="https://blog.allenygy.vip/research/ploidy/ploidy.html" class="internal-link" target="_self" rel="noopener">ploidy</a>
+<br><a data-tooltip-position="top" aria-label="Research/calculatese.md" data-href="Research/calculatese.md" href="https://blog.allenygy.vip/research/calculatese.html" class="internal-link" target="_self" rel="noopener">calculatese</a>
+<br><a data-tooltip-position="top" aria-label="Research/ploidy/ploidy-review.md" data-href="Research/ploidy/ploidy-review.md" href="https://blog.allenygy.vip/research/ploidy/ploidy-review.html" class="internal-link" target="_self" rel="noopener">ploidy-review</a>
+<br><a data-tooltip-position="top" aria-label="Research/alphafold2.md" data-href="Research/alphafold2.md" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">alphafold2</a>
+<br><a data-tooltip-position="top" aria-label="Research/bert.md" data-href="Research/bert.md" href="https://blog.allenygy.vip/research/bert.html" class="internal-link" target="_self" rel="noopener">bert</a>
+<br><a data-tooltip-position="top" aria-label="Program/projects/moviedataanalysis/bilibilivista.md" data-href="Program/projects/moviedataanalysis/bilibilivista.md" href="https://blog.allenygy.vip/program/projects/moviedataanalysis/bilibilivista.html" class="internal-link" target="_self" rel="noopener">bilibilivista</a>
+<br><a data-tooltip-position="top" aria-label="Program/projects/moviedataanalysis/moviedataanalysis.md" data-href="Program/projects/moviedataanalysis/moviedataanalysis.md" href="https://blog.allenygy.vip/program/projects/moviedataanalysis/moviedataanalysis.html" class="internal-link" target="_self" rel="noopener">moviedataanalysis</a>
+<br><a data-tooltip-position="top" aria-label="Program/projects/courierstationinformationmanagementsystem/database-management-system.md" data-href="Program/projects/courierstationinformationmanagementsystem/database-management-system.md" href="https://blog.allenygy.vip/program/projects/courierstationinformationmanagementsystem/database-management-system.html" class="internal-link" target="_self" rel="noopener">database-management-system</a>
+<br><a data-tooltip-position="top" aria-label="Program/projects/chatapplication/chat-application.md" data-href="Program/projects/chatapplication/chat-application.md" href="https://blog.allenygy.vip/program/projects/chatapplication/chat-application.html" class="internal-link" target="_self" rel="noopener">chat-application</a>
+<br><a data-tooltip-position="top" aria-label="Program/projects/moviedataanalysis/data-programming-workshop.md" data-href="Program/projects/moviedataanalysis/data-programming-workshop.md" href="https://blog.allenygy.vip/program/projects/moviedataanalysis/data-programming-workshop.html" class="internal-link" target="_self" rel="noopener">data-programming-workshop</a>
+<br><a data-tooltip-position="top" aria-label="Program/projects/moviedataanalysis/system-design-specification.md" data-href="Program/projects/moviedataanalysis/system-design-specification.md" href="https://blog.allenygy.vip/program/projects/moviedataanalysis/system-design-specification.html" class="internal-link" target="_self" rel="noopener">system-design-specification</a>
+<br><a data-tooltip-position="top" aria-label="Program/r/r-data-structure.md" data-href="Program/r/r-data-structure.md" href="https://blog.allenygy.vip/program/r/r-data-structure.html" class="internal-link" target="_self" rel="noopener">r-data-structure</a>
+<br><a data-tooltip-position="top" aria-label="Program/regular-expression.md" data-href="Program/regular-expression.md" href="https://blog.allenygy.vip/program/regular-expression.html" class="internal-link" target="_self" rel="noopener">regular-expression</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/regularexpression.md" data-href="Program/python/regularexpression.md" href="https://blog.allenygy.vip/program/python/regularexpression.html" class="internal-link" target="_self" rel="noopener">regularexpression</a>
+<br><a data-tooltip-position="top" aria-label="Program/r/basic-r.md" data-href="Program/r/basic-r.md" href="https://blog.allenygy.vip/program/r/basic-r.html" class="internal-link" target="_self" rel="noopener">basic-r</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/pythonbasic.md" data-href="Program/python/pythonbasic.md" href="https://blog.allenygy.vip/program/python/pythonbasic.html" class="internal-link" target="_self" rel="noopener">pythonbasic</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/python-exceptions.md" data-href="Program/python/python-exceptions.md" href="https://blog.allenygy.vip/program/python/python-exceptions.html" class="internal-link" target="_self" rel="noopener">python-exceptions</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/pandas.md" data-href="Program/python/pandas.md" href="https://blog.allenygy.vip/program/python/pandas.html" class="internal-link" target="_self" rel="noopener">pandas</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/python-environment-management.md" data-href="Program/python/python-environment-management.md" href="https://blog.allenygy.vip/program/python/python-environment-management.html" class="internal-link" target="_self" rel="noopener">python-environment-management</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/matplotlib.md" data-href="Program/python/matplotlib.md" href="https://blog.allenygy.vip/program/python/matplotlib.html" class="internal-link" target="_self" rel="noopener">matplotlib</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/numpy.md" data-href="Program/python/numpy.md" href="https://blog.allenygy.vip/program/python/numpy.html" class="internal-link" target="_self" rel="noopener">numpy</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/beautifulsoup.md" data-href="Program/python/beautifulsoup.md" href="https://blog.allenygy.vip/program/python/beautifulsoup.html" class="internal-link" target="_self" rel="noopener">beautifulsoup</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/datetime.md" data-href="Program/python/datetime.md" href="https://blog.allenygy.vip/program/python/datetime.html" class="internal-link" target="_self" rel="noopener">datetime</a>
+<br><a data-tooltip-position="top" aria-label="Program/javascript/quick-start.md" data-href="Program/javascript/quick-start.md" href="https://blog.allenygy.vip/program/javascript/quick-start.html" class="internal-link" target="_self" rel="noopener">quick-start</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/java-introduction.md" data-href="Program/java/lecture/java-introduction.md" href="https://blog.allenygy.vip/program/java/lecture/java-introduction.html" class="internal-link" target="_self" rel="noopener">java-introduction</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/java-programming-essentials.md" data-href="Program/java/lecture/java-programming-essentials.md" href="https://blog.allenygy.vip/program/java/lecture/java-programming-essentials.html" class="internal-link" target="_self" rel="noopener">java-programming-essentials</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/unified-modeling-language.md" data-href="Program/java/lecture/unified-modeling-language.md" href="https://blog.allenygy.vip/program/java/lecture/unified-modeling-language.html" class="internal-link" target="_self" rel="noopener">unified-modeling-language</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/exception-handling.md" data-href="Program/java/lecture/exception-handling.md" href="https://blog.allenygy.vip/program/java/lecture/exception-handling.html" class="internal-link" target="_self" rel="noopener">exception-handling</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/inheritance.md" data-href="Program/java/lecture/inheritance.md" href="https://blog.allenygy.vip/program/java/lecture/inheritance.html" class="internal-link" target="_self" rel="noopener">inheritance</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/array-and-generics.md" data-href="Program/java/lecture/array-and-generics.md" href="https://blog.allenygy.vip/program/java/lecture/array-and-generics.html" class="internal-link" target="_self" rel="noopener">array-and-generics</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/creating-java-classes.md" data-href="Program/java/lecture/creating-java-classes.md" href="https://blog.allenygy.vip/program/java/lecture/creating-java-classes.html" class="internal-link" target="_self" rel="noopener">creating-java-classes</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/abstract-methods-and-classes-interfaces.md" data-href="Program/java/lecture/abstract-methods-and-classes-interfaces.md" href="https://blog.allenygy.vip/program/java/lecture/abstract-methods-and-classes-interfaces.html" class="internal-link" target="_self" rel="noopener">abstract-methods-and-classes-interfaces</a>
+<br><a data-tooltip-position="top" aria-label="Program/cpp/iota.md" data-href="Program/cpp/iota.md" href="https://blog.allenygy.vip/program/cpp/iota.html" class="internal-link" target="_self" rel="noopener">iota</a>
+<br><a data-tooltip-position="top" aria-label="Program/cpp/priority-queue.md" data-href="Program/cpp/priority-queue.md" href="https://blog.allenygy.vip/program/cpp/priority-queue.html" class="internal-link" target="_self" rel="noopener">priority-queue</a>
+<br><a data-tooltip-position="top" aria-label="Program/cpp/vector.md" data-href="Program/cpp/vector.md" href="https://blog.allenygy.vip/program/cpp/vector.html" class="internal-link" target="_self" rel="noopener">vector</a>
+<br><a data-tooltip-position="top" aria-label="Program/cpp/algorithm-library.md" data-href="Program/cpp/algorithm-library.md" href="https://blog.allenygy.vip/program/cpp/algorithm-library.html" class="internal-link" target="_self" rel="noopener">algorithm-library</a>
+<br><a data-tooltip-position="top" aria-label="Program/cpp/map.md" data-href="Program/cpp/map.md" href="https://blog.allenygy.vip/program/cpp/map.html" class="internal-link" target="_self" rel="noopener">map</a>
+<br><a data-tooltip-position="top" aria-label="Program/c/macro.md" data-href="Program/c/macro.md" href="https://blog.allenygy.vip/program/c/macro.html" class="internal-link" target="_self" rel="noopener">macro</a>
+<br><a data-tooltip-position="top" aria-label="Program/c/pointers.md" data-href="Program/c/pointers.md" href="https://blog.allenygy.vip/program/c/pointers.html" class="internal-link" target="_self" rel="noopener">pointers</a>
+<br><a data-tooltip-position="top" aria-label="Program/c/multithreads.md" data-href="Program/c/multithreads.md" href="https://blog.allenygy.vip/program/c/multithreads.html" class="internal-link" target="_self" rel="noopener">multithreads</a>
+<br><a data-tooltip-position="top" aria-label="Program/c/fileoperation.md" data-href="Program/c/fileoperation.md" href="https://blog.allenygy.vip/program/c/fileoperation.html" class="internal-link" target="_self" rel="noopener">fileoperation</a>
+<br><a data-tooltip-position="top" aria-label="Network/standardized-networks.md" data-href="Network/standardized-networks.md" href="https://blog.allenygy.vip/network/standardized-networks.html" class="internal-link" target="_self" rel="noopener">standardized-networks</a>
+<br><a data-tooltip-position="top" aria-label="Network/ustc-l1.md" data-href="Network/ustc-l1.md" href="https://blog.allenygy.vip/network/ustc-l1.html" class="internal-link" target="_self" rel="noopener">ustc-l1</a>
+<br><a data-tooltip-position="top" aria-label="Network/transport-layer.md" data-href="Network/transport-layer.md" href="https://blog.allenygy.vip/network/transport-layer.html" class="internal-link" target="_self" rel="noopener">transport-layer</a>
+<br><a data-tooltip-position="top" aria-label="Network/network-layer.md" data-href="Network/network-layer.md" href="https://blog.allenygy.vip/network/network-layer.html" class="internal-link" target="_self" rel="noopener">network-layer</a>
+<br><a data-tooltip-position="top" aria-label="Network/physical-layer.md" data-href="Network/physical-layer.md" href="https://blog.allenygy.vip/network/physical-layer.html" class="internal-link" target="_self" rel="noopener">physical-layer</a>
+<br><a data-tooltip-position="top" aria-label="Network/data-communication-network.md" data-href="Network/data-communication-network.md" href="https://blog.allenygy.vip/network/data-communication-network.html" class="internal-link" target="_self" rel="noopener">data-communication-network</a>
+<br><a data-tooltip-position="top" aria-label="Network/data-link-layer.md" data-href="Network/data-link-layer.md" href="https://blog.allenygy.vip/network/data-link-layer.html" class="internal-link" target="_self" rel="noopener">data-link-layer</a>
+<br><a data-tooltip-position="top" aria-label="Network/dcn-review.md" data-href="Network/dcn-review.md" href="https://blog.allenygy.vip/network/dcn-review.html" class="internal-link" target="_self" rel="noopener">dcn-review</a>
+<br><a data-tooltip-position="top" aria-label="Network/basic-concepts.md" data-href="Network/basic-concepts.md" href="https://blog.allenygy.vip/network/basic-concepts.html" class="internal-link" target="_self" rel="noopener">basic-concepts</a>
+<br><a data-tooltip-position="top" aria-label="Network/application-layer.md" data-href="Network/application-layer.md" href="https://blog.allenygy.vip/network/application-layer.html" class="internal-link" target="_self" rel="noopener">application-layer</a>
+<br><a data-tooltip-position="top" aria-label="Math/probability-statistics/poisson-distribution.md" data-href="Math/probability-statistics/poisson-distribution.md" href="https://blog.allenygy.vip/math/probability-statistics/poisson-distribution.html" class="internal-link" target="_self" rel="noopener">poisson-distribution</a>
+<br><a data-tooltip-position="top" aria-label="Math/probability-statistics/probability-theory.md" data-href="Math/probability-statistics/probability-theory.md" href="https://blog.allenygy.vip/math/probability-statistics/probability-theory.html" class="internal-link" target="_self" rel="noopener">probability-theory</a>
+<br><a data-tooltip-position="top" aria-label="Math/probability-statistics/hypothesis-testing-single-population.md" data-href="Math/probability-statistics/hypothesis-testing-single-population.md" href="https://blog.allenygy.vip/math/probability-statistics/hypothesis-testing-single-population.html" class="internal-link" target="_self" rel="noopener">hypothesis-testing-single-population</a>
+<br><a data-tooltip-position="top" aria-label="Math/probability-statistics/hypothesis-testing-two-population.md" data-href="Math/probability-statistics/hypothesis-testing-two-population.md" href="https://blog.allenygy.vip/math/probability-statistics/hypothesis-testing-two-population.html" class="internal-link" target="_self" rel="noopener">hypothesis-testing-two-population</a>
+<br><a data-tooltip-position="top" aria-label="Math/probability-statistics/chi-square-tests.md" data-href="Math/probability-statistics/chi-square-tests.md" href="https://blog.allenygy.vip/math/probability-statistics/chi-square-tests.html" class="internal-link" target="_self" rel="noopener">chi-square-tests</a>
+<br><a data-tooltip-position="top" aria-label="Math/probability-statistics/confidence-interval.md" data-href="Math/probability-statistics/confidence-interval.md" href="https://blog.allenygy.vip/math/probability-statistics/confidence-interval.html" class="internal-link" target="_self" rel="noopener">confidence-interval</a>
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/judgment.md" data-href="Math/linear-algebra/judgment.md" href="https://blog.allenygy.vip/math/linear-algebra/judgment.html" class="internal-link" target="_self" rel="noopener">judgment</a>
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/vector-space.md" data-href="Math/linear-algebra/vector-space.md" href="https://blog.allenygy.vip/math/linear-algebra/vector-space.html" class="internal-link" target="_self" rel="noopener">vector-space</a>
+<br><a data-tooltip-position="top" aria-label="Math/math.md" data-href="Math/math.md" href="https://blog.allenygy.vip/math/math.html" class="internal-link" target="_self" rel="noopener">math</a>
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/matrixoperation.md" data-href="Math/linear-algebra/matrixoperation.md" href="https://blog.allenygy.vip/math/linear-algebra/matrixoperation.html" class="internal-link" target="_self" rel="noopener">matrixoperation</a>
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/orthogonality.md" data-href="Math/linear-algebra/orthogonality.md" href="https://blog.allenygy.vip/math/linear-algebra/orthogonality.html" class="internal-link" target="_self" rel="noopener">orthogonality</a>
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/product.md" data-href="Math/linear-algebra/product.md" href="https://blog.allenygy.vip/math/linear-algebra/product.html" class="internal-link" target="_self" rel="noopener">product</a>
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/eigenvalues-and-eigenvectors.md" data-href="Math/linear-algebra/eigenvalues-and-eigenvectors.md" href="https://blog.allenygy.vip/math/linear-algebra/eigenvalues-and-eigenvectors.html" class="internal-link" target="_self" rel="noopener">eigenvalues-and-eigenvectors</a>
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/linear-transformations.md" data-href="Math/linear-algebra/linear-transformations.md" href="https://blog.allenygy.vip/math/linear-algebra/linear-transformations.html" class="internal-link" target="_self" rel="noopener">linear-transformations</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/sets-and-n-tuple.md" data-href="Math/discrete-structure/lecture/sets-and-n-tuple.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/sets-and-n-tuple.html" class="internal-link" target="_self" rel="noopener">sets-and-n-tuple</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/tree.md" data-href="Math/discrete-structure/lecture/tree.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/tree.html" class="internal-link" target="_self" rel="noopener">tree</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/propositional-logic.md" data-href="Math/discrete-structure/lecture/propositional-logic.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/propositional-logic.html" class="internal-link" target="_self" rel="noopener">propositional-logic</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/relation.md" data-href="Math/discrete-structure/lecture/relation.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/relation.html" class="internal-link" target="_self" rel="noopener">relation</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/representing-graph-and-connectivity.md" data-href="Math/discrete-structure/lecture/representing-graph-and-connectivity.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/representing-graph-and-connectivity.html" class="internal-link" target="_self" rel="noopener">representing-graph-and-connectivity</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/logic-circuits.md" data-href="Math/discrete-structure/lecture/logic-circuits.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/logic-circuits.html" class="internal-link" target="_self" rel="noopener">logic-circuits</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/propositional-equivalence.md" data-href="Math/discrete-structure/lecture/propositional-equivalence.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/propositional-equivalence.html" class="internal-link" target="_self" rel="noopener">propositional-equivalence</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/counting-principles.md" data-href="Math/discrete-structure/lecture/counting-principles.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/counting-principles.html" class="internal-link" target="_self" rel="noopener">counting-principles</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/functions-sequence-and-summations.md" data-href="Math/discrete-structure/lecture/functions-sequence-and-summations.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/functions-sequence-and-summations.html" class="internal-link" target="_self" rel="noopener">functions-sequence-and-summations</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/graph-theory.md" data-href="Math/discrete-structure/lecture/graph-theory.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/graph-theory.html" class="internal-link" target="_self" rel="noopener">graph-theory</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/boolean-expressions.md" data-href="Math/discrete-structure/lecture/boolean-expressions.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/boolean-expressions.html" class="internal-link" target="_self" rel="noopener">boolean-expressions</a>
+<br><a data-tooltip-position="top" aria-label="Fix-Income/fixedincomeoverview.md" data-href="Fix-Income/fixedincomeoverview.md" href="https://blog.allenygy.vip/fix-income/fixedincomeoverview.html" class="internal-link" target="_self" rel="noopener">fixedincomeoverview</a>
+<br><a data-tooltip-position="top" aria-label="Fix-Income/珠海市经济产业分析.md" data-href="Fix-Income/珠海市经济产业分析.md" href="https://blog.allenygy.vip/fix-income/珠海市经济产业分析.html" class="internal-link" target="_self" rel="noopener">珠海市经济产业分析</a>
+<br><a data-tooltip-position="top" aria-label="DeepLearning/graphnetwork.md" data-href="DeepLearning/graphnetwork.md" href="https://blog.allenygy.vip/deeplearning/graphnetwork.html" class="internal-link" target="_self" rel="noopener">graphnetwork</a>
+<br><a data-tooltip-position="top" aria-label="English/cet-6.md" data-href="English/cet-6.md" href="https://blog.allenygy.vip/english/cet-6.html" class="internal-link" target="_self" rel="noopener">cet-6</a>
+<br><a data-tooltip-position="top" aria-label="DeepLearning/activationfunction.md" data-href="DeepLearning/activationfunction.md" href="https://blog.allenygy.vip/deeplearning/activationfunction.html" class="internal-link" target="_self" rel="noopener">activationfunction</a>
+<br><a data-tooltip-position="top" aria-label="DeepLearning/backpropagation.md" data-href="DeepLearning/backpropagation.md" href="https://blog.allenygy.vip/deeplearning/backpropagation.html" class="internal-link" target="_self" rel="noopener">backpropagation</a>
+<br><a data-tooltip-position="top" aria-label="DeepLearning/gradientdescent.md" data-href="DeepLearning/gradientdescent.md" href="https://blog.allenygy.vip/deeplearning/gradientdescent.html" class="internal-link" target="_self" rel="noopener">gradientdescent</a>
+<br><a data-tooltip-position="top" aria-label="Data-Analysis/data-analysis.md" data-href="Data-Analysis/data-analysis.md" href="https://blog.allenygy.vip/data-analysis/data-analysis.html" class="internal-link" target="_self" rel="noopener">data-analysis</a>
+<br><a data-tooltip-position="top" aria-label="Data-Analysis/hans-on-data/hans-on-data-analysis.md" data-href="Data-Analysis/hans-on-data/hans-on-data-analysis.md" href="https://blog.allenygy.vip/data-analysis/hans-on-data/hans-on-data-analysis.html" class="internal-link" target="_self" rel="noopener">hans-on-data-analysis</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/null-subquery.md" data-href="Database-Management/mysql/null-subquery.md" href="https://blog.allenygy.vip/database-management/mysql/null-subquery.html" class="internal-link" target="_self" rel="noopener">null-subquery</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/set-operation-&amp;-where-subquery.md" data-href="Database-Management/mysql/set-operation-&amp;-where-subquery.md" href="https://blog.allenygy.vip/database-management/mysql/set-operation-&amp;-where-subquery.html" class="internal-link" target="_self" rel="noopener">set-operation-&amp;-where-subquery</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/division-and-correlated-subquery.md" data-href="Database-Management/mysql/division-and-correlated-subquery.md" href="https://blog.allenygy.vip/database-management/mysql/division-and-correlated-subquery.html" class="internal-link" target="_self" rel="noopener">division-and-correlated-subquery</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/data-modification.md" data-href="Database-Management/mysql/data-modification.md" href="https://blog.allenygy.vip/database-management/mysql/data-modification.html" class="internal-link" target="_self" rel="noopener">data-modification</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/join.md" data-href="Database-Management/mysql/join.md" href="https://blog.allenygy.vip/database-management/mysql/join.html" class="internal-link" target="_self" rel="noopener">join</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/basic-mysql.md" data-href="Database-Management/mysql/basic-mysql.md" href="https://blog.allenygy.vip/database-management/mysql/basic-mysql.html" class="internal-link" target="_self" rel="noopener">basic-mysql</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/cross-table-query.md" data-href="Database-Management/mysql/cross-table-query.md" href="https://blog.allenygy.vip/database-management/mysql/cross-table-query.html" class="internal-link" target="_self" rel="noopener">cross-table-query</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/data-definition.md" data-href="Database-Management/mysql/data-definition.md" href="https://blog.allenygy.vip/database-management/mysql/data-definition.html" class="internal-link" target="_self" rel="noopener">data-definition</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/advanced-sql.md" data-href="Database-Management/mysql/advanced-sql.md" href="https://blog.allenygy.vip/database-management/mysql/advanced-sql.html" class="internal-link" target="_self" rel="noopener">advanced-sql</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/aggregation.md" data-href="Database-Management/mysql/aggregation.md" href="https://blog.allenygy.vip/database-management/mysql/aggregation.html" class="internal-link" target="_self" rel="noopener">aggregation</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/relational-database-design-bcnf.md" data-href="Database-Management/lecture/relational-database-design-bcnf.md" href="https://blog.allenygy.vip/database-management/lecture/relational-database-design-bcnf.html" class="internal-link" target="_self" rel="noopener">relational-database-design-bcnf</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/relational-database-design-functional-dependency.md" data-href="Database-Management/lecture/relational-database-design-functional-dependency.md" href="https://blog.allenygy.vip/database-management/lecture/relational-database-design-functional-dependency.html" class="internal-link" target="_self" rel="noopener">relational-database-design-functional-dependency</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/relational-database-design-purpose-&amp;-first-normal-form.md" data-href="Database-Management/lecture/relational-database-design-purpose-&amp;-first-normal-form.md" href="https://blog.allenygy.vip/database-management/lecture/relational-database-design-purpose-&amp;-first-normal-form.html" class="internal-link" target="_self" rel="noopener">relational-database-design-purpose-&amp;-first-normal-form</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/logical-design.md" data-href="Database-Management/lecture/logical-design.md" href="https://blog.allenygy.vip/database-management/lecture/logical-design.html" class="internal-link" target="_self" rel="noopener">logical-design</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/normalform.md" data-href="Database-Management/lecture/normalform.md" href="https://blog.allenygy.vip/database-management/lecture/normalform.html" class="internal-link" target="_self" rel="noopener">normalform</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/relational-database-design-3rd-normal-form.md" data-href="Database-Management/lecture/relational-database-design-3rd-normal-form.md" href="https://blog.allenygy.vip/database-management/lecture/relational-database-design-3rd-normal-form.html" class="internal-link" target="_self" rel="noopener">relational-database-design-3rd-normal-form</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/entity-relationship-model-extended-features.md" data-href="Database-Management/lecture/entity-relationship-model-extended-features.md" href="https://blog.allenygy.vip/database-management/lecture/entity-relationship-model-extended-features.html" class="internal-link" target="_self" rel="noopener">entity-relationship-model-extended-features</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/entity-relationship-model-modeling.md" data-href="Database-Management/lecture/entity-relationship-model-modeling.md" href="https://blog.allenygy.vip/database-management/lecture/entity-relationship-model-modeling.html" class="internal-link" target="_self" rel="noopener">entity-relationship-model-modeling</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/key-concept.md" data-href="Database-Management/lecture/key-concept.md" href="https://blog.allenygy.vip/database-management/lecture/key-concept.html" class="internal-link" target="_self" rel="noopener">key-concept</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/design-issues.md" data-href="Database-Management/lecture/design-issues.md" href="https://blog.allenygy.vip/database-management/lecture/design-issues.html" class="internal-link" target="_self" rel="noopener">design-issues</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/entity-relationship-model-constraints.md" data-href="Database-Management/lecture/entity-relationship-model-constraints.md" href="https://blog.allenygy.vip/database-management/lecture/entity-relationship-model-constraints.html" class="internal-link" target="_self" rel="noopener">entity-relationship-model-constraints</a>
+<br><a data-tooltip-position="top" aria-label="Contest/leetcode/weekly-contest-402.md" data-href="Contest/leetcode/weekly-contest-402.md" href="https://blog.allenygy.vip/contest/leetcode/weekly-contest-402.html" class="internal-link" target="_self" rel="noopener">weekly-contest-402</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/database-management-system.md" data-href="Database-Management/database-management-system.md" href="https://blog.allenygy.vip/database-management/database-management-system.html" class="internal-link" target="_self" rel="noopener">database-management-system</a>
+<br><a data-tooltip-position="top" aria-label="Contest/leetcode/biweekly-contest-122.md" data-href="Contest/leetcode/biweekly-contest-122.md" href="https://blog.allenygy.vip/contest/leetcode/biweekly-contest-122.html" class="internal-link" target="_self" rel="noopener">biweekly-contest-122</a>
+<br><a data-tooltip-position="top" aria-label="Contest/leetcode/biweekly-contest-123.md" data-href="Contest/leetcode/biweekly-contest-123.md" href="https://blog.allenygy.vip/contest/leetcode/biweekly-contest-123.html" class="internal-link" target="_self" rel="noopener">biweekly-contest-123</a>
+<br><a data-tooltip-position="top" aria-label="Contest/leetcode/weekly-contest-381.md" data-href="Contest/leetcode/weekly-contest-381.md" href="https://blog.allenygy.vip/contest/leetcode/weekly-contest-381.html" class="internal-link" target="_self" rel="noopener">weekly-contest-381</a>
+<br><a data-tooltip-position="top" aria-label="Contest/lanqiao/week-12.md" data-href="Contest/lanqiao/week-12.md" href="https://blog.allenygy.vip/contest/lanqiao/week-12.html" class="internal-link" target="_self" rel="noopener">week-12</a>
+<br><a data-tooltip-position="top" aria-label="Contest/contest-overview.md" data-href="Contest/contest-overview.md" href="https://blog.allenygy.vip/contest/contest-overview.html" class="internal-link" target="_self" rel="noopener">contest-overview</a>
+<br><a data-tooltip-position="top" aria-label="Contest/lanqiao/week-1.md" data-href="Contest/lanqiao/week-1.md" href="https://blog.allenygy.vip/contest/lanqiao/week-1.html" class="internal-link" target="_self" rel="noopener">week-1</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/what-is-a-computer.md" data-href="Computer-Organization/Lecture/what-is-a-computer.md" href="https://blog.allenygy.vip/computer-organization/lecture/what-is-a-computer.html" class="internal-link" target="_self" rel="noopener">what-is-a-computer</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/microarchitecture.md" data-href="Computer-Organization/Lecture/microarchitecture.md" href="https://blog.allenygy.vip/computer-organization/lecture/microarchitecture.html" class="internal-link" target="_self" rel="noopener">microarchitecture</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/from-machine-language-to-assembly-language.md" data-href="Computer-Organization/Lecture/from-machine-language-to-assembly-language.md" href="https://blog.allenygy.vip/computer-organization/lecture/from-machine-language-to-assembly-language.html" class="internal-link" target="_self" rel="noopener">from-machine-language-to-assembly-language</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/isa.md" data-href="Computer-Organization/Lecture/isa.md" href="https://blog.allenygy.vip/computer-organization/lecture/isa.html" class="internal-link" target="_self" rel="noopener">isa</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/from-transistors-to-gates.md" data-href="Computer-Organization/Lecture/from-transistors-to-gates.md" href="https://blog.allenygy.vip/computer-organization/lecture/from-transistors-to-gates.html" class="internal-link" target="_self" rel="noopener">from-transistors-to-gates</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/from-gates-to-circuits-ii-sequential-circuits.md" data-href="Computer-Organization/Lecture/from-gates-to-circuits-ii-sequential-circuits.md" href="https://blog.allenygy.vip/computer-organization/lecture/from-gates-to-circuits-ii-sequential-circuits.html" class="internal-link" target="_self" rel="noopener">from-gates-to-circuits-ii-sequential-circuits</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/from-gates-to-circuits-i-combinational-circuits.md" data-href="Computer-Organization/Lecture/from-gates-to-circuits-i-combinational-circuits.md" href="https://blog.allenygy.vip/computer-organization/lecture/from-gates-to-circuits-i-combinational-circuits.html" class="internal-link" target="_self" rel="noopener">from-gates-to-circuits-i-combinational-circuits</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/circuitdesign.md" data-href="Computer-Organization/Lecture/circuitdesign.md" href="https://blog.allenygy.vip/computer-organization/lecture/circuitdesign.html" class="internal-link" target="_self" rel="noopener">circuitdesign</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/finite-state-machine.md" data-href="Computer-Organization/Lecture/finite-state-machine.md" href="https://blog.allenygy.vip/computer-organization/lecture/finite-state-machine.html" class="internal-link" target="_self" rel="noopener">finite-state-machine</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/bits-data-representation-and-manipulation.md" data-href="Computer-Organization/Lecture/bits-data-representation-and-manipulation.md" href="https://blog.allenygy.vip/computer-organization/lecture/bits-data-representation-and-manipulation.html" class="internal-link" target="_self" rel="noopener">bits-data-representation-and-manipulation</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/boolean-algebra-from-bits-to-logic.md" data-href="Computer-Organization/Lecture/boolean-algebra-from-bits-to-logic.md" href="https://blog.allenygy.vip/computer-organization/lecture/boolean-algebra-from-bits-to-logic.html" class="internal-link" target="_self" rel="noopener">boolean-algebra-from-bits-to-logic</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lab/Lab6.md" data-href="Computer-Organization/Lab/Lab6.md" href="https://blog.allenygy.vip/computer-organization/lab/lab6.html" class="internal-link" target="_self" rel="noopener">Lab6</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lab/Lab7.md" data-href="Computer-Organization/Lab/Lab7.md" href="https://blog.allenygy.vip/computer-organization/lab/lab7.html" class="internal-link" target="_self" rel="noopener">Lab7</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lab/Lab8.md" data-href="Computer-Organization/Lab/Lab8.md" href="https://blog.allenygy.vip/computer-organization/lab/lab8.html" class="internal-link" target="_self" rel="noopener">Lab8</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lab/Lab5.md" data-href="Computer-Organization/Lab/Lab5.md" href="https://blog.allenygy.vip/computer-organization/lab/lab5.html" class="internal-link" target="_self" rel="noopener">Lab5</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lab/Lab3.md" data-href="Computer-Organization/Lab/Lab3.md" href="https://blog.allenygy.vip/computer-organization/lab/lab3.html" class="internal-link" target="_self" rel="noopener">Lab3</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lab/Lab2.md" data-href="Computer-Organization/Lab/Lab2.md" href="https://blog.allenygy.vip/computer-organization/lab/lab2.html" class="internal-link" target="_self" rel="noopener">Lab2</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Computer-Organization.md" data-href="Computer-Organization/Computer-Organization.md" href="https://blog.allenygy.vip/computer-organization/computer-organization.html" class="internal-link" target="_self" rel="noopener">Computer-Organization</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/String/Tire-Tree.md" data-href="Algorithm/String/Tire-Tree.md" href="https://blog.allenygy.vip/algorithm/string/tire-tree.html" class="internal-link" target="_self" rel="noopener">Tire-Tree</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/String/Z-Function.md" data-href="Algorithm/String/Z-Function.md" href="https://blog.allenygy.vip/algorithm/string/z-function.html" class="internal-link" target="_self" rel="noopener">Z-Function</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/String/Manacher-Algorithm.md" data-href="Algorithm/String/Manacher-Algorithm.md" href="https://blog.allenygy.vip/algorithm/string/manacher-algorithm.html" class="internal-link" target="_self" rel="noopener">Manacher-Algorithm</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/String/String-Overview.md" data-href="Algorithm/String/String-Overview.md" href="https://blog.allenygy.vip/algorithm/string/string-overview.html" class="internal-link" target="_self" rel="noopener">String-Overview</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/String/KMP.md" data-href="Algorithm/String/KMP.md" href="https://blog.allenygy.vip/algorithm/string/kmp.html" class="internal-link" target="_self" rel="noopener">KMP</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/String/Aho-Corasick.md" data-href="Algorithm/String/Aho-Corasick.md" href="https://blog.allenygy.vip/algorithm/string/aho-corasick.html" class="internal-link" target="_self" rel="noopener">Aho-Corasick</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/Recursion/recursion-binarytree.md" data-href="Algorithm/Recursion/recursion-binarytree.md" href="https://blog.allenygy.vip/algorithm/recursion/recursion-binarytree.html" class="internal-link" target="_self" rel="noopener">recursion-binarytree</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/Recursion/recursion-2.md" data-href="Algorithm/Recursion/recursion-2.md" href="https://blog.allenygy.vip/algorithm/recursion/recursion-2.html" class="internal-link" target="_self" rel="noopener">recursion-2</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/Graph/Graph-Overview.md" data-href="Algorithm/Graph/Graph-Overview.md" href="https://blog.allenygy.vip/algorithm/graph/graph-overview.html" class="internal-link" target="_self" rel="noopener">Graph-Overview</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/NumberTheory/Prime-Sieve.md" data-href="Algorithm/NumberTheory/Prime-Sieve.md" href="https://blog.allenygy.vip/algorithm/numbertheory/prime-sieve.html" class="internal-link" target="_self" rel="noopener">Prime-Sieve</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/Recursion/recursion-1.md" data-href="Algorithm/Recursion/recursion-1.md" href="https://blog.allenygy.vip/algorithm/recursion/recursion-1.html" class="internal-link" target="_self" rel="noopener">recursion-1</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DSA/Fenwick.md" data-href="Algorithm/DSA/Fenwick.md" href="https://blog.allenygy.vip/algorithm/dsa/fenwick.html" class="internal-link" target="_self" rel="noopener">Fenwick</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DSA/BinaryTree.md" data-href="Algorithm/DSA/BinaryTree.md" href="https://blog.allenygy.vip/algorithm/dsa/binarytree.html" class="internal-link" target="_self" rel="noopener">BinaryTree</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Tutorial/Tutorial-1.md" data-href="Algorithm/DAA/Tutorial/Tutorial-1.md" href="https://blog.allenygy.vip/algorithm/daa/tutorial/tutorial-1.html" class="internal-link" target="_self" rel="noopener">Tutorial-1</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DSA/AVL.md" data-href="Algorithm/DSA/AVL.md" href="https://blog.allenygy.vip/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DSA/B+Tree.md" data-href="Algorithm/DSA/B+Tree.md" href="https://blog.allenygy.vip/algorithm/dsa/b+tree.html" class="internal-link" target="_self" rel="noopener">B+Tree</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Union-Find.md" data-href="Algorithm/DAA/Algorithm/Union-Find.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/union-find.html" class="internal-link" target="_self" rel="noopener">Union-Find</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Graph-algorithm.md" data-href="Algorithm/DAA/Algorithm/Graph-algorithm.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/graph-algorithm.html" class="internal-link" target="_self" rel="noopener">Graph-algorithm</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Sort.md" data-href="Algorithm/DAA/Algorithm/Sort.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/sort.html" class="internal-link" target="_self" rel="noopener">Sort</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Enumeration.md" data-href="Algorithm/DAA/Algorithm/Enumeration.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/enumeration.html" class="internal-link" target="_self" rel="noopener">Enumeration</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Enumeration-subset.md" data-href="Algorithm/DAA/Algorithm/Enumeration-subset.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/enumeration-subset.html" class="internal-link" target="_self" rel="noopener">Enumeration-subset</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Divide-and-Conquer.md" data-href="Algorithm/DAA/Algorithm/Divide-and-Conquer.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/divide-and-conquer.html" class="internal-link" target="_self" rel="noopener">Divide-and-Conquer</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/SparceTable.md" data-href="Algorithm/BasicAlgorithm/SparceTable.md" href="https://blog.allenygy.vip/algorithm/basicalgorithm/sparcetable.html" class="internal-link" target="_self" rel="noopener">SparceTable</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/Basic-Algorithm-overview.md" data-href="Algorithm/BasicAlgorithm/Basic-Algorithm-overview.md" href="https://blog.allenygy.vip/algorithm/basicalgorithm/basic-algorithm-overview.html" class="internal-link" target="_self" rel="noopener">Basic-Algorithm-overview</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/Discretization.md" data-href="Algorithm/BasicAlgorithm/Discretization.md" href="https://blog.allenygy.vip/algorithm/basicalgorithm/discretization.html" class="internal-link" target="_self" rel="noopener">Discretization</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/SlidingWindow.md" data-href="Algorithm/BasicAlgorithm/SlidingWindow.md" href="https://blog.allenygy.vip/algorithm/basicalgorithm/slidingwindow.html" class="internal-link" target="_self" rel="noopener">SlidingWindow</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/assignment/dbm-assignment-2.md" data-href="Database-Management/assignment/dbm-assignment-2.md" href="https://blog.allenygy.vip/database-management/assignment/dbm-assignment-2.html" class="internal-link" target="_self" rel="noopener">dbm-assignment-2</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/assignment/dbm-assignment-3.md" data-href="Database-Management/assignment/dbm-assignment-3.md" href="https://blog.allenygy.vip/database-management/assignment/dbm-assignment-3.html" class="internal-link" target="_self" rel="noopener">dbm-assignment-3</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/assignment/dbm-assignment-1.md" data-href="Database-Management/assignment/dbm-assignment-1.md" href="https://blog.allenygy.vip/database-management/assignment/dbm-assignment-1.html" class="internal-link" target="_self" rel="noopener">dbm-assignment-1</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DSA/Assignment/dsa-assignment-1.md" data-href="Algorithm/DSA/Assignment/dsa-assignment-1.md" href="https://blog.allenygy.vip/algorithm/dsa/assignment/dsa-assignment-1.html" class="internal-link" target="_self" rel="noopener">dsa-assignment-1</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DSA/Assignment/dsa-assignment-2.md" data-href="Algorithm/DSA/Assignment/dsa-assignment-2.md" href="https://blog.allenygy.vip/algorithm/dsa/assignment/dsa-assignment-2.html" class="internal-link" target="_self" rel="noopener">dsa-assignment-2</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Assignment/DAA-Assignment-2.md" data-href="Algorithm/DAA/Assignment/DAA-Assignment-2.md" href="https://blog.allenygy.vip/algorithm/daa/assignment/daa-assignment-2.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-2</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DSA/Assignment/written-assignment-am.md" data-href="Algorithm/DSA/Assignment/written-assignment-am.md" href="https://blog.allenygy.vip/algorithm/dsa/assignment/written-assignment-am.html" class="internal-link" target="_self" rel="noopener">written-assignment-am</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Assignment/DAA-Programming-Assignment.md" data-href="Algorithm/DAA/Assignment/DAA-Programming-Assignment.md" href="https://blog.allenygy.vip/algorithm/daa/assignment/daa-programming-assignment.html" class="internal-link" target="_self" rel="noopener">DAA-Programming-Assignment</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-3.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-3.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-3.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-3</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-7.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-7.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-7.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-7</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-8.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-8.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-8.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-8</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-tutorial.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-tutorial.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-tutorial.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-tutorial</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-2.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-2.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-2.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-2</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-5.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-5.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-5.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-5</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-6.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-6.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-6.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-6</a>
+<br><br>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Assignment/DAA-Assignment-0.md" data-href="Algorithm/DAA/Assignment/DAA-Assignment-0.md" href="https://blog.allenygy.vip/algorithm/daa/assignment/daa-assignment-0.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-0</a>
+<br><br>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Assignment/DAA-Assignment-1.md" data-href="Algorithm/DAA/Assignment/DAA-Assignment-1.md" href="https://blog.allenygy.vip/algorithm/daa/assignment/daa-assignment-1.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-1</a>
+<br><a data-tooltip-position="top" aria-label="Network/assignment/dcn-assignment1.md" data-href="Network/assignment/dcn-assignment1.md" href="https://blog.allenygy.vip/network/assignment/dcn-assignment1.html" class="internal-link" target="_self" rel="noopener">dcn-assignment1</a>
+]]></description><link>https://blog.allenygy.vip/archive.html</link><guid isPermaLink="false">Archive.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:22:59 GMT</pubDate></item><item><title><![CDATA[Class]]></title><description><![CDATA[ 
+ <br>
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/SparceTable.md" data-href="Algorithm/BasicAlgorithm/SparceTable.md" href="https://blog.allenygy.vip/algorithm/basicalgorithm/sparcetable.html" class="internal-link" target="_self" rel="noopener">SparceTable</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/Basic-Algorithm-overview.md" data-href="Algorithm/BasicAlgorithm/Basic-Algorithm-overview.md" href="https://blog.allenygy.vip/algorithm/basicalgorithm/basic-algorithm-overview.html" class="internal-link" target="_self" rel="noopener">Basic-Algorithm-overview</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/Discretization.md" data-href="Algorithm/BasicAlgorithm/Discretization.md" href="https://blog.allenygy.vip/algorithm/basicalgorithm/discretization.html" class="internal-link" target="_self" rel="noopener">Discretization</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/SlidingWindow.md" data-href="Algorithm/BasicAlgorithm/SlidingWindow.md" href="https://blog.allenygy.vip/algorithm/basicalgorithm/slidingwindow.html" class="internal-link" target="_self" rel="noopener">SlidingWindow</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/SparceTable.md" data-href="Algorithm/BasicAlgorithm/SparceTable.md" href="https://blog.allenygy.vip/algorithm/basicalgorithm/sparcetable.html" class="internal-link" target="_self" rel="noopener">SparceTable</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/Basic-Algorithm-overview.md" data-href="Algorithm/BasicAlgorithm/Basic-Algorithm-overview.md" href="https://blog.allenygy.vip/algorithm/basicalgorithm/basic-algorithm-overview.html" class="internal-link" target="_self" rel="noopener">Basic-Algorithm-overview</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/Discretization.md" data-href="Algorithm/BasicAlgorithm/Discretization.md" href="https://blog.allenygy.vip/algorithm/basicalgorithm/discretization.html" class="internal-link" target="_self" rel="noopener">Discretization</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/SlidingWindow.md" data-href="Algorithm/BasicAlgorithm/SlidingWindow.md" href="https://blog.allenygy.vip/algorithm/basicalgorithm/slidingwindow.html" class="internal-link" target="_self" rel="noopener">SlidingWindow</a>
+
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Union-Find.md" data-href="Algorithm/DAA/Algorithm/Union-Find.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/union-find.html" class="internal-link" target="_self" rel="noopener">Union-Find</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Graph-algorithm.md" data-href="Algorithm/DAA/Algorithm/Graph-algorithm.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/graph-algorithm.html" class="internal-link" target="_self" rel="noopener">Graph-algorithm</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Sort.md" data-href="Algorithm/DAA/Algorithm/Sort.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/sort.html" class="internal-link" target="_self" rel="noopener">Sort</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Enumeration.md" data-href="Algorithm/DAA/Algorithm/Enumeration.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/enumeration.html" class="internal-link" target="_self" rel="noopener">Enumeration</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Enumeration-subset.md" data-href="Algorithm/DAA/Algorithm/Enumeration-subset.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/enumeration-subset.html" class="internal-link" target="_self" rel="noopener">Enumeration-subset</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Divide-and-Conquer.md" data-href="Algorithm/DAA/Algorithm/Divide-and-Conquer.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/divide-and-conquer.html" class="internal-link" target="_self" rel="noopener">Divide-and-Conquer</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Union-Find.md" data-href="Algorithm/DAA/Algorithm/Union-Find.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/union-find.html" class="internal-link" target="_self" rel="noopener">Union-Find</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Graph-algorithm.md" data-href="Algorithm/DAA/Algorithm/Graph-algorithm.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/graph-algorithm.html" class="internal-link" target="_self" rel="noopener">Graph-algorithm</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Sort.md" data-href="Algorithm/DAA/Algorithm/Sort.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/sort.html" class="internal-link" target="_self" rel="noopener">Sort</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Enumeration.md" data-href="Algorithm/DAA/Algorithm/Enumeration.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/enumeration.html" class="internal-link" target="_self" rel="noopener">Enumeration</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Enumeration-subset.md" data-href="Algorithm/DAA/Algorithm/Enumeration-subset.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/enumeration-subset.html" class="internal-link" target="_self" rel="noopener">Enumeration-subset</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Algorithm/Divide-and-Conquer.md" data-href="Algorithm/DAA/Algorithm/Divide-and-Conquer.md" href="https://blog.allenygy.vip/algorithm/daa/algorithm/divide-and-conquer.html" class="internal-link" target="_self" rel="noopener">Divide-and-Conquer</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Assignment/DAA-Assignment-2.md" data-href="Algorithm/DAA/Assignment/DAA-Assignment-2.md" href="https://blog.allenygy.vip/algorithm/daa/assignment/daa-assignment-2.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-2</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Assignment/DAA-Programming-Assignment.md" data-href="Algorithm/DAA/Assignment/DAA-Programming-Assignment.md" href="https://blog.allenygy.vip/algorithm/daa/assignment/daa-programming-assignment.html" class="internal-link" target="_self" rel="noopener">DAA-Programming-Assignment</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Assignment/DAA-Assignment-0.md" data-href="Algorithm/DAA/Assignment/DAA-Assignment-0.md" href="https://blog.allenygy.vip/algorithm/daa/assignment/daa-assignment-0.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-0</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Assignment/DAA-Assignment-1.md" data-href="Algorithm/DAA/Assignment/DAA-Assignment-1.md" href="https://blog.allenygy.vip/algorithm/daa/assignment/daa-assignment-1.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-1</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Tutorial/Tutorial-1.md" data-href="Algorithm/DAA/Tutorial/Tutorial-1.md" href="https://blog.allenygy.vip/algorithm/daa/tutorial/tutorial-1.html" class="internal-link" target="_self" rel="noopener">Tutorial-1</a>
+
+
+
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/DSA/Fenwick.md" data-href="Algorithm/DSA/Fenwick.md" href="https://blog.allenygy.vip/algorithm/dsa/fenwick.html" class="internal-link" target="_self" rel="noopener">Fenwick</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/DSA/BinaryTree.md" data-href="Algorithm/DSA/BinaryTree.md" href="https://blog.allenygy.vip/algorithm/dsa/binarytree.html" class="internal-link" target="_self" rel="noopener">BinaryTree</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/DSA/AVL.md" data-href="Algorithm/DSA/AVL.md" href="https://blog.allenygy.vip/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Algorithm/DSA/B+Tree.md" data-href="Algorithm/DSA/B+Tree.md" href="https://blog.allenygy.vip/algorithm/dsa/b+tree.html" class="internal-link" target="_self" rel="noopener">B+Tree</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Algorithm/DSA/Assignment/dsa-assignment-1.md" data-href="Algorithm/DSA/Assignment/dsa-assignment-1.md" href="https://blog.allenygy.vip/algorithm/dsa/assignment/dsa-assignment-1.html" class="internal-link" target="_self" rel="noopener">dsa-assignment-1</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DSA/Assignment/dsa-assignment-2.md" data-href="Algorithm/DSA/Assignment/dsa-assignment-2.md" href="https://blog.allenygy.vip/algorithm/dsa/assignment/dsa-assignment-2.html" class="internal-link" target="_self" rel="noopener">dsa-assignment-2</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/DSA/Assignment/written-assignment-am.md" data-href="Algorithm/DSA/Assignment/written-assignment-am.md" href="https://blog.allenygy.vip/algorithm/dsa/assignment/written-assignment-am.html" class="internal-link" target="_self" rel="noopener">written-assignment-am</a>
+
+
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Algorithm/Graph/Graph-Overview.md" data-href="Algorithm/Graph/Graph-Overview.md" href="https://blog.allenygy.vip/algorithm/graph/graph-overview.html" class="internal-link" target="_self" rel="noopener">Graph-Overview</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Algorithm/NumberTheory/Prime-Sieve.md" data-href="Algorithm/NumberTheory/Prime-Sieve.md" href="https://blog.allenygy.vip/algorithm/numbertheory/prime-sieve.html" class="internal-link" target="_self" rel="noopener">Prime-Sieve</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Algorithm/Recursion/recursion-binarytree.md" data-href="Algorithm/Recursion/recursion-binarytree.md" href="https://blog.allenygy.vip/algorithm/recursion/recursion-binarytree.html" class="internal-link" target="_self" rel="noopener">recursion-binarytree</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/Recursion/recursion-2.md" data-href="Algorithm/Recursion/recursion-2.md" href="https://blog.allenygy.vip/algorithm/recursion/recursion-2.html" class="internal-link" target="_self" rel="noopener">recursion-2</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/Recursion/recursion-1.md" data-href="Algorithm/Recursion/recursion-1.md" href="https://blog.allenygy.vip/algorithm/recursion/recursion-1.html" class="internal-link" target="_self" rel="noopener">recursion-1</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Algorithm/String/Tire-Tree.md" data-href="Algorithm/String/Tire-Tree.md" href="https://blog.allenygy.vip/algorithm/string/tire-tree.html" class="internal-link" target="_self" rel="noopener">Tire-Tree</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/String/Z-Function.md" data-href="Algorithm/String/Z-Function.md" href="https://blog.allenygy.vip/algorithm/string/z-function.html" class="internal-link" target="_self" rel="noopener">Z-Function</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/String/Manacher-Algorithm.md" data-href="Algorithm/String/Manacher-Algorithm.md" href="https://blog.allenygy.vip/algorithm/string/manacher-algorithm.html" class="internal-link" target="_self" rel="noopener">Manacher-Algorithm</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/String/String-Overview.md" data-href="Algorithm/String/String-Overview.md" href="https://blog.allenygy.vip/algorithm/string/string-overview.html" class="internal-link" target="_self" rel="noopener">String-Overview</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/String/KMP.md" data-href="Algorithm/String/KMP.md" href="https://blog.allenygy.vip/algorithm/string/kmp.html" class="internal-link" target="_self" rel="noopener">KMP</a>
+<br><a data-tooltip-position="top" aria-label="Algorithm/String/Aho-Corasick.md" data-href="Algorithm/String/Aho-Corasick.md" href="https://blog.allenygy.vip/algorithm/string/aho-corasick.html" class="internal-link" target="_self" rel="noopener">Aho-Corasick</a>
+
+
+
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Computer-Organization/Computer-Organization.md" data-href="Computer-Organization/Computer-Organization.md" href="https://blog.allenygy.vip/computer-organization/computer-organization.html" class="internal-link" target="_self" rel="noopener">Computer-Organization</a>
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Computer-Organization/Assignment/As1/Co-Assignment-1.md" data-href="Computer-Organization/Assignment/As1/Co-Assignment-1.md" href="https://blog.allenygy.vip/computer-organization/assignment/as1/co-assignment-1.html" class="internal-link" target="_self" rel="noopener">Co-Assignment-1</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Assignment/As1/Co-Assignment-1.md" data-href="Computer-Organization/Assignment/As1/Co-Assignment-1.md" href="https://blog.allenygy.vip/computer-organization/assignment/as1/co-assignment-1.html" class="internal-link" target="_self" rel="noopener">Co-Assignment-1</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Assignment/As2/Co-Assignment-2.md" data-href="Computer-Organization/Assignment/As2/Co-Assignment-2.md" href="https://blog.allenygy.vip/computer-organization/assignment/as2/co-assignment-2.html" class="internal-link" target="_self" rel="noopener">Co-Assignment-2</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Assignment/As3/CO-Assignment-3.md" data-href="Computer-Organization/Assignment/As3/CO-Assignment-3.md" href="https://blog.allenygy.vip/computer-organization/assignment/as3/co-assignment-3.html" class="internal-link" target="_self" rel="noopener">CO-Assignment-3</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Assignment/As4/Co-Assignment-4.md" data-href="Computer-Organization/Assignment/As4/Co-Assignment-4.md" href="https://blog.allenygy.vip/computer-organization/assignment/as4/co-assignment-4.html" class="internal-link" target="_self" rel="noopener">Co-Assignment-4</a>
+
+
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lab/Lab6.md" data-href="Computer-Organization/Lab/Lab6.md" href="https://blog.allenygy.vip/computer-organization/lab/lab6.html" class="internal-link" target="_self" rel="noopener">Lab6</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lab/Lab7.md" data-href="Computer-Organization/Lab/Lab7.md" href="https://blog.allenygy.vip/computer-organization/lab/lab7.html" class="internal-link" target="_self" rel="noopener">Lab7</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lab/Lab8.md" data-href="Computer-Organization/Lab/Lab8.md" href="https://blog.allenygy.vip/computer-organization/lab/lab8.html" class="internal-link" target="_self" rel="noopener">Lab8</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lab/Lab5.md" data-href="Computer-Organization/Lab/Lab5.md" href="https://blog.allenygy.vip/computer-organization/lab/lab5.html" class="internal-link" target="_self" rel="noopener">Lab5</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lab/Lab3.md" data-href="Computer-Organization/Lab/Lab3.md" href="https://blog.allenygy.vip/computer-organization/lab/lab3.html" class="internal-link" target="_self" rel="noopener">Lab3</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lab/Lab2.md" data-href="Computer-Organization/Lab/Lab2.md" href="https://blog.allenygy.vip/computer-organization/lab/lab2.html" class="internal-link" target="_self" rel="noopener">Lab2</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/what-is-a-computer.md" data-href="Computer-Organization/Lecture/what-is-a-computer.md" href="https://blog.allenygy.vip/computer-organization/lecture/what-is-a-computer.html" class="internal-link" target="_self" rel="noopener">what-is-a-computer</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/microarchitecture.md" data-href="Computer-Organization/Lecture/microarchitecture.md" href="https://blog.allenygy.vip/computer-organization/lecture/microarchitecture.html" class="internal-link" target="_self" rel="noopener">microarchitecture</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/from-machine-language-to-assembly-language.md" data-href="Computer-Organization/Lecture/from-machine-language-to-assembly-language.md" href="https://blog.allenygy.vip/computer-organization/lecture/from-machine-language-to-assembly-language.html" class="internal-link" target="_self" rel="noopener">from-machine-language-to-assembly-language</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/isa.md" data-href="Computer-Organization/Lecture/isa.md" href="https://blog.allenygy.vip/computer-organization/lecture/isa.html" class="internal-link" target="_self" rel="noopener">isa</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/from-transistors-to-gates.md" data-href="Computer-Organization/Lecture/from-transistors-to-gates.md" href="https://blog.allenygy.vip/computer-organization/lecture/from-transistors-to-gates.html" class="internal-link" target="_self" rel="noopener">from-transistors-to-gates</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/from-gates-to-circuits-ii-sequential-circuits.md" data-href="Computer-Organization/Lecture/from-gates-to-circuits-ii-sequential-circuits.md" href="https://blog.allenygy.vip/computer-organization/lecture/from-gates-to-circuits-ii-sequential-circuits.html" class="internal-link" target="_self" rel="noopener">from-gates-to-circuits-ii-sequential-circuits</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/from-gates-to-circuits-i-combinational-circuits.md" data-href="Computer-Organization/Lecture/from-gates-to-circuits-i-combinational-circuits.md" href="https://blog.allenygy.vip/computer-organization/lecture/from-gates-to-circuits-i-combinational-circuits.html" class="internal-link" target="_self" rel="noopener">from-gates-to-circuits-i-combinational-circuits</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/circuitdesign.md" data-href="Computer-Organization/Lecture/circuitdesign.md" href="https://blog.allenygy.vip/computer-organization/lecture/circuitdesign.html" class="internal-link" target="_self" rel="noopener">circuitdesign</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/finite-state-machine.md" data-href="Computer-Organization/Lecture/finite-state-machine.md" href="https://blog.allenygy.vip/computer-organization/lecture/finite-state-machine.html" class="internal-link" target="_self" rel="noopener">finite-state-machine</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/bits-data-representation-and-manipulation.md" data-href="Computer-Organization/Lecture/bits-data-representation-and-manipulation.md" href="https://blog.allenygy.vip/computer-organization/lecture/bits-data-representation-and-manipulation.html" class="internal-link" target="_self" rel="noopener">bits-data-representation-and-manipulation</a>
+<br><a data-tooltip-position="top" aria-label="Computer-Organization/Lecture/boolean-algebra-from-bits-to-logic.md" data-href="Computer-Organization/Lecture/boolean-algebra-from-bits-to-logic.md" href="https://blog.allenygy.vip/computer-organization/lecture/boolean-algebra-from-bits-to-logic.html" class="internal-link" target="_self" rel="noopener">boolean-algebra-from-bits-to-logic</a>
+
+
+
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Contest/contest-overview.md" data-href="Contest/contest-overview.md" href="https://blog.allenygy.vip/contest/contest-overview.html" class="internal-link" target="_self" rel="noopener">contest-overview</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Contest/lanqiao/week-12.md" data-href="Contest/lanqiao/week-12.md" href="https://blog.allenygy.vip/contest/lanqiao/week-12.html" class="internal-link" target="_self" rel="noopener">week-12</a>
+<br><a data-tooltip-position="top" aria-label="Contest/lanqiao/week-1.md" data-href="Contest/lanqiao/week-1.md" href="https://blog.allenygy.vip/contest/lanqiao/week-1.html" class="internal-link" target="_self" rel="noopener">week-1</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Contest/leetcode/weekly-contest-402.md" data-href="Contest/leetcode/weekly-contest-402.md" href="https://blog.allenygy.vip/contest/leetcode/weekly-contest-402.html" class="internal-link" target="_self" rel="noopener">weekly-contest-402</a>
+<br><a data-tooltip-position="top" aria-label="Contest/leetcode/biweekly-contest-122.md" data-href="Contest/leetcode/biweekly-contest-122.md" href="https://blog.allenygy.vip/contest/leetcode/biweekly-contest-122.html" class="internal-link" target="_self" rel="noopener">biweekly-contest-122</a>
+<br><a data-tooltip-position="top" aria-label="Contest/leetcode/biweekly-contest-123.md" data-href="Contest/leetcode/biweekly-contest-123.md" href="https://blog.allenygy.vip/contest/leetcode/biweekly-contest-123.html" class="internal-link" target="_self" rel="noopener">biweekly-contest-123</a>
+<br><a data-tooltip-position="top" aria-label="Contest/leetcode/weekly-contest-381.md" data-href="Contest/leetcode/weekly-contest-381.md" href="https://blog.allenygy.vip/contest/leetcode/weekly-contest-381.html" class="internal-link" target="_self" rel="noopener">weekly-contest-381</a>
+
+
+
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Data-Analysis/data-analysis.md" data-href="Data-Analysis/data-analysis.md" href="https://blog.allenygy.vip/data-analysis/data-analysis.html" class="internal-link" target="_self" rel="noopener">data-analysis</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Data-Analysis/hans-on-data/hans-on-data-analysis.md" data-href="Data-Analysis/hans-on-data/hans-on-data-analysis.md" href="https://blog.allenygy.vip/data-analysis/hans-on-data/hans-on-data-analysis.html" class="internal-link" target="_self" rel="noopener">hans-on-data-analysis</a>
+
+
+
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Database-Management/database-management-system.md" data-href="Database-Management/database-management-system.md" href="https://blog.allenygy.vip/database-management/database-management-system.html" class="internal-link" target="_self" rel="noopener">database-management-system</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Database-Management/assignment/dbm-assignment-2.md" data-href="Database-Management/assignment/dbm-assignment-2.md" href="https://blog.allenygy.vip/database-management/assignment/dbm-assignment-2.html" class="internal-link" target="_self" rel="noopener">dbm-assignment-2</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/assignment/dbm-assignment-3.md" data-href="Database-Management/assignment/dbm-assignment-3.md" href="https://blog.allenygy.vip/database-management/assignment/dbm-assignment-3.html" class="internal-link" target="_self" rel="noopener">dbm-assignment-3</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/assignment/dbm-assignment-1.md" data-href="Database-Management/assignment/dbm-assignment-1.md" href="https://blog.allenygy.vip/database-management/assignment/dbm-assignment-1.html" class="internal-link" target="_self" rel="noopener">dbm-assignment-1</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/relational-database-design-bcnf.md" data-href="Database-Management/lecture/relational-database-design-bcnf.md" href="https://blog.allenygy.vip/database-management/lecture/relational-database-design-bcnf.html" class="internal-link" target="_self" rel="noopener">relational-database-design-bcnf</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/relational-database-design-functional-dependency.md" data-href="Database-Management/lecture/relational-database-design-functional-dependency.md" href="https://blog.allenygy.vip/database-management/lecture/relational-database-design-functional-dependency.html" class="internal-link" target="_self" rel="noopener">relational-database-design-functional-dependency</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/relational-database-design-purpose-&amp;-first-normal-form.md" data-href="Database-Management/lecture/relational-database-design-purpose-&amp;-first-normal-form.md" href="https://blog.allenygy.vip/database-management/lecture/relational-database-design-purpose-&amp;-first-normal-form.html" class="internal-link" target="_self" rel="noopener">relational-database-design-purpose-&amp;-first-normal-form</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/logical-design.md" data-href="Database-Management/lecture/logical-design.md" href="https://blog.allenygy.vip/database-management/lecture/logical-design.html" class="internal-link" target="_self" rel="noopener">logical-design</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/normalform.md" data-href="Database-Management/lecture/normalform.md" href="https://blog.allenygy.vip/database-management/lecture/normalform.html" class="internal-link" target="_self" rel="noopener">normalform</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/relational-database-design-3rd-normal-form.md" data-href="Database-Management/lecture/relational-database-design-3rd-normal-form.md" href="https://blog.allenygy.vip/database-management/lecture/relational-database-design-3rd-normal-form.html" class="internal-link" target="_self" rel="noopener">relational-database-design-3rd-normal-form</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/entity-relationship-model-extended-features.md" data-href="Database-Management/lecture/entity-relationship-model-extended-features.md" href="https://blog.allenygy.vip/database-management/lecture/entity-relationship-model-extended-features.html" class="internal-link" target="_self" rel="noopener">entity-relationship-model-extended-features</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/entity-relationship-model-modeling.md" data-href="Database-Management/lecture/entity-relationship-model-modeling.md" href="https://blog.allenygy.vip/database-management/lecture/entity-relationship-model-modeling.html" class="internal-link" target="_self" rel="noopener">entity-relationship-model-modeling</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/key-concept.md" data-href="Database-Management/lecture/key-concept.md" href="https://blog.allenygy.vip/database-management/lecture/key-concept.html" class="internal-link" target="_self" rel="noopener">key-concept</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/design-issues.md" data-href="Database-Management/lecture/design-issues.md" href="https://blog.allenygy.vip/database-management/lecture/design-issues.html" class="internal-link" target="_self" rel="noopener">design-issues</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/lecture/entity-relationship-model-constraints.md" data-href="Database-Management/lecture/entity-relationship-model-constraints.md" href="https://blog.allenygy.vip/database-management/lecture/entity-relationship-model-constraints.html" class="internal-link" target="_self" rel="noopener">entity-relationship-model-constraints</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/null-subquery.md" data-href="Database-Management/mysql/null-subquery.md" href="https://blog.allenygy.vip/database-management/mysql/null-subquery.html" class="internal-link" target="_self" rel="noopener">null-subquery</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/set-operation-&amp;-where-subquery.md" data-href="Database-Management/mysql/set-operation-&amp;-where-subquery.md" href="https://blog.allenygy.vip/database-management/mysql/set-operation-&amp;-where-subquery.html" class="internal-link" target="_self" rel="noopener">set-operation-&amp;-where-subquery</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/division-and-correlated-subquery.md" data-href="Database-Management/mysql/division-and-correlated-subquery.md" href="https://blog.allenygy.vip/database-management/mysql/division-and-correlated-subquery.html" class="internal-link" target="_self" rel="noopener">division-and-correlated-subquery</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/data-modification.md" data-href="Database-Management/mysql/data-modification.md" href="https://blog.allenygy.vip/database-management/mysql/data-modification.html" class="internal-link" target="_self" rel="noopener">data-modification</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/join.md" data-href="Database-Management/mysql/join.md" href="https://blog.allenygy.vip/database-management/mysql/join.html" class="internal-link" target="_self" rel="noopener">join</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/basic-mysql.md" data-href="Database-Management/mysql/basic-mysql.md" href="https://blog.allenygy.vip/database-management/mysql/basic-mysql.html" class="internal-link" target="_self" rel="noopener">basic-mysql</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/cross-table-query.md" data-href="Database-Management/mysql/cross-table-query.md" href="https://blog.allenygy.vip/database-management/mysql/cross-table-query.html" class="internal-link" target="_self" rel="noopener">cross-table-query</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/data-definition.md" data-href="Database-Management/mysql/data-definition.md" href="https://blog.allenygy.vip/database-management/mysql/data-definition.html" class="internal-link" target="_self" rel="noopener">data-definition</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/advanced-sql.md" data-href="Database-Management/mysql/advanced-sql.md" href="https://blog.allenygy.vip/database-management/mysql/advanced-sql.html" class="internal-link" target="_self" rel="noopener">advanced-sql</a>
+<br><a data-tooltip-position="top" aria-label="Database-Management/mysql/aggregation.md" data-href="Database-Management/mysql/aggregation.md" href="https://blog.allenygy.vip/database-management/mysql/aggregation.html" class="internal-link" target="_self" rel="noopener">aggregation</a>
+
+
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="DeepLearning/graphnetwork.md" data-href="DeepLearning/graphnetwork.md" href="https://blog.allenygy.vip/deeplearning/graphnetwork.html" class="internal-link" target="_self" rel="noopener">graphnetwork</a>
+<br><a data-tooltip-position="top" aria-label="DeepLearning/activationfunction.md" data-href="DeepLearning/activationfunction.md" href="https://blog.allenygy.vip/deeplearning/activationfunction.html" class="internal-link" target="_self" rel="noopener">activationfunction</a>
+<br><a data-tooltip-position="top" aria-label="DeepLearning/backpropagation.md" data-href="DeepLearning/backpropagation.md" href="https://blog.allenygy.vip/deeplearning/backpropagation.html" class="internal-link" target="_self" rel="noopener">backpropagation</a>
+<br><a data-tooltip-position="top" aria-label="DeepLearning/gradientdescent.md" data-href="DeepLearning/gradientdescent.md" href="https://blog.allenygy.vip/deeplearning/gradientdescent.html" class="internal-link" target="_self" rel="noopener">gradientdescent</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="English/cet-6.md" data-href="English/cet-6.md" href="https://blog.allenygy.vip/english/cet-6.html" class="internal-link" target="_self" rel="noopener">cet-6</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Fix-Income/fixedincomeoverview.md" data-href="Fix-Income/fixedincomeoverview.md" href="https://blog.allenygy.vip/fix-income/fixedincomeoverview.html" class="internal-link" target="_self" rel="noopener">fixedincomeoverview</a>
+<br><a data-tooltip-position="top" aria-label="Fix-Income/珠海市经济产业分析.md" data-href="Fix-Income/珠海市经济产业分析.md" href="https://blog.allenygy.vip/fix-income/珠海市经济产业分析.html" class="internal-link" target="_self" rel="noopener">珠海市经济产业分析</a>
+
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Math/math.md" data-href="Math/math.md" href="https://blog.allenygy.vip/math/math.html" class="internal-link" target="_self" rel="noopener">math</a>
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-3.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-3.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-3.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-3</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-7.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-7.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-7.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-7</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-8.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-8.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-8.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-8</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-tutorial.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-tutorial.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-tutorial.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-tutorial</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-2.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-2.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-2.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-2</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-5.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-5.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-5.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-5</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-6.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-6.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-6.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-6</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-3.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-3.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-3.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-3</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-7.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-7.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-7.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-7</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-8.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-8.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-8.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-8</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-tutorial.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-tutorial.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-tutorial.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-tutorial</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-2.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-2.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-2.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-2</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-5.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-5.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-5.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-5</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/assignment/discrete-mathematics-assignment-6.md" data-href="Math/discrete-structure/assignment/discrete-mathematics-assignment-6.md" href="https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-6.html" class="internal-link" target="_self" rel="noopener">discrete-mathematics-assignment-6</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/sets-and-n-tuple.md" data-href="Math/discrete-structure/lecture/sets-and-n-tuple.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/sets-and-n-tuple.html" class="internal-link" target="_self" rel="noopener">sets-and-n-tuple</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/tree.md" data-href="Math/discrete-structure/lecture/tree.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/tree.html" class="internal-link" target="_self" rel="noopener">tree</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/propositional-logic.md" data-href="Math/discrete-structure/lecture/propositional-logic.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/propositional-logic.html" class="internal-link" target="_self" rel="noopener">propositional-logic</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/relation.md" data-href="Math/discrete-structure/lecture/relation.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/relation.html" class="internal-link" target="_self" rel="noopener">relation</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/representing-graph-and-connectivity.md" data-href="Math/discrete-structure/lecture/representing-graph-and-connectivity.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/representing-graph-and-connectivity.html" class="internal-link" target="_self" rel="noopener">representing-graph-and-connectivity</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/logic-circuits.md" data-href="Math/discrete-structure/lecture/logic-circuits.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/logic-circuits.html" class="internal-link" target="_self" rel="noopener">logic-circuits</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/propositional-equivalence.md" data-href="Math/discrete-structure/lecture/propositional-equivalence.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/propositional-equivalence.html" class="internal-link" target="_self" rel="noopener">propositional-equivalence</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/counting-principles.md" data-href="Math/discrete-structure/lecture/counting-principles.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/counting-principles.html" class="internal-link" target="_self" rel="noopener">counting-principles</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/functions-sequence-and-summations.md" data-href="Math/discrete-structure/lecture/functions-sequence-and-summations.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/functions-sequence-and-summations.html" class="internal-link" target="_self" rel="noopener">functions-sequence-and-summations</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/graph-theory.md" data-href="Math/discrete-structure/lecture/graph-theory.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/graph-theory.html" class="internal-link" target="_self" rel="noopener">graph-theory</a>
+<br><a data-tooltip-position="top" aria-label="Math/discrete-structure/lecture/boolean-expressions.md" data-href="Math/discrete-structure/lecture/boolean-expressions.md" href="https://blog.allenygy.vip/math/discrete-structure/lecture/boolean-expressions.html" class="internal-link" target="_self" rel="noopener">boolean-expressions</a>
+
+
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/judgment.md" data-href="Math/linear-algebra/judgment.md" href="https://blog.allenygy.vip/math/linear-algebra/judgment.html" class="internal-link" target="_self" rel="noopener">judgment</a>
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/vector-space.md" data-href="Math/linear-algebra/vector-space.md" href="https://blog.allenygy.vip/math/linear-algebra/vector-space.html" class="internal-link" target="_self" rel="noopener">vector-space</a>
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/matrixoperation.md" data-href="Math/linear-algebra/matrixoperation.md" href="https://blog.allenygy.vip/math/linear-algebra/matrixoperation.html" class="internal-link" target="_self" rel="noopener">matrixoperation</a>
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/orthogonality.md" data-href="Math/linear-algebra/orthogonality.md" href="https://blog.allenygy.vip/math/linear-algebra/orthogonality.html" class="internal-link" target="_self" rel="noopener">orthogonality</a>
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/product.md" data-href="Math/linear-algebra/product.md" href="https://blog.allenygy.vip/math/linear-algebra/product.html" class="internal-link" target="_self" rel="noopener">product</a>
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/eigenvalues-and-eigenvectors.md" data-href="Math/linear-algebra/eigenvalues-and-eigenvectors.md" href="https://blog.allenygy.vip/math/linear-algebra/eigenvalues-and-eigenvectors.html" class="internal-link" target="_self" rel="noopener">eigenvalues-and-eigenvectors</a>
+<br><a data-tooltip-position="top" aria-label="Math/linear-algebra/linear-transformations.md" data-href="Math/linear-algebra/linear-transformations.md" href="https://blog.allenygy.vip/math/linear-algebra/linear-transformations.html" class="internal-link" target="_self" rel="noopener">linear-transformations</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Math/probability-statistics/poisson-distribution.md" data-href="Math/probability-statistics/poisson-distribution.md" href="https://blog.allenygy.vip/math/probability-statistics/poisson-distribution.html" class="internal-link" target="_self" rel="noopener">poisson-distribution</a>
+<br><a data-tooltip-position="top" aria-label="Math/probability-statistics/probability-theory.md" data-href="Math/probability-statistics/probability-theory.md" href="https://blog.allenygy.vip/math/probability-statistics/probability-theory.html" class="internal-link" target="_self" rel="noopener">probability-theory</a>
+<br><a data-tooltip-position="top" aria-label="Math/probability-statistics/hypothesis-testing-single-population.md" data-href="Math/probability-statistics/hypothesis-testing-single-population.md" href="https://blog.allenygy.vip/math/probability-statistics/hypothesis-testing-single-population.html" class="internal-link" target="_self" rel="noopener">hypothesis-testing-single-population</a>
+<br><a data-tooltip-position="top" aria-label="Math/probability-statistics/hypothesis-testing-two-population.md" data-href="Math/probability-statistics/hypothesis-testing-two-population.md" href="https://blog.allenygy.vip/math/probability-statistics/hypothesis-testing-two-population.html" class="internal-link" target="_self" rel="noopener">hypothesis-testing-two-population</a>
+<br><a data-tooltip-position="top" aria-label="Math/probability-statistics/chi-square-tests.md" data-href="Math/probability-statistics/chi-square-tests.md" href="https://blog.allenygy.vip/math/probability-statistics/chi-square-tests.html" class="internal-link" target="_self" rel="noopener">chi-square-tests</a>
+<br><a data-tooltip-position="top" aria-label="Math/probability-statistics/confidence-interval.md" data-href="Math/probability-statistics/confidence-interval.md" href="https://blog.allenygy.vip/math/probability-statistics/confidence-interval.html" class="internal-link" target="_self" rel="noopener">confidence-interval</a>
+
+
+
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Network/standardized-networks.md" data-href="Network/standardized-networks.md" href="https://blog.allenygy.vip/network/standardized-networks.html" class="internal-link" target="_self" rel="noopener">standardized-networks</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Network/ustc-l1.md" data-href="Network/ustc-l1.md" href="https://blog.allenygy.vip/network/ustc-l1.html" class="internal-link" target="_self" rel="noopener">ustc-l1</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Network/transport-layer.md" data-href="Network/transport-layer.md" href="https://blog.allenygy.vip/network/transport-layer.html" class="internal-link" target="_self" rel="noopener">transport-layer</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Network/network-layer.md" data-href="Network/network-layer.md" href="https://blog.allenygy.vip/network/network-layer.html" class="internal-link" target="_self" rel="noopener">network-layer</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Network/physical-layer.md" data-href="Network/physical-layer.md" href="https://blog.allenygy.vip/network/physical-layer.html" class="internal-link" target="_self" rel="noopener">physical-layer</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Network/data-communication-network.md" data-href="Network/data-communication-network.md" href="https://blog.allenygy.vip/network/data-communication-network.html" class="internal-link" target="_self" rel="noopener">data-communication-network</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Network/data-link-layer.md" data-href="Network/data-link-layer.md" href="https://blog.allenygy.vip/network/data-link-layer.html" class="internal-link" target="_self" rel="noopener">data-link-layer</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Network/dcn-review.md" data-href="Network/dcn-review.md" href="https://blog.allenygy.vip/network/dcn-review.html" class="internal-link" target="_self" rel="noopener">dcn-review</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Network/basic-concepts.md" data-href="Network/basic-concepts.md" href="https://blog.allenygy.vip/network/basic-concepts.html" class="internal-link" target="_self" rel="noopener">basic-concepts</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Network/application-layer.md" data-href="Network/application-layer.md" href="https://blog.allenygy.vip/network/application-layer.html" class="internal-link" target="_self" rel="noopener">application-layer</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Network/assignment/dcn-assignment1.md" data-href="Network/assignment/dcn-assignment1.md" href="https://blog.allenygy.vip/network/assignment/dcn-assignment1.html" class="internal-link" target="_self" rel="noopener">dcn-assignment1</a>
+
+
+
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Program/programlanguage.md" data-href="Program/programlanguage.md" href="https://blog.allenygy.vip/program/programlanguage.html" class="internal-link" target="_self" rel="noopener">programlanguage</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Program/regular-expression.md" data-href="Program/regular-expression.md" href="https://blog.allenygy.vip/program/regular-expression.html" class="internal-link" target="_self" rel="noopener">regular-expression</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Program/c/macro.md" data-href="Program/c/macro.md" href="https://blog.allenygy.vip/program/c/macro.html" class="internal-link" target="_self" rel="noopener">macro</a>
+<br><a data-tooltip-position="top" aria-label="Program/c/pointers.md" data-href="Program/c/pointers.md" href="https://blog.allenygy.vip/program/c/pointers.html" class="internal-link" target="_self" rel="noopener">pointers</a>
+<br><a data-tooltip-position="top" aria-label="Program/c/multithreads.md" data-href="Program/c/multithreads.md" href="https://blog.allenygy.vip/program/c/multithreads.html" class="internal-link" target="_self" rel="noopener">multithreads</a>
+<br><a data-tooltip-position="top" aria-label="Program/c/fileoperation.md" data-href="Program/c/fileoperation.md" href="https://blog.allenygy.vip/program/c/fileoperation.html" class="internal-link" target="_self" rel="noopener">fileoperation</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Program/cpp/iota.md" data-href="Program/cpp/iota.md" href="https://blog.allenygy.vip/program/cpp/iota.html" class="internal-link" target="_self" rel="noopener">iota</a>
+<br><a data-tooltip-position="top" aria-label="Program/cpp/priority-queue.md" data-href="Program/cpp/priority-queue.md" href="https://blog.allenygy.vip/program/cpp/priority-queue.html" class="internal-link" target="_self" rel="noopener">priority-queue</a>
+<br><a data-tooltip-position="top" aria-label="Program/cpp/vector.md" data-href="Program/cpp/vector.md" href="https://blog.allenygy.vip/program/cpp/vector.html" class="internal-link" target="_self" rel="noopener">vector</a>
+<br><a data-tooltip-position="top" aria-label="Program/cpp/algorithm-library.md" data-href="Program/cpp/algorithm-library.md" href="https://blog.allenygy.vip/program/cpp/algorithm-library.html" class="internal-link" target="_self" rel="noopener">algorithm-library</a>
+<br><a data-tooltip-position="top" aria-label="Program/cpp/map.md" data-href="Program/cpp/map.md" href="https://blog.allenygy.vip/program/cpp/map.html" class="internal-link" target="_self" rel="noopener">map</a>
+
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Program/java/lecture/java-introduction.md" data-href="Program/java/lecture/java-introduction.md" href="https://blog.allenygy.vip/program/java/lecture/java-introduction.html" class="internal-link" target="_self" rel="noopener">java-introduction</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Program/java/lecture/java-programming-essentials.md" data-href="Program/java/lecture/java-programming-essentials.md" href="https://blog.allenygy.vip/program/java/lecture/java-programming-essentials.html" class="internal-link" target="_self" rel="noopener">java-programming-essentials</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Program/java/lecture/unified-modeling-language.md" data-href="Program/java/lecture/unified-modeling-language.md" href="https://blog.allenygy.vip/program/java/lecture/unified-modeling-language.html" class="internal-link" target="_self" rel="noopener">unified-modeling-language</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Program/java/lecture/exception-handling.md" data-href="Program/java/lecture/exception-handling.md" href="https://blog.allenygy.vip/program/java/lecture/exception-handling.html" class="internal-link" target="_self" rel="noopener">exception-handling</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Program/java/lecture/inheritance.md" data-href="Program/java/lecture/inheritance.md" href="https://blog.allenygy.vip/program/java/lecture/inheritance.html" class="internal-link" target="_self" rel="noopener">inheritance</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Program/java/lecture/array-and-generics.md" data-href="Program/java/lecture/array-and-generics.md" href="https://blog.allenygy.vip/program/java/lecture/array-and-generics.html" class="internal-link" target="_self" rel="noopener">array-and-generics</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Program/java/lecture/creating-java-classes.md" data-href="Program/java/lecture/creating-java-classes.md" href="https://blog.allenygy.vip/program/java/lecture/creating-java-classes.html" class="internal-link" target="_self" rel="noopener">creating-java-classes</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Program/java/lecture/abstract-methods-and-classes-interfaces.md" data-href="Program/java/lecture/abstract-methods-and-classes-interfaces.md" href="https://blog.allenygy.vip/program/java/lecture/abstract-methods-and-classes-interfaces.html" class="internal-link" target="_self" rel="noopener">abstract-methods-and-classes-interfaces</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/java-introduction.md" data-href="Program/java/lecture/java-introduction.md" href="https://blog.allenygy.vip/program/java/lecture/java-introduction.html" class="internal-link" target="_self" rel="noopener">java-introduction</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/java-programming-essentials.md" data-href="Program/java/lecture/java-programming-essentials.md" href="https://blog.allenygy.vip/program/java/lecture/java-programming-essentials.html" class="internal-link" target="_self" rel="noopener">java-programming-essentials</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/unified-modeling-language.md" data-href="Program/java/lecture/unified-modeling-language.md" href="https://blog.allenygy.vip/program/java/lecture/unified-modeling-language.html" class="internal-link" target="_self" rel="noopener">unified-modeling-language</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/exception-handling.md" data-href="Program/java/lecture/exception-handling.md" href="https://blog.allenygy.vip/program/java/lecture/exception-handling.html" class="internal-link" target="_self" rel="noopener">exception-handling</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/inheritance.md" data-href="Program/java/lecture/inheritance.md" href="https://blog.allenygy.vip/program/java/lecture/inheritance.html" class="internal-link" target="_self" rel="noopener">inheritance</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/array-and-generics.md" data-href="Program/java/lecture/array-and-generics.md" href="https://blog.allenygy.vip/program/java/lecture/array-and-generics.html" class="internal-link" target="_self" rel="noopener">array-and-generics</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/creating-java-classes.md" data-href="Program/java/lecture/creating-java-classes.md" href="https://blog.allenygy.vip/program/java/lecture/creating-java-classes.html" class="internal-link" target="_self" rel="noopener">creating-java-classes</a>
+<br><a data-tooltip-position="top" aria-label="Program/java/lecture/abstract-methods-and-classes-interfaces.md" data-href="Program/java/lecture/abstract-methods-and-classes-interfaces.md" href="https://blog.allenygy.vip/program/java/lecture/abstract-methods-and-classes-interfaces.html" class="internal-link" target="_self" rel="noopener">abstract-methods-and-classes-interfaces</a>
+
+
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Program/javascript/quick-start.md" data-href="Program/javascript/quick-start.md" href="https://blog.allenygy.vip/program/javascript/quick-start.html" class="internal-link" target="_self" rel="noopener">quick-start</a>
+
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Program/projects/chatapplication/chat-application.md" data-href="Program/projects/chatapplication/chat-application.md" href="https://blog.allenygy.vip/program/projects/chatapplication/chat-application.html" class="internal-link" target="_self" rel="noopener">chat-application</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Program/projects/chatapplication/chat-application.md" data-href="Program/projects/chatapplication/chat-application.md" href="https://blog.allenygy.vip/program/projects/chatapplication/chat-application.html" class="internal-link" target="_self" rel="noopener">chat-application</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Program/projects/courierstationinformationmanagementsystem/database-management-system.md" data-href="Program/projects/courierstationinformationmanagementsystem/database-management-system.md" href="https://blog.allenygy.vip/program/projects/courierstationinformationmanagementsystem/database-management-system.html" class="internal-link" target="_self" rel="noopener">database-management-system</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Program/projects/moviedataanalysis/bilibilivista.md" data-href="Program/projects/moviedataanalysis/bilibilivista.md" href="https://blog.allenygy.vip/program/projects/moviedataanalysis/bilibilivista.html" class="internal-link" target="_self" rel="noopener">bilibilivista</a>
+<br><a data-tooltip-position="top" aria-label="Program/projects/moviedataanalysis/moviedataanalysis.md" data-href="Program/projects/moviedataanalysis/moviedataanalysis.md" href="https://blog.allenygy.vip/program/projects/moviedataanalysis/moviedataanalysis.html" class="internal-link" target="_self" rel="noopener">moviedataanalysis</a>
+<br><a data-tooltip-position="top" aria-label="Program/projects/moviedataanalysis/data-programming-workshop.md" data-href="Program/projects/moviedataanalysis/data-programming-workshop.md" href="https://blog.allenygy.vip/program/projects/moviedataanalysis/data-programming-workshop.html" class="internal-link" target="_self" rel="noopener">data-programming-workshop</a>
+<br><a data-tooltip-position="top" aria-label="Program/projects/moviedataanalysis/system-design-specification.md" data-href="Program/projects/moviedataanalysis/system-design-specification.md" href="https://blog.allenygy.vip/program/projects/moviedataanalysis/system-design-specification.html" class="internal-link" target="_self" rel="noopener">system-design-specification</a>
+
+
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Program/python/regularexpression.md" data-href="Program/python/regularexpression.md" href="https://blog.allenygy.vip/program/python/regularexpression.html" class="internal-link" target="_self" rel="noopener">regularexpression</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/pythonbasic.md" data-href="Program/python/pythonbasic.md" href="https://blog.allenygy.vip/program/python/pythonbasic.html" class="internal-link" target="_self" rel="noopener">pythonbasic</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/python-exceptions.md" data-href="Program/python/python-exceptions.md" href="https://blog.allenygy.vip/program/python/python-exceptions.html" class="internal-link" target="_self" rel="noopener">python-exceptions</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/pandas.md" data-href="Program/python/pandas.md" href="https://blog.allenygy.vip/program/python/pandas.html" class="internal-link" target="_self" rel="noopener">pandas</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/python-environment-management.md" data-href="Program/python/python-environment-management.md" href="https://blog.allenygy.vip/program/python/python-environment-management.html" class="internal-link" target="_self" rel="noopener">python-environment-management</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/matplotlib.md" data-href="Program/python/matplotlib.md" href="https://blog.allenygy.vip/program/python/matplotlib.html" class="internal-link" target="_self" rel="noopener">matplotlib</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/numpy.md" data-href="Program/python/numpy.md" href="https://blog.allenygy.vip/program/python/numpy.html" class="internal-link" target="_self" rel="noopener">numpy</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/beautifulsoup.md" data-href="Program/python/beautifulsoup.md" href="https://blog.allenygy.vip/program/python/beautifulsoup.html" class="internal-link" target="_self" rel="noopener">beautifulsoup</a>
+<br><a data-tooltip-position="top" aria-label="Program/python/datetime.md" data-href="Program/python/datetime.md" href="https://blog.allenygy.vip/program/python/datetime.html" class="internal-link" target="_self" rel="noopener">datetime</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Program/r/r-data-structure.md" data-href="Program/r/r-data-structure.md" href="https://blog.allenygy.vip/program/r/r-data-structure.html" class="internal-link" target="_self" rel="noopener">r-data-structure</a>
+<br><a data-tooltip-position="top" aria-label="Program/r/basic-r.md" data-href="Program/r/basic-r.md" href="https://blog.allenygy.vip/program/r/basic-r.html" class="internal-link" target="_self" rel="noopener">basic-r</a>
+
+
+
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Research/calculatese.md" data-href="Research/calculatese.md" href="https://blog.allenygy.vip/research/calculatese.html" class="internal-link" target="_self" rel="noopener">calculatese</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Research/alphafold2.md" data-href="Research/alphafold2.md" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">alphafold2</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="Research/bert.md" data-href="Research/bert.md" href="https://blog.allenygy.vip/research/bert.html" class="internal-link" target="_self" rel="noopener">bert</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Research/ploidy/ploidy.md" data-href="Research/ploidy/ploidy.md" href="https://blog.allenygy.vip/research/ploidy/ploidy.html" class="internal-link" target="_self" rel="noopener">ploidy</a>
+<br><a data-tooltip-position="top" aria-label="Research/ploidy/ploidy-review.md" data-href="Research/ploidy/ploidy-review.md" href="https://blog.allenygy.vip/research/ploidy/ploidy-review.html" class="internal-link" target="_self" rel="noopener">ploidy-review</a>
+
+
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Share/manacher.md" data-href="Share/manacher.md" href="https://blog.allenygy.vip/share/manacher.html" class="internal-link" target="_self" rel="noopener">manacher</a>
+
+
+<br>
+
+
+<br>
+<a data-tooltip-position="top" aria-label="Tools/tools.md" data-href="Tools/tools.md" href="https://blog.allenygy.vip/tools/tools.html" class="internal-link" target="_self" rel="noopener">tools</a>
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Tools/conda/conda.md" data-href="Tools/conda/conda.md" href="https://blog.allenygy.vip/tools/conda/conda.html" class="internal-link" target="_self" rel="noopener">conda</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Tools/docker/docker.md" data-href="Tools/docker/docker.md" href="https://blog.allenygy.vip/tools/docker/docker.html" class="internal-link" target="_self" rel="noopener">docker</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Tools/git/git-introduction.md" data-href="Tools/git/git-introduction.md" href="https://blog.allenygy.vip/tools/git/git-introduction.html" class="internal-link" target="_self" rel="noopener">git-introduction</a>
+<br><a data-tooltip-position="top" aria-label="Tools/git/git-remote-repository.md" data-href="Tools/git/git-remote-repository.md" href="https://blog.allenygy.vip/tools/git/git-remote-repository.html" class="internal-link" target="_self" rel="noopener">git-remote-repository</a>
+<br><a data-tooltip-position="top" aria-label="Tools/git/git-workflow-model.md" data-href="Tools/git/git-workflow-model.md" href="https://blog.allenygy.vip/tools/git/git-workflow-model.html" class="internal-link" target="_self" rel="noopener">git-workflow-model</a>
+<br><a data-tooltip-position="top" aria-label="Tools/git/git-for-beginners.md" data-href="Tools/git/git-for-beginners.md" href="https://blog.allenygy.vip/tools/git/git-for-beginners.html" class="internal-link" target="_self" rel="noopener">git-for-beginners</a>
+
+
+<br>
+
+
+<br><a data-tooltip-position="top" aria-label="Tools/shell/shell.md" data-href="Tools/shell/shell.md" href="https://blog.allenygy.vip/tools/shell/shell.html" class="internal-link" target="_self" rel="noopener">shell</a>
+
+
+
+
+]]></description><link>https://blog.allenygy.vip/class.html</link><guid isPermaLink="false">Class.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:23:05 GMT</pubDate></item><item><title><![CDATA[<a data-href="Union-Find" href="algorithm/daa/algorithm/union-find.html" class="internal-link" target="_self" rel="noopener">Union-Find</a><sup data-footnote-id="fnref-1-b276bf7fd5740272" class="footnote-ref" id="fnref-1-b276bf7fd5740272"><a data-footref="[inline0" href="#fn-1-b276bf7fd5740272" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
  <br><br>
 <br>用于解决元素分组问题
 <br>联通问题
