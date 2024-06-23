@@ -1,6 +1,6 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 23 Jun 2024 15:08:48 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 23 Jun 2024 15:08:46 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-tooltip-position="top" aria-label="database-management/DataBase-Management-System" data-href="database-management/DataBase-Management-System" href="database-management/database-management-system.html" class="internal-link" target="_self" rel="noopener">Database Management</a>]]></title><description><![CDATA[ 
- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/database-management/database-management-system.html</link><guid isPermaLink="false">database-management/database-management-system.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 15:07:32 GMT</pubDate></item><item><title><![CDATA[Home]]></title><description><![CDATA[ 
- <br><br><br><br><br><br><br>12345678910111213141516171819202122232425262728293031AprMayJunlessmore<br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/home.html</link><guid isPermaLink="false">home.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 15:08:18 GMT</pubDate></item><item><title><![CDATA[<a data-href="SparceTable" href="algorithm/basicalgorithm/sparcetable.html" class="internal-link" target="_self" rel="noopener">SparceTable</a>]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><parsererror xmlns="http://www.w3.org/1999/xhtml" style="display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black"><h3>This page contains the following errors:</h3><div style="font-family:monospace;font-size:12px">error on line 6981 at column 425: Input is not proper UTF-8, indicate encoding !
+Bytes: 0x01 0x74 0x6F 0x20
+</div><h3>Below is a rendering of the page up to the first error.</h3></parsererror><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 23 Jun 2024 15:32:22 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 23 Jun 2024 15:30:50 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="SparceTable" href="algorithm/basicalgorithm/sparcetable.html" class="internal-link" target="_self" rel="noopener">SparceTable</a>]]></title><description><![CDATA[ 
  <br>]]></description><link>https://blog.allenygy.vip/algorithm/basicalgorithm/sparcetable.html</link><guid isPermaLink="false">algorithm/basicalgorithm/sparcetable.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate></item><item><title><![CDATA[<strong>SlidingWindow</strong>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
  <br><br><a href="https://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a> <br>
 <br>枚举右端点，挪动左端点
@@ -52,7 +52,7 @@ Copy]]></description><link>https://blog.allenygy.vip/algorithm/basicalgorithm/di
 <br><a data-tooltip-position="top" aria-label="Discretization" data-href="Discretization" href="https://blog.allenygy.vip/algorithm/basicalgorithm/discretization.html" class="internal-link" target="_self" rel="noopener">离散化</a>
 <br><a data-href="BinarySearch" href="https://blog.allenygy.vip/BinarySearch" class="internal-link" target="_self" rel="noopener">BinarySearch</a>
 <br><a data-tooltip-position="top" aria-label="SlidingWindow" data-href="SlidingWindow" href="https://blog.allenygy.vip/algorithm/basicalgorithm/slidingwindow.html" class="internal-link" target="_self" rel="noopener">双指针</a>
-]]></description><link>https://blog.allenygy.vip/algorithm/basicalgorithm/basic-algorithm-overview.html</link><guid isPermaLink="false">algorithm/basicalgorithm/basic-algorithm-overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate></item><item><title><![CDATA[<a data-href="Union-Find" href="algorithm/daa/algorithm/union-find.html" class="internal-link" target="_self" rel="noopener">Union-Find</a><sup data-footnote-id="fnref-1-ef8170e8869b9767" class="footnote-ref" id="fnref-1-ef8170e8869b9767"><a data-footref="[inline0" href="#fn-1-ef8170e8869b9767" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
+]]></description><link>https://blog.allenygy.vip/algorithm/basicalgorithm/basic-algorithm-overview.html</link><guid isPermaLink="false">algorithm/basicalgorithm/basic-algorithm-overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate></item><item><title><![CDATA[<a data-href="Union-Find" href="algorithm/daa/algorithm/union-find.html" class="internal-link" target="_self" rel="noopener">Union-Find</a><sup data-footnote-id="fnref-1-ad3d60ef5b3a5f3f" class="footnote-ref" id="fnref-1-ad3d60ef5b3a5f3f"><a data-footref="[inline0" href="#fn-1-ad3d60ef5b3a5f3f" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
  <br><br>
 <br>用于解决元素分组问题
 <br>联通问题
@@ -408,7 +408,7 @@ return result;
 
 Copy<br>
 <br>
-<br>并查集<a href="https://blog.allenygy.vip/#fnref-1-ef8170e8869b9767" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>并查集<a href="https://blog.allenygy.vip/#fnref-1-ad3d60ef5b3a5f3f" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/algorithm/daa/algorithm/union-find.html</link><guid isPermaLink="false">algorithm/daa/algorithm/union-find.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate></item><item><title><![CDATA[Sort Algorithm]]></title><description><![CDATA[ 
  <br><br>
 <br>Bubble Sort
@@ -3282,970 +3282,7 @@ Copy<br><br><br>回文子串
 双回文子串就是可以分成两个回文串的字符串<br>
 比如"aabb"，可以分成"aa"、"bb"
 <br>]]></description><link>https://blog.allenygy.vip/algorithm/string/manacher-algorithm.html</link><guid isPermaLink="false">algorithm/string/manacher-algorithm.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Algorithm/STRING/Manacher-7.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Algorithm/STRING/Manacher-7.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Aho-Corasick" data-href="Aho-Corasick" href="algorithm/string/aho-corasick.html" class="internal-link" target="_self" rel="noopener">AC自动机</a>]]></title><description><![CDATA[ 
- <br>]]></description><link>https://blog.allenygy.vip/algorithm/string/aho-corasick.html</link><guid isPermaLink="false">algorithm/string/aho-corasick.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-2" href="database-management/assignment/dbm-assignment-2.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-2</a>]]></title><description><![CDATA[ 
- <br><br><br><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br>CREATE TABLE person (
-    p_id INT PRIMARY KEY,
-    name VARCHAR(255),
-    gender VARCHAR(10)
-);
-Copy<br>CREATE TABLE employ (
-    p_id INT PRIMARY KEY,
-    position VARCHAR(100),
-    salary DECIMAL(10, 2),
-    FOREIGN KEY (p_id) REFERENCES person(p_id)
-);
-Copy<br>CREATE TABLE customer (
-    p_id INT PRIMARY KEY,
-    class VARCHAR(50),
-    phone VARCHAR(20),
-    FOREIGN KEY (p_id) REFERENCES person(p_id)
-);
-Copy<br>CREATE TABLE purchase (
-    b_id INT PRIMARY KEY,
-    date DATE,
-    p_id INT,
-    FOREIGN KEY (p_id) REFERENCES person(p_id)
-);
-Copy<br>CREATE TABLE use(
-  id INT PRIMARY KEY,
-  b_id INT PRIMARY KEY,
-)
-Copy<br>CREATE TABLE coupon(
-  id INT PRIMARY KEY,
-  disconut DECIMAL(10,2),
-  p_id INT,
-  t_id INT,
-  FOREIGN KEY (p_id) REFERENCES person(p_id)
-  FOREIGN KEY (t_id) REFERENCES product_type(t_id)
-)
-Copy<br>CREATE TABLE product_type(
-  t_id INT PRIMARY KEY,
-  manufacturer VARCHAR(50),
-  type VARCHAR(20),
-  price DECIMAL(10,2),
-)
-Copy<br>CREATE TABLE contain(
-  b_id INT PRIMARY KEY,
-  i_id INT,
-  FOREIGN KEY (b_id) REFERENCES purchase(b_id),
-  FOREIGN KEY (i_id) REFERENCES product(i_id)
-)
-Copy<br>CREATE TABLE product(
-  i_id INT PRIMARY KEY,
-  t_id INT PRIMARY KEY,
-  exp_date date,
-  man_date date,
-  FOREIGN KEY (t_id) REFERENCES product_type(t_id)
-)
-Copy<br><br>The issue with the given ER model is that it lacks a direct relationship between the coupon and the products it can be applied to. This absence of a direct link creates a challenge in enforcing the constraint that a purchase using a coupon must include at least one product instance that corresponds to the type eligible for that coupon.<br>
-<br>
-Add a table/entity to represent coupon-product type associations:<br>
-Create a table like coupon_product_type with columns such as coupon_id and product_type_id to denote which product types a coupon can be applied to.
-
-<br>
-Modify the purchase entity to include coupon usage and enforce the constraint:<br>
-Within the purchase entity, introduce a column coupon_used to denote whether a coupon was used in a purchase. Then, use a constraint or validation rule to ensure that if coupon_used is true, there must be at least one corresponding product instance in the purchase that matches the product type eligible for the coupon.
-
-<br><br>
-<br>Find the number of courses taught by Goliath (instructor’s name) over the years.
-<br>SELECT COUNT(DISTINCT cID) AS num_courses_taught
-FROM teach
-WHERE iID = 'Goliath';
-Copy<br>
-<br>Find the number of courses taught by each instructor in the semester 23F.
-<br>SELECT COUNT(DISTINCT cID) As num_courses_taught_each_instructor
-FROM instructor
-JOIN teach USING(iID)
-GROUP BY (i.name)
-WHERE teach.semester='23F'
-Copy<br>
-<br>Find the semester in which Goliath teaches more courses than other semesters.
-<br>SELECT teach.semester, COUNT(teach.cID) AS num_courses
-FROM teach JOIN instrtuctor USING(iID)
-WHERE instructor.iname='Goliath'
-GROUP BY teach.semester
-ORDER BY num_courses DESC
-LIMIT 1;
-Copy<br>
-<br>Insert a new student of ID: 123456, name: ‘Tomas’, gender: Male, GPA: unknown, major: ACCT, and phone number: 32165498701.
-<br>INSERT INTO student VALUES 
-(123456, 3, 'Tomas','Male',NULL,'ACCT', 32165498701);
-Copy<br>
-<br>Student ‘Dennis’ quit from the college. Please remove his information from the database.
-<br>DELETE FROM student
-WHERE sname='Dennis'
-Copy]]></description><link>https://blog.allenygy.vip/database-management/assignment/dbm-assignment-2.html</link><guid isPermaLink="false">database-management/assignment/dbm-assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-3" href="database-management/assignment/dbm-assignment-3.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-3</a>]]></title><description><![CDATA[ 
- <br><br><br>a) Find the students who have more enrollments than other students. Display your answer by sID and sname.<br>SELECT  sID, sname
-FROM student JOIN enroll USING (sID)
-GROUP BY cID
-ORDER BY COUNT(DISTINCT cID) DESC
-LIMIT 1;
-Copy<br>b) Find the students who have enrolled all courses. Display your answer by sID and sname.<br>SELECT sID, sname
-FROM student
-WHERE sID IN ( SELECT sID
-FROM enroll
-GROUP BY enroll.sID
-HAVING COUNT(DISTINCT enroll.cID) 
-= (SELECT COUNT(DISTINCT cID) 
-FROM course );
-
-Copy<br>c) Find the students who have taken all courses instructed by Goliath (instructor’s name and assuming that there is no other instructor who is called Goliath). Display your answer by sID and sname.<br>SELECT s.sID, s.sname
-FROM student s
-JOIN course c ON 1=1
-LEFT JOIN enroll e ON s.sID = e.sID AND c.cID = e.cID
-WHERE NOT EXISTS (
-    SELECT *
-    FROM teach t
-    JOIN instructor i ON t.iID = i.iID
-    WHERE i.iname = 'Goliath' AND t.cID = c.cID
-        AND NOT EXISTS (
-            SELECT *
-            FROM enroll e2
-            WHERE e2.sID = s.sID AND e2.cID = t.cID
-        )
-)
-GROUP BY s.sID, s.sname
-HAVING COUNT(DISTINCT c.cID) = COUNT(DISTINCT e.cID)
-Copy<br>d) Implement a constraint to guarantee that the position of an instructor is one of “lecturer”, “assistant professor”, “associated professor”, and “professor”.<br>ALTER TABLE instructor
-ADD CONSTRAINT position_domain
-CHECK (position IN 
-("lecturer", "assistant professor", "associated professor","professor"));
-
-Copy<br>e) Implement a constraint to guarantee that “no student is enrolled to a course which is not taught by any instructor”.<br>ALTER TABLE student
-ADD CONSTRAINT teach_course
-FOREIGN KEY (cID) REFERENCES course(cID)
-ADD CONSTRIANT teach_instructor
-FOREIGN KEY (iID) REFERENCES course(iID)
-  ON DELETE CASCADE
-  ON UPDATE CASCADE;
-DELIMITER |
-  CREATE TRIGGER guarantee_student
-  AFTER INSERT ON student
-  FOR EACH ROW
-  BEGIN
-    IF new.id NOT IN (
-      SELECT iID FROM instructor) 
-THEN 
-    DELETE FROM student WHERE student.sID = new.sID;
-  END IF;
-END;|
-DELIMITER ;
-
-Copy<br><br>Please prove the three rules union, decomposition, pseudotransitivity (Lecture 9 Page 14) using Armstrong’s Axioms (Page 11). (12 pt)<br>
-<br>For union:<br>
-If  then 
-<br>
-<br>
-<br> According to augmentation
-<br>
-<br>
-<br>
-<br> According to transitivity
-<br>
-<br>
-<br>For augmentation:<br>
-if , then  and 
-<br>
-<br>
-<br>  according to reflexivity
-<br> according to reflexivity
-<br> according to transitivity
-<br>
-<br>For pseudotransitivity<br>
-if  and  then 
-<br>
-<br>
-<br> according to augmentation
-<br> according to transitivity
-<br>
-<br><br>a. Find all condidate keys<br>L: A<br>
-R: BCH<br>
-LR:DEFG<br>
-N:<br><br>
-<br>
-<br>
-<br>
-<br>There is only one candidate key AF<br>b. Decompose the schema in BCNF<br>Remove redundant functional dependencies and extraneous Attributes<br><br>Iteration 1:  violates BCNF<br>
-Decomposition R into<br><br>
-<br>
-<br>
-<br> and  satisfy BCNF<br>c. The decomposition in b) is dependency preserving.<br><br>
-<br><br>
- it is dependency-preserving<br>d. What is the canonical cover of the functional dependencies?<br><br>e. There are no redundant dependencies or extraneous attributes in any one of the dependencies.<br><br>
-<br>
-<br>It has been satisfy BCNF, so it's also 3NF.]]></description><link>https://blog.allenygy.vip/database-management/assignment/dbm-assignment-3.html</link><guid isPermaLink="false">database-management/assignment/dbm-assignment-3.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-1" href="database-management/assignment/dbm-assignment-1.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-1</a>]]></title><description><![CDATA[ 
- <br><br><br>
-<br>Atomicity of updates<br>
-For example, it can ensure that fund transfers between accounts are either successfully completed or not executed at all. In database systems, this guarantee can prevent situations where funds are deducted for some reason but not added to another account, thereby avoiding data inconsistency and financial losses. File systems lack such guarantees, making inconsistencies more likely in such transactions.
-<br>Concurrent access by multiple users<br>
-For example, database systems enable multiple students to enroll in courses simultaneously, enhancing system performance. However, without proper management, uncontrolled concurrent access may lead to issues like overbooking courses, causing frustration among students.
-<br>Security problems<br>
-For example, in a healthcare database, it's vital to control access to patient records. Database systems offer fine-grained access control, allowing restrictions based on roles. For instance, doctors and nurses can access medical records, but administrative staff cannot. Achieving this control is challenging in a file system, posing security risks.
-<br><br>
-<br>Conceptual Design
-<br>Logical Design
-<br>Optimization
-<br>Physical Design
-<br><br>
-<br>A schema in the context of databases is a structured blueprint that defines how data is organized, relationships are managed, and constraints are applied within a database system.
-<br><br>
-<br>The set of special attribute(s) is called key.
-<br>Formally, a key of an entity set is a set of attributes that can uniquely identify the entities.
-<br><br><br><br><br><img alt="DB-Supermarket" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DB-Supermarket.png" referrerpolicy="no-referrer"><br><br>1.Find the major number of the student Eva:<br>SELECT major
-FROM student
-WHERE sname='Eva';
-Copy<br>2.Find the name of the professors (instructors’ position) who are from the Computer Science department:<br>SELECT iname 
-FROM instructor
-WHERE department='Computer Science';
-Copy<br>3.Find the name of the professors (instructors’ position) who are from the Computer Science department:<br>SELECT cname
-FROM course
-WHERE credit=1;
-Copy<br>4.Find the name of the students who have received an A in a course in semester 2023 Spring:<br>SELECT sname 
-FROM student, enroll
-WHERE enroll.grade = 'A'
-AND enroll.semester = '2023 Spring'
-AND student.sID = enroll.sID;
-Copy<br>5.Find the name of the courses which are instructed by Dave (instructor’s name):<br>SELECT cname
-FROM course,instructor,teach
-WHERE instructor.iname = 'Dave'
-AND instructor.iID = teach.iID
-AND teach.cID = course.cID;
-Copy<br>6.Find the name of the instructors who have taught Frank (student’s name) in semester 2022 Fall:<br>SELECT iname
-FROM instructor,student,teach,enroll
-WHERE student.sname = 'Frank'
-AND student.sID = enroll.sID
-AND enroll.cID = teach.cID 
-AND teach.semester = '2022 Fall'
-AND teach.iID = instructor.iID
-Copy]]></description><link>https://blog.allenygy.vip/database-management/assignment/dbm-assignment-1.html</link><guid isPermaLink="false">database-management/assignment/dbm-assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DB-Supermarket.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DB-Supermarket.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Discrete-mathematics-Tutorial" href="math/discrete-structure/assignment/discrete-mathematics-tutorial.html" class="internal-link" target="_self" rel="noopener">Discrete-mathematics-Tutorial</a>]]></title><description><![CDATA[ 
- <br><br><br>Assume is an integer. Prove that if  is odd, then n is odd.<br><br><br><br><br>
-&nbsp;&nbsp;&nbsp;<br>
-&nbsp;&nbsp;&nbsp;<br><br>Prove that  is a tautology.<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br><br>]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-tutorial.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-tutorial.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="Discrete-mathematics-Assignment-8" href="math/discrete-structure/assignment/discrete-mathematics-assignment-8.html" class="internal-link" target="_self" rel="noopener">Discrete-mathematics-Assignment-8</a>]]></title><description><![CDATA[ 
- <br><br><br>This graph is directed. Because the adjacency matrix is not symmetric<br><img alt="Q1" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Question1.png" referrerpolicy="no-referrer"><br><br><br><br> <br>
- The two graphs are isomorphic.<br><br>
-<br>Base Case (n = 1):<br>
-For a cube of dimension n = 1, we have 2 vertices connected by an edge. We can easily divide these two vertices into two separate sets, forming a bipartite graph.<br>
-For a cube of dimension n = 2, we have 4 vertices connected by an edge. We can easily divide these two vertices into two separate sets like  forming a bipartite graph. 
-<br>Inductive Hypothesis:<br>
-Assume that a cube  of dimension k is bipartite, where k ≥ 1.
-<br>Inductive Step:<br>
-Now we need to show that a cube  is also bipartite. Consider a cube , which is obtained by adding one layer of vertices to the cube . Let's call this additional layer "L". Each vertex in layer L is connected to exactly one vertex in the cube . Now, we can divide the vertices of  into two sets, S₁ and S₂.<br>
-Next, we assign each vertex in layer L to the opposite set of its connected vertex in . In other words, if a vertex in L is connected to a vertex in S₁, we assign it to S₂, and vice versa. This assignment ensures that no two vertices within the same set (S₁ or S₂) are adjacent, including the newly added layer L.<br>
-Therefore, we have successfully divided the vertices of  into two sets, S₁ and S₂, such that no two vertices within the same set are adjacent. Hence, by induction, we can conclude that a cube  of dimension n is bipartite for n ≥ 1.
-<br>This completes the proof.
-<br><br>a)<br><img alt="Q4" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Question4.png" referrerpolicy="no-referrer"><br>It's clear that the graph is planar. it can be drawn in the plane without any edges crossing<br>
-b) It has Euler Circuit cause the thorem A connected multi-graph has an Euler circuit if and<br>
-only if each vertex has even degree. The vertex in the graph all has 4 edges. Therefore, it must have Euler Circuit.<br>
-c) It has Hamilton Circuits such that 1-&gt;2-&gt;3 -&gt;4 -&gt;5 -&gt;6-&gt;1<br><br>Consider the following graph G = (V, E), where V = {1, 2, 3, 4} and E = {(1, 2), (2, 3), (3, 4), (4, 1), (1, 3)}.<br>
-This graph satisfies the condition that for any two non-adjacent vertices u and v in G, <br>
-For example, if we take u = 1 and v = 4, then <br>
-However, this graph does not have a Hamilton circuit.<br>
-Therefore, we have shown that the converse of Ore's theorem is false by providing a counterexample.]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-8.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-assignment-8.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Question1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Question1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Discrete-mathematics-Assignment-7" href="math/discrete-structure/assignment/discrete-mathematics-assignment-7.html" class="internal-link" target="_self" rel="noopener">Discrete-mathematics-Assignment-7</a>]]></title><description><![CDATA[ 
- <br><br><br>
-<br>
-Determine whether the following relation R is reflexive, symmetric, antisymmetric, or transitive if (remember to prove your answer)
-
-<br>
-a);
- The following relation R is reflexive, symmetric, anti-symmetric, and transitive<br>
-R is reflexive: False, since there are no ordered pairs in R.<br>
-R is symmetric: True, vacuously. There are no ordered pairs in R to violate symmetry.<br>
-R is antisymmetric: True, vacuously. There are no ordered pairs in R to violate antisymmetry.<br>
-R is transitive: True, vacuously. There are no ordered pairs in R to violate transitivity.<br>
-  is reflexive, symmetric, antisymmetric, and transitive.
-
-<br>
-b) is on $ \mathbb{Z}$;
-The following relation R is symmetric.
-  x may not larger than -x<br>
-  is not reflexive.<br>
-  if  larger than     then y must larger than -x<br>
-  is symmetric.<br>
-  is not antisymmetric.<br>
-      <br>
-  may not larger than <br>
-  may not in R<br>
-  is not transitive.
-
-<br>
-c) is on ;
-The following relation R is reflexive, symmetric and transitive
- <br>
-then  and  <br>
-  then there must have <br>
- R is reflexive.<br>
-  then there must have <br>
- R is Symmetric.  R can't be  antisymmetric.<br>
-  then there must have <br>
- R is transitive.
-
-<br>
-d) is on 
- The following relation R is reflexive, symmetric and transitive
-  x=w and y=z then <br>
- R is reflexive<br>
-And  <br>
- R is symmetric and transitive but not antisymmetric.
-
-<br>
-e)
-The following relation R is reflexive and symmetric
-   A is reflexive<br>
-  A is symmetric  but not antisymmetric.<br>
-   $ A\cap B \ne \emptyset$ <br>
- $ A\cap C$ may  equal to      A is not transitive.
-
-
-
-<br><br>
-<br>
-Let  be two arbitrary relations on an arbitrary set A. Prove or disprove
-a) if  and  are reflexive, then  is reflexive.<br>
-  are reflexive.<br>
-A relation 𝑅 on a set 𝐴 is called reflexive if (𝑎, 𝑎) ∈ 𝑅 for every element 𝑎 ∈ 𝐴.<br>
-    contains  for every element <br>
-  contains  for every element <br>
-  at least contains  for every element <br>
- is reflexive.
- b) if  and  are symmetric, then  is symmetric.<br>
-  are symmetric.<br>
-A relation 𝑅 on a set 𝐴 is called symmetric if (𝑏, 𝑎) ∈ 𝑅 whenever (𝑎, 𝑏) ∈ 𝑅.<br>
- Suppose  =     then there must also has  .<br>
-Otherwise,  or  only has  it can't be symmetric respectively.<br>
- is symmetric.
-c) if  and  are antisymmetric, then  is antisymmetric.<br>
-  are antisymmetric.<br>
-A relation 𝑅 on a set 𝐴 is called anti-symmetric if whenever (𝑎, 𝑏) ∈ 𝑅 and (𝑏, 𝑎) ∈ 𝑅, then 𝑎 = 𝑏<br>
- Suppose  =     then there can not has  .<br>
-Otherwise,  and    both  have  and it can't be antisymmetric respectively.<br>
- is antisymmetric.
-
-<br> d) if  and  are transitive, then  is transitive<br>
-  are transitive.<br>
-A relation 𝑅 on a set 𝐴 is called transitive if whenever  (𝑎, 𝑏) ∈ 𝑅 and (𝑏, 𝑐) ∈ 𝑅, then (𝑎, 𝑐) ∈ 𝑅.<br>
- : <br>
-  <br>
-  =  Obviously, it can't be transitive.<br>
- is not transitive.<br><br>
-<br>
-Determine whether the following relations are equivalence relation. You need to prove your answer. If yes, list all distinct equivalent classes (each subset of the partition defined by the equivalence relation).
-
-<br>a) on ;
-
-if   (x mod 5=x）  R is reflexive<br>
-if   (x mod 5=y)  y mod 5 may not be x<br>
- is not symmetric  is not equivalence relation
-
-<br>b){(x,y)| x and y are two UIC students and from the same faculty/school.} on the set of all UIC students;
-
- For reflexive, the same student must be in the same faculty/school as himself/herself, so R satisfies reflexivity
- For symmetric, if student a and student b are from the same faculty/school, then student b and student a are from the same faculty/school, then (a, b) ∈ R, (b, a) ∈ R, so R satisfies symmetric.
- For transitive, if (a, b) ∈ R, (b, c) ∈ R, then will have (a, c) ∈ R, so R satisfies transitive.  
- ∴ this relation is equivalence relation.
-
-<br>c){| there is a bijection } on  is the powerset of . So, A and B are subsets of .
-
- For reflexive, let A = B, that will have a bijection : A → B, so R satisfies reflexivity<br>
-For symmetric, if : A → B is a bijection, then : B → A is a bijection, it means that if<br>
-(A, B) ∈ R, that will also have (B, A) ∈ R, so R satisfies symmetric<br>
-For transitive, if : A → B is a bijection, : B → C is a bijection, then it will always have<br>
-ℎ: A → C is a bijection, so R satisfies transitive.<br>
-∴ this relation is equivalence relation. equivalent classes are all  that can have bijection relation to every 
-
-]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-7.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-assignment-7.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[Discrete-mathematics-Assignment-3]]></title><description><![CDATA[ 
- <br><br><br>a) <br>
-    Modus tollen<br>
-   De Morgan’s laws<br>
-  Distributive laws<br>
-  Identity Laws<br>
- <br>
-  De Morgan’s laws<br>
-  Domination Laws<br>
-b) <br>
-   Modus ponens<br>
-   Modus tollen<br>
-c) <br>
- <br>
- De Morgan’s laws<br>
- <br>
- <br>
-<br>
-<br>
-<br><br>Step2 is wrong: Step 2 should be Existential instantiation using(1)<br>
-Step6 is wrong: Step 6 can't be Universal generalization<br><br><br><br>    P: a is a multiple of 4<br>
-   Q: 3a+1 is odd<br>
-a)Direct proof:<br>
- : <br>
-     a is a mutiple of 4<br>
-     Suppose: a=4n<br>
-      <br>
-      is an odd<br>
-b)Contradiction:<br>
- : <br>
-      is even ()<br>
-    <br>
-         <br>
-      <br>
-       is odd ()<br>
-    <br>
-c)Contraposition:<br>
- : <br>
-      ()<br>
-     <br>
-     It's clear that  can't be divided by 4 ()<br>
-   <br><br>   If  is even then  is even then the proof is done.<br>
-  If  is odd then   is an odd then  is an even number<br><br>    <br>
-   <br>
-    for n <br>
-<br>
-Basis step: P(1):     <br>
-Induction Hypothesis: Assume P(k-1) is true<br>   <br>
-Inductive Step: <br>
-      <br>
-      <br>
-      <br><br>     <br>
- <br>
-Basis step: P(0):  <br>
-Induction Hypothesis:  Assume P(k) is true <br>
-Inductive Step:  ]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-3.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-assignment-3.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="Discrete-mathematics-Assignment-6" href="math/discrete-structure/assignment/discrete-mathematics-assignment-6.html" class="internal-link" target="_self" rel="noopener">Discrete-mathematics-Assignment-6</a>]]></title><description><![CDATA[ 
- <br><br><br>a) <br>
-b)  <br>
-c) <br>
-<br>
-There are only 3 situations  z=2,1,0<br>
-when  then <br>
-<br>
-when  then <br>
-<br>
-when  then <br>
-<br>
- There are totally 21 ways to pick 10 coins such that the total amount is at most ￥20<br><br>a)  neither an injection nor a surjection<br>
- There are  kinds of function <br>
-b)  is an injection<br>
- kinds of function <br>
-c)  is a surjection<br>
- kinds of function <br>
-d)  is an bijection<br>
- =m!/ (m-n)!    <br>
-                           <br>
-c:  <br>
-d:  if n = m The number of bijections from a set A with n elements to a set B with m elements is <br>
-if n m The number of bijections from a set A with n elements to a set B with m elements is . <br><br> is injection \because |A|&gt;|B| $ If A are placed into B, then there is at least one box containing at least 2 objects.<br>
-$\therefore $ It can't be an injection function<br><br>Suppose the length of the string is n<br>
- is the number of binary strings<br>
-  <br>
- and <br>
-   <br>
-  <br>
- <br><br>Suppose that <br>
-    $ r_2=5\therefore a_n=\alpha_12^n+\alpha_25^na_0=2=\alpha_1+\alpha_2a_1=1=2\alpha_1+5\alpha_2\therefore \alpha_1=3$     <br>
-]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-6.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-assignment-6.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="Discrete-mathematics-Assignment-5" href="math/discrete-structure/assignment/discrete-mathematics-assignment-5.html" class="internal-link" target="_self" rel="noopener">Discrete-mathematics-Assignment-5</a>]]></title><description><![CDATA[ 
- <br><br><br>a)  False e.g.    <br>b)  True <br>​		 <br>​			<br>c)  False<br>​		e.g.  <br>​			     when   <br><br>a)  is a bijection      <br>​							  <br>​								 $\therefore x $ is a function<br>​								 is an injection<br>​							     is a surjection<br>​							 is a bijection<br>b)  is a function      <br>​							  <br>​								 $\therefore x $ is a function<br>​								 is not an injection<br>​							     is not a surjection<br>​							 is not a bijection<br>c)  is a bijection       is a function      <br>​							   <br>​								  $\therefore x $ is a function<br>​								 is an injection<br>​							     is a surjection<br>​							 is a bijection<br>d)f is a injection      <br>​							  <br>​								$(((x_1,y_1) \in f \wedge (x_1,y_2)\in f) $ $\therefore x $ is a function<br>​								 is a injection<br>​							     is not a surjection<br>​							 is not a bijection<br><br>a)      <br>b)      <br>c)      <br>d)      <br><br>a)      <br>b)      <br>c)      <br><br> is a injection <br>          <br>$\because g: C\rightarrow A,h: C\rightarrow A $<br>         <br>:        <br>          <br>  ]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-5.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-assignment-5.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[Discrete-mathematics-Assignment-2]]></title><description><![CDATA[ 
- <br><br><br>a)<br><br><br>
-<br>
-<br>
-<br>
-<br>
-it's clear that  is a contingency.<br>b)<br><br><br>
-<br>
-<br>
-<br>
-<br>c)<br><br><br>
-<br>
-<br>
-<br><br>a) <br>
-b) <br>
-c)     <br>
-<br><br>a) False<br>
-Reason:    any x less than any y<br>
-if  then the predicates must be wrong<br>
-b) False<br>
-Reason:  exits x less than any y<br>
-however if <br>
-y must be less than x, so the predicates must be wrong<br>
-c) True<br>
-Reason: for any x ,there exits y larger than x.<br>
-d) True<br>
-Reason: exits x, y for x &lt; y<br>
-if y=x+1 y must larger than x<br>
-e) True  False<br>
-Reason: exits x for any y less than x<br>
-if x=y+1 x must larger than x<br>
-f) True  False<br>
-Reason:  for any x  exits y so that y less than x<br>
-if y=x-1 y must be less than x<br><br><br><br><br>Prove: <br>
-<br>
-<br>
-<br>
-]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-2.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="DCN-Assignment1" href="network/assignment/dcn-assignment1.html" class="internal-link" target="_self" rel="noopener">DCN-Assignment1</a>]]></title><description><![CDATA[ 
- <br><br>杨钧涯<br>
-s230026188<br><br>What is the OSI model?<br><br> There are 7 layers in the in OSI Model<br>
-<br>Physical Layer
-
-<br>It is concerned with transmitting raw bits over a communication channel.
-
-
-<br>Data Link Layer
-
-<br>It is to transform a raw transmission facility into a line that appears free of undetected transmission errors to the network layer.
-
-
-<br>Network Layer
-
-<br>It controls the operation of the subnet.
-
-
-<br>Transport Layer
-
-<br>It is to accept data from above, split it up into smaller units if need be, pass these to the network layer, and ensure that the pieces all arrive correctly at the other hand.
-
-
-<br>Session Layer
-
-<br>It allows users on different machines to establish sessions between them.
-
-
-<br>Presentation Layer
-
-<br>It is concerned with the syntax and semantics of the information transmitted.
-
-
-<br>Application Layer
-
-<br>It contains a variety of protocols that are commonly needed by users, such as HTTP, Email, etc.
-
-
-<br><br>There are no Session Layer and Presentation Layer in TCP/IP models<br><br>A company’s computer network is the backbone of its business as it connects all its computers and related devices, allowing staff to work more efficiently across the organization. Suppose a commercial company has about 8000 staff. As a computer officer in the company, you are required to design a computer network for that company. Note that network design involves evaluating and understanding how all the elements of the network link together and how they can be made to run as efficiently as possible. Please answer the following questions.<br><br>
-<br>Star topology will be used in this network
-<br><br>
-<br>Central Connection Point (Hub, Switch, or Router)
-<br>Nodes (Computers, Printers, Servers, etc.)
-<br>Cabling
-<br><br>
-<br>Cost: This includes the initial setup expenses as well as ongoing maintenance and operation costs. Effective design balances affordability with performance and scalability requirements.
-<br>Stability: A stable network ensures consistent availability and reliability, minimizing downtime and supporting productivity. This involves choosing dependable hardware and implementing redundancy where necessary.
-<br>Scalability: The network should be able to grow and adapt to increased demands without extensive redesigns. This means planning for future expansions in users, devices, and data volumes.
-<br>Performance: Network performance affects data transmission speed and efficiency. A well-designed network minimizes latency and maximizes throughput to provide a smooth user experience.
-<br>Complexity: While some complexity might be necessary for functionality, a simpler network is generally easier to manage and troubleshoot. The goal is to find the optimal balance that meets the network's objectives without unnecessary complication.
-<br><br><img alt="Star" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Topology/Star.png" referrerpolicy="no-referrer"><br><br>The CRC method is used to transmit a bit-stream of  with the generator polynomial . <br><br><br>
-Frame: <br>
-Message after 3 zero bits are appended: <br>
-Reminder:  <br><br>Show that this error is detected at the receiver’s end.<br><br>
-Receive Frame: <br>
-Receive Data: <br>
-Calculate Reminder: <br>
-<br>
- it can detect the error<br><br><br><img alt="1001 1000" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DCN/AS-1/Manchester.png" referrerpolicy="no-referrer"><br><br><br><br>  the Hamming code for the bit-stream is<br>1010 1010 1010 1010 0<br><br>Error correction, and error-detection, and retransmission can be used to tackle error bits in data communication. State two reasons why some applications use error correction instead of error detection and retransmission.<br>
-<br>For some application that need Real-time or Low latency, Delays in processes such as waiting for retransmissions can degrade the quality of service and the user experience.
-<br>In environments where communication channels are inherently noisy or prone to high error rates (e.g., deep space communications, underwater communications), it may not be practical or efficient to retransmit data every time an error is detected.
-<br><br>The Internet of Things (IoT) is doing great in many fields and services. Numerous IoT applications can ease our commercial operations. Suppose you are a project leader in a software house, and your team is required to write a proposal about IoT innovation. Please suggest what kind of application you would propose and why.<br>Proposal:<br>
-<br>A Smart Waste Management System. This system would leverage IoT technology to optimize waste collection and processing in urban areas.
-<br>Why:<br>
-<br>A Smart Waste Management System utilizing IoT technology offers a holistic solution to urban waste challenges by enhancing environmental sustainability, reducing operational costs through optimized routes and schedules.
-]]></description><link>https://blog.allenygy.vip/network/assignment/dcn-assignment1.html</link><guid isPermaLink="false">network/assignment/dcn-assignment1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Topology/Star.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Topology/Star.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Chat-Application" href="program/projects/chatapplication/chat-application.html" class="internal-link" target="_self" rel="noopener">Chat-Application</a>]]></title><description><![CDATA[ 
- <br><br>A chat application allows users to interact or communicate by texting, audio, and video. It can be useful for social or commercial activities.<br>In this assignment, students are required to write a Chat Program based on Windows Socket Programming C++.<br>
-The program should allow users to chat concurrently on the Internet (i.e., User A can send encrypted messages to User B, and vice versa).<br>
-You can download the sample programs (namely, “server.cpp” and “client.cpp”) from the Web site. The program should consist of the following modules:<br>
-<br>User management: provide functions to add, delete, or group users;
-<br>Group chat: allow users to chat as a group;
-<br>Management of connections: support at least three concurrent connections.
-<br>User Management:  Implemented By Server<br>
-<br>Server: Store the User Information
-<br>Group chat: Group started by Client<br>
-<br>Server Provide all users for Client User to select. 
-<br>Management of connections: Give every User a Threads<br>Content Chinese version
-起初，我们的客户端实现仅采用了单线程方式，消息的接收和发送是交替进行的。这种实现方式存在一个显著的问题：客户端无法同时进行消息的接收和发送操作，而是只能在完成接收后进行发送，反之亦然。这导致了客户端在等待接收或发送消息时会发生阻塞，影响用户体验。
-为了克服这一问题，我们引入了多线程技术。在客户端中，我们分别为消息的接收和发送操作创建了独立的线程，从而实现了这两项操作的并发处理。这一改进使得客户端可以同时进行消息的接收和发送，提高了响应速度和用户体验。
-在服务器端，我们引入了互斥锁（mutex）来确保数据传输的正确性和线程安全性。当多个用户向同一个用户发送消息时，服务器会将这些消息推送到该用户的消息队列中，并在这一过程中使用互斥锁来保证消息的有序和完整传输。这样，服务器能够在多用户环境下稳定、高效地管理消息队列，确保每个用户都能正确收到发送给他们的消息。
-<br><br> I'm going to talk some details  about how we implemented this chat room application.<br><br><img alt="DataStructure" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DCN/Project-DataStructure.png" referrerpolicy="no-referrer"><br>
-<br>Sock: Client socket
-<br>messageQueue: Queue to store messages to be sent
-<br>queueMutex: Mutex to protect the message queue 
-<br>queueCond: Condition variable to notify the send thread
-<br><br><br><img alt="ServerThreads" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DCN/Project/ServerThreads.png" referrerpolicy="no-referrer"><br>
-<br>Initially, our client was single-threaded, handling message receiving and sending alternately. 
-<br>This caused a problem: the client or server couldn't receive and send messages concurrently, leading to blocking and a poor user experience.
-<br>To solve this, we introduced multithreading.<br>
-Separate threads for receiving and sending to improve responsiveness and user experience.<br><br><br><img alt="Send" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DCN/Project/SendMessage.png" referrerpolicy="no-referrer"><br>
-<br>On the server side, we introduced a mutex to ensure data transmission accuracy and thread safety. 
-<br>When multiple users send messages to the same user, the server pushes these messages into the receiver's message queue using a mutex to lock the process. 
-<br>This ensures orderly and complete message transmission.
-<br>These changes enabled the server to efficiently manage message queues in a multi-user environment, ensuring each user correctly receives their messages.<br>]]></description><link>https://blog.allenygy.vip/program/projects/chatapplication/chat-application.html</link><guid isPermaLink="false">program/projects/chatapplication/chat-application.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:19:51 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DCN/Project-DataStructure.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DCN/Project-DataStructure.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://github.com/ALLENYGY/DataBase-Management-System-Project" rel="noopener" class="external-link" href="https://github.com/ALLENYGY/DataBase-Management-System-Project" target="_blank">Courier Station Information Management System</a>]]></title><description><![CDATA[ 
- <br><br><br>
-<br>There is only one courier station in each region.
-<br>The address in this area is the address of the delivery station.
-
-<br>For example, there is a courier station on XiangZhou,ZhuHai,GuangDong then the address of this station will be XiangZhou,ZhuHai,GuangDong. There will be no additional specific address
-
-
-<br>One courier station may have many courier station manager.
-<br><br>Since we have different kinds of users, I will describe user requirements by user.<br><br>
-<br>Pick Parcel: Allows customers to pick a parcel from another customer.
-<br>Send Parcel: Allows customers to send a parcel to another customer.
-<br>Parcel Tracking: Allows customers to view the real-time location and status of their parcel during delivery.
-<br>Personal Information Management: Allow customers to update their personal information,  contact details.
-<br>History: Give customers the ability to view their order history.
-<br>Shipping Options: Choose from different delivery speeds and prices, such as standard, expedited, or timed delivery.
-<br>Service Evaluation: Provide a platform for customers to rate the express service and leave feedback.
-<br><br>
-<br>Status Update: Ability to update the delivery status of a package in the system, such as delivered or delayed.
-<br>Courier Station Information Management: Allow courier station manager to update their personal information, contact details, opening hours.
-<br>History: Allow courier station manager the ability to view information on packages that pass through this Courier station
-<br><br>
-<br>Station status: Ability to check the status of all of the courier station in this system.
-<br>History: Ability to view view all package information.
-<br>Here is a basic feature about the pick and send parcel.<br><img alt="Pick-Send Process" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/process.png" referrerpolicy="no-referrer"><br>CustomerA delivers the package to courier stationA and fills in the address that needs to be delivered, then the manager of courier stationA checks the package and transfers it to courier stationB according to the address, and the manager of courier stationB accepts the package. Finally, CustomerB can pick up the package.<br><br>In the user part, the user uses uID to login, we use the ISA relationship to distinguish the user as customer, delivery manager and administrator, and this ISA relationship is not disjoint, which means that all users registered in the system can be more than one identity.<br><img alt="ER-user" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/user.png" referrerpolicy="no-referrer"><br>
-In the parcel section. Each parcel will be sent and picked up by one customer, each customer can send or pick up more than one parcel at the same time, and each parcel has its responsible delivery manager, and corresponding logistic company.<br><img alt="ER-parcel" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/parcel.png" referrerpolicy="no-referrer"><br>In the courier station section, we can see that each delivery manager belongs to a courier station, and the administrator of the system can control multiple courier stations. Every courier station has a specific location for the logistics company to transport the parcel to the fixed address.<br><img alt="ER-courier_station" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/courier_station.png" referrerpolicy="no-referrer"><br>Finall we can get the ER diagram like this.<br><img alt="E-R" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/E-R.png" referrerpolicy="no-referrer"><br><br>In our user requirement the 3 different kinds of users should be disjoint and total participation.<br>For the Entity part<br>we can get 3 relationship sets about the user according to the method in logical design.<br>
-<br>
-<br>(courier_adminstrator)
-<br>(adminstrator)
-<br>And for each entity we can get one relationship set<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>For the relationship part, we have 8 relationship in our system.<br>
-<br>  
-<br>  
-<br>  
-<br>  
-<br> 
-<br> 
-<br>For above case we could not to create table.<br>
-<br> 
-<br> 
-<br><br>
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br>
-<br><br>After the logical design the schemas in our database have already satisfed 1NF<br>Now let's continue to normalize the schema.<br>For these 3 user tables they have similar attributes<br><br>
-<br>
-<br>We can get the following function dependency.<br><br><br><br> is obviously candicate key it can hold the whole schema.<br>
-While  and  can hold the attribute , respectively.<br>but email and phone are not superkey, therefore it violates BCNF.<br>so we do this decomposition to this schema.<br>Decomposition<br><br>
-<br>
-<br><br>
-<br>
-<br><br>
-<br>
-<br>This obviously satisfies the BCNF.<br>For the Courier station schema it also has email and phone attribute, and there is one more property csaddress<br><br>
-Functional dependency:<br>
-<br>
-<br>
-<br>
-<br>Therefore, we do decomposite just like before<br><br>
-<br>
-<br>
-<br>The next schema is about the parcel.<br><br>We can get the following function dependency like this.<br><br>We can find it only has one functional dependency. And obviously, the parcelID is the condicate key in this schema. So it has been already satisfied BCNF.<br><br>For the rest of the schema we can find it only has 2 attributes. So it must satisfy BCNF.<br><br>
-<br>
-<br><br><br>In this project, foreign keys are used in almost all the tables to establish connections.<br><br>In the table for each user, I used BLOB to save the profile picture。<br><img alt="BLOB" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/BLOB.png" referrerpolicy="no-referrer"><br><br>When dealing with the weight and volume of the package, I checked them on the front and back ends, especially on the back end, where I used triggers to make the volume and weight range from 0-300.<br><img alt="triggers" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/triggers.png" referrerpolicy="no-referrer"><br><br>
-<br>
-Customers can effortlessly pick and send packages, track deliveries in real-time, manage personal information, view order history, and evaluate the quality of service.<br>
-Our system offers a range of dynamic shipping options to suit different customer preferences.
-
-<br>
-For courier station managers, features such as status updates, site information management, and access to comprehensive historical logs can effectively manage packages. The ability to transfer parcels between sites ensures a smooth flow of parcels through the logistics network.
-
-<br>
-In addition, administrators benefit from a centralized view of workstation status and a complete package history, allowing them to monitor and optimize overall system performance.
-
-<br><br>
-<br>customer: 200000 records.
-<br>courier admin: 50000 records.
-<br>admin: 500   records. (There's no need to have 10,000 administrators)
-<br>parcel：15000 records.
-<br>courier station：5000  records. (There are only about 5,000 in the whole country)
-<br>email and phone table are the same size as its main(customer,  courier admin,  admin) table
-]]></description><link>https://blog.allenygy.vip/program/projects/courierstationinformationmanagementsystem/database-management-system.html</link><guid isPermaLink="false">program/projects/courierstationinformationmanagementsystem/database-management-system.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:19:51 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/process.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/process.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="BilibiliVista" href="program/projects/moviedataanalysis/bilibilivista.html" class="internal-link" target="_self" rel="noopener">BilibiliVista</a>]]></title><description><![CDATA[ 
- <br><br>
-<br>Bilibili data analysis platform
-<br>Sentiment analysis based on deep learning
-<br><br><img alt="DPW-Overview" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/dpw.png"><br>Project Overview<br>
-<br>
-Data Acquisition
-
-<br>Crawling Movie Comments
-
-<br>Douban: Collect comments from the Douban movie site.
-<br>Maoyan: Collect comments from the Maoyan movie site.
-
-
-<br>Data Cleaning
-
-<br>Perform data cleaning to ensure the quality and consistency of the collected comments.
-
-
-
-
-<br>
-Model Training
-
-<br>Machine Learning Model
-
-<br>Utilize SnowNLP for sentiment analysis and other natural language processing tasks.
-
-
-<br>Deep Learning Model
-
-<br>Employ PaddleNLP to build and train deep learning models for advanced text analysis.
-
-
-
-
-<br>
-Model Application
-
-<br>Crawling Data from Bilibili
-
-<br>Implement real-time data crawling from Bilibili, allowing users to input a video url and retrieve video information and comments instantly.
-
-
-<br>Backend Development
-
-<br>Develop the backend using the FastAPI Python framework to handle data processing and model integration.
-
-
-<br>Frontend Development
-
-<br>Implement a user-friendly interface to visualize and interact with the analysis results.
-
-
-
-
-<br><br><br>Sources of Our Data<br>
-<br>Douban: A prominent movie site where users freely express their opinions on movies. These comments are often labeled by users' sentiments, making them invaluable for our analysis.
-<br>Maoyan: Another key player in the movie industry with a rich database of user comments, similarly labeled, allowing for comparative studies and robust model training.
-<br>Why These Datasets?<br>
-<br>Labeled Data: We chose to focus on comments from Douban and Maoyan because they offer labeled datasets. This is critical as labeled data provides a foundation for training and evaluating our sentiment analysis models with higher accuracy.
-<br><img alt="Comment on Douban and Maoyan" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/comment.png"><br><br><img alt="Data Preparation" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/datapreparation.png"><br>
-<br>Data Categorization
-
-<br>Negative dict: ratings less than or equal to 3
-<br>Positive dict: ratings greater than 3
-
-
-<br>Dataset Splitting
-
-<br>Random Split
-
-
-<br>Training and Testing set
-
-<br>Training set : Test set = 8:2
-
-
-<br><br><br>
-<br>SnowNLP is a library focused on natural language processing tasks for Chinese text, such as sentiment analysis and text processing.
-<br>Uses the labeled training data to train the classifier using the Naive Bayes algorithm.
-<br><br>
-<br>Assumes that features are independent of each other.
-<br>Estimates probabilities based on the features and labels in the training dataset.
-<br><br><br>Split Chinese characters and calculate the probability that the term appears in the set<br><img alt="Cut Chinese Comment" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/cutcomment.png"><br><br><br><br>
-<br>Comment of Movie
-<br>
-<br>Crawl the Comment of the Movie 《 Wandering Earth 2》 From&nbsp; the Bilibili
-<br>
-<br>Estimation the comment score
-<br>
-<br>Get a comment sentiment score using the trained SnowNLP model.
-<br>Average comment sentiment score is only 0.54. (Calculate method In the appendix )
-<br>
-<br>Comment Score Distribution
-<br>
-<br>The distribution is polarized, it does not work well<br>
-<img alt="SnowNLP Comment Score Distribution" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/snownlpresult.png">
-<br>
-<br>Comment Score Example
-<br><br>It turns out that the model does not work well in practice<br><br><br>
-<br>With the development of deep learning, the number of model parameters has increased rapidly, and in order to train these parameters, larger data sets are needed to avoid overfitting.
-<br>Nowadays, &nbsp;studies have shown that Pretrained Models (PTM) based on large-scale unlabeled corpora can acquire generic language representations and perform well when fine-tuned to downstream tasks.
-<br>In addition, pre-training models can avoid training models from scratch.
-<br><img alt="Contex2Vec" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/contex2vec.png"><br>
-<br>BERT requires minimal architecture changes for a wide range of natural language processing applications.
-<br><br>
-<br>Remove a batch data from the dataloader
-<br>Feed batch data to the model for forward calculation
-<br>Pass forward calculation result to loss function to calculate loss. The forward calculation result is passed to the evaluation method, and the evaluation index is calculated.
-<br>Loss reverse return and update gradient. Repeat the above steps.
-<br>Each time an epoch is trained, the program will evaluate the effectiveness of the current model training.<br><br><br><br>
-<br>Comment of Movie
-<br>
-<br>Crawl the Comment of the Movie 《 Wandering Earth 2》 From&nbsp; the Bilibili
-<br>
-<br>Estimation the comment score
-<br>
-<br>Get a comment sentiment score using the trained PaddleNLP model.
-<br>Average comment sentiment score is 0.89. (Calculate method In the appendix )
-<br>
-<br>Sentiment Score Distribution
-<br><img alt="PaddleNLP Comment Score Distribution" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/paddlenlpresult.png"><br><br><br>
-<br>Set the User-Agent and cookie information
-<br>Through bvid access to the comment information of the video including:<br>
-<br>Comment
-<br>Number of comments and likes
-<br><img alt="User-Agent" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/user-agent.png"><br>
-<br>Crawl video basic information
-<br>Through bvid access to the basic information of the video including:<br>
-<br>Title
-<br>Author
-<br>Reply count, Favorite count,
-<br>Coin count, Share count
-<br><img alt="Video-info" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/video-info.png"><br>
-<br>Crawl video comment content and danmu content
-<br>Through bvid request screen XML file obtained through basic information:<br>
-<br>Time
-<br>Timestamp
-<br>Danmu text
-<br><img alt="Comment" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/commentdata.png"><br>
-<img alt="Danmu" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/danmudata.png"><br><br>Why FastAPI?<br>“FastAPI is a modern, fast (high-performance) web framework for building APIs with Python 3.6+.”<br>Key Advantages: <br>
-<br>High performance
-<br>Rapid development
-<br>Automatic interactive API documentation
-<br>Type hints for fewer bugs
-<br><img alt="BackendAPI" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/backendapi.png"><br>Introduction to the three main API categories: video, videos, newvideo<br>
-<br>Usage of 3 APIs:
-
-<br>video: Fetch specific video information.
-<br>videos: Gather statistics on all scraped videos.
-<br>newvideo: Add new video data to the system.
-
-
-<br><br><br><br>
-<br>
-Compute the values for the  column:
-
-   Here,  and  represent the values of the  and  columns for the -th row, respectively, and  is the result of their product, stored in a new column .
-
-<br>
-Calculate the ratio of the sum of the  column to the sum of the  column, which represents the mean sentiment value:
-
-Here,  is the sum of all values in the  column, and  is the sum of all values in the  column. This ratio represents the weighted average sentiment value, where the weight for each comment is its number of likes.
-
-<br><br><img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide1.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide2.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide3.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide4.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide5.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide6.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide7.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide8.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide9.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide10.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide11.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide12.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide13.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide14.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide15.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide16.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide17.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide18.png"><br>
-<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide19.png">]]></description><link>https://blog.allenygy.vip/program/projects/moviedataanalysis/bilibilivista.html</link><guid isPermaLink="false">program/projects/moviedataanalysis/bilibilivista.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:19:51 GMT</pubDate><enclosure url="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/dpw.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/dpw.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Data-Programming-Workshop" href="program/projects/moviedataanalysis/data-programming-workshop.html" class="internal-link" target="_self" rel="noopener">Data-Programming-Workshop</a>]]></title><description><![CDATA[ 
- <br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/program/projects/moviedataanalysis/data-programming-workshop.html</link><guid isPermaLink="false">program/projects/moviedataanalysis/data-programming-workshop.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:19:51 GMT</pubDate></item><item><title><![CDATA[<a data-href="MovieDataAnalysis" href="program/projects/moviedataanalysis/moviedataanalysis.html" class="internal-link" target="_self" rel="noopener">MovieDataAnalysis</a>]]></title><description><![CDATA[ 
- <br><br><br>
-主观数据分析
-
-<br>
-影评情感分析
-
-<br>
-二分类 正向情感/负面情感<br>
-- SnowNLP （已跑通）<br>
-- KNN（已跑通）
-
-<br>
-水军评论筛选（如有空）
-
-
-<br>
-客观数据分析
-
-<br>词云图
-<br>近年年度电影主题
-<br>影视主题与票房关系？<br>
-...
-
-<br><br>
-<br>豆瓣
-<br>猫眼
-<br><br><img alt="情感分析" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DPW/%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90.png" referrerpolicy="no-referrer"><br><br>
-<br>后续做词云图
-<br><br>
-<br>词向量
-
-<br>word2vec 
-<br>GloVe
-<br>BERT 
-
-
-<br><br>
-<br>MLP
-<br>CNN 
-<br>RNN
-<br>Transformer？
-<br><br>客观数据包括：<br>
-<br>电影名称
-<br>导演，演员....
-<br>票房
-<br>....
-<br><br>
-<br>词云图
-<br>
-]]></description><link>https://blog.allenygy.vip/program/projects/moviedataanalysis/moviedataanalysis.html</link><guid isPermaLink="false">program/projects/moviedataanalysis/moviedataanalysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:19:51 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DPW/%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DPW/%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="System-Design-Specification" href="program/projects/moviedataanalysis/system-design-specification.html" class="internal-link" target="_self" rel="noopener">System-Design-Specification</a>]]></title><description><![CDATA[ 
- <br><br><br>
-<br>杨钧涯
-<br>王孟涵
-<br>缪润杰
-<br>苏泊鑫
-<br>肖嘉皓
-<br><br><br><br>
-<br>DOCUMENT CHANGE LOG 
-<br>TABLE OF CONTENTS 
-<br>DESIGN OVERVIEW 
-<br>TOOLS AND STANDARDS
-
-<br>Tools
-<br>Standards
-
-
-<br>USER INTERFACE DESIGN
-
-<br>Usage Scenario I
-<br>Usage Scenario II
-
-
-<br>DIAGRAMS
-<br><br>Design Overview for the Data Analysis Platform<br>Our platform is meticulously architected to provide an end-to-end data analysis solution, encompassing data preprocessing, modeling, and visualization functionalities. To ensure a robust and responsive user experience, our system architecture distinctly separates the frontend and backend services.<br>Backend Architecture: We leverage the power of Python's FastAPI framework, renowned for its high performance and ease of use, to handle data-intensive backend operations efficiently. This choice enables us to implement asynchronous processing, significantly boosting the responsiveness of our platform.<br>Frontend Design: The user interface is built using Vue.js, a progressive JavaScript framework known for its adaptability and component-based architecture. This setup allows for a dynamic and seamless interaction with the data analysis functionalities, providing users with an intuitive experience as they upload and manipulate their data.<br>Core Functionalities:<br>
-<br>Data Upload: Users can easily upload datasets via the frontend interface.
-<br>Data Preprocessing: The platform offers a suite of tools for cleaning and preparing data for analysis, ensuring data quality and readiness.
-<br>Modeling Capabilities: Users have access to a variety of built-in models, including regression and clustering, to uncover patterns and derive insights from their data.
-<br>Visualization Tools: Integrated visualization tools enable users to create engaging and informative visual representations of their analysis results.
-<br>Our platform is designed to be flexible, catering to a wide range of data analysis needs and making sophisticated data science accessible to users with varying levels of expertise.<br>Here， we show some models instruction<br>Linear regression is a basic statistical model, which is used to explore the linear relationship between variables. It assumes that there is a straight line relationship between the dependent variable and the independent variable, and predicts by fitting the best straight line. The fitting of the model is completed by the least square method, and the indexes such as the square of R, the square of adjusted R and the standard error are usually used in the evaluation. In application, we need to pay attention to model assumptions, such as linear relationship, multicollinearity and normal distribution of error terms.<br>Decision tree is a non-parametric supervised learning algorithm, which is utilized for both classification and regression tasks. It has a hierarchical, tree structure, which consists of a root node, branches, internal nodes and leaf nodes.<br>
-A decision tree starts with a root node, which does not have any incoming branches. The outgoing branches from the root node then feed into the internal nodes, also known as decision nodes. Based on the available features, both node types conduct evaluations to form homogenous subsets, which are denoted by leaf nodes, or terminal nodes. The leaf nodes represent all the possible outcomes within the dataset.<br>K-nearest neighbor (KNN) is an instance-based supervised learning algorithm, and it is sensitive to data size and dimension. It performs classification or regression by measuring the distance between a new sample and a known sample in the training set. In classification, it assigns the new sample to the category to which the K closest neighbors belong. In regression, it predicts the value of the new sample, estimated by the average of the K closest neighbors. The working principle of the KNN algorithm consists of the following steps: Calculate distance, Select Nearest neighbor, Voting or calculating the mean.<br>设计总览
-我们将会搭建一个通用的数据分析平台，平台将会实现包括数据预处理，建模，可视化等功能。<br>
-我们将使用前后端分离的架构，后端将使用由python搭建的FASTAPI框架<br>
-前端将使用Vue.js<br>
-用户将通过我们搭建的前端界面，上传数据；选择希望执行的操作，完成一整套数据分析的流程<br>
-们也提供常用的模型包括回归，聚类
-<br><br><br>In python we use the Numpy, pandas, sklearn, matplotlib libraries<br><br>Common to all platforms, including MacOS, Windows, Linux<br>
-Accessible via browser on all platforms<br><br><img alt="User Interface" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DPW/DesignOverview.png" referrerpolicy="no-referrer"><br>]]></description><link>https://blog.allenygy.vip/program/projects/moviedataanalysis/system-design-specification.html</link><guid isPermaLink="false">program/projects/moviedataanalysis/system-design-specification.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:19:51 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DPW/DesignOverview.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DPW/DesignOverview.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Lab8]]></title><description><![CDATA[ 
+ <br>]]></description><link>https://blog.allenygy.vip/algorithm/string/aho-corasick.html</link><guid isPermaLink="false">algorithm/string/aho-corasick.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate></item><item><title><![CDATA[Lab8]]></title><description><![CDATA[ 
  <br><br>.ORIG x3000
 	LD R1, HELLO
 	STI R1, TRAP_26
@@ -6354,7 +5391,7 @@ Data-&gt;Data Preparation-&gt;Model Training-&gt;Model Optimization-&gt;Model Te
 <br>Mean: 
 <br>Variance: 
 <br>Standard deviation:  
-<br>Median: The middle number<a data-footref="[inline0" href="https://blog.allenygy.vip/#fn-1-a759ee449da2eee4" class="footnote-link" target="_self" rel="noopener">[1]</a>
+<br>Median: The middle number<a data-footref="[inline0" href="https://blog.allenygy.vip/#fn-1-ad3d60ef5b3a5f3f" class="footnote-link" target="_self" rel="noopener">[1]</a>
 <br>Mode: Most frequently occurring value
 <br><br>
 <br>q%-quantile (0 &lt; q &lt; 100): The value for which q% of the values are smaller and 100-q% are larger. The median is the 50%-quantile
@@ -6390,7 +5427,7 @@ Usually leads to a very scattered histogram in which it is difficult to distingu
 <br>Best Choise
 <br><br>
 <br>
-Boxplot <a data-footref="[inline1" href="https://blog.allenygy.vip/#fn-2-a759ee449da2eee4" class="footnote-link" target="_self" rel="noopener">[2]</a>
+Boxplot <a data-footref="[inline1" href="https://blog.allenygy.vip/#fn-2-ad3d60ef5b3a5f3f" class="footnote-link" target="_self" rel="noopener">[2]</a>
 
 <br>
 Boxplots are a very compact way to visualize and summarize the main characteristics of a numeric attribute, through the median, the IQR, and possible outliers.
@@ -6409,7 +5446,7 @@ Boxplots are a very compact way to visualize and summarize the main characterist
 <br>Suitable for small datasets
 <br><br><br><br>Requires min-max-normalization of numeric columns<br>
 <br>Ratio of missing values: If missing value &gt; threshold, then remove the column.
-<br>Low variance: If variance &lt; threshold, then remove column. <a data-footref="[inline2" href="https://blog.allenygy.vip/#fn-3-a759ee449da2eee4" class="footnote-link" target="_self" rel="noopener">[3]</a>
+<br>Low variance: If variance &lt; threshold, then remove column. <a data-footref="[inline2" href="https://blog.allenygy.vip/#fn-3-ad3d60ef5b3a5f3f" class="footnote-link" target="_self" rel="noopener">[3]</a>
 <br>High Correlation: If(corr(var1,var2) &gt; threshold), then remove var1.
 <br><br><br><br>
 <br>Missing Completely At Random (MCAR): the probability that a value for X is missing does neither depend on the value of X nor on other variables. (Most serious)
@@ -6417,7 +5454,7 @@ Boxplots are a very compact way to visualize and summarize the main characterist
 <br>Not Missing At Random (NMAR): the probability that Y is missing depends on the unobserved value of Y itself
 <br><br>
 <br>Ignore or delete the record
-<br>Fill in (impute) missing value as “unknown”,mean/median/mode <a data-footref="[inline3" href="https://blog.allenygy.vip/#fn-4-a759ee449da2eee4" class="footnote-link" target="_self" rel="noopener">[4]</a>
+<br>Fill in (impute) missing value as “unknown”,mean/median/mode <a data-footref="[inline3" href="https://blog.allenygy.vip/#fn-4-ad3d60ef5b3a5f3f" class="footnote-link" target="_self" rel="noopener">[4]</a>
 <br><br>
 <br>An outlier is a value or data object that is far away or very different from all or most of the other data.
 <br>Errors in measurements or exceptional conditions that don't describe the common functioning of the underlying system.
@@ -6464,7 +5501,7 @@ output data, while an unsupervised learning does not
 <br>Mean absolute error (MAE) 
 <br>Mean squared error (MSE) 
 <br>Root mean squared error (RMSE) 
-<br>R-squared <a data-footref="[inline4" href="https://blog.allenygy.vip/#fn-5-a759ee449da2eee4" class="footnote-link" target="_self" rel="noopener">[5]</a><br>
+<br>R-squared <a data-footref="[inline4" href="https://blog.allenygy.vip/#fn-5-ad3d60ef5b3a5f3f" class="footnote-link" target="_self" rel="noopener">[5]</a><br>
 
 <br><br>
 <br>Training error/Empirical error: the error of the learner/model on the training data
@@ -6479,10 +5516,10 @@ Clustering identifies a finite set of groups (clusters)  in the dataset such tha
 <br>Objects of different clusters  () shall be as dissimilar as possible<br>
 Example:
 <br>Customer segmentation
-<br>Molecule search <a data-footref="[inline5" href="https://blog.allenygy.vip/#fn-6-a759ee449da2eee4" class="footnote-link" target="_self" rel="noopener">[6]</a>
-<br>Anomaly detection <a data-footref="[inline6" href="https://blog.allenygy.vip/#fn-7-a759ee449da2eee4" class="footnote-link" target="_self" rel="noopener">[7]</a>
-<br>Structuring large sets of text documents <a data-footref="[inline7" href="https://blog.allenygy.vip/#fn-8-a759ee449da2eee4" class="footnote-link" target="_self" rel="noopener">[8]</a>
-<br>Generating thematic maps from satellite images <a data-footref="[inline8" href="https://blog.allenygy.vip/#fn-9-a759ee449da2eee4" class="footnote-link" target="_self" rel="noopener">[9]</a>
+<br>Molecule search <a data-footref="[inline5" href="https://blog.allenygy.vip/#fn-6-ad3d60ef5b3a5f3f" class="footnote-link" target="_self" rel="noopener">[6]</a>
+<br>Anomaly detection <a data-footref="[inline6" href="https://blog.allenygy.vip/#fn-7-ad3d60ef5b3a5f3f" class="footnote-link" target="_self" rel="noopener">[7]</a>
+<br>Structuring large sets of text documents <a data-footref="[inline7" href="https://blog.allenygy.vip/#fn-8-ad3d60ef5b3a5f3f" class="footnote-link" target="_self" rel="noopener">[8]</a>
+<br>Generating thematic maps from satellite images <a data-footref="[inline8" href="https://blog.allenygy.vip/#fn-9-ad3d60ef5b3a5f3f" class="footnote-link" target="_self" rel="noopener">[9]</a>
 <br><br>
 <br>Linkage Based<br>
 e.g. Hierarchical Clustering
@@ -6494,18 +5531,261 @@ e.g. k-Means
 <br>Manhattan-Distance ()
 <br>
 <br>
-<br>Found by ordering all data points and picking out the one in the middle - or if there are two middle numbers, taking the mean of those two numbers<a href="https://blog.allenygy.vip/#fnref-1-a759ee449da2eee4" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>The middle line of the box, which is the median of the data, represents the average of the sample data. The upper and lower limits of the box are the upper and lower quartiles of the data, respectively. This means that the box contains 50% of the data. The height of the box partly reflects how fluctuating the data is. Above and below the box, there is a line. Represents the maximum and minimum values, sometimes some points "pop out", which can be understood as "outliers"<a href="https://blog.allenygy.vip/#fnref-2-a759ee449da2eee4" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Only works for numeric columns<a href="https://blog.allenygy.vip/#fnref-3-a759ee449da2eee4" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Found by ordering all data points and picking out the one in the middle - or if there are two middle numbers, taking the mean of those two numbers<a href="https://blog.allenygy.vip/#fnref-1-ad3d60ef5b3a5f3f" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>The middle line of the box, which is the median of the data, represents the average of the sample data. The upper and lower limits of the box are the upper and lower quartiles of the data, respectively. This means that the box contains 50% of the data. The height of the box partly reflects how fluctuating the data is. Above and below the box, there is a line. Represents the maximum and minimum values, sometimes some points "pop out", which can be understood as "outliers"<a href="https://blog.allenygy.vip/#fnref-2-ad3d60ef5b3a5f3f" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Only works for numeric columns<a href="https://blog.allenygy.vip/#fnref-3-ad3d60ef5b3a5f3f" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 <br>A predicted value based on the other attributes (inference-based such as<br>
-Bayesian, Decision Tree<a href="https://blog.allenygy.vip/#fnref-4-a759ee449da2eee4" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Proportion of the variance for a dependent variable that’s explained by the regression model.Normally ranges from 0 to 1, the closer to 1 the better performance.<a href="https://blog.allenygy.vip/#fnref-5-a759ee449da2eee4" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Find molecules with similar structure to already working ones<a href="https://blog.allenygy.vip/#fnref-6-a759ee449da2eee4" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Find unusual patterns in data from sensors monitoring mechanical engines<a href="https://blog.allenygy.vip/#fnref-7-a759ee449da2eee4" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>hierarchical clustering of the text documents<a href="https://blog.allenygy.vip/#fnref-8-a759ee449da2eee4" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>clustering sets of raster images of the same area (feature vectors)<a href="https://blog.allenygy.vip/#fnref-9-a759ee449da2eee4" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+Bayesian, Decision Tree<a href="https://blog.allenygy.vip/#fnref-4-ad3d60ef5b3a5f3f" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Proportion of the variance for a dependent variable that’s explained by the regression model.Normally ranges from 0 to 1, the closer to 1 the better performance.<a href="https://blog.allenygy.vip/#fnref-5-ad3d60ef5b3a5f3f" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Find molecules with similar structure to already working ones<a href="https://blog.allenygy.vip/#fnref-6-ad3d60ef5b3a5f3f" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Find unusual patterns in data from sensors monitoring mechanical engines<a href="https://blog.allenygy.vip/#fnref-7-ad3d60ef5b3a5f3f" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>hierarchical clustering of the text documents<a href="https://blog.allenygy.vip/#fnref-8-ad3d60ef5b3a5f3f" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>clustering sets of raster images of the same area (feature vectors)<a href="https://blog.allenygy.vip/#fnref-9-ad3d60ef5b3a5f3f" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/data-analysis/hans-on-data/hans-on-data-analysis.html</link><guid isPermaLink="false">data-analysis/hans-on-data/hans-on-data-analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate></item><item><title><![CDATA[Data-Analysis]]></title><description><![CDATA[ 
- <br><br>]]></description><link>https://blog.allenygy.vip/data-analysis/data-analysis.html</link><guid isPermaLink="false">data-analysis/data-analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:05:18 GMT</pubDate></item><item><title><![CDATA[<a data-href="Relational-Database-Design-Purpose-&amp;-First-Normal-Form" href="database-management/lecture/relational-database-design-purpose-&amp;-first-normal-form.html" class="internal-link" target="_self" rel="noopener">Relational-Database-Design-Purpose-&amp;-First-Normal-Form</a>]]></title><description><![CDATA[ 
+ <br><br>]]></description><link>https://blog.allenygy.vip/data-analysis/data-analysis.html</link><guid isPermaLink="false">data-analysis/data-analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:05:18 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-2" href="database-management/assignment/dbm-assignment-2.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-2</a>]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>CREATE TABLE person (
+    p_id INT PRIMARY KEY,
+    name VARCHAR(255),
+    gender VARCHAR(10)
+);
+Copy<br>CREATE TABLE employ (
+    p_id INT PRIMARY KEY,
+    position VARCHAR(100),
+    salary DECIMAL(10, 2),
+    FOREIGN KEY (p_id) REFERENCES person(p_id)
+);
+Copy<br>CREATE TABLE customer (
+    p_id INT PRIMARY KEY,
+    class VARCHAR(50),
+    phone VARCHAR(20),
+    FOREIGN KEY (p_id) REFERENCES person(p_id)
+);
+Copy<br>CREATE TABLE purchase (
+    b_id INT PRIMARY KEY,
+    date DATE,
+    p_id INT,
+    FOREIGN KEY (p_id) REFERENCES person(p_id)
+);
+Copy<br>CREATE TABLE use(
+  id INT PRIMARY KEY,
+  b_id INT PRIMARY KEY,
+)
+Copy<br>CREATE TABLE coupon(
+  id INT PRIMARY KEY,
+  disconut DECIMAL(10,2),
+  p_id INT,
+  t_id INT,
+  FOREIGN KEY (p_id) REFERENCES person(p_id)
+  FOREIGN KEY (t_id) REFERENCES product_type(t_id)
+)
+Copy<br>CREATE TABLE product_type(
+  t_id INT PRIMARY KEY,
+  manufacturer VARCHAR(50),
+  type VARCHAR(20),
+  price DECIMAL(10,2),
+)
+Copy<br>CREATE TABLE contain(
+  b_id INT PRIMARY KEY,
+  i_id INT,
+  FOREIGN KEY (b_id) REFERENCES purchase(b_id),
+  FOREIGN KEY (i_id) REFERENCES product(i_id)
+)
+Copy<br>CREATE TABLE product(
+  i_id INT PRIMARY KEY,
+  t_id INT PRIMARY KEY,
+  exp_date date,
+  man_date date,
+  FOREIGN KEY (t_id) REFERENCES product_type(t_id)
+)
+Copy<br><br>The issue with the given ER model is that it lacks a direct relationship between the coupon and the products it can be applied to. This absence of a direct link creates a challenge in enforcing the constraint that a purchase using a coupon must include at least one product instance that corresponds to the type eligible for that coupon.<br>
+<br>
+Add a table/entity to represent coupon-product type associations:<br>
+Create a table like coupon_product_type with columns such as coupon_id and product_type_id to denote which product types a coupon can be applied to.
+
+<br>
+Modify the purchase entity to include coupon usage and enforce the constraint:<br>
+Within the purchase entity, introduce a column coupon_used to denote whether a coupon was used in a purchase. Then, use a constraint or validation rule to ensure that if coupon_used is true, there must be at least one corresponding product instance in the purchase that matches the product type eligible for the coupon.
+
+<br><br>
+<br>Find the number of courses taught by Goliath (instructor’s name) over the years.
+<br>SELECT COUNT(DISTINCT cID) AS num_courses_taught
+FROM teach
+WHERE iID = 'Goliath';
+Copy<br>
+<br>Find the number of courses taught by each instructor in the semester 23F.
+<br>SELECT COUNT(DISTINCT cID) As num_courses_taught_each_instructor
+FROM instructor
+JOIN teach USING(iID)
+GROUP BY (i.name)
+WHERE teach.semester='23F'
+Copy<br>
+<br>Find the semester in which Goliath teaches more courses than other semesters.
+<br>SELECT teach.semester, COUNT(teach.cID) AS num_courses
+FROM teach JOIN instrtuctor USING(iID)
+WHERE instructor.iname='Goliath'
+GROUP BY teach.semester
+ORDER BY num_courses DESC
+LIMIT 1;
+Copy<br>
+<br>Insert a new student of ID: 123456, name: ‘Tomas’, gender: Male, GPA: unknown, major: ACCT, and phone number: 32165498701.
+<br>INSERT INTO student VALUES 
+(123456, 3, 'Tomas','Male',NULL,'ACCT', 32165498701);
+Copy<br>
+<br>Student ‘Dennis’ quit from the college. Please remove his information from the database.
+<br>DELETE FROM student
+WHERE sname='Dennis'
+Copy]]></description><link>https://blog.allenygy.vip/database-management/assignment/dbm-assignment-2.html</link><guid isPermaLink="false">database-management/assignment/dbm-assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-3" href="database-management/assignment/dbm-assignment-3.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-3</a>]]></title><description><![CDATA[ 
+ <br><br><br>a) Find the students who have more enrollments than other students. Display your answer by sID and sname.<br>SELECT  sID, sname
+FROM student JOIN enroll USING (sID)
+GROUP BY cID
+ORDER BY COUNT(DISTINCT cID) DESC
+LIMIT 1;
+Copy<br>b) Find the students who have enrolled all courses. Display your answer by sID and sname.<br>SELECT sID, sname
+FROM student
+WHERE sID IN ( SELECT sID
+FROM enroll
+GROUP BY enroll.sID
+HAVING COUNT(DISTINCT enroll.cID) 
+= (SELECT COUNT(DISTINCT cID) 
+FROM course );
+
+Copy<br>c) Find the students who have taken all courses instructed by Goliath (instructor’s name and assuming that there is no other instructor who is called Goliath). Display your answer by sID and sname.<br>SELECT s.sID, s.sname
+FROM student s
+JOIN course c ON 1=1
+LEFT JOIN enroll e ON s.sID = e.sID AND c.cID = e.cID
+WHERE NOT EXISTS (
+    SELECT *
+    FROM teach t
+    JOIN instructor i ON t.iID = i.iID
+    WHERE i.iname = 'Goliath' AND t.cID = c.cID
+        AND NOT EXISTS (
+            SELECT *
+            FROM enroll e2
+            WHERE e2.sID = s.sID AND e2.cID = t.cID
+        )
+)
+GROUP BY s.sID, s.sname
+HAVING COUNT(DISTINCT c.cID) = COUNT(DISTINCT e.cID)
+Copy<br>d) Implement a constraint to guarantee that the position of an instructor is one of “lecturer”, “assistant professor”, “associated professor”, and “professor”.<br>ALTER TABLE instructor
+ADD CONSTRAINT position_domain
+CHECK (position IN 
+("lecturer", "assistant professor", "associated professor","professor"));
+
+Copy<br>e) Implement a constraint to guarantee that “no student is enrolled to a course which is not taught by any instructor”.<br>ALTER TABLE student
+ADD CONSTRAINT teach_course
+FOREIGN KEY (cID) REFERENCES course(cID)
+ADD CONSTRIANT teach_instructor
+FOREIGN KEY (iID) REFERENCES course(iID)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
+DELIMITER |
+  CREATE TRIGGER guarantee_student
+  AFTER INSERT ON student
+  FOR EACH ROW
+  BEGIN
+    IF new.id NOT IN (
+      SELECT iID FROM instructor) 
+THEN 
+    DELETE FROM student WHERE student.sID = new.sID;
+  END IF;
+END;|
+DELIMITER ;
+
+Copy<br><br>Please prove the three rules union, decomposition, pseudotransitivity (Lecture 9 Page 14) using Armstrong’s Axioms (Page 11). (12 pt)<br>
+<br>For union:<br>
+If  then 
+<br>
+<br>
+<br> According to augmentation
+<br>
+<br>
+<br>
+<br> According to transitivity
+<br>
+<br>
+<br>For augmentation:<br>
+if , then  and 
+<br>
+<br>
+<br>  according to reflexivity
+<br> according to reflexivity
+<br> according to transitivity
+<br>
+<br>For pseudotransitivity<br>
+if  and  then 
+<br>
+<br>
+<br> according to augmentation
+<br> according to transitivity
+<br>
+<br><br>a. Find all condidate keys<br>L: A<br>
+R: BCH<br>
+LR:DEFG<br>
+N:<br><br>
+<br>
+<br>
+<br>
+<br>There is only one candidate key AF<br>b. Decompose the schema in BCNF<br>Remove redundant functional dependencies and extraneous Attributes<br><br>Iteration 1:  violates BCNF<br>
+Decomposition R into<br><br>
+<br>
+<br>
+<br> and  satisfy BCNF<br>c. The decomposition in b) is dependency preserving.<br><br>
+<br><br>
+ it is dependency-preserving<br>d. What is the canonical cover of the functional dependencies?<br><br>e. There are no redundant dependencies or extraneous attributes in any one of the dependencies.<br><br>
+<br>
+<br>It has been satisfy BCNF, so it's also 3NF.]]></description><link>https://blog.allenygy.vip/database-management/assignment/dbm-assignment-3.html</link><guid isPermaLink="false">database-management/assignment/dbm-assignment-3.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-1" href="database-management/assignment/dbm-assignment-1.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-1</a>]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>Atomicity of updates<br>
+For example, it can ensure that fund transfers between accounts are either successfully completed or not executed at all. In database systems, this guarantee can prevent situations where funds are deducted for some reason but not added to another account, thereby avoiding data inconsistency and financial losses. File systems lack such guarantees, making inconsistencies more likely in such transactions.
+<br>Concurrent access by multiple users<br>
+For example, database systems enable multiple students to enroll in courses simultaneously, enhancing system performance. However, without proper management, uncontrolled concurrent access may lead to issues like overbooking courses, causing frustration among students.
+<br>Security problems<br>
+For example, in a healthcare database, it's vital to control access to patient records. Database systems offer fine-grained access control, allowing restrictions based on roles. For instance, doctors and nurses can access medical records, but administrative staff cannot. Achieving this control is challenging in a file system, posing security risks.
+<br><br>
+<br>Conceptual Design
+<br>Logical Design
+<br>Optimization
+<br>Physical Design
+<br><br>
+<br>A schema in the context of databases is a structured blueprint that defines how data is organized, relationships are managed, and constraints are applied within a database system.
+<br><br>
+<br>The set of special attribute(s) is called key.
+<br>Formally, a key of an entity set is a set of attributes that can uniquely identify the entities.
+<br><br><br><br><br><img alt="DB-Supermarket" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DB-Supermarket.png" referrerpolicy="no-referrer"><br><br>1.Find the major number of the student Eva:<br>SELECT major
+FROM student
+WHERE sname='Eva';
+Copy<br>2.Find the name of the professors (instructors’ position) who are from the Computer Science department:<br>SELECT iname 
+FROM instructor
+WHERE department='Computer Science';
+Copy<br>3.Find the name of the professors (instructors’ position) who are from the Computer Science department:<br>SELECT cname
+FROM course
+WHERE credit=1;
+Copy<br>4.Find the name of the students who have received an A in a course in semester 2023 Spring:<br>SELECT sname 
+FROM student, enroll
+WHERE enroll.grade = 'A'
+AND enroll.semester = '2023 Spring'
+AND student.sID = enroll.sID;
+Copy<br>5.Find the name of the courses which are instructed by Dave (instructor’s name):<br>SELECT cname
+FROM course,instructor,teach
+WHERE instructor.iname = 'Dave'
+AND instructor.iID = teach.iID
+AND teach.cID = course.cID;
+Copy<br>6.Find the name of the instructors who have taught Frank (student’s name) in semester 2022 Fall:<br>SELECT iname
+FROM instructor,student,teach,enroll
+WHERE student.sname = 'Frank'
+AND student.sID = enroll.sID
+AND enroll.cID = teach.cID 
+AND teach.semester = '2022 Fall'
+AND teach.iID = instructor.iID
+Copy]]></description><link>https://blog.allenygy.vip/database-management/assignment/dbm-assignment-1.html</link><guid isPermaLink="false">database-management/assignment/dbm-assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DB-Supermarket.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DB-Supermarket.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Relational-Database-Design-Purpose-&amp;-First-Normal-Form" href="database-management/lecture/relational-database-design-purpose-&amp;-first-normal-form.html" class="internal-link" target="_self" rel="noopener">Relational-Database-Design-Purpose-&amp;-First-Normal-Form</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Good Relational Design
 
@@ -6868,7 +6148,7 @@ Thus, “section” is a weak entity set which depends on “course”.<br>
 <img alt="PWsNRI" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/PWsNRI.png" referrerpolicy="no-referrer"><br>Double rectangles denote weak entity sets. 双矩形边框 表示weak entity<br>
 Dashed underlines denote discriminators of weak entity sets. 虚线下划线 表示 weak entity的键<br>
 Double diamonds denote identifying relationship sets.<br>
-Assume we model the original “enroll” relationship set without constraints. <a data-footref="[inline0" href="https://blog.allenygy.vip/#fn-1-a759ee449da2eee4" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>
+Assume we model the original “enroll” relationship set without constraints. <a data-footref="[inline0" href="https://blog.allenygy.vip/#fn-1-ad3d60ef5b3a5f3f" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>
 <br>
 Generalization (泛化) is the process of extracting common properties from a set of entities and create a generalized entity from it. It is a bottom-up approach in which two or more entities can be generalized to a higher level entity if they have some attributes in common.
 
@@ -6911,7 +6191,7 @@ If we want to express every person is either a student or an instructor, then th
 And if we assume nobody can be a student and an instructor at the same time, this is a disjoint generalization.<br>
 <img alt="S0PX3U" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/S0PX3U.png" referrerpolicy="no-referrer"><br>
 <br>
-<br>我的评价是真sharuan<a href="https://blog.allenygy.vip/#fnref-1-a759ee449da2eee4" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>我的评价是真sharuan<a href="https://blog.allenygy.vip/#fnref-1-ad3d60ef5b3a5f3f" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/database-management/lecture/entity-relationship-model-extended-features.html</link><guid isPermaLink="false">database-management/lecture/entity-relationship-model-extended-features.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/MnKmwI.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/MnKmwI.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Entity-Relationship-Model-Constraints" href="database-management/lecture/entity-relationship-model-constraints.html" class="internal-link" target="_self" rel="noopener">Entity-Relationship-Model-Constraints</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Cardinality Constraints  基数约束 (one-one/one-many/many-many)
@@ -7323,7 +6603,7 @@ WHERE NOT EXISTS(
     WHERE s1.sID=e1.sID
   )
 )
-Copy<br><a data-footref="[inline0" href="https://blog.allenygy.vip/#fn-1-a759ee449da2eee4" class="footnote-link" target="_self" rel="noopener">[1]</a><br>
+Copy<br><a data-footref="[inline0" href="https://blog.allenygy.vip/#fn-1-ad3d60ef5b3a5f3f" class="footnote-link" target="_self" rel="noopener">[1]</a><br>
 <br>Find the students who have taken all courses instructed by Goliath (instructor’s name and assuming that there is no other instructor who is called Goliath). Display your answer by sID and sname.
 <br>Divisor: course that taught by Goliath<br>
 Dividend: enroll<br>SELECT s1.sID,s1.sname
@@ -7349,7 +6629,7 @@ WHERE NOT EXISTS(
   );
 Copy<br>
 <br>
-<br>不需要将student，enroll，course合起来<a href="https://blog.allenygy.vip/#fnref-1-a759ee449da2eee4" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>不需要将student，enroll，course合起来<a href="https://blog.allenygy.vip/#fnref-1-ad3d60ef5b3a5f3f" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/database-management/mysql/division-and-correlated-subquery.html</link><guid isPermaLink="false">database-management/mysql/division-and-correlated-subquery.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Mysql/Division.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Mysql/Division.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Data-Modification" href="database-management/mysql/data-modification.html" class="internal-link" target="_self" rel="noopener">Data-Modification</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>INSERT
@@ -7649,10 +6929,11 @@ Copy<br>
 <br>SET NULL and SET DEFAULT.
 
 
-]]></description><link>https://blog.allenygy.vip/database-management/mysql/advanced-sql.html</link><guid isPermaLink="false">database-management/mysql/advanced-sql.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="GraphNetwork" data-href="GraphNetwork" href="deep-learning/graphnetwork.html" class="internal-link" target="_self" rel="noopener">A Gentle Introduction to Graph Neural Networks</a> <sup data-footnote-id="fnref-1-a759ee449da2eee4" class="footnote-ref" id="fnref-1-a759ee449da2eee4"><a data-footref="[inline0" href="#fn-1-a759ee449da2eee4" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
+]]></description><link>https://blog.allenygy.vip/database-management/mysql/advanced-sql.html</link><guid isPermaLink="false">database-management/mysql/advanced-sql.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="database-management/DataBase-Management-System" data-href="database-management/DataBase-Management-System" href="database-management/database-management-system.html" class="internal-link" target="_self" rel="noopener">Database Management</a>]]></title><description><![CDATA[ 
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/database-management/database-management-system.html</link><guid isPermaLink="false">database-management/database-management-system.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 15:07:32 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="GraphNetwork" data-href="GraphNetwork" href="deep-learning/graphnetwork.html" class="internal-link" target="_self" rel="noopener">A Gentle Introduction to Graph Neural Networks</a> <sup data-footnote-id="fnref-1-ad3d60ef5b3a5f3f" class="footnote-ref" id="fnref-1-ad3d60ef5b3a5f3f"><a data-footref="[inline0" href="#fn-1-ad3d60ef5b3a5f3f" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
  <br><br>
 <br>
-<br><a rel="noopener" class="external-link" href="https://distill.pub/2021/gnn-intro/" target="_blank">https://distill.pub/2021/gnn-intro/</a><a href="https://blog.allenygy.vip/#fnref-1-a759ee449da2eee4" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><a rel="noopener" class="external-link" href="https://distill.pub/2021/gnn-intro/" target="_blank">https://distill.pub/2021/gnn-intro/</a><a href="https://blog.allenygy.vip/#fnref-1-ad3d60ef5b3a5f3f" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/deep-learning/graphnetwork.html</link><guid isPermaLink="false">deep-learning/graphnetwork.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate></item><item><title><![CDATA[<a data-href="GradientDescent" href="deep-learning/gradientdescent.html" class="internal-link" target="_self" rel="noopener">GradientDescent</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Gradient Descent 梯度下降算法 GD
@@ -7699,4 +6980,725 @@ Copy<br>
 <br>RELU  Leaky ReLU, Parametric ReLU, ...
 
 
-]]></description><link>https://blog.allenygy.vip/deep-learning/activationfunction.html</link><guid isPermaLink="false">deep-learning/activationfunction.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate></item><item><title><![CDATA[<a data-href="CET-6" href="english/cet-6.html" class="internal-link" target="_self" rel="noopener">CET-6</a>]]></title><description/></item></channel></rss>
+]]></description><link>https://blog.allenygy.vip/deep-learning/activationfunction.html</link><guid isPermaLink="false">deep-learning/activationfunction.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate></item><item><title><![CDATA[<a data-href="CET-6" href="english/cet-6.html" class="internal-link" target="_self" rel="noopener">CET-6</a>]]></title><description/></item><item><title><![CDATA[Home]]></title><description><![CDATA[ 
+ <br><br><br><br><br><br><br>12345678910111213141516171819202122232425262728293031AprMayJunlessmore<br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/home.html</link><guid isPermaLink="false">home.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 15:08:18 GMT</pubDate></item><item><title><![CDATA[<a data-href="Discrete-mathematics-Tutorial" href="math/discrete-structure/assignment/discrete-mathematics-tutorial.html" class="internal-link" target="_self" rel="noopener">Discrete-mathematics-Tutorial</a>]]></title><description><![CDATA[ 
+ <br><br><br>Assume is an integer. Prove that if  is odd, then n is odd.<br><br><br><br><br>
+&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;<br><br>Prove that  is a tautology.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br><br>]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-tutorial.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-tutorial.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="Discrete-mathematics-Assignment-8" href="math/discrete-structure/assignment/discrete-mathematics-assignment-8.html" class="internal-link" target="_self" rel="noopener">Discrete-mathematics-Assignment-8</a>]]></title><description><![CDATA[ 
+ <br><br><br>This graph is directed. Because the adjacency matrix is not symmetric<br><img alt="Q1" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Question1.png" referrerpolicy="no-referrer"><br><br><br><br> <br>
+ The two graphs are isomorphic.<br><br>
+<br>Base Case (n = 1):<br>
+For a cube of dimension n = 1, we have 2 vertices connected by an edge. We can easily divide these two vertices into two separate sets, forming a bipartite graph.<br>
+For a cube of dimension n = 2, we have 4 vertices connected by an edge. We can easily divide these two vertices into two separate sets like  forming a bipartite graph. 
+<br>Inductive Hypothesis:<br>
+Assume that a cube  of dimension k is bipartite, where k ≥ 1.
+<br>Inductive Step:<br>
+Now we need to show that a cube  is also bipartite. Consider a cube , which is obtained by adding one layer of vertices to the cube . Let's call this additional layer "L". Each vertex in layer L is connected to exactly one vertex in the cube . Now, we can divide the vertices of  into two sets, S₁ and S₂.<br>
+Next, we assign each vertex in layer L to the opposite set of its connected vertex in . In other words, if a vertex in L is connected to a vertex in S₁, we assign it to S₂, and vice versa. This assignment ensures that no two vertices within the same set (S₁ or S₂) are adjacent, including the newly added layer L.<br>
+Therefore, we have successfully divided the vertices of  into two sets, S₁ and S₂, such that no two vertices within the same set are adjacent. Hence, by induction, we can conclude that a cube  of dimension n is bipartite for n ≥ 1.
+<br>This completes the proof.
+<br><br>a)<br><img alt="Q4" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Question4.png" referrerpolicy="no-referrer"><br>It's clear that the graph is planar. it can be drawn in the plane without any edges crossing<br>
+b) It has Euler Circuit cause the thorem A connected multi-graph has an Euler circuit if and<br>
+only if each vertex has even degree. The vertex in the graph all has 4 edges. Therefore, it must have Euler Circuit.<br>
+c) It has Hamilton Circuits such that 1-&gt;2-&gt;3 -&gt;4 -&gt;5 -&gt;6-&gt;1<br><br>Consider the following graph G = (V, E), where V = {1, 2, 3, 4} and E = {(1, 2), (2, 3), (3, 4), (4, 1), (1, 3)}.<br>
+This graph satisfies the condition that for any two non-adjacent vertices u and v in G, <br>
+For example, if we take u = 1 and v = 4, then <br>
+However, this graph does not have a Hamilton circuit.<br>
+Therefore, we have shown that the converse of Ore's theorem is false by providing a counterexample.]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-8.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-assignment-8.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Question1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Question1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Discrete-mathematics-Assignment-7" href="math/discrete-structure/assignment/discrete-mathematics-assignment-7.html" class="internal-link" target="_self" rel="noopener">Discrete-mathematics-Assignment-7</a>]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>
+Determine whether the following relation R is reflexive, symmetric, antisymmetric, or transitive if (remember to prove your answer)
+
+<br>
+a);
+ The following relation R is reflexive, symmetric, anti-symmetric, and transitive<br>
+R is reflexive: False, since there are no ordered pairs in R.<br>
+R is symmetric: True, vacuously. There are no ordered pairs in R to violate symmetry.<br>
+R is antisymmetric: True, vacuously. There are no ordered pairs in R to violate antisymmetry.<br>
+R is transitive: True, vacuously. There are no ordered pairs in R to violate transitivity.<br>
+  is reflexive, symmetric, antisymmetric, and transitive.
+
+<br>
+b) is on $ \mathbb{Z}$;
+The following relation R is symmetric.
+  x may not larger than -x<br>
+  is not reflexive.<br>
+  if  larger than     then y must larger than -x<br>
+  is symmetric.<br>
+  is not antisymmetric.<br>
+      <br>
+  may not larger than <br>
+  may not in R<br>
+  is not transitive.
+
+<br>
+c) is on ;
+The following relation R is reflexive, symmetric and transitive
+ <br>
+then  and  <br>
+  then there must have <br>
+ R is reflexive.<br>
+  then there must have <br>
+ R is Symmetric.  R can't be  antisymmetric.<br>
+  then there must have <br>
+ R is transitive.
+
+<br>
+d) is on 
+ The following relation R is reflexive, symmetric and transitive
+  x=w and y=z then <br>
+ R is reflexive<br>
+And  <br>
+ R is symmetric and transitive but not antisymmetric.
+
+<br>
+e)
+The following relation R is reflexive and symmetric
+   A is reflexive<br>
+  A is symmetric  but not antisymmetric.<br>
+   $ A\cap B \ne \emptyset$ <br>
+ $ A\cap C$ may  equal to      A is not transitive.
+
+
+
+<br><br>
+<br>
+Let  be two arbitrary relations on an arbitrary set A. Prove or disprove
+a) if  and  are reflexive, then  is reflexive.<br>
+  are reflexive.<br>
+A relation 𝑅 on a set 𝐴 is called reflexive if (𝑎, 𝑎) ∈ 𝑅 for every element 𝑎 ∈ 𝐴.<br>
+    contains  for every element <br>
+  contains  for every element <br>
+  at least contains  for every element <br>
+ is reflexive.
+ b) if  and  are symmetric, then  is symmetric.<br>
+  are symmetric.<br>
+A relation 𝑅 on a set 𝐴 is called symmetric if (𝑏, 𝑎) ∈ 𝑅 whenever (𝑎, 𝑏) ∈ 𝑅.<br>
+ Suppose  =     then there must also has  .<br>
+Otherwise,  or  only has  it can't be symmetric respectively.<br>
+ is symmetric.
+c) if  and  are antisymmetric, then  is antisymmetric.<br>
+  are antisymmetric.<br>
+A relation 𝑅 on a set 𝐴 is called anti-symmetric if whenever (𝑎, 𝑏) ∈ 𝑅 and (𝑏, 𝑎) ∈ 𝑅, then 𝑎 = 𝑏<br>
+ Suppose  =     then there can not has  .<br>
+Otherwise,  and    both  have  and it can't be antisymmetric respectively.<br>
+ is antisymmetric.
+
+<br> d) if  and  are transitive, then  is transitive<br>
+  are transitive.<br>
+A relation 𝑅 on a set 𝐴 is called transitive if whenever  (𝑎, 𝑏) ∈ 𝑅 and (𝑏, 𝑐) ∈ 𝑅, then (𝑎, 𝑐) ∈ 𝑅.<br>
+ : <br>
+  <br>
+  =  Obviously, it can't be transitive.<br>
+ is not transitive.<br><br>
+<br>
+Determine whether the following relations are equivalence relation. You need to prove your answer. If yes, list all distinct equivalent classes (each subset of the partition defined by the equivalence relation).
+
+<br>a) on ;
+
+if   (x mod 5=x）  R is reflexive<br>
+if   (x mod 5=y)  y mod 5 may not be x<br>
+ is not symmetric  is not equivalence relation
+
+<br>b){(x,y)| x and y are two UIC students and from the same faculty/school.} on the set of all UIC students;
+
+ For reflexive, the same student must be in the same faculty/school as himself/herself, so R satisfies reflexivity
+ For symmetric, if student a and student b are from the same faculty/school, then student b and student a are from the same faculty/school, then (a, b) ∈ R, (b, a) ∈ R, so R satisfies symmetric.
+ For transitive, if (a, b) ∈ R, (b, c) ∈ R, then will have (a, c) ∈ R, so R satisfies transitive.  
+ ∴ this relation is equivalence relation.
+
+<br>c){| there is a bijection } on  is the powerset of . So, A and B are subsets of .
+
+ For reflexive, let A = B, that will have a bijection : A → B, so R satisfies reflexivity<br>
+For symmetric, if : A → B is a bijection, then : B → A is a bijection, it means that if<br>
+(A, B) ∈ R, that will also have (B, A) ∈ R, so R satisfies symmetric<br>
+For transitive, if : A → B is a bijection, : B → C is a bijection, then it will always have<br>
+ℎ: A → C is a bijection, so R satisfies transitive.<br>
+∴ this relation is equivalence relation. equivalent classes are all  that can have bijection relation to every 
+
+]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-7.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-assignment-7.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[Discrete-mathematics-Assignment-3]]></title><description><![CDATA[ 
+ <br><br><br>a) <br>
+    Modus tollen<br>
+   De Morgan’s laws<br>
+  Distributive laws<br>
+  Identity Laws<br>
+ <br>
+  De Morgan’s laws<br>
+  Domination Laws<br>
+b) <br>
+   Modus ponens<br>
+   Modus tollen<br>
+c) <br>
+ <br>
+ De Morgan’s laws<br>
+ <br>
+ <br>
+<br>
+<br>
+<br><br>Step2 is wrong: Step 2 should be Existential instantiation using(1)<br>
+Step6 is wrong: Step 6 can't be Universal generalization<br><br><br><br>    P: a is a multiple of 4<br>
+   Q: 3a+1 is odd<br>
+a)Direct proof:<br>
+ : <br>
+     a is a mutiple of 4<br>
+     Suppose: a=4n<br>
+      <br>
+      is an odd<br>
+b)Contradiction:<br>
+ : <br>
+      is even ()<br>
+    <br>
+         <br>
+      <br>
+       is odd ()<br>
+    <br>
+c)Contraposition:<br>
+ : <br>
+      ()<br>
+     <br>
+     It's clear that  can't be divided by 4 ()<br>
+   <br><br>   If  is even then  is even then the proof is done.<br>
+  If  is odd then   is an odd then  is an even number<br><br>    <br>
+   <br>
+    for n <br>
+<br>
+Basis step: P(1):     <br>
+Induction Hypothesis: Assume P(k-1) is true<br>   <br>
+Inductive Step: <br>
+      <br>
+      <br>
+      <br><br>     <br>
+ <br>
+Basis step: P(0):  <br>
+Induction Hypothesis:  Assume P(k) is true <br>
+Inductive Step:  ]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-3.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-assignment-3.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="Discrete-mathematics-Assignment-6" href="math/discrete-structure/assignment/discrete-mathematics-assignment-6.html" class="internal-link" target="_self" rel="noopener">Discrete-mathematics-Assignment-6</a>]]></title><description><![CDATA[ 
+ <br><br><br>a) <br>
+b)  <br>
+c) <br>
+<br>
+There are only 3 situations  z=2,1,0<br>
+when  then <br>
+<br>
+when  then <br>
+<br>
+when  then <br>
+<br>
+ There are totally 21 ways to pick 10 coins such that the total amount is at most ￥20<br><br>a)  neither an injection nor a surjection<br>
+ There are  kinds of function <br>
+b)  is an injection<br>
+ kinds of function <br>
+c)  is a surjection<br>
+ kinds of function <br>
+d)  is an bijection<br>
+ =m!/ (m-n)!    <br>
+                           <br>
+c:  <br>
+d:  if n = m The number of bijections from a set A with n elements to a set B with m elements is <br>
+if n m The number of bijections from a set A with n elements to a set B with m elements is . <br><br> is injection \because |A|&gt;|B| $ If A are placed into B, then there is at least one box containing at least 2 objects.<br>
+$\therefore $ It can't be an injection function<br><br>Suppose the length of the string is n<br>
+ is the number of binary strings<br>
+  <br>
+ and <br>
+   <br>
+  <br>
+ <br><br>Suppose that <br>
+    $ r_2=5\therefore a_n=\alpha_12^n+\alpha_25^na_0=2=\alpha_1+\alpha_2a_1=1=2\alpha_1+5\alpha_2\therefore \alpha_1=3$     <br>
+]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-6.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-assignment-6.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="Discrete-mathematics-Assignment-5" href="math/discrete-structure/assignment/discrete-mathematics-assignment-5.html" class="internal-link" target="_self" rel="noopener">Discrete-mathematics-Assignment-5</a>]]></title><description><![CDATA[ 
+ <br><br><br>a)  False e.g.    <br>b)  True <br>​		 <br>​			<br>c)  False<br>​		e.g.  <br>​			     when   <br><br>a)  is a bijection      <br>​							  <br>​								 $\therefore x $ is a function<br>​								 is an injection<br>​							     is a surjection<br>​							 is a bijection<br>b)  is a function      <br>​							  <br>​								 $\therefore x $ is a function<br>​								 is not an injection<br>​							     is not a surjection<br>​							 is not a bijection<br>c)  is a bijection       is a function      <br>​							   <br>​								  $\therefore x $ is a function<br>​								 is an injection<br>​							     is a surjection<br>​							 is a bijection<br>d)f is a injection      <br>​							  <br>​								$(((x_1,y_1) \in f \wedge (x_1,y_2)\in f) $ $\therefore x $ is a function<br>​								 is a injection<br>​							     is not a surjection<br>​							 is not a bijection<br><br>a)      <br>b)      <br>c)      <br>d)      <br><br>a)      <br>b)      <br>c)      <br><br> is a injection <br>          <br>$\because g: C\rightarrow A,h: C\rightarrow A $<br>         <br>:        <br>          <br>  ]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-5.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-assignment-5.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[Discrete-mathematics-Assignment-2]]></title><description><![CDATA[ 
+ <br><br><br>a)<br><br><br>
+<br>
+<br>
+<br>
+<br>
+it's clear that  is a contingency.<br>b)<br><br><br>
+<br>
+<br>
+<br>
+<br>c)<br><br><br>
+<br>
+<br>
+<br><br>a) <br>
+b) <br>
+c)     <br>
+<br><br>a) False<br>
+Reason:    any x less than any y<br>
+if  then the predicates must be wrong<br>
+b) False<br>
+Reason:  exits x less than any y<br>
+however if <br>
+y must be less than x, so the predicates must be wrong<br>
+c) True<br>
+Reason: for any x ,there exits y larger than x.<br>
+d) True<br>
+Reason: exits x, y for x &lt; y<br>
+if y=x+1 y must larger than x<br>
+e) True  False<br>
+Reason: exits x for any y less than x<br>
+if x=y+1 x must larger than x<br>
+f) True  False<br>
+Reason:  for any x  exits y so that y less than x<br>
+if y=x-1 y must be less than x<br><br><br><br><br>Prove: <br>
+<br>
+<br>
+<br>
+]]></description><link>https://blog.allenygy.vip/math/discrete-structure/assignment/discrete-mathematics-assignment-2.html</link><guid isPermaLink="false">math/discrete-structure/assignment/discrete-mathematics-assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="DCN-Assignment1" href="network/assignment/dcn-assignment1.html" class="internal-link" target="_self" rel="noopener">DCN-Assignment1</a>]]></title><description><![CDATA[ 
+ <br><br>杨钧涯<br>
+s230026188<br><br>What is the OSI model?<br><br> There are 7 layers in the in OSI Model<br>
+<br>Physical Layer
+
+<br>It is concerned with transmitting raw bits over a communication channel.
+
+
+<br>Data Link Layer
+
+<br>It is to transform a raw transmission facility into a line that appears free of undetected transmission errors to the network layer.
+
+
+<br>Network Layer
+
+<br>It controls the operation of the subnet.
+
+
+<br>Transport Layer
+
+<br>It is to accept data from above, split it up into smaller units if need be, pass these to the network layer, and ensure that the pieces all arrive correctly at the other hand.
+
+
+<br>Session Layer
+
+<br>It allows users on different machines to establish sessions between them.
+
+
+<br>Presentation Layer
+
+<br>It is concerned with the syntax and semantics of the information transmitted.
+
+
+<br>Application Layer
+
+<br>It contains a variety of protocols that are commonly needed by users, such as HTTP, Email, etc.
+
+
+<br><br>There are no Session Layer and Presentation Layer in TCP/IP models<br><br>A company’s computer network is the backbone of its business as it connects all its computers and related devices, allowing staff to work more efficiently across the organization. Suppose a commercial company has about 8000 staff. As a computer officer in the company, you are required to design a computer network for that company. Note that network design involves evaluating and understanding how all the elements of the network link together and how they can be made to run as efficiently as possible. Please answer the following questions.<br><br>
+<br>Star topology will be used in this network
+<br><br>
+<br>Central Connection Point (Hub, Switch, or Router)
+<br>Nodes (Computers, Printers, Servers, etc.)
+<br>Cabling
+<br><br>
+<br>Cost: This includes the initial setup expenses as well as ongoing maintenance and operation costs. Effective design balances affordability with performance and scalability requirements.
+<br>Stability: A stable network ensures consistent availability and reliability, minimizing downtime and supporting productivity. This involves choosing dependable hardware and implementing redundancy where necessary.
+<br>Scalability: The network should be able to grow and adapt to increased demands without extensive redesigns. This means planning for future expansions in users, devices, and data volumes.
+<br>Performance: Network performance affects data transmission speed and efficiency. A well-designed network minimizes latency and maximizes throughput to provide a smooth user experience.
+<br>Complexity: While some complexity might be necessary for functionality, a simpler network is generally easier to manage and troubleshoot. The goal is to find the optimal balance that meets the network's objectives without unnecessary complication.
+<br><br><img alt="Star" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Topology/Star.png" referrerpolicy="no-referrer"><br><br>The CRC method is used to transmit a bit-stream of  with the generator polynomial . <br><br><br>
+Frame: <br>
+Message after 3 zero bits are appended: <br>
+Reminder:  <br><br>Show that this error is detected at the receiver’s end.<br><br>
+Receive Frame: <br>
+Receive Data: <br>
+Calculate Reminder: <br>
+<br>
+ it can detect the error<br><br><br><img alt="1001 1000" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DCN/AS-1/Manchester.png" referrerpolicy="no-referrer"><br><br><br><br>  the Hamming code for the bit-stream is<br>1010 1010 1010 1010 0<br><br>Error correction, and error-detection, and retransmission can be used to tackle error bits in data communication. State two reasons why some applications use error correction instead of error detection and retransmission.<br>
+<br>For some application that need Real-time or Low latency, Delays in processes such as waiting for retransmissions can degrade the quality of service and the user experience.
+<br>In environments where communication channels are inherently noisy or prone to high error rates (e.g., deep space communications, underwater communications), it may not be practical or efficient to retransmit data every time an error is detected.
+<br><br>The Internet of Things (IoT) is doing great in many fields and services. Numerous IoT applications can ease our commercial operations. Suppose you are a project leader in a software house, and your team is required to write a proposal about IoT innovation. Please suggest what kind of application you would propose and why.<br>Proposal:<br>
+<br>A Smart Waste Management System. This system would leverage IoT technology to optimize waste collection and processing in urban areas.
+<br>Why:<br>
+<br>A Smart Waste Management System utilizing IoT technology offers a holistic solution to urban waste challenges by enhancing environmental sustainability, reducing operational costs through optimized routes and schedules.
+]]></description><link>https://blog.allenygy.vip/network/assignment/dcn-assignment1.html</link><guid isPermaLink="false">network/assignment/dcn-assignment1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:33:45 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Topology/Star.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/Topology/Star.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Chat-Application" href="program/projects/chatapplication/chat-application.html" class="internal-link" target="_self" rel="noopener">Chat-Application</a>]]></title><description><![CDATA[ 
+ <br><br>A chat application allows users to interact or communicate by texting, audio, and video. It can be useful for social or commercial activities.<br>In this assignment, students are required to write a Chat Program based on Windows Socket Programming C++.<br>
+The program should allow users to chat concurrently on the Internet (i.e., User A can send encrypted messages to User B, and vice versa).<br>
+You can download the sample programs (namely, “server.cpp” and “client.cpp”) from the Web site. The program should consist of the following modules:<br>
+<br>User management: provide functions to add, delete, or group users;
+<br>Group chat: allow users to chat as a group;
+<br>Management of connections: support at least three concurrent connections.
+<br>User Management:  Implemented By Server<br>
+<br>Server: Store the User Information
+<br>Group chat: Group started by Client<br>
+<br>Server Provide all users for Client User to select. 
+<br>Management of connections: Give every User a Threads<br>Content Chinese version
+起初，我们的客户端实现仅采用了单线程方式，消息的接收和发送是交替进行的。这种实现方式存在一个显著的问题：客户端无法同时进行消息的接收和发送操作，而是只能在完成接收后进行发送，反之亦然。这导致了客户端在等待接收或发送消息时会发生阻塞，影响用户体验。
+为了克服这一问题，我们引入了多线程技术。在客户端中，我们分别为消息的接收和发送操作创建了独立的线程，从而实现了这两项操作的并发处理。这一改进使得客户端可以同时进行消息的接收和发送，提高了响应速度和用户体验。
+在服务器端，我们引入了互斥锁（mutex）来确保数据传输的正确性和线程安全性。当多个用户向同一个用户发送消息时，服务器会将这些消息推送到该用户的消息队列中，并在这一过程中使用互斥锁来保证消息的有序和完整传输。这样，服务器能够在多用户环境下稳定、高效地管理消息队列，确保每个用户都能正确收到发送给他们的消息。
+<br><br> I'm going to talk some details  about how we implemented this chat room application.<br><br><img alt="DataStructure" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DCN/Project-DataStructure.png" referrerpolicy="no-referrer"><br>
+<br>Sock: Client socket
+<br>messageQueue: Queue to store messages to be sent
+<br>queueMutex: Mutex to protect the message queue 
+<br>queueCond: Condition variable to notify the send thread
+<br><br><br><img alt="ServerThreads" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DCN/Project/ServerThreads.png" referrerpolicy="no-referrer"><br>
+<br>Initially, our client was single-threaded, handling message receiving and sending alternately. 
+<br>This caused a problem: the client or server couldn't receive and send messages concurrently, leading to blocking and a poor user experience.
+<br>To solve this, we introduced multithreading.<br>
+Separate threads for receiving and sending to improve responsiveness and user experience.<br><br><br><img alt="Send" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DCN/Project/SendMessage.png" referrerpolicy="no-referrer"><br>
+<br>On the server side, we introduced a mutex to ensure data transmission accuracy and thread safety. 
+<br>When multiple users send messages to the same user, the server pushes these messages into the receiver's message queue using a mutex to lock the process. 
+<br>This ensures orderly and complete message transmission.
+<br>These changes enabled the server to efficiently manage message queues in a multi-user environment, ensuring each user correctly receives their messages.<br>]]></description><link>https://blog.allenygy.vip/program/projects/chatapplication/chat-application.html</link><guid isPermaLink="false">program/projects/chatapplication/chat-application.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:19:51 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DCN/Project-DataStructure.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DCN/Project-DataStructure.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://github.com/ALLENYGY/DataBase-Management-System-Project" rel="noopener" class="external-link" href="https://github.com/ALLENYGY/DataBase-Management-System-Project" target="_blank">Courier Station Information Management System</a>]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>There is only one courier station in each region.
+<br>The address in this area is the address of the delivery station.
+
+<br>For example, there is a courier station on XiangZhou,ZhuHai,GuangDong then the address of this station will be XiangZhou,ZhuHai,GuangDong. There will be no additional specific address
+
+
+<br>One courier station may have many courier station manager.
+<br><br>Since we have different kinds of users, I will describe user requirements by user.<br><br>
+<br>Pick Parcel: Allows customers to pick a parcel from another customer.
+<br>Send Parcel: Allows customers to send a parcel to another customer.
+<br>Parcel Tracking: Allows customers to view the real-time location and status of their parcel during delivery.
+<br>Personal Information Management: Allow customers to update their personal information,  contact details.
+<br>History: Give customers the ability to view their order history.
+<br>Shipping Options: Choose from different delivery speeds and prices, such as standard, expedited, or timed delivery.
+<br>Service Evaluation: Provide a platform for customers to rate the express service and leave feedback.
+<br><br>
+<br>Status Update: Ability to update the delivery status of a package in the system, such as delivered or delayed.
+<br>Courier Station Information Management: Allow courier station manager to update their personal information, contact details, opening hours.
+<br>History: Allow courier station manager the ability to view information on packages that pass through this Courier station
+<br><br>
+<br>Station status: Ability to check the status of all of the courier station in this system.
+<br>History: Ability to view view all package information.
+<br>Here is a basic feature about the pick and send parcel.<br><img alt="Pick-Send Process" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/process.png" referrerpolicy="no-referrer"><br>CustomerA delivers the package to courier stationA and fills in the address that needs to be delivered, then the manager of courier stationA checks the package and transfers it to courier stationB according to the address, and the manager of courier stationB accepts the package. Finally, CustomerB can pick up the package.<br><br>In the user part, the user uses uID to login, we use the ISA relationship to distinguish the user as customer, delivery manager and administrator, and this ISA relationship is not disjoint, which means that all users registered in the system can be more than one identity.<br><img alt="ER-user" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/user.png" referrerpolicy="no-referrer"><br>
+In the parcel section. Each parcel will be sent and picked up by one customer, each customer can send or pick up more than one parcel at the same time, and each parcel has its responsible delivery manager, and corresponding logistic company.<br><img alt="ER-parcel" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/parcel.png" referrerpolicy="no-referrer"><br>In the courier station section, we can see that each delivery manager belongs to a courier station, and the administrator of the system can control multiple courier stations. Every courier station has a specific location for the logistics company to transport the parcel to the fixed address.<br><img alt="ER-courier_station" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/courier_station.png" referrerpolicy="no-referrer"><br>Finall we can get the ER diagram like this.<br><img alt="E-R" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/E-R.png" referrerpolicy="no-referrer"><br><br>In our user requirement the 3 different kinds of users should be disjoint and total participation.<br>For the Entity part<br>we can get 3 relationship sets about the user according to the method in logical design.<br>
+<br>
+<br>(courier_adminstrator)
+<br>(adminstrator)
+<br>And for each entity we can get one relationship set<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>For the relationship part, we have 8 relationship in our system.<br>
+<br>  
+<br>  
+<br>  
+<br>  
+<br> 
+<br> 
+<br>For above case we could not to create table.<br>
+<br> 
+<br> 
+<br><br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br><br>After the logical design the schemas in our database have already satisfed 1NF<br>Now let's continue to normalize the schema.<br>For these 3 user tables they have similar attributes<br><br>
+<br>
+<br>We can get the following function dependency.<br><br><br><br> is obviously candicate key it can hold the whole schema.<br>
+While  and  can hold the attribute , respectively.<br>but email and phone are not superkey, therefore it violates BCNF.<br>so we do this decomposition to this schema.<br>Decomposition<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br>This obviously satisfies the BCNF.<br>For the Courier station schema it also has email and phone attribute, and there is one more property csaddress<br><br>
+Functional dependency:<br>
+<br>
+<br>
+<br>
+<br>Therefore, we do decomposite just like before<br><br>
+<br>
+<br>
+<br>The next schema is about the parcel.<br><br>We can get the following function dependency like this.<br><br>We can find it only has one functional dependency. And obviously, the parcelID is the condicate key in this schema. So it has been already satisfied BCNF.<br><br>For the rest of the schema we can find it only has 2 attributes. So it must satisfy BCNF.<br><br>
+<br>
+<br><br><br>In this project, foreign keys are used in almost all the tables to establish connections.<br><br>In the table for each user, I used BLOB to save the profile picture。<br><img alt="BLOB" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/BLOB.png" referrerpolicy="no-referrer"><br><br>When dealing with the weight and volume of the package, I checked them on the front and back ends, especially on the back end, where I used triggers to make the volume and weight range from 0-300.<br><img alt="triggers" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/triggers.png" referrerpolicy="no-referrer"><br><br>
+<br>
+Customers can effortlessly pick and send packages, track deliveries in real-time, manage personal information, view order history, and evaluate the quality of service.<br>
+Our system offers a range of dynamic shipping options to suit different customer preferences.
+
+<br>
+For courier station managers, features such as status updates, site information management, and access to comprehensive historical logs can effectively manage packages. The ability to transfer parcels between sites ensures a smooth flow of parcels through the logistics network.
+
+<br>
+In addition, administrators benefit from a centralized view of workstation status and a complete package history, allowing them to monitor and optimize overall system performance.
+
+<br><br>
+<br>customer: 200000 records.
+<br>courier admin: 50000 records.
+<br>admin: 500   records. (There's no need to have 10,000 administrators)
+<br>parcel：15000 records.
+<br>courier station：5000  records. (There are only about 5,000 in the whole country)
+<br>email and phone table are the same size as its main(customer,  courier admin,  admin) table
+]]></description><link>https://blog.allenygy.vip/program/projects/courierstationinformationmanagementsystem/database-management-system.html</link><guid isPermaLink="false">program/projects/courierstationinformationmanagementsystem/database-management-system.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:19:51 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/process.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Project/DBM/process.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="BilibiliVista" href="program/projects/moviedataanalysis/bilibilivista.html" class="internal-link" target="_self" rel="noopener">BilibiliVista</a>]]></title><description><![CDATA[ 
+ <br><br>
+<br>Bilibili data analysis platform
+<br>Sentiment analysis based on deep learning
+<br><br><img alt="DPW-Overview" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/dpw.png"><br>Project Overview<br>
+<br>
+Data Acquisition
+
+<br>Crawling Movie Comments
+
+<br>Douban: Collect comments from the Douban movie site.
+<br>Maoyan: Collect comments from the Maoyan movie site.
+
+
+<br>Data Cleaning
+
+<br>Perform data cleaning to ensure the quality and consistency of the collected comments.
+
+
+
+
+<br>
+Model Training
+
+<br>Machine Learning Model
+
+<br>Utilize SnowNLP for sentiment analysis and other natural language processing tasks.
+
+
+<br>Deep Learning Model
+
+<br>Employ PaddleNLP to build and train deep learning models for advanced text analysis.
+
+
+
+
+<br>
+Model Application
+
+<br>Crawling Data from Bilibili
+
+<br>Implement real-time data crawling from Bilibili, allowing users to input a video url and retrieve video information and comments instantly.
+
+
+<br>Backend Development
+
+<br>Develop the backend using the FastAPI Python framework to handle data processing and model integration.
+
+
+<br>Frontend Development
+
+<br>Implement a user-friendly interface to visualize and interact with the analysis results.
+
+
+
+
+<br><br><br>Sources of Our Data<br>
+<br>Douban: A prominent movie site where users freely express their opinions on movies. These comments are often labeled by users' sentiments, making them invaluable for our analysis.
+<br>Maoyan: Another key player in the movie industry with a rich database of user comments, similarly labeled, allowing for comparative studies and robust model training.
+<br>Why These Datasets?<br>
+<br>Labeled Data: We chose to focus on comments from Douban and Maoyan because they offer labeled datasets. This is critical as labeled data provides a foundation for training and evaluating our sentiment analysis models with higher accuracy.
+<br><img alt="Comment on Douban and Maoyan" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/comment.png"><br><br><img alt="Data Preparation" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/datapreparation.png"><br>
+<br>Data Categorization
+
+<br>Negative dict: ratings less than or equal to 3
+<br>Positive dict: ratings greater than 3
+
+
+<br>Dataset Splitting
+
+<br>Random Split
+
+
+<br>Training and Testing set
+
+<br>Training set : Test set = 8:2
+
+
+<br><br><br>
+<br>SnowNLP is a library focused on natural language processing tasks for Chinese text, such as sentiment analysis and text processing.
+<br>Uses the labeled training data to train the classifier using the Naive Bayes algorithm.
+<br><br>
+<br>Assumes that features are independent of each other.
+<br>Estimates probabilities based on the features and labels in the training dataset.
+<br><br><br>Split Chinese characters and calculate the probability that the term appears in the set<br><img alt="Cut Chinese Comment" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/cutcomment.png"><br><br><br><br>
+<br>Comment of Movie
+<br>
+<br>Crawl the Comment of the Movie 《 Wandering Earth 2》 From&nbsp; the Bilibili
+<br>
+<br>Estimation the comment score
+<br>
+<br>Get a comment sentiment score using the trained SnowNLP model.
+<br>Average comment sentiment score is only 0.54. (Calculate method In the appendix )
+<br>
+<br>Comment Score Distribution
+<br>
+<br>The distribution is polarized, it does not work well<br>
+<img alt="SnowNLP Comment Score Distribution" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/snownlpresult.png">
+<br>
+<br>Comment Score Example
+<br><br>It turns out that the model does not work well in practice<br><br><br>
+<br>With the development of deep learning, the number of model parameters has increased rapidly, and in order to train these parameters, larger data sets are needed to avoid overfitting.
+<br>Nowadays, &nbsp;studies have shown that Pretrained Models (PTM) based on large-scale unlabeled corpora can acquire generic language representations and perform well when fine-tuned to downstream tasks.
+<br>In addition, pre-training models can avoid training models from scratch.
+<br><img alt="Contex2Vec" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/contex2vec.png"><br>
+<br>BERT requires minimal architecture changes for a wide range of natural language processing applications.
+<br><br>
+<br>Remove a batch data from the dataloader
+<br>Feed batch data to the model for forward calculation
+<br>Pass forward calculation result to loss function to calculate loss. The forward calculation result is passed to the evaluation method, and the evaluation index is calculated.
+<br>Loss reverse return and update gradient. Repeat the above steps.
+<br>Each time an epoch is trained, the program will evaluate the effectiveness of the current model training.<br><br><br><br>
+<br>Comment of Movie
+<br>
+<br>Crawl the Comment of the Movie 《 Wandering Earth 2》 From&nbsp; the Bilibili
+<br>
+<br>Estimation the comment score
+<br>
+<br>Get a comment sentiment score using the trained PaddleNLP model.
+<br>Average comment sentiment score is 0.89. (Calculate method In the appendix )
+<br>
+<br>Sentiment Score Distribution
+<br><img alt="PaddleNLP Comment Score Distribution" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/paddlenlpresult.png"><br><br><br>
+<br>Set the User-Agent and cookie information
+<br>Through bvid access to the comment information of the video including:<br>
+<br>Comment
+<br>Number of comments and likes
+<br><img alt="User-Agent" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/user-agent.png"><br>
+<br>Crawl video basic information
+<br>Through bvid access to the basic information of the video including:<br>
+<br>Title
+<br>Author
+<br>Reply count, Favorite count,
+<br>Coin count, Share count
+<br><img alt="Video-info" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/video-info.png"><br>
+<br>Crawl video comment content and danmu content
+<br>Through bvid request screen XML file obtained through basic information:<br>
+<br>Time
+<br>Timestamp
+<br>Danmu text
+<br><img alt="Comment" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/commentdata.png"><br>
+<img alt="Danmu" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/danmudata.png"><br><br>Why FastAPI?<br>“FastAPI is a modern, fast (high-performance) web framework for building APIs with Python 3.6+.”<br>Key Advantages: <br>
+<br>High performance
+<br>Rapid development
+<br>Automatic interactive API documentation
+<br>Type hints for fewer bugs
+<br><img alt="BackendAPI" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/backendapi.png"><br>Introduction to the three main API categories: video, videos, newvideo<br>
+<br>Usage of 3 APIs:
+
+<br>video: Fetch specific video information.
+<br>videos: Gather statistics on all scraped videos.
+<br>newvideo: Add new video data to the system.
+
+
+<br><br><br><br>
+<br>
+Compute the values for the  column:
+
+   Here,  and  represent the values of the  and  columns for the -th row, respectively, and  is the result of their product, stored in a new column .
+
+<br>
+Calculate the ratio of the sum of the  column to the sum of the  column, which represents the mean sentiment value:
+
+Here,  is the sum of all values in the  column, and  is the sum of all values in the  column. This ratio represents the weighted average sentiment value, where the weight for each comment is its number of likes.
+
+<br><br><img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide1.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide2.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide3.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide4.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide5.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide6.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide7.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide8.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide9.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide10.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide11.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide12.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide13.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide14.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide15.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide16.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide17.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide18.png"><br>
+<img alt="Slide" src="https://blog.allenygy.vip/program/projects/moviedataanalysis/ppt/slide19.png">]]></description><link>https://blog.allenygy.vip/program/projects/moviedataanalysis/bilibilivista.html</link><guid isPermaLink="false">program/projects/moviedataanalysis/bilibilivista.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:19:51 GMT</pubDate><enclosure url="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/dpw.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://blog.allenygy.vip/program/projects/moviedataanalysis/img/dpw.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Data-Programming-Workshop" href="program/projects/moviedataanalysis/data-programming-workshop.html" class="internal-link" target="_self" rel="noopener">Data-Programming-Workshop</a>]]></title><description><![CDATA[ 
+ <br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/program/projects/moviedataanalysis/data-programming-workshop.html</link><guid isPermaLink="false">program/projects/moviedataanalysis/data-programming-workshop.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:19:51 GMT</pubDate></item><item><title><![CDATA[<a data-href="MovieDataAnalysis" href="program/projects/moviedataanalysis/moviedataanalysis.html" class="internal-link" target="_self" rel="noopener">MovieDataAnalysis</a>]]></title><description><![CDATA[ 
+ <br><br><br>
+主观数据分析
+
+<br>
+影评情感分析
+
+<br>
+二分类 正向情感/负面情感<br>
+- SnowNLP （已跑通）<br>
+- KNN（已跑通）
+
+<br>
+水军评论筛选（如有空）
+
+
+<br>
+客观数据分析
+
+<br>词云图
+<br>近年年度电影主题
+<br>影视主题与票房关系？<br>
+...
+
+<br><br>
+<br>豆瓣
+<br>猫眼
+<br><br><img alt="情感分析" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DPW/%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90.png" referrerpolicy="no-referrer"><br><br>
+<br>后续做词云图
+<br><br>
+<br>词向量
+
+<br>word2vec 
+<br>GloVe
+<br>BERT 
+
+
+<br><br>
+<br>MLP
+<br>CNN 
+<br>RNN
+<br>Transformer？
+<br><br>客观数据包括：<br>
+<br>电影名称
+<br>导演，演员....
+<br>票房
+<br>....
+<br><br>
+<br>词云图
+<br>
+]]></description><link>https://blog.allenygy.vip/program/projects/moviedataanalysis/moviedataanalysis.html</link><guid isPermaLink="false">program/projects/moviedataanalysis/moviedataanalysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:19:51 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DPW/%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DPW/%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="System-Design-Specification" href="program/projects/moviedataanalysis/system-design-specification.html" class="internal-link" target="_self" rel="noopener">System-Design-Specification</a>]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>杨钧涯
+<br>王孟涵
+<br>缪润杰
+<br>苏泊鑫
+<br>肖嘉皓
+<br><br><br><br>
+<br>DOCUMENT CHANGE LOG 
+<br>TABLE OF CONTENTS 
+<br>DESIGN OVERVIEW 
+<br>TOOLS AND STANDARDS
+
+<br>Tools
+<br>Standards
+
+
+<br>USER INTERFACE DESIGN
+
+<br>Usage Scenario I
+<br>Usage Scenario II
+
+
+<br>DIAGRAMS
+<br><br>Design Overview for the Data Analysis Platform<br>Our platform is meticulously architected to provide an end-to-end data analysis solution, encompassing data preprocessing, modeling, and visualization functionalities. To ensure a robust and responsive user experience, our system architecture distinctly separates the frontend and backend services.<br>Backend Architecture: We leverage the power of Python's FastAPI framework, renowned for its high performance and ease of use, to handle data-intensive backend operations efficiently. This choice enables us to implement asynchronous processing, significantly boosting the responsiveness of our platform.<br>Frontend Design: The user interface is built using Vue.js, a progressive JavaScript framework known for its adaptability and component-based architecture. This setup allows for a dynamic and seamless interaction with the data analysis functionalities, providing users with an intuitive experience as they upload and manipulate their data.<br>Core Functionalities:<br>
+<br>Data Upload: Users can easily upload datasets via the frontend interface.
+<br>Data Preprocessing: The platform offers a suite of tools for cleaning and preparing data for analysis, ensuring data quality and readiness.
+<br>Modeling Capabilities: Users have access to a variety of built-in models, including regression and clustering, to uncover patterns and derive insights from their data.
+<br>Visualization Tools: Integrated visualization tools enable users to create engaging and informative visual representations of their analysis results.
+<br>Our platform is designed to be flexible, catering to a wide range of data analysis needs and making sophisticated data science accessible to users with varying levels of expertise.<br>Here， we show some models instruction<br>Linear regression is a basic statistical model, which is used to explore the linear relationship between variables. It assumes that there is a straight line relationship between the dependent variable and the independent variable, and predicts by fitting the best straight line. The fitting of the model is completed by the least square method, and the indexes such as the square of R, the square of adjusted R and the standard error are usually used in the evaluation. In application, we need to pay attention to model assumptions, such as linear relationship, multicollinearity and normal distribution of error terms.<br>Decision tree is a non-parametric supervised learning algorithm, which is utilized for both classification and regression tasks. It has a hierarchical, tree structure, which consists of a root node, branches, internal nodes and leaf nodes.<br>
+A decision tree starts with a root node, which does not have any incoming branches. The outgoing branches from the root node then feed into the internal nodes, also known as decision nodes. Based on the available features, both node types conduct evaluations to form homogenous subsets, which are denoted by leaf nodes, or terminal nodes. The leaf nodes represent all the possible outcomes within the dataset.<br>K-nearest neighbor (KNN) is an instance-based supervised learning algorithm, and it is sensitive to data size and dimension. It performs classification or regression by measuring the distance between a new sample and a known sample in the training set. In classification, it assigns the new sample to the category to which the K closest neighbors belong. In regression, it predicts the value of the new sample, estimated by the average of the K closest neighbors. The working principle of the KNN algorithm consists of the following steps: Calculate distance, Select Nearest neighbor, Voting or calculating the mean.<br>设计总览
+我们将会搭建一个通用的数据分析平台，平台将会实现包括数据预处理，建模，可视化等功能。<br>
+我们将使用前后端分离的架构，后端将使用由python搭建的FASTAPI框架<br>
+前端将使用Vue.js<br>
+用户将通过我们搭建的前端界面，上传数据；选择希望执行的操作，完成一整套数据分析的流程<br>
+们也提供常用的模型包括回归，聚类
+<br><br><br>In python we use the Numpy, pandas, sklearn, matplotlib libraries<br><br>Common to all platforms, including MacOS, Windows, Linux<br>
+Accessible via browser on all platforms<br><br><img alt="User Interface" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DPW/DesignOverview.png" referrerpolicy="no-referrer"><br>]]></description><link>https://blog.allenygy.vip/program/projects/moviedataanalysis/system-design-specification.html</link><guid isPermaLink="false">program/projects/moviedataanalysis/system-design-specification.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:19:51 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DPW/DesignOverview.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DPW/DesignOverview.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
