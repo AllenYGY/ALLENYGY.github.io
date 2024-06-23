@@ -1,2 +1,1 @@
-# myblog
-AllenYGY's blog
+# AllenYGY's blog
