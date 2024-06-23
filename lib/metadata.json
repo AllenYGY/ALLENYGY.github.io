@@ -1,6 +1,6 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1719152181231,
+  "lastExport": 1719154407468,
   "pluginVersion": "1.0.0",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon primary-accent-purple secondary-accent-green outliner-plugin-dnd",
   "useCustomHeadContent": false,
@@ -16,7 +16,26 @@
     "algorithm/daa/algorithm/enumeration.md",
     "algorithm/daa/algorithm/enumeration-subset.md",
     "algorithm/daa/algorithm/divide-and-conquer.md",
+    "algorithm/daa/assignment/daa-assignment-2.md",
+    "algorithm/daa/assignment/daa-programming-assignment.md",
+    "algorithm/daa/assignment/daa-assignment-0.md",
+    "algorithm/daa/assignment/daa-assignment-1.md",
     "algorithm/daa/tutorial/tutorial-1.md",
+    "algorithm/dsa/assignment/draw/bst.png",
+    "algorithm/dsa/assignment/draw/bst-1.png",
+    "algorithm/dsa/assignment/draw/insert.png",
+    "algorithm/dsa/assignment/draw/delete.png",
+    "algorithm/dsa/assignment/draw/bst.drawio",
+    "algorithm/dsa/assignment/draw/insert-1.png",
+    "algorithm/dsa/assignment/draw/delete-1.png",
+    "algorithm/dsa/assignment/draw/bst-1.drawio",
+    "algorithm/dsa/assignment/draw/insert.drawio",
+    "algorithm/dsa/assignment/draw/delete.drawio",
+    "algorithm/dsa/assignment/draw/insert-1.drawio",
+    "algorithm/dsa/assignment/draw/delete-1.drawio",
+    "algorithm/dsa/assignment/dsa-assignment-1.md",
+    "algorithm/dsa/assignment/dsa-assignment-2.md",
+    "algorithm/dsa/assignment/written-assignment-am.md",
     "algorithm/dsa/fenwick.md",
     "algorithm/dsa/binarytree.md",
     "algorithm/dsa/b+tree.md",
@@ -76,6 +95,9 @@
     "contest/contest-overview.md",
     "data-analysis/hans-on-data/hans-on-data-analysis.md",
     "data-analysis/data-analysis.md",
+    "database-management/assignment/dbm-assignment-2.md",
+    "database-management/assignment/dbm-assignment-3.md",
+    "database-management/assignment/dbm-assignment-1.md",
     "database-management/lecture/relational-database-design-purpose-&-first-normal-form.md",
     "database-management/lecture/relational-database-design-functional-dependency.md",
     "database-management/lecture/relational-database-design-bcnf.md",
@@ -104,8 +126,15 @@
     "deep-learning/activationfunction.md",
     "english/四六级议论文模板-roy大表哥.pdf",
     "english/cet-6.md",
-    "fix-income/珠海市经济产业分析.md",
     "fix-income/fixedincomeoverview.md",
+    "fix-income/珠海市经济产业分析.md",
+    "math/discrete-structure/assignment/discrete-mathematics-tutorial.md",
+    "math/discrete-structure/assignment/discrete-mathematics-assignment-8.md",
+    "math/discrete-structure/assignment/discrete-mathematics-assignment-7.md",
+    "math/discrete-structure/assignment/discrete-mathematics-assignment-3.md",
+    "math/discrete-structure/assignment/discrete-mathematics-assignment-6.md",
+    "math/discrete-structure/assignment/discrete-mathematics-assignment-5.md",
+    "math/discrete-structure/assignment/discrete-mathematics-assignment-2.md",
     "math/discrete-structure/lecture/tree.md",
     "math/discrete-structure/lecture/sets-and-n-tuple.md",
     "math/discrete-structure/lecture/representing-graph-and-connectivity.md",
@@ -131,6 +160,7 @@
     "math/probability-statistics/confidence-interval.md",
     "math/probability-statistics/chi-square-tests.md",
     "math/math.md",
+    "network/assignment/dcn-assignment1.md",
     "network/ustc-l1.md",
     "network/transport-layer.md",
     "network/standardized-networks.md",
@@ -182,12 +212,49 @@
     "program/java/test/printer.java",
     "program/java/test/phone.java",
     "program/java/test/computer.java",
-    "program/java/tostringandequalsmethods/test3.java",
     "program/java/tostringandequalsmethods/test4.java",
+    "program/java/tostringandequalsmethods/test3.java",
     "program/java/tostringandequalsmethods/test2.java",
     "program/java/tostringandequalsmethods/student.java",
     "program/java/tostringandequalsmethods/person.java",
     "program/javascript/quick-start.md",
+    "program/projects/chatapplication/chat-application.md",
+    "program/projects/courierstationinformationmanagementsystem/database-management-system.md",
+    "program/projects/moviedataanalysis/img/video-info.png",
+    "program/projects/moviedataanalysis/img/user-agent.png",
+    "program/projects/moviedataanalysis/img/snownlpresult.png",
+    "program/projects/moviedataanalysis/img/paddlenlpresult.png",
+    "program/projects/moviedataanalysis/img/datapreparation.png",
+    "program/projects/moviedataanalysis/img/danmudata.png",
+    "program/projects/moviedataanalysis/img/dpw.png",
+    "program/projects/moviedataanalysis/img/cutcomment.png",
+    "program/projects/moviedataanalysis/img/contex2vec.png",
+    "program/projects/moviedataanalysis/img/commentdata.png",
+    "program/projects/moviedataanalysis/img/comment.png",
+    "program/projects/moviedataanalysis/img/backendapi.png",
+    "program/projects/moviedataanalysis/ppt/slide9.png",
+    "program/projects/moviedataanalysis/ppt/slide8.png",
+    "program/projects/moviedataanalysis/ppt/slide7.png",
+    "program/projects/moviedataanalysis/ppt/slide6.png",
+    "program/projects/moviedataanalysis/ppt/slide5.png",
+    "program/projects/moviedataanalysis/ppt/slide4.png",
+    "program/projects/moviedataanalysis/ppt/slide3.png",
+    "program/projects/moviedataanalysis/ppt/slide2.png",
+    "program/projects/moviedataanalysis/ppt/slide19.png",
+    "program/projects/moviedataanalysis/ppt/slide18.png",
+    "program/projects/moviedataanalysis/ppt/slide17.png",
+    "program/projects/moviedataanalysis/ppt/slide16.png",
+    "program/projects/moviedataanalysis/ppt/slide15.png",
+    "program/projects/moviedataanalysis/ppt/slide14.png",
+    "program/projects/moviedataanalysis/ppt/slide13.png",
+    "program/projects/moviedataanalysis/ppt/slide12.png",
+    "program/projects/moviedataanalysis/ppt/slide11.png",
+    "program/projects/moviedataanalysis/ppt/slide10.png",
+    "program/projects/moviedataanalysis/ppt/slide1.png",
+    "program/projects/moviedataanalysis/bilibilivista.md",
+    "program/projects/moviedataanalysis/data-programming-workshop.md",
+    "program/projects/moviedataanalysis/moviedataanalysis.md",
+    "program/projects/moviedataanalysis/system-design-specification.md",
     "program/python/regularexpression.md",
     "program/python/pythonbasic.md",
     "program/python/python-exceptions.md",
@@ -201,43 +268,6 @@
     "program/r/basic-r.md",
     "program/programlanguage.md",
     "program/regular-expression.md",
-    "projects/chatapplication/chat-application.md",
-    "projects/courierstationinformationmanagementsystem/database-management-system.md",
-    "projects/moviedataanalysis/img/video-info.png",
-    "projects/moviedataanalysis/img/user-agent.png",
-    "projects/moviedataanalysis/img/snownlpresult.png",
-    "projects/moviedataanalysis/img/paddlenlpresult.png",
-    "projects/moviedataanalysis/img/datapreparation.png",
-    "projects/moviedataanalysis/img/danmudata.png",
-    "projects/moviedataanalysis/img/dpw.png",
-    "projects/moviedataanalysis/img/cutcomment.png",
-    "projects/moviedataanalysis/img/contex2vec.png",
-    "projects/moviedataanalysis/img/commentdata.png",
-    "projects/moviedataanalysis/img/comment.png",
-    "projects/moviedataanalysis/img/backendapi.png",
-    "projects/moviedataanalysis/ppt/slide9.png",
-    "projects/moviedataanalysis/ppt/slide8.png",
-    "projects/moviedataanalysis/ppt/slide7.png",
-    "projects/moviedataanalysis/ppt/slide6.png",
-    "projects/moviedataanalysis/ppt/slide5.png",
-    "projects/moviedataanalysis/ppt/slide4.png",
-    "projects/moviedataanalysis/ppt/slide3.png",
-    "projects/moviedataanalysis/ppt/slide2.png",
-    "projects/moviedataanalysis/ppt/slide19.png",
-    "projects/moviedataanalysis/ppt/slide18.png",
-    "projects/moviedataanalysis/ppt/slide17.png",
-    "projects/moviedataanalysis/ppt/slide16.png",
-    "projects/moviedataanalysis/ppt/slide15.png",
-    "projects/moviedataanalysis/ppt/slide14.png",
-    "projects/moviedataanalysis/ppt/slide13.png",
-    "projects/moviedataanalysis/ppt/slide12.png",
-    "projects/moviedataanalysis/ppt/slide11.png",
-    "projects/moviedataanalysis/ppt/slide10.png",
-    "projects/moviedataanalysis/ppt/slide1.png",
-    "projects/moviedataanalysis/bilibilivista.md",
-    "projects/moviedataanalysis/data-programming-workshop.md",
-    "projects/moviedataanalysis/moviedataanalysis.md",
-    "projects/moviedataanalysis/system-design-specification.md",
     "research/ploidy/ploidy.md",
     "research/ploidy/ploidy-review.md",
     "research/calculatese.md",
@@ -386,673 +416,487 @@
   ],
   "fileInfo": {
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
-    "projects/moviedataanalysis/img/dpw.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 210090,
-      "exportedPath": "projects/moviedataanalysis/img/dpw.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/img/comment.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 181426,
-      "exportedPath": "projects/moviedataanalysis/img/comment.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/img/datapreparation.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 114850,
-      "exportedPath": "projects/moviedataanalysis/img/datapreparation.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/img/cutcomment.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 126690,
-      "exportedPath": "projects/moviedataanalysis/img/cutcomment.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/img/snownlpresult.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 40652,
-      "exportedPath": "projects/moviedataanalysis/img/snownlpresult.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/img/contex2vec.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 314897,
-      "exportedPath": "projects/moviedataanalysis/img/contex2vec.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/img/paddlenlpresult.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 45391,
-      "exportedPath": "projects/moviedataanalysis/img/paddlenlpresult.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/img/user-agent.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 66016,
-      "exportedPath": "projects/moviedataanalysis/img/user-agent.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/img/video-info.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 92143,
-      "exportedPath": "projects/moviedataanalysis/img/video-info.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/img/commentdata.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 56174,
-      "exportedPath": "projects/moviedataanalysis/img/commentdata.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/img/danmudata.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 68350,
-      "exportedPath": "projects/moviedataanalysis/img/danmudata.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/img/backendapi.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 225734,
-      "exportedPath": "projects/moviedataanalysis/img/backendapi.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide1.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 607738,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide1.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide2.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 84462,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide2.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide3.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 83378,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide3.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide4.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 82505,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide4.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide5.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 102963,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide5.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide6.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 72770,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide6.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide7.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 68289,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide7.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide8.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 89976,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide8.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide9.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 77781,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide9.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide10.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 147516,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide10.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide11.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 144188,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide11.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide12.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 123147,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide12.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide13.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 69976,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide13.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide14.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 69977,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide14.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide15.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 116402,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide15.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide16.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 96187,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide16.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide17.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 93601,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide17.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide18.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 32891,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide18.png",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/ppt/slide19.png": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 18206,
-      "exportedPath": "projects/moviedataanalysis/ppt/slide19.png",
-      "dependencies": []
-    },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 155224,
+      "modifiedTime": 1719154407468,
+      "sourceSize": 172888,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 15845,
+      "modifiedTime": 1719154407468,
+      "sourceSize": 17814,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 151287,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 317906,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 5178,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 2105457,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "algorithm/basicalgorithm/sparcetable.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 199,
       "exportedPath": "algorithm/basicalgorithm/sparcetable.html",
       "dependencies": []
     },
     "algorithm/basicalgorithm/slidingwindow.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 904,
       "exportedPath": "algorithm/basicalgorithm/slidingwindow.html",
       "dependencies": []
     },
     "algorithm/basicalgorithm/discretization.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 595,
       "exportedPath": "algorithm/basicalgorithm/discretization.html",
       "dependencies": []
     },
     "algorithm/basicalgorithm/basic-algorithm-overview.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 359,
       "exportedPath": "algorithm/basicalgorithm/basic-algorithm-overview.html",
       "dependencies": []
     },
     "algorithm/daa/algorithm/union-find.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 6716,
       "exportedPath": "algorithm/daa/algorithm/union-find.html",
       "dependencies": []
     },
     "algorithm/daa/algorithm/sort.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 7742,
       "exportedPath": "algorithm/daa/algorithm/sort.html",
       "dependencies": []
     },
     "algorithm/daa/algorithm/graph-algorithm.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 6675,
       "exportedPath": "algorithm/daa/algorithm/graph-algorithm.html",
       "dependencies": []
     },
     "algorithm/daa/algorithm/enumeration.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 624,
       "exportedPath": "algorithm/daa/algorithm/enumeration.html",
       "dependencies": []
     },
     "algorithm/daa/algorithm/enumeration-subset.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 1972,
       "exportedPath": "algorithm/daa/algorithm/enumeration-subset.html",
       "dependencies": []
     },
     "algorithm/daa/algorithm/divide-and-conquer.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 6684,
       "exportedPath": "algorithm/daa/algorithm/divide-and-conquer.html",
       "dependencies": []
     },
     "algorithm/daa/tutorial/tutorial-1.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 1351,
       "exportedPath": "algorithm/daa/tutorial/tutorial-1.html",
       "dependencies": []
     },
     "algorithm/dsa/fenwick.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 1946,
       "exportedPath": "algorithm/dsa/fenwick.html",
       "dependencies": []
     },
     "algorithm/dsa/binarytree.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 1389,
       "exportedPath": "algorithm/dsa/binarytree.html",
       "dependencies": []
     },
     "algorithm/dsa/b+tree.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 4132,
       "exportedPath": "algorithm/dsa/b+tree.html",
       "dependencies": []
     },
     "algorithm/dsa/avl.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 807,
       "exportedPath": "algorithm/dsa/avl.html",
       "dependencies": []
     },
     "algorithm/graph/graph-overview.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 837,
       "exportedPath": "algorithm/graph/graph-overview.html",
       "dependencies": []
     },
     "algorithm/numbertheory/prime-sieve.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 1473,
       "exportedPath": "algorithm/numbertheory/prime-sieve.html",
       "dependencies": []
     },
     "algorithm/recursion/recursion-binarytree.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 9257,
       "exportedPath": "algorithm/recursion/recursion-binarytree.html",
       "dependencies": []
     },
     "algorithm/recursion/recursion-2.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 6329,
       "exportedPath": "algorithm/recursion/recursion-2.html",
       "dependencies": []
     },
     "algorithm/recursion/recursion-1.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 15820,
       "exportedPath": "algorithm/recursion/recursion-1.html",
       "dependencies": []
     },
     "algorithm/string/z-function.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 237,
       "exportedPath": "algorithm/string/z-function.html",
       "dependencies": []
     },
     "algorithm/string/tire-tree.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 223,
       "exportedPath": "algorithm/string/tire-tree.html",
       "dependencies": []
     },
     "algorithm/string/string-overview.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 366,
       "exportedPath": "algorithm/string/string-overview.html",
       "dependencies": []
     },
     "algorithm/string/manacher-algorithm.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 6593,
       "exportedPath": "algorithm/string/manacher-algorithm.html",
       "dependencies": []
     },
     "algorithm/string/kmp.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 216,
       "exportedPath": "algorithm/string/kmp.html",
       "dependencies": []
     },
     "algorithm/string/aho-corasick.md": {
-      "modifiedTime": 1719152181231,
+      "modifiedTime": 1719154407468,
       "sourceSize": 240,
       "exportedPath": "algorithm/string/aho-corasick.html",
       "dependencies": []
@@ -2071,105 +1915,6 @@
       "exportedPath": "program/regular-expression.html",
       "dependencies": []
     },
-    "projects/chatapplication/chat-application.md": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 4016,
-      "exportedPath": "projects/chatapplication/chat-application.html",
-      "dependencies": []
-    },
-    "projects/courierstationinformationmanagementsystem/database-management-system.md": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 10254,
-      "exportedPath": "projects/courierstationinformationmanagementsystem/database-management-system.html",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/bilibilivista.md": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 10620,
-      "exportedPath": "projects/moviedataanalysis/bilibilivista.html",
-      "dependencies": [
-        "projects/moviedataanalysis/img/dpw.png",
-        "projects/moviedataanalysis/img/dpw.png",
-        "projects/moviedataanalysis/img/comment.png",
-        "projects/moviedataanalysis/img/comment.png",
-        "projects/moviedataanalysis/img/datapreparation.png",
-        "projects/moviedataanalysis/img/datapreparation.png",
-        "projects/moviedataanalysis/img/cutcomment.png",
-        "projects/moviedataanalysis/img/cutcomment.png",
-        "projects/moviedataanalysis/img/snownlpresult.png",
-        "projects/moviedataanalysis/img/snownlpresult.png",
-        "projects/moviedataanalysis/img/contex2vec.png",
-        "projects/moviedataanalysis/img/contex2vec.png",
-        "projects/moviedataanalysis/img/paddlenlpresult.png",
-        "projects/moviedataanalysis/img/paddlenlpresult.png",
-        "projects/moviedataanalysis/img/user-agent.png",
-        "projects/moviedataanalysis/img/user-agent.png",
-        "projects/moviedataanalysis/img/video-info.png",
-        "projects/moviedataanalysis/img/video-info.png",
-        "projects/moviedataanalysis/img/commentdata.png",
-        "projects/moviedataanalysis/img/commentdata.png",
-        "projects/moviedataanalysis/img/danmudata.png",
-        "projects/moviedataanalysis/img/danmudata.png",
-        "projects/moviedataanalysis/img/backendapi.png",
-        "projects/moviedataanalysis/img/backendapi.png",
-        "projects/moviedataanalysis/ppt/slide1.png",
-        "projects/moviedataanalysis/ppt/slide1.png",
-        "projects/moviedataanalysis/ppt/slide2.png",
-        "projects/moviedataanalysis/ppt/slide2.png",
-        "projects/moviedataanalysis/ppt/slide3.png",
-        "projects/moviedataanalysis/ppt/slide3.png",
-        "projects/moviedataanalysis/ppt/slide4.png",
-        "projects/moviedataanalysis/ppt/slide4.png",
-        "projects/moviedataanalysis/ppt/slide5.png",
-        "projects/moviedataanalysis/ppt/slide5.png",
-        "projects/moviedataanalysis/ppt/slide6.png",
-        "projects/moviedataanalysis/ppt/slide6.png",
-        "projects/moviedataanalysis/ppt/slide7.png",
-        "projects/moviedataanalysis/ppt/slide7.png",
-        "projects/moviedataanalysis/ppt/slide8.png",
-        "projects/moviedataanalysis/ppt/slide8.png",
-        "projects/moviedataanalysis/ppt/slide9.png",
-        "projects/moviedataanalysis/ppt/slide9.png",
-        "projects/moviedataanalysis/ppt/slide10.png",
-        "projects/moviedataanalysis/ppt/slide10.png",
-        "projects/moviedataanalysis/ppt/slide11.png",
-        "projects/moviedataanalysis/ppt/slide11.png",
-        "projects/moviedataanalysis/ppt/slide12.png",
-        "projects/moviedataanalysis/ppt/slide12.png",
-        "projects/moviedataanalysis/ppt/slide13.png",
-        "projects/moviedataanalysis/ppt/slide13.png",
-        "projects/moviedataanalysis/ppt/slide14.png",
-        "projects/moviedataanalysis/ppt/slide14.png",
-        "projects/moviedataanalysis/ppt/slide15.png",
-        "projects/moviedataanalysis/ppt/slide15.png",
-        "projects/moviedataanalysis/ppt/slide16.png",
-        "projects/moviedataanalysis/ppt/slide16.png",
-        "projects/moviedataanalysis/ppt/slide17.png",
-        "projects/moviedataanalysis/ppt/slide17.png",
-        "projects/moviedataanalysis/ppt/slide18.png",
-        "projects/moviedataanalysis/ppt/slide18.png",
-        "projects/moviedataanalysis/ppt/slide19.png",
-        "projects/moviedataanalysis/ppt/slide19.png"
-      ]
-    },
-    "projects/moviedataanalysis/data-programming-workshop.md": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 426,
-      "exportedPath": "projects/moviedataanalysis/data-programming-workshop.html",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/moviedataanalysis.md": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 1044,
-      "exportedPath": "projects/moviedataanalysis/moviedataanalysis.html",
-      "dependencies": []
-    },
-    "projects/moviedataanalysis/system-design-specification.md": {
-      "modifiedTime": 1719152181231,
-      "sourceSize": 5361,
-      "exportedPath": "projects/moviedataanalysis/system-design-specification.html",
-      "dependencies": []
-    },
     "research/ploidy/ploidy.md": {
       "modifiedTime": 1719152181231,
       "sourceSize": 3209,
@@ -2366,6 +2111,485 @@
       "modifiedTime": 1719152181231,
       "sourceSize": 3195,
       "exportedPath": "taskmanagement.html",
+      "dependencies": []
+    },
+    "algorithm/daa/assignment/daa-assignment-2.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 6886,
+      "exportedPath": "algorithm/daa/assignment/daa-assignment-2.html",
+      "dependencies": []
+    },
+    "algorithm/daa/assignment/daa-programming-assignment.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 3528,
+      "exportedPath": "algorithm/daa/assignment/daa-programming-assignment.html",
+      "dependencies": []
+    },
+    "algorithm/daa/assignment/daa-assignment-0.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 3140,
+      "exportedPath": "algorithm/daa/assignment/daa-assignment-0.html",
+      "dependencies": []
+    },
+    "algorithm/daa/assignment/daa-assignment-1.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 9576,
+      "exportedPath": "algorithm/daa/assignment/daa-assignment-1.html",
+      "dependencies": []
+    },
+    "algorithm/dsa/assignment/draw/bst.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 23932,
+      "exportedPath": "algorithm/dsa/assignment/draw/bst.png",
+      "dependencies": []
+    },
+    "algorithm/dsa/assignment/draw/bst-1.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 38644,
+      "exportedPath": "algorithm/dsa/assignment/draw/bst-1.png",
+      "dependencies": []
+    },
+    "algorithm/dsa/assignment/draw/insert.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 51378,
+      "exportedPath": "algorithm/dsa/assignment/draw/insert.png",
+      "dependencies": []
+    },
+    "algorithm/dsa/assignment/draw/delete.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 46561,
+      "exportedPath": "algorithm/dsa/assignment/draw/delete.png",
+      "dependencies": []
+    },
+    "algorithm/dsa/assignment/draw/bst.drawio": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 4181,
+      "exportedPath": "algorithm/dsa/assignment/draw/bst.drawio",
+      "dependencies": []
+    },
+    "algorithm/dsa/assignment/draw/insert-1.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 51460,
+      "exportedPath": "algorithm/dsa/assignment/draw/insert-1.png",
+      "dependencies": []
+    },
+    "algorithm/dsa/assignment/draw/delete-1.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 43104,
+      "exportedPath": "algorithm/dsa/assignment/draw/delete-1.png",
+      "dependencies": []
+    },
+    "algorithm/dsa/assignment/draw/bst-1.drawio": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 7830,
+      "exportedPath": "algorithm/dsa/assignment/draw/bst-1.drawio",
+      "dependencies": []
+    },
+    "algorithm/dsa/assignment/draw/insert.drawio": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 11767,
+      "exportedPath": "algorithm/dsa/assignment/draw/insert.drawio",
+      "dependencies": []
+    },
+    "algorithm/dsa/assignment/draw/delete.drawio": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 10805,
+      "exportedPath": "algorithm/dsa/assignment/draw/delete.drawio",
+      "dependencies": []
+    },
+    "algorithm/dsa/assignment/draw/insert-1.drawio": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 11590,
+      "exportedPath": "algorithm/dsa/assignment/draw/insert-1.drawio",
+      "dependencies": []
+    },
+    "algorithm/dsa/assignment/draw/delete-1.drawio": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 8407,
+      "exportedPath": "algorithm/dsa/assignment/draw/delete-1.drawio",
+      "dependencies": []
+    },
+    "algorithm/dsa/assignment/dsa-assignment-1.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 5889,
+      "exportedPath": "algorithm/dsa/assignment/dsa-assignment-1.html",
+      "dependencies": [
+        "algorithm/dsa/assignment/draw/bst.png",
+        "algorithm/dsa/assignment/draw/bst.png",
+        "algorithm/dsa/assignment/draw/bst-1.png",
+        "algorithm/dsa/assignment/draw/bst-1.png",
+        "algorithm/dsa/assignment/draw/insert-1.png",
+        "algorithm/dsa/assignment/draw/insert-1.png",
+        "algorithm/dsa/assignment/draw/delete-1.png",
+        "algorithm/dsa/assignment/draw/delete-1.png"
+      ]
+    },
+    "algorithm/dsa/assignment/dsa-assignment-2.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 4070,
+      "exportedPath": "algorithm/dsa/assignment/dsa-assignment-2.html",
+      "dependencies": [
+        "algorithm/dsa/assignment/draw/insert.png",
+        "algorithm/dsa/assignment/draw/insert.png",
+        "algorithm/dsa/assignment/draw/delete.png",
+        "algorithm/dsa/assignment/draw/delete.png"
+      ]
+    },
+    "algorithm/dsa/assignment/written-assignment-am.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 4919,
+      "exportedPath": "algorithm/dsa/assignment/written-assignment-am.html",
+      "dependencies": []
+    },
+    "database-management/assignment/dbm-assignment-2.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 4187,
+      "exportedPath": "database-management/assignment/dbm-assignment-2.html",
+      "dependencies": []
+    },
+    "database-management/assignment/dbm-assignment-3.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 4713,
+      "exportedPath": "database-management/assignment/dbm-assignment-3.html",
+      "dependencies": []
+    },
+    "database-management/assignment/dbm-assignment-1.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 3888,
+      "exportedPath": "database-management/assignment/dbm-assignment-1.html",
+      "dependencies": []
+    },
+    "math/discrete-structure/assignment/discrete-mathematics-tutorial.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 1904,
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-tutorial.html",
+      "dependencies": []
+    },
+    "math/discrete-structure/assignment/discrete-mathematics-assignment-8.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 3626,
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-8.html",
+      "dependencies": []
+    },
+    "math/discrete-structure/assignment/discrete-mathematics-assignment-7.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 6938,
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-7.html",
+      "dependencies": []
+    },
+    "math/discrete-structure/assignment/discrete-mathematics-assignment-3.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 4311,
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-3.html",
+      "dependencies": []
+    },
+    "math/discrete-structure/assignment/discrete-mathematics-assignment-6.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 2182,
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-6.html",
+      "dependencies": []
+    },
+    "math/discrete-structure/assignment/discrete-mathematics-assignment-5.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 2813,
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-5.html",
+      "dependencies": []
+    },
+    "math/discrete-structure/assignment/discrete-mathematics-assignment-2.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 3567,
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-2.html",
+      "dependencies": []
+    },
+    "network/assignment/dcn-assignment1.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 6614,
+      "exportedPath": "network/assignment/dcn-assignment1.html",
+      "dependencies": []
+    },
+    "program/projects/chatapplication/chat-application.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 4016,
+      "exportedPath": "program/projects/chatapplication/chat-application.html",
+      "dependencies": []
+    },
+    "program/projects/courierstationinformationmanagementsystem/database-management-system.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 10254,
+      "exportedPath": "program/projects/courierstationinformationmanagementsystem/database-management-system.html",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/img/video-info.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 92143,
+      "exportedPath": "program/projects/moviedataanalysis/img/video-info.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/img/user-agent.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 66016,
+      "exportedPath": "program/projects/moviedataanalysis/img/user-agent.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/img/snownlpresult.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 40652,
+      "exportedPath": "program/projects/moviedataanalysis/img/snownlpresult.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/img/paddlenlpresult.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 45391,
+      "exportedPath": "program/projects/moviedataanalysis/img/paddlenlpresult.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/img/datapreparation.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 114850,
+      "exportedPath": "program/projects/moviedataanalysis/img/datapreparation.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/img/danmudata.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 68350,
+      "exportedPath": "program/projects/moviedataanalysis/img/danmudata.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/img/dpw.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 210090,
+      "exportedPath": "program/projects/moviedataanalysis/img/dpw.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/img/cutcomment.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 126690,
+      "exportedPath": "program/projects/moviedataanalysis/img/cutcomment.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/img/contex2vec.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 314897,
+      "exportedPath": "program/projects/moviedataanalysis/img/contex2vec.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/img/commentdata.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 56174,
+      "exportedPath": "program/projects/moviedataanalysis/img/commentdata.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/img/comment.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 181426,
+      "exportedPath": "program/projects/moviedataanalysis/img/comment.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/img/backendapi.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 225734,
+      "exportedPath": "program/projects/moviedataanalysis/img/backendapi.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide9.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 77781,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide9.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide8.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 89976,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide8.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide7.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 68289,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide7.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide6.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 72770,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide6.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide5.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 102963,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide5.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide4.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 82505,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide4.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide3.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 83378,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide3.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide2.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 84462,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide2.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide19.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 18206,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide19.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide18.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 32891,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide18.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide17.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 93601,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide17.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide16.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 96187,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide16.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide15.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 116402,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide15.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide14.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 69977,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide14.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide13.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 69976,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide13.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide12.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 123147,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide12.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide11.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 144188,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide11.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide10.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 147516,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide10.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/ppt/slide1.png": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 607738,
+      "exportedPath": "program/projects/moviedataanalysis/ppt/slide1.png",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/bilibilivista.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 10620,
+      "exportedPath": "program/projects/moviedataanalysis/bilibilivista.html",
+      "dependencies": [
+        "program/projects/moviedataanalysis/img/dpw.png",
+        "program/projects/moviedataanalysis/img/dpw.png",
+        "program/projects/moviedataanalysis/img/comment.png",
+        "program/projects/moviedataanalysis/img/comment.png",
+        "program/projects/moviedataanalysis/img/datapreparation.png",
+        "program/projects/moviedataanalysis/img/datapreparation.png",
+        "program/projects/moviedataanalysis/img/cutcomment.png",
+        "program/projects/moviedataanalysis/img/cutcomment.png",
+        "program/projects/moviedataanalysis/img/snownlpresult.png",
+        "program/projects/moviedataanalysis/img/snownlpresult.png",
+        "program/projects/moviedataanalysis/img/contex2vec.png",
+        "program/projects/moviedataanalysis/img/contex2vec.png",
+        "program/projects/moviedataanalysis/img/paddlenlpresult.png",
+        "program/projects/moviedataanalysis/img/paddlenlpresult.png",
+        "program/projects/moviedataanalysis/img/user-agent.png",
+        "program/projects/moviedataanalysis/img/user-agent.png",
+        "program/projects/moviedataanalysis/img/video-info.png",
+        "program/projects/moviedataanalysis/img/video-info.png",
+        "program/projects/moviedataanalysis/img/commentdata.png",
+        "program/projects/moviedataanalysis/img/commentdata.png",
+        "program/projects/moviedataanalysis/img/danmudata.png",
+        "program/projects/moviedataanalysis/img/danmudata.png",
+        "program/projects/moviedataanalysis/img/backendapi.png",
+        "program/projects/moviedataanalysis/img/backendapi.png",
+        "program/projects/moviedataanalysis/ppt/slide1.png",
+        "program/projects/moviedataanalysis/ppt/slide1.png",
+        "program/projects/moviedataanalysis/ppt/slide2.png",
+        "program/projects/moviedataanalysis/ppt/slide2.png",
+        "program/projects/moviedataanalysis/ppt/slide3.png",
+        "program/projects/moviedataanalysis/ppt/slide3.png",
+        "program/projects/moviedataanalysis/ppt/slide4.png",
+        "program/projects/moviedataanalysis/ppt/slide4.png",
+        "program/projects/moviedataanalysis/ppt/slide5.png",
+        "program/projects/moviedataanalysis/ppt/slide5.png",
+        "program/projects/moviedataanalysis/ppt/slide6.png",
+        "program/projects/moviedataanalysis/ppt/slide6.png",
+        "program/projects/moviedataanalysis/ppt/slide7.png",
+        "program/projects/moviedataanalysis/ppt/slide7.png",
+        "program/projects/moviedataanalysis/ppt/slide8.png",
+        "program/projects/moviedataanalysis/ppt/slide8.png",
+        "program/projects/moviedataanalysis/ppt/slide9.png",
+        "program/projects/moviedataanalysis/ppt/slide9.png",
+        "program/projects/moviedataanalysis/ppt/slide10.png",
+        "program/projects/moviedataanalysis/ppt/slide10.png",
+        "program/projects/moviedataanalysis/ppt/slide11.png",
+        "program/projects/moviedataanalysis/ppt/slide11.png",
+        "program/projects/moviedataanalysis/ppt/slide12.png",
+        "program/projects/moviedataanalysis/ppt/slide12.png",
+        "program/projects/moviedataanalysis/ppt/slide13.png",
+        "program/projects/moviedataanalysis/ppt/slide13.png",
+        "program/projects/moviedataanalysis/ppt/slide14.png",
+        "program/projects/moviedataanalysis/ppt/slide14.png",
+        "program/projects/moviedataanalysis/ppt/slide15.png",
+        "program/projects/moviedataanalysis/ppt/slide15.png",
+        "program/projects/moviedataanalysis/ppt/slide16.png",
+        "program/projects/moviedataanalysis/ppt/slide16.png",
+        "program/projects/moviedataanalysis/ppt/slide17.png",
+        "program/projects/moviedataanalysis/ppt/slide17.png",
+        "program/projects/moviedataanalysis/ppt/slide18.png",
+        "program/projects/moviedataanalysis/ppt/slide18.png",
+        "program/projects/moviedataanalysis/ppt/slide19.png",
+        "program/projects/moviedataanalysis/ppt/slide19.png"
+      ]
+    },
+    "program/projects/moviedataanalysis/data-programming-workshop.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 426,
+      "exportedPath": "program/projects/moviedataanalysis/data-programming-workshop.html",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/moviedataanalysis.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 1044,
+      "exportedPath": "program/projects/moviedataanalysis/moviedataanalysis.html",
+      "dependencies": []
+    },
+    "program/projects/moviedataanalysis/system-design-specification.md": {
+      "modifiedTime": 1719154407468,
+      "sourceSize": 5361,
+      "exportedPath": "program/projects/moviedataanalysis/system-design-specification.html",
       "dependencies": []
     }
   }
