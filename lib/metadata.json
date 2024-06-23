@@ -1,6 +1,6 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1719164924694,
+  "lastExport": 1719165231068,
   "pluginVersion": "1.8.03",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon primary-accent-purple secondary-accent-green",
   "useCustomHeadContent": false,
@@ -8,37 +8,37 @@
   "files": [
     "Algorithm/BasicAlgorithm/SparceTable.md",
     "Algorithm/BasicAlgorithm/SlidingWindow.md",
-    "Algorithm/BasicAlgorithm/discretization.md",
-    "Algorithm/BasicAlgorithm/basic-algorithm-overview.md",
-    "Algorithm/daa/algorithm/union-find.md",
-    "Algorithm/daa/algorithm/sort.md",
-    "Algorithm/daa/algorithm/graph-algorithm.md",
-    "Algorithm/daa/algorithm/enumeration-subset.md",
-    "Algorithm/daa/algorithm/enumeration.md",
-    "Algorithm/daa/algorithm/divide-and-conquer.md",
-    "Algorithm/daa/assignment/daa-assignment-2.md",
-    "Algorithm/daa/assignment/daa-programming-assignment.md",
-    "Algorithm/daa/assignment/daa-assignment-0.md",
-    "Algorithm/daa/assignment/daa-assignment-1.md",
-    "Algorithm/daa/tutorial/tutorial-1.md",
-    "Algorithm/dsa/assignment/dsa-assignment-1.md",
-    "Algorithm/dsa/assignment/dsa-assignment-2.md",
-    "Algorithm/dsa/assignment/written-assignment-am.md",
-    "Algorithm/dsa/fenwick.md",
-    "Algorithm/dsa/binarytree.md",
-    "Algorithm/dsa/b+tree.md",
-    "Algorithm/dsa/avl.md",
-    "Algorithm/graph/graph-overview.md",
-    "Algorithm/numbertheory/prime-sieve.md",
-    "Algorithm/recursion/recursion-binarytree.md",
-    "Algorithm/recursion/recursion-2.md",
-    "Algorithm/recursion/recursion-1.md",
-    "Algorithm/string/z-function.md",
-    "Algorithm/string/tire-tree.md",
-    "Algorithm/string/string-overview.md",
-    "Algorithm/string/manacher-algorithm.md",
-    "Algorithm/string/kmp.md",
-    "Algorithm/string/aho-corasick.md",
+    "Algorithm/BasicAlgorithm/Discretization.md",
+    "Algorithm/BasicAlgorithm/Basic-Algorithm-overview.md",
+    "Algorithm/DAA/Algorithm/union-find.md",
+    "Algorithm/DAA/Algorithm/sort.md",
+    "Algorithm/DAA/Algorithm/graph-algorithm.md",
+    "Algorithm/DAA/Algorithm/enumeration.md",
+    "Algorithm/DAA/Algorithm/enumeration-subset.md",
+    "Algorithm/DAA/Algorithm/divide-and-conquer.md",
+    "Algorithm/DAA/Assignment/DAA-Assignment-2.md",
+    "Algorithm/DAA/Assignment/DAA-Programming-Assignment.md",
+    "Algorithm/DAA/Assignment/DAA-Assignment-0.md",
+    "Algorithm/DAA/Assignment/DAA-Assignment-1.md",
+    "Algorithm/DAA/Tutorial/Tutorial-1.md",
+    "Algorithm/DSA/Assignment/dsa-assignment-1.md",
+    "Algorithm/DSA/Assignment/dsa-assignment-2.md",
+    "Algorithm/DSA/Assignment/written-assignment-am.md",
+    "Algorithm/DSA/Fenwick.md",
+    "Algorithm/DSA/BinaryTree.md",
+    "Algorithm/DSA/B+Tree.md",
+    "Algorithm/DSA/AVL.md",
+    "Algorithm/Graph/Graph-Overview.md",
+    "Algorithm/NumberTheory/Prime-Sieve.md",
+    "Algorithm/Recursion/recursion-binarytree.md",
+    "Algorithm/Recursion/recursion-2.md",
+    "Algorithm/Recursion/recursion-1.md",
+    "Algorithm/String/Z-Function.md",
+    "Algorithm/String/Tire-Tree.md",
+    "Algorithm/String/String-Overview.md",
+    "Algorithm/String/Manacher-Algorithm.md",
+    "Algorithm/String/KMP.md",
+    "Algorithm/String/Aho-Corasick.md",
     "computer-organization/assignment/as1/logic.drawio",
     "computer-organization/assignment/as1/co-assignment-1.md",
     "computer-organization/assignment/as2/k-map.png",
@@ -400,325 +400,325 @@
   ],
   "fileInfo": {
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 166923,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 22110,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 151800,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 317906,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 5232,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
@@ -1852,7 +1852,7 @@
       "dependencies": []
     },
     "taskmanagement.md": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 3195,
       "exportedPath": "taskmanagement.html",
       "dependencies": []
@@ -2209,19 +2209,19 @@
       "dependencies": []
     },
     "archive.md": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 12954,
       "exportedPath": "archive.html",
       "dependencies": []
     },
     "class.md": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 16525,
       "exportedPath": "class.html",
       "dependencies": []
     },
     "computer-organization/assignment/as1/co-assignment-1.md": {
-      "modifiedTime": 1719164689406,
+      "modifiedTime": 1719165231068,
       "sourceSize": 5541,
       "exportedPath": "computer-organization/assignment/as1/co-assignment-1.html",
       "dependencies": []
@@ -2263,7 +2263,7 @@
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1719164924694,
+      "modifiedTime": 1719165231068,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
@@ -2272,180 +2272,6 @@
       "modifiedTime": 1719164605121,
       "sourceSize": 141,
       "exportedPath": "test/aaaa.html",
-      "dependencies": []
-    },
-    "Algorithm/daa/algorithm/union-find.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 6716,
-      "exportedPath": "algorithm/daa/algorithm/union-find.html",
-      "dependencies": []
-    },
-    "Algorithm/daa/algorithm/sort.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 7742,
-      "exportedPath": "algorithm/daa/algorithm/sort.html",
-      "dependencies": []
-    },
-    "Algorithm/daa/algorithm/graph-algorithm.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 6675,
-      "exportedPath": "algorithm/daa/algorithm/graph-algorithm.html",
-      "dependencies": []
-    },
-    "Algorithm/daa/algorithm/enumeration-subset.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 1972,
-      "exportedPath": "algorithm/daa/algorithm/enumeration-subset.html",
-      "dependencies": []
-    },
-    "Algorithm/daa/algorithm/enumeration.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 624,
-      "exportedPath": "algorithm/daa/algorithm/enumeration.html",
-      "dependencies": []
-    },
-    "Algorithm/daa/algorithm/divide-and-conquer.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 6684,
-      "exportedPath": "algorithm/daa/algorithm/divide-and-conquer.html",
-      "dependencies": []
-    },
-    "Algorithm/daa/assignment/daa-assignment-2.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 6886,
-      "exportedPath": "algorithm/daa/assignment/daa-assignment-2.html",
-      "dependencies": []
-    },
-    "Algorithm/daa/assignment/daa-programming-assignment.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 3528,
-      "exportedPath": "algorithm/daa/assignment/daa-programming-assignment.html",
-      "dependencies": []
-    },
-    "Algorithm/daa/assignment/daa-assignment-0.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 3140,
-      "exportedPath": "algorithm/daa/assignment/daa-assignment-0.html",
-      "dependencies": []
-    },
-    "Algorithm/daa/assignment/daa-assignment-1.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 9576,
-      "exportedPath": "algorithm/daa/assignment/daa-assignment-1.html",
-      "dependencies": []
-    },
-    "Algorithm/daa/tutorial/tutorial-1.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 1351,
-      "exportedPath": "algorithm/daa/tutorial/tutorial-1.html",
-      "dependencies": []
-    },
-    "Algorithm/dsa/assignment/dsa-assignment-1.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 5871,
-      "exportedPath": "algorithm/dsa/assignment/dsa-assignment-1.html",
-      "dependencies": []
-    },
-    "Algorithm/dsa/assignment/dsa-assignment-2.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 4070,
-      "exportedPath": "algorithm/dsa/assignment/dsa-assignment-2.html",
-      "dependencies": []
-    },
-    "Algorithm/dsa/assignment/written-assignment-am.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 4919,
-      "exportedPath": "algorithm/dsa/assignment/written-assignment-am.html",
-      "dependencies": []
-    },
-    "Algorithm/dsa/fenwick.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 1946,
-      "exportedPath": "algorithm/dsa/fenwick.html",
-      "dependencies": []
-    },
-    "Algorithm/dsa/binarytree.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 1389,
-      "exportedPath": "algorithm/dsa/binarytree.html",
-      "dependencies": []
-    },
-    "Algorithm/dsa/b+tree.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 4132,
-      "exportedPath": "algorithm/dsa/b+tree.html",
-      "dependencies": []
-    },
-    "Algorithm/dsa/avl.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 807,
-      "exportedPath": "algorithm/dsa/avl.html",
-      "dependencies": []
-    },
-    "Algorithm/graph/graph-overview.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 837,
-      "exportedPath": "algorithm/graph/graph-overview.html",
-      "dependencies": []
-    },
-    "Algorithm/numbertheory/prime-sieve.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 1473,
-      "exportedPath": "algorithm/numbertheory/prime-sieve.html",
-      "dependencies": []
-    },
-    "Algorithm/recursion/recursion-binarytree.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 9257,
-      "exportedPath": "algorithm/recursion/recursion-binarytree.html",
-      "dependencies": []
-    },
-    "Algorithm/recursion/recursion-2.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 6329,
-      "exportedPath": "algorithm/recursion/recursion-2.html",
-      "dependencies": []
-    },
-    "Algorithm/recursion/recursion-1.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 15820,
-      "exportedPath": "algorithm/recursion/recursion-1.html",
-      "dependencies": []
-    },
-    "Algorithm/string/z-function.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 237,
-      "exportedPath": "algorithm/string/z-function.html",
-      "dependencies": []
-    },
-    "Algorithm/string/tire-tree.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 223,
-      "exportedPath": "algorithm/string/tire-tree.html",
-      "dependencies": []
-    },
-    "Algorithm/string/string-overview.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 366,
-      "exportedPath": "algorithm/string/string-overview.html",
-      "dependencies": []
-    },
-    "Algorithm/string/manacher-algorithm.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 6593,
-      "exportedPath": "algorithm/string/manacher-algorithm.html",
-      "dependencies": []
-    },
-    "Algorithm/string/kmp.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 216,
-      "exportedPath": "algorithm/string/kmp.html",
-      "dependencies": []
-    },
-    "Algorithm/string/aho-corasick.md": {
-      "modifiedTime": 1719164689406,
-      "sourceSize": 240,
-      "exportedPath": "algorithm/string/aho-corasick.html",
       "dependencies": []
     },
     "Algorithm/BasicAlgorithm/SparceTable.md": {
@@ -2460,16 +2286,190 @@
       "exportedPath": "algorithm/basicalgorithm/slidingwindow.html",
       "dependencies": []
     },
-    "Algorithm/BasicAlgorithm/discretization.md": {
-      "modifiedTime": 1719164924694,
+    "Algorithm/BasicAlgorithm/Discretization.md": {
+      "modifiedTime": 1719165231068,
       "sourceSize": 595,
       "exportedPath": "algorithm/basicalgorithm/discretization.html",
       "dependencies": []
     },
-    "Algorithm/BasicAlgorithm/basic-algorithm-overview.md": {
-      "modifiedTime": 1719164924694,
-      "sourceSize": 359,
+    "Algorithm/BasicAlgorithm/Basic-Algorithm-overview.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 335,
       "exportedPath": "algorithm/basicalgorithm/basic-algorithm-overview.html",
+      "dependencies": []
+    },
+    "Algorithm/DAA/Algorithm/union-find.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 6716,
+      "exportedPath": "algorithm/daa/algorithm/union-find.html",
+      "dependencies": []
+    },
+    "Algorithm/DAA/Algorithm/sort.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 7742,
+      "exportedPath": "algorithm/daa/algorithm/sort.html",
+      "dependencies": []
+    },
+    "Algorithm/DAA/Algorithm/graph-algorithm.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 6675,
+      "exportedPath": "algorithm/daa/algorithm/graph-algorithm.html",
+      "dependencies": []
+    },
+    "Algorithm/DAA/Algorithm/enumeration.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 624,
+      "exportedPath": "algorithm/daa/algorithm/enumeration.html",
+      "dependencies": []
+    },
+    "Algorithm/DAA/Algorithm/enumeration-subset.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 1972,
+      "exportedPath": "algorithm/daa/algorithm/enumeration-subset.html",
+      "dependencies": []
+    },
+    "Algorithm/DAA/Algorithm/divide-and-conquer.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 6684,
+      "exportedPath": "algorithm/daa/algorithm/divide-and-conquer.html",
+      "dependencies": []
+    },
+    "Algorithm/DAA/Assignment/DAA-Assignment-2.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 6886,
+      "exportedPath": "algorithm/daa/assignment/daa-assignment-2.html",
+      "dependencies": []
+    },
+    "Algorithm/DAA/Assignment/DAA-Programming-Assignment.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 3528,
+      "exportedPath": "algorithm/daa/assignment/daa-programming-assignment.html",
+      "dependencies": []
+    },
+    "Algorithm/DAA/Assignment/DAA-Assignment-0.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 3140,
+      "exportedPath": "algorithm/daa/assignment/daa-assignment-0.html",
+      "dependencies": []
+    },
+    "Algorithm/DAA/Assignment/DAA-Assignment-1.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 9576,
+      "exportedPath": "algorithm/daa/assignment/daa-assignment-1.html",
+      "dependencies": []
+    },
+    "Algorithm/DAA/Tutorial/Tutorial-1.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 1351,
+      "exportedPath": "algorithm/daa/tutorial/tutorial-1.html",
+      "dependencies": []
+    },
+    "Algorithm/DSA/Assignment/dsa-assignment-1.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 5871,
+      "exportedPath": "algorithm/dsa/assignment/dsa-assignment-1.html",
+      "dependencies": []
+    },
+    "Algorithm/DSA/Assignment/dsa-assignment-2.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 4070,
+      "exportedPath": "algorithm/dsa/assignment/dsa-assignment-2.html",
+      "dependencies": []
+    },
+    "Algorithm/DSA/Assignment/written-assignment-am.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 4919,
+      "exportedPath": "algorithm/dsa/assignment/written-assignment-am.html",
+      "dependencies": []
+    },
+    "Algorithm/DSA/Fenwick.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 1946,
+      "exportedPath": "algorithm/dsa/fenwick.html",
+      "dependencies": []
+    },
+    "Algorithm/DSA/BinaryTree.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 1389,
+      "exportedPath": "algorithm/dsa/binarytree.html",
+      "dependencies": []
+    },
+    "Algorithm/DSA/B+Tree.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 4132,
+      "exportedPath": "algorithm/dsa/b+tree.html",
+      "dependencies": []
+    },
+    "Algorithm/DSA/AVL.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 807,
+      "exportedPath": "algorithm/dsa/avl.html",
+      "dependencies": []
+    },
+    "Algorithm/Graph/Graph-Overview.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 837,
+      "exportedPath": "algorithm/graph/graph-overview.html",
+      "dependencies": []
+    },
+    "Algorithm/NumberTheory/Prime-Sieve.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 1473,
+      "exportedPath": "algorithm/numbertheory/prime-sieve.html",
+      "dependencies": []
+    },
+    "Algorithm/Recursion/recursion-binarytree.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 9257,
+      "exportedPath": "algorithm/recursion/recursion-binarytree.html",
+      "dependencies": []
+    },
+    "Algorithm/Recursion/recursion-2.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 6329,
+      "exportedPath": "algorithm/recursion/recursion-2.html",
+      "dependencies": []
+    },
+    "Algorithm/Recursion/recursion-1.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 15820,
+      "exportedPath": "algorithm/recursion/recursion-1.html",
+      "dependencies": []
+    },
+    "Algorithm/String/Z-Function.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 237,
+      "exportedPath": "algorithm/string/z-function.html",
+      "dependencies": []
+    },
+    "Algorithm/String/Tire-Tree.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 223,
+      "exportedPath": "algorithm/string/tire-tree.html",
+      "dependencies": []
+    },
+    "Algorithm/String/String-Overview.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 366,
+      "exportedPath": "algorithm/string/string-overview.html",
+      "dependencies": []
+    },
+    "Algorithm/String/Manacher-Algorithm.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 6593,
+      "exportedPath": "algorithm/string/manacher-algorithm.html",
+      "dependencies": []
+    },
+    "Algorithm/String/KMP.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 216,
+      "exportedPath": "algorithm/string/kmp.html",
+      "dependencies": []
+    },
+    "Algorithm/String/Aho-Corasick.md": {
+      "modifiedTime": 1719165231068,
+      "sourceSize": 240,
+      "exportedPath": "algorithm/string/aho-corasick.html",
       "dependencies": []
     }
   }
