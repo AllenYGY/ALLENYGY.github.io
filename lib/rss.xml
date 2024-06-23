@@ -1,6 +1,6 @@
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><parsererror xmlns="http://www.w3.org/1999/xhtml" style="display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black"><h3>This page contains the following errors:</h3><div style="font-family:monospace;font-size:12px">error on line 7261 at column 425: Input is not proper UTF-8, indicate encoding !
 Bytes: 0x01 0x74 0x6F 0x20
-</div><h3>Below is a rendering of the page up to the first error.</h3></parsererror><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 23 Jun 2024 16:43:08 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 23 Jun 2024 16:41:35 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="SparceTable" href="algorithm/basicalgorithm/sparcetable.html" class="internal-link" target="_self" rel="noopener">SparceTable</a>]]></title><description><![CDATA[ 
+</div><h3>Below is a rendering of the page up to the first error.</h3></parsererror><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 23 Jun 2024 17:41:20 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 23 Jun 2024 17:40:19 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="SparceTable" href="algorithm/basicalgorithm/sparcetable.html" class="internal-link" target="_self" rel="noopener">SparceTable</a>]]></title><description><![CDATA[ 
  <br>]]></description><link>https://blog.allenygy.vip/algorithm/basicalgorithm/sparcetable.html</link><guid isPermaLink="false">algorithm/basicalgorithm/sparcetable.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate></item><item><title><![CDATA[<strong>SlidingWindow</strong>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
  <br><br><a href="https://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a> <br>
 <br>枚举右端点，挪动左端点
@@ -52,7 +52,7 @@ Copy]]></description><link>https://blog.allenygy.vip/algorithm/basicalgorithm/di
 <br><a data-tooltip-position="top" aria-label="Discretization" data-href="Discretization" href="https://blog.allenygy.vip/algorithm/basicalgorithm/discretization.html" class="internal-link" target="_self" rel="noopener">离散化</a>
 <br><a data-href="BinarySearch" href="https://blog.allenygy.vip/BinarySearch" class="internal-link" target="_self" rel="noopener">BinarySearch</a>
 <br><a data-tooltip-position="top" aria-label="SlidingWindow" data-href="SlidingWindow" href="https://blog.allenygy.vip/algorithm/basicalgorithm/slidingwindow.html" class="internal-link" target="_self" rel="noopener">双指针</a>
-]]></description><link>https://blog.allenygy.vip/algorithm/basicalgorithm/basic-algorithm-overview.html</link><guid isPermaLink="false">algorithm/basicalgorithm/basic-algorithm-overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate></item><item><title><![CDATA[<a data-href="Union-Find" href="algorithm/daa/algorithm/union-find.html" class="internal-link" target="_self" rel="noopener">Union-Find</a><sup data-footnote-id="fnref-1-6a48edc440fe2c58" class="footnote-ref" id="fnref-1-6a48edc440fe2c58"><a data-footref="[inline0" href="#fn-1-6a48edc440fe2c58" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
+]]></description><link>https://blog.allenygy.vip/algorithm/basicalgorithm/basic-algorithm-overview.html</link><guid isPermaLink="false">algorithm/basicalgorithm/basic-algorithm-overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate></item><item><title><![CDATA[<a data-href="Union-Find" href="algorithm/daa/algorithm/union-find.html" class="internal-link" target="_self" rel="noopener">Union-Find</a><sup data-footnote-id="fnref-1-8d127f0c76dbea89" class="footnote-ref" id="fnref-1-8d127f0c76dbea89"><a data-footref="[inline0" href="#fn-1-8d127f0c76dbea89" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
  <br><br>
 <br>用于解决元素分组问题
 <br>联通问题
@@ -408,7 +408,7 @@ return result;
 
 Copy<br>
 <br>
-<br>并查集<a href="https://blog.allenygy.vip/#fnref-1-6a48edc440fe2c58" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>并查集<a href="https://blog.allenygy.vip/about:blank#fnref-1-8d127f0c76dbea89" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/algorithm/daa/algorithm/union-find.html</link><guid isPermaLink="false">algorithm/daa/algorithm/union-find.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate></item><item><title><![CDATA[Sort Algorithm]]></title><description><![CDATA[ 
  <br><br>
 <br>Bubble Sort
@@ -1874,8 +1874,8 @@ end procedure
 Export to clipboard]]></description><link>https://blog.allenygy.vip/algorithm/daa/tutorial/tutorial-1.html</link><guid isPermaLink="false">algorithm/daa/tutorial/tutorial-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate></item><item><title><![CDATA[<a data-href="DSA-Assignment-1" href="algorithm/dsa/assignment/dsa-assignment-1.html" class="internal-link" target="_self" rel="noopener">DSA-Assignment-1</a>]]></title><description><![CDATA[ 
  <br><br><br>
 Export to clipboard<br><br>
-<br><img alt="Tree" src="https://blog.allenygy.vip/algorithm/dsa/assignment/draw/bst.png">
-<br><img alt="Tree" src="https://blog.allenygy.vip/algorithm/dsa/assignment/draw/bst-1.png">
+<br>“BST.png” could not be found.
+<br>“BST-1.png” could not be found.
 <br>|14|25|40|52|58|85|
 <br><br><br>a.<br>
 Initial State<br>              52|2              
@@ -1940,9 +1940,9 @@ Total Time Complexity: The total time complexity of sorting an array using an <a
 <br>( L = 16 ): Each leaf node can hold up to 16 records.
 <br>( M = 171 ): Each internal node can have up to 171 children (170 keys + 1 extra pointer).
 <br>b.<br>
-<br><img alt="Tree" src="https://blog.allenygy.vip/algorithm/dsa/assignment/draw/insert-1.png">
-<br><img alt="Tree" src="https://blog.allenygy.vip/algorithm/dsa/assignment/draw/delete-1.png">
-]]></description><link>https://blog.allenygy.vip/algorithm/dsa/assignment/dsa-assignment-1.html</link><guid isPermaLink="false">algorithm/dsa/assignment/dsa-assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate><enclosure url="https://blog.allenygy.vip/algorithm/dsa/assignment/draw/bst.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://blog.allenygy.vip/algorithm/dsa/assignment/draw/bst.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="DSA-Assignment-2" href="algorithm/dsa/assignment/dsa-assignment-2.html" class="internal-link" target="_self" rel="noopener">DSA-Assignment-2</a>]]></title><description><![CDATA[ 
+<br>“insert-1.png” could not be found.
+<br>“delete-1.png” could not be found.
+]]></description><link>https://blog.allenygy.vip/algorithm/dsa/assignment/dsa-assignment-1.html</link><guid isPermaLink="false">algorithm/dsa/assignment/dsa-assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate></item><item><title><![CDATA[<a data-href="DSA-Assignment-2" href="algorithm/dsa/assignment/dsa-assignment-2.html" class="internal-link" target="_self" rel="noopener">DSA-Assignment-2</a>]]></title><description><![CDATA[ 
  <br><br><br>
 Export to clipboard<br><br><br>
 <br>
@@ -2043,9 +2043,9 @@ Copy<br><br>a)<br><br>
 <br>
 <br>
 <br>b)<br>
-<br><img alt="Insert" src="https://blog.allenygy.vip/algorithm/dsa/assignment/draw/insert.png">
-<br><img alt="Delete" src="https://blog.allenygy.vip/algorithm/dsa/assignment/draw/delete.png">
-]]></description><link>https://blog.allenygy.vip/algorithm/dsa/assignment/dsa-assignment-2.html</link><guid isPermaLink="false">algorithm/dsa/assignment/dsa-assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate><enclosure url="https://blog.allenygy.vip/algorithm/dsa/assignment/draw/insert.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://blog.allenygy.vip/algorithm/dsa/assignment/draw/insert.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Written-Assignment-AM" href="algorithm/dsa/assignment/written-assignment-am.html" class="internal-link" target="_self" rel="noopener">Written-Assignment-AM</a>]]></title><description><![CDATA[ 
+<br>“insert.png” could not be found.
+<br>“delete.png” could not be found.
+]]></description><link>https://blog.allenygy.vip/algorithm/dsa/assignment/dsa-assignment-2.html</link><guid isPermaLink="false">algorithm/dsa/assignment/dsa-assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:51:19 GMT</pubDate></item><item><title><![CDATA[<a data-href="Written-Assignment-AM" href="algorithm/dsa/assignment/written-assignment-am.html" class="internal-link" target="_self" rel="noopener">Written-Assignment-AM</a>]]></title><description><![CDATA[ 
  <br><br><br>What is the total number of basic operations that the following code piece consume? Make your answer precise and list your steps of calculation.<br>int afunc(int n){
     int res = 0;   // 1
     for(int i=0;i&lt;n;i++){   // 3n+2
@@ -5507,7 +5507,7 @@ Copy<br>]]></description><link>https://blog.allenygy.vip/contest/leetcode/weekly
 <br><a href="https://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/type-of-triangle-ii/solution/an-ti-yi-mo-ni-pythonjavacgo-by-endlessc-zq6e/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/type-of-triangle-ii/solution/an-ti-yi-mo-ni-pythonjavacgo-by-endlessc-zq6e/" target="_blank">T1</a><br><br>
 <br>同T4<br>
 <a href="https://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" target="_blank">T2</a>
-<br><br><br>s[0]=0
+<br><br>前缀和<br>s[0]=0
 s[1]=nums[0]
 s[2]=nums[0]+nums[1]
 ...
@@ -5520,7 +5520,7 @@ Copy<br><br>
 计算的最大值<br>
 枚举 ，问题变成计算的最小值<br>
  或者 <br>
-<br>class Solution {
+哈希表<br>class Solution {
 public:
 	long long maximumSubarraySum(vector&lt;int&gt;&amp; nums, int k) {
 		unordered_map&lt;int,long long &gt; min_s;
@@ -5671,7 +5671,7 @@ Data-&gt;Data Preparation-&gt;Model Training-&gt;Model Optimization-&gt;Model Te
 <br>Mean: 
 <br>Variance: 
 <br>Standard deviation:  
-<br>Median: The middle number<a data-footref="[inline0" href="https://blog.allenygy.vip/#fn-1-6a48edc440fe2c58" class="footnote-link" target="_self" rel="noopener">[1]</a>
+<br>Median: The middle number<a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-8d127f0c76dbea89" class="footnote-link" target="_self" rel="noopener">[1]</a>
 <br>Mode: Most frequently occurring value
 <br><br>
 <br>q%-quantile (0 &lt; q &lt; 100): The value for which q% of the values are smaller and 100-q% are larger. The median is the 50%-quantile
@@ -5707,7 +5707,7 @@ Usually leads to a very scattered histogram in which it is difficult to distingu
 <br>Best Choise
 <br><br>
 <br>
-Boxplot <a data-footref="[inline1" href="https://blog.allenygy.vip/#fn-2-6a48edc440fe2c58" class="footnote-link" target="_self" rel="noopener">[2]</a>
+Boxplot <a data-footref="[inline1" href="https://blog.allenygy.vip/about:blank#fn-2-8d127f0c76dbea89" class="footnote-link" target="_self" rel="noopener">[2]</a>
 
 <br>
 Boxplots are a very compact way to visualize and summarize the main characteristics of a numeric attribute, through the median, the IQR, and possible outliers.
@@ -5726,7 +5726,7 @@ Boxplots are a very compact way to visualize and summarize the main characterist
 <br>Suitable for small datasets
 <br><br><br><br>Requires min-max-normalization of numeric columns<br>
 <br>Ratio of missing values: If missing value &gt; threshold, then remove the column.
-<br>Low variance: If variance &lt; threshold, then remove column. <a data-footref="[inline2" href="https://blog.allenygy.vip/#fn-3-6a48edc440fe2c58" class="footnote-link" target="_self" rel="noopener">[3]</a>
+<br>Low variance: If variance &lt; threshold, then remove column. <a data-footref="[inline2" href="https://blog.allenygy.vip/about:blank#fn-3-8d127f0c76dbea89" class="footnote-link" target="_self" rel="noopener">[3]</a>
 <br>High Correlation: If(corr(var1,var2) &gt; threshold), then remove var1.
 <br><br><br><br>
 <br>Missing Completely At Random (MCAR): the probability that a value for X is missing does neither depend on the value of X nor on other variables. (Most serious)
@@ -5734,7 +5734,7 @@ Boxplots are a very compact way to visualize and summarize the main characterist
 <br>Not Missing At Random (NMAR): the probability that Y is missing depends on the unobserved value of Y itself
 <br><br>
 <br>Ignore or delete the record
-<br>Fill in (impute) missing value as “unknown”,mean/median/mode <a data-footref="[inline3" href="https://blog.allenygy.vip/#fn-4-6a48edc440fe2c58" class="footnote-link" target="_self" rel="noopener">[4]</a>
+<br>Fill in (impute) missing value as “unknown”,mean/median/mode <a data-footref="[inline3" href="https://blog.allenygy.vip/about:blank#fn-4-8d127f0c76dbea89" class="footnote-link" target="_self" rel="noopener">[4]</a>
 <br><br>
 <br>An outlier is a value or data object that is far away or very different from all or most of the other data.
 <br>Errors in measurements or exceptional conditions that don't describe the common functioning of the underlying system.
@@ -5781,7 +5781,7 @@ output data, while an unsupervised learning does not
 <br>Mean absolute error (MAE) 
 <br>Mean squared error (MSE) 
 <br>Root mean squared error (RMSE) 
-<br>R-squared <a data-footref="[inline4" href="https://blog.allenygy.vip/#fn-5-6a48edc440fe2c58" class="footnote-link" target="_self" rel="noopener">[5]</a><br>
+<br>R-squared <a data-footref="[inline4" href="https://blog.allenygy.vip/about:blank#fn-5-8d127f0c76dbea89" class="footnote-link" target="_self" rel="noopener">[5]</a><br>
 
 <br><br>
 <br>Training error/Empirical error: the error of the learner/model on the training data
@@ -5796,10 +5796,10 @@ Clustering identifies a finite set of groups (clusters)  in the dataset such tha
 <br>Objects of different clusters  () shall be as dissimilar as possible<br>
 Example:
 <br>Customer segmentation
-<br>Molecule search <a data-footref="[inline5" href="https://blog.allenygy.vip/#fn-6-6a48edc440fe2c58" class="footnote-link" target="_self" rel="noopener">[6]</a>
-<br>Anomaly detection <a data-footref="[inline6" href="https://blog.allenygy.vip/#fn-7-6a48edc440fe2c58" class="footnote-link" target="_self" rel="noopener">[7]</a>
-<br>Structuring large sets of text documents <a data-footref="[inline7" href="https://blog.allenygy.vip/#fn-8-6a48edc440fe2c58" class="footnote-link" target="_self" rel="noopener">[8]</a>
-<br>Generating thematic maps from satellite images <a data-footref="[inline8" href="https://blog.allenygy.vip/#fn-9-6a48edc440fe2c58" class="footnote-link" target="_self" rel="noopener">[9]</a>
+<br>Molecule search <a data-footref="[inline5" href="https://blog.allenygy.vip/about:blank#fn-6-8d127f0c76dbea89" class="footnote-link" target="_self" rel="noopener">[6]</a>
+<br>Anomaly detection <a data-footref="[inline6" href="https://blog.allenygy.vip/about:blank#fn-7-8d127f0c76dbea89" class="footnote-link" target="_self" rel="noopener">[7]</a>
+<br>Structuring large sets of text documents <a data-footref="[inline7" href="https://blog.allenygy.vip/about:blank#fn-8-8d127f0c76dbea89" class="footnote-link" target="_self" rel="noopener">[8]</a>
+<br>Generating thematic maps from satellite images <a data-footref="[inline8" href="https://blog.allenygy.vip/about:blank#fn-9-8d127f0c76dbea89" class="footnote-link" target="_self" rel="noopener">[9]</a>
 <br><br>
 <br>Linkage Based<br>
 e.g. Hierarchical Clustering
@@ -5811,16 +5811,16 @@ e.g. k-Means
 <br>Manhattan-Distance ()
 <br>
 <br>
-<br>Found by ordering all data points and picking out the one in the middle - or if there are two middle numbers, taking the mean of those two numbers<a href="https://blog.allenygy.vip/#fnref-1-6a48edc440fe2c58" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>The middle line of the box, which is the median of the data, represents the average of the sample data. The upper and lower limits of the box are the upper and lower quartiles of the data, respectively. This means that the box contains 50% of the data. The height of the box partly reflects how fluctuating the data is. Above and below the box, there is a line. Represents the maximum and minimum values, sometimes some points "pop out", which can be understood as "outliers"<a href="https://blog.allenygy.vip/#fnref-2-6a48edc440fe2c58" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Only works for numeric columns<a href="https://blog.allenygy.vip/#fnref-3-6a48edc440fe2c58" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Found by ordering all data points and picking out the one in the middle - or if there are two middle numbers, taking the mean of those two numbers<a href="https://blog.allenygy.vip/about:blank#fnref-1-8d127f0c76dbea89" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>The middle line of the box, which is the median of the data, represents the average of the sample data. The upper and lower limits of the box are the upper and lower quartiles of the data, respectively. This means that the box contains 50% of the data. The height of the box partly reflects how fluctuating the data is. Above and below the box, there is a line. Represents the maximum and minimum values, sometimes some points "pop out", which can be understood as "outliers"<a href="https://blog.allenygy.vip/about:blank#fnref-2-8d127f0c76dbea89" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Only works for numeric columns<a href="https://blog.allenygy.vip/about:blank#fnref-3-8d127f0c76dbea89" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 <br>A predicted value based on the other attributes (inference-based such as<br>
-Bayesian, Decision Tree<a href="https://blog.allenygy.vip/#fnref-4-6a48edc440fe2c58" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Proportion of the variance for a dependent variable that’s explained by the regression model.Normally ranges from 0 to 1, the closer to 1 the better performance.<a href="https://blog.allenygy.vip/#fnref-5-6a48edc440fe2c58" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Find molecules with similar structure to already working ones<a href="https://blog.allenygy.vip/#fnref-6-6a48edc440fe2c58" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Find unusual patterns in data from sensors monitoring mechanical engines<a href="https://blog.allenygy.vip/#fnref-7-6a48edc440fe2c58" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>hierarchical clustering of the text documents<a href="https://blog.allenygy.vip/#fnref-8-6a48edc440fe2c58" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>clustering sets of raster images of the same area (feature vectors)<a href="https://blog.allenygy.vip/#fnref-9-6a48edc440fe2c58" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+Bayesian, Decision Tree<a href="https://blog.allenygy.vip/about:blank#fnref-4-8d127f0c76dbea89" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Proportion of the variance for a dependent variable that’s explained by the regression model.Normally ranges from 0 to 1, the closer to 1 the better performance.<a href="https://blog.allenygy.vip/about:blank#fnref-5-8d127f0c76dbea89" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Find molecules with similar structure to already working ones<a href="https://blog.allenygy.vip/about:blank#fnref-6-8d127f0c76dbea89" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Find unusual patterns in data from sensors monitoring mechanical engines<a href="https://blog.allenygy.vip/about:blank#fnref-7-8d127f0c76dbea89" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>hierarchical clustering of the text documents<a href="https://blog.allenygy.vip/about:blank#fnref-8-8d127f0c76dbea89" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>clustering sets of raster images of the same area (feature vectors)<a href="https://blog.allenygy.vip/about:blank#fnref-9-8d127f0c76dbea89" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/data-analysis/hans-on-data/hans-on-data-analysis.html</link><guid isPermaLink="false">data-analysis/hans-on-data/hans-on-data-analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate></item><item><title><![CDATA[Data-Analysis]]></title><description><![CDATA[ 
  <br><br>]]></description><link>https://blog.allenygy.vip/data-analysis/data-analysis.html</link><guid isPermaLink="false">data-analysis/data-analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 14:05:18 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-2" href="database-management/assignment/dbm-assignment-2.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-2</a>]]></title><description><![CDATA[ 
  <br><br><br><br>
@@ -6428,7 +6428,7 @@ Thus, “section” is a weak entity set which depends on “course”.<br>
 <img alt="PWsNRI" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/PWsNRI.png" referrerpolicy="no-referrer"><br>Double rectangles denote weak entity sets. 双矩形边框 表示weak entity<br>
 Dashed underlines denote discriminators of weak entity sets. 虚线下划线 表示 weak entity的键<br>
 Double diamonds denote identifying relationship sets.<br>
-Assume we model the original “enroll” relationship set without constraints. <a data-footref="[inline0" href="https://blog.allenygy.vip/#fn-1-6a48edc440fe2c58" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>
+Assume we model the original “enroll” relationship set without constraints. <a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-8d127f0c76dbea89" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>
 <br>
 Generalization (泛化) is the process of extracting common properties from a set of entities and create a generalized entity from it. It is a bottom-up approach in which two or more entities can be generalized to a higher level entity if they have some attributes in common.
 
@@ -6471,7 +6471,7 @@ If we want to express every person is either a student or an instructor, then th
 And if we assume nobody can be a student and an instructor at the same time, this is a disjoint generalization.<br>
 <img alt="S0PX3U" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/S0PX3U.png" referrerpolicy="no-referrer"><br>
 <br>
-<br>我的评价是真sharuan<a href="https://blog.allenygy.vip/#fnref-1-6a48edc440fe2c58" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>我的评价是真sharuan<a href="https://blog.allenygy.vip/about:blank#fnref-1-8d127f0c76dbea89" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/database-management/lecture/entity-relationship-model-extended-features.html</link><guid isPermaLink="false">database-management/lecture/entity-relationship-model-extended-features.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/MnKmwI.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/MnKmwI.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Entity-Relationship-Model-Constraints" href="database-management/lecture/entity-relationship-model-constraints.html" class="internal-link" target="_self" rel="noopener">Entity-Relationship-Model-Constraints</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Cardinality Constraints  基数约束 (one-one/one-many/many-many)
@@ -6883,7 +6883,7 @@ WHERE NOT EXISTS(
     WHERE s1.sID=e1.sID
   )
 )
-Copy<br><a data-footref="[inline0" href="https://blog.allenygy.vip/#fn-1-6a48edc440fe2c58" class="footnote-link" target="_self" rel="noopener">[1]</a><br>
+Copy<br><a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-8d127f0c76dbea89" class="footnote-link" target="_self" rel="noopener">[1]</a><br>
 <br>Find the students who have taken all courses instructed by Goliath (instructor’s name and assuming that there is no other instructor who is called Goliath). Display your answer by sID and sname.
 <br>Divisor: course that taught by Goliath<br>
 Dividend: enroll<br>SELECT s1.sID,s1.sname
@@ -6909,7 +6909,7 @@ WHERE NOT EXISTS(
   );
 Copy<br>
 <br>
-<br>不需要将student，enroll，course合起来<a href="https://blog.allenygy.vip/#fnref-1-6a48edc440fe2c58" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>不需要将student，enroll，course合起来<a href="https://blog.allenygy.vip/about:blank#fnref-1-8d127f0c76dbea89" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/database-management/mysql/division-and-correlated-subquery.html</link><guid isPermaLink="false">database-management/mysql/division-and-correlated-subquery.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Mysql/Division.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Mysql/Division.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Data-Modification" href="database-management/mysql/data-modification.html" class="internal-link" target="_self" rel="noopener">Data-Modification</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>INSERT
@@ -7210,10 +7210,10 @@ Copy<br>
 
 
 ]]></description><link>https://blog.allenygy.vip/database-management/mysql/advanced-sql.html</link><guid isPermaLink="false">database-management/mysql/advanced-sql.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="database-management/DataBase-Management-System" data-href="database-management/DataBase-Management-System" href="database-management/database-management-system.html" class="internal-link" target="_self" rel="noopener">Database Management</a>]]></title><description><![CDATA[ 
- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/database-management/database-management-system.html</link><guid isPermaLink="false">database-management/database-management-system.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 15:07:32 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="GraphNetwork" data-href="GraphNetwork" href="deep-learning/graphnetwork.html" class="internal-link" target="_self" rel="noopener">A Gentle Introduction to Graph Neural Networks</a> <sup data-footnote-id="fnref-1-6a48edc440fe2c58" class="footnote-ref" id="fnref-1-6a48edc440fe2c58"><a data-footref="[inline0" href="#fn-1-6a48edc440fe2c58" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/database-management/database-management-system.html</link><guid isPermaLink="false">database-management/database-management-system.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 15:07:32 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="GraphNetwork" data-href="GraphNetwork" href="deep-learning/graphnetwork.html" class="internal-link" target="_self" rel="noopener">A Gentle Introduction to Graph Neural Networks</a> <sup data-footnote-id="fnref-1-8d127f0c76dbea89" class="footnote-ref" id="fnref-1-8d127f0c76dbea89"><a data-footref="[inline0" href="#fn-1-8d127f0c76dbea89" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
  <br><br>
 <br>
-<br><a rel="noopener" class="external-link" href="https://distill.pub/2021/gnn-intro/" target="_blank">https://distill.pub/2021/gnn-intro/</a><a href="https://blog.allenygy.vip/#fnref-1-6a48edc440fe2c58" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><a rel="noopener" class="external-link" href="https://distill.pub/2021/gnn-intro/" target="_blank">https://distill.pub/2021/gnn-intro/</a><a href="https://blog.allenygy.vip/about:blank#fnref-1-8d127f0c76dbea89" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/deep-learning/graphnetwork.html</link><guid isPermaLink="false">deep-learning/graphnetwork.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate></item><item><title><![CDATA[<a data-href="GradientDescent" href="deep-learning/gradientdescent.html" class="internal-link" target="_self" rel="noopener">GradientDescent</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Gradient Descent 梯度下降算法 GD
