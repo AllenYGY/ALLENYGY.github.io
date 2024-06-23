@@ -1,6 +1,6 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><parsererror xmlns="http://www.w3.org/1999/xhtml" style="display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black"><h3>This page contains the following errors:</h3><div style="font-family:monospace;font-size:12px">error on line 7261 at column 391: Input is not proper UTF-8, indicate encoding !
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><parsererror xmlns="http://www.w3.org/1999/xhtml" style="display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black"><h3>This page contains the following errors:</h3><div style="font-family:monospace;font-size:12px">error on line 7261 at column 416: Input is not proper UTF-8, indicate encoding !
 Bytes: 0x01 0x74 0x6F 0x20
-</div><h3>Below is a rendering of the page up to the first error.</h3></parsererror><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>NOTE</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 23 Jun 2024 11:01:10 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 23 Jun 2024 10:59:58 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Discretization" data-href="Discretization" href="algorithm/basicalgorithm/discretization.html" class="internal-link" target="_self" rel="noopener">离散化</a>]]></title><description><![CDATA[ 
+</div><h3>Below is a rendering of the page up to the first error.</h3></parsererror><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://blog.allenygy.vip/</link><image><url>http://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>http://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 23 Jun 2024 11:50:42 GMT</lastBuildDate><atom:link href="http://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 23 Jun 2024 11:49:30 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Discretization" data-href="Discretization" href="algorithm/basicalgorithm/discretization.html" class="internal-link" target="_self" rel="noopener">离散化</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>排序
 <br>去重
@@ -14,17 +14,17 @@ Bytes: 0x01 0x74 0x6F 0x20
 	}
 	return alls; //用于查表
 }
-Copy]]></description><link>algorithm/basicalgorithm/discretization.html</link><guid isPermaLink="false">Algorithm/BasicAlgorithm/Discretization.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:26 GMT</pubDate></item><item><title><![CDATA[<a data-href="Basic-Algorithm-Overview" href="algorithm/basicalgorithm/basic-algorithm-overview.html" class="internal-link" target="_self" rel="noopener">Basic-Algorithm-Overview</a>]]></title><description><![CDATA[ 
+Copy]]></description><link>http://blog.allenygy.vip/algorithm/basicalgorithm/discretization.html</link><guid isPermaLink="false">Algorithm/BasicAlgorithm/Discretization.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:26 GMT</pubDate></item><item><title><![CDATA[<a data-href="Basic-Algorithm-Overview" href="algorithm/basicalgorithm/basic-algorithm-overview.html" class="internal-link" target="_self" rel="noopener">Basic-Algorithm-Overview</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>前缀和
 <br>差分
-<br><a data-tooltip-position="top" aria-label="SparceTable" data-href="SparceTable" href="/algorithm/basicalgorithm/sparcetable.html" class="internal-link" target="_self" rel="noopener">倍增</a> 
-<br><a data-tooltip-position="top" aria-label="Discretization" data-href="Discretization" href="/algorithm/basicalgorithm/discretization.html" class="internal-link" target="_self" rel="noopener">离散化</a>
-<br><a data-href="BinarySearch" href="/BinarySearch" class="internal-link" target="_self" rel="noopener">BinarySearch</a>
-<br><a data-tooltip-position="top" aria-label="SlidingWindow" data-href="SlidingWindow" href="/algorithm/basicalgorithm/slidingwindow.html" class="internal-link" target="_self" rel="noopener">双指针</a>
-]]></description><link>algorithm/basicalgorithm/basic-algorithm-overview.html</link><guid isPermaLink="false">Algorithm/BasicAlgorithm/Basic-Algorithm-Overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:15 GMT</pubDate></item><item><title><![CDATA[<a data-href="SparceTable" href="algorithm/basicalgorithm/sparcetable.html" class="internal-link" target="_self" rel="noopener">SparceTable</a>]]></title><description><![CDATA[ 
- <br>]]></description><link>algorithm/basicalgorithm/sparcetable.html</link><guid isPermaLink="false">Algorithm/BasicAlgorithm/SparceTable.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:27 GMT</pubDate></item><item><title><![CDATA[<strong>SlidingWindow</strong>]]></title><description><![CDATA[<a class="tag" href="?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
- <br><br><a href=".?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a> <br>
+<br><a data-tooltip-position="top" aria-label="SparceTable" data-href="SparceTable" href="http://blog.allenygy.vip/algorithm/basicalgorithm/sparcetable.html" class="internal-link" target="_self" rel="noopener">倍增</a> 
+<br><a data-tooltip-position="top" aria-label="Discretization" data-href="Discretization" href="http://blog.allenygy.vip/algorithm/basicalgorithm/discretization.html" class="internal-link" target="_self" rel="noopener">离散化</a>
+<br><a data-href="BinarySearch" href="http://blog.allenygy.vip/BinarySearch" class="internal-link" target="_self" rel="noopener">BinarySearch</a>
+<br><a data-tooltip-position="top" aria-label="SlidingWindow" data-href="SlidingWindow" href="http://blog.allenygy.vip/algorithm/basicalgorithm/slidingwindow.html" class="internal-link" target="_self" rel="noopener">双指针</a>
+]]></description><link>http://blog.allenygy.vip/algorithm/basicalgorithm/basic-algorithm-overview.html</link><guid isPermaLink="false">Algorithm/BasicAlgorithm/Basic-Algorithm-Overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:15 GMT</pubDate></item><item><title><![CDATA[<a data-href="SparceTable" href="algorithm/basicalgorithm/sparcetable.html" class="internal-link" target="_self" rel="noopener">SparceTable</a>]]></title><description><![CDATA[ 
+ <br>]]></description><link>http://blog.allenygy.vip/algorithm/basicalgorithm/sparcetable.html</link><guid isPermaLink="false">Algorithm/BasicAlgorithm/SparceTable.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:27 GMT</pubDate></item><item><title><![CDATA[<strong>SlidingWindow</strong>]]></title><description><![CDATA[<a class="tag" href="http://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
+ <br><br><a href="http://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a> <br>
 <br>枚举右端点，挪动左端点
 <br>挪动左端点的判断条件一定枚举右端点出发的
 <br>判断条件是难点
@@ -52,7 +52,7 @@ public:
 		return ans;
 	}
 };
-Copy]]></description><link>algorithm/basicalgorithm/slidingwindow.html</link><guid isPermaLink="false">Algorithm/BasicAlgorithm/SlidingWindow.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:26 GMT</pubDate></item><item><title><![CDATA[<a data-href="Graph-Algorithm" href="algorithm/daa/algorithm/graph-algorithm.html" class="internal-link" target="_self" rel="noopener">Graph-Algorithm</a>]]></title><description><![CDATA[ 
+Copy]]></description><link>http://blog.allenygy.vip/algorithm/basicalgorithm/slidingwindow.html</link><guid isPermaLink="false">Algorithm/BasicAlgorithm/SlidingWindow.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:26 GMT</pubDate></item><item><title><![CDATA[<a data-href="Graph-Algorithm" href="algorithm/daa/algorithm/graph-algorithm.html" class="internal-link" target="_self" rel="noopener">Graph-Algorithm</a>]]></title><description><![CDATA[ 
  <br><br>Def: Graph
 A graph is a pair of <br>
 V is the collection of vertices<br>
@@ -240,7 +240,7 @@ Using the discovery time in the DFS tree to define low and high.
 <br>We use d[v] to express the “hight” of v.
 <br>v is “higher” than u if v and u are on the same branch of the DFS tree and d[v] &lt; d[u] .
 <br>If v and u are on different branches, d[v] and d[u] are not compatible by the time-stamp structure.
-]]></description><link>algorithm/daa/algorithm/graph-algorithm.html</link><guid isPermaLink="false">Algorithm/DAA/Algorithm/Graph-Algorithm.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:56 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/DFS/Time-Stamp-Structure-1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/DFS/Time-Stamp-Structure-1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Enumeration-Subset" href="algorithm/daa/algorithm/enumeration-subset.html" class="internal-link" target="_self" rel="noopener">Enumeration-Subset</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/algorithm/daa/algorithm/graph-algorithm.html</link><guid isPermaLink="false">Algorithm/DAA/Algorithm/Graph-Algorithm.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:56 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/DFS/Time-Stamp-Structure-1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/DFS/Time-Stamp-Structure-1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Enumeration-Subset" href="algorithm/daa/algorithm/enumeration-subset.html" class="internal-link" target="_self" rel="noopener">Enumeration-Subset</a>]]></title><description><![CDATA[ 
  <br><br><br>从1−n这n个整数中随机选取任意多个，每种方案里的数从小到大排列，按字典序输出所有可能的选择方案。<br>
 <br>每种方案都有选或者不选两种情况
 <br>#include&lt;iostream&gt;
@@ -340,7 +340,7 @@ int main(){
 	dfs(1,0);
 	return 0;
 }
-Copy]]></description><link>algorithm/daa/algorithm/enumeration-subset.html</link><guid isPermaLink="false">Algorithm/DAA/Algorithm/Enumeration-Subset.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:54 GMT</pubDate></item><item><title><![CDATA[<a data-href="Union-Find" href="algorithm/daa/algorithm/union-find.html" class="internal-link" target="_self" rel="noopener">Union-Find</a><sup data-footnote-id="fnref-1-ad25a49f5f9dadaf" class="footnote-ref" id="fnref-1-ad25a49f5f9dadaf"><a data-footref="[inline0" href="#fn-1-ad25a49f5f9dadaf" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
+Copy]]></description><link>http://blog.allenygy.vip/algorithm/daa/algorithm/enumeration-subset.html</link><guid isPermaLink="false">Algorithm/DAA/Algorithm/Enumeration-Subset.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:54 GMT</pubDate></item><item><title><![CDATA[<a data-href="Union-Find" href="algorithm/daa/algorithm/union-find.html" class="internal-link" target="_self" rel="noopener">Union-Find</a><sup data-footnote-id="fnref-1-9bda0d800d59a8c8" class="footnote-ref" id="fnref-1-9bda0d800d59a8c8"><a data-footref="[inline0" href="#fn-1-9bda0d800d59a8c8" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
  <br><br>
 <br>用于解决元素分组问题
 <br>联通问题
@@ -696,8 +696,8 @@ return result;
 
 Copy<br>
 <br>
-<br>并查集<a href="/#fnref-1-ad25a49f5f9dadaf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>algorithm/daa/algorithm/union-find.html</link><guid isPermaLink="false">Algorithm/DAA/Algorithm/Union-Find.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:00:38 GMT</pubDate></item><item><title><![CDATA[<a data-href="Divide-and-Conquer" href="algorithm/daa/algorithm/divide-and-conquer.html" class="internal-link" target="_self" rel="noopener">Divide-and-Conquer</a>]]></title><description><![CDATA[ 
+<br>并查集<a href="http://blog.allenygy.vip/#fnref-1-9bda0d800d59a8c8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>http://blog.allenygy.vip/algorithm/daa/algorithm/union-find.html</link><guid isPermaLink="false">Algorithm/DAA/Algorithm/Union-Find.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:00:38 GMT</pubDate></item><item><title><![CDATA[<a data-href="Divide-and-Conquer" href="algorithm/daa/algorithm/divide-and-conquer.html" class="internal-link" target="_self" rel="noopener">Divide-and-Conquer</a>]]></title><description><![CDATA[ 
  <br><br>
 
 
@@ -997,7 +997,7 @@ end if
 
 
 
-Export to clipboard]]></description><link>algorithm/daa/algorithm/divide-and-conquer.html</link><guid isPermaLink="false">Algorithm/DAA/Algorithm/Divide-and-Conquer.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:24:48 GMT</pubDate></item><item><title><![CDATA[Enumeration]]></title><description><![CDATA[ 
+Export to clipboard]]></description><link>http://blog.allenygy.vip/algorithm/daa/algorithm/divide-and-conquer.html</link><guid isPermaLink="false">Algorithm/DAA/Algorithm/Divide-and-Conquer.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:24:48 GMT</pubDate></item><item><title><![CDATA[Enumeration]]></title><description><![CDATA[ 
  <br><br>枚举 <br>自右向左取<br>for(int i = 1; i &lt; (1 &lt;&lt; n) ; ++i){
 	for(int j = 0 ; j &lt; n ; ++j){
 		if( i &amp; (1 &lt;&lt; j )){ 
@@ -1010,7 +1010,7 @@ Copy<br>自左向右取<br>for(int i = 1; i &lt; (1 &lt;&lt; n); ++i){
 		}
 	}
 }
-Copy<br><br><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/maximum-points-in-an-archery-competition/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/maximum-points-in-an-archery-competition/" target="_blank">射箭比赛中的最大得分</a>]]></description><link>algorithm/daa/algorithm/enumeration.html</link><guid isPermaLink="false">Algorithm/DAA/Algorithm/Enumeration.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:55:31 GMT</pubDate></item><item><title><![CDATA[Sort Algorithm]]></title><description><![CDATA[ 
+Copy<br><br><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/maximum-points-in-an-archery-competition/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/maximum-points-in-an-archery-competition/" target="_blank">射箭比赛中的最大得分</a>]]></description><link>http://blog.allenygy.vip/algorithm/daa/algorithm/enumeration.html</link><guid isPermaLink="false">Algorithm/DAA/Algorithm/Enumeration.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:55:31 GMT</pubDate></item><item><title><![CDATA[Sort Algorithm]]></title><description><![CDATA[ 
  <br><br>
 <br>Bubble Sort
 <br>Insertion Sort
@@ -1182,7 +1182,7 @@ Export to clipboard<br>Note:<br>
 节点A：<br>
 父节点：<br>
 Export to clipboard<br>
-Export to clipboard]]></description><link>algorithm/daa/algorithm/sort.html</link><guid isPermaLink="false">Algorithm/DAA/Algorithm/Sort.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 09 Apr 2024 03:28:29 GMT</pubDate></item><item><title><![CDATA[<a data-href="DAA-Programming-Assignment" href="algorithm/daa/assignment/daa-programming-assignment.html" class="internal-link" target="_self" rel="noopener">DAA-Programming-Assignment</a>]]></title><description><![CDATA[ 
+Export to clipboard]]></description><link>http://blog.allenygy.vip/algorithm/daa/algorithm/sort.html</link><guid isPermaLink="false">Algorithm/DAA/Algorithm/Sort.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 09 Apr 2024 03:28:29 GMT</pubDate></item><item><title><![CDATA[<a data-href="DAA-Programming-Assignment" href="algorithm/daa/assignment/daa-programming-assignment.html" class="internal-link" target="_self" rel="noopener">DAA-Programming-Assignment</a>]]></title><description><![CDATA[ 
  <br><br><br>The Maximum Subarray Sum problem seeks to find the contiguous subarray (containing at least one number) which has the largest sum among all possible subarrays of a given integer array.<br><br>Define  as the maximum sum of a subarray ending at index . The recurrence relation can be expressed as:<br><br>where  is the value of the array at index .<br><br>
 <br>
 : The input array containing integers.
@@ -1287,7 +1287,7 @@ Copy
 
 <br><br>After compiling the code, you can execute the program by entering the following command in the terminal:<br>./mcs &lt;InputFilename&gt;
 Copy<br>For example, to run the program with the input file named in, type:<br>./mcs in
-Copy<br>This command will run the program using the data specified in the in file. Make sure that the input file is in the correct format and location as expected by the program.]]></description><link>algorithm/daa/assignment/daa-programming-assignment.html</link><guid isPermaLink="false">Algorithm/DAA/Assignment/DAA-Programming-Assignment.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:14:23 GMT</pubDate></item><item><title><![CDATA[<a data-href="DAA-Assignment-2" href="algorithm/daa/assignment/daa-assignment-2.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-2</a>]]></title><description><![CDATA[ 
+Copy<br>This command will run the program using the data specified in the in file. Make sure that the input file is in the correct format and location as expected by the program.]]></description><link>http://blog.allenygy.vip/algorithm/daa/assignment/daa-programming-assignment.html</link><guid isPermaLink="false">Algorithm/DAA/Assignment/DAA-Programming-Assignment.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:14:23 GMT</pubDate></item><item><title><![CDATA[<a data-href="DAA-Assignment-2" href="algorithm/daa/assignment/daa-assignment-2.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-2</a>]]></title><description><![CDATA[ 
  <br><br><br><img style="zoom:90%;" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/As2-1.png" referrerpolicy="no-referrer"><br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/As2-2.png" referrerpolicy="no-referrer"><br><br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/As2-3.png" referrerpolicy="no-referrer"><br>
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/As2-4.png" referrerpolicy="no-referrer"><br><br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/As2-5.png" referrerpolicy="no-referrer"><br>
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/As2-6.png" referrerpolicy="no-referrer"><br>
@@ -1430,7 +1430,7 @@ In this case, the time complexity of Prim's algorithm is lower than Kruskal's al
 <br>In a sparse graph, the number of edges is close to the number of vertices, that is, .
 <br>The time complexity of Kruskal's algorithm is , because the number of edges is small, the sorting burden is relatively light.<br>
 The time complexity of Prim's algorithm is .<br>
-In this case, the time complexity of Kruskal's algorithm is lower than that of Prim algorithm.<br><br>Therefore, it cannot be said that the time complexity of Prim's algorithm is always lower than that of Kruskal's algorithm.]]></description><link>algorithm/daa/assignment/daa-assignment-2.html</link><guid isPermaLink="false">Algorithm/DAA/Assignment/DAA-Assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:14:40 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/As2-1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/As2-1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="DAA-Assignment-1" href="algorithm/daa/assignment/daa-assignment-1.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-1</a>]]></title><description><![CDATA[ 
+In this case, the time complexity of Kruskal's algorithm is lower than that of Prim algorithm.<br><br>Therefore, it cannot be said that the time complexity of Prim's algorithm is always lower than that of Kruskal's algorithm.]]></description><link>http://blog.allenygy.vip/algorithm/daa/assignment/daa-assignment-2.html</link><guid isPermaLink="false">Algorithm/DAA/Assignment/DAA-Assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:14:40 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/As2-1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/As2-1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="DAA-Assignment-1" href="algorithm/daa/assignment/daa-assignment-1.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-1</a>]]></title><description><![CDATA[ 
  <br><br><br>Given the input A=[11, -7, 8, 12, 6, 5, -6, 3] , track the divide-and-conquer algorithm to find the maximum contiguous subarray. You need to show the recursive calls as a tree. The input and output for each recursive call should also be indicated as well.<br>
 <br>Input: A=[11, -7, 8, 12, 6, 5, -6, 3]
 <br>Output: MCS of A 
@@ -1701,7 +1701,7 @@ Suppose there are 2 polynomials with  terms.<br>
 After the operation it now turn to  terms.<br>
 In original algorithm the time complexity is <br>
 Now the time complexity is <br>
-There are almost the same time complexity <br>]]></description><link>algorithm/daa/assignment/daa-assignment-1.html</link><guid isPermaLink="false">Algorithm/DAA/Assignment/DAA-Assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:55 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/AS2/T1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/AS2/T1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="DAA-Assignment-0" href="algorithm/daa/assignment/daa-assignment-0.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-0</a>]]></title><description><![CDATA[ 
+There are almost the same time complexity <br>]]></description><link>http://blog.allenygy.vip/algorithm/daa/assignment/daa-assignment-1.html</link><guid isPermaLink="false">Algorithm/DAA/Assignment/DAA-Assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:55 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/AS2/T1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DAA/AS2/T1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="DAA-Assignment-0" href="algorithm/daa/assignment/daa-assignment-0.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-0</a>]]></title><description><![CDATA[ 
  <br><br><br>For Euclidean Algorithm to find GCD<br>
 <br>Define the problem solved by the algorithm (6pt)
 
@@ -1804,7 +1804,7 @@ Export to clipboard<br><br><br><br>
 <br>
 <br><br>
 <br>
-<br><br>The main goal of algorithm analysis is to understand the rate at which an algorithm's running time or space requirement grows with input size. Although multiplication has a slower running time than addition, it does not affect the overall time complexity in general.]]></description><link>algorithm/daa/assignment/daa-assignment-0.html</link><guid isPermaLink="false">Algorithm/DAA/Assignment/DAA-Assignment-0.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:44:42 GMT</pubDate></item><item><title><![CDATA[<a data-href="Tutorial-1" href="algorithm/daa/tutorial/tutorial-1.html" class="internal-link" target="_self" rel="noopener">Tutorial-1</a>]]></title><description><![CDATA[ 
+<br><br>The main goal of algorithm analysis is to understand the rate at which an algorithm's running time or space requirement grows with input size. Although multiplication has a slower running time than addition, it does not affect the overall time complexity in general.]]></description><link>http://blog.allenygy.vip/algorithm/daa/assignment/daa-assignment-0.html</link><guid isPermaLink="false">Algorithm/DAA/Assignment/DAA-Assignment-0.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:44:42 GMT</pubDate></item><item><title><![CDATA[<a data-href="Tutorial-1" href="algorithm/daa/tutorial/tutorial-1.html" class="internal-link" target="_self" rel="noopener">Tutorial-1</a>]]></title><description><![CDATA[ 
  <br><br><br>Given the problem: “For the given positive integer, justify if it is a prime.”<br>
 <br>
 Formally define the problem
@@ -1871,11 +1871,11 @@ end procedure
 
 
 
-Export to clipboard]]></description><link>algorithm/daa/tutorial/tutorial-1.html</link><guid isPermaLink="false">Algorithm/DAA/Tutorial/Tutorial-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 08 Apr 2024 16:27:28 GMT</pubDate></item><item><title><![CDATA[<a data-href="DSA-Assignment-1" href="algorithm/dsa/assignment/dsa-assignment-1.html" class="internal-link" target="_self" rel="noopener">DSA-Assignment-1</a>]]></title><description><![CDATA[ 
+Export to clipboard]]></description><link>http://blog.allenygy.vip/algorithm/daa/tutorial/tutorial-1.html</link><guid isPermaLink="false">Algorithm/DAA/Tutorial/Tutorial-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 08 Apr 2024 16:27:28 GMT</pubDate></item><item><title><![CDATA[<a data-href="DSA-Assignment-1" href="algorithm/dsa/assignment/dsa-assignment-1.html" class="internal-link" target="_self" rel="noopener">DSA-Assignment-1</a>]]></title><description><![CDATA[ 
  <br><br><br>
 Export to clipboard<br><br>
-<br><img alt="Tree" src="/algorithm/dsa/assignment/draw/bst.png">
-<br><img alt="Tree" src="/algorithm/dsa/assignment/draw/bst-1.png">
+<br><img alt="Tree" src="http://blog.allenygy.vip/algorithm/dsa/assignment/draw/bst.png">
+<br><img alt="Tree" src="http://blog.allenygy.vip/algorithm/dsa/assignment/draw/bst-1.png">
 <br>|14|25|40|52|58|85|
 <br><br><br>a.<br>
 Initial State<br>              52|2              
@@ -1925,24 +1925,24 @@ Copy<br>3<br>                              52|3
    6|0                                    72|0  
 Copy<br><br>
 <br>
-Insertion Time: To insert an element into an <a data-tooltip-position="top" aria-label="../AVL" data-href="../AVL" href="/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a> tree, we perform a binary search to find the correct position for the new element and then possibly perform some rotations to maintain the <a data-tooltip-position="top" aria-label="../AVL" data-href="../AVL" href="/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a> property. The time complexity of both these operations is ( O(log n) ) because the tree is balanced.
+Insertion Time: To insert an element into an <a data-tooltip-position="top" aria-label="../AVL" data-href="../AVL" href="http://blog.allenygy.vip/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a> tree, we perform a binary search to find the correct position for the new element and then possibly perform some rotations to maintain the <a data-tooltip-position="top" aria-label="../AVL" data-href="../AVL" href="http://blog.allenygy.vip/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a> property. The time complexity of both these operations is ( O(log n) ) because the tree is balanced.
 
 <br>
-Building the Tree: If we insert ( n ) distinct integers into an <a data-tooltip-position="top" aria-label="../AVL" data-href="../AVL" href="/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a> tree, each insert operation takes ( O(log n) ) time. Since there are ( n ) elements, the total time to build the tree is ( O(n log n) ).
+Building the Tree: If we insert ( n ) distinct integers into an <a data-tooltip-position="top" aria-label="../AVL" data-href="../AVL" href="http://blog.allenygy.vip/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a> tree, each insert operation takes ( O(log n) ) time. Since there are ( n ) elements, the total time to build the tree is ( O(n log n) ).
 
 <br>
-In-order Traversal: Once the <a data-tooltip-position="top" aria-label="../AVL" data-href="../AVL" href="/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a> tree is built, we can perform an in-order traversal to retrieve the elements in sorted order. An in-order traversal of a binary search tree visits the nodes in ascending order, which is what we want for sorting. The time complexity for in-order traversal is ( O(n) ), as each node is visited exactly once.
+In-order Traversal: Once the <a data-tooltip-position="top" aria-label="../AVL" data-href="../AVL" href="http://blog.allenygy.vip/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a> tree is built, we can perform an in-order traversal to retrieve the elements in sorted order. An in-order traversal of a binary search tree visits the nodes in ascending order, which is what we want for sorting. The time complexity for in-order traversal is ( O(n) ), as each node is visited exactly once.
 
 <br>
-Total Time Complexity: The total time complexity of sorting an array using an <a data-tooltip-position="top" aria-label="../AVL" data-href="../AVL" href="/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a> tree is the time to build the tree (( O(n log n) )) plus the time for the in-order traversal (( O(n) )). Hence, the overall time complexity is ( O(n log n) ).
+Total Time Complexity: The total time complexity of sorting an array using an <a data-tooltip-position="top" aria-label="../AVL" data-href="../AVL" href="http://blog.allenygy.vip/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a> tree is the time to build the tree (( O(n log n) )) plus the time for the in-order traversal (( O(n) )). Hence, the overall time complexity is ( O(n log n) ).
 
-<br>Therefore, we have shown that using an <a data-tooltip-position="top" aria-label="../AVL" data-href="../AVL" href="/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a> tree to sort an array of distinct integers has a time complexity of ( O(n log n) ).<br><br>a.<br><br><br><br>
+<br>Therefore, we have shown that using an <a data-tooltip-position="top" aria-label="../AVL" data-href="../AVL" href="http://blog.allenygy.vip/algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a> tree to sort an array of distinct integers has a time complexity of ( O(n log n) ).<br><br>a.<br><br><br><br>
 <br>( L = 16 ): Each leaf node can hold up to 16 records.
 <br>( M = 171 ): Each internal node can have up to 171 children (170 keys + 1 extra pointer).
 <br>b.<br>
-<br><img alt="Tree" src="/algorithm/dsa/assignment/draw/insert-1.png">
-<br><img alt="Tree" src="/algorithm/dsa/assignment/draw/delete-1.png">
-]]></description><link>algorithm/dsa/assignment/dsa-assignment-1.html</link><guid isPermaLink="false">Algorithm/DSA/Assignment/DSA-Assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:14:42 GMT</pubDate><enclosure url="algorithm/dsa/assignment/draw/bst.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="algorithm/dsa/assignment/draw/bst.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="DSA-Assignment-2" href="algorithm/dsa/assignment/dsa-assignment-2.html" class="internal-link" target="_self" rel="noopener">DSA-Assignment-2</a>]]></title><description><![CDATA[ 
+<br><img alt="Tree" src="http://blog.allenygy.vip/algorithm/dsa/assignment/draw/insert-1.png">
+<br><img alt="Tree" src="http://blog.allenygy.vip/algorithm/dsa/assignment/draw/delete-1.png">
+]]></description><link>http://blog.allenygy.vip/algorithm/dsa/assignment/dsa-assignment-1.html</link><guid isPermaLink="false">Algorithm/DSA/Assignment/DSA-Assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:14:42 GMT</pubDate><enclosure url="http://blog.allenygy.vip/algorithm/dsa/assignment/draw/bst.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="http://blog.allenygy.vip/algorithm/dsa/assignment/draw/bst.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="DSA-Assignment-2" href="algorithm/dsa/assignment/dsa-assignment-2.html" class="internal-link" target="_self" rel="noopener">DSA-Assignment-2</a>]]></title><description><![CDATA[ 
  <br><br><br>
 Export to clipboard<br><br><br>
 <br>
@@ -2043,9 +2043,9 @@ Copy<br><br>a)<br><br>
 <br>
 <br>
 <br>b)<br>
-<br><img alt="Insert" src="/algorithm/dsa/assignment/draw/insert.png">
-<br><img alt="Delete" src="/algorithm/dsa/assignment/draw/delete.png">
-]]></description><link>algorithm/dsa/assignment/dsa-assignment-2.html</link><guid isPermaLink="false">Algorithm/DSA/Assignment/DSA-Assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:14:41 GMT</pubDate><enclosure url="algorithm/dsa/assignment/draw/insert.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="algorithm/dsa/assignment/draw/insert.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Written-Assignment-AM" href="algorithm/dsa/assignment/written-assignment-am.html" class="internal-link" target="_self" rel="noopener">Written-Assignment-AM</a>]]></title><description><![CDATA[ 
+<br><img alt="Insert" src="http://blog.allenygy.vip/algorithm/dsa/assignment/draw/insert.png">
+<br><img alt="Delete" src="http://blog.allenygy.vip/algorithm/dsa/assignment/draw/delete.png">
+]]></description><link>http://blog.allenygy.vip/algorithm/dsa/assignment/dsa-assignment-2.html</link><guid isPermaLink="false">Algorithm/DSA/Assignment/DSA-Assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:14:41 GMT</pubDate><enclosure url="http://blog.allenygy.vip/algorithm/dsa/assignment/draw/insert.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="http://blog.allenygy.vip/algorithm/dsa/assignment/draw/insert.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Written-Assignment-AM" href="algorithm/dsa/assignment/written-assignment-am.html" class="internal-link" target="_self" rel="noopener">Written-Assignment-AM</a>]]></title><description><![CDATA[ 
  <br><br><br>What is the total number of basic operations that the following code piece consume? Make your answer precise and list your steps of calculation.<br>int afunc(int n){
     int res = 0;   // 1
     for(int i=0;i&lt;n;i++){   // 3n+2
@@ -2101,7 +2101,7 @@ MERGE_WITH_COUNT(A, left, center, right)
 6.             Set count of A[i] in charCount to 1
 7.     maxChar = character with maximum count in charCount
 8.     maxCount = count of maxChar in charCount
-Copy]]></description><link>algorithm/dsa/assignment/written-assignment-am.html</link><guid isPermaLink="false">Algorithm/DSA/Assignment/Written-Assignment-AM.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:14:26 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Fenwick" data-href="Fenwick" href="algorithm/dsa/fenwick.html" class="internal-link" target="_self" rel="noopener">树状数组</a>]]></title><description><![CDATA[ 
+Copy]]></description><link>http://blog.allenygy.vip/algorithm/dsa/assignment/written-assignment-am.html</link><guid isPermaLink="false">Algorithm/DSA/Assignment/Written-Assignment-AM.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:14:26 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Fenwick" data-href="Fenwick" href="algorithm/dsa/fenwick.html" class="internal-link" target="_self" rel="noopener">树状数组</a>]]></title><description><![CDATA[ 
  <br><br>最简单的树状数组支持两种操作，时间复杂度均为<br>
 巧妙地利用了二进制（实际上，树状数组的英文名BIT，直译过来就是二进制下标树）<br>
 <br>单点修改：更改数组中一个元素的值
@@ -2176,7 +2176,7 @@ public:
 	}
 
 };
-Copy<br><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/distribute-elements-into-two-arrays-ii/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/distribute-elements-into-two-arrays-ii/" target="_blank">3072. 将元素分配到两个数组中 II</a>]]></description><link>algorithm/dsa/fenwick.html</link><guid isPermaLink="false">Algorithm/DSA/Fenwick.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:37 GMT</pubDate></item><item><title><![CDATA[Tree]]></title><description><![CDATA[ 
+Copy<br><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/distribute-elements-into-two-arrays-ii/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/distribute-elements-into-two-arrays-ii/" target="_blank">3072. 将元素分配到两个数组中 II</a>]]></description><link>http://blog.allenygy.vip/algorithm/dsa/fenwick.html</link><guid isPermaLink="false">Algorithm/DSA/Fenwick.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:37 GMT</pubDate></item><item><title><![CDATA[Tree]]></title><description><![CDATA[ 
  <br><br>
 <br>Basic Concepts
 <br>Binary Trees
@@ -2209,7 +2209,7 @@ Depth of a node<br>
 <br>If there is a path from n1 to n2
 <br>n1 is an ancestor of n2, n2 is a descendant of n1
 <br>Proper ancestor and proper descendant
-<br><br>A perfect binary tree is the tree where a node can have 0 or 2 children and all leaves are at the same depth<br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DSA/Tree/PerfectBinaryTree.png" referrerpolicy="no-referrer">]]></description><link>algorithm/dsa/binarytree.html</link><guid isPermaLink="false">Algorithm/DSA/BinaryTree.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:58:17 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DSA/Tree/PerfectBinaryTree.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DSA/Tree/PerfectBinaryTree.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D435 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mo class="mjx-n" size="s"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo></mjx-script></mjx-msup><mjx-mtext class="mjx-n"><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>]]></title><description><![CDATA[ 
+<br><br>A perfect binary tree is the tree where a node can have 0 or 2 children and all leaves are at the same depth<br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DSA/Tree/PerfectBinaryTree.png" referrerpolicy="no-referrer">]]></description><link>http://blog.allenygy.vip/algorithm/dsa/binarytree.html</link><guid isPermaLink="false">Algorithm/DSA/BinaryTree.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:58:17 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DSA/Tree/PerfectBinaryTree.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DSA/Tree/PerfectBinaryTree.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D435 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mo class="mjx-n" size="s"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo></mjx-script></mjx-msup><mjx-mtext class="mjx-n"><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>]]></title><description><![CDATA[ 
  <br><br><br>
 <br>
 Binary search tree has one key to decide which of the two branches to take
@@ -2285,7 +2285,7 @@ Let k be the key in the parent of u and v that separates the pointers to u and v
 There are two cases<br><br>Case 1: v contains  or more keys and v is the right sibling of u<br>
 Move the leftmost record from v to u<br><br>v contains  or more keys and v is the left sibling of u<br>
 Move the rightmost record from v to u<br>
-Then set the key in parent of u that separates u and v to be the new smallest key in u]]></description><link>algorithm/dsa/b+tree.html</link><guid isPermaLink="false">Algorithm/DSA/B+Tree.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:58:06 GMT</pubDate></item><item><title><![CDATA[<a data-href="AVL" href="algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a>]]></title><description><![CDATA[ 
+Then set the key in parent of u that separates u and v to be the new smallest key in u]]></description><link>http://blog.allenygy.vip/algorithm/dsa/b+tree.html</link><guid isPermaLink="false">Algorithm/DSA/B+Tree.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:58:06 GMT</pubDate></item><item><title><![CDATA[<a data-href="AVL" href="algorithm/dsa/avl.html" class="internal-link" target="_self" rel="noopener">AVL</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>二叉搜索树，在插入和删除时可能失衡
 <br>如在插入和删除时旋转，始终令其保持平衡，则成为自平衡点二叉搜索树
@@ -2315,7 +2315,7 @@ Then set the key in parent of u that separates u and v to be the new smallest ke
 <br>失衡节点右孩子右边高
 
 
-]]></description><link>algorithm/dsa/avl.html</link><guid isPermaLink="false">Algorithm/DSA/AVL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:57:39 GMT</pubDate></item><item><title><![CDATA[<a data-href="Graph-Overview" href="algorithm/graph/graph-overview.html" class="internal-link" target="_self" rel="noopener">Graph-Overview</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/algorithm/dsa/avl.html</link><guid isPermaLink="false">Algorithm/DSA/AVL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:57:39 GMT</pubDate></item><item><title><![CDATA[<a data-href="Graph-Overview" href="algorithm/graph/graph-overview.html" class="internal-link" target="_self" rel="noopener">Graph-Overview</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>最短路
 <br>最小生成树 
@@ -2346,7 +2346,7 @@ Then set the key in parent of u that separates u and v to be the new smallest ke
 		}
 	return order;
 }
-Copy]]></description><link>algorithm/graph/graph-overview.html</link><guid isPermaLink="false">Algorithm/Graph/Graph-Overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:15:26 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Prime-Sieve" data-href="Prime-Sieve" href="algorithm/numbertheory/prime-sieve.html" class="internal-link" target="_self" rel="noopener">质数筛</a>]]></title><description><![CDATA[ 
+Copy]]></description><link>http://blog.allenygy.vip/algorithm/graph/graph-overview.html</link><guid isPermaLink="false">Algorithm/Graph/Graph-Overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:15:26 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Prime-Sieve" data-href="Prime-Sieve" href="algorithm/numbertheory/prime-sieve.html" class="internal-link" target="_self" rel="noopener">质数筛</a>]]></title><description><![CDATA[ 
  <br><br><br>vector&lt;int&gt; prime;
 bool is_prime[N];
 void Eratosthenes(int n) {
@@ -2382,7 +2382,7 @@ void pre(int n) {
 		} 
 	} 
 }
-Copy<br><br><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/count-primes/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/count-primes/" target="_blank">204. 计数质数</a>]]></description><link>algorithm/numbertheory/prime-sieve.html</link><guid isPermaLink="false">Algorithm/NumberTheory/Prime-Sieve.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:29 GMT</pubDate></item><item><title><![CDATA[<a data-href="Recursion-2" href="algorithm/recursion/recursion-2.html" class="internal-link" target="_self" rel="noopener">Recursion-2</a>]]></title><description><![CDATA[ 
+Copy<br><br><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/count-primes/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/count-primes/" target="_blank">204. 计数质数</a>]]></description><link>http://blog.allenygy.vip/algorithm/numbertheory/prime-sieve.html</link><guid isPermaLink="false">Algorithm/NumberTheory/Prime-Sieve.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:29 GMT</pubDate></item><item><title><![CDATA[<a data-href="Recursion-2" href="algorithm/recursion/recursion-2.html" class="internal-link" target="_self" rel="noopener">Recursion-2</a>]]></title><description><![CDATA[ 
  <br><br><br>程序调用自身的编程技巧称为递归 Recursion<br>
 <br>递归作为一种算法在程序设计语言中广泛应用。
 <br>一个过程或函数在其定义或说明中有直接或间接调用自身的一种方法，它通常把一个大型复杂的问题层层转化为一个与原问题相似的规模较小的问题来求解。
@@ -2476,7 +2476,7 @@ signed main()
     }
     return 0;
 }
-Copy]]></description><link>algorithm/recursion/recursion-2.html</link><guid isPermaLink="false">Algorithm/Recursion/Recursion-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:31 GMT</pubDate><enclosure url="https://img.lsyz.top/2022/08/09/25ad9e9d95723.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://img.lsyz.top/2022/08/09/25ad9e9d95723.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Recursion-1" href="algorithm/recursion/recursion-1.html" class="internal-link" target="_self" rel="noopener">Recursion-1</a>]]></title><description><![CDATA[ 
+Copy]]></description><link>http://blog.allenygy.vip/algorithm/recursion/recursion-2.html</link><guid isPermaLink="false">Algorithm/Recursion/Recursion-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:31 GMT</pubDate><enclosure url="https://img.lsyz.top/2022/08/09/25ad9e9d95723.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://img.lsyz.top/2022/08/09/25ad9e9d95723.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Recursion-1" href="algorithm/recursion/recursion-1.html" class="internal-link" target="_self" rel="noopener">Recursion-1</a>]]></title><description><![CDATA[ 
  <br><br><br>递推是按照一定的规律来求序列中的每一项,一般是通过计算前面的一些项来得出序列中的指定项。<br>
 其思想是把一个复杂的庞大的计算过程转化为对简单过程的多次重复,该算法利用了计算机运算速度快和不知疲倦的机器特点。<br><br>
 <br>将问题用数组形式表达
@@ -2895,7 +2895,7 @@ signed main(){
    cout&lt;&lt;f[n][0]; 
    return 0;
 }
-Copy]]></description><link>algorithm/recursion/recursion-1.html</link><guid isPermaLink="false">Algorithm/Recursion/Recursion-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:30 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Share/202406101734284.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Share/202406101734284.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<strong>Recursion-BinaryTree</strong>]]></title><description><![CDATA[<a class="tag" href="?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="?query=tag:achievement" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#achievement</a> <a class="tag" href="?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
+Copy]]></description><link>http://blog.allenygy.vip/algorithm/recursion/recursion-1.html</link><guid isPermaLink="false">Algorithm/Recursion/Recursion-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:30 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Share/202406101734284.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Share/202406101734284.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<strong>Recursion-BinaryTree</strong>]]></title><description><![CDATA[<a class="tag" href="http://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:achievement" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#achievement</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
  <br><br><br>刚开始直接左右节点分别遍历，取最小值<br>
 没考虑根节点只有一个分支的情况<br>class Solution {
 public:
@@ -2930,7 +2930,7 @@ public:
 		return min(m1,m2)+1;
 	}
 };
-Copy<br><br><a href=".?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
+Copy<br><br><a href="http://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
 叶子节点的定义<br>node-&gt;left==nullptr&amp;&amp;node-&gt;right==nullptr
 Copy<br>class Solution {
 public:
@@ -2943,7 +2943,7 @@ public:
 		return l||r;
 	}
 };
-Copy<br><br><a href=".?query=tag:achievement" class="tag" target="_blank" rel="noopener">#achievement</a><br>
+Copy<br><br><a href="http://blog.allenygy.vip?query=tag:achievement" class="tag" target="_blank" rel="noopener">#achievement</a><br>
 第一次独立写出，递归，回溯？哈哈哈哈<br>class Solution {
 vector&lt;vector&lt;int&gt;&gt; res;
 vector&lt;int&gt; v;
@@ -3025,7 +3025,7 @@ public:
 		 return dfs(root, 0); 
 	} 
 };
-Copy<br><br><a href=".?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
+Copy<br><br><a href="http://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
 把变量当作参数传递进函数，则不需要回溯变量<br>class Solution {
 public:
 	void construct_paths(TreeNode* root, string path, vector&lt;string&gt;&amp; paths) {
@@ -3056,7 +3056,7 @@ public:
 		return left+right+(mx&lt;=root-&gt;val);
 	}
 };
-Copy<br><br><a href=".?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
+Copy<br><br><a href="http://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
 先遍历右子树并根据深度决定是否记录该节点<br>class Solution {
 vector&lt;int&gt;ans;
 public:
@@ -3071,7 +3071,7 @@ public:
 		return ans;
 	}
 };
-Copy<br><br><a href=".?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
+Copy<br><br><a href="http://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
 开始的时候犹豫当前节点判断，左子树判断和右子树判断<br>
 后来发现并列就好了<br>class Solution {
 public:
@@ -3116,7 +3116,7 @@ public:
 		return root;
 	}
 };
-Copy<br><br><a href=".?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a> <br>
+Copy<br><br><a href="http://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a> <br>
 <br>我理解到，只能先删叶子节点<br>
 判断叶子节点
 <br>if (root-&gt;left == root-&gt;right) 
@@ -3161,10 +3161,10 @@ public:
 		return ans -1; // 因为长度是从1开始的，我们需要减去1
 	}
 };
-Copy]]></description><link>algorithm/recursion/recursion-binarytree.html</link><guid isPermaLink="false">Algorithm/Recursion/Recursion-BinaryTree.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 09 Apr 2024 03:27:53 GMT</pubDate></item><item><title><![CDATA[<a data-href="Z-Function" href="algorithm/string/z-function.html" class="internal-link" target="_self" rel="noopener">Z-Function</a>]]></title><description><![CDATA[ 
- <br>]]></description><link>algorithm/string/z-function.html</link><guid isPermaLink="false">Algorithm/STRING/Z-Function.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:32 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Aho-Corasick" data-href="Aho-Corasick" href="algorithm/string/aho-corasick.html" class="internal-link" target="_self" rel="noopener">AC自动机</a>]]></title><description><![CDATA[ 
- <br>]]></description><link>algorithm/string/aho-corasick.html</link><guid isPermaLink="false">Algorithm/STRING/Aho-Corasick.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:32 GMT</pubDate></item><item><title><![CDATA[<a data-href="Tire-Tree" href="algorithm/string/tire-tree.html" class="internal-link" target="_self" rel="noopener">Tire-Tree</a>]]></title><description><![CDATA[ 
- <br>]]></description><link>algorithm/string/tire-tree.html</link><guid isPermaLink="false">Algorithm/STRING/Tire-Tree.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:33 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Manacher-Algorithm" data-href="Manacher-Algorithm" href="algorithm/string/manacher-algorithm.html" class="internal-link" target="_self" rel="noopener">Manacher Algorithm</a>]]></title><description><![CDATA[ 
+Copy]]></description><link>http://blog.allenygy.vip/algorithm/recursion/recursion-binarytree.html</link><guid isPermaLink="false">Algorithm/Recursion/Recursion-BinaryTree.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 09 Apr 2024 03:27:53 GMT</pubDate></item><item><title><![CDATA[<a data-href="Z-Function" href="algorithm/string/z-function.html" class="internal-link" target="_self" rel="noopener">Z-Function</a>]]></title><description><![CDATA[ 
+ <br>]]></description><link>http://blog.allenygy.vip/algorithm/string/z-function.html</link><guid isPermaLink="false">Algorithm/STRING/Z-Function.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:32 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Aho-Corasick" data-href="Aho-Corasick" href="algorithm/string/aho-corasick.html" class="internal-link" target="_self" rel="noopener">AC自动机</a>]]></title><description><![CDATA[ 
+ <br>]]></description><link>http://blog.allenygy.vip/algorithm/string/aho-corasick.html</link><guid isPermaLink="false">Algorithm/STRING/Aho-Corasick.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:32 GMT</pubDate></item><item><title><![CDATA[<a data-href="Tire-Tree" href="algorithm/string/tire-tree.html" class="internal-link" target="_self" rel="noopener">Tire-Tree</a>]]></title><description><![CDATA[ 
+ <br>]]></description><link>http://blog.allenygy.vip/algorithm/string/tire-tree.html</link><guid isPermaLink="false">Algorithm/STRING/Tire-Tree.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:33 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Manacher-Algorithm" data-href="Manacher-Algorithm" href="algorithm/string/manacher-algorithm.html" class="internal-link" target="_self" rel="noopener">Manacher Algorithm</a>]]></title><description><![CDATA[ 
  <br><br><br>最长回文子串
 给定一个字符串&nbsp;s，找到&nbsp;s&nbsp;中最长的回文子串。
 示例 1：
@@ -3275,14 +3275,14 @@ Copy<br><br><br>回文子串
 输入字符串s，求s的最长双回文子串t的长度<br>
 双回文子串就是可以分成两个回文串的字符串<br>
 比如"aabb"，可以分成"aa"、"bb"
-<br>]]></description><link>algorithm/string/manacher-algorithm.html</link><guid isPermaLink="false">Algorithm/STRING/Manacher-Algorithm.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 08:15:42 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Algorithm/STRING/Manacher-7.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Algorithm/STRING/Manacher-7.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="String-Overview" href="algorithm/string/string-overview.html" class="internal-link" target="_self" rel="noopener">String-Overview</a>]]></title><description><![CDATA[ 
+<br>]]></description><link>http://blog.allenygy.vip/algorithm/string/manacher-algorithm.html</link><guid isPermaLink="false">Algorithm/STRING/Manacher-Algorithm.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 08:15:42 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Algorithm/STRING/Manacher-7.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Algorithm/STRING/Manacher-7.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="String-Overview" href="algorithm/string/string-overview.html" class="internal-link" target="_self" rel="noopener">String-Overview</a>]]></title><description><![CDATA[ 
  <br><br>
-<br><a data-tooltip-position="top" aria-label="Tire-Tree" data-href="Tire-Tree" href="/algorithm/string/tire-tree.html" class="internal-link" target="_self" rel="noopener">字典树</a>
-<br><a data-href="KMP" href="/algorithm/string/kmp.html" class="internal-link" target="_self" rel="noopener">KMP</a>
-<br><a data-tooltip-position="top" aria-label="Aho-Corasick" data-href="Aho-Corasick" href="/algorithm/string/aho-corasick.html" class="internal-link" target="_self" rel="noopener">AC自动机</a>
-<br><a data-tooltip-position="top" aria-label="Manacher-Algorithm" data-href="Manacher-Algorithm" href="/algorithm/string/manacher-algorithm.html" class="internal-link" target="_self" rel="noopener">马拉车</a>
-<br><a data-tooltip-position="top" aria-label="Z-Function" data-href="Z-Function" href="/algorithm/string/z-function.html" class="internal-link" target="_self" rel="noopener">z 函数</a>
-]]></description><link>algorithm/string/string-overview.html</link><guid isPermaLink="false">Algorithm/STRING/String-Overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 08:13:31 GMT</pubDate></item><item><title><![CDATA[Assignment-1]]></title><description><![CDATA[ 
+<br><a data-tooltip-position="top" aria-label="Tire-Tree" data-href="Tire-Tree" href="http://blog.allenygy.vip/algorithm/string/tire-tree.html" class="internal-link" target="_self" rel="noopener">字典树</a>
+<br><a data-href="KMP" href="http://blog.allenygy.vip/algorithm/string/kmp.html" class="internal-link" target="_self" rel="noopener">KMP</a>
+<br><a data-tooltip-position="top" aria-label="Aho-Corasick" data-href="Aho-Corasick" href="http://blog.allenygy.vip/algorithm/string/aho-corasick.html" class="internal-link" target="_self" rel="noopener">AC自动机</a>
+<br><a data-tooltip-position="top" aria-label="Manacher-Algorithm" data-href="Manacher-Algorithm" href="http://blog.allenygy.vip/algorithm/string/manacher-algorithm.html" class="internal-link" target="_self" rel="noopener">马拉车</a>
+<br><a data-tooltip-position="top" aria-label="Z-Function" data-href="Z-Function" href="http://blog.allenygy.vip/algorithm/string/z-function.html" class="internal-link" target="_self" rel="noopener">z 函数</a>
+]]></description><link>http://blog.allenygy.vip/algorithm/string/string-overview.html</link><guid isPermaLink="false">Algorithm/STRING/String-Overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 08:13:31 GMT</pubDate></item><item><title><![CDATA[Assignment-1]]></title><description><![CDATA[ 
  <br><br><br>
 <br>
 Define what a Turing machine is.
@@ -3386,7 +3386,7 @@ Show that
 <br>Simplify the above Boolean expression using K-MAP.
 <br><br>
 <br>
-]]></description><link>co/assignment/as1/co-assignment-1.html</link><guid isPermaLink="false">CO/Assignment/As1/CO-Assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:58 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/logic.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/logic.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="CO-Assignment-2" href="co/assignment/as2/co-assignment-2.html" class="internal-link" target="_self" rel="noopener">CO-Assignment-2</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/co/assignment/as1/co-assignment-1.html</link><guid isPermaLink="false">CO/Assignment/As1/CO-Assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:58 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/logic.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/logic.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="CO-Assignment-2" href="co/assignment/as2/co-assignment-2.html" class="internal-link" target="_self" rel="noopener">CO-Assignment-2</a>]]></title><description><![CDATA[ 
  <br><br><br>For the following transistor-level circuit, fill in the truth table. What is the logical expression of Z in terms of A and B? (12 points)<br><br><br><br>Fibonacci numbers are the sequence of numbers Fn defined by the linear recurrence equation  where . It is conventional to define . Given a word size of four bits, design a circuit to detect if a given input binary number  is a Fibonacci number or not. Show the following steps: (20 points)<br>
 <br>Truth Table
 <br><br>
@@ -3450,7 +3450,7 @@ This state diagram describes the function of a four-bit binary right-cycling shi
 <br>
 <br>
 <br>
-<br><img alt="zGv0xW" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/zGv0xW.jpg" referrerpolicy="no-referrer">]]></description><link>co/assignment/as2/co-assignment-2.html</link><guid isPermaLink="false">CO/Assignment/As2/CO-Assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:58 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/K-MAP.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/K-MAP.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="CO-Assignment-3" href="co/assignment/as3/co-assignment-3.html" class="internal-link" target="_self" rel="noopener">CO-Assignment-3</a>]]></title><description><![CDATA[ 
+<br><img alt="zGv0xW" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/zGv0xW.jpg" referrerpolicy="no-referrer">]]></description><link>http://blog.allenygy.vip/co/assignment/as2/co-assignment-2.html</link><guid isPermaLink="false">CO/Assignment/As2/CO-Assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:58 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/K-MAP.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/K-MAP.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="CO-Assignment-3" href="co/assignment/as3/co-assignment-3.html" class="internal-link" target="_self" rel="noopener">CO-Assignment-3</a>]]></title><description><![CDATA[ 
  <br><br><br>Suppose a 32-bit instruction takes the following format: (10 points)<br>If there are 225 opcodes and 120 general purpose registers<br>
 <br>What is the minimum number of bits required to represent the OPCODE? Explain why. (2 points)
 <br>minimun number of bits to represent the opcode: 8 bits<br>
@@ -3532,7 +3532,7 @@ x300A 1111 1111 1011 0110<br>
 x300B 1111 1110 0000 0100<br>
 x300C 1111 1110 0000 0110<br>
 <br>What does the program do? (10 points)
-<br>It print “ABCDEFGHI” on the console.]]></description><link>co/assignment/as3/co-assignment-3.html</link><guid isPermaLink="false">CO/Assignment/As3/CO-Assignment-3.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:59 GMT</pubDate></item><item><title><![CDATA[<a data-href="CO-Assignment-4" href="co/assignment/as4/co-assignment-4.html" class="internal-link" target="_self" rel="noopener">CO-Assignment-4</a>]]></title><description><![CDATA[ 
+<br>It print “ABCDEFGHI” on the console.]]></description><link>http://blog.allenygy.vip/co/assignment/as3/co-assignment-3.html</link><guid isPermaLink="false">CO/Assignment/As3/CO-Assignment-3.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:59 GMT</pubDate></item><item><title><![CDATA[<a data-href="CO-Assignment-4" href="co/assignment/as4/co-assignment-4.html" class="internal-link" target="_self" rel="noopener">CO-Assignment-4</a>]]></title><description><![CDATA[ 
  <br><br><br>Answer:<br>
 <br>R1 is not to be set to zero. R1 will not be detected at assembly or run time.
 <br>'SUM' is not a valid numeric literal, and it is also not in the symbol table either. This error will be detected in assembly
@@ -3562,7 +3562,7 @@ Interrupts: Using interrupts for handling I/O provides the advantage of allowing
 <br>
 Polling: Polling involves the CPU constantly checking the status of an I/O device to determine if it needs attention or has completed its task. It's simpler to implement but can be less efficient than using interrupts because it ties up the CPU in a loop, consuming processing power even when the I/O device doesn't need immediate attention. Polling might be used in scenarios where the hardware doesn't support interrupts or when the overhead of handling interrupts is too high compared to the frequency of I/O operations.
 
-<br><br>Answer:<br>The last instruction in the interrupt service program is usually "RTI" (opcode 1000). It returns from the Interrupt Pops PSR and PC of the Supervisor stack, recovering the conditional code from the PSR. If necessary (i.e., if the current permission mode is User), revert from Saved.USP to a user stack pointer to R6.]]></description><link>co/assignment/as4/co-assignment-4.html</link><guid isPermaLink="false">CO/Assignment/As4/CO-Assignment-4.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:59 GMT</pubDate></item><item><title><![CDATA[Lab7]]></title><description><![CDATA[ 
+<br><br>Answer:<br>The last instruction in the interrupt service program is usually "RTI" (opcode 1000). It returns from the Interrupt Pops PSR and PC of the Supervisor stack, recovering the conditional code from the PSR. If necessary (i.e., if the current permission mode is User), revert from Saved.USP to a user stack pointer to R6.]]></description><link>http://blog.allenygy.vip/co/assignment/as4/co-assignment-4.html</link><guid isPermaLink="false">CO/Assignment/As4/CO-Assignment-4.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 17 Apr 2024 09:14:59 GMT</pubDate></item><item><title><![CDATA[Lab7]]></title><description><![CDATA[ 
  <br><br>Assembling the following assembly program first by hand and then verify your result using the assembler. Write a report describe the assembling process. Your report file should include the symbol table and the machine code in binary for the assembly code and other related information to describe the assembling process.<br>.ORIG x3050
 LD R1,SIX
 LD R2,NUMBER
@@ -3604,7 +3604,7 @@ Process add R2 6 times, and store the result in R3
 <br>
 R3 = 6
 
-]]></description><link>co/lab/lab7.html</link><guid isPermaLink="false">CO/Lab/Lab7.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:16:27 GMT</pubDate></item><item><title><![CDATA[Lab8]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/co/lab/lab7.html</link><guid isPermaLink="false">CO/Lab/Lab7.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:16:27 GMT</pubDate></item><item><title><![CDATA[Lab8]]></title><description><![CDATA[ 
  <br><br>.ORIG x3000
 	LD R1, HELLO
 	STI R1, TRAP_26
@@ -3628,7 +3628,7 @@ Copy<br>
 <br>At first, loading the program that print hello's address to R1.
 <br>Then using STI to load this address to x0026.
 <br>Finally I can use trapx26 to print "Hello,world".
-]]></description><link>co/lab/lab8.html</link><guid isPermaLink="false">CO/Lab/Lab8.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:13:25 GMT</pubDate></item><item><title><![CDATA[Lab]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/co/lab/lab8.html</link><guid isPermaLink="false">CO/Lab/Lab8.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:13:25 GMT</pubDate></item><item><title><![CDATA[Lab]]></title><description><![CDATA[ 
  <br><br><br>What does the following code? (There are 3 instructions.)<br>0011000000000000<br>
 1001001001111111<br>
 0001010001100001<br>
@@ -3647,7 +3647,7 @@ then Store R2's content to the address that is R1's content plus 14<br>
 finally x2FFD plus PC's content then find the address's content,using this content to find the address and load the content to R3<br><br>Write a LC3 machine code program to print out “Hello World!”. Hint: consider to use Trap instruction PUTS.<br>1110 0000 0000 0010<br>
 1111 0000 0010 0010<br>
 1111 0000 0010 0101<br>
-0000 0000 0100 1000]]></description><link>co/lab/lab6.html</link><guid isPermaLink="false">CO/Lab/Lab6.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:03:29 GMT</pubDate></item><item><title><![CDATA[Problem]]></title><description><![CDATA[ 
+0000 0000 0100 1000]]></description><link>http://blog.allenygy.vip/co/lab/lab6.html</link><guid isPermaLink="false">CO/Lab/Lab6.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:03:29 GMT</pubDate></item><item><title><![CDATA[Problem]]></title><description><![CDATA[ 
  <br><br>Select any ISA instruction you have learned in the class, and analyze the process of the fetch-decode-execution cycle step by step. It should contain change of the state and change of the registers values, and PC, IR, MAR and MDR.<br><br>
 <br>Fetch:<br>
 Load the address stored in the Program Counter (PC) into the Memory Address Register (MAR).<br>
@@ -3662,7 +3662,7 @@ Fetch the source operands (Src1 and Src2) from the registers specified by the in
 The Arithmetic Logic Unit (ALU) receives Src1 and Src2 values from the registers.<br>
 ALU performs the addition operation: ALU_result = Src1 + Src2.<br>
 Store the result (ALU_result) in the designated destination register (Dst).
-]]></description><link>co/lab/lab5.html</link><guid isPermaLink="false">CO/Lab/Lab5.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:03:12 GMT</pubDate></item><item><title><![CDATA[Lab3]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/co/lab/lab5.html</link><guid isPermaLink="false">CO/Lab/Lab5.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:03:12 GMT</pubDate></item><item><title><![CDATA[Lab3]]></title><description><![CDATA[ 
  <br><br>
 <br>From the specifications of the circuit, determine the required number of inputs and outputs, and assign a letter symbol to each.
 <br>
@@ -3679,7 +3679,7 @@ Store the result (ALU_result) in the designated destination register (Dst).
 <br><img alt="Lab3" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Lab3.png" referrerpolicy="no-referrer">
 <img alt="BL5eKv" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/BL5eKv.png" referrerpolicy="no-referrer"><br>
 <br>Verify the correctness of the design.
-]]></description><link>co/lab/lab3.html</link><guid isPermaLink="false">CO/Lab/Lab3.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:53:48 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Lab3.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Lab3.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Lab2]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/co/lab/lab3.html</link><guid isPermaLink="false">CO/Lab/Lab3.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:53:48 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Lab3.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/Lab3.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Lab2]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Signed-magnitude: 803B
 <br>1'complement: FFC4
@@ -3694,7 +3694,7 @@ Store the result (ALU_result) in the designated destination register (Dst).
 <br><br>
 <br>'您': 0x60a8
 <br>'好': 0x597d
-]]></description><link>co/lab/lab2.html</link><guid isPermaLink="false">CO/Lab/Lab2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:53:34 GMT</pubDate></item><item><title><![CDATA[<a data-href="Microarchitecture" href="co/lecture/microarchitecture.html" class="internal-link" target="_self" rel="noopener">Microarchitecture</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/co/lab/lab2.html</link><guid isPermaLink="false">CO/Lab/Lab2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:53:34 GMT</pubDate></item><item><title><![CDATA[<a data-href="Microarchitecture" href="co/lecture/microarchitecture.html" class="internal-link" target="_self" rel="noopener">Microarchitecture</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>
 Microarchitecture connects circuits and ISA together.<br>
@@ -4017,7 +4017,7 @@ Stopping the Computer
 
 
 
-]]></description><link>co/lecture/microarchitecture.html</link><guid isPermaLink="false">CO/Lecture/Microarchitecture.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:17:06 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Microarchitecture.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Microarchitecture.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="From-Machine-Language-to-Assembly-Language" href="co/lecture/from-machine-language-to-assembly-language.html" class="internal-link" target="_self" rel="noopener">From-Machine-Language-to-Assembly-Language</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/co/lecture/microarchitecture.html</link><guid isPermaLink="false">CO/Lecture/Microarchitecture.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:17:06 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Microarchitecture.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Microarchitecture.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="From-Machine-Language-to-Assembly-Language" href="co/lecture/from-machine-language-to-assembly-language.html" class="internal-link" target="_self" rel="noopener">From-Machine-Language-to-Assembly-Language</a>]]></title><description><![CDATA[ 
  <br><br>Assembler is a program that turns symbols into binary machine instructions.<br><br>
 <br>Each line of a program is one of the following:
 
@@ -4063,7 +4063,7 @@ Copy<br><br>
 <br>Do not refer to operations executed by program
 <br>used by assembler
 <br>look like instruction, but "opcode" starts whith dots
-<br>]]></description><link>co/lecture/from-machine-language-to-assembly-language.html</link><guid isPermaLink="false">CO/Lecture/From-Machine-Language-to-Assembly-Language.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:16:54 GMT</pubDate></item><item><title><![CDATA[<a data-href="From-Gates-to-Circuits-II-Sequential-Circuits" href="co/lecture/from-gates-to-circuits-ii-sequential-circuits.html" class="internal-link" target="_self" rel="noopener">From-Gates-to-Circuits-II-Sequential-Circuits</a>]]></title><description><![CDATA[ 
+<br>]]></description><link>http://blog.allenygy.vip/co/lecture/from-machine-language-to-assembly-language.html</link><guid isPermaLink="false">CO/Lecture/From-Machine-Language-to-Assembly-Language.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:16:54 GMT</pubDate></item><item><title><![CDATA[<a data-href="From-Gates-to-Circuits-II-Sequential-Circuits" href="co/lecture/from-gates-to-circuits-ii-sequential-circuits.html" class="internal-link" target="_self" rel="noopener">From-Gates-to-Circuits-II-Sequential-Circuits</a>]]></title><description><![CDATA[ 
  <br><br><br>Sequential circuits’ output depends not only on its current inputs, but also its previous inputs (current state)<br>  =    <br>
 <img alt="tylAV6" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/tylAV6.jpg" referrerpolicy="no-referrer"><br><br>
 <br>It should be able to hold a single bit, 0 or 1.
@@ -4263,7 +4263,7 @@ Decoder 选择 其中一条线路<br>
 <br>Sequential circuits require clocks to control their changes of states
 <br>The basic sequential circuit unit is the flip-flop: SR, JK and D flip-flop
 <br>Examples: registers, binary counter and memory
-]]></description><link>co/lecture/from-gates-to-circuits-ii-sequential-circuits.html</link><guid isPermaLink="false">CO/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:16:45 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/tylAV6.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/tylAV6.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="From-Gates-to-Circuits-I-Combinational-Circuits" href="co/lecture/from-gates-to-circuits-i-combinational-circuits.html" class="internal-link" target="_self" rel="noopener">From-Gates-to-Circuits-I-Combinational-Circuits</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/co/lecture/from-gates-to-circuits-ii-sequential-circuits.html</link><guid isPermaLink="false">CO/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:16:45 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/tylAV6.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/tylAV6.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="From-Gates-to-Circuits-I-Combinational-Circuits" href="co/lecture/from-gates-to-circuits-i-combinational-circuits.html" class="internal-link" target="_self" rel="noopener">From-Gates-to-Circuits-I-Combinational-Circuits</a>]]></title><description><![CDATA[ 
  <br><br><br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Basic-Building-Blocks.png" referrerpolicy="no-referrer"><br>
 <br>AND/NAND
 <br>OR/NOR/XOR
@@ -4359,7 +4359,7 @@ multiplexer在中间选择线路通过<br><br><br>
 <br>G: 
 <br>E: 
 <br>L: 
-<br><img alt="vH5EJb" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/vH5EJb.jpg" referrerpolicy="no-referrer">]]></description><link>co/lecture/from-gates-to-circuits-i-combinational-circuits.html</link><guid isPermaLink="false">CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:15:27 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Basic-Building-Blocks.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Basic-Building-Blocks.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="CircuitDesign" href="co/lecture/circuitdesign.html" class="internal-link" target="_self" rel="noopener">CircuitDesign</a>]]></title><description><![CDATA[ 
+<br><img alt="vH5EJb" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/vH5EJb.jpg" referrerpolicy="no-referrer">]]></description><link>http://blog.allenygy.vip/co/lecture/from-gates-to-circuits-i-combinational-circuits.html</link><guid isPermaLink="false">CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:15:27 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Basic-Building-Blocks.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/Basic-Building-Blocks.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="CircuitDesign" href="co/lecture/circuitdesign.html" class="internal-link" target="_self" rel="noopener">CircuitDesign</a>]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Find Input and Output
 <br>Truth Table
@@ -4441,7 +4441,7 @@ Invalid status<br>
 <br>
 <br>
 <br>
-<br><img alt="zGv0xW" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/zGv0xW.jpg" referrerpolicy="no-referrer">]]></description><link>co/lecture/circuitdesign.html</link><guid isPermaLink="false">CO/Lecture/CircuitDesign.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:15:14 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/JRr3J4.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/JRr3J4.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="ISA" href="co/lecture/isa.html" class="internal-link" target="_self" rel="noopener">ISA</a>]]></title><description><![CDATA[ 
+<br><img alt="zGv0xW" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/zGv0xW.jpg" referrerpolicy="no-referrer">]]></description><link>http://blog.allenygy.vip/co/lecture/circuitdesign.html</link><guid isPermaLink="false">CO/Lecture/CircuitDesign.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:15:14 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/JRr3J4.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/JRr3J4.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="ISA" href="co/lecture/isa.html" class="internal-link" target="_self" rel="noopener">ISA</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>ISA specifies what hardware does, but not how
 
@@ -4781,7 +4781,7 @@ PC jump to Reg<br>
 <br>---- ---- --------
 TRAP 0000 trapvec
 1111 0000
-Copy<br>PC is set to the instruction TRAP]]></description><link>co/lecture/isa.html</link><guid isPermaLink="false">CO/Lecture/ISA.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:01:39 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/ISA_overview.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/ISA_overview.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="What-is-a-Computer" href="co/lecture/what-is-a-computer.html" class="internal-link" target="_self" rel="noopener">What-is-a-Computer</a>]]></title><description><![CDATA[ 
+Copy<br>PC is set to the instruction TRAP]]></description><link>http://blog.allenygy.vip/co/lecture/isa.html</link><guid isPermaLink="false">CO/Lecture/ISA.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:01:39 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/ISA_overview.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO/ISA_overview.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="What-is-a-Computer" href="co/lecture/what-is-a-computer.html" class="internal-link" target="_self" rel="noopener">What-is-a-Computer</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>
 Definition:
@@ -4889,7 +4889,7 @@ a single path between the main memory and CPU, called the von Neumann bottleneck
 <br>Whatever can be done by hardware can also be done by software, and vice versa
 <br>Hardware implementations are faster but fixed
 <br>Software implementations are more flexible but slower
-]]></description><link>co/lecture/what-is-a-computer.html</link><guid isPermaLink="false">CO/Lecture/What-is-a-Computer.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 14 Jun 2024 09:12:03 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-vonNeumannArchitecture.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-vonNeumannArchitecture.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="From-Transistors-to-Gates" href="co/lecture/from-transistors-to-gates.html" class="internal-link" target="_self" rel="noopener">From-Transistors-to-Gates</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/co/lecture/what-is-a-computer.html</link><guid isPermaLink="false">CO/Lecture/What-is-a-Computer.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 14 Jun 2024 09:12:03 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-vonNeumannArchitecture.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-vonNeumannArchitecture.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="From-Transistors-to-Gates" href="co/lecture/from-transistors-to-gates.html" class="internal-link" target="_self" rel="noopener">From-Transistors-to-Gates</a>]]></title><description><![CDATA[ 
  <br><br><img width="" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-ClaudeShannon.png" referrerpolicy="no-referrer"><br>
 <br>
 Claude Shannon
@@ -4972,7 +4972,7 @@ Transitor 晶体管
 <br>
 
 
-]]></description><link>co/lecture/from-transistors-to-gates.html</link><guid isPermaLink="false">CO/Lecture/From-Transistors-to-Gates.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:31:37 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-ClaudeShannon.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-ClaudeShannon.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Finite-State-Machine" href="co/lecture/finite-state-machine.html" class="internal-link" target="_self" rel="noopener">Finite-State-Machine</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/co/lecture/from-transistors-to-gates.html</link><guid isPermaLink="false">CO/Lecture/From-Transistors-to-Gates.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:31:37 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-ClaudeShannon.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-ClaudeShannon.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Finite-State-Machine" href="co/lecture/finite-state-machine.html" class="internal-link" target="_self" rel="noopener">Finite-State-Machine</a>]]></title><description><![CDATA[ 
  <br><br><br>
 <br>The output of a sequential circuit is a function of the current input and the previous state 时序电路的输出是当前输入和先前状态的函数
 <br>The state is stored in the storage element 状态存储在存储元件中
@@ -5018,7 +5018,7 @@ When the switch is in the ON position, the controller directs the lights as foll
 <br>Each transition may be accompanied by an operation on the tape (move, read, write).
 <br>Its total possible configurations are arbitrarily large, regardless of the size of the program; it expands towards infinity.
 <br>Turing machines have more computational power than FSM.
-]]></description><link>co/lecture/finite-state-machine.html</link><guid isPermaLink="false">CO/Lecture/Finite-State-Machine.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:32:11 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/20KSlQ.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/20KSlQ.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Boolean-Algebra-From-Bits-to-Logic" href="co/lecture/boolean-algebra-from-bits-to-logic.html" class="internal-link" target="_self" rel="noopener">Boolean-Algebra-From-Bits-to-Logic</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/co/lecture/finite-state-machine.html</link><guid isPermaLink="false">CO/Lecture/Finite-State-Machine.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:32:11 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/20KSlQ.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/20KSlQ.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Boolean-Algebra-From-Bits-to-Logic" href="co/lecture/boolean-algebra-from-bits-to-logic.html" class="internal-link" target="_self" rel="noopener">Boolean-Algebra-From-Bits-to-Logic</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Computers represent information by bit (Binary digit)
 <br>A bit has two possible values, namely 0 and 1.
@@ -5058,7 +5058,7 @@ When the switch is in the ON position, the controller directs the lights as foll
 <br>Also called Conjunctive Normal Form (CNF) 合取范式
 <br>Look at ZERO<br>
 <img alt="CNF" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-CNF.png" referrerpolicy="no-referrer">
-]]></description><link>co/lecture/boolean-algebra-from-bits-to-logic.html</link><guid isPermaLink="false">CO/Lecture/Boolean-Algebra-From-Bits-to-Logic.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:50:30 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-Boolean-Identities.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-Boolean-Identities.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Bits-Data-Representation-and-Manipulation" href="co/lecture/bits-data-representation-and-manipulation.html" class="internal-link" target="_self" rel="noopener">Bits-Data-Representation-and-Manipulation</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/co/lecture/boolean-algebra-from-bits-to-logic.html</link><guid isPermaLink="false">CO/Lecture/Boolean-Algebra-From-Bits-to-Logic.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:50:30 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-Boolean-Identities.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-Boolean-Identities.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Bits-Data-Representation-and-Manipulation" href="co/lecture/bits-data-representation-and-manipulation.html" class="internal-link" target="_self" rel="noopener">Bits-Data-Representation-and-Manipulation</a>]]></title><description><![CDATA[ 
  <br><br><br>
 <br>1 BIT = Binary digITs; 1 bit: 0 or 1
 <br>1 Byte = 8 bits
@@ -5169,8 +5169,8 @@ The American Standard Code for Information Interchange
 <br>XOR
 
 
-]]></description><link>co/lecture/bits-data-representation-and-manipulation.html</link><guid isPermaLink="false">CO/Lecture/Bits-Data-Representation-and-Manipulation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:50:44 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-Binary-Decimal.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-Binary-Decimal.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Computer-Organization" href="co/computer-organization.html" class="internal-link" target="_self" rel="noopener">Computer-Organization</a>]]></title><description><![CDATA[ 
- <br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>co/computer-organization.html</link><guid isPermaLink="false">CO/Computer-Organization.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 14 Jun 2024 09:05:34 GMT</pubDate></item><item><title><![CDATA[<a data-href="Week-12" href="contest/lanqiao/week-12.html" class="internal-link" target="_self" rel="noopener">Week-12</a><a data-tooltip-position="top" aria-label="https://blog.csdn.net/weixin_43914593/article/details/135329367" rel="noopener" class="external-link" href="https://blog.csdn.net/weixin_43914593/article/details/135329367" target="_blank"></a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/co/lecture/bits-data-representation-and-manipulation.html</link><guid isPermaLink="false">CO/Lecture/Bits-Data-Representation-and-Manipulation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:50:44 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-Binary-Decimal.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CO-Binary-Decimal.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Computer-Organization" href="co/computer-organization.html" class="internal-link" target="_self" rel="noopener">Computer-Organization</a>]]></title><description><![CDATA[ 
+ <br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>http://blog.allenygy.vip/co/computer-organization.html</link><guid isPermaLink="false">CO/Computer-Organization.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 14 Jun 2024 09:05:34 GMT</pubDate></item><item><title><![CDATA[<a data-href="Week-12" href="contest/lanqiao/week-12.html" class="internal-link" target="_self" rel="noopener">Week-12</a><a data-tooltip-position="top" aria-label="https://blog.csdn.net/weixin_43914593/article/details/135329367" rel="noopener" class="external-link" href="https://blog.csdn.net/weixin_43914593/article/details/135329367" target="_blank"></a>]]></title><description><![CDATA[ 
  <br><br>ans;                              //答案，常常用全局变量表示
 void dfs(层数，其他参数){
     if (到达目的地、或者出局){    //到达最底层，或者满足条件退出 
@@ -5276,7 +5276,7 @@ int main(){
     return 0;
 }
 
-Copy]]></description><link>contest/lanqiao/week-12.html</link><guid isPermaLink="false">Contest/Lanqiao/Week-12.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 04 May 2024 13:31:30 GMT</pubDate></item><item><title><![CDATA[<a data-href="Week-1" href="contest/lanqiao/week-1.html" class="internal-link" target="_self" rel="noopener">Week-1</a>]]></title><description><![CDATA[<a class="tag" href="?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="?query=tag:Hint" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Hint</a> 
+Copy]]></description><link>http://blog.allenygy.vip/contest/lanqiao/week-12.html</link><guid isPermaLink="false">Contest/Lanqiao/Week-12.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 04 May 2024 13:31:30 GMT</pubDate></item><item><title><![CDATA[<a data-href="Week-1" href="contest/lanqiao/week-1.html" class="internal-link" target="_self" rel="noopener">Week-1</a>]]></title><description><![CDATA[<a class="tag" href="http://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:Hint" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Hint</a> 
  <br><br><a data-tooltip-position="top" aria-label="https://www.lanqiao.cn/problems/592/learning/" rel="noopener" class="external-link" href="https://www.lanqiao.cn/problems/592/learning/" target="_blank">门牌号</a><br>#include &lt;iostream&gt;
 using namespace std;
 int main(){
@@ -5291,7 +5291,7 @@ int main(){
  cout&lt;&lt;count;
  return 0;
 }
-Copy<br><a href=".?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a>:<br>
+Copy<br><a href="http://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a>:<br>
 循环取模:<br>int mode=0;
 while(num){
  mode = num % 10;
@@ -5315,7 +5315,7 @@ int main(){
  }
  return 0;
 }
-Copy<br><a href=".?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
+Copy<br><a href="http://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
 注意边界：当碰到是用不了卡片的情况时，只能拼出上一张卡片<br>
 看到题解：新发现！把1消掉就结束了，感觉还是有点问题<br>
 <a data-tooltip-position="top" aria-label="https://www.lanqiao.cn/problems/610/learning/" rel="noopener" class="external-link" href="https://www.lanqiao.cn/problems/610/learning/" target="_blank">分数</a><br>#include &lt;iostream&gt;
@@ -5327,11 +5327,11 @@ int main(){
  cout&lt;&lt;b&lt;&lt;"/"&lt;&lt;a; 
  return 0;
 }
-Copy<br><a href=".?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
+Copy<br><a href="http://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
 math库 pow(base, power)<br>
 以及分数用a/b表示<br>
 <a data-tooltip-position="top" aria-label="https://www.lanqiao.cn/problems/611/learning/" rel="noopener" class="external-link" href="https://www.lanqiao.cn/problems/611/learning/" target="_blank">日期问题</a><br>
-<a href=".?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
+<a href="http://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
 闰年判断：<br>if((x%4==0&amp;&amp;x%100!=0)||x%400==0) return 1;
 else return 0;
 Copy<br><a data-tooltip-position="top" aria-label="https://www.lanqiao.cn/problems/2096/learning/" rel="noopener" class="external-link" href="https://www.lanqiao.cn/problems/2096/learning/" target="_blank">顺子日期</a><br>
@@ -5346,7 +5346,7 @@ int main() {
     return 0; 
 }
 Copy<br><a data-tooltip-position="top" aria-label="https://www.lanqiao.cn/problems/1461/learning/" rel="noopener" class="external-link" href="https://www.lanqiao.cn/problems/1461/learning/" target="_blank">最少砝码</a><br>
-<a href=".?query=tag:Hint" class="tag" target="_blank" rel="noopener">#Hint</a><br>
+<a href="http://blog.allenygy.vip?query=tag:Hint" class="tag" target="_blank" rel="noopener">#Hint</a><br>
 一个砝码最多称到1<br>
 两个砝码最多称到4<br>
 三个砝码最多称到13<br>
@@ -5365,7 +5365,7 @@ int main(){
  }
  return 0;
 }
-Copy]]></description><link>contest/lanqiao/week-1.html</link><guid isPermaLink="false">Contest/Lanqiao/Week-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:27:33 GMT</pubDate></item><item><title><![CDATA[<a data-href="Weekly-contest-402" href="contest/leetcode/weekly-contest-402.html" class="internal-link" target="_self" rel="noopener">Weekly-contest-402</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/contest/weekly-contest-402/" rel="noopener" class="external-link" href="https://leetcode.cn/contest/weekly-contest-402/" target="_blank"></a>]]></title><description><![CDATA[<a class="tag" href="?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> 
+Copy]]></description><link>http://blog.allenygy.vip/contest/lanqiao/week-1.html</link><guid isPermaLink="false">Contest/Lanqiao/Week-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:27:33 GMT</pubDate></item><item><title><![CDATA[<a data-href="Weekly-contest-402" href="contest/leetcode/weekly-contest-402.html" class="internal-link" target="_self" rel="noopener">Weekly-contest-402</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/contest/weekly-contest-402/" rel="noopener" class="external-link" href="https://leetcode.cn/contest/weekly-contest-402/" target="_blank"></a>]]></title><description><![CDATA[<a class="tag" href="http://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> 
  <br><br><br>给你一个整数数组&nbsp;hours，表示以&nbsp;小时&nbsp;为单位的时间，返回一个整数，表示满足&nbsp;i &lt; j&nbsp;且&nbsp;hours[i] + hours[j]&nbsp;构成&nbsp;整天&nbsp;的下标对&nbsp;i,&nbsp;j&nbsp;的数目。<br>
 整天&nbsp;定义为时间持续时间是 24 小时的&nbsp;整数倍&nbsp;。<br>
 例如，1 天是 24 小时，2 天是 48 小时，3 天是 72 小时，以此类推。<br>暴力没什么好说的<br>class Solution {
@@ -5424,7 +5424,7 @@ public:
         
     }
 };
-Copy<br>]]></description><link>contest/leetcode/weekly-contest-402.html</link><guid isPermaLink="false">Contest/Leetcode/Weekly-contest-402.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:28 GMT</pubDate></item><item><title><![CDATA[<a data-href="Weekly-contest-381" href="contest/leetcode/weekly-contest-381.html" class="internal-link" target="_self" rel="noopener">Weekly-contest-381</a>(<a rel="noopener" class="external-link" href="https://leetcode.cn/contest/weekly-contest-381/" target="_blank">https://leetcode.cn/contest/weekly-contest-381/</a>)]]></title><description><![CDATA[<a class="tag" href="?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> 
+Copy<br>]]></description><link>http://blog.allenygy.vip/contest/leetcode/weekly-contest-402.html</link><guid isPermaLink="false">Contest/Leetcode/Weekly-contest-402.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 22 Jun 2024 08:18:28 GMT</pubDate></item><item><title><![CDATA[<a data-href="Weekly-contest-381" href="contest/leetcode/weekly-contest-381.html" class="internal-link" target="_self" rel="noopener">Weekly-contest-381</a>(<a rel="noopener" class="external-link" href="https://leetcode.cn/contest/weekly-contest-381/" target="_blank">https://leetcode.cn/contest/weekly-contest-381/</a>)]]></title><description><![CDATA[<a class="tag" href="http://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> 
  <br><br><br>class Solution { 
 public: 
 	int minimumPushes(string word) {
@@ -5499,14 +5499,14 @@ public:
 		return res; 
 	} 
 };
-Copy<br>]]></description><link>contest/leetcode/weekly-contest-381.html</link><guid isPermaLink="false">Contest/Leetcode/Weekly-contest-381.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:49:33 GMT</pubDate></item><item><title><![CDATA[<a data-href="Biweekly-contest-123" href="contest/leetcode/biweekly-contest-123.html" class="internal-link" target="_self" rel="noopener">Biweekly-contest-123</a>(<a rel="noopener" class="external-link" href="https://leetcode.cn/contest/biweekly-contest-123/" target="_blank">https://leetcode.cn/contest/biweekly-contest-123/</a>)]]></title><description><![CDATA[<a class="tag" href="?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> <a class="tag" href="?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> 
+Copy<br>]]></description><link>http://blog.allenygy.vip/contest/leetcode/weekly-contest-381.html</link><guid isPermaLink="false">Contest/Leetcode/Weekly-contest-381.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:49:33 GMT</pubDate></item><item><title><![CDATA[<a data-href="Biweekly-contest-123" href="contest/leetcode/biweekly-contest-123.html" class="internal-link" target="_self" rel="noopener">Biweekly-contest-123</a>(<a rel="noopener" class="external-link" href="https://leetcode.cn/contest/biweekly-contest-123/" target="_blank">https://leetcode.cn/contest/biweekly-contest-123/</a>)]]></title><description><![CDATA[<a class="tag" href="http://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> 
  <br><br><br>
 <br>排序
 <br>判断三角形是否存在
 <br>判断是什么三角形
-<br><a href=".?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/type-of-triangle-ii/solution/an-ti-yi-mo-ni-pythonjavacgo-by-endlessc-zq6e/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/type-of-triangle-ii/solution/an-ti-yi-mo-ni-pythonjavacgo-by-endlessc-zq6e/" target="_blank">T1</a><br><br>
+<br><a href="http://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/type-of-triangle-ii/solution/an-ti-yi-mo-ni-pythonjavacgo-by-endlessc-zq6e/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/type-of-triangle-ii/solution/an-ti-yi-mo-ni-pythonjavacgo-by-endlessc-zq6e/" target="_blank">T1</a><br><br>
 <br>同T4<br>
-<a href=".?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" target="_blank">T2</a>
+<a href="http://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" target="_blank">T2</a>
 <br><br>前缀和<br>s[0]=0
 s[1]=nums[0]
 s[2]=nums[0]+nums[1]
@@ -5545,7 +5545,7 @@ public:
 }
 
 };
-Copy<br><a href=".?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-i/solution/on2-you-ya-mei-ju-pythonjavacgo-by-endle-ii0q/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-i/solution/on2-you-ya-mei-ju-pythonjavacgo-by-endle-ii0q/" target="_blank">T3</a><br>class Solution: 
+Copy<br><a href="http://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-i/solution/on2-you-ya-mei-ju-pythonjavacgo-by-endle-ii0q/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-i/solution/on2-you-ya-mei-ju-pythonjavacgo-by-endle-ii0q/" target="_blank">T3</a><br>class Solution: 
 	def maximumSubarraySum(self, nums: List[int], k: int) -&gt; int: 			ans = -inf 
 		min_s = defaultdict(lambda: inf) 
 		s = 0 
@@ -5575,19 +5575,19 @@ public:
 		return ans;
 	}
 };
-Copy<br><a href=".?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" target="_blank">T4</a>]]></description><link>contest/leetcode/biweekly-contest-123.html</link><guid isPermaLink="false">Contest/Leetcode/Biweekly-contest-123.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:19:25 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://leetcode.cn/contest/biweekly-contest-122" rel="noopener" class="external-link" href="https://leetcode.cn/contest/biweekly-contest-122" target="_blank">Biweekly-contest-122</a>]]></title><description><![CDATA[<a class="tag" href="?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="?query=tag:woc，我是傻逼" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#woc，我是傻逼</a> <a class="tag" href="?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="?query=tag:分组循环" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#分组循环</a> <a class="tag" href="?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="?query=tag:还没开始" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#还没开始</a> <a class="tag" href="?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> <a class="tag" href="?query=tag:还没开始" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#还没开始</a> <a class="tag" href="?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> 
+Copy<br><a href="http://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" target="_blank">T4</a>]]></description><link>http://blog.allenygy.vip/contest/leetcode/biweekly-contest-123.html</link><guid isPermaLink="false">Contest/Leetcode/Biweekly-contest-123.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 17:19:25 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://leetcode.cn/contest/biweekly-contest-122" rel="noopener" class="external-link" href="https://leetcode.cn/contest/biweekly-contest-122" target="_blank">Biweekly-contest-122</a>]]></title><description><![CDATA[<a class="tag" href="http://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:woc，我是傻逼" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#woc，我是傻逼</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:分组循环" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#分组循环</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:还没开始" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#还没开始</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:还没开始" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#还没开始</a> <a class="tag" href="http://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> 
  <br><br><br>
 <br>开始的时候总想暴力，取第一个数然后两个for循环就过了
 <br>后来看到HMZ，选第一个数然后直接sort取前两位
 
 <br>说实话，我有点懵
-<br>后来， <a href=".?query=tag:woc，我是傻逼" class="tag" target="_blank" rel="noopener">#woc，我是傻逼</a>
+<br>后来， <a href="http://blog.allenygy.vip?query=tag:woc，我是傻逼" class="tag" target="_blank" rel="noopener">#woc，我是傻逼</a>
 
 
-<br><a href=".?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-i/solution/cong-onlogn-dao-onpythonjavacgo-by-endle-gmna" rel="noopener" class="external-link" href="https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-i/solution/cong-onlogn-dao-onpythonjavacgo-by-endle-gmna" target="_blank">T1</a><br><br>
+<br><a href="http://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-i/solution/cong-onlogn-dao-onpythonjavacgo-by-endle-gmna" rel="noopener" class="external-link" href="https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-i/solution/cong-onlogn-dao-onpythonjavacgo-by-endle-gmna" target="_blank">T1</a><br><br>
 <br>刚开始想找规律来着，什么二进制数一的个数相同两者有无规律
 <br>后来，直接模拟就好了把能排序的从小到大拍一遍，最后看整个数组能不能有序就完了
-<br><a href=".?query=tag:分组循环" class="tag" target="_blank" rel="noopener">#分组循环</a> 应用场景：找一段符合条件的连续的片段<br>
+<br><a href="http://blog.allenygy.vip?query=tag:分组循环" class="tag" target="_blank" rel="noopener">#分组循环</a> 应用场景：找一段符合条件的连续的片段<br>
 <br>外层循环
 
 <br>记录每次循环开始时数组下标
@@ -5603,7 +5603,7 @@ Copy<br><a href=".?query=tag:灵神题解" class="tag" target="_blank" rel="noop
 	while i&lt;n and [condition]:
 		i+=1
 	# 循环结束，从start到i-1是一个子数组
-Copy<br><a href=".?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/find-if-array-can-be-sorted/solution/jiao-ni-yi-ci-xing-ba-dai-ma-xie-dui-on-j3nik" rel="noopener" class="external-link" href="https://leetcode.cn/problems/find-if-array-can-be-sorted/solution/jiao-ni-yi-ci-xing-ba-dai-ma-xie-dui-on-j3nik" target="_blank">T2</a><br><br><a href=".?query=tag:还没开始" class="tag" target="_blank" rel="noopener">#还没开始</a> 可能还没开始看题<br>
+Copy<br><a href="http://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/find-if-array-can-be-sorted/solution/jiao-ni-yi-ci-xing-ba-dai-ma-xie-dui-on-j3nik" rel="noopener" class="external-link" href="https://leetcode.cn/problems/find-if-array-can-be-sorted/solution/jiao-ni-yi-ci-xing-ba-dai-ma-xie-dui-on-j3nik" target="_blank">T2</a><br><br><a href="http://blog.allenygy.vip?query=tag:还没开始" class="tag" target="_blank" rel="noopener">#还没开始</a> 可能还没开始看题<br>
 看完题解<br>
 也就是说，拿到最小的数之后可以用这个数吧其他不是它的倍数的数消掉<br>
 <br>假设最小的数只有一个，那么最后只剩它自己
@@ -5622,9 +5622,9 @@ Copy<br><a href=".?query=tag:灵神题解" class="tag" target="_blank" rel="noop
 
 
 
-<br><a href=".?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/minimize-length-of-array-using-operations/solution/on-nao-jin-ji-zhuan-wan-pythonjavacgo-by-2lea" rel="noopener" class="external-link" href="https://leetcode.cn/problems/minimize-length-of-array-using-operations/solution/on-nao-jin-ji-zhuan-wan-pythonjavacgo-by-2lea" target="_blank">T3</a><br><br><a href=".?query=tag:还没开始" class="tag" target="_blank" rel="noopener">#还没开始</a> 可能还没开始看题<br>
-<a href=".?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/solution/liang-ge-you-xu-ji-he-wei-hu-qian-k-1-xi-zdzx/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/solution/liang-ge-you-xu-ji-he-wei-hu-qian-k-1-xi-zdzx/" target="_blank">T4</a>]]></description><link>contest/leetcode/biweekly-contest-122.html</link><guid isPermaLink="false">Contest/Leetcode/Biweekly-contest-122.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:37:27 GMT</pubDate></item><item><title><![CDATA[<a data-href="Contest-Overview" href="contest/contest-overview.html" class="internal-link" target="_self" rel="noopener">Contest-Overview</a>]]></title><description><![CDATA[ 
- <br><br>]]></description><link>contest/contest-overview.html</link><guid isPermaLink="false">Contest/Contest-Overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 14 Jun 2024 09:00:23 GMT</pubDate></item><item><title><![CDATA[Hands on Data Analytics for Everyone]]></title><description><![CDATA[ 
+<br><a href="http://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/minimize-length-of-array-using-operations/solution/on-nao-jin-ji-zhuan-wan-pythonjavacgo-by-2lea" rel="noopener" class="external-link" href="https://leetcode.cn/problems/minimize-length-of-array-using-operations/solution/on-nao-jin-ji-zhuan-wan-pythonjavacgo-by-2lea" target="_blank">T3</a><br><br><a href="http://blog.allenygy.vip?query=tag:还没开始" class="tag" target="_blank" rel="noopener">#还没开始</a> 可能还没开始看题<br>
+<a href="http://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/solution/liang-ge-you-xu-ji-he-wei-hu-qian-k-1-xi-zdzx/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/solution/liang-ge-you-xu-ji-he-wei-hu-qian-k-1-xi-zdzx/" target="_blank">T4</a>]]></description><link>http://blog.allenygy.vip/contest/leetcode/biweekly-contest-122.html</link><guid isPermaLink="false">Contest/Leetcode/Biweekly-contest-122.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:37:27 GMT</pubDate></item><item><title><![CDATA[<a data-href="Contest-Overview" href="contest/contest-overview.html" class="internal-link" target="_self" rel="noopener">Contest-Overview</a>]]></title><description><![CDATA[ 
+ <br><br>]]></description><link>http://blog.allenygy.vip/contest/contest-overview.html</link><guid isPermaLink="false">Contest/Contest-Overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 14 Jun 2024 09:00:23 GMT</pubDate></item><item><title><![CDATA[Hands on Data Analytics for Everyone]]></title><description><![CDATA[ 
  <br>
 <br>此文基本包括了uic hands on data 这门课quiz和期末考的知识点， 高亮标注都是考点
 <br>期末project 需要学习KNIME软件来建模  
@@ -5671,7 +5671,7 @@ Data-&gt;Data Preparation-&gt;Model Training-&gt;Model Optimization-&gt;Model Te
 <br>Mean: 
 <br>Variance: 
 <br>Standard deviation:  
-<br>Median: The middle number<a data-footref="[inline0" href="/#fn-1-ad25a49f5f9dadaf" class="footnote-link" target="_self" rel="noopener">[1]</a>
+<br>Median: The middle number<a data-footref="[inline0" href="http://blog.allenygy.vip/#fn-1-9bda0d800d59a8c8" class="footnote-link" target="_self" rel="noopener">[1]</a>
 <br>Mode: Most frequently occurring value
 <br><br>
 <br>q%-quantile (0 &lt; q &lt; 100): The value for which q% of the values are smaller and 100-q% are larger. The median is the 50%-quantile
@@ -5707,7 +5707,7 @@ Usually leads to a very scattered histogram in which it is difficult to distingu
 <br>Best Choise
 <br><br>
 <br>
-Boxplot <a data-footref="[inline1" href="/#fn-2-ad25a49f5f9dadaf" class="footnote-link" target="_self" rel="noopener">[2]</a>
+Boxplot <a data-footref="[inline1" href="http://blog.allenygy.vip/#fn-2-9bda0d800d59a8c8" class="footnote-link" target="_self" rel="noopener">[2]</a>
 
 <br>
 Boxplots are a very compact way to visualize and summarize the main characteristics of a numeric attribute, through the median, the IQR, and possible outliers.
@@ -5726,7 +5726,7 @@ Boxplots are a very compact way to visualize and summarize the main characterist
 <br>Suitable for small datasets
 <br><br><br><br>Requires min-max-normalization of numeric columns<br>
 <br>Ratio of missing values: If missing value &gt; threshold, then remove the column.
-<br>Low variance: If variance &lt; threshold, then remove column. <a data-footref="[inline2" href="/#fn-3-ad25a49f5f9dadaf" class="footnote-link" target="_self" rel="noopener">[3]</a>
+<br>Low variance: If variance &lt; threshold, then remove column. <a data-footref="[inline2" href="http://blog.allenygy.vip/#fn-3-9bda0d800d59a8c8" class="footnote-link" target="_self" rel="noopener">[3]</a>
 <br>High Correlation: If(corr(var1,var2) &gt; threshold), then remove var1.
 <br><br><br><br>
 <br>Missing Completely At Random (MCAR): the probability that a value for X is missing does neither depend on the value of X nor on other variables. (Most serious)
@@ -5734,7 +5734,7 @@ Boxplots are a very compact way to visualize and summarize the main characterist
 <br>Not Missing At Random (NMAR): the probability that Y is missing depends on the unobserved value of Y itself
 <br><br>
 <br>Ignore or delete the record
-<br>Fill in (impute) missing value as “unknown”,mean/median/mode <a data-footref="[inline3" href="/#fn-4-ad25a49f5f9dadaf" class="footnote-link" target="_self" rel="noopener">[4]</a>
+<br>Fill in (impute) missing value as “unknown”,mean/median/mode <a data-footref="[inline3" href="http://blog.allenygy.vip/#fn-4-9bda0d800d59a8c8" class="footnote-link" target="_self" rel="noopener">[4]</a>
 <br><br>
 <br>An outlier is a value or data object that is far away or very different from all or most of the other data.
 <br>Errors in measurements or exceptional conditions that don't describe the common functioning of the underlying system.
@@ -5781,7 +5781,7 @@ output data, while an unsupervised learning does not
 <br>Mean absolute error (MAE) 
 <br>Mean squared error (MSE) 
 <br>Root mean squared error (RMSE) 
-<br>R-squared <a data-footref="[inline4" href="/#fn-5-ad25a49f5f9dadaf" class="footnote-link" target="_self" rel="noopener">[5]</a><br>
+<br>R-squared <a data-footref="[inline4" href="http://blog.allenygy.vip/#fn-5-9bda0d800d59a8c8" class="footnote-link" target="_self" rel="noopener">[5]</a><br>
 
 <br><br>
 <br>Training error/Empirical error: the error of the learner/model on the training data
@@ -5796,10 +5796,10 @@ Clustering identifies a finite set of groups (clusters)  in the dataset such tha
 <br>Objects of different clusters  () shall be as dissimilar as possible<br>
 Example:
 <br>Customer segmentation
-<br>Molecule search <a data-footref="[inline5" href="/#fn-6-ad25a49f5f9dadaf" class="footnote-link" target="_self" rel="noopener">[6]</a>
-<br>Anomaly detection <a data-footref="[inline6" href="/#fn-7-ad25a49f5f9dadaf" class="footnote-link" target="_self" rel="noopener">[7]</a>
-<br>Structuring large sets of text documents <a data-footref="[inline7" href="/#fn-8-ad25a49f5f9dadaf" class="footnote-link" target="_self" rel="noopener">[8]</a>
-<br>Generating thematic maps from satellite images <a data-footref="[inline8" href="/#fn-9-ad25a49f5f9dadaf" class="footnote-link" target="_self" rel="noopener">[9]</a>
+<br>Molecule search <a data-footref="[inline5" href="http://blog.allenygy.vip/#fn-6-9bda0d800d59a8c8" class="footnote-link" target="_self" rel="noopener">[6]</a>
+<br>Anomaly detection <a data-footref="[inline6" href="http://blog.allenygy.vip/#fn-7-9bda0d800d59a8c8" class="footnote-link" target="_self" rel="noopener">[7]</a>
+<br>Structuring large sets of text documents <a data-footref="[inline7" href="http://blog.allenygy.vip/#fn-8-9bda0d800d59a8c8" class="footnote-link" target="_self" rel="noopener">[8]</a>
+<br>Generating thematic maps from satellite images <a data-footref="[inline8" href="http://blog.allenygy.vip/#fn-9-9bda0d800d59a8c8" class="footnote-link" target="_self" rel="noopener">[9]</a>
 <br><br>
 <br>Linkage Based<br>
 e.g. Hierarchical Clustering
@@ -5811,18 +5811,18 @@ e.g. k-Means
 <br>Manhattan-Distance ()
 <br>
 <br>
-<br>Found by ordering all data points and picking out the one in the middle - or if there are two middle numbers, taking the mean of those two numbers<a href="/#fnref-1-ad25a49f5f9dadaf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>The middle line of the box, which is the median of the data, represents the average of the sample data. The upper and lower limits of the box are the upper and lower quartiles of the data, respectively. This means that the box contains 50% of the data. The height of the box partly reflects how fluctuating the data is. Above and below the box, there is a line. Represents the maximum and minimum values, sometimes some points "pop out", which can be understood as "outliers"<a href="/#fnref-2-ad25a49f5f9dadaf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Only works for numeric columns<a href="/#fnref-3-ad25a49f5f9dadaf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Found by ordering all data points and picking out the one in the middle - or if there are two middle numbers, taking the mean of those two numbers<a href="http://blog.allenygy.vip/#fnref-1-9bda0d800d59a8c8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>The middle line of the box, which is the median of the data, represents the average of the sample data. The upper and lower limits of the box are the upper and lower quartiles of the data, respectively. This means that the box contains 50% of the data. The height of the box partly reflects how fluctuating the data is. Above and below the box, there is a line. Represents the maximum and minimum values, sometimes some points "pop out", which can be understood as "outliers"<a href="http://blog.allenygy.vip/#fnref-2-9bda0d800d59a8c8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Only works for numeric columns<a href="http://blog.allenygy.vip/#fnref-3-9bda0d800d59a8c8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 <br>A predicted value based on the other attributes (inference-based such as<br>
-Bayesian, Decision Tree<a href="/#fnref-4-ad25a49f5f9dadaf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Proportion of the variance for a dependent variable that’s explained by the regression model.Normally ranges from 0 to 1, the closer to 1 the better performance.<a href="/#fnref-5-ad25a49f5f9dadaf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Find molecules with similar structure to already working ones<a href="/#fnref-6-ad25a49f5f9dadaf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Find unusual patterns in data from sensors monitoring mechanical engines<a href="/#fnref-7-ad25a49f5f9dadaf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>hierarchical clustering of the text documents<a href="/#fnref-8-ad25a49f5f9dadaf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>clustering sets of raster images of the same area (feature vectors)<a href="/#fnref-9-ad25a49f5f9dadaf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>dataanalysis/hoda/hoda.html</link><guid isPermaLink="false">DataAnalysis/HODA/HODA.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 14 Jun 2024 09:24:37 GMT</pubDate></item><item><title><![CDATA[<a data-href="Data-Analysis" href="dataanalysis/data-analysis.html" class="internal-link" target="_self" rel="noopener">Data-Analysis</a>]]></title><description><![CDATA[ 
- <br><br>]]></description><link>dataanalysis/data-analysis.html</link><guid isPermaLink="false">DataAnalysis/Data-Analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 14 Jun 2024 09:28:34 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-3" href="dbm/assignment/dbm-assignment-3.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-3</a>]]></title><description><![CDATA[ 
+Bayesian, Decision Tree<a href="http://blog.allenygy.vip/#fnref-4-9bda0d800d59a8c8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Proportion of the variance for a dependent variable that’s explained by the regression model.Normally ranges from 0 to 1, the closer to 1 the better performance.<a href="http://blog.allenygy.vip/#fnref-5-9bda0d800d59a8c8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Find molecules with similar structure to already working ones<a href="http://blog.allenygy.vip/#fnref-6-9bda0d800d59a8c8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Find unusual patterns in data from sensors monitoring mechanical engines<a href="http://blog.allenygy.vip/#fnref-7-9bda0d800d59a8c8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>hierarchical clustering of the text documents<a href="http://blog.allenygy.vip/#fnref-8-9bda0d800d59a8c8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>clustering sets of raster images of the same area (feature vectors)<a href="http://blog.allenygy.vip/#fnref-9-9bda0d800d59a8c8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>http://blog.allenygy.vip/dataanalysis/hoda/hoda.html</link><guid isPermaLink="false">DataAnalysis/HODA/HODA.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 14 Jun 2024 09:24:37 GMT</pubDate></item><item><title><![CDATA[<a data-href="Data-Analysis" href="dataanalysis/data-analysis.html" class="internal-link" target="_self" rel="noopener">Data-Analysis</a>]]></title><description><![CDATA[ 
+ <br><br>]]></description><link>http://blog.allenygy.vip/dataanalysis/data-analysis.html</link><guid isPermaLink="false">DataAnalysis/Data-Analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 14 Jun 2024 09:28:34 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-3" href="dbm/assignment/dbm-assignment-3.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-3</a>]]></title><description><![CDATA[ 
  <br><br><br>a) Find the students who have more enrollments than other students. Display your answer by sID and sname.<br>SELECT  sID, sname
 FROM student JOIN enroll USING (sID)
 GROUP BY cID
@@ -5921,7 +5921,7 @@ Decomposition R into<br><br>
 <br><br>
  it is dependency-preserving<br>d. What is the canonical cover of the functional dependencies?<br><br>e. There are no redundant dependencies or extraneous attributes in any one of the dependencies.<br><br>
 <br>
-<br>It has been satisfy BCNF, so it's also 3NF.]]></description><link>dbm/assignment/dbm-assignment-3.html</link><guid isPermaLink="false">DBM/Assignment/DBM-Assignment-3.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:15:24 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-2" href="dbm/assignment/dbm-assignment-2.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-2</a>]]></title><description><![CDATA[ 
+<br>It has been satisfy BCNF, so it's also 3NF.]]></description><link>http://blog.allenygy.vip/dbm/assignment/dbm-assignment-3.html</link><guid isPermaLink="false">DBM/Assignment/DBM-Assignment-3.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:15:24 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-2" href="dbm/assignment/dbm-assignment-2.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-2</a>]]></title><description><![CDATA[ 
  <br><br><br><br>
 <br>
 <br>
@@ -6021,7 +6021,7 @@ Copy<br>
 <br>Student ‘Dennis’ quit from the college. Please remove his information from the database.
 <br>DELETE FROM student
 WHERE sname='Dennis'
-Copy]]></description><link>dbm/assignment/dbm-assignment-2.html</link><guid isPermaLink="false">DBM/Assignment/DBM-Assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:15:25 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-1" href="dbm/assignment/dbm-assignment-1.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-1</a>]]></title><description><![CDATA[ 
+Copy]]></description><link>http://blog.allenygy.vip/dbm/assignment/dbm-assignment-2.html</link><guid isPermaLink="false">DBM/Assignment/DBM-Assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:15:25 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-1" href="dbm/assignment/dbm-assignment-1.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-1</a>]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Atomicity of updates<br>
 For example, it can ensure that fund transfers between accounts are either successfully completed or not executed at all. In database systems, this guarantee can prevent situations where funds are deducted for some reason but not added to another account, thereby avoiding data inconsistency and financial losses. File systems lack such guarantees, making inconsistencies more likely in such transactions.
@@ -6065,7 +6065,7 @@ AND student.sID = enroll.sID
 AND enroll.cID = teach.cID 
 AND teach.semester = '2022 Fall'
 AND teach.iID = instructor.iID
-Copy]]></description><link>dbm/assignment/dbm-assignment-1.html</link><guid isPermaLink="false">DBM/Assignment/DBM-Assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:15:23 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DB-Supermarket.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DB-Supermarket.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Relational-Database-Design-Functional-Dependency" href="dbm/lecture/relational-database-design-functional-dependency.html" class="internal-link" target="_self" rel="noopener">Relational-Database-Design-Functional-Dependency</a>]]></title><description><![CDATA[ 
+Copy]]></description><link>http://blog.allenygy.vip/dbm/assignment/dbm-assignment-1.html</link><guid isPermaLink="false">DBM/Assignment/DBM-Assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 10 Jun 2024 17:15:23 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DB-Supermarket.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DB-Supermarket.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Relational-Database-Design-Functional-Dependency" href="dbm/lecture/relational-database-design-functional-dependency.html" class="internal-link" target="_self" rel="noopener">Relational-Database-Design-Functional-Dependency</a>]]></title><description><![CDATA[ 
  <br><br>Functional dependencies are some constraints on the set of legal relations.<br>
 The constraint is that the value for a certain set of attributes uniquely determines the value for another set of attributes. 约束条件是一组属性的值唯一确定另一组属性的值<br>
 A functional dependency is a generalization of the notion of a key. 功能依赖关系是键概念的泛化<br><br>
@@ -6134,7 +6134,7 @@ if  and  then <br>
 <br> according to augmentation
 <br> according to transitivity
 <br>
-]]></description><link>dbm/lecture/relational-database-design-functional-dependency.html</link><guid isPermaLink="false">DBM/Lecture/Relational-Database-Design-Functional-Dependency.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:41:19 GMT</pubDate></item><item><title><![CDATA[Final Review]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/dbm/lecture/relational-database-design-functional-dependency.html</link><guid isPermaLink="false">DBM/Lecture/Relational-Database-Design-Functional-Dependency.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:41:19 GMT</pubDate></item><item><title><![CDATA[Final Review]]></title><description><![CDATA[ 
  <br><br><br>
 <br>分出
 
@@ -6158,7 +6158,7 @@ if  and  then <br>
 <br>合并左部相同
 <br>每个FD构成新的R
 <br>在构成的R中如果每个R都不存在 R 的候选键，那么把 R 的候选键作为一个模式放入模式集
-]]></description><link>dbm/lecture/normalform.html</link><guid isPermaLink="false">DBM/Lecture/NormalForm.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:55:16 GMT</pubDate></item><item><title><![CDATA[<a data-href="Relational-Database-Design-BCNF" href="dbm/lecture/relational-database-design-bcnf.html" class="internal-link" target="_self" rel="noopener">Relational-Database-Design-BCNF</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/dbm/lecture/normalform.html</link><guid isPermaLink="false">DBM/Lecture/NormalForm.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 30 May 2024 16:55:16 GMT</pubDate></item><item><title><![CDATA[<a data-href="Relational-Database-Design-BCNF" href="dbm/lecture/relational-database-design-bcnf.html" class="internal-link" target="_self" rel="noopener">Relational-Database-Design-BCNF</a>]]></title><description><![CDATA[ 
  <br><br><br>
 <br>For the case of  a decomposition of  into  and  is lossless join if and only if at least one of the following dependencies is in :
 <br><br>
@@ -6194,7 +6194,7 @@ can be decomposed in two different ways<br>
 
 
 
-<br>]]></description><link>dbm/lecture/relational-database-design-bcnf.html</link><guid isPermaLink="false">DBM/Lecture/Relational-Database-Design-BCNF.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:41:48 GMT</pubDate></item><item><title><![CDATA[<a data-href="Relational-Database-Design-3rd-Normal-Form" href="dbm/lecture/relational-database-design-3rd-normal-form.html" class="internal-link" target="_self" rel="noopener">Relational-Database-Design-3rd-Normal-Form</a>]]></title><description><![CDATA[ 
+<br>]]></description><link>http://blog.allenygy.vip/dbm/lecture/relational-database-design-bcnf.html</link><guid isPermaLink="false">DBM/Lecture/Relational-Database-Design-BCNF.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:41:48 GMT</pubDate></item><item><title><![CDATA[<a data-href="Relational-Database-Design-3rd-Normal-Form" href="dbm/lecture/relational-database-design-3rd-normal-form.html" class="internal-link" target="_self" rel="noopener">Relational-Database-Design-3rd-Normal-Form</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>There are some situations that
 
@@ -6209,7 +6209,7 @@ can be decomposed in two different ways<br>
 There is always a lossless-join, dependency-preserving decomposition into 3NF.
 
 
-<br>]]></description><link>dbm/lecture/relational-database-design-3rd-normal-form.html</link><guid isPermaLink="false">DBM/Lecture/Relational-Database-Design-3rd-Normal-Form.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 08 Apr 2024 14:48:28 GMT</pubDate></item><item><title><![CDATA[<a data-href="Relational-Database-Design-Purpose-&amp;-First-Normal-Form" href="dbm/lecture/relational-database-design-purpose-&amp;-first-normal-form.html" class="internal-link" target="_self" rel="noopener">Relational-Database-Design-Purpose-&amp;-First-Normal-Form</a>]]></title><description><![CDATA[ 
+<br>]]></description><link>http://blog.allenygy.vip/dbm/lecture/relational-database-design-3rd-normal-form.html</link><guid isPermaLink="false">DBM/Lecture/Relational-Database-Design-3rd-Normal-Form.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 08 Apr 2024 14:48:28 GMT</pubDate></item><item><title><![CDATA[<a data-href="Relational-Database-Design-Purpose-&amp;-First-Normal-Form" href="dbm/lecture/relational-database-design-purpose-&amp;-first-normal-form.html" class="internal-link" target="_self" rel="noopener">Relational-Database-Design-Purpose-&amp;-First-Normal-Form</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Good Relational Design
 
@@ -6231,7 +6231,7 @@ Sometimes naive decompositions create inconsistency.<br><br>For one attribute A 
 A-&gt;B,C,D<br><br>A domain is atomic if its elements are considered to be indivisible units.<br>
 A relational schema R is in first normal form if the domains of all attributes of R are atomic.<br>
 Non-atomic values complicate storage and encourage redundant (repeated) storage of data.<br>
-Atomicity is actually a property of how the elements of the domain are used.]]></description><link>dbm/lecture/relational-database-design-purpose-&amp;-first-normal-form.html</link><guid isPermaLink="false">DBM/Lecture/Relational-Database-Design-Purpose-&amp;-First-Normal-Form.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:41:12 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DBM/problem_large_schema.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DBM/problem_large_schema.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Logical-Design" href="dbm/lecture/logical-design.html" class="internal-link" target="_self" rel="noopener">Logical-Design</a>]]></title><description><![CDATA[ 
+Atomicity is actually a property of how the elements of the domain are used.]]></description><link>http://blog.allenygy.vip/dbm/lecture/relational-database-design-purpose-&amp;-first-normal-form.html</link><guid isPermaLink="false">DBM/Lecture/Relational-Database-Design-Purpose-&amp;-First-Normal-Form.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:41:12 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DBM/problem_large_schema.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DBM/problem_large_schema.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Logical-Design" href="dbm/lecture/logical-design.html" class="internal-link" target="_self" rel="noopener">Logical-Design</a>]]></title><description><![CDATA[ 
  <br><br><br><br>对于多对多的情况 无论是否total participation,建表存放两实体主键<br>
 <br>Many to Many
 <br>Many to Many with total participation on one side
@@ -6276,7 +6276,7 @@ If the ISA relationship set is disjoint and total<br>
 For example, the schema for “enroll” has the key of “instructor”, “student”, and “section”.<br>
 Then, “doing” is a binary many-to-many relationship set. And the method for case 1 can be applied.<br>
 <img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/RE/Aggregation.png" referrerpolicy="no-referrer"><br>
-]]></description><link>dbm/lecture/logical-design.html</link><guid isPermaLink="false">DBM/Lecture/Logical-Design.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:34 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER/ManyCase.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER/ManyCase.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Key-concept" href="dbm/lecture/key-concept.html" class="internal-link" target="_self" rel="noopener">Key-concept</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/dbm/lecture/logical-design.html</link><guid isPermaLink="false">DBM/Lecture/Logical-Design.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:34 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER/ManyCase.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER/ManyCase.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Key-concept" href="dbm/lecture/key-concept.html" class="internal-link" target="_self" rel="noopener">Key-concept</a>]]></title><description><![CDATA[ 
  <br><br><br>
 <br>super key (超键)
 <br>candidate key (候选键)
@@ -6296,7 +6296,7 @@ Then, “doing” is a binary many-to-many relationship set. And the method for 
 <br><br>
 <br>满足3NF的前提下
 <br>主键不存在传递
-]]></description><link>dbm/lecture/key-concept.html</link><guid isPermaLink="false">DBM/Lecture/Key-concept.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 21 Mar 2024 16:11:39 GMT</pubDate></item><item><title><![CDATA[<a data-href="Design-Issues" href="dbm/lecture/design-issues.html" class="internal-link" target="_self" rel="noopener">Design-Issues</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/dbm/lecture/key-concept.html</link><guid isPermaLink="false">DBM/Lecture/Key-concept.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 21 Mar 2024 16:11:39 GMT</pubDate></item><item><title><![CDATA[<a data-href="Design-Issues" href="dbm/lecture/design-issues.html" class="internal-link" target="_self" rel="noopener">Design-Issues</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Design Techniques
 <br>Attributes vs Entity
@@ -6319,7 +6319,7 @@ Don’t use an entity set when an attribute will do. Choose an entity set if it 
 <br>Try to eliminate redundancy<br>
 In most cases, the answer is very subjective. It depends on the real-world problem.<br>
 Sometimes, the answers can be very different even on the same problem but with different assumptions.<br><br>It depends on the real case.<br>
-Both ER models have advantages and disadvantages.<br>]]></description><link>dbm/lecture/design-issues.html</link><guid isPermaLink="false">DBM/Lecture/Design-Issues.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:36 GMT</pubDate></item><item><title><![CDATA[<a data-href="Entity-Relationship-Model-Modeling" href="dbm/lecture/entity-relationship-model-modeling.html" class="internal-link" target="_self" rel="noopener">Entity-Relationship-Model-Modeling</a>]]></title><description><![CDATA[ 
+Both ER models have advantages and disadvantages.<br>]]></description><link>http://blog.allenygy.vip/dbm/lecture/design-issues.html</link><guid isPermaLink="false">DBM/Lecture/Design-Issues.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:36 GMT</pubDate></item><item><title><![CDATA[<a data-href="Entity-Relationship-Model-Modeling" href="dbm/lecture/entity-relationship-model-modeling.html" class="internal-link" target="_self" rel="noopener">Entity-Relationship-Model-Modeling</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Design Process
 <br>Entity Sets
@@ -6419,7 +6419,7 @@ It is possible that one student may have multiple phone numbers.<br><br>
 <br>If one knows the date of borrow and the date of return, then the duration can be calculated from the two values.
 
 
-<br><br><img alt="ER-Summary" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER-Summary.png" referrerpolicy="no-referrer">]]></description><link>dbm/lecture/entity-relationship-model-modeling.html</link><guid isPermaLink="false">DBM/Lecture/Entity-Relationship-Model-Modeling.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:41:36 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Design-database.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Design-database.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Entity-Relationship-Model-Extended-Features" href="dbm/lecture/entity-relationship-model-extended-features.html" class="internal-link" target="_self" rel="noopener">Entity-Relationship-Model-Extended-Features</a>]]></title><description><![CDATA[ 
+<br><br><img alt="ER-Summary" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER-Summary.png" referrerpolicy="no-referrer">]]></description><link>http://blog.allenygy.vip/dbm/lecture/entity-relationship-model-modeling.html</link><guid isPermaLink="false">DBM/Lecture/Entity-Relationship-Model-Modeling.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:41:36 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Design-database.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Design-database.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Entity-Relationship-Model-Extended-Features" href="dbm/lecture/entity-relationship-model-extended-features.html" class="internal-link" target="_self" rel="noopener">Entity-Relationship-Model-Extended-Features</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Aggregation 聚合
 <br>Weak Entity Sets
@@ -6451,7 +6451,7 @@ Thus, “section” is a weak entity set which depends on “course”.<br>
 <img alt="PWsNRI" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/PWsNRI.png" referrerpolicy="no-referrer"><br>Double rectangles denote weak entity sets. 双矩形边框 表示weak entity<br>
 Dashed underlines denote discriminators of weak entity sets. 虚线下划线 表示 weak entity的键<br>
 Double diamonds denote identifying relationship sets.<br>
-Assume we model the original “enroll” relationship set without constraints. <a data-footref="[inline0" href="/#fn-1-ad25a49f5f9dadaf" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>
+Assume we model the original “enroll” relationship set without constraints. <a data-footref="[inline0" href="http://blog.allenygy.vip/#fn-1-9bda0d800d59a8c8" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>
 <br>
 Generalization (泛化) is the process of extracting common properties from a set of entities and create a generalized entity from it. It is a bottom-up approach in which two or more entities can be generalized to a higher level entity if they have some attributes in common.
 
@@ -6494,8 +6494,8 @@ If we want to express every person is either a student or an instructor, then th
 And if we assume nobody can be a student and an instructor at the same time, this is a disjoint generalization.<br>
 <img alt="S0PX3U" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/S0PX3U.png" referrerpolicy="no-referrer"><br>
 <br>
-<br>我的评价是真sharuan<a href="/#fnref-1-ad25a49f5f9dadaf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>dbm/lecture/entity-relationship-model-extended-features.html</link><guid isPermaLink="false">DBM/Lecture/Entity-Relationship-Model-Extended-Features.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:41:25 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/MnKmwI.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/MnKmwI.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Entity-Relationship-Model-Constraints" href="dbm/lecture/entity-relationship-model-constraints.html" class="internal-link" target="_self" rel="noopener">Entity-Relationship-Model-Constraints</a>]]></title><description><![CDATA[ 
+<br>我的评价是真sharuan<a href="http://blog.allenygy.vip/#fnref-1-9bda0d800d59a8c8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>http://blog.allenygy.vip/dbm/lecture/entity-relationship-model-extended-features.html</link><guid isPermaLink="false">DBM/Lecture/Entity-Relationship-Model-Extended-Features.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:41:25 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/MnKmwI.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/MnKmwI.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Entity-Relationship-Model-Constraints" href="dbm/lecture/entity-relationship-model-constraints.html" class="internal-link" target="_self" rel="noopener">Entity-Relationship-Model-Constraints</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Cardinality Constraints  基数约束 (one-one/one-many/many-many)
 <br>Participation Constraints 参与约束 (for all/some)
@@ -6561,7 +6561,7 @@ But every program has a program director.
 If expressing constraints is important, ternary relationship sets can always be converted into several binary ones.<br>Non-binary relationships with constrains is complex.<br>
 <br>Not suggested to use constraints on non-binary relationships (ambiguous)
 <br>See lecture: convert non-binary to binary
-]]></description><link>dbm/lecture/entity-relationship-model-constraints.html</link><guid isPermaLink="false">DBM/Lecture/Entity-Relationship-Model-Constraints.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:41:31 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER/Many-to-one.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER/Many-to-one.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Set-Operation-&amp;-WHERE-subquery" href="dbm/mysql/set-operation-&amp;-where-subquery.html" class="internal-link" target="_self" rel="noopener">Set-Operation-&amp;-WHERE-subquery</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/dbm/lecture/entity-relationship-model-constraints.html</link><guid isPermaLink="false">DBM/Lecture/Entity-Relationship-Model-Constraints.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:41:31 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER/Many-to-one.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ER/Many-to-one.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Set-Operation-&amp;-WHERE-subquery" href="dbm/mysql/set-operation-&amp;-where-subquery.html" class="internal-link" target="_self" rel="noopener">Set-Operation-&amp;-WHERE-subquery</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Set Operations
 
@@ -6651,7 +6651,7 @@ AND film_id NOT IN (
   SELECT film_id
   FROM film JOIN language USING(language_id)
   WHERE name="English")
-Copy]]></description><link>dbm/mysql/set-operation-&amp;-where-subquery.html</link><guid isPermaLink="false">DBM/MySQL/Set-Operation-&amp;-WHERE-subquery.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:42:07 GMT</pubDate></item><item><title><![CDATA[<a data-href="Advanced-SQL" href="dbm/mysql/advanced-sql.html" class="internal-link" target="_self" rel="noopener">Advanced-SQL</a>]]></title><description><![CDATA[ 
+Copy]]></description><link>http://blog.allenygy.vip/dbm/mysql/set-operation-&amp;-where-subquery.html</link><guid isPermaLink="false">DBM/MySQL/Set-Operation-&amp;-WHERE-subquery.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:42:07 GMT</pubDate></item><item><title><![CDATA[<a data-href="Advanced-SQL" href="dbm/mysql/advanced-sql.html" class="internal-link" target="_self" rel="noopener">Advanced-SQL</a>]]></title><description><![CDATA[ 
  <br><br>Constraints<br>
 <br>Integrity Constraints
 <br>Check Clauses
@@ -6695,7 +6695,7 @@ Copy<br>
 <br>SET NULL and SET DEFAULT.
 
 
-]]></description><link>dbm/mysql/advanced-sql.html</link><guid isPermaLink="false">DBM/MySQL/Advanced-SQL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:51 GMT</pubDate></item><item><title><![CDATA[<a data-href="Division-and-Correlated-Subquery" href="dbm/mysql/division-and-correlated-subquery.html" class="internal-link" target="_self" rel="noopener">Division-and-Correlated-Subquery</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/dbm/mysql/advanced-sql.html</link><guid isPermaLink="false">DBM/MySQL/Advanced-SQL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:51 GMT</pubDate></item><item><title><![CDATA[<a data-href="Division-and-Correlated-Subquery" href="dbm/mysql/division-and-correlated-subquery.html" class="internal-link" target="_self" rel="noopener">Division-and-Correlated-Subquery</a>]]></title><description><![CDATA[ 
  <br><br><br>Division operator is used for queries involving “all”.<br><br>Query: “Retrieve (all) course names that is/are taught by all programes.”<br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Mysql/Division.png" referrerpolicy="no-referrer"><br>The solution to the query is<br><br>Database is taught by all programmes, i.e. both CST and DS.<br><br><br><br>SELECT 𝐶1.𝑐_𝑛𝑎𝑚𝑒
 FROM 𝑐𝑎𝑡𝑎𝑙𝑜𝑔𝑢𝑒 AS 𝐶1
 WHERE NOT EXISTS (  // 遍历C1
@@ -6751,7 +6751,7 @@ WHERE NOT EXISTS(
     WHERE s1.sID=e1.sID
   )
 )
-Copy<br><a data-footref="[inline0" href="/#fn-1-ad25a49f5f9dadaf" class="footnote-link" target="_self" rel="noopener">[1]</a><br>
+Copy<br><a data-footref="[inline0" href="http://blog.allenygy.vip/#fn-1-9bda0d800d59a8c8" class="footnote-link" target="_self" rel="noopener">[1]</a><br>
 <br>Find the students who have taken all courses instructed by Goliath (instructor’s name and assuming that there is no other instructor who is called Goliath). Display your answer by sID and sname.
 <br>Divisor: course that taught by Goliath<br>
 Dividend: enroll<br>SELECT s1.sID,s1.sname
@@ -6777,8 +6777,8 @@ WHERE NOT EXISTS(
   );
 Copy<br>
 <br>
-<br>不需要将student，enroll，course合起来<a href="/#fnref-1-ad25a49f5f9dadaf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>dbm/mysql/division-and-correlated-subquery.html</link><guid isPermaLink="false">DBM/MySQL/Division-and-Correlated-Subquery.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:44:33 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Mysql/Division.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Mysql/Division.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Null-Subquery" href="dbm/mysql/null-subquery.html" class="internal-link" target="_self" rel="noopener">Null-Subquery</a>]]></title><description><![CDATA[ 
+<br>不需要将student，enroll，course合起来<a href="http://blog.allenygy.vip/#fnref-1-9bda0d800d59a8c8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>http://blog.allenygy.vip/dbm/mysql/division-and-correlated-subquery.html</link><guid isPermaLink="false">DBM/MySQL/Division-and-Correlated-Subquery.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:44:33 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Mysql/Division.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Mysql/Division.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Null-Subquery" href="dbm/mysql/null-subquery.html" class="internal-link" target="_self" rel="noopener">Null-Subquery</a>]]></title><description><![CDATA[ 
  <br><br><br>
 <br>The domain of each data type contains a special value – NULL.
 
@@ -6852,7 +6852,7 @@ NOT:
 <br><br>
 <br>A subquery is a query (SELECT…FROM…WHERE) inside another query.
 <br>Subqueries can be in all of SELECT, FROM, and WHERE clauses.<br>In the FROM clause, users need to indicate some tables.<br>
-A “SELECT…FROM…WHERE…” query returns a temporary table. (The type is matched.)]]></description><link>dbm/mysql/null-subquery.html</link><guid isPermaLink="false">DBM/MySQL/Null-Subquery.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:44 GMT</pubDate></item><item><title><![CDATA[<a data-href="Data-Modification" href="dbm/mysql/data-modification.html" class="internal-link" target="_self" rel="noopener">Data-Modification</a>]]></title><description><![CDATA[ 
+A “SELECT…FROM…WHERE…” query returns a temporary table. (The type is matched.)]]></description><link>http://blog.allenygy.vip/dbm/mysql/null-subquery.html</link><guid isPermaLink="false">DBM/MySQL/Null-Subquery.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:44 GMT</pubDate></item><item><title><![CDATA[<a data-href="Data-Modification" href="dbm/mysql/data-modification.html" class="internal-link" target="_self" rel="noopener">Data-Modification</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>INSERT
 <br>INSERT INTO table_name (column1, column2, column3, ...)
@@ -6926,7 +6926,7 @@ WHERE: only update the rows which satisfy the condition in the WHERE clause.<br>
 <br>DELETE FROM instructor WHERE i_name='S.T. Kwok'
 Copy<br>
 <br>Every row which satisfies the condition will be removed. Thus, be careful.
-]]></description><link>dbm/mysql/data-modification.html</link><guid isPermaLink="false">DBM/MySQL/Data-Modification.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:32 GMT</pubDate></item><item><title><![CDATA[<a data-href="Data-Definition" href="dbm/mysql/data-definition.html" class="internal-link" target="_self" rel="noopener">Data-Definition</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/dbm/mysql/data-modification.html</link><guid isPermaLink="false">DBM/MySQL/Data-Modification.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:32 GMT</pubDate></item><item><title><![CDATA[<a data-href="Data-Definition" href="dbm/mysql/data-definition.html" class="internal-link" target="_self" rel="noopener">Data-Definition</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Data definition language defines
 <br>Databases
@@ -6995,7 +6995,7 @@ ADD: to add new attributes or constraints (“DROP” to remove attributes or co
 FOREIGN KEY: the constraint.<br>
 (ISBN): the foreign key.<br>
 REFERENCES: the keyword to indicate which attribute is the target.<br>
-books(ISBN): the attribute “ISBN” in the table “books” is referenced.]]></description><link>dbm/mysql/data-definition.html</link><guid isPermaLink="false">DBM/MySQL/Data-Definition.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:36 GMT</pubDate></item><item><title><![CDATA[<a data-href="Aggregation" href="dbm/mysql/aggregation.html" class="internal-link" target="_self" rel="noopener">Aggregation</a>]]></title><description><![CDATA[ 
+books(ISBN): the attribute “ISBN” in the table “books” is referenced.]]></description><link>http://blog.allenygy.vip/dbm/mysql/data-definition.html</link><guid isPermaLink="false">DBM/MySQL/Data-Definition.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:36 GMT</pubDate></item><item><title><![CDATA[<a data-href="Aggregation" href="dbm/mysql/aggregation.html" class="internal-link" target="_self" rel="noopener">Aggregation</a>]]></title><description><![CDATA[ 
  <br><br>SELECT column_name(s), COUNT(*)
 FROM table_name
 GROUP BY column_name(s)
@@ -7052,7 +7052,7 @@ Copy<br>We only assume that every country has a city. But, a country may have mu
 Those countries will be over counted.<br>
 We can use DISTINCT to remove duplications.<br>SELECT COUNT(DISTINCT country_id)
 FROM city
-Copy]]></description><link>dbm/mysql/aggregation.html</link><guid isPermaLink="false">DBM/MySQL/Aggregation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:56 GMT</pubDate></item><item><title><![CDATA[<a data-href="Join" href="dbm/mysql/join.html" class="internal-link" target="_self" rel="noopener">Join</a>]]></title><description><![CDATA[ 
+Copy]]></description><link>http://blog.allenygy.vip/dbm/mysql/aggregation.html</link><guid isPermaLink="false">DBM/MySQL/Aggregation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:56 GMT</pubDate></item><item><title><![CDATA[<a data-href="Join" href="dbm/mysql/join.html" class="internal-link" target="_self" rel="noopener">Join</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>NATURAL JOIN
 <br>SELECT *
@@ -7154,7 +7154,7 @@ Copy<br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/M
 Copy<br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/RIGHTJOIN.png" referrerpolicy="no-referrer"><br>
 <br>FULL OUTER JOIN
 <br>SELECT * FROM person NATURAL FULL OUTER JOIN address
-Copy<br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/FULLOUTERJOIN.png" referrerpolicy="no-referrer"><br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/JOIN.png" referrerpolicy="no-referrer">]]></description><link>dbm/mysql/join.html</link><guid isPermaLink="false">DBM/MySQL/Join.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:46:02 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/OUTERJOIN-1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/OUTERJOIN-1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Cross-table-Query" href="dbm/mysql/cross-table-query.html" class="internal-link" target="_self" rel="noopener">Cross-table-Query</a>]]></title><description><![CDATA[ 
+Copy<br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/FULLOUTERJOIN.png" referrerpolicy="no-referrer"><br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/JOIN.png" referrerpolicy="no-referrer">]]></description><link>http://blog.allenygy.vip/dbm/mysql/join.html</link><guid isPermaLink="false">DBM/MySQL/Join.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:46:02 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/OUTERJOIN-1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/OUTERJOIN-1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Cross-table-Query" href="dbm/mysql/cross-table-query.html" class="internal-link" target="_self" rel="noopener">Cross-table-Query</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Sometimes a single table does not contain all desired attributes.
 <br><br>The crossing of tables is the cartesian product of them.<br>
@@ -7168,7 +7168,7 @@ Copy<br><br>
 FROM address AS a1, address AS a2
 WHERE a1.city_id = a2.city_id AND
  a1.address_id &lt;&gt; a2.address_id
-Copy]]></description><link>dbm/mysql/cross-table-query.html</link><guid isPermaLink="false">DBM/MySQL/Cross-table-Query.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:32 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/Crosstable.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/Crosstable.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Basic-MySQL" href="dbm/mysql/basic-mysql.html" class="internal-link" target="_self" rel="noopener">Basic-MySQL</a>]]></title><description><![CDATA[ 
+Copy]]></description><link>http://blog.allenygy.vip/dbm/mysql/cross-table-query.html</link><guid isPermaLink="false">DBM/MySQL/Cross-table-Query.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:32 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/Crosstable.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/MySQL/Crosstable.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Basic-MySQL" href="dbm/mysql/basic-mysql.html" class="internal-link" target="_self" rel="noopener">Basic-MySQL</a>]]></title><description><![CDATA[ 
  <br><br>The basic query has three clauses: SELECT, FROM, and WHERE.<br>
 <br>
 SELECT: contains one or multiple attributes.<br>
@@ -7209,12 +7209,12 @@ Copy<br>SQL is case insensitive.<br>
 However, to make query readable, we write<br>
 key words (like SELECT, FROM, etc.) in capital;<br>
 attributes and tables in lower cases; and string constant in the original form.<br>In general, a basic query is in the form<br>SELECT a1,⋯,an FROM r WHERE P
-Copy<br>where  are attributes; r is a table; and P is a predicate.]]></description><link>dbm/mysql/basic-mysql.html</link><guid isPermaLink="false">DBM/MySQL/Basic-MySQL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:55 GMT</pubDate></item><item><title><![CDATA[<a data-href="DataBase-Management-System" href="dbm/database-management-system.html" class="internal-link" target="_self" rel="noopener">DataBase-Management-System</a>]]></title><description><![CDATA[ 
- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>dbm/database-management-system.html</link><guid isPermaLink="false">DBM/DataBase-Management-System.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 14 Jun 2024 08:35:12 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="GraphNetwork" data-href="GraphNetwork" href="deeplearning/graphnetwork.html" class="internal-link" target="_self" rel="noopener">A Gentle Introduction to Graph Neural Networks</a> <sup data-footnote-id="fnref-1-ad25a49f5f9dadaf" class="footnote-ref" id="fnref-1-ad25a49f5f9dadaf"><a data-footref="[inline0" href="#fn-1-ad25a49f5f9dadaf" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
+Copy<br>where  are attributes; r is a table; and P is a predicate.]]></description><link>http://blog.allenygy.vip/dbm/mysql/basic-mysql.html</link><guid isPermaLink="false">DBM/MySQL/Basic-MySQL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 28 Mar 2024 01:45:55 GMT</pubDate></item><item><title><![CDATA[<a data-href="DataBase-Management-System" href="dbm/database-management-system.html" class="internal-link" target="_self" rel="noopener">DataBase-Management-System</a>]]></title><description><![CDATA[ 
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>http://blog.allenygy.vip/dbm/database-management-system.html</link><guid isPermaLink="false">DBM/DataBase-Management-System.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 14 Jun 2024 08:35:12 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="GraphNetwork" data-href="GraphNetwork" href="deeplearning/graphnetwork.html" class="internal-link" target="_self" rel="noopener">A Gentle Introduction to Graph Neural Networks</a> <sup data-footnote-id="fnref-1-9bda0d800d59a8c8" class="footnote-ref" id="fnref-1-9bda0d800d59a8c8"><a data-footref="[inline0" href="#fn-1-9bda0d800d59a8c8" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
  <br><br>
 <br>
-<br><a rel="noopener" class="external-link" href="https://distill.pub/2021/gnn-intro/" target="_blank">https://distill.pub/2021/gnn-intro/</a><a href="/#fnref-1-ad25a49f5f9dadaf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>deeplearning/graphnetwork.html</link><guid isPermaLink="false">DeepLearning/GraphNetwork.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 04 May 2024 13:29:51 GMT</pubDate></item><item><title><![CDATA[<a data-href="ActivationFunction" href="deeplearning/activationfunction.html" class="internal-link" target="_self" rel="noopener">ActivationFunction</a>]]></title><description><![CDATA[ 
+<br><a rel="noopener" class="external-link" href="https://distill.pub/2021/gnn-intro/" target="_blank">https://distill.pub/2021/gnn-intro/</a><a href="http://blog.allenygy.vip/#fnref-1-9bda0d800d59a8c8" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>http://blog.allenygy.vip/deeplearning/graphnetwork.html</link><guid isPermaLink="false">DeepLearning/GraphNetwork.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 04 May 2024 13:29:51 GMT</pubDate></item><item><title><![CDATA[<a data-href="ActivationFunction" href="deeplearning/activationfunction.html" class="internal-link" target="_self" rel="noopener">ActivationFunction</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Activation Function 增加非线性表达
 <br>饱和函数
@@ -7239,12 +7239,12 @@ Copy<br>where  are attributes; r is a table; and P is a predicate.]]></descripti
 <br>RELU  Leaky ReLU, Parametric ReLU, ...
 
 
-]]></description><link>deeplearning/activationfunction.html</link><guid isPermaLink="false">DeepLearning/ActivationFunction.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 12 May 2024 15:15:31 GMT</pubDate></item><item><title><![CDATA[<a data-href="BackPropagation" href="deeplearning/backpropagation.html" class="internal-link" target="_self" rel="noopener">BackPropagation</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/deeplearning/activationfunction.html</link><guid isPermaLink="false">DeepLearning/ActivationFunction.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 12 May 2024 15:15:31 GMT</pubDate></item><item><title><![CDATA[<a data-href="BackPropagation" href="deeplearning/backpropagation.html" class="internal-link" target="_self" rel="noopener">BackPropagation</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Back Propagation 反向传播算法 BP
 <br>加速计算参数梯度值
 <br>Computation Graphs 计算图 
-]]></description><link>deeplearning/backpropagation.html</link><guid isPermaLink="false">DeepLearning/BackPropagation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 07 Apr 2024 00:12:36 GMT</pubDate></item><item><title><![CDATA[<a data-href="GradientDescent" href="deeplearning/gradientdescent.html" class="internal-link" target="_self" rel="noopener">GradientDescent</a>]]></title><description><![CDATA[ 
+]]></description><link>http://blog.allenygy.vip/deeplearning/backpropagation.html</link><guid isPermaLink="false">DeepLearning/BackPropagation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 07 Apr 2024 00:12:36 GMT</pubDate></item><item><title><![CDATA[<a data-href="GradientDescent" href="deeplearning/gradientdescent.html" class="internal-link" target="_self" rel="noopener">GradientDescent</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Gradient Descent 梯度下降算法 GD
 <br>Stochastic Gradient Descent 随机梯度下降 SGD
@@ -7260,4 +7260,4 @@ Copy<br>where  are attributes; r is a table; and P is a predicate.]]></descripti
 <br>Adam
 
 
-]]></description><link>deeplearning/gradientdescent.html</link><guid isPermaLink="false">DeepLearning/GradientDescent.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 07 Apr 2024 00:12:36 GMT</pubDate></item><item><title><![CDATA[<a data-href="CET-6" href="english/cet-6.html" class="internal-link" target="_self" rel="noopener">CET-6</a>]]></title><description/></item></channel></rss>
+]]></description><link>http://blog.allenygy.vip/deeplearning/gradientdescent.html</link><guid isPermaLink="false">DeepLearning/GradientDescent.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 07 Apr 2024 00:12:36 GMT</pubDate></item><item><title><![CDATA[<a data-href="CET-6" href="english/cet-6.html" class="internal-link" target="_self" rel="noopener">CET-6</a>]]></title><description/></item></channel></rss>
