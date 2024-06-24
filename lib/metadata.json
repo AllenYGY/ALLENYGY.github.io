@@ -1,6 +1,6 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1719253048531,
+  "lastExport": 1719254314271,
   "pluginVersion": "1.8.03",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd primary-accent-purple secondary-accent-green",
   "useCustomHeadContent": false,
@@ -39,17 +39,17 @@
     "Algorithm/String/Manacher-Algorithm.md",
     "Algorithm/String/KMP.md",
     "Algorithm/String/Aho-Corasick.md",
-    "Computer-Network/assignment/dcn-assignment1.md",
-    "Computer-Network/transport-layer.md",
-    "Computer-Network/standardized-networks.md",
+    "Computer-Network/Assignment/DCN-Assignment1.md",
     "Computer-Network/USTC-L1.md",
-    "Computer-Network/physical-layer.md",
-    "Computer-Network/network-layer.md",
-    "Computer-Network/dcn-review.md",
-    "Computer-Network/data-link-layer.md",
-    "Computer-Network/data-communication-network.md",
-    "Computer-Network/basic-concepts.md",
-    "Computer-Network/application-layer.md",
+    "Computer-Network/Transport-Layer.md",
+    "Computer-Network/Standardized-Networks.md",
+    "Computer-Network/Physical-Layer.md",
+    "Computer-Network/Network-Layer.md",
+    "Computer-Network/Dcn-Review.md",
+    "Computer-Network/Data-Link-Layer.md",
+    "Computer-Network/Data-Communication-Network.md",
+    "Computer-Network/Basic-Concepts.md",
+    "Computer-Network/Application-Layer.md",
     "Computer-Organization/Assignment/As1/logic.drawio",
     "Computer-Organization/Assignment/As1/Co-Assignment-1.md",
     "Computer-Organization/Assignment/As2/k-map.png",
@@ -72,22 +72,22 @@
     "Computer-Organization/Lab/Lab5.md",
     "Computer-Organization/Lab/Lab3.md",
     "Computer-Organization/Lab/Lab2.md",
-    "Computer-Organization/Lecture/vonneumannarchitecture/register.png",
-    "Computer-Organization/Lecture/vonneumannarchitecture/memory.png",
-    "Computer-Organization/Lecture/vonneumannarchitecture/lc-3.png",
-    "Computer-Organization/Lecture/vonneumannarchitecture/lc-3.drawio",
-    "Computer-Organization/Lecture/vonneumannarchitecture/cu.png",
-    "Computer-Organization/Lecture/microarchitecture.md",
-    "Computer-Organization/Lecture/isa.md",
-    "Computer-Organization/Lecture/from-transistors-to-gates.md",
-    "Computer-Organization/Lecture/from-gates-to-circuits-ii-sequential-circuits.md",
-    "Computer-Organization/Lecture/finite-state-machine.md",
-    "Computer-Organization/Lecture/boolean-algebra-from-bits-to-logic.md",
-    "Computer-Organization/Lecture/what-is-a-computer.md",
-    "Computer-Organization/Lecture/from-machine-language-to-assembly-language.md",
-    "Computer-Organization/Lecture/from-gates-to-circuits-i-combinational-circuits.md",
-    "Computer-Organization/Lecture/circuitdesign.md",
-    "Computer-Organization/Lecture/bits-data-representation-and-manipulation.md",
+    "Computer-Organization/Lecture/Vonneumann-Architecture/register.png",
+    "Computer-Organization/Lecture/Vonneumann-Architecture/memory.png",
+    "Computer-Organization/Lecture/Vonneumann-Architecture/lc-3.png",
+    "Computer-Organization/Lecture/Vonneumann-Architecture/lc-3.drawio",
+    "Computer-Organization/Lecture/Vonneumann-Architecture/cu.png",
+    "Computer-Organization/Lecture/What-is-a-Computer.md",
+    "Computer-Organization/Lecture/Microarchitecture.md",
+    "Computer-Organization/Lecture/ISA.md",
+    "Computer-Organization/Lecture/From-Transistors-to-Gates.md",
+    "Computer-Organization/Lecture/From-Machine-Language-to-Assembly-Language.md",
+    "Computer-Organization/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits.md",
+    "Computer-Organization/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.md",
+    "Computer-Organization/Lecture/Finite-State-Machine.md",
+    "Computer-Organization/Lecture/Circuit-Design.md",
+    "Computer-Organization/Lecture/Boolean-Algebra-from-Bits-to-Logic.md",
+    "Computer-Organization/Lecture/Bits-Data-Representation-and-Manipulation.md",
     "Computer-Organization/Computer-Organization.md",
     "Contest/Lanqiao/Train-2.md",
     "Contest/Lanqiao/Train-1.md",
@@ -246,6 +246,7 @@
     "Class.md",
     "Friends.md",
     "Home.md",
+    "Slides.md",
     "Task Management.md",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
@@ -364,337 +365,337 @@
   ],
   "fileInfo": {
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 177443,
+      "modifiedTime": 1719254314271,
+      "sourceSize": 177834,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 20924,
+      "modifiedTime": 1719254314271,
+      "sourceSize": 20951,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 151800,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 317906,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 5162,
+      "modifiedTime": 1719254314271,
+      "sourceSize": 5232,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 2100926,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
@@ -1011,105 +1012,9 @@
       "exportedPath": "computer-organization/lab/lab2.html",
       "dependencies": []
     },
-    "Computer-Organization/Lecture/vonneumannarchitecture/register.png": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 38418,
-      "exportedPath": "computer-organization/lecture/vonneumannarchitecture/register.png",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/vonneumannarchitecture/memory.png": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 48960,
-      "exportedPath": "computer-organization/lecture/vonneumannarchitecture/memory.png",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/vonneumannarchitecture/lc-3.png": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 164455,
-      "exportedPath": "computer-organization/lecture/vonneumannarchitecture/lc-3.png",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/vonneumannarchitecture/lc-3.drawio": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 62199,
-      "exportedPath": "computer-organization/lecture/vonneumannarchitecture/lc-3.drawio",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/vonneumannarchitecture/cu.png": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 11851,
-      "exportedPath": "computer-organization/lecture/vonneumannarchitecture/cu.png",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/microarchitecture.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 8745,
-      "exportedPath": "computer-organization/lecture/microarchitecture.html",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/isa.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 7087,
-      "exportedPath": "computer-organization/lecture/isa.html",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/from-transistors-to-gates.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 3883,
-      "exportedPath": "computer-organization/lecture/from-transistors-to-gates.html",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/from-gates-to-circuits-ii-sequential-circuits.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 8631,
-      "exportedPath": "computer-organization/lecture/from-gates-to-circuits-ii-sequential-circuits.html",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/finite-state-machine.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 4546,
-      "exportedPath": "computer-organization/lecture/finite-state-machine.html",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/boolean-algebra-from-bits-to-logic.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 1445,
-      "exportedPath": "computer-organization/lecture/boolean-algebra-from-bits-to-logic.html",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/what-is-a-computer.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 4732,
-      "exportedPath": "computer-organization/lecture/what-is-a-computer.html",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/from-machine-language-to-assembly-language.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 2327,
-      "exportedPath": "computer-organization/lecture/from-machine-language-to-assembly-language.html",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/from-gates-to-circuits-i-combinational-circuits.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 9022,
-      "exportedPath": "computer-organization/lecture/from-gates-to-circuits-i-combinational-circuits.html",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/circuitdesign.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 4396,
-      "exportedPath": "computer-organization/lecture/circuitdesign.html",
-      "dependencies": []
-    },
-    "Computer-Organization/Lecture/bits-data-representation-and-manipulation.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 4053,
-      "exportedPath": "computer-organization/lecture/bits-data-representation-and-manipulation.html",
-      "dependencies": []
-    },
     "Computer-Organization/Computer-Organization.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 926,
+      "modifiedTime": 1719254314271,
+      "sourceSize": 927,
       "exportedPath": "computer-organization/computer-organization.html",
       "dependencies": []
     },
@@ -1354,14 +1259,14 @@
       "dependencies": []
     },
     "Archive.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 10734,
+      "modifiedTime": 1719254314271,
+      "sourceSize": 10367,
       "exportedPath": "archive.html",
       "dependencies": []
     },
     "Class.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 13923,
+      "modifiedTime": 1719254314271,
+      "sourceSize": 13556,
       "exportedPath": "class.html",
       "dependencies": []
     },
@@ -1372,7 +1277,7 @@
       "dependencies": []
     },
     "Task Management.md": {
-      "modifiedTime": 1719253048531,
+      "modifiedTime": 1719254314271,
       "sourceSize": 3206,
       "exportedPath": "task-management.html",
       "dependencies": []
@@ -1426,8 +1331,8 @@
       "dependencies": []
     },
     "Data-Analysis/HODA/Hans-On-Data-Analysis-For-Everyone.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 12635,
+      "modifiedTime": 1719254314271,
+      "sourceSize": 12618,
       "exportedPath": "data-analysis/hoda/hans-on-data-analysis-for-everyone.html",
       "dependencies": []
     },
@@ -1437,70 +1342,10 @@
       "exportedPath": "data-analysis/data-analysis.html",
       "dependencies": []
     },
-    "Computer-Network/assignment/dcn-assignment1.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 6592,
-      "exportedPath": "computer-network/assignment/dcn-assignment1.html",
-      "dependencies": []
-    },
-    "Computer-Network/transport-layer.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 2135,
-      "exportedPath": "computer-network/transport-layer.html",
-      "dependencies": []
-    },
-    "Computer-Network/standardized-networks.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 4696,
-      "exportedPath": "computer-network/standardized-networks.html",
-      "dependencies": []
-    },
     "Computer-Network/USTC-L1.md": {
       "modifiedTime": 1719253048531,
       "sourceSize": 2284,
       "exportedPath": "computer-network/ustc-l1.html",
-      "dependencies": []
-    },
-    "Computer-Network/physical-layer.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 1563,
-      "exportedPath": "computer-network/physical-layer.html",
-      "dependencies": []
-    },
-    "Computer-Network/network-layer.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 8171,
-      "exportedPath": "computer-network/network-layer.html",
-      "dependencies": []
-    },
-    "Computer-Network/dcn-review.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 12803,
-      "exportedPath": "computer-network/dcn-review.html",
-      "dependencies": []
-    },
-    "Computer-Network/data-link-layer.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 9014,
-      "exportedPath": "computer-network/data-link-layer.html",
-      "dependencies": []
-    },
-    "Computer-Network/data-communication-network.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 694,
-      "exportedPath": "computer-network/data-communication-network.html",
-      "dependencies": []
-    },
-    "Computer-Network/basic-concepts.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 15545,
-      "exportedPath": "computer-network/basic-concepts.html",
-      "dependencies": []
-    },
-    "Computer-Network/application-layer.md": {
-      "modifiedTime": 1719253048531,
-      "sourceSize": 200,
-      "exportedPath": "computer-network/application-layer.html",
       "dependencies": []
     },
     "Fix-Income/Fixed-Income-Overview.md": {
@@ -2143,6 +1988,168 @@
       "modifiedTime": 1719253048531,
       "sourceSize": 1270,
       "exportedPath": "web/vue/vue-application.html",
+      "dependencies": []
+    },
+    "Computer-Network/Assignment/DCN-Assignment1.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 6592,
+      "exportedPath": "computer-network/assignment/dcn-assignment1.html",
+      "dependencies": []
+    },
+    "Computer-Network/Transport-Layer.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 2135,
+      "exportedPath": "computer-network/transport-layer.html",
+      "dependencies": []
+    },
+    "Computer-Network/Standardized-Networks.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 4696,
+      "exportedPath": "computer-network/standardized-networks.html",
+      "dependencies": []
+    },
+    "Computer-Network/Physical-Layer.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 1563,
+      "exportedPath": "computer-network/physical-layer.html",
+      "dependencies": []
+    },
+    "Computer-Network/Network-Layer.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 8171,
+      "exportedPath": "computer-network/network-layer.html",
+      "dependencies": []
+    },
+    "Computer-Network/Dcn-Review.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 12803,
+      "exportedPath": "computer-network/dcn-review.html",
+      "dependencies": []
+    },
+    "Computer-Network/Data-Link-Layer.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 9014,
+      "exportedPath": "computer-network/data-link-layer.html",
+      "dependencies": []
+    },
+    "Computer-Network/Data-Communication-Network.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 694,
+      "exportedPath": "computer-network/data-communication-network.html",
+      "dependencies": []
+    },
+    "Computer-Network/Basic-Concepts.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 15545,
+      "exportedPath": "computer-network/basic-concepts.html",
+      "dependencies": []
+    },
+    "Computer-Network/Application-Layer.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 200,
+      "exportedPath": "computer-network/application-layer.html",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/Vonneumann-Architecture/register.png": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 38418,
+      "exportedPath": "computer-organization/lecture/vonneumann-architecture/register.png",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/Vonneumann-Architecture/memory.png": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 48960,
+      "exportedPath": "computer-organization/lecture/vonneumann-architecture/memory.png",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/Vonneumann-Architecture/lc-3.png": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 164455,
+      "exportedPath": "computer-organization/lecture/vonneumann-architecture/lc-3.png",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/Vonneumann-Architecture/lc-3.drawio": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 62199,
+      "exportedPath": "computer-organization/lecture/vonneumann-architecture/lc-3.drawio",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/Vonneumann-Architecture/cu.png": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 11851,
+      "exportedPath": "computer-organization/lecture/vonneumann-architecture/cu.png",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/What-is-a-Computer.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 4732,
+      "exportedPath": "computer-organization/lecture/what-is-a-computer.html",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/Microarchitecture.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 8745,
+      "exportedPath": "computer-organization/lecture/microarchitecture.html",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/ISA.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 7087,
+      "exportedPath": "computer-organization/lecture/isa.html",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/From-Transistors-to-Gates.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 3883,
+      "exportedPath": "computer-organization/lecture/from-transistors-to-gates.html",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/From-Machine-Language-to-Assembly-Language.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 2327,
+      "exportedPath": "computer-organization/lecture/from-machine-language-to-assembly-language.html",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 8631,
+      "exportedPath": "computer-organization/lecture/from-gates-to-circuits-ii-sequential-circuits.html",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 9022,
+      "exportedPath": "computer-organization/lecture/from-gates-to-circuits-i-combinational-circuits.html",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/Finite-State-Machine.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 4546,
+      "exportedPath": "computer-organization/lecture/finite-state-machine.html",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/Circuit-Design.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 4398,
+      "exportedPath": "computer-organization/lecture/circuit-design.html",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/Boolean-Algebra-from-Bits-to-Logic.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 1445,
+      "exportedPath": "computer-organization/lecture/boolean-algebra-from-bits-to-logic.html",
+      "dependencies": []
+    },
+    "Computer-Organization/Lecture/Bits-Data-Representation-and-Manipulation.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 4053,
+      "exportedPath": "computer-organization/lecture/bits-data-representation-and-manipulation.html",
+      "dependencies": []
+    },
+    "Slides.md": {
+      "modifiedTime": 1719254314271,
+      "sourceSize": 261,
+      "exportedPath": "slides.html",
       "dependencies": []
     }
   }
