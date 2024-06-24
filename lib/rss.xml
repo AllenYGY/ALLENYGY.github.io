@@ -1,4 +1,1176 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 23 Jun 2024 19:01:40 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 23 Jun 2024 19:01:39 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="Friends" href="friends.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="IbLink" aria-label="IbLink" data-icon="IbLink" aria-hidden="true"><svg width="16px" height="16px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.3 9a1 1 0 0 0 0-2v2zm0 8a1 1 0 1 0 0-2v2zm5.4-2a1 1 0 1 0 0 2v-2zm0-8a1 1 0 1 0 0 2V7zM7 9h2.3V7H7v2zm2.3 6H7v2h2.3v-2zm7.7 0h-2.3v2H17v-2zm-2.3-6H17V7h-2.3v2zM2 12a5 5 0 0 0 5 5v-2a3 3 0 0 1-3-3H2zm18 0a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5h-2zm2 0a5 5 0 0 0-5-5v2a3 3 0 0 1 3 3h2zM4 12a3 3 0 0 1 3-3V7a5 5 0 0 0-5 5h2z" fill="currentColor"></path><path d="M15 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span>Friends</a>]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><parsererror xmlns="http://www.w3.org/1999/xhtml" style="display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black"><h3>This page contains the following errors:</h3><div style="font-family:monospace;font-size:12px">error on line 1171 at column 423: Input is not proper UTF-8, indicate encoding !
+Bytes: 0x01 0x74 0x6F 0x20
+</div><h3>Below is a rendering of the page up to the first error.</h3></parsererror><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 24 Jun 2024 18:08:13 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 24 Jun 2024 18:07:41 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<strong>Recursion-BinaryTree</strong>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:achievement" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#achievement</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
+ <br><br><br>刚开始直接左右节点分别遍历，取最小值<br>
+没考虑根节点只有一个分支的情况<br>class Solution {
+public:
+	int minDepth(TreeNode* root) {
+		if(root==nullptr) return 0;
+		int left = minDepth(root-&gt;left);
+		int right = minDepth(root-&gt;right);	
+		return min(left,right)+1;	
+	}
+};
+Copy<br>每一层的情况递归时没有加一<br>class Solution {
+public:
+	int minDepth(TreeNode* root) {
+		if(root-&gt;left==nullptr&amp;&amp;root-&gt;right==nullptr) return 1;
+		else if(root-&gt;left==nullptr&amp;&amp;root-&gt;right!=nullptr) 					return minDepth(root-&gt;right);
+		else if(root-&gt;left!=nullptr&amp;&amp;root-&gt;right==nullptr) 					return minDepth(root-&gt;left);
+		else 
+			return 
+				min(minDepth(root-&gt;right),minDepth(root-&gt;left));
+	}
+};
+Copy<br>class Solution {
+public:
+	int minDepth(TreeNode* root) {
+		if(root==nullptr)return 0;
+		if(root-&gt;left==nullptr &amp;&amp; root-&gt;right==nullptr) 
+			return 1;
+		int m1=minDepth(root-&gt;right);
+		int m2=minDepth(root-&gt;left);
+		if(root-&gt;left==nullptr||root-&gt;right==nullptr) 
+			return m1+m2+1;
+		return min(m1,m2)+1;
+	}
+};
+Copy<br><br><a href="https://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
+叶子节点的定义<br>node-&gt;left==nullptr&amp;&amp;node-&gt;right==nullptr
+Copy<br>class Solution {
+public:
+	bool hasPathSum(TreeNode* root, int targetSum) {
+		if(root==nullptr)return false;
+		if(root-&gt;left==nullptr&amp;&amp;root-&gt;right==nullptr) 
+			return targetSum==root-&gt;val;
+		bool l = hasPathSum(root-&gt;left,targetSum-root-&gt;val);
+		bool r = hasPathSum(root-&gt;right,targetSum-root-&gt;val);
+		return l||r;
+	}
+};
+Copy<br><br><a href="https://blog.allenygy.vip?query=tag:achievement" class="tag" target="_blank" rel="noopener">#achievement</a><br>
+第一次独立写出，递归，回溯？哈哈哈哈<br>class Solution {
+vector&lt;vector&lt;int&gt;&gt; res;
+vector&lt;int&gt; v;
+public:
+	void dfs(TreeNode* root, int targetSum) { 
+		if(root==nullptr) return ;
+		if(root-&gt;left==nullptr&amp;&amp;root-&gt;right==nullptr)
+			if(targetSum==root-&gt;val){
+				v.push_back(root-&gt;val);
+				res.push_back(v);
+				v.pop_back();
+			}
+		if(root-&gt;left){
+			v.push_back(root-&gt;val);
+			dfs(root-&gt;left,targetSum-root-&gt;val);
+			v.pop_back();
+		}
+		if(root-&gt;right){
+			v.push_back(root-&gt;val);
+			dfs(root-&gt;right,targetSum-root-&gt;val);
+			v.pop_back();
+		}
+}
+
+	vector&lt;vector&lt;int&gt;&gt; pathSum(TreeNode* root, int targetSum) {
+    	if(root==nullptr)return {};
+    	dfs(root,targetSum);
+    	return res; 
+    }
+
+};
+Copy<br><br>class Solution {
+vector&lt;vector&lt;int&gt;&gt;res;
+vector&lt;int&gt;v;
+public:
+	void dfs(TreeNode* root){
+		if(root-&gt;left==nullptr&amp;&amp;root-&gt;right==nullptr){	
+			v.push_back(root-&gt;val);
+            res.push_back(v);
+            v.pop_back();
+		}
+        if(root-&gt;left){
+            v.push_back(root-&gt;val);
+            dfs(root-&gt;left);
+            v.pop_back();
+		}			
+		if(root-&gt;right){
+			v.push_back(root-&gt;val);
+            dfs(root-&gt;right);
+            v.pop_back();	
+		}	
+	}
+
+    int sumNumbers(TreeNode* root) {
+    	if(root==nullptr)return 0;
+	    dfs(root);
+	    int ans=0;
+        for(auto row:res){
+        	int tmp=0;
+        	for(int num:row){
+        		tmp=((tmp*10)+num);
+    		}	
+	    	ans+=tmp;
+    	}
+    	return ans;
+	}
+};
+Copy<br>官解简洁写法<br>class Solution { 
+public: 
+	int dfs(TreeNode* root, int prevSum) {
+		if (root == nullptr) { return 0; } 
+		int sum = prevSum * 10 + root-&gt;val; 
+		if (root-&gt;left == nullptr &amp;&amp; root-&gt;right == nullptr){ 				return sum;
+		} else { 
+			return dfs(root-&gt;left, sum) + dfs(root-&gt;right,sum);
+		} 
+	} 
+	int sumNumbers(TreeNode* root) {
+		 return dfs(root, 0); 
+	} 
+};
+Copy<br><br><a href="https://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
+把变量当作参数传递进函数，则不需要回溯变量<br>class Solution {
+public:
+	void construct_paths(TreeNode* root, string path, vector&lt;string&gt;&amp; paths) {
+    	if (root != nullptr) {
+    		path += to_string(root-&gt;val);
+    		if (root-&gt;left == nullptr &amp;&amp; root-&gt;right == nullptr) { // 当前节点是叶子节点
+    			paths.push_back(path); // 把路径加入到答案中
+    		} else {
+    			path += "-&gt;"; // 当前节点不是叶子节点，继续递归遍历
+    			construct_paths(root-&gt;left, path, paths);
+    			construct_paths(root-&gt;right, path, paths);
+    		}
+    	}
+    
+    }
+	vector&lt;string&gt; binaryTreePaths(TreeNode* root) {
+		vector&lt;string&gt; paths;
+		construct_paths(root, "", paths);
+		return paths;
+	}
+};
+Copy<br><br>class Solution {
+public:
+	int goodNodes(TreeNode* root,int mx=INT_MIN) {
+		if(root==nullptr) return 0;
+		int left = goodNodes(root-&gt;left,max(mx,root-&gt;val));
+		int right = goodNodes(root-&gt;right, max(mx,root-&gt;val));
+		return left+right+(mx&lt;=root-&gt;val);
+	}
+};
+Copy<br><br><a href="https://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
+先遍历右子树并根据深度决定是否记录该节点<br>class Solution {
+vector&lt;int&gt;ans;
+public:
+	void dfs(TreeNode* root,int depth){
+		if(depth==ans.size()) ans.push_back(root-&gt;val);
+		if(root-&gt;right) dfs(root-&gt;right,depth+1);
+		if(root-&gt;left) dfs(root-&gt;left,depth+1);
+	}
+	vector&lt;int&gt; rightSideView(TreeNode* root) {
+		if(root==nullptr)return {};
+		dfs(root,0);
+		return ans;
+	}
+};
+Copy<br><br><a href="https://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
+开始的时候犹豫当前节点判断，左子树判断和右子树判断<br>
+后来发现并列就好了<br>class Solution {
+public:
+	bool isSameTree(TreeNode* p, TreeNode* q) {
+		if(p==nullptr||q==nullptr)return (p==q);
+		return (p-&gt;val==q-&gt;val)&amp;&amp;(isSameTree(p-&gt;left,q-&gt;left))&amp;&amp;(isSameTree(p-&gt;right,q-&gt;right));
+	}
+};
+Copy<br><br>class Solution {
+public:
+	bool isSame(TreeNode* p,TreeNode *q){
+		if(p==nullptr||q==nullptr)return (p==q);
+		return (p-&gt;val==q-&gt;val)&amp;&amp;isSame(p-&gt;left,q-&gt;right)&amp;&amp;isSame(p-&gt;right,q-&gt;left);
+	}
+	bool isSymmetric(TreeNode* root) {
+		return isSame(root-&gt;left,root-&gt;right);
+	}
+};
+Copy<br><br>class Solution {
+public:
+	int get_height(TreeNode *node){
+		if(node==nullptr)return 0;
+		int leftH = get_height(node-&gt;left);
+		if(leftH==-1) return -1;
+		int rightH = get_height(node-&gt;right);
+		if(rightH==-1||abs(leftH-rightH)&gt;1)return -1;
+		return max(leftH,rightH)+1;
+	}
+	bool isBalanced(TreeNode* root) {
+		return get_height(root)!=-1;
+	}
+};
+Copy<br><br>class Solution {
+public:
+	TreeNode* invertTree(TreeNode* root) {
+		if(root==nullptr)return nullptr;
+		root-&gt;left=invertTree(root-&gt;left);
+		root-&gt;right=invertTree(root-&gt;right);
+		TreeNode*tmp=root-&gt;left;
+		root-&gt;left=root-&gt;right;
+		root-&gt;right=tmp;
+		return root;
+	}
+};
+Copy<br><br><a href="https://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a> <br>
+<br>我理解到，只能先删叶子节点<br>
+判断叶子节点
+<br>if (root-&gt;left == root-&gt;right) 
+Copy<br>
+<br>如果 limit &gt; 0 说明从根到叶子的路径和小于 limit，删除叶子，否则不删除
+<br>如果有儿子没被删除，就不删 root，否则删 root<br>
+判断是否存在子节点
+<br>if(root-&gt;left || root-&gt;right)
+Copy<br>class Solution {
+public:
+	TreeNode* sufficientSubset(TreeNode* root, int limit) {
+		limit -= root-&gt;val;
+		if (root-&gt;left == root-&gt;right) 
+			return limit &gt; 0 ? nullptr : root;
+		if(root-&gt;left) root-&gt;left = sufficientSubset(root-&gt;left, limit);
+		if(root-&gt;right) root-&gt;right = sufficientSubset(root-&gt;right, limit);
+		return root-&gt;left || root-&gt;right ? root : nullptr;
+	}
+};
+Copy<br><br>class Solution {
+	int ans = 0; // 用于记录最大长度的全局变量
+	void getlongestZigZag(TreeNode* root, bool is_left, int len) {
+    	if (root == nullptr) {
+    	    ans = max(ans, len); // 更新最大长度
+    	    return;
+        }   
+        // 递归地在左右子树中查找交错路径
+        if (is_left) {
+    	// 如果当前方向是左，那么我们要在右子树中继续找交错路径，并且长度加一
+    	    getlongestZigZag(root-&gt;right, false, len + 1); // 向右走
+    	    getlongestZigZag(root-&gt;left, true, 1); // 重新开始计数
+        } else {
+        // 如果当前方向是右，那么我们要在左子树中继续找交错路径，并且长度加一
+     		getlongestZigZag(root-&gt;left, true, len + 1); // 向左走
+         	getlongestZigZag(root-&gt;right, false, 1); // 重新开始计数
+    	}	
+	}
+public:
+	int longestZigZag(TreeNode* root) {
+		getlongestZigZag(root-&gt;left, true, 1); // 当我们从根节点向左移动时，路径长度变为1
+		getlongestZigZag(root-&gt;right, false, 1); // 同理，当我们从根节点向右移动时，路径长度变为1
+		return ans -1; // 因为长度是从1开始的，我们需要减去1
+	}
+};
+Copy]]></description><link>https://blog.allenygy.vip/algorithm/recursion/递归-二叉树.html</link><guid isPermaLink="false">Algorithm/Recursion/递归-二叉树.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 24 Jun 2024 16:58:54 GMT</pubDate></item><item><title><![CDATA[<a data-href="递归" href="algorithm/recursion/递归.html" class="internal-link" target="_self" rel="noopener">递归</a>]]></title><description><![CDATA[ 
+ <br><br><br>程序调用自身的编程技巧称为递归 Recursion<br>
+<br>递归作为一种算法在程序设计语言中广泛应用。
+<br>一个过程或函数在其定义或说明中有直接或间接调用自身的一种方法，它通常把一个大型复杂的问题层层转化为一个与原问题相似的规模较小的问题来求解。
+<br>递归策略只需少量的程序就可描述出解题过程所需要的多次重复计算，大大地减少了程序的代码量。 
+<br>一般来说，递归需要有边界条件、递归前进段和递归返回段。
+<br>当边界条件不满足时，递归前进；当边界条件满足时，递归返回。
+<br>递归的能力在于用有限的语句来定义对象的无限集合。<br><br>递归：你打开面前这扇门，看到屋里面还有一扇门。你走过去，发现手中的钥匙还可以打开它，你推开门，发现里面还有一扇门，你继续打开它。若干次之后，你打开面前的门后，发现只有一间屋子，没有门了。然后，你开始原路返回，每走回一间屋子，你数一次，走到入口的时候，你可以回答出你到底用这你把钥匙打开了几扇门。<br>循环：你打开面前这扇门，看到屋里面还有一扇门。你走过去，发现手中的钥匙还可以打开它，你推开门，发现里面还有一扇门（若前面两扇门都一样，那么这扇门和前两扇门也一样；如果第二扇门比第一扇门小，那么这扇门也比第二扇门小，你继续打开这扇门，一直这样继续下去直到打开所有的门。但是，入口处的人始终等不到你回去告诉他答案。<br><br>1. 明确递归终止条件（递归出口）<br>我们知道，递归就是有去有回，既然这样，那么必然应该有一个明确的临界点，程序一旦到达了这个临界点，就不用继续往下递去而是开始实实在在的归来。换句话说，该临界点就是一种简单情境，可以防止无限递归。<br>2. 给出递归终止时的处理办法<br>我们刚刚说到，在递归的临界点存在一种简单情境，在这种简单情境下，我们应该直接给出问题的解决方案。一般地，在这种情境下，问题的解决方案是直观的、容易的。<br>3. 提取重复的逻辑，缩小问题规模<br>我们在阐述递归思想内涵时谈到，递归问题必须可以分解为若干个规模较小、与原问题形式相同的子问题，这些子问题可以用相同的解题思路来解决。从程序实现的角度而言，我们需要抽象出一个干净利落的重复的逻辑，以便使用相同的方式解决子问题。<br><br><br><br>柳州传说是歌仙刘三姐的传歌之地，最近举办了一次山歌大赛。 在这个项目中，参赛者每次完成一个段都会得到一个分数。总分数的计算方式基于一个特殊 的数学表达式 f(x,n)。表达式 f(x,n) 的定义如下：<br><img title="4e4fe6b7f35886e021f9a1fa1334df4.jpg" alt="4e4fe6b7f35886e021f9a1fa1334df4.jpg" src="https://img.lsyz.top/2022/08/09/25ad9e9d95723.jpg" referrerpolicy="no-referrer"><br>其中，x 表示参赛者的基本得分，n 表示参赛者完成的山歌段落数。<br>津津、菲菲和皮皮的任务是编写一个程序，并计算选手 A（x=4.2,n=10）、选手 B（x=2.5,n=15） 时 f(x,n)的值<br><br>输入x和n。<br><br>函数值，保留两位小数。<br><br>Input<br>4.2 10
+Copy<br>Output<br>3.68
+Copy<br><br>#include&lt;bits/stdc++.h&gt;
+#include&lt;iostream&gt;
+#define int long long
+#define endl '\n'
+using namespace std;
+
+double f(double x, int n){
+    if(n==1) return sqrt(1+x);
+    return sqrt(n+f(x,n-1));
+}
+
+signed main() {
+    double x; 
+    int n;
+    cin&gt;&gt;x&gt;&gt;n;
+    cout&lt;&lt;fixed&lt;&lt;setprecision(2)&lt;&lt;f(x,n)&lt;&lt;endl;
+    return 0;
+}
+Copy<br><br><br>用递归的方法求 Hermite 多项式的值。<br><br><br>给定的   和正整数 <br><br>对给定的   和正整数 ，求多项式的值。<br><br>Input<br>1 2
+Copy<br>Output<br>4.00
+Copy<br><br>#include&lt;bits/stdc++.h&gt;
+#include&lt;iostream&gt;
+#define int long long
+#define endl '\n'
+using namespace std;
+
+double h(double x, int n){
+    if(n==0) return 1;
+    if(n==1) return 2*x;
+    return 2*x*h(x,n-1)-2*(n-1)*h(x,n-2);
+}
+
+signed main() {
+    int n;
+    double x;
+    cin&gt;&gt;n&gt;&gt;x;
+    cout&lt;&lt;fixed&lt;&lt;setprecision(2)&lt;&lt;h(x,n)&lt;&lt;endl;
+    return 0;
+}
+Copy<br><br><br>有一头母牛，从第二年起，它每年年初生一头小母牛。每头小母牛从第四个年头开始，每年年初也生一头小母牛。请编程实现在第n年的时候，共有多少头母牛？<br><br>输入数据由多个测试实例组成，每个测试实例占一行，包括一个整数n(0&lt;n&lt;55)，n的含义如题目中描述。<br>n=0表示输入数据的结束，不做处理。<br><br>对于每个测试实例，输出在第n年的时候母牛的数量。每个输出占一行。<br><br>Input<br>2
+4
+5
+0
+Copy<br>Output<br>2
+4
+6
+Copy<br><br>第n年的牛的数量为：n-1年的数量和今年新出生的牛的数量<br>
+今年新出生的牛的数量为 n-3 年前牛的数量<br><br>#include &lt;bits/stdc++.h&gt;
+#include &lt;iostream&gt;
+#define int long long
+#define endl '\n'
+using namespace std;
+
+const int MOD = 1000;
+const int MAXN = 1000000;
+
+int val[MAXN] = {0};
+
+void solve(int x)
+{
+
+    if(val[x]!=0){
+        cout &lt;&lt; val[x] &lt;&lt; endl;
+        return;
+    }
+    val[1]=1;
+    val[2]=2;
+    val[3]=3;
+    for(int i=4;i&lt;=x;i++){
+        val[i]=(val[i-1]+val[i-3]);
+    }
+    cout &lt;&lt; val[x] &lt;&lt; endl;
+}
+
+signed main()
+{
+    int x;
+    cin &gt;&gt; x;
+    while (x)
+    {
+        solve(x);
+        cin &gt;&gt; x;
+    }
+    return 0;
+}
+Copy]]></description><link>https://blog.allenygy.vip/algorithm/recursion/递归.html</link><guid isPermaLink="false">Algorithm/Recursion/递归.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 24 Jun 2024 16:58:44 GMT</pubDate><enclosure url="https://img.lsyz.top/2022/08/09/25ad9e9d95723.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://img.lsyz.top/2022/08/09/25ad9e9d95723.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="递推" href="algorithm/recursion/递推.html" class="internal-link" target="_self" rel="noopener">递推</a>]]></title><description><![CDATA[ 
+ <br><br><br>递推是按照一定的规律来求序列中的每一项,一般是通过计算前面的一些项来得出序列中的指定项。<br>
+其思想是把一个复杂的庞大的计算过程转化为对简单过程的多次重复,该算法利用了计算机运算速度快和不知疲倦的机器特点。<br><br>
+<br>将问题用数组形式表达
+<br>求解递推关系,列出递推表达式
+<br>寻找边界值
+<br><br>
+<br>首先知道小规模的数列
+<br>求解递推关系,列出递推表达式
+<br><br>🐰的故事
+已知一对兔子，每个月可以生一对小兔子，小兔子出生后的第二个月会变成成年兔子，会继续生小兔子。<br>
+第一个月，我们有1对小兔子。<br>
+第二个月，我们有1对成年兔子的兔子。<br>
+第三个月，我们有1对成年兔子的兔子，有1对小兔子，共2对。<br>
+第四个月，我们有2对成年兔子的兔子，有1对小兔子，共3对。<br>
+第五个月，我们有3对成年兔子的兔子，有2对小兔子，共5对。<br>
+现在我们希望知道第n个月，一共有多少只兔子。
+<br>题解
+假设：第个月的大兔为幼兔为,总数.
+
+已知：一对成年兔每个月可以生一对小兔子
+
+已知：下个月的成年兔是由上个月的成年兔和幼兔组成的
+
+
+<br>
+
+<br><br>#include &lt;bits/stdc++.h&gt;
+#include &lt;iostream&gt;
+#define int long long
+#define endl '\n'
+using namespace std;
+
+const int MOD = 1000;
+const int MAXN = 1000000;
+
+int val[MAXN] = {0};
+val[1]=1, val[2]=1;
+
+signed main() {
+	int n;
+	cin &gt;&gt; n;
+	if(val[n]!=0){
+		cout &lt;&lt; val[n] &lt;&lt; endl;
+		return 0;
+	}
+	for(int i=3;i&lt;=x;i++){
+		val[i]=(val[i-1]+val[i-2])%MOD;
+	}
+	cout &lt;&lt; val[x] &lt;&lt; endl;
+	return 0;
+}
+Copy<br><br>母牛的故事
+
+有一头母牛，从第二年起，它每年年初生一头小母牛。每头小母牛从第四个年头开始，每年年初也生一头小母牛。请编程实现在第n年的时候，共有多少头母牛？
+
+输入数据由多个测试实例组成，每个测试实例占一行，包括一个整数n(0&lt;n&lt;55)，n的含义如题目中描述。
+n=0表示输入数据的结束，不做处理。
+
+对于每个测试实例，输出在第n年的时候母牛的数量。每个输出占一行。
+
+Input
+2
+4
+5
+0
+Copy
+Output
+2
+4
+6
+Copy
+<br> 题解
+第n年的牛的数量为：n-1年的数量和今年新出生的牛的数量<br>
+今年新出生的牛的数量为 n-3 年前牛的数量
+<br><br>#include &lt;bits/stdc++.h&gt;
+#include &lt;iostream&gt;
+#define int long long
+#define endl '\n'
+using namespace std;
+
+const int MOD = 1000;
+const int MAXN = 1000000;
+
+int val[MAXN] = {0};
+
+void solve(int x)
+{
+
+    if(val[x]!=0){
+        cout &lt;&lt; val[x] &lt;&lt; endl;
+        return;
+    }
+    val[1]=1;
+    val[2]=2;
+    val[3]=3;
+    for(int i=4;i&lt;=x;i++){
+        val[i]=(val[i-1]+val[i-3]);
+    }
+    cout &lt;&lt; val[x] &lt;&lt; endl;
+}
+
+signed main()
+{
+    int x;
+    cin &gt;&gt; x;
+    while (x)
+    {
+        solve(x);
+        cin &gt;&gt; x;
+    }
+    return 0;
+}
+Copy<br><br><br><br>楼梯有阶台阶,上楼时可以一步上阶,也可以一步上阶,也可以一步上阶<br>
+编程计算共有多少种不同的走法。<br><br>输入的每一行包括一组测试数据，即为台阶数n。最后一行为0，表示测试结束。<br><br>每一行输出对应一行输入的结果，即为走法的数目。<br><br>Input<br>1
+2
+3
+4
+0
+Copy<br>Output<br>1
+2
+4
+7
+Copy<br><br>Success
+
+表示走到第级台阶的走法
+<br>Why？
+要上第级楼梯 <br>
+可以从级楼梯一次走一步上去 <br>
+可以从级楼梯一次性走两步上去 <br>
+可以从级楼梯一次性走三步上去 
+<br><br>#include&lt;bits/stdc++.h&gt;
+#include&lt;iostream&gt;
+#define int long long
+#define endl '\n'
+using namespace std;
+
+int a[101]={0};
+
+signed main() {
+    a[1]=1;
+    a[2]=2;
+    a[3]=4;
+    int n;
+    cin &gt;&gt; n;
+    while(n){
+        for(int i=4;i&lt;=n;i++){
+            a[i]=a[i-1]+a[i-2]+a[i-3];
+        }
+        cout &lt;&lt; a[n] &lt;&lt; endl;
+        cin &gt;&gt; n;
+    }
+    return 0;
+}
+Copy<br><br><br>在2×n的一个长方形方格中,用一个1×2的骨牌铺满方格,输入n ,输出铺放方案的总数. 例如n=3时,为2× 3方格，骨牌的铺放方案有三种,如下图：<br><br>输入数据由多行组成，每行包含一个整数n,表示该测试实例的长方形方格的规格是2×n (0&lt; n&lt;=50)。<br><br>&nbsp;对于每个测试实例，请输出铺放方案的总数，每个实例的输出占一行。<br><br>Input<br>1
+3
+2
+Copy<br>Output<br>1
+3
+2
+Copy<br><br>为了使方格铺满，每次要么铺一个2×1的骨牌，要么铺两个1×2的骨牌，要么铺两个2×1的骨牌首先，分析边界值：2×1方格只有1种铺法，2×2方格只有2种铺法.如图：<br><img alt="骨牌问题" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Share/202406101734284.png" referrerpolicy="no-referrer"><br>
+]表示铺满的长方形方格，一共有多少方案数
+
+<br> 铺到最后要么剩或者
+<br> 表示前 已铺满，剩最后只能竖着放
+<br>为铺满  网格的方案数<br>
+(如果前面的2*(n-2)的网格已经铺满, 那么最后的只能是横着放两块,否则会与重复).
+
+<br><br>#include&lt;bits/stdc++.h&gt;
+#include&lt;iostream&gt;
+#define int long long
+#define endl '\n'
+using namespace std;
+int a[51]={0};
+signed main() {
+    a[1]=1, a[2]=2;
+    int n=0;
+    while(cin&gt;&gt;n){
+        for(int i=3;i&lt;=n;i++){
+            a[i]=a[i-1]+a[i-2];
+        }
+        cout &lt;&lt; a[n] &lt;&lt; endl;
+    }
+    return 0;
+}
+
+Copy<br><br><br>桂林山水甲天下，漓江更是美不胜收。 漓江上竹筏整齐排列，形成了美丽的风景线，津津、菲菲和皮皮决定乘坐竹筏游览漓江景色。 已知竹筏有2种规格：一种是单人竹筏，长度为1，宽度为1；另一种是双人竹筏，长度为 2，宽度为2。假设漓江江面的面积是n*3，请问多少种不同的竹筏安排方案？<br><br>一行一个整数n,0&lt;n&lt;1000.<br><br>一行一个整数，为铺设方案的数量模12345的结果。<br><br>Input<br>2
+Copy<br>Output<br>3
+Copy<br><br>
+  表示 江面宽度为时铺设方案的数
+<br>Why  ?
+当宽度是二的时候，有两种排列方法
+<br><br>#include&lt;bits/stdc++.h&gt;
+#include&lt;iostream&gt;
+#define int long long
+#define endl '\n';
+using namespace std;
+
+const int MOD=12345;
+
+int f(int n){
+    if(n==1) return 1;
+    if(n==2) return 3;
+    return f(n-1)+2*f(n-2);
+}
+
+signed main(){
+    int n;
+    cin&gt;&gt;n;
+    int d[n+1];
+    d[0]=0,d[1]=1,d[2]=3;
+    for(int i=3;i&lt;=n;i++){
+        d[i]=(d[i-1]+2*d[i-2])%MOD;
+    }
+    cout&lt;&lt;d[n]&lt;&lt;endl;
+    return 0;
+}
+Copy<br><br><br>桂林为了欢迎广大游客，决定在桂林的各大街道上布置迎宾彩带。 目前有白色、蓝色和红色的彩带，并满足以下两个条件：<br>
+<br>相同颜色的彩带不能放在相邻的位置
+<br>一条蓝色的彩带必须放在一条白色的彩带和一条红色的彩带中间。 津津、菲菲和皮皮决定写一个程序，了解放置彩带的方案数有多少种。
+<br><br>一行一个整数n，表示橱窗的宽度（或者说彩带数目）。<br><br>一行一个整数，表示装饰橱窗的彩带放置方案数。<br><br>Input<br>3
+Copy<br>Output<br>4
+Copy<br><br>
+  表示当橱窗宽度是  时，彩带放置方案数
+<br>Why ?
+
+<br>假设一共有  条彩带，当前  条彩带排好后，则最后一条彩带
+
+<br>一定只能是红色或者只能是白色
+
+
+<br>对于第  条彩带存在两种可能
+<br>蓝色或者不是蓝色<br>
+- 当为蓝色时第  条彩带也必然是确定的 <br>
+- 不为蓝色时第  条彩带不能确定 <br>
+
+
+<br><br>#include&lt;bits/stdc++.h&gt;
+#include&lt;iostream&gt;
+#define int long long
+#define endl '\n';
+using namespace std;
+signed main(){
+    int n;
+    cin&gt;&gt;n;
+    int a[n+1]={0};
+    a[1]=2,a[2]=2;
+    for(int i=3;i&lt;=n;i++){
+        a[i]=a[i-2]+a[i-1];
+    }
+    cout&lt;&lt;a[n]&lt;&lt;endl;
+    return 0;
+}
+
+Copy<br><br><br>桂林的景点很多，为了让更多的游客可以顺利游玩。在不影响游览品质的前提下，旅游公司 决定通过改变路线的方法分流游客。 方案是：每个旅行团都跳过其中的一个景点（但是不能跳过号和号景点），使得它从号景点开始，到达号景点所经过的总距离最小。 假设每一个景点i都有一个坐标，从的景点到 的景点  的距离为：  <br><br>第1行1个正整数n，表示城市个数。<br>接下来的n行，每行2个数x_i和y_i,表示城市i的坐标。<br><br>一行一个数，使得它从1号城市开始，跳过某一个城市，到达n号城市所经过的最小总距离。<br><br>Input<br>4
+0 0
+8 3
+11 -1
+10 0
+Copy<br>Output<br>14
+Copy<br><br>
+<br>先计算出总距离S (每个景点之间的曼哈顿距离总和)
+<br>逐个跳过景点维护最小距离
+<br>Success
+
+
+<br> 初始化为 
+<br>  表示跳过景点 的总距离
+<br> 表示不跳过任何一个景点的总距离
+<br> 表示从景点 到 景点 的距离
+<br> 表示 两景点之间的曼哈顿距离
+
+<br><br>假设 A, B两点坐标分别为 ，<br>
+从到的曼哈顿距离为:   <br>int manhattandist(int x1, int y1, int x2, int y2){
+    return abs(x1 - x2) + abs(y1 - y2);
+}
+Copy<br><br>#include &lt;bits/stdc++.h&gt;
+#include &lt;iostream&gt;
+#define int long long
+#define endl '\n'
+
+using namespace std;
+
+int n, m, b, s, a[100005], x[100005], y[100005];
+
+int manhattandist(int x1, int y1, int x2, int y2){
+    return abs(x1 - x2) + abs(y1 - y2);
+}
+
+
+int dist(int i, int j){
+    return manhattandist(x[i], y[i], x[j], y[j]);
+}
+
+
+signed main(){
+    cin &gt;&gt; n;
+    for (int i = 1; i &lt;= n; i++){
+        cin &gt;&gt; x[i] &gt;&gt; y[i];
+        if (i &gt; 1)
+            a[i] = dist(i, i - 1); 
+        s += a[i];                
+    }
+    m = s;
+    for (int i = 2; i &lt;= n - 1; i++){
+        b = s - a[i] - a[i + 1] + dist(i - 1, i + 1);
+        m = min(m, b); 
+    }
+    cout &lt;&lt; m &lt;&lt; endl;
+    return 0;
+}
+
+Copy<br><br><br>猴子吃桃子问题：猴子第一天摘下若干个桃子，当即吃了一半还不过瘾，又多吃了一个；第二天又将剩下的桃子吃掉一半又多吃了一个；以后每天早上都吃了前一天剩下的一半零一个。到了第十天想再吃时，见只剩下一个桃子，求第一天共摘了多少个桃子？<br><br>无<br><br>一个整数，第一天共有多少个桃子<br><br>#include &lt;iostream&gt;
+using namespace std;
+
+int peaches_2(int day) {
+    if (day == 10) {
+        return 1; 
+    } else {
+        return (peaches_2(day + 1) + 1) * 2;
+    }
+}
+
+int peaches_1(int day) {
+    int total_peaches = 1;
+    for (int i = 10; i &gt; 1 ; --i) {
+        total_peaches = (total_peaches + 1) * 2;
+    }
+    return total_peaches;
+}
+
+int main() {
+    int day = 1; 
+    int total_peaches = peaches_1(day);
+    cout &lt;&lt; total_peaches &lt;&lt; endl;
+    return 0;
+}
+Copy<br><br><br>有1×n（n&lt;=50）的一个长方形，用1×1、1×2和1×3的骨牌铺满方格，请问有多少种铺法？ 例如当n=3时为1×3的方格。此时用1×1、1×2和1×3的骨牌铺满方格，共有四种铺法。如下图：<img title="a0c46b6c3a466ecaa86db38ca5ca6072.png" alt="a0c46b6c3a466ecaa86db38ca5ca6072.png" src="https://img.lsyz.top/2022/11/11/24b69da8710e7.png" referrerpolicy="no-referrer"><br><br>一个整数n（n&lt;=50）<br><br>骨牌的铺法<br><br>Input<br>3
+Copy<br>OutPut<br>4
+Copy<br><br>#include&lt;bits/stdc++.h&gt;
+#include&lt;iostream&gt;
+
+#define int long long
+#define endl '\n'
+
+using namespace std;
+
+signed main(){
+    int n=0;
+    cin&gt;&gt;n;
+    int dp[52];   
+    dp[0]=0;
+    dp[1]=1;
+    dp[2]=2;
+    dp[3]=4;
+    for(int i=4;i&lt;=n;i++){
+        dp[i]=dp[i-1]+dp[i-2]+dp[i-3];
+    }
+    cout&lt;&lt;dp[n]&lt;&lt;endl;
+    return 0;
+}
+Copy<br><br><br>Pell数列的定义是这样的，，。&nbsp;给出一个正整数k，要求Pell数列的第项模上是多少。<br><br>第1行是测试数据的组数n，后面跟着n行输入。每组测试数据占1行，包括一个正整数k (1 ≤ k &lt; 1000000)。<br><br>n行，每行输出对应一个输入。输出应是一个非负整数。<br><br>Input<br>2
+1
+8
+Copy<br>Output<br>1
+408
+Copy<br><br>#include&lt;bits/stdc++.h&gt;
+#include&lt;iostream&gt;
+#define int long long
+#define endl '\n'
+using namespace std;
+
+int a[1000001]={0};
+
+void solve(int n){
+
+    a[1]=1;
+    a[2]=2;
+    for(int i=3;i&lt;=n;i++){
+        a[i]=(2*a[i-1]+a[i-2])%32767;
+    }
+}
+
+signed main() {
+    int T=0;
+    cin&gt;&gt;T;
+    while(T--){
+        int n=0;
+        cin&gt;&gt;n;
+        if(a[n]!=0)
+            cout&lt;&lt;a[n]&lt;&lt;endl;
+        else{
+            solve(n);
+            cout&lt;&lt;a[n]&lt;&lt;endl;
+        }
+    }
+    return 0;
+}
+Copy<br><br><br>请编程求出所有的n位数中，有多少个数中有偶数个数字3.结果模12345。(1&lt;=n&lt;=1000)<br><br>一行一个正整数n，0&lt;n&lt;1000.<br><br>一行一个正整数，表示n位数中有多少个数有偶数个3.<br><br>input<br>2
+Copy<br>Output<br>73
+Copy<br><br>#include&lt;bits/stdc++.h&gt;
+#include&lt;iostream&gt;
+#define int long long
+#define endl '\n'
+using namespace std;
+
+signed main(){
+  int f[1001][2],n,i,x=9;
+  cin&gt;&gt;n;
+  f[1][1]=1;f[1][0]=9;                        
+  for(i=2;i&lt;=n;i++)    {   
+     if(i==n)  // i是最高位
+      x-=1;
+      f[i][0]=(f[i-1][0]*x+f[i-1][1])%12345;
+      f[i][1]=(f[i-1][1]*x+f[i-1][0])%12345;   
+   }
+   cout&lt;&lt;f[n][0]; 
+   return 0;
+}
+Copy]]></description><link>https://blog.allenygy.vip/algorithm/recursion/递推.html</link><guid isPermaLink="false">Algorithm/Recursion/递推.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 24 Jun 2024 16:58:32 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Share/202406101734284.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Share/202406101734284.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="dcn-review" href="computer-network/dcn-review.html" class="internal-link" target="_self" rel="noopener">dcn-review</a>]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Protocol 
+<br>Sender
+<br>Message
+<br>Medium 
+<br>Receiver
+<br><br>
+<br>Simplex
+<br>Half-duplex 
+<br>Full-duplex
+<br><br><br>
+<br>Assumption: noise free in the channel
+<br>Formula: 
+
+<br>B = Bit Rate (bit/sec)
+<br>F = Channel Bandwidth in Hertz 
+<br>M = Number of levels in a signal (two for binary)
+
+
+<br><br>
+<br>In reality, the signal may be corrupted by electrical noise. 
+<br>Formula: 
+
+<br>B = Actual Bit Rate (bit/sec) 
+<br>F = Channel Bandwidth in Hertz 
+<br>S = Signal Power in watts 
+<br>N = Noise Power in watts
+
+
+<br><br>
+<br>
+The signal-to-noise ratio is often given in decibels.
+
+<br>
+<br>
+
+
+<br>
+Assume that  = 36 and the channel bandwidth is 2 MHz.
+
+<br>
+<br>
+
+
+<br><br>
+<br>
+Physical Layer: 
+
+<br>It is concerned with transmitting raw bits over a communication channel. 
+<br>This layer deals with the issues including mechanical, electrical, timing interfaces, and the physical transmission medium.
+
+
+<br>
+Data Link Layer: 
+
+<br>It is to transform a raw transmission facility into a line that appears free of undetected transmission errors to the network layer.
+
+
+<br>
+Network Layer:
+
+<br>It controls the operation of the subnet. 
+<br>It routes packets from source to destination. 
+
+<br>The routing algorithm can be static or dynamic.
+
+
+
+
+<br>
+Transport Layer: 
+
+<br>It is to accept data from upper layers.
+<br>Split it up into smaller units if need be, pass these to the network layer, 
+<br>Ensure that the pieces all arrive correctly at the other hand.
+
+
+<br>
+Session Layer: 
+
+<br>It allows users on different machines to establish sessions between them.
+
+
+<br>
+Presentation Layer:
+
+<br>It is concerned with the syntax and semantics of the information transmitted.
+
+
+<br>
+Application Layer: 
+
+<br>It contains a variety of protocols that are commonly needed by users.
+
+<br>Such as HTTP, Email, etc.
+
+
+
+
+<br><br>Physical Layer: <br>
+<br>It is concerned with transmitting raw bits over a communication channel. 
+<br>This layer deals with the issues including mechanical, electrical, timing interfaces, and the physical transmission medium.
+<br><br>Guided media, which are those that provide a conduit from one device to another.<br>
+<br>Guide wired
+
+<br>Twisted-pair cable
+<br>Coaxial cable 
+<br>Fiber-optic
+
+
+<br><br>
+<br>Mode
+
+<br>Multimode
+
+<br>Step index
+<br>Graded index 
+
+
+<br>Single mode
+
+
+<br><br>Unguided media transport electromagnetic waves without using a physical conductor.<br>
+<br>Unguided wireless
+
+<br>Free space
+
+
+<br>Two common signal encoding methods:<br>
+<br>Frequency hopping spread spectrum (e.g., Bluetooth)
+<br>Direct sequence spread spectrum (e.g.,CDMA mobile network)
+<br>The Electromagnetic Spectrum<br>
+<br>Propagation Methods 
+
+<br>Ground Propagation 
+<br>Sky Propagation 
+<br>Line-of-sight Propagation 
+
+
+<br><br>Data Link Layer: <br>
+<br>It is to transform a raw transmission facility into a line that appears free of undetected transmission errors to the network layer.
+<br><br>
+<br>Character Count
+<br>Flag bytes with byte stuffing
+<br>Starting and ending flags with bit stuffing
+<br><br><br>
+<br>Parity Check
+<br>Two-dimensional Parity Check
+<br>Cyclic Redundancy Check (CRC)
+<br><br><br>
+<br>Hamming Distance
+<br>Hamming Code
+<br><br>
+<br>
+Error detection: 
+
+<br>To send additional information, so incorrect data can be detected and rejected.
+
+
+<br>
+Error correction: 
+
+<br>To send additional information, so incorrect data can be corrected and accepted.
+
+<br>Error correction is the additional ability to reconstruct the original data.
+
+
+
+
+<br><br>
+<br>Stop-and-Wait Protocols
+<br>Sliding Window Protocols
+<br><br>
+<br>Channelization: 
+
+<br>Frequency-Division Multiple Access (FDMA)
+<br>Time-Division Multiple Access (TDMA)
+<br>Code-Division Multiple Access (CDMA)
+
+
+<br>Random Access Protocols:
+
+<br>Aloha 
+<br>Carrier Sense Multiple Access
+<br>CSMA with Collision Detection 
+<br>CSMA with Collision Avoidance
+
+
+<br>Controlled-Access Protocols: Collision-Free Protocol
+
+<br>Reservation
+<br>Polling
+<br>Token passing 
+
+
+<br><br>Network Layer:<br>
+<br>It controls the operation of the subnet. 
+<br>It routes packets from source to destination. 
+
+<br>The routing algorithm can be static or dynamic.
+
+
+<br><br>
+<br>IP is a protocol which governs the data format of packets sent over the Internet.
+<br>The main functions provided by IP are addressing and network routing.
+<br><br><br><br>
+<br>Version 
+<br>Type of service
+<br>Total length
+<br>Time to live
+<br>Source address, destination address
+<br><br>
+<br>Version 
+<br>Traffic class
+<br>Flow label 
+<br>Payload length 
+<br>Next header 
+<br>Hop limit
+<br><br><br>
+<br>Dual stack
+<br>Tunneling 
+<br>Header translation
+<br><br>Network routing selects a path over an internetwork to transmit one or more packets from the source to the destination.<br><br><br><br><br><br>Transport Control Protocol (TCP)<br>
+<br>Source port and destination port: to identify the local end points of the connections.
+<br>Sequence number and acknowledgement number
+<br>TCP header length: to tell how many 32-bit words are contained in the header
+<br>Six 1-bit flags
+<br>Window size: to tell how many bytes may be sent starting at the byte acknowledged.
+<br>Checksum
+<br>Options: to provide a way to extend the header
+<br><br>User Datagram Protocol (UDP)<br>
+<br>Connectionless protocol
+<br>Provide a way for applications to send encapsulated IP datagrams and send them without having to establish a connection.
+<br>8-byte header 
+<br>UDP Datagram Header
+<br><br><br>
+<br>API stands for application programming interface. 
+<br>Socket API is specifically designed for the network programming interface.
+<br><br>Socket is an abstraction through which an application may send and receive data. <br>
+<br>A socket is uniquely identified together by 
+
+<br>Internet address
+<br>End-to-end protocol (e.g. TCP or UDP)
+<br>Port number
+
+
+<br><br>
+<br>Stream socket is designed for TCP, which provides reliable byte stream service. 
+<br>Datagram socket is specifically designed for UDP, which provides best-effort datagram service.
+<br><br><br>
+<br>WSAStartup
+<br>socket 
+<br>connect 
+<br>(send, recv) (recusive) 
+<br>closesocket
+<br>WSACleanup
+<br><br>
+<br>WSAStartup
+<br>socket 
+<br>bind
+<br>listen
+<br>accept
+<br>(recv, send) (recursive)
+<br>closesocket (pair up with accept)
+<br>WASCleanup.
+<br><br><br>int socket_desc=socket(AF_INET,SOCK_STREAM,0); 
+if (socket_desc==-1) perror("Create socket");
+Copy<br><br>struct sockaddr_in address;
+/* type of socket created in socket() */ 
+address.sin_family = AF_INET; 
+address.sin_addr.s_addr = INADDR_ANY; /* 7000 is the port to use for connections */ 
+address.sin_port = htons(7000); /* bind the socket to the port specified above */ 
+bind(socket_desc,(struct sockaddr *)&amp;address,sizeof(address));
+Copy<br><br>listen(socket_desc,3);
+Copy<br><br>int addrlen; 
+struct sockaddr_in address;
+addrlen = sizeof(struct sockaddr_in);
+new_socket = accept(socket_desc, (struct sockaddr *)&amp;address, &amp;addrlen); if (new_socket&lt;0) perror("Accept connection");
+Copy<br><br>char *message="This is a message to send\n\r"; 
+send(socket_desc, message, strlen(message), 0);
+Copy<br><br>int bufsize=1024; /* a 1K buffer */
+char *buffer=malloc(bufsize);
+recv(socket_desc,buffer,bufsize,0);
+Copy<br><br>closesocket(msg_sock); 
+// close(socket_desc);
+WSACleanup();
+Copy<br><br>#include &lt;process.h&gt;
+for(int i = 0; i &lt; 100; i++){ 
+	_beginthread(accept_conn, 0, NULL ); 
+}//for loop 
+_endthread();
+// create a function to accept a connection 
+void accept_conn(void *dummy) { 
+// doing something here 
+}
+Copy<br><br><br>
+<br>Standard Ethernet 10 Mbps
+<br>Fast Ethernet  100 Mbps
+<br>Gigabit Ethernet  1 Gbps
+<br>Ten Gigabit  Ethernet 10 Gbps
+<br><br>Data transmission time <br><br>
+<br>  = Cable length （线缆长度）
+<br> = Propagation speed （传播速度）
+<br> = Bit rate （比特率，单位为比特/秒）
+<br> = Minimum data size （最小数据大小）
+<br><br><br>Hub is a repeater with some additional network management functionality (such as performance or accounting management)<br>Work on <a data-tooltip-position="top" aria-label="physical-layer" data-href="physical-layer" href="https://blog.allenygy.vip/computer-network/physical-layer.html" class="internal-link" target="_self" rel="noopener">Physical Layer</a> <br>
+<br>定义：Hub是一种网络设备，用于将多个以太网设备连接在一起，使它们能够作为一个网络段进行通信。
+<br>工作层次：物理层（OSI模型第1层）。
+<br>工作原理：Hub通过广播的方式将收到的数据包发送到所有连接的端口，无论数据包的目的地是哪个设备。
+<br>优点：价格低廉，易于安装和使用。
+<br>缺点：效率低，所有端口共享带宽，容易发生碰撞（Collision），不适合大规模网络。
+<br><br>Bridge: bridge operates on Ethernet frames and thus a layer-2 device. It does the following two functions:<br>
+<br>Filtering: determine whether a frame should be forwarded to some interface or should just be dropped.
+<br>Forwarding: determine the interfaces to which a frame should be directed.
+<br>Work on <a data-tooltip-position="top" aria-label="data-link-layer" data-href="data-link-layer" href="https://blog.allenygy.vip/computer-network/data-link-layer.html" class="internal-link" target="_self" rel="noopener">Data Link Layer</a> <br>
+<br>定义：Bridge是一种网络设备，用于连接两个或多个网络段，主要用于分割网络冲突域。
+<br>工作层次：数据链路层（OSI模型第2层）。
+<br>工作原理：Bridge根据MAC地址表转发数据帧，只将数据帧发送到目的地所在的网络段，减少不必要的流量。
+<br>优点：减少网络冲突，提升网络效率。
+<br>缺点：管理复杂度高，不支持多播和广播控制。
+<br><br>
+<br>Router: router is a store-and-forward packet switch that forward packets using network-layer addresses (layer-3).
+<br>Although a bridge is also a store- and-forward packet switch, it forwards packets using LAN addresses.
+<br>As a network administrator, how to choose between bridge and router?
+<br>Work on <a data-tooltip-position="top" aria-label="network-layer" data-href="network-layer" href="https://blog.allenygy.vip/computer-network/network-layer.html" class="internal-link" target="_self" rel="noopener">Network Layer</a> <br>
+<br>定义：Router是一种网络设备，用于连接不同的网络，能够根据IP地址进行数据包转发。
+<br>工作层次：网络层（OSI模型第3层）。
+<br>工作原理：Router根据路由表和IP地址选择最佳路径，将数据包转发到目的地网络。
+<br>优点：能够连接不同类型的网络，支持复杂的路由选择协议，提供广域网（WAN）连接。
+<br>缺点：成本较高，配置和管理相对复杂。
+<br><br>
+<br>
+Switch: switch is in essence a high-performance multi-interface bridge. The difference between a bridge and switch:
+
+<br>
+Bridges usually two or four interfaces, whereas switches have dozens of interfaces (e.g., 24 ports).
+
+<br>
+Switches are usually used to connect individual computers, and operate in a full-duplex mode.
+
+]]></description><link>https://blog.allenygy.vip/computer-network/dcn-review.html</link><guid isPermaLink="false">Computer-Network/dcn-review.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 24 Jun 2024 17:37:54 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="GraphNetwork" data-href="GraphNetwork" href="deeplearning/graphnetwork.html" class="internal-link" target="_self" rel="noopener">A Gentle Introduction to Graph Neural Networks</a> <sup data-footnote-id="fnref-1-075d53622bebf883" class="footnote-ref" id="fnref-1-075d53622bebf883"><a data-footref="[inline0" href="#fn-1-075d53622bebf883" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
+ <br><br>
+<br>
+<br><a rel="noopener" class="external-link" href="https://distill.pub/2021/gnn-intro/" target="_blank">https://distill.pub/2021/gnn-intro/</a><a href="https://blog.allenygy.vip/about:blank#fnref-1-075d53622bebf883" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>https://blog.allenygy.vip/deeplearning/graphnetwork.html</link><guid isPermaLink="false">DeepLearning/GraphNetwork.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 24 Jun 2024 17:24:10 GMT</pubDate></item><item><title><![CDATA[<a data-href="GradientDescent" href="deeplearning/gradientdescent.html" class="internal-link" target="_self" rel="noopener">GradientDescent</a>]]></title><description><![CDATA[ 
+ <br><br>
+<br>Gradient Descent 梯度下降算法 GD
+<br>Stochastic Gradient Descent 随机梯度下降 SGD
+<br>Momentum 动量
+<br>Adaptive learning 自适应学习 
+
+<br>AdaGrad 
+<br>RMSProp
+
+
+<br>Momentum &amp; Adaptive learning
+
+<br>Adam
+
+
+]]></description><link>https://blog.allenygy.vip/deeplearning/gradientdescent.html</link><guid isPermaLink="false">DeepLearning/GradientDescent.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 24 Jun 2024 17:23:55 GMT</pubDate></item><item><title><![CDATA[<a data-href="BackPropagation" href="deeplearning/backpropagation.html" class="internal-link" target="_self" rel="noopener">BackPropagation</a>]]></title><description><![CDATA[ 
+ <br><br>
+<br>Back Propagation 反向传播算法 BP
+<br>加速计算参数梯度值
+<br>Computation Graphs 计算图 
+]]></description><link>https://blog.allenygy.vip/deeplearning/backpropagation.html</link><guid isPermaLink="false">DeepLearning/BackPropagation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 24 Jun 2024 17:23:59 GMT</pubDate></item><item><title><![CDATA[<a data-href="ActivationFunction" href="deeplearning/activationfunction.html" class="internal-link" target="_self" rel="noopener">ActivationFunction</a>]]></title><description><![CDATA[ 
+ <br><br>
+<br>Activation Function 增加非线性表达
+<br>饱和函数
+
+<br> 
+<br>导致梯度消失
+
+<br>参数不会被更新
+
+
+<br>sigmoid
+<br>tanh
+
+
+<br>非饱和函数
+
+<br>Rectified Linear Unit 修正线性单元  RELU 
+
+<br>解决梯度消失问题
+
+
+<br>RELU  Leaky ReLU, Parametric ReLU, ...
+
+
+]]></description><link>https://blog.allenygy.vip/deeplearning/activationfunction.html</link><guid isPermaLink="false">DeepLearning/ActivationFunction.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 24 Jun 2024 17:24:03 GMT</pubDate></item><item><title><![CDATA[<a data-href="CET-6" href="english/cet-6.html" class="internal-link" target="_self" rel="noopener">CET-6</a>]]></title><description/></item><item><title><![CDATA[<a data-href="Friends" href="friends.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="IbLink" aria-label="IbLink" data-icon="IbLink" aria-hidden="true"><svg width="16px" height="16px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.3 9a1 1 0 0 0 0-2v2zm0 8a1 1 0 1 0 0-2v2zm5.4-2a1 1 0 1 0 0 2v-2zm0-8a1 1 0 1 0 0 2V7zM7 9h2.3V7H7v2zm2.3 6H7v2h2.3v-2zm7.7 0h-2.3v2H17v-2zm-2.3-6H17V7h-2.3v2zM2 12a5 5 0 0 0 5 5v-2a3 3 0 0 1-3-3H2zm18 0a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5h-2zm2 0a5 5 0 0 0-5-5v2a3 3 0 0 1 3 3h2zM4 12a3 3 0 0 1 3-3V7a5 5 0 0 0-5 5h2z" fill="currentColor"></path><path d="M15 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span>Friends</a>]]></title><description><![CDATA[ 
  <br><br>
 <br><a data-tooltip-position="top" aria-label="https://www.open17.vip/" rel="noopener" class="external-link" href="https://www.open17.vip/" target="_blank">Open17</a>
 <br><a data-tooltip-position="top" aria-label="https://www.harkerbest.cn/" rel="noopener" class="external-link" href="https://www.harkerbest.cn/" target="_blank">Harkerbest</a>
@@ -411,348 +1583,7 @@ Unique: no two machines on the Internet have the same IP address.
 <br>Each router maintains a table giving the best known distance to each destination and which line to use to get there.
 <br>These tables are updated by exchanging information with their neighbors.
 <br>An entry of routing tables contains two parts: the preferred outgoing line to be used for the destination, and an estimate of the distance to that destination.
-<br>]]></description><link>https://blog.allenygy.vip/computer-network/network-layer.html</link><guid isPermaLink="false">Computer-Network/network-layer.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:04:49 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/IPv4.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/IPv4.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="dcn-review" href="computer-network/dcn-review.html" class="internal-link" target="_self" rel="noopener">dcn-review</a>]]></title><description><![CDATA[ 
- <br><br><br><br>
-<br>Protocol 
-<br>Sender
-<br>Message
-<br>Medium 
-<br>Receiver
-<br><br>
-<br>Simplex
-<br>Half-duplex 
-<br>Full-duplex
-<br><br><br>
-<br>Assumption: noise free in the channel
-<br>Formula: 
-
-<br>B = Bit Rate (bit/sec)
-<br>F = Channel Bandwidth in Hertz 
-<br>M = Number of levels in a signal (two for binary)
-
-
-<br><br>
-<br>In reality, the signal may be corrupted by electrical noise. 
-<br>Formula: 
-
-<br>B = Actual Bit Rate (bit/sec) 
-<br>F = Channel Bandwidth in Hertz 
-<br>S = Signal Power in watts 
-<br>N = Noise Power in watts
-
-
-<br><br>
-<br>
-The signal-to-noise ratio is often given in decibels.
-
-<br>
-<br>
-
-
-<br>
-Assume that  = 36 and the channel bandwidth is 2 MHz.
-
-<br>
-<br>
-
-
-<br><br>
-<br>
-Physical Layer: 
-
-<br>It is concerned with transmitting raw bits over a communication channel. 
-<br>This layer deals with the issues including mechanical, electrical, timing interfaces, and the physical transmission medium.
-
-
-<br>
-Data Link Layer: 
-
-<br>It is to transform a raw transmission facility into a line that appears free of undetected transmission errors to the network layer.
-
-
-<br>
-Network Layer:
-
-<br>It controls the operation of the subnet. 
-<br>It routes packets from source to destination. 
-
-<br>The routing algorithm can be static or dynamic.
-
-
-
-
-<br>
-Transport Layer: 
-
-<br>It is to accept data from upper layers.
-<br>Split it up into smaller units if need be, pass these to the network layer, 
-<br>Ensure that the pieces all arrive correctly at the other hand.
-
-
-<br>
-Session Layer: 
-
-<br>It allows users on different machines to establish sessions between them.
-
-
-<br>
-Presentation Layer:
-
-<br>It is concerned with the syntax and semantics of the information transmitted.
-
-
-<br>
-Application Layer: 
-
-<br>It contains a variety of protocols that are commonly needed by users.
-
-<br>Such as HTTP, Email, etc.
-
-
-
-
-<br><br>Physical Layer: <br>
-<br>It is concerned with transmitting raw bits over a communication channel. 
-<br>This layer deals with the issues including mechanical, electrical, timing interfaces, and the physical transmission medium.
-<br><br>Guided media, which are those that provide a conduit from one device to another.<br>
-<br>Guide wired
-
-<br>Twisted-pair cable
-<br>Coaxial cable 
-<br>Fiber-optic
-
-
-<br><br>
-<br>Mode
-
-<br>Multimode
-
-<br>Step index
-<br>Graded index 
-
-
-<br>Single mode
-
-
-<br><br>Unguided media transport electromagnetic waves without using a physical conductor.<br>
-<br>Unguided wireless
-
-<br>Free space
-
-
-<br>Two common signal encoding methods:<br>
-<br>Frequency hopping spread spectrum (e.g., Bluetooth)
-<br>Direct sequence spread spectrum (e.g.,CDMA mobile network)
-<br>The Electromagnetic Spectrum<br>
-<br>Propagation Methods 
-
-<br>Ground Propagation 
-<br>Sky Propagation 
-<br>Line-of-sight Propagation 
-
-
-<br><br>Data Link Layer: <br>
-<br>It is to transform a raw transmission facility into a line that appears free of undetected transmission errors to the network layer.
-<br><br>
-<br>Character Count
-<br>Flag bytes with byte stuffing
-<br>Starting and ending flags with bit stuffing
-<br><br><br>
-<br>Parity Check
-<br>Two-dimensional Parity Check
-<br>Cyclic Redundancy Check (CRC)
-<br><br><br>
-<br>Hamming Distance
-<br>Hamming Code
-<br><br>
-<br>
-Error detection: 
-
-<br>To send additional information, so incorrect data can be detected and rejected.
-
-
-<br>
-Error correction: 
-
-<br>To send additional information, so incorrect data can be corrected and accepted.
-
-<br>Error correction is the additional ability to reconstruct the original data.
-
-
-
-
-<br><br>
-<br>Stop-and-Wait Protocols
-<br>Sliding Window Protocols
-<br><br>
-<br>Channelization: 
-
-<br>Frequency-Division Multiple Access (FDMA)
-<br>Time-Division Multiple Access (TDMA)
-<br>Code-Division Multiple Access (CDMA)
-
-
-<br>Random Access Protocols:
-
-<br>Aloha 
-<br>Carrier Sense Multiple Access
-<br>CSMA with Collision Detection 
-<br>CSMA with Collision Avoidance
-
-
-<br>Controlled-Access Protocols: Collision-Free Protocol
-
-<br>Reservation
-<br>Polling
-<br>Token passing 
-
-
-<br><br>Network Layer:<br>
-<br>It controls the operation of the subnet. 
-<br>It routes packets from source to destination. 
-
-<br>The routing algorithm can be static or dynamic.
-
-
-<br><br>
-<br>IP is a protocol which governs the data format of packets sent over the Internet.
-<br>The main functions provided by IP are addressing and network routing.
-<br><br><br><br>
-<br>Version 
-<br>Type of service
-<br>Total length
-<br>Time to live
-<br>Source address, destination address
-<br><br>
-<br>Version 
-<br>Traffic class
-<br>Flow label 
-<br>Payload length 
-<br>Next header 
-<br>Hop limit
-<br><br><br>
-<br>Dual stack
-<br>Tunneling 
-<br>Header translation
-<br><br>Network routing selects a path over an internetwork to transmit one or more packets from the source to the destination.<br><br><br><br><br><br>Transport Control Protocol (TCP)<br>
-<br>Source port and destination port: to identify the local end points of the connections.
-<br>Sequence number and acknowledgement number
-<br>TCP header length: to tell how many 32-bit words are contained in the header
-<br>Six 1-bit flags
-<br>Window size: to tell how many bytes may be sent starting at the byte acknowledged.
-<br>Checksum
-<br>Options: to provide a way to extend the header
-<br><br>User Datagram Protocol (UDP)<br>
-<br>Connectionless protocol
-<br>Provide a way for applications to send encapsulated IP datagrams and send them without having to establish a connection.
-<br>8-byte header 
-<br>UDP Datagram Header
-<br><br><br>
-<br>API stands for application programming interface. 
-<br>Socket API is specifically designed for the network programming interface.
-<br><br>Socket is an abstraction through which an application may send and receive data. <br>
-<br>A socket is uniquely identified together by 
-
-<br>Internet address
-<br>End-to-end protocol (e.g. TCP or UDP)
-<br>Port number
-
-
-<br><br>
-<br>Stream socket is designed for TCP, which provides reliable byte stream service. 
-<br>Datagram socket is specifically designed for UDP, which provides best-effort datagram service.
-<br><br><br>
-<br>WSAStartup
-<br>socket 
-<br>connect 
-<br>(send, recv) (recusive) 
-<br>closesocket
-<br>WSACleanup
-<br><br>
-<br>WSAStartup
-<br>socket 
-<br>bind
-<br>listen
-<br>accept
-<br>(recv, send) (recursive)
-<br>closesocket (pair up with accept)
-<br>WASCleanup.
-<br><br><br>int socket_desc=socket(AF_INET,SOCK_STREAM,0); 
-if (socket_desc==-1) perror("Create socket");
-Copy<br><br>struct sockaddr_in address;
-/* type of socket created in socket() */ 
-address.sin_family = AF_INET; 
-address.sin_addr.s_addr = INADDR_ANY; /* 7000 is the port to use for connections */ 
-address.sin_port = htons(7000); /* bind the socket to the port specified above */ 
-bind(socket_desc,(struct sockaddr *)&amp;address,sizeof(address));
-Copy<br><br>listen(socket_desc,3);
-Copy<br><br>int addrlen; 
-struct sockaddr_in address;
-addrlen = sizeof(struct sockaddr_in);
-new_socket = accept(socket_desc, (struct sockaddr *)&amp;address, &amp;addrlen); if (new_socket&lt;0) perror("Accept connection");
-Copy<br><br>char *message="This is a message to send\n\r"; 
-send(socket_desc, message, strlen(message), 0);
-Copy<br><br>int bufsize=1024; /* a 1K buffer */
-char *buffer=malloc(bufsize);
-recv(socket_desc,buffer,bufsize,0);
-Copy<br><br>closesocket(msg_sock); 
-// close(socket_desc);
-WSACleanup();
-Copy<br><br>#include &lt;process.h&gt;
-for(int i = 0; i &lt; 100; i++){ 
-	_beginthread(accept_conn, 0, NULL ); 
-}//for loop 
-_endthread();
-// create a function to accept a connection 
-void accept_conn(void *dummy) { 
-// doing something here 
-}
-Copy<br><br><br>
-<br>Standard Ethernet 10 Mbps
-<br>Fast Ethernet  100 Mbps
-<br>Gigabit Ethernet  1 Gbps
-<br>Ten Gigabit  Ethernet 10 Gbps
-<br><br>Data transmission time <br><br>
-<br>  = Cable length （线缆长度）
-<br> = Propagation speed （传播速度）
-<br> = Bit rate （比特率，单位为比特/秒）
-<br> = Minimum data size （最小数据大小）
-<br><br><br>Hub is a repeater with some additional network management functionality (such as performance or accounting management)<br>Work on <a data-tooltip-position="top" aria-label="physical-layer" data-href="physical-layer" href="https://blog.allenygy.vip/computer-network/physical-layer.html" class="internal-link" target="_self" rel="noopener">Physical Layer</a> <br>
-<br>定义：Hub是一种网络设备，用于将多个以太网设备连接在一起，使它们能够作为一个网络段进行通信。
-<br>工作层次：物理层（OSI模型第1层）。
-<br>工作原理：Hub通过广播的方式将收到的数据包发送到所有连接的端口，无论数据包的目的地是哪个设备。
-<br>优点：价格低廉，易于安装和使用。
-<br>缺点：效率低，所有端口共享带宽，容易发生碰撞（Collision），不适合大规模网络。
-<br><br>Bridge: bridge operates on Ethernet frames and thus a layer-2 device. It does the following two functions:<br>
-<br>Filtering: determine whether a frame should be forwarded to some interface or should just be dropped.
-<br>Forwarding: determine the interfaces to which a frame should be directed.
-<br>Work on <a data-tooltip-position="top" aria-label="data-link-layer" data-href="data-link-layer" href="https://blog.allenygy.vip/computer-network/data-link-layer.html" class="internal-link" target="_self" rel="noopener">Data Link Layer</a> <br>
-<br>定义：Bridge是一种网络设备，用于连接两个或多个网络段，主要用于分割网络冲突域。
-<br>工作层次：数据链路层（OSI模型第2层）。
-<br>工作原理：Bridge根据MAC地址表转发数据帧，只将数据帧发送到目的地所在的网络段，减少不必要的流量。
-<br>优点：减少网络冲突，提升网络效率。
-<br>缺点：管理复杂度高，不支持多播和广播控制。
-<br><br>
-<br>Router: router is a store-and-forward packet switch that forward packets using network-layer addresses (layer-3).
-<br>Although a bridge is also a store- and-forward packet switch, it forwards packets using LAN addresses.
-<br>As a network administrator, how to choose between bridge and router?
-<br>Work on <a data-tooltip-position="top" aria-label="network-layer" data-href="network-layer" href="https://blog.allenygy.vip/computer-network/network-layer.html" class="internal-link" target="_self" rel="noopener">Network Layer</a> <br>
-<br>定义：Router是一种网络设备，用于连接不同的网络，能够根据IP地址进行数据包转发。
-<br>工作层次：网络层（OSI模型第3层）。
-<br>工作原理：Router根据路由表和IP地址选择最佳路径，将数据包转发到目的地网络。
-<br>优点：能够连接不同类型的网络，支持复杂的路由选择协议，提供广域网（WAN）连接。
-<br>缺点：成本较高，配置和管理相对复杂。
-<br><br>
-<br>
-Switch: switch is in essence a high-performance multi-interface bridge. The difference between a bridge and switch:
-
-<br>
-Bridges usually two or four interfaces, whereas switches have dozens of interfaces (e.g., 24 ports).
-
-<br>
-Switches are usually used to connect individual computers, and operate in a full-duplex mode.
-
-]]></description><link>https://blog.allenygy.vip/computer-network/dcn-review.html</link><guid isPermaLink="false">Computer-Network/dcn-review.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:05:03 GMT</pubDate></item><item><title><![CDATA[<a data-href="data-link-layer" href="computer-network/data-link-layer.html" class="internal-link" target="_self" rel="noopener">data-link-layer</a>]]></title><description><![CDATA[ 
+<br>]]></description><link>https://blog.allenygy.vip/computer-network/network-layer.html</link><guid isPermaLink="false">Computer-Network/network-layer.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:04:49 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/IPv4.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/IPv4.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="data-link-layer" href="computer-network/data-link-layer.html" class="internal-link" target="_self" rel="noopener">data-link-layer</a>]]></title><description><![CDATA[ 
  <br><br>The data link layer combines the following 3 functions to achieve the delivery of data from one node to another. 
 
 <br>Framing 
@@ -7365,57 +8196,7 @@ Copy<br>
 
 
 ]]></description><link>https://blog.allenygy.vip/database-management/mysql/advanced-sql.html</link><guid isPermaLink="false">Database-Management/mysql/advanced-sql.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:04:35 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Database-Management/database-management-system" data-href="Database-Management/database-management-system" href="database-management/database-management-system.html" class="internal-link" target="_self" rel="noopener">Database Management</a>]]></title><description><![CDATA[ 
- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/database-management/database-management-system.html</link><guid isPermaLink="false">Database-Management/database-management-system.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:04:34 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="graphnetwork" data-href="graphnetwork" href="deeplearning/graphnetwork.html" class="internal-link" target="_self" rel="noopener">A Gentle Introduction to Graph Neural Networks</a> <sup data-footnote-id="fnref-1-b276bf7fd5740272" class="footnote-ref" id="fnref-1-b276bf7fd5740272"><a data-footref="[inline0" href="#fn-1-b276bf7fd5740272" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
- <br><br>
-<br>
-<br><a rel="noopener" class="external-link" href="https://distill.pub/2021/gnn-intro/" target="_blank">https://distill.pub/2021/gnn-intro/</a><a href="https://blog.allenygy.vip/about:blank#fnref-1-b276bf7fd5740272" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>https://blog.allenygy.vip/deeplearning/graphnetwork.html</link><guid isPermaLink="false">DeepLearning/graphnetwork.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:04:39 GMT</pubDate></item><item><title><![CDATA[<a data-href="gradientdescent" href="deeplearning/gradientdescent.html" class="internal-link" target="_self" rel="noopener">gradientdescent</a>]]></title><description><![CDATA[ 
- <br><br>
-<br>Gradient Descent 梯度下降算法 GD
-<br>Stochastic Gradient Descent 随机梯度下降 SGD
-<br>Momentum 动量
-<br>Adaptive learning 自适应学习 
-
-<br>AdaGrad 
-<br>RMSProp
-
-
-<br>Momentum &amp; Adaptive learning
-
-<br>Adam
-
-
-]]></description><link>https://blog.allenygy.vip/deeplearning/gradientdescent.html</link><guid isPermaLink="false">DeepLearning/gradientdescent.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:04:39 GMT</pubDate></item><item><title><![CDATA[<a data-href="backpropagation" href="deeplearning/backpropagation.html" class="internal-link" target="_self" rel="noopener">backpropagation</a>]]></title><description><![CDATA[ 
- <br><br>
-<br>Back Propagation 反向传播算法 BP
-<br>加速计算参数梯度值
-<br>Computation Graphs 计算图 
-]]></description><link>https://blog.allenygy.vip/deeplearning/backpropagation.html</link><guid isPermaLink="false">DeepLearning/backpropagation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:04:39 GMT</pubDate></item><item><title><![CDATA[<a data-href="activationfunction" href="deeplearning/activationfunction.html" class="internal-link" target="_self" rel="noopener">activationfunction</a>]]></title><description><![CDATA[ 
- <br><br>
-<br>Activation Function 增加非线性表达
-<br>饱和函数
-
-<br> 
-<br>导致梯度消失
-
-<br>参数不会被更新
-
-
-<br>sigmoid
-<br>tanh
-
-
-<br>非饱和函数
-
-<br>Rectified Linear Unit 修正线性单元  RELU 
-
-<br>解决梯度消失问题
-
-
-<br>RELU  Leaky ReLU, Parametric ReLU, ...
-
-
-]]></description><link>https://blog.allenygy.vip/deeplearning/activationfunction.html</link><guid isPermaLink="false">DeepLearning/activationfunction.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:04:39 GMT</pubDate></item><item><title><![CDATA[<a data-href="cet-6" href="english/cet-6.html" class="internal-link" target="_self" rel="noopener">cet-6</a>]]></title><description/></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Discretization" data-href="Discretization" href="algorithm/basicalgorithm/discretization.html" class="internal-link" target="_self" rel="noopener">离散化</a>]]></title><description><![CDATA[ 
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/database-management/database-management-system.html</link><guid isPermaLink="false">Database-Management/database-management-system.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:04:34 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Discretization" data-href="Discretization" href="algorithm/basicalgorithm/discretization.html" class="internal-link" target="_self" rel="noopener">离散化</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>排序
 <br>去重
@@ -8637,786 +9418,7 @@ void pre(int n) {
 		} 
 	} 
 }
-Copy<br><br><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/count-primes/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/count-primes/" target="_blank">204. 计数质数</a>]]></description><link>https://blog.allenygy.vip/algorithm/numbertheory/prime-sieve.html</link><guid isPermaLink="false">Algorithm/NumberTheory/Prime-Sieve.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 17:52:10 GMT</pubDate></item><item><title><![CDATA[<strong>Recursion-BinaryTree</strong>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:achievement" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#achievement</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
- <br><br><br>刚开始直接左右节点分别遍历，取最小值<br>
-没考虑根节点只有一个分支的情况<br>class Solution {
-public:
-	int minDepth(TreeNode* root) {
-		if(root==nullptr) return 0;
-		int left = minDepth(root-&gt;left);
-		int right = minDepth(root-&gt;right);	
-		return min(left,right)+1;	
-	}
-};
-Copy<br>每一层的情况递归时没有加一<br>class Solution {
-public:
-	int minDepth(TreeNode* root) {
-		if(root-&gt;left==nullptr&amp;&amp;root-&gt;right==nullptr) return 1;
-		else if(root-&gt;left==nullptr&amp;&amp;root-&gt;right!=nullptr) 					return minDepth(root-&gt;right);
-		else if(root-&gt;left!=nullptr&amp;&amp;root-&gt;right==nullptr) 					return minDepth(root-&gt;left);
-		else 
-			return 
-				min(minDepth(root-&gt;right),minDepth(root-&gt;left));
-	}
-};
-Copy<br>class Solution {
-public:
-	int minDepth(TreeNode* root) {
-		if(root==nullptr)return 0;
-		if(root-&gt;left==nullptr &amp;&amp; root-&gt;right==nullptr) 
-			return 1;
-		int m1=minDepth(root-&gt;right);
-		int m2=minDepth(root-&gt;left);
-		if(root-&gt;left==nullptr||root-&gt;right==nullptr) 
-			return m1+m2+1;
-		return min(m1,m2)+1;
-	}
-};
-Copy<br><br><a href="https://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
-叶子节点的定义<br>node-&gt;left==nullptr&amp;&amp;node-&gt;right==nullptr
-Copy<br>class Solution {
-public:
-	bool hasPathSum(TreeNode* root, int targetSum) {
-		if(root==nullptr)return false;
-		if(root-&gt;left==nullptr&amp;&amp;root-&gt;right==nullptr) 
-			return targetSum==root-&gt;val;
-		bool l = hasPathSum(root-&gt;left,targetSum-root-&gt;val);
-		bool r = hasPathSum(root-&gt;right,targetSum-root-&gt;val);
-		return l||r;
-	}
-};
-Copy<br><br><a href="https://blog.allenygy.vip?query=tag:achievement" class="tag" target="_blank" rel="noopener">#achievement</a><br>
-第一次独立写出，递归，回溯？哈哈哈哈<br>class Solution {
-vector&lt;vector&lt;int&gt;&gt; res;
-vector&lt;int&gt; v;
-public:
-	void dfs(TreeNode* root, int targetSum) { 
-		if(root==nullptr) return ;
-		if(root-&gt;left==nullptr&amp;&amp;root-&gt;right==nullptr)
-			if(targetSum==root-&gt;val){
-				v.push_back(root-&gt;val);
-				res.push_back(v);
-				v.pop_back();
-			}
-		if(root-&gt;left){
-			v.push_back(root-&gt;val);
-			dfs(root-&gt;left,targetSum-root-&gt;val);
-			v.pop_back();
-		}
-		if(root-&gt;right){
-			v.push_back(root-&gt;val);
-			dfs(root-&gt;right,targetSum-root-&gt;val);
-			v.pop_back();
-		}
-}
-
-	vector&lt;vector&lt;int&gt;&gt; pathSum(TreeNode* root, int targetSum) {
-    	if(root==nullptr)return {};
-    	dfs(root,targetSum);
-    	return res; 
-    }
-
-};
-Copy<br><br>class Solution {
-vector&lt;vector&lt;int&gt;&gt;res;
-vector&lt;int&gt;v;
-public:
-	void dfs(TreeNode* root){
-		if(root-&gt;left==nullptr&amp;&amp;root-&gt;right==nullptr){	
-			v.push_back(root-&gt;val);
-            res.push_back(v);
-            v.pop_back();
-		}
-        if(root-&gt;left){
-            v.push_back(root-&gt;val);
-            dfs(root-&gt;left);
-            v.pop_back();
-		}			
-		if(root-&gt;right){
-			v.push_back(root-&gt;val);
-            dfs(root-&gt;right);
-            v.pop_back();	
-		}	
-	}
-
-    int sumNumbers(TreeNode* root) {
-    	if(root==nullptr)return 0;
-	    dfs(root);
-	    int ans=0;
-        for(auto row:res){
-        	int tmp=0;
-        	for(int num:row){
-        		tmp=((tmp*10)+num);
-    		}	
-	    	ans+=tmp;
-    	}
-    	return ans;
-	}
-};
-Copy<br>官解简洁写法<br>class Solution { 
-public: 
-	int dfs(TreeNode* root, int prevSum) {
-		if (root == nullptr) { return 0; } 
-		int sum = prevSum * 10 + root-&gt;val; 
-		if (root-&gt;left == nullptr &amp;&amp; root-&gt;right == nullptr){ 				return sum;
-		} else { 
-			return dfs(root-&gt;left, sum) + dfs(root-&gt;right,sum);
-		} 
-	} 
-	int sumNumbers(TreeNode* root) {
-		 return dfs(root, 0); 
-	} 
-};
-Copy<br><br><a href="https://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
-把变量当作参数传递进函数，则不需要回溯变量<br>class Solution {
-public:
-	void construct_paths(TreeNode* root, string path, vector&lt;string&gt;&amp; paths) {
-    	if (root != nullptr) {
-    		path += to_string(root-&gt;val);
-    		if (root-&gt;left == nullptr &amp;&amp; root-&gt;right == nullptr) { // 当前节点是叶子节点
-    			paths.push_back(path); // 把路径加入到答案中
-    		} else {
-    			path += "-&gt;"; // 当前节点不是叶子节点，继续递归遍历
-    			construct_paths(root-&gt;left, path, paths);
-    			construct_paths(root-&gt;right, path, paths);
-    		}
-    	}
-    
-    }
-	vector&lt;string&gt; binaryTreePaths(TreeNode* root) {
-		vector&lt;string&gt; paths;
-		construct_paths(root, "", paths);
-		return paths;
-	}
-};
-Copy<br><br>class Solution {
-public:
-	int goodNodes(TreeNode* root,int mx=INT_MIN) {
-		if(root==nullptr) return 0;
-		int left = goodNodes(root-&gt;left,max(mx,root-&gt;val));
-		int right = goodNodes(root-&gt;right, max(mx,root-&gt;val));
-		return left+right+(mx&lt;=root-&gt;val);
-	}
-};
-Copy<br><br><a href="https://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
-先遍历右子树并根据深度决定是否记录该节点<br>class Solution {
-vector&lt;int&gt;ans;
-public:
-	void dfs(TreeNode* root,int depth){
-		if(depth==ans.size()) ans.push_back(root-&gt;val);
-		if(root-&gt;right) dfs(root-&gt;right,depth+1);
-		if(root-&gt;left) dfs(root-&gt;left,depth+1);
-	}
-	vector&lt;int&gt; rightSideView(TreeNode* root) {
-		if(root==nullptr)return {};
-		dfs(root,0);
-		return ans;
-	}
-};
-Copy<br><br><a href="https://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a><br>
-开始的时候犹豫当前节点判断，左子树判断和右子树判断<br>
-后来发现并列就好了<br>class Solution {
-public:
-	bool isSameTree(TreeNode* p, TreeNode* q) {
-		if(p==nullptr||q==nullptr)return (p==q);
-		return (p-&gt;val==q-&gt;val)&amp;&amp;(isSameTree(p-&gt;left,q-&gt;left))&amp;&amp;(isSameTree(p-&gt;right,q-&gt;right));
-	}
-};
-Copy<br><br>class Solution {
-public:
-	bool isSame(TreeNode* p,TreeNode *q){
-		if(p==nullptr||q==nullptr)return (p==q);
-		return (p-&gt;val==q-&gt;val)&amp;&amp;isSame(p-&gt;left,q-&gt;right)&amp;&amp;isSame(p-&gt;right,q-&gt;left);
-	}
-	bool isSymmetric(TreeNode* root) {
-		return isSame(root-&gt;left,root-&gt;right);
-	}
-};
-Copy<br><br>class Solution {
-public:
-	int get_height(TreeNode *node){
-		if(node==nullptr)return 0;
-		int leftH = get_height(node-&gt;left);
-		if(leftH==-1) return -1;
-		int rightH = get_height(node-&gt;right);
-		if(rightH==-1||abs(leftH-rightH)&gt;1)return -1;
-		return max(leftH,rightH)+1;
-	}
-	bool isBalanced(TreeNode* root) {
-		return get_height(root)!=-1;
-	}
-};
-Copy<br><br>class Solution {
-public:
-	TreeNode* invertTree(TreeNode* root) {
-		if(root==nullptr)return nullptr;
-		root-&gt;left=invertTree(root-&gt;left);
-		root-&gt;right=invertTree(root-&gt;right);
-		TreeNode*tmp=root-&gt;left;
-		root-&gt;left=root-&gt;right;
-		root-&gt;right=tmp;
-		return root;
-	}
-};
-Copy<br><br><a href="https://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a> <br>
-<br>我理解到，只能先删叶子节点<br>
-判断叶子节点
-<br>if (root-&gt;left == root-&gt;right) 
-Copy<br>
-<br>如果 limit &gt; 0 说明从根到叶子的路径和小于 limit，删除叶子，否则不删除
-<br>如果有儿子没被删除，就不删 root，否则删 root<br>
-判断是否存在子节点
-<br>if(root-&gt;left || root-&gt;right)
-Copy<br>class Solution {
-public:
-	TreeNode* sufficientSubset(TreeNode* root, int limit) {
-		limit -= root-&gt;val;
-		if (root-&gt;left == root-&gt;right) 
-			return limit &gt; 0 ? nullptr : root;
-		if(root-&gt;left) root-&gt;left = sufficientSubset(root-&gt;left, limit);
-		if(root-&gt;right) root-&gt;right = sufficientSubset(root-&gt;right, limit);
-		return root-&gt;left || root-&gt;right ? root : nullptr;
-	}
-};
-Copy<br><br>class Solution {
-	int ans = 0; // 用于记录最大长度的全局变量
-	void getlongestZigZag(TreeNode* root, bool is_left, int len) {
-    	if (root == nullptr) {
-    	    ans = max(ans, len); // 更新最大长度
-    	    return;
-        }   
-        // 递归地在左右子树中查找交错路径
-        if (is_left) {
-    	// 如果当前方向是左，那么我们要在右子树中继续找交错路径，并且长度加一
-    	    getlongestZigZag(root-&gt;right, false, len + 1); // 向右走
-    	    getlongestZigZag(root-&gt;left, true, 1); // 重新开始计数
-        } else {
-        // 如果当前方向是右，那么我们要在左子树中继续找交错路径，并且长度加一
-     		getlongestZigZag(root-&gt;left, true, len + 1); // 向左走
-         	getlongestZigZag(root-&gt;right, false, 1); // 重新开始计数
-    	}	
-	}
-public:
-	int longestZigZag(TreeNode* root) {
-		getlongestZigZag(root-&gt;left, true, 1); // 当我们从根节点向左移动时，路径长度变为1
-		getlongestZigZag(root-&gt;right, false, 1); // 同理，当我们从根节点向右移动时，路径长度变为1
-		return ans -1; // 因为长度是从1开始的，我们需要减去1
-	}
-};
-Copy]]></description><link>https://blog.allenygy.vip/algorithm/recursion/recursion-binarytree.html</link><guid isPermaLink="false">Algorithm/Recursion/recursion-binarytree.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 17:44:36 GMT</pubDate></item><item><title><![CDATA[<a data-href="recursion-2" href="algorithm/recursion/recursion-2.html" class="internal-link" target="_self" rel="noopener">recursion-2</a>]]></title><description><![CDATA[ 
- <br><br><br>程序调用自身的编程技巧称为递归 Recursion<br>
-<br>递归作为一种算法在程序设计语言中广泛应用。
-<br>一个过程或函数在其定义或说明中有直接或间接调用自身的一种方法，它通常把一个大型复杂的问题层层转化为一个与原问题相似的规模较小的问题来求解。
-<br>递归策略只需少量的程序就可描述出解题过程所需要的多次重复计算，大大地减少了程序的代码量。 
-<br>一般来说，递归需要有边界条件、递归前进段和递归返回段。
-<br>当边界条件不满足时，递归前进；当边界条件满足时，递归返回。
-<br>递归的能力在于用有限的语句来定义对象的无限集合。<br><br>递归：你打开面前这扇门，看到屋里面还有一扇门。你走过去，发现手中的钥匙还可以打开它，你推开门，发现里面还有一扇门，你继续打开它。若干次之后，你打开面前的门后，发现只有一间屋子，没有门了。然后，你开始原路返回，每走回一间屋子，你数一次，走到入口的时候，你可以回答出你到底用这你把钥匙打开了几扇门。<br>循环：你打开面前这扇门，看到屋里面还有一扇门。你走过去，发现手中的钥匙还可以打开它，你推开门，发现里面还有一扇门（若前面两扇门都一样，那么这扇门和前两扇门也一样；如果第二扇门比第一扇门小，那么这扇门也比第二扇门小，你继续打开这扇门，一直这样继续下去直到打开所有的门。但是，入口处的人始终等不到你回去告诉他答案。<br><br>1. 明确递归终止条件（递归出口）<br>我们知道，递归就是有去有回，既然这样，那么必然应该有一个明确的临界点，程序一旦到达了这个临界点，就不用继续往下递去而是开始实实在在的归来。换句话说，该临界点就是一种简单情境，可以防止无限递归。<br>2. 给出递归终止时的处理办法<br>我们刚刚说到，在递归的临界点存在一种简单情境，在这种简单情境下，我们应该直接给出问题的解决方案。一般地，在这种情境下，问题的解决方案是直观的、容易的。<br>3. 提取重复的逻辑，缩小问题规模<br>我们在阐述递归思想内涵时谈到，递归问题必须可以分解为若干个规模较小、与原问题形式相同的子问题，这些子问题可以用相同的解题思路来解决。从程序实现的角度而言，我们需要抽象出一个干净利落的重复的逻辑，以便使用相同的方式解决子问题。<br><br><br><br>柳州传说是歌仙刘三姐的传歌之地，最近举办了一次山歌大赛。 在这个项目中，参赛者每次完成一个段都会得到一个分数。总分数的计算方式基于一个特殊 的数学表达式 f(x,n)。表达式 f(x,n) 的定义如下：<br><img title="4e4fe6b7f35886e021f9a1fa1334df4.jpg" alt="4e4fe6b7f35886e021f9a1fa1334df4.jpg" src="https://img.lsyz.top/2022/08/09/25ad9e9d95723.jpg" referrerpolicy="no-referrer"><br>其中，x 表示参赛者的基本得分，n 表示参赛者完成的山歌段落数。<br>津津、菲菲和皮皮的任务是编写一个程序，并计算选手 A（x=4.2,n=10）、选手 B（x=2.5,n=15） 时 f(x,n)的值<br><br>输入x和n。<br><br>函数值，保留两位小数。<br><br>Input<br>4.2 10
-Copy<br>Output<br>3.68
-Copy<br><br>#include&lt;bits/stdc++.h&gt;
-#include&lt;iostream&gt;
-#define int long long
-#define endl '\n'
-using namespace std;
-
-double f(double x, int n){
-    if(n==1) return sqrt(1+x);
-    return sqrt(n+f(x,n-1));
-}
-
-signed main() {
-    double x; 
-    int n;
-    cin&gt;&gt;x&gt;&gt;n;
-    cout&lt;&lt;fixed&lt;&lt;setprecision(2)&lt;&lt;f(x,n)&lt;&lt;endl;
-    return 0;
-}
-Copy<br><br><br>用递归的方法求 Hermite 多项式的值。<br><br><br>给定的   和正整数 <br><br>对给定的   和正整数 ，求多项式的值。<br><br>Input<br>1 2
-Copy<br>Output<br>4.00
-Copy<br><br>#include&lt;bits/stdc++.h&gt;
-#include&lt;iostream&gt;
-#define int long long
-#define endl '\n'
-using namespace std;
-
-double h(double x, int n){
-    if(n==0) return 1;
-    if(n==1) return 2*x;
-    return 2*x*h(x,n-1)-2*(n-1)*h(x,n-2);
-}
-
-signed main() {
-    int n;
-    double x;
-    cin&gt;&gt;n&gt;&gt;x;
-    cout&lt;&lt;fixed&lt;&lt;setprecision(2)&lt;&lt;h(x,n)&lt;&lt;endl;
-    return 0;
-}
-Copy<br><br><br>有一头母牛，从第二年起，它每年年初生一头小母牛。每头小母牛从第四个年头开始，每年年初也生一头小母牛。请编程实现在第n年的时候，共有多少头母牛？<br><br>输入数据由多个测试实例组成，每个测试实例占一行，包括一个整数n(0&lt;n&lt;55)，n的含义如题目中描述。<br>n=0表示输入数据的结束，不做处理。<br><br>对于每个测试实例，输出在第n年的时候母牛的数量。每个输出占一行。<br><br>Input<br>2
-4
-5
-0
-Copy<br>Output<br>2
-4
-6
-Copy<br><br>第n年的牛的数量为：n-1年的数量和今年新出生的牛的数量<br>
-今年新出生的牛的数量为 n-3 年前牛的数量<br><br>#include &lt;bits/stdc++.h&gt;
-#include &lt;iostream&gt;
-#define int long long
-#define endl '\n'
-using namespace std;
-
-const int MOD = 1000;
-const int MAXN = 1000000;
-
-int val[MAXN] = {0};
-
-void solve(int x)
-{
-
-    if(val[x]!=0){
-        cout &lt;&lt; val[x] &lt;&lt; endl;
-        return;
-    }
-    val[1]=1;
-    val[2]=2;
-    val[3]=3;
-    for(int i=4;i&lt;=x;i++){
-        val[i]=(val[i-1]+val[i-3]);
-    }
-    cout &lt;&lt; val[x] &lt;&lt; endl;
-}
-
-signed main()
-{
-    int x;
-    cin &gt;&gt; x;
-    while (x)
-    {
-        solve(x);
-        cin &gt;&gt; x;
-    }
-    return 0;
-}
-Copy]]></description><link>https://blog.allenygy.vip/algorithm/recursion/recursion-2.html</link><guid isPermaLink="false">Algorithm/Recursion/recursion-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 17:44:36 GMT</pubDate><enclosure url="https://img.lsyz.top/2022/08/09/25ad9e9d95723.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://img.lsyz.top/2022/08/09/25ad9e9d95723.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="recursion-1" href="algorithm/recursion/recursion-1.html" class="internal-link" target="_self" rel="noopener">recursion-1</a>]]></title><description><![CDATA[ 
- <br><br><br>递推是按照一定的规律来求序列中的每一项,一般是通过计算前面的一些项来得出序列中的指定项。<br>
-其思想是把一个复杂的庞大的计算过程转化为对简单过程的多次重复,该算法利用了计算机运算速度快和不知疲倦的机器特点。<br><br>
-<br>将问题用数组形式表达
-<br>求解递推关系,列出递推表达式
-<br>寻找边界值
-<br><br>
-<br>首先知道小规模的数列
-<br>求解递推关系,列出递推表达式
-<br><br>🐰的故事
-已知一对兔子，每个月可以生一对小兔子，小兔子出生后的第二个月会变成成年兔子，会继续生小兔子。<br>
-第一个月，我们有1对小兔子。<br>
-第二个月，我们有1对成年兔子的兔子。<br>
-第三个月，我们有1对成年兔子的兔子，有1对小兔子，共2对。<br>
-第四个月，我们有2对成年兔子的兔子，有1对小兔子，共3对。<br>
-第五个月，我们有3对成年兔子的兔子，有2对小兔子，共5对。<br>
-现在我们希望知道第n个月，一共有多少只兔子。
-<br>题解
-假设：第个月的大兔为幼兔为,总数.
-
-已知：一对成年兔每个月可以生一对小兔子
-
-已知：下个月的成年兔是由上个月的成年兔和幼兔组成的
-
-
-<br>
-
-<br><br>#include &lt;bits/stdc++.h&gt;
-#include &lt;iostream&gt;
-#define int long long
-#define endl '\n'
-using namespace std;
-
-const int MOD = 1000;
-const int MAXN = 1000000;
-
-int val[MAXN] = {0};
-val[1]=1, val[2]=1;
-
-signed main() {
-	int n;
-	cin &gt;&gt; n;
-	if(val[n]!=0){
-		cout &lt;&lt; val[n] &lt;&lt; endl;
-		return 0;
-	}
-	for(int i=3;i&lt;=x;i++){
-		val[i]=(val[i-1]+val[i-2])%MOD;
-	}
-	cout &lt;&lt; val[x] &lt;&lt; endl;
-	return 0;
-}
-Copy<br><br>母牛的故事
-
-有一头母牛，从第二年起，它每年年初生一头小母牛。每头小母牛从第四个年头开始，每年年初也生一头小母牛。请编程实现在第n年的时候，共有多少头母牛？
-
-输入数据由多个测试实例组成，每个测试实例占一行，包括一个整数n(0&lt;n&lt;55)，n的含义如题目中描述。
-n=0表示输入数据的结束，不做处理。
-
-对于每个测试实例，输出在第n年的时候母牛的数量。每个输出占一行。
-
-Input
-2
-4
-5
-0
-Copy
-Output
-2
-4
-6
-Copy
-<br> 题解
-第n年的牛的数量为：n-1年的数量和今年新出生的牛的数量<br>
-今年新出生的牛的数量为 n-3 年前牛的数量
-<br><br>#include &lt;bits/stdc++.h&gt;
-#include &lt;iostream&gt;
-#define int long long
-#define endl '\n'
-using namespace std;
-
-const int MOD = 1000;
-const int MAXN = 1000000;
-
-int val[MAXN] = {0};
-
-void solve(int x)
-{
-
-    if(val[x]!=0){
-        cout &lt;&lt; val[x] &lt;&lt; endl;
-        return;
-    }
-    val[1]=1;
-    val[2]=2;
-    val[3]=3;
-    for(int i=4;i&lt;=x;i++){
-        val[i]=(val[i-1]+val[i-3]);
-    }
-    cout &lt;&lt; val[x] &lt;&lt; endl;
-}
-
-signed main()
-{
-    int x;
-    cin &gt;&gt; x;
-    while (x)
-    {
-        solve(x);
-        cin &gt;&gt; x;
-    }
-    return 0;
-}
-Copy<br><br><br><br>楼梯有阶台阶,上楼时可以一步上阶,也可以一步上阶,也可以一步上阶<br>
-编程计算共有多少种不同的走法。<br><br>输入的每一行包括一组测试数据，即为台阶数n。最后一行为0，表示测试结束。<br><br>每一行输出对应一行输入的结果，即为走法的数目。<br><br>Input<br>1
-2
-3
-4
-0
-Copy<br>Output<br>1
-2
-4
-7
-Copy<br><br>Success
-
-表示走到第级台阶的走法
-<br>Why？
-要上第级楼梯 <br>
-可以从级楼梯一次走一步上去 <br>
-可以从级楼梯一次性走两步上去 <br>
-可以从级楼梯一次性走三步上去 
-<br><br>#include&lt;bits/stdc++.h&gt;
-#include&lt;iostream&gt;
-#define int long long
-#define endl '\n'
-using namespace std;
-
-int a[101]={0};
-
-signed main() {
-    a[1]=1;
-    a[2]=2;
-    a[3]=4;
-    int n;
-    cin &gt;&gt; n;
-    while(n){
-        for(int i=4;i&lt;=n;i++){
-            a[i]=a[i-1]+a[i-2]+a[i-3];
-        }
-        cout &lt;&lt; a[n] &lt;&lt; endl;
-        cin &gt;&gt; n;
-    }
-    return 0;
-}
-Copy<br><br><br>在2×n的一个长方形方格中,用一个1×2的骨牌铺满方格,输入n ,输出铺放方案的总数. 例如n=3时,为2× 3方格，骨牌的铺放方案有三种,如下图：<br><br>输入数据由多行组成，每行包含一个整数n,表示该测试实例的长方形方格的规格是2×n (0&lt; n&lt;=50)。<br><br>&nbsp;对于每个测试实例，请输出铺放方案的总数，每个实例的输出占一行。<br><br>Input<br>1
-3
-2
-Copy<br>Output<br>1
-3
-2
-Copy<br><br>为了使方格铺满，每次要么铺一个2×1的骨牌，要么铺两个1×2的骨牌，要么铺两个2×1的骨牌首先，分析边界值：2×1方格只有1种铺法，2×2方格只有2种铺法.如图：<br><img alt="骨牌问题" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Share/202406101734284.png" referrerpolicy="no-referrer"><br>
-]表示铺满的长方形方格，一共有多少方案数
-
-<br> 铺到最后要么剩或者
-<br> 表示前 已铺满，剩最后只能竖着放
-<br>为铺满  网格的方案数<br>
-(如果前面的2*(n-2)的网格已经铺满, 那么最后的只能是横着放两块,否则会与重复).
-
-<br><br>#include&lt;bits/stdc++.h&gt;
-#include&lt;iostream&gt;
-#define int long long
-#define endl '\n'
-using namespace std;
-int a[51]={0};
-signed main() {
-    a[1]=1, a[2]=2;
-    int n=0;
-    while(cin&gt;&gt;n){
-        for(int i=3;i&lt;=n;i++){
-            a[i]=a[i-1]+a[i-2];
-        }
-        cout &lt;&lt; a[n] &lt;&lt; endl;
-    }
-    return 0;
-}
-
-Copy<br><br><br>桂林山水甲天下，漓江更是美不胜收。 漓江上竹筏整齐排列，形成了美丽的风景线，津津、菲菲和皮皮决定乘坐竹筏游览漓江景色。 已知竹筏有2种规格：一种是单人竹筏，长度为1，宽度为1；另一种是双人竹筏，长度为 2，宽度为2。假设漓江江面的面积是n*3，请问多少种不同的竹筏安排方案？<br><br>一行一个整数n,0&lt;n&lt;1000.<br><br>一行一个整数，为铺设方案的数量模12345的结果。<br><br>Input<br>2
-Copy<br>Output<br>3
-Copy<br><br>
-  表示 江面宽度为时铺设方案的数
-<br>Why  ?
-当宽度是二的时候，有两种排列方法
-<br><br>#include&lt;bits/stdc++.h&gt;
-#include&lt;iostream&gt;
-#define int long long
-#define endl '\n';
-using namespace std;
-
-const int MOD=12345;
-
-int f(int n){
-    if(n==1) return 1;
-    if(n==2) return 3;
-    return f(n-1)+2*f(n-2);
-}
-
-signed main(){
-    int n;
-    cin&gt;&gt;n;
-    int d[n+1];
-    d[0]=0,d[1]=1,d[2]=3;
-    for(int i=3;i&lt;=n;i++){
-        d[i]=(d[i-1]+2*d[i-2])%MOD;
-    }
-    cout&lt;&lt;d[n]&lt;&lt;endl;
-    return 0;
-}
-Copy<br><br><br>桂林为了欢迎广大游客，决定在桂林的各大街道上布置迎宾彩带。 目前有白色、蓝色和红色的彩带，并满足以下两个条件：<br>
-<br>相同颜色的彩带不能放在相邻的位置
-<br>一条蓝色的彩带必须放在一条白色的彩带和一条红色的彩带中间。 津津、菲菲和皮皮决定写一个程序，了解放置彩带的方案数有多少种。
-<br><br>一行一个整数n，表示橱窗的宽度（或者说彩带数目）。<br><br>一行一个整数，表示装饰橱窗的彩带放置方案数。<br><br>Input<br>3
-Copy<br>Output<br>4
-Copy<br><br>
-  表示当橱窗宽度是  时，彩带放置方案数
-<br>Why ?
-
-<br>假设一共有  条彩带，当前  条彩带排好后，则最后一条彩带
-
-<br>一定只能是红色或者只能是白色
-
-
-<br>对于第  条彩带存在两种可能
-<br>蓝色或者不是蓝色<br>
-- 当为蓝色时第  条彩带也必然是确定的 <br>
-- 不为蓝色时第  条彩带不能确定 <br>
-
-
-<br><br>#include&lt;bits/stdc++.h&gt;
-#include&lt;iostream&gt;
-#define int long long
-#define endl '\n';
-using namespace std;
-signed main(){
-    int n;
-    cin&gt;&gt;n;
-    int a[n+1]={0};
-    a[1]=2,a[2]=2;
-    for(int i=3;i&lt;=n;i++){
-        a[i]=a[i-2]+a[i-1];
-    }
-    cout&lt;&lt;a[n]&lt;&lt;endl;
-    return 0;
-}
-
-Copy<br><br><br>桂林的景点很多，为了让更多的游客可以顺利游玩。在不影响游览品质的前提下，旅游公司 决定通过改变路线的方法分流游客。 方案是：每个旅行团都跳过其中的一个景点（但是不能跳过号和号景点），使得它从号景点开始，到达号景点所经过的总距离最小。 假设每一个景点i都有一个坐标，从的景点到 的景点  的距离为：  <br><br>第1行1个正整数n，表示城市个数。<br>接下来的n行，每行2个数x_i和y_i,表示城市i的坐标。<br><br>一行一个数，使得它从1号城市开始，跳过某一个城市，到达n号城市所经过的最小总距离。<br><br>Input<br>4
-0 0
-8 3
-11 -1
-10 0
-Copy<br>Output<br>14
-Copy<br><br>
-<br>先计算出总距离S (每个景点之间的曼哈顿距离总和)
-<br>逐个跳过景点维护最小距离
-<br>Success
-
-
-<br> 初始化为 
-<br>  表示跳过景点 的总距离
-<br> 表示不跳过任何一个景点的总距离
-<br> 表示从景点 到 景点 的距离
-<br> 表示 两景点之间的曼哈顿距离
-
-<br><br>假设 A, B两点坐标分别为 ，<br>
-从到的曼哈顿距离为:   <br>int manhattandist(int x1, int y1, int x2, int y2){
-    return abs(x1 - x2) + abs(y1 - y2);
-}
-Copy<br><br>#include &lt;bits/stdc++.h&gt;
-#include &lt;iostream&gt;
-#define int long long
-#define endl '\n'
-
-using namespace std;
-
-int n, m, b, s, a[100005], x[100005], y[100005];
-
-int manhattandist(int x1, int y1, int x2, int y2){
-    return abs(x1 - x2) + abs(y1 - y2);
-}
-
-
-int dist(int i, int j){
-    return manhattandist(x[i], y[i], x[j], y[j]);
-}
-
-
-signed main(){
-    cin &gt;&gt; n;
-    for (int i = 1; i &lt;= n; i++){
-        cin &gt;&gt; x[i] &gt;&gt; y[i];
-        if (i &gt; 1)
-            a[i] = dist(i, i - 1); 
-        s += a[i];                
-    }
-    m = s;
-    for (int i = 2; i &lt;= n - 1; i++){
-        b = s - a[i] - a[i + 1] + dist(i - 1, i + 1);
-        m = min(m, b); 
-    }
-    cout &lt;&lt; m &lt;&lt; endl;
-    return 0;
-}
-
-Copy<br><br><br>猴子吃桃子问题：猴子第一天摘下若干个桃子，当即吃了一半还不过瘾，又多吃了一个；第二天又将剩下的桃子吃掉一半又多吃了一个；以后每天早上都吃了前一天剩下的一半零一个。到了第十天想再吃时，见只剩下一个桃子，求第一天共摘了多少个桃子？<br><br>无<br><br>一个整数，第一天共有多少个桃子<br><br>#include &lt;iostream&gt;
-using namespace std;
-
-int peaches_2(int day) {
-    if (day == 10) {
-        return 1; 
-    } else {
-        return (peaches_2(day + 1) + 1) * 2;
-    }
-}
-
-int peaches_1(int day) {
-    int total_peaches = 1;
-    for (int i = 10; i &gt; 1 ; --i) {
-        total_peaches = (total_peaches + 1) * 2;
-    }
-    return total_peaches;
-}
-
-int main() {
-    int day = 1; 
-    int total_peaches = peaches_1(day);
-    cout &lt;&lt; total_peaches &lt;&lt; endl;
-    return 0;
-}
-Copy<br><br><br>有1×n（n&lt;=50）的一个长方形，用1×1、1×2和1×3的骨牌铺满方格，请问有多少种铺法？ 例如当n=3时为1×3的方格。此时用1×1、1×2和1×3的骨牌铺满方格，共有四种铺法。如下图：<img title="a0c46b6c3a466ecaa86db38ca5ca6072.png" alt="a0c46b6c3a466ecaa86db38ca5ca6072.png" src="https://img.lsyz.top/2022/11/11/24b69da8710e7.png" referrerpolicy="no-referrer"><br><br>一个整数n（n&lt;=50）<br><br>骨牌的铺法<br><br>Input<br>3
-Copy<br>OutPut<br>4
-Copy<br><br>#include&lt;bits/stdc++.h&gt;
-#include&lt;iostream&gt;
-
-#define int long long
-#define endl '\n'
-
-using namespace std;
-
-signed main(){
-    int n=0;
-    cin&gt;&gt;n;
-    int dp[52];   
-    dp[0]=0;
-    dp[1]=1;
-    dp[2]=2;
-    dp[3]=4;
-    for(int i=4;i&lt;=n;i++){
-        dp[i]=dp[i-1]+dp[i-2]+dp[i-3];
-    }
-    cout&lt;&lt;dp[n]&lt;&lt;endl;
-    return 0;
-}
-Copy<br><br><br>Pell数列的定义是这样的，，。&nbsp;给出一个正整数k，要求Pell数列的第项模上是多少。<br><br>第1行是测试数据的组数n，后面跟着n行输入。每组测试数据占1行，包括一个正整数k (1 ≤ k &lt; 1000000)。<br><br>n行，每行输出对应一个输入。输出应是一个非负整数。<br><br>Input<br>2
-1
-8
-Copy<br>Output<br>1
-408
-Copy<br><br>#include&lt;bits/stdc++.h&gt;
-#include&lt;iostream&gt;
-#define int long long
-#define endl '\n'
-using namespace std;
-
-int a[1000001]={0};
-
-void solve(int n){
-
-    a[1]=1;
-    a[2]=2;
-    for(int i=3;i&lt;=n;i++){
-        a[i]=(2*a[i-1]+a[i-2])%32767;
-    }
-}
-
-signed main() {
-    int T=0;
-    cin&gt;&gt;T;
-    while(T--){
-        int n=0;
-        cin&gt;&gt;n;
-        if(a[n]!=0)
-            cout&lt;&lt;a[n]&lt;&lt;endl;
-        else{
-            solve(n);
-            cout&lt;&lt;a[n]&lt;&lt;endl;
-        }
-    }
-    return 0;
-}
-Copy<br><br><br>请编程求出所有的n位数中，有多少个数中有偶数个数字3.结果模12345。(1&lt;=n&lt;=1000)<br><br>一行一个正整数n，0&lt;n&lt;1000.<br><br>一行一个正整数，表示n位数中有多少个数有偶数个3.<br><br>input<br>2
-Copy<br>Output<br>73
-Copy<br><br>#include&lt;bits/stdc++.h&gt;
-#include&lt;iostream&gt;
-#define int long long
-#define endl '\n'
-using namespace std;
-
-signed main(){
-  int f[1001][2],n,i,x=9;
-  cin&gt;&gt;n;
-  f[1][1]=1;f[1][0]=9;                        
-  for(i=2;i&lt;=n;i++)    {   
-     if(i==n)  // i是最高位
-      x-=1;
-      f[i][0]=(f[i-1][0]*x+f[i-1][1])%12345;
-      f[i][1]=(f[i-1][1]*x+f[i-1][0])%12345;   
-   }
-   cout&lt;&lt;f[n][0]; 
-   return 0;
-}
-Copy]]></description><link>https://blog.allenygy.vip/algorithm/recursion/recursion-1.html</link><guid isPermaLink="false">Algorithm/Recursion/recursion-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 17:44:36 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Share/202406101734284.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Share/202406101734284.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Z-Function" href="algorithm/string/z-function.html" class="internal-link" target="_self" rel="noopener">Z-Function</a>]]></title><description><![CDATA[ 
+Copy<br><br><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/count-primes/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/count-primes/" target="_blank">204. 计数质数</a>]]></description><link>https://blog.allenygy.vip/algorithm/numbertheory/prime-sieve.html</link><guid isPermaLink="false">Algorithm/NumberTheory/Prime-Sieve.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 17:52:10 GMT</pubDate></item><item><title><![CDATA[<a data-href="Z-Function" href="algorithm/string/z-function.html" class="internal-link" target="_self" rel="noopener">Z-Function</a>]]></title><description><![CDATA[ 
  <br>]]></description><link>https://blog.allenygy.vip/algorithm/string/z-function.html</link><guid isPermaLink="false">Algorithm/String/Z-Function.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 17:52:59 GMT</pubDate></item><item><title><![CDATA[<a data-href="Tire-Tree" href="algorithm/string/tire-tree.html" class="internal-link" target="_self" rel="noopener">Tire-Tree</a>]]></title><description><![CDATA[ 
  <br>]]></description><link>https://blog.allenygy.vip/algorithm/string/tire-tree.html</link><guid isPermaLink="false">Algorithm/String/Tire-Tree.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 17:52:50 GMT</pubDate></item><item><title><![CDATA[<a data-href="String-Overview" href="algorithm/string/string-overview.html" class="internal-link" target="_self" rel="noopener">String-Overview</a>]]></title><description><![CDATA[ 
  <br><br>
