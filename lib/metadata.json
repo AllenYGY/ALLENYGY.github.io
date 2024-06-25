@@ -1,6 +1,6 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1719300639524,
+  "lastExport": 1719300971965,
   "pluginVersion": "1.8.03",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd primary-accent-purple secondary-accent-green",
   "useCustomHeadContent": false,
@@ -24,8 +24,8 @@
     "Algorithm/DSA/Assignment/dsa-assignment-1.md",
     "Algorithm/DSA/Assignment/dsa-assignment-2.md",
     "Algorithm/DSA/Assignment/written-assignment-am.md",
-    "Algorithm/DSA/BinaryTree.md",
     "Algorithm/DSA/Fenwick.md",
+    "Algorithm/DSA/BinaryTree.md",
     "Algorithm/DSA/B+Tree.md",
     "Algorithm/DSA/AVL.md",
     "Algorithm/Graph/Graph-Overview.md",
@@ -81,13 +81,13 @@
     "Computer-Organization/Lecture/Microarchitecture.md",
     "Computer-Organization/Lecture/ISA.md",
     "Computer-Organization/Lecture/From-Transistors-to-Gates.md",
-    "Computer-Organization/Lecture/From-Machine-Language-to-Assembly-Language.md",
     "Computer-Organization/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits.md",
-    "Computer-Organization/Lecture/Circuit-Design.md",
-    "Computer-Organization/Lecture/What-is-a-Computer.md",
-    "Computer-Organization/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.md",
     "Computer-Organization/Lecture/Finite-State-Machine.md",
     "Computer-Organization/Lecture/Boolean-Algebra-from-Bits-to-Logic.md",
+    "Computer-Organization/Lecture/What-is-a-Computer.md",
+    "Computer-Organization/Lecture/From-Machine-Language-to-Assembly-Language.md",
+    "Computer-Organization/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.md",
+    "Computer-Organization/Lecture/Circuit-Design.md",
     "Computer-Organization/Lecture/Bits-Data-Representation-and-Manipulation.md",
     "Computer-Organization/Computer-Organization.md",
     "Contest/Lanqiao/Train-2.md",
@@ -142,8 +142,8 @@
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-2.md",
     "Math/Discrete-Structure/lecture/tree.md",
     "Math/Discrete-Structure/lecture/sets-and-n-tuple.md",
-    "Math/Discrete-Structure/lecture/relation.md",
     "Math/Discrete-Structure/lecture/representing-graph-and-connectivity.md",
+    "Math/Discrete-Structure/lecture/relation.md",
     "Math/Discrete-Structure/lecture/propositional-logic.md",
     "Math/Discrete-Structure/lecture/propositional-equivalence.md",
     "Math/Discrete-Structure/lecture/logic-circuits.md",
@@ -156,14 +156,14 @@
     "Math/Linear-Algebra/Product.md",
     "Math/Linear-Algebra/Orthogonality.md",
     "Math/Linear-Algebra/Matrix-Operation.md",
-    "Math/Linear-Algebra/Eigenvalues-and-Eigenvectors.md",
     "Math/Linear-Algebra/Linear-Transformations.md",
+    "Math/Linear-Algebra/Eigenvalues-and-Eigenvectors.md",
     "Math/Probability-Statistics/Probability-Theory.md",
     "Math/Probability-Statistics/Poisson-Distribution.md",
     "Math/Probability-Statistics/Hypothesis-Testing-Single-Population.md",
     "Math/Probability-Statistics/Hypothesis-Testing-Two-Population.md",
-    "Math/Probability-Statistics/Confidence-Interval.md",
     "Math/Probability-Statistics/Chi-Square-Tests.md",
+    "Math/Probability-Statistics/Confidence-Interval.md",
     "Math/Math.md",
     "OperatingSystem/Virtual-Memory.md",
     "OperatingSystem/Threads.md",
@@ -248,6 +248,7 @@
     "Friends.md",
     "Home.md",
     "Slides.md",
+    "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
     "lib/fonts/2d5198822ab091ce4305.woff2",
@@ -263,30 +264,50 @@
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
     "lib/media/874d8b8e340f75575caa.svg",
     "lib/media/3d6c1bdc4d87cde4de67.svg",
-    "lib/fonts/MathJax_Zero.woff",
-    "lib/fonts/MathJax_Main-Regular.woff",
-    "lib/fonts/MathJax_Main-Bold.woff",
-    "lib/fonts/MathJax_Math-Italic.woff",
-    "lib/fonts/MathJax_Main-Italic.woff",
-    "lib/fonts/MathJax_Math-BoldItalic.woff",
-    "lib/fonts/MathJax_Size1-Regular.woff",
-    "lib/fonts/MathJax_Size2-Regular.woff",
-    "lib/fonts/MathJax_Size3-Regular.woff",
-    "lib/fonts/MathJax_Size4-Regular.woff",
-    "lib/fonts/MathJax_AMS-Regular.woff",
-    "lib/fonts/MathJax_Calligraphic-Regular.woff",
-    "lib/fonts/MathJax_Calligraphic-Bold.woff",
-    "lib/fonts/MathJax_Fraktur-Regular.woff",
-    "lib/fonts/MathJax_Fraktur-Bold.woff",
-    "lib/fonts/MathJax_SansSerif-Regular.woff",
-    "lib/fonts/MathJax_SansSerif-Bold.woff",
-    "lib/fonts/MathJax_SansSerif-Italic.woff",
-    "lib/fonts/MathJax_Script-Regular.woff",
-    "lib/fonts/MathJax_Typewriter-Regular.woff",
-    "lib/fonts/MathJax_Vector-Regular.woff",
-    "lib/fonts/MathJax_Vector-Bold.woff"
+    "lib/fonts/mathjax_zero.woff",
+    "lib/fonts/mathjax_main-regular.woff",
+    "lib/fonts/mathjax_main-bold.woff",
+    "lib/fonts/mathjax_math-italic.woff",
+    "lib/fonts/mathjax_main-italic.woff",
+    "lib/fonts/mathjax_math-bolditalic.woff",
+    "lib/fonts/mathjax_size1-regular.woff",
+    "lib/fonts/mathjax_size2-regular.woff",
+    "lib/fonts/mathjax_size3-regular.woff",
+    "lib/fonts/mathjax_size4-regular.woff",
+    "lib/fonts/mathjax_ams-regular.woff",
+    "lib/fonts/mathjax_calligraphic-regular.woff",
+    "lib/fonts/mathjax_calligraphic-bold.woff",
+    "lib/fonts/mathjax_fraktur-regular.woff",
+    "lib/fonts/mathjax_fraktur-bold.woff",
+    "lib/fonts/mathjax_sansserif-regular.woff",
+    "lib/fonts/mathjax_sansserif-bold.woff",
+    "lib/fonts/mathjax_sansserif-italic.woff",
+    "lib/fonts/mathjax_script-regular.woff",
+    "lib/fonts/mathjax_typewriter-regular.woff",
+    "lib/fonts/mathjax_vector-regular.woff",
+    "lib/fonts/mathjax_vector-bold.woff",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/scripts/easy-notice.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/scripts/img-zoom.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/other-plugins.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/supported-plugins.css",
+    "lib/styles/main-styles.css",
+    "lib/styles/snippets.css"
   ],
   "mainDependencies": [
+    "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
     "lib/fonts/2d5198822ab091ce4305.woff2",
@@ -302,1952 +323,1971 @@
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
     "lib/media/874d8b8e340f75575caa.svg",
     "lib/media/3d6c1bdc4d87cde4de67.svg",
-    "lib/fonts/MathJax_Zero.woff",
-    "lib/fonts/MathJax_Main-Regular.woff",
-    "lib/fonts/MathJax_Main-Bold.woff",
-    "lib/fonts/MathJax_Math-Italic.woff",
-    "lib/fonts/MathJax_Main-Italic.woff",
-    "lib/fonts/MathJax_Math-BoldItalic.woff",
-    "lib/fonts/MathJax_Size1-Regular.woff",
-    "lib/fonts/MathJax_Size2-Regular.woff",
-    "lib/fonts/MathJax_Size3-Regular.woff",
-    "lib/fonts/MathJax_Size4-Regular.woff",
-    "lib/fonts/MathJax_AMS-Regular.woff",
-    "lib/fonts/MathJax_Calligraphic-Regular.woff",
-    "lib/fonts/MathJax_Calligraphic-Bold.woff",
-    "lib/fonts/MathJax_Fraktur-Regular.woff",
-    "lib/fonts/MathJax_Fraktur-Bold.woff",
-    "lib/fonts/MathJax_SansSerif-Regular.woff",
-    "lib/fonts/MathJax_SansSerif-Bold.woff",
-    "lib/fonts/MathJax_SansSerif-Italic.woff",
-    "lib/fonts/MathJax_Script-Regular.woff",
-    "lib/fonts/MathJax_Typewriter-Regular.woff",
-    "lib/fonts/MathJax_Vector-Regular.woff",
-    "lib/fonts/MathJax_Vector-Bold.woff"
+    "lib/fonts/mathjax_zero.woff",
+    "lib/fonts/mathjax_main-regular.woff",
+    "lib/fonts/mathjax_main-bold.woff",
+    "lib/fonts/mathjax_math-italic.woff",
+    "lib/fonts/mathjax_main-italic.woff",
+    "lib/fonts/mathjax_math-bolditalic.woff",
+    "lib/fonts/mathjax_size1-regular.woff",
+    "lib/fonts/mathjax_size2-regular.woff",
+    "lib/fonts/mathjax_size3-regular.woff",
+    "lib/fonts/mathjax_size4-regular.woff",
+    "lib/fonts/mathjax_ams-regular.woff",
+    "lib/fonts/mathjax_calligraphic-regular.woff",
+    "lib/fonts/mathjax_calligraphic-bold.woff",
+    "lib/fonts/mathjax_fraktur-regular.woff",
+    "lib/fonts/mathjax_fraktur-bold.woff",
+    "lib/fonts/mathjax_sansserif-regular.woff",
+    "lib/fonts/mathjax_sansserif-bold.woff",
+    "lib/fonts/mathjax_sansserif-italic.woff",
+    "lib/fonts/mathjax_script-regular.woff",
+    "lib/fonts/mathjax_typewriter-regular.woff",
+    "lib/fonts/mathjax_vector-regular.woff",
+    "lib/fonts/mathjax_vector-bold.woff",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/scripts/easy-notice.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/scripts/img-zoom.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/other-plugins.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/supported-plugins.css",
+    "lib/styles/main-styles.css",
+    "lib/styles/snippets.css"
   ],
   "fileInfo": {
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 289255,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 20564,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 151800,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 316784,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1719300371020,
-      "sourceSize": 6572,
+      "modifiedTime": 1719300971965,
+      "sourceSize": 6246,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2101009,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
     },
     "Algorithm/BasicAlgorithm/SparceTable.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 199,
-      "exportedPath": "Algorithm/BasicAlgorithm/SparceTable.html",
+      "exportedPath": "algorithm/basicalgorithm/sparcetable.html",
       "dependencies": []
     },
     "Algorithm/BasicAlgorithm/SlidingWindow.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 904,
-      "exportedPath": "Algorithm/BasicAlgorithm/SlidingWindow.html",
+      "exportedPath": "algorithm/basicalgorithm/slidingwindow.html",
       "dependencies": []
     },
     "Algorithm/BasicAlgorithm/Discretization.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 595,
-      "exportedPath": "Algorithm/BasicAlgorithm/Discretization.html",
+      "exportedPath": "algorithm/basicalgorithm/discretization.html",
       "dependencies": []
     },
     "Algorithm/BasicAlgorithm/Basic-Algorithm-overview.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 335,
-      "exportedPath": "Algorithm/BasicAlgorithm/Basic-Algorithm-overview.html",
+      "exportedPath": "algorithm/basicalgorithm/basic-algorithm-overview.html",
       "dependencies": []
     },
     "Algorithm/DAA/Assignment/DAA-Assignment-2.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 6886,
-      "exportedPath": "Algorithm/DAA/Assignment/DAA-Assignment-2.html",
+      "exportedPath": "algorithm/daa/assignment/daa-assignment-2.html",
       "dependencies": []
     },
     "Algorithm/DAA/Assignment/DAA-Programming-Assignment.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3528,
-      "exportedPath": "Algorithm/DAA/Assignment/DAA-Programming-Assignment.html",
+      "exportedPath": "algorithm/daa/assignment/daa-programming-assignment.html",
       "dependencies": []
     },
     "Algorithm/DAA/Assignment/DAA-Assignment-0.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3140,
-      "exportedPath": "Algorithm/DAA/Assignment/DAA-Assignment-0.html",
+      "exportedPath": "algorithm/daa/assignment/daa-assignment-0.html",
       "dependencies": []
     },
     "Algorithm/DAA/Assignment/DAA-Assignment-1.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 9576,
-      "exportedPath": "Algorithm/DAA/Assignment/DAA-Assignment-1.html",
+      "exportedPath": "algorithm/daa/assignment/daa-assignment-1.html",
       "dependencies": []
     },
     "Algorithm/DAA/Tutorial/Tutorial-1.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1351,
-      "exportedPath": "Algorithm/DAA/Tutorial/Tutorial-1.html",
+      "exportedPath": "algorithm/daa/tutorial/tutorial-1.html",
       "dependencies": []
     },
     "Algorithm/DSA/Assignment/dsa-assignment-1.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 5871,
-      "exportedPath": "Algorithm/DSA/Assignment/dsa-assignment-1.html",
+      "exportedPath": "algorithm/dsa/assignment/dsa-assignment-1.html",
       "dependencies": []
     },
     "Algorithm/DSA/Assignment/dsa-assignment-2.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4070,
-      "exportedPath": "Algorithm/DSA/Assignment/dsa-assignment-2.html",
+      "exportedPath": "algorithm/dsa/assignment/dsa-assignment-2.html",
       "dependencies": []
     },
     "Algorithm/DSA/Assignment/written-assignment-am.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4919,
-      "exportedPath": "Algorithm/DSA/Assignment/written-assignment-am.html",
+      "exportedPath": "algorithm/dsa/assignment/written-assignment-am.html",
       "dependencies": []
     },
     "Algorithm/DSA/Fenwick.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1946,
-      "exportedPath": "Algorithm/DSA/Fenwick.html",
+      "exportedPath": "algorithm/dsa/fenwick.html",
       "dependencies": []
     },
     "Algorithm/DSA/BinaryTree.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1389,
-      "exportedPath": "Algorithm/DSA/BinaryTree.html",
+      "exportedPath": "algorithm/dsa/binarytree.html",
       "dependencies": []
     },
     "Algorithm/DSA/B+Tree.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4132,
-      "exportedPath": "Algorithm/DSA/B+Tree.html",
+      "exportedPath": "algorithm/dsa/b+tree.html",
       "dependencies": []
     },
     "Algorithm/DSA/AVL.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 807,
-      "exportedPath": "Algorithm/DSA/AVL.html",
+      "exportedPath": "algorithm/dsa/avl.html",
       "dependencies": []
     },
     "Algorithm/Graph/Graph-Overview.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 837,
-      "exportedPath": "Algorithm/Graph/Graph-Overview.html",
+      "exportedPath": "algorithm/graph/graph-overview.html",
       "dependencies": []
     },
     "Algorithm/NumberTheory/Prime-Sieve.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1473,
-      "exportedPath": "Algorithm/NumberTheory/Prime-Sieve.html",
+      "exportedPath": "algorithm/numbertheory/prime-sieve.html",
       "dependencies": []
     },
     "Algorithm/String/Z-Function.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 237,
-      "exportedPath": "Algorithm/String/Z-Function.html",
+      "exportedPath": "algorithm/string/z-function.html",
       "dependencies": []
     },
     "Algorithm/String/Tire-Tree.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 223,
-      "exportedPath": "Algorithm/String/Tire-Tree.html",
+      "exportedPath": "algorithm/string/tire-tree.html",
       "dependencies": []
     },
     "Algorithm/String/String-Overview.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 366,
-      "exportedPath": "Algorithm/String/String-Overview.html",
+      "exportedPath": "algorithm/string/string-overview.html",
       "dependencies": []
     },
     "Algorithm/String/Manacher-Algorithm.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 6593,
-      "exportedPath": "Algorithm/String/Manacher-Algorithm.html",
+      "exportedPath": "algorithm/string/manacher-algorithm.html",
       "dependencies": []
     },
     "Algorithm/String/KMP.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 216,
-      "exportedPath": "Algorithm/String/KMP.html",
+      "exportedPath": "algorithm/string/kmp.html",
       "dependencies": []
     },
     "Algorithm/String/Aho-Corasick.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 240,
-      "exportedPath": "Algorithm/String/Aho-Corasick.html",
+      "exportedPath": "algorithm/string/aho-corasick.html",
       "dependencies": []
     },
     "Algorithm/DAA/Algorithm/Union-Find.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 6716,
-      "exportedPath": "Algorithm/DAA/Algorithm/Union-Find.html",
+      "exportedPath": "algorithm/daa/algorithm/union-find.html",
       "dependencies": []
     },
     "Algorithm/DAA/Algorithm/Sort.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 7742,
-      "exportedPath": "Algorithm/DAA/Algorithm/Sort.html",
+      "exportedPath": "algorithm/daa/algorithm/sort.html",
       "dependencies": []
     },
     "Algorithm/DAA/Algorithm/Graph-algorithm.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 6675,
-      "exportedPath": "Algorithm/DAA/Algorithm/Graph-algorithm.html",
+      "exportedPath": "algorithm/daa/algorithm/graph-algorithm.html",
       "dependencies": []
     },
     "Algorithm/DAA/Algorithm/Enumeration.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 624,
-      "exportedPath": "Algorithm/DAA/Algorithm/Enumeration.html",
+      "exportedPath": "algorithm/daa/algorithm/enumeration.html",
       "dependencies": []
     },
     "Algorithm/DAA/Algorithm/Enumeration-subset.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1972,
-      "exportedPath": "Algorithm/DAA/Algorithm/Enumeration-subset.html",
+      "exportedPath": "algorithm/daa/algorithm/enumeration-subset.html",
       "dependencies": []
     },
     "Algorithm/DAA/Algorithm/Divide-and-Conquer.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 6684,
-      "exportedPath": "Algorithm/DAA/Algorithm/Divide-and-Conquer.html",
+      "exportedPath": "algorithm/daa/algorithm/divide-and-conquer.html",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As1/Co-Assignment-1.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 5541,
-      "exportedPath": "Computer-Organization/Assignment/As1/Co-Assignment-1.html",
+      "exportedPath": "computer-organization/assignment/as1/co-assignment-1.html",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As1/logic.drawio": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 7598,
-      "exportedPath": "Computer-Organization/Assignment/As1/logic.drawio",
+      "exportedPath": "computer-organization/assignment/as1/logic.drawio",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As2/k-map.png": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 32697,
-      "exportedPath": "Computer-Organization/Assignment/As2/k-map.png",
+      "exportedPath": "computer-organization/assignment/as2/k-map.png",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As2/logic.png": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 222000,
-      "exportedPath": "Computer-Organization/Assignment/As2/logic.png",
+      "exportedPath": "computer-organization/assignment/as2/logic.png",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As2/statediagram.png": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 32777,
-      "exportedPath": "Computer-Organization/Assignment/As2/statediagram.png",
+      "exportedPath": "computer-organization/assignment/as2/statediagram.png",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As2/logic.drawio": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 107698,
-      "exportedPath": "Computer-Organization/Assignment/As2/logic.drawio",
+      "exportedPath": "computer-organization/assignment/as2/logic.drawio",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As2/statediagram-2.png": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 14392,
-      "exportedPath": "Computer-Organization/Assignment/As2/statediagram-2.png",
+      "exportedPath": "computer-organization/assignment/as2/statediagram-2.png",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As2/StateDiagram-2.drawio": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2555,
-      "exportedPath": "Computer-Organization/Assignment/As2/StateDiagram-2.drawio",
+      "exportedPath": "computer-organization/assignment/as2/statediagram-2.drawio",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As2/StateDiagram-1.drawio": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4299,
-      "exportedPath": "Computer-Organization/Assignment/As2/StateDiagram-1.drawio",
+      "exportedPath": "computer-organization/assignment/as2/statediagram-1.drawio",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As2/K-MAP.drawio": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 10994,
-      "exportedPath": "Computer-Organization/Assignment/As2/K-MAP.drawio",
+      "exportedPath": "computer-organization/assignment/as2/k-map.drawio",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As2/co-as2.png": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 30795,
-      "exportedPath": "Computer-Organization/Assignment/As2/co-as2.png",
+      "exportedPath": "computer-organization/assignment/as2/co-as2.png",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As2/Co-Assignment-2.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 7592,
-      "exportedPath": "Computer-Organization/Assignment/As2/Co-Assignment-2.html",
+      "exportedPath": "computer-organization/assignment/as2/co-assignment-2.html",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As3/CO-Assignment-3.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4595,
-      "exportedPath": "Computer-Organization/Assignment/As3/CO-Assignment-3.html",
+      "exportedPath": "computer-organization/assignment/as3/co-assignment-3.html",
       "dependencies": []
     },
     "Computer-Organization/Assignment/As4/Co-Assignment-4.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2394,
-      "exportedPath": "Computer-Organization/Assignment/As4/Co-Assignment-4.html",
+      "exportedPath": "computer-organization/assignment/as4/co-assignment-4.html",
       "dependencies": []
     },
     "Computer-Organization/draw/d-sr-latch.png": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 26626,
-      "exportedPath": "Computer-Organization/draw/d-sr-latch.png",
+      "exportedPath": "computer-organization/draw/d-sr-latch.png",
       "dependencies": []
     },
     "Computer-Organization/draw/d-sr-latch.drawio": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 9342,
-      "exportedPath": "Computer-Organization/draw/d-sr-latch.drawio",
+      "exportedPath": "computer-organization/draw/d-sr-latch.drawio",
       "dependencies": []
     },
     "Computer-Organization/Lab/Lab8.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 483,
-      "exportedPath": "Computer-Organization/Lab/Lab8.html",
+      "exportedPath": "computer-organization/lab/lab8.html",
       "dependencies": []
     },
     "Computer-Organization/Lab/Lab7.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1220,
-      "exportedPath": "Computer-Organization/Lab/Lab7.html",
+      "exportedPath": "computer-organization/lab/lab7.html",
       "dependencies": []
     },
     "Computer-Organization/Lab/Lab6.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1067,
-      "exportedPath": "Computer-Organization/Lab/Lab6.html",
+      "exportedPath": "computer-organization/lab/lab6.html",
       "dependencies": []
     },
     "Computer-Organization/Lab/Lab5.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1094,
-      "exportedPath": "Computer-Organization/Lab/Lab5.html",
+      "exportedPath": "computer-organization/lab/lab5.html",
       "dependencies": []
     },
     "Computer-Organization/Lab/Lab3.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1006,
-      "exportedPath": "Computer-Organization/Lab/Lab3.html",
+      "exportedPath": "computer-organization/lab/lab3.html",
       "dependencies": []
     },
     "Computer-Organization/Lab/Lab2.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 866,
-      "exportedPath": "Computer-Organization/Lab/Lab2.html",
+      "exportedPath": "computer-organization/lab/lab2.html",
       "dependencies": []
     },
     "Computer-Organization/Computer-Organization.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 927,
-      "exportedPath": "Computer-Organization/Computer-Organization.html",
+      "exportedPath": "computer-organization/computer-organization.html",
       "dependencies": []
     },
     "English/四六级议论文模板-roy大表哥.pdf": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 590770,
-      "exportedPath": "English/四六级议论文模板-roy大表哥.pdf",
+      "exportedPath": "english/四六级议论文模板-roy大表哥.pdf",
       "dependencies": []
     },
     "Program/python/regularexpression.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 198,
-      "exportedPath": "Program/python/regularexpression.html",
+      "exportedPath": "program/python/regularexpression.html",
       "dependencies": []
     },
     "Program/python/pythonbasic.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2940,
-      "exportedPath": "Program/python/pythonbasic.html",
+      "exportedPath": "program/python/pythonbasic.html",
       "dependencies": []
     },
     "Program/python/python-exceptions.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 12905,
-      "exportedPath": "Program/python/python-exceptions.html",
+      "exportedPath": "program/python/python-exceptions.html",
       "dependencies": []
     },
     "Program/python/python-environment-management.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 415,
-      "exportedPath": "Program/python/python-environment-management.html",
+      "exportedPath": "program/python/python-environment-management.html",
       "dependencies": []
     },
     "Program/python/pandas.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 176,
-      "exportedPath": "Program/python/pandas.html",
+      "exportedPath": "program/python/pandas.html",
       "dependencies": []
     },
     "Program/python/numpy.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 25422,
-      "exportedPath": "Program/python/numpy.html",
+      "exportedPath": "program/python/numpy.html",
       "dependencies": []
     },
     "Program/python/matplotlib.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 184,
-      "exportedPath": "Program/python/matplotlib.html",
+      "exportedPath": "program/python/matplotlib.html",
       "dependencies": []
     },
     "Program/python/datetime.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 11921,
-      "exportedPath": "Program/python/datetime.html",
+      "exportedPath": "program/python/datetime.html",
       "dependencies": []
     },
     "Program/python/beautifulsoup.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 190,
-      "exportedPath": "Program/python/beautifulsoup.html",
+      "exportedPath": "program/python/beautifulsoup.html",
       "dependencies": []
     },
     "Research/ploidy/ploidy.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3209,
-      "exportedPath": "Research/ploidy/ploidy.html",
+      "exportedPath": "research/ploidy/ploidy.html",
       "dependencies": []
     },
     "Research/ploidy/ploidy-review.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1466,
-      "exportedPath": "Research/ploidy/ploidy-review.html",
+      "exportedPath": "research/ploidy/ploidy-review.html",
       "dependencies": []
     },
     "Research/calculatese.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 238,
-      "exportedPath": "Research/calculatese.html",
+      "exportedPath": "research/calculatese.html",
       "dependencies": []
     },
     "Research/bert.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 174,
-      "exportedPath": "Research/bert.html",
+      "exportedPath": "research/bert.html",
       "dependencies": []
     },
     "Research/alphafold2.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 7135,
-      "exportedPath": "Research/alphafold2.html",
+      "exportedPath": "research/alphafold2.html",
       "dependencies": []
     },
     "Archive.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 11680,
-      "exportedPath": "Archive.html",
+      "exportedPath": "archive.html",
       "dependencies": []
     },
     "Class.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 14825,
-      "exportedPath": "Class.html",
+      "exportedPath": "class.html",
       "dependencies": []
     },
     "Home.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2485,
-      "exportedPath": "Home.html",
+      "exportedPath": "home.html",
       "dependencies": []
     },
     "Fix-Income/珠海市经济产业分析.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4540,
-      "exportedPath": "Fix-Income/珠海市经济产业分析.html",
+      "exportedPath": "fix-income/珠海市经济产业分析.html",
       "dependencies": []
     },
     "Contest/Lanqiao/Train-2.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4856,
-      "exportedPath": "Contest/Lanqiao/Train-2.html",
+      "exportedPath": "contest/lanqiao/train-2.html",
       "dependencies": []
     },
     "Contest/Lanqiao/Train-1.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2630,
-      "exportedPath": "Contest/Lanqiao/Train-1.html",
+      "exportedPath": "contest/lanqiao/train-1.html",
       "dependencies": []
     },
     "Contest/Leetcode/Weekly-Contest-402.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4142,
-      "exportedPath": "Contest/Leetcode/Weekly-Contest-402.html",
+      "exportedPath": "contest/leetcode/weekly-contest-402.html",
       "dependencies": []
     },
     "Contest/Leetcode/Weekly-Contest-381.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2035,
-      "exportedPath": "Contest/Leetcode/Weekly-Contest-381.html",
+      "exportedPath": "contest/leetcode/weekly-contest-381.html",
       "dependencies": []
     },
     "Contest/Leetcode/Biweekly-Contest-123.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2674,
-      "exportedPath": "Contest/Leetcode/Biweekly-Contest-123.html",
+      "exportedPath": "contest/leetcode/biweekly-contest-123.html",
       "dependencies": []
     },
     "Contest/Leetcode/Biweekly-Contest-122.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2672,
-      "exportedPath": "Contest/Leetcode/Biweekly-Contest-122.html",
+      "exportedPath": "contest/leetcode/biweekly-contest-122.html",
       "dependencies": []
     },
     "Contest/Contest-Overview.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 263,
-      "exportedPath": "Contest/Contest-Overview.html",
+      "exportedPath": "contest/contest-overview.html",
       "dependencies": []
     },
     "Data-Analysis/HODA/Hans-On-Data-Analysis-For-Everyone.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 12618,
-      "exportedPath": "Data-Analysis/HODA/Hans-On-Data-Analysis-For-Everyone.html",
+      "exportedPath": "data-analysis/hoda/hans-on-data-analysis-for-everyone.html",
       "dependencies": []
     },
     "Data-Analysis/Data-Analysis.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 247,
-      "exportedPath": "Data-Analysis/Data-Analysis.html",
+      "exportedPath": "data-analysis/data-analysis.html",
       "dependencies": []
     },
     "Computer-Network/USTC-L1.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2284,
-      "exportedPath": "Computer-Network/USTC-L1.html",
+      "exportedPath": "computer-network/ustc-l1.html",
       "dependencies": []
     },
     "Fix-Income/Fixed-Income-Overview.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1802,
-      "exportedPath": "Fix-Income/Fixed-Income-Overview.html",
+      "exportedPath": "fix-income/fixed-income-overview.html",
       "dependencies": []
     },
     "Math/Math.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1222,
-      "exportedPath": "Math/Math.html",
+      "exportedPath": "math/math.html",
       "dependencies": []
     },
     "Friends.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 214,
-      "exportedPath": "Friends.html",
+      "exportedPath": "friends.html",
       "dependencies": []
     },
     "Algorithm/Recursion/递归.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 6319,
-      "exportedPath": "Algorithm/Recursion/递归.html",
+      "exportedPath": "algorithm/recursion/递归.html",
       "dependencies": []
     },
     "Algorithm/Recursion/递归-二叉树.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 9253,
-      "exportedPath": "Algorithm/Recursion/递归-二叉树.html",
+      "exportedPath": "algorithm/recursion/递归-二叉树.html",
       "dependencies": []
     },
     "Algorithm/Recursion/递推.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 15810,
-      "exportedPath": "Algorithm/Recursion/递推.html",
+      "exportedPath": "algorithm/recursion/递推.html",
       "dependencies": []
     },
     "DeepLearning/GraphNetwork.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 330,
-      "exportedPath": "DeepLearning/GraphNetwork.html",
+      "exportedPath": "deeplearning/graphnetwork.html",
       "dependencies": []
     },
     "DeepLearning/GradientDescent.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 451,
-      "exportedPath": "DeepLearning/GradientDescent.html",
+      "exportedPath": "deeplearning/gradientdescent.html",
       "dependencies": []
     },
     "DeepLearning/BackPropagation.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 339,
-      "exportedPath": "DeepLearning/BackPropagation.html",
+      "exportedPath": "deeplearning/backpropagation.html",
       "dependencies": []
     },
     "DeepLearning/ActivationFunction.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 570,
-      "exportedPath": "DeepLearning/ActivationFunction.html",
+      "exportedPath": "deeplearning/activationfunction.html",
       "dependencies": []
     },
     "English/CET-6.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 791,
-      "exportedPath": "English/CET-6.html",
+      "exportedPath": "english/cet-6.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/assignment/discrete-mathematics-tutorial.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1904,
-      "exportedPath": "Math/Discrete-Structure/assignment/discrete-mathematics-tutorial.html",
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-tutorial.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-8.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3626,
-      "exportedPath": "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-8.html",
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-8.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-7.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 6938,
-      "exportedPath": "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-7.html",
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-7.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-3.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4311,
-      "exportedPath": "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-3.html",
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-3.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-6.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2182,
-      "exportedPath": "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-6.html",
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-6.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-5.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2813,
-      "exportedPath": "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-5.html",
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-5.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-2.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3567,
-      "exportedPath": "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-2.html",
+      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-2.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/lecture/tree.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 7340,
-      "exportedPath": "Math/Discrete-Structure/lecture/tree.html",
+      "exportedPath": "math/discrete-structure/lecture/tree.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/lecture/sets-and-n-tuple.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2791,
-      "exportedPath": "Math/Discrete-Structure/lecture/sets-and-n-tuple.html",
+      "exportedPath": "math/discrete-structure/lecture/sets-and-n-tuple.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/lecture/representing-graph-and-connectivity.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4606,
-      "exportedPath": "Math/Discrete-Structure/lecture/representing-graph-and-connectivity.html",
+      "exportedPath": "math/discrete-structure/lecture/representing-graph-and-connectivity.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/lecture/relation.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2816,
-      "exportedPath": "Math/Discrete-Structure/lecture/relation.html",
+      "exportedPath": "math/discrete-structure/lecture/relation.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/lecture/propositional-logic.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2299,
-      "exportedPath": "Math/Discrete-Structure/lecture/propositional-logic.html",
+      "exportedPath": "math/discrete-structure/lecture/propositional-logic.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/lecture/propositional-equivalence.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 806,
-      "exportedPath": "Math/Discrete-Structure/lecture/propositional-equivalence.html",
+      "exportedPath": "math/discrete-structure/lecture/propositional-equivalence.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/lecture/logic-circuits.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2743,
-      "exportedPath": "Math/Discrete-Structure/lecture/logic-circuits.html",
+      "exportedPath": "math/discrete-structure/lecture/logic-circuits.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/lecture/graph-theory.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 5044,
-      "exportedPath": "Math/Discrete-Structure/lecture/graph-theory.html",
+      "exportedPath": "math/discrete-structure/lecture/graph-theory.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/lecture/functions-sequence-and-summations.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3119,
-      "exportedPath": "Math/Discrete-Structure/lecture/functions-sequence-and-summations.html",
+      "exportedPath": "math/discrete-structure/lecture/functions-sequence-and-summations.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/lecture/counting-principles.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 565,
-      "exportedPath": "Math/Discrete-Structure/lecture/counting-principles.html",
+      "exportedPath": "math/discrete-structure/lecture/counting-principles.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/lecture/boolean-expressions.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2591,
-      "exportedPath": "Math/Discrete-Structure/lecture/boolean-expressions.html",
+      "exportedPath": "math/discrete-structure/lecture/boolean-expressions.html",
       "dependencies": []
     },
     "Math/Linear-Algebra/Vector-Space.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 13394,
-      "exportedPath": "Math/Linear-Algebra/Vector-Space.html",
+      "exportedPath": "math/linear-algebra/vector-space.html",
       "dependencies": []
     },
     "Math/Linear-Algebra/Judgment.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1821,
-      "exportedPath": "Math/Linear-Algebra/Judgment.html",
+      "exportedPath": "math/linear-algebra/judgment.html",
       "dependencies": []
     },
     "Math/Linear-Algebra/Product.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 635,
-      "exportedPath": "Math/Linear-Algebra/Product.html",
+      "exportedPath": "math/linear-algebra/product.html",
       "dependencies": []
     },
     "Math/Linear-Algebra/Orthogonality.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 12053,
-      "exportedPath": "Math/Linear-Algebra/Orthogonality.html",
+      "exportedPath": "math/linear-algebra/orthogonality.html",
       "dependencies": []
     },
     "Math/Linear-Algebra/Matrix-Operation.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 288,
-      "exportedPath": "Math/Linear-Algebra/Matrix-Operation.html",
+      "exportedPath": "math/linear-algebra/matrix-operation.html",
       "dependencies": []
     },
     "Math/Linear-Algebra/Linear-Transformations.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4637,
-      "exportedPath": "Math/Linear-Algebra/Linear-Transformations.html",
+      "exportedPath": "math/linear-algebra/linear-transformations.html",
       "dependencies": []
     },
     "Math/Linear-Algebra/Eigenvalues-and-Eigenvectors.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 8182,
-      "exportedPath": "Math/Linear-Algebra/Eigenvalues-and-Eigenvectors.html",
+      "exportedPath": "math/linear-algebra/eigenvalues-and-eigenvectors.html",
       "dependencies": []
     },
     "Math/Probability-Statistics/Probability-Theory.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1316,
-      "exportedPath": "Math/Probability-Statistics/Probability-Theory.html",
+      "exportedPath": "math/probability-statistics/probability-theory.html",
       "dependencies": []
     },
     "Math/Probability-Statistics/Poisson-Distribution.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4791,
-      "exportedPath": "Math/Probability-Statistics/Poisson-Distribution.html",
+      "exportedPath": "math/probability-statistics/poisson-distribution.html",
       "dependencies": []
     },
     "Math/Probability-Statistics/Hypothesis-Testing-Two-Population.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 5034,
-      "exportedPath": "Math/Probability-Statistics/Hypothesis-Testing-Two-Population.html",
+      "exportedPath": "math/probability-statistics/hypothesis-testing-two-population.html",
       "dependencies": []
     },
     "Math/Probability-Statistics/Hypothesis-Testing-Single-Population.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2720,
-      "exportedPath": "Math/Probability-Statistics/Hypothesis-Testing-Single-Population.html",
+      "exportedPath": "math/probability-statistics/hypothesis-testing-single-population.html",
       "dependencies": []
     },
     "Math/Probability-Statistics/Confidence-Interval.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2351,
-      "exportedPath": "Math/Probability-Statistics/Confidence-Interval.html",
+      "exportedPath": "math/probability-statistics/confidence-interval.html",
       "dependencies": []
     },
     "Math/Probability-Statistics/Chi-Square-Tests.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4196,
-      "exportedPath": "Math/Probability-Statistics/Chi-Square-Tests.html",
+      "exportedPath": "math/probability-statistics/chi-square-tests.html",
       "dependencies": []
     },
     "OperatingSystem/Virtual-Memory.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 7242,
-      "exportedPath": "OperatingSystem/Virtual-Memory.html",
+      "exportedPath": "operatingsystem/virtual-memory.html",
       "dependencies": []
     },
     "OperatingSystem/Threads.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 18753,
-      "exportedPath": "OperatingSystem/Threads.html",
+      "exportedPath": "operatingsystem/threads.html",
       "dependencies": []
     },
     "OperatingSystem/Process.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 17026,
-      "exportedPath": "OperatingSystem/Process.html",
+      "exportedPath": "operatingsystem/process.html",
       "dependencies": []
     },
     "OperatingSystem/Process-Synchronization.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 29248,
-      "exportedPath": "OperatingSystem/Process-Synchronization.html",
+      "exportedPath": "operatingsystem/process-synchronization.html",
       "dependencies": []
     },
     "OperatingSystem/Operating-System-Structure.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 10901,
-      "exportedPath": "OperatingSystem/Operating-System-Structure.html",
+      "exportedPath": "operatingsystem/operating-system-structure.html",
       "dependencies": []
     },
     "OperatingSystem/Operating-System-Introduction.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 21642,
-      "exportedPath": "OperatingSystem/Operating-System-Introduction.html",
+      "exportedPath": "operatingsystem/operating-system-introduction.html",
       "dependencies": []
     },
     "OperatingSystem/NJU-OS-PA0.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 5695,
-      "exportedPath": "OperatingSystem/NJU-OS-PA0.html",
+      "exportedPath": "operatingsystem/nju-os-pa0.html",
       "dependencies": []
     },
     "OperatingSystem/Main-Memory.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1931,
-      "exportedPath": "OperatingSystem/Main-Memory.html",
+      "exportedPath": "operatingsystem/main-memory.html",
       "dependencies": []
     },
     "OperatingSystem/Linux-Basic-Operation.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4167,
-      "exportedPath": "OperatingSystem/Linux-Basic-Operation.html",
+      "exportedPath": "operatingsystem/linux-basic-operation.html",
       "dependencies": []
     },
     "OperatingSystem/File-System-Interface.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 9254,
-      "exportedPath": "OperatingSystem/File-System-Interface.html",
+      "exportedPath": "operatingsystem/file-system-interface.html",
       "dependencies": []
     },
     "OperatingSystem/File-System-Implementation.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1454,
-      "exportedPath": "OperatingSystem/File-System-Implementation.html",
+      "exportedPath": "operatingsystem/file-system-implementation.html",
       "dependencies": []
     },
     "OperatingSystem/Cpu-Scheduling.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 27185,
-      "exportedPath": "OperatingSystem/Cpu-Scheduling.html",
+      "exportedPath": "operatingsystem/cpu-scheduling.html",
       "dependencies": []
     },
     "Program/C/Pointers.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 176,
-      "exportedPath": "Program/C/Pointers.html",
+      "exportedPath": "program/c/pointers.html",
       "dependencies": []
     },
     "Program/C/Multithreads.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 184,
-      "exportedPath": "Program/C/Multithreads.html",
+      "exportedPath": "program/c/multithreads.html",
       "dependencies": []
     },
     "Program/C/Macro.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1033,
-      "exportedPath": "Program/C/Macro.html",
+      "exportedPath": "program/c/macro.html",
       "dependencies": []
     },
     "Program/C/fileoperation.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 186,
-      "exportedPath": "Program/C/fileoperation.html",
+      "exportedPath": "program/c/fileoperation.html",
       "dependencies": []
     },
     "Program/Cpp/Vector.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2242,
-      "exportedPath": "Program/Cpp/Vector.html",
+      "exportedPath": "program/cpp/vector.html",
       "dependencies": []
     },
     "Program/Cpp/Priority-Queue.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1088,
-      "exportedPath": "Program/Cpp/Priority-Queue.html",
+      "exportedPath": "program/cpp/priority-queue.html",
       "dependencies": []
     },
     "Program/Cpp/Iota.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1191,
-      "exportedPath": "Program/Cpp/Iota.html",
+      "exportedPath": "program/cpp/iota.html",
       "dependencies": []
     },
     "Program/Cpp/Map.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 560,
-      "exportedPath": "Program/Cpp/Map.html",
+      "exportedPath": "program/cpp/map.html",
       "dependencies": []
     },
     "Program/Cpp/Algorithm-Library.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1863,
-      "exportedPath": "Program/Cpp/Algorithm-Library.html",
+      "exportedPath": "program/cpp/algorithm-library.html",
       "dependencies": []
     },
     "Program/Java/Generics/generics.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 808,
-      "exportedPath": "Program/Java/Generics/generics.java",
+      "exportedPath": "program/java/generics/generics.java",
       "dependencies": []
     },
     "Program/Java/Interfaces/usb.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 132,
-      "exportedPath": "Program/Java/Interfaces/usb.java",
+      "exportedPath": "program/java/interfaces/usb.java",
       "dependencies": []
     },
     "Program/Java/Interfaces/testdemo.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 203,
-      "exportedPath": "Program/Java/Interfaces/testdemo.java",
+      "exportedPath": "program/java/interfaces/testdemo.java",
       "dependencies": []
     },
     "Program/Java/Interfaces/printer.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 231,
-      "exportedPath": "Program/Java/Interfaces/printer.java",
+      "exportedPath": "program/java/interfaces/printer.java",
       "dependencies": []
     },
     "Program/Java/Interfaces/phone.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 363,
-      "exportedPath": "Program/Java/Interfaces/phone.java",
+      "exportedPath": "program/java/interfaces/phone.java",
       "dependencies": []
     },
     "Program/Java/Interfaces/computer.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 167,
-      "exportedPath": "Program/Java/Interfaces/computer.java",
+      "exportedPath": "program/java/interfaces/computer.java",
       "dependencies": []
     },
     "Program/Java/Lecture/Unified-Modeling-Language.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2046,
-      "exportedPath": "Program/Java/Lecture/Unified-Modeling-Language.html",
+      "exportedPath": "program/java/lecture/unified-modeling-language.html",
       "dependencies": []
     },
     "Program/Java/Lecture/Java-Programming-Essentials.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 6154,
-      "exportedPath": "Program/Java/Lecture/Java-Programming-Essentials.html",
+      "exportedPath": "program/java/lecture/java-programming-essentials.html",
       "dependencies": []
     },
     "Program/Java/Lecture/Java-Introduction.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2954,
-      "exportedPath": "Program/Java/Lecture/Java-Introduction.html",
+      "exportedPath": "program/java/lecture/java-introduction.html",
       "dependencies": []
     },
     "Program/Java/Lecture/Inheritance.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 6596,
-      "exportedPath": "Program/Java/Lecture/Inheritance.html",
+      "exportedPath": "program/java/lecture/inheritance.html",
       "dependencies": []
     },
     "Program/Java/Lecture/Exception-Handling.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 12886,
-      "exportedPath": "Program/Java/Lecture/Exception-Handling.html",
+      "exportedPath": "program/java/lecture/exception-handling.html",
       "dependencies": []
     },
     "Program/Java/Lecture/Creating-Java-Classes.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 6683,
-      "exportedPath": "Program/Java/Lecture/Creating-Java-Classes.html",
+      "exportedPath": "program/java/lecture/creating-java-classes.html",
       "dependencies": []
     },
     "Program/Java/Lecture/Array-and-Generics.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 6226,
-      "exportedPath": "Program/Java/Lecture/Array-and-Generics.html",
+      "exportedPath": "program/java/lecture/array-and-generics.html",
       "dependencies": []
     },
     "Program/Java/Lecture/Abstract-Methods-and-Classes-Interfaces.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 7955,
-      "exportedPath": "Program/Java/Lecture/Abstract-Methods-and-Classes-Interfaces.html",
+      "exportedPath": "program/java/lecture/abstract-methods-and-classes-interfaces.html",
       "dependencies": []
     },
     "Program/Java/test/usb.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 119,
-      "exportedPath": "Program/Java/test/usb.java",
+      "exportedPath": "program/java/test/usb.java",
       "dependencies": []
     },
     "Program/Java/test/testdemo.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 196,
-      "exportedPath": "Program/Java/test/testdemo.java",
+      "exportedPath": "program/java/test/testdemo.java",
       "dependencies": []
     },
     "Program/Java/test/printer.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 222,
-      "exportedPath": "Program/Java/test/printer.java",
+      "exportedPath": "program/java/test/printer.java",
       "dependencies": []
     },
     "Program/Java/test/phone.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 222,
-      "exportedPath": "Program/Java/test/phone.java",
+      "exportedPath": "program/java/test/phone.java",
       "dependencies": []
     },
     "Program/Java/test/computer.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 162,
-      "exportedPath": "Program/Java/test/computer.java",
+      "exportedPath": "program/java/test/computer.java",
       "dependencies": []
     },
     "Program/Java/tostringandequalsmethods/test4.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 458,
-      "exportedPath": "Program/Java/tostringandequalsmethods/test4.java",
+      "exportedPath": "program/java/tostringandequalsmethods/test4.java",
       "dependencies": []
     },
     "Program/Java/tostringandequalsmethods/test3.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 723,
-      "exportedPath": "Program/Java/tostringandequalsmethods/test3.java",
+      "exportedPath": "program/java/tostringandequalsmethods/test3.java",
       "dependencies": []
     },
     "Program/Java/tostringandequalsmethods/test2.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 242,
-      "exportedPath": "Program/Java/tostringandequalsmethods/test2.java",
+      "exportedPath": "program/java/tostringandequalsmethods/test2.java",
       "dependencies": []
     },
     "Program/Java/tostringandequalsmethods/student.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 556,
-      "exportedPath": "Program/Java/tostringandequalsmethods/student.java",
+      "exportedPath": "program/java/tostringandequalsmethods/student.java",
       "dependencies": []
     },
     "Program/Java/tostringandequalsmethods/person.java": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1186,
-      "exportedPath": "Program/Java/tostringandequalsmethods/person.java",
+      "exportedPath": "program/java/tostringandequalsmethods/person.java",
       "dependencies": []
     },
     "Program/Javascript/quick-start.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 567,
-      "exportedPath": "Program/Javascript/quick-start.html",
+      "exportedPath": "program/javascript/quick-start.html",
       "dependencies": []
     },
     "Program/R/R-Data-Structure.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1329,
-      "exportedPath": "Program/R/R-Data-Structure.html",
+      "exportedPath": "program/r/r-data-structure.html",
       "dependencies": []
     },
     "Program/R/Basic-R.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 9359,
-      "exportedPath": "Program/R/Basic-R.html",
+      "exportedPath": "program/r/basic-r.html",
       "dependencies": []
     },
     "Program/ProgramLanguage.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 568,
-      "exportedPath": "Program/ProgramLanguage.html",
+      "exportedPath": "program/programlanguage.html",
       "dependencies": []
     },
     "Tools/Conda/Conda.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 706,
-      "exportedPath": "Tools/Conda/Conda.html",
+      "exportedPath": "tools/conda/conda.html",
       "dependencies": []
     },
     "Tools/Docker/Docker.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 8528,
-      "exportedPath": "Tools/Docker/Docker.html",
+      "exportedPath": "tools/docker/docker.html",
       "dependencies": []
     },
     "Tools/Git/Git-Workflow-Model.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1522,
-      "exportedPath": "Tools/Git/Git-Workflow-Model.html",
+      "exportedPath": "tools/git/git-workflow-model.html",
       "dependencies": []
     },
     "Tools/Git/Git-Remote-Repository.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1489,
-      "exportedPath": "Tools/Git/Git-Remote-Repository.html",
+      "exportedPath": "tools/git/git-remote-repository.html",
       "dependencies": []
     },
     "Tools/Git/Git-Introduction.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1156,
-      "exportedPath": "Tools/Git/Git-Introduction.html",
+      "exportedPath": "tools/git/git-introduction.html",
       "dependencies": []
     },
     "Tools/Git/Git-For-Beginners.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 7326,
-      "exportedPath": "Tools/Git/Git-For-Beginners.html",
+      "exportedPath": "tools/git/git-for-beginners.html",
       "dependencies": []
     },
     "Tools/Regex/RegexCheatSheet-byGeekHour.pdf": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1018408,
-      "exportedPath": "Tools/Regex/RegexCheatSheet-byGeekHour.pdf",
+      "exportedPath": "tools/regex/regexcheatsheet-bygeekhour.pdf",
       "dependencies": []
     },
     "Tools/Regex/Regular-Expression.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 8538,
-      "exportedPath": "Tools/Regex/Regular-Expression.html",
+      "exportedPath": "tools/regex/regular-expression.html",
       "dependencies": []
     },
     "Tools/Shell/Shell.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 546,
-      "exportedPath": "Tools/Shell/Shell.html",
+      "exportedPath": "tools/shell/shell.html",
       "dependencies": []
     },
     "Tools/Tools.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 329,
-      "exportedPath": "Tools/Tools.html",
+      "exportedPath": "tools/tools.html",
       "dependencies": []
     },
     "Web/CSS/CSS-Introduction.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4054,
-      "exportedPath": "Web/CSS/CSS-Introduction.html",
+      "exportedPath": "web/css/css-introduction.html",
       "dependencies": []
     },
     "Web/Javascript/Quick-Start.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 555,
-      "exportedPath": "Web/Javascript/Quick-Start.html",
+      "exportedPath": "web/javascript/quick-start.html",
       "dependencies": []
     },
     "Web/Vue/Vue-Basic.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 18761,
-      "exportedPath": "Web/Vue/Vue-Basic.html",
+      "exportedPath": "web/vue/vue-basic.html",
       "dependencies": []
     },
     "Web/Vue/Vue-Application.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1270,
-      "exportedPath": "Web/Vue/Vue-Application.html",
+      "exportedPath": "web/vue/vue-application.html",
       "dependencies": []
     },
     "Computer-Network/Assignment/DCN-Assignment1.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 6592,
-      "exportedPath": "Computer-Network/Assignment/DCN-Assignment1.html",
+      "exportedPath": "computer-network/assignment/dcn-assignment1.html",
       "dependencies": []
     },
     "Computer-Network/Transport-Layer.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2135,
-      "exportedPath": "Computer-Network/Transport-Layer.html",
+      "exportedPath": "computer-network/transport-layer.html",
       "dependencies": []
     },
     "Computer-Network/Standardized-Networks.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4696,
-      "exportedPath": "Computer-Network/Standardized-Networks.html",
+      "exportedPath": "computer-network/standardized-networks.html",
       "dependencies": []
     },
     "Computer-Network/Physical-Layer.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1563,
-      "exportedPath": "Computer-Network/Physical-Layer.html",
+      "exportedPath": "computer-network/physical-layer.html",
       "dependencies": []
     },
     "Computer-Network/Network-Layer.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 8171,
-      "exportedPath": "Computer-Network/Network-Layer.html",
+      "exportedPath": "computer-network/network-layer.html",
       "dependencies": []
     },
     "Computer-Network/Dcn-Review.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 12803,
-      "exportedPath": "Computer-Network/Dcn-Review.html",
+      "exportedPath": "computer-network/dcn-review.html",
       "dependencies": []
     },
     "Computer-Network/Data-Link-Layer.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 9014,
-      "exportedPath": "Computer-Network/Data-Link-Layer.html",
+      "exportedPath": "computer-network/data-link-layer.html",
       "dependencies": []
     },
     "Computer-Network/Basic-Concepts.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 15545,
-      "exportedPath": "Computer-Network/Basic-Concepts.html",
+      "exportedPath": "computer-network/basic-concepts.html",
       "dependencies": []
     },
     "Computer-Network/Application-Layer.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 200,
-      "exportedPath": "Computer-Network/Application-Layer.html",
+      "exportedPath": "computer-network/application-layer.html",
       "dependencies": []
     },
     "Computer-Organization/Lecture/Vonneumann-Architecture/register.png": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 38418,
-      "exportedPath": "Computer-Organization/Lecture/Vonneumann-Architecture/register.png",
+      "exportedPath": "computer-organization/lecture/vonneumann-architecture/register.png",
       "dependencies": []
     },
     "Computer-Organization/Lecture/Vonneumann-Architecture/memory.png": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 48960,
-      "exportedPath": "Computer-Organization/Lecture/Vonneumann-Architecture/memory.png",
+      "exportedPath": "computer-organization/lecture/vonneumann-architecture/memory.png",
       "dependencies": []
     },
     "Computer-Organization/Lecture/Vonneumann-Architecture/lc-3.png": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 164455,
-      "exportedPath": "Computer-Organization/Lecture/Vonneumann-Architecture/lc-3.png",
+      "exportedPath": "computer-organization/lecture/vonneumann-architecture/lc-3.png",
       "dependencies": []
     },
     "Computer-Organization/Lecture/Vonneumann-Architecture/lc-3.drawio": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 62199,
-      "exportedPath": "Computer-Organization/Lecture/Vonneumann-Architecture/lc-3.drawio",
+      "exportedPath": "computer-organization/lecture/vonneumann-architecture/lc-3.drawio",
       "dependencies": []
     },
     "Computer-Organization/Lecture/Vonneumann-Architecture/cu.png": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 11851,
-      "exportedPath": "Computer-Organization/Lecture/Vonneumann-Architecture/cu.png",
+      "exportedPath": "computer-organization/lecture/vonneumann-architecture/cu.png",
       "dependencies": []
     },
     "Computer-Organization/Lecture/What-is-a-Computer.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4732,
-      "exportedPath": "Computer-Organization/Lecture/What-is-a-Computer.html",
+      "exportedPath": "computer-organization/lecture/what-is-a-computer.html",
       "dependencies": []
     },
     "Computer-Organization/Lecture/Microarchitecture.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 8745,
-      "exportedPath": "Computer-Organization/Lecture/Microarchitecture.html",
+      "exportedPath": "computer-organization/lecture/microarchitecture.html",
       "dependencies": []
     },
     "Computer-Organization/Lecture/ISA.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 7087,
-      "exportedPath": "Computer-Organization/Lecture/ISA.html",
+      "exportedPath": "computer-organization/lecture/isa.html",
       "dependencies": []
     },
     "Computer-Organization/Lecture/From-Transistors-to-Gates.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3883,
-      "exportedPath": "Computer-Organization/Lecture/From-Transistors-to-Gates.html",
+      "exportedPath": "computer-organization/lecture/from-transistors-to-gates.html",
       "dependencies": []
     },
     "Computer-Organization/Lecture/From-Machine-Language-to-Assembly-Language.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2327,
-      "exportedPath": "Computer-Organization/Lecture/From-Machine-Language-to-Assembly-Language.html",
+      "exportedPath": "computer-organization/lecture/from-machine-language-to-assembly-language.html",
       "dependencies": []
     },
     "Computer-Organization/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 8631,
-      "exportedPath": "Computer-Organization/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits.html",
+      "exportedPath": "computer-organization/lecture/from-gates-to-circuits-ii-sequential-circuits.html",
       "dependencies": []
     },
     "Computer-Organization/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 9022,
-      "exportedPath": "Computer-Organization/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.html",
+      "exportedPath": "computer-organization/lecture/from-gates-to-circuits-i-combinational-circuits.html",
       "dependencies": []
     },
     "Computer-Organization/Lecture/Finite-State-Machine.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4546,
-      "exportedPath": "Computer-Organization/Lecture/Finite-State-Machine.html",
+      "exportedPath": "computer-organization/lecture/finite-state-machine.html",
       "dependencies": []
     },
     "Computer-Organization/Lecture/Circuit-Design.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4398,
-      "exportedPath": "Computer-Organization/Lecture/Circuit-Design.html",
+      "exportedPath": "computer-organization/lecture/circuit-design.html",
       "dependencies": []
     },
     "Computer-Organization/Lecture/Boolean-Algebra-from-Bits-to-Logic.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1445,
-      "exportedPath": "Computer-Organization/Lecture/Boolean-Algebra-from-Bits-to-Logic.html",
+      "exportedPath": "computer-organization/lecture/boolean-algebra-from-bits-to-logic.html",
       "dependencies": []
     },
     "Computer-Organization/Lecture/Bits-Data-Representation-and-Manipulation.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4053,
-      "exportedPath": "Computer-Organization/Lecture/Bits-Data-Representation-and-Manipulation.html",
+      "exportedPath": "computer-organization/lecture/bits-data-representation-and-manipulation.html",
       "dependencies": []
     },
     "Slides.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 251,
-      "exportedPath": "Slides.html",
+      "exportedPath": "slides.html",
       "dependencies": []
     },
     "Algorithm/Algorithm.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 141,
-      "exportedPath": "Algorithm/Algorithm.html",
+      "exportedPath": "algorithm/algorithm.html",
       "dependencies": []
     },
     "Computer-Network/Computer-Network.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 684,
-      "exportedPath": "Computer-Network/Computer-Network.html",
+      "exportedPath": "computer-network/computer-network.html",
       "dependencies": []
     },
     "Database-Management/Assignment/DBM-Assignment-2.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4187,
-      "exportedPath": "Database-Management/Assignment/DBM-Assignment-2.html",
+      "exportedPath": "database-management/assignment/dbm-assignment-2.html",
       "dependencies": []
     },
     "Database-Management/Assignment/DBM-Assignment-3.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4713,
-      "exportedPath": "Database-Management/Assignment/DBM-Assignment-3.html",
+      "exportedPath": "database-management/assignment/dbm-assignment-3.html",
       "dependencies": []
     },
     "Database-Management/Assignment/DBM-Assignment-1.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3888,
-      "exportedPath": "Database-Management/Assignment/DBM-Assignment-1.html",
+      "exportedPath": "database-management/assignment/dbm-assignment-1.html",
       "dependencies": []
     },
     "Database-Management/Lecture/Relational-Database-Design-Purpose-&-First-Normal-Form.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1467,
-      "exportedPath": "Database-Management/Lecture/Relational-Database-Design-Purpose-&-First-Normal-Form.html",
+      "exportedPath": "database-management/lecture/relational-database-design-purpose-&-first-normal-form.html",
       "dependencies": []
     },
     "Database-Management/Lecture/Relational-Database-Design-Functional-Dependency.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3489,
-      "exportedPath": "Database-Management/Lecture/Relational-Database-Design-Functional-Dependency.html",
+      "exportedPath": "database-management/lecture/relational-database-design-functional-dependency.html",
       "dependencies": []
     },
     "Database-Management/Lecture/Relational-Database-Design-BCNF.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1396,
-      "exportedPath": "Database-Management/Lecture/Relational-Database-Design-BCNF.html",
+      "exportedPath": "database-management/lecture/relational-database-design-bcnf.html",
       "dependencies": []
     },
     "Database-Management/Lecture/Relational-Database-Design-3rd-Normal-Form.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 706,
-      "exportedPath": "Database-Management/Lecture/Relational-Database-Design-3rd-Normal-Form.html",
+      "exportedPath": "database-management/lecture/relational-database-design-3rd-normal-form.html",
       "dependencies": []
     },
     "Database-Management/Lecture/NormalForm.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 636,
-      "exportedPath": "Database-Management/Lecture/NormalForm.html",
+      "exportedPath": "database-management/lecture/normalform.html",
       "dependencies": []
     },
     "Database-Management/Lecture/Logical-Design.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4224,
-      "exportedPath": "Database-Management/Lecture/Logical-Design.html",
+      "exportedPath": "database-management/lecture/logical-design.html",
       "dependencies": []
     },
     "Database-Management/Lecture/Key-Concept.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1632,
-      "exportedPath": "Database-Management/Lecture/Key-Concept.html",
+      "exportedPath": "database-management/lecture/key-concept.html",
       "dependencies": []
     },
     "Database-Management/Lecture/Entity-Relationship-Model-Modeling.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 5416,
-      "exportedPath": "Database-Management/Lecture/Entity-Relationship-Model-Modeling.html",
+      "exportedPath": "database-management/lecture/entity-relationship-model-modeling.html",
       "dependencies": []
     },
     "Database-Management/Lecture/Entity-Relationship-Model-Extended-Features.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4780,
-      "exportedPath": "Database-Management/Lecture/Entity-Relationship-Model-Extended-Features.html",
+      "exportedPath": "database-management/lecture/entity-relationship-model-extended-features.html",
       "dependencies": []
     },
     "Database-Management/Lecture/Entity-Relationship-Model-Constraints.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3653,
-      "exportedPath": "Database-Management/Lecture/Entity-Relationship-Model-Constraints.html",
+      "exportedPath": "database-management/lecture/entity-relationship-model-constraints.html",
       "dependencies": []
     },
     "Database-Management/Lecture/Design-Issues.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1338,
-      "exportedPath": "Database-Management/Lecture/Design-Issues.html",
+      "exportedPath": "database-management/lecture/design-issues.html",
       "dependencies": []
     },
     "Database-Management/MySQL/Set-Operation-&-Where-Subquery.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3275,
-      "exportedPath": "Database-Management/MySQL/Set-Operation-&-Where-Subquery.html",
+      "exportedPath": "database-management/mysql/set-operation-&-where-subquery.html",
       "dependencies": []
     },
     "Database-Management/MySQL/Null-Subquery.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2231,
-      "exportedPath": "Database-Management/MySQL/Null-Subquery.html",
+      "exportedPath": "database-management/mysql/null-subquery.html",
       "dependencies": []
     },
     "Database-Management/MySQL/Join.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 4636,
-      "exportedPath": "Database-Management/MySQL/Join.html",
+      "exportedPath": "database-management/mysql/join.html",
       "dependencies": []
     },
     "Database-Management/MySQL/Division-and-Correlated-Subquery.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3461,
-      "exportedPath": "Database-Management/MySQL/Division-and-Correlated-Subquery.html",
+      "exportedPath": "database-management/mysql/division-and-correlated-subquery.html",
       "dependencies": []
     },
     "Database-Management/MySQL/Data-Modification.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3245,
-      "exportedPath": "Database-Management/MySQL/Data-Modification.html",
+      "exportedPath": "database-management/mysql/data-modification.html",
       "dependencies": []
     },
     "Database-Management/MySQL/Data-Definition.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 3356,
-      "exportedPath": "Database-Management/MySQL/Data-Definition.html",
+      "exportedPath": "database-management/mysql/data-definition.html",
       "dependencies": []
     },
     "Database-Management/MySQL/Cross-table-Query.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 845,
-      "exportedPath": "Database-Management/MySQL/Cross-table-Query.html",
+      "exportedPath": "database-management/mysql/cross-table-query.html",
       "dependencies": []
     },
     "Database-Management/MySQL/Basic-MySQL.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2013,
-      "exportedPath": "Database-Management/MySQL/Basic-MySQL.html",
+      "exportedPath": "database-management/mysql/basic-mysql.html",
       "dependencies": []
     },
     "Database-Management/MySQL/Aggregation.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 2536,
-      "exportedPath": "Database-Management/MySQL/Aggregation.html",
+      "exportedPath": "database-management/mysql/aggregation.html",
       "dependencies": []
     },
     "Database-Management/MySQL/Advanced-SQL.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1370,
-      "exportedPath": "Database-Management/MySQL/Advanced-SQL.html",
+      "exportedPath": "database-management/mysql/advanced-sql.html",
       "dependencies": []
     },
     "Database-Management/Database-Management.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 1190,
-      "exportedPath": "Database-Management/Database-Management.html",
+      "exportedPath": "database-management/database-management.html",
       "dependencies": []
     },
     "DeepLearning/DeepLearning.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 133,
-      "exportedPath": "DeepLearning/DeepLearning.html",
+      "exportedPath": "deeplearning/deeplearning.html",
       "dependencies": []
     },
     "OperatingSystem/Operating-System.md": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300971965,
       "sourceSize": 663,
-      "exportedPath": "OperatingSystem/Operating-System.html",
+      "exportedPath": "operatingsystem/operating-system.html",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1719300371020,
+      "modifiedTime": 1719300971965,
       "sourceSize": 57606,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
     },
     "lib/fonts/MathJax_Zero.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/MathJax_Zero.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Main-Regular.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/MathJax_Main-Regular.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Main-Bold.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/MathJax_Main-Bold.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Math-Italic.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/MathJax_Math-Italic.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Main-Italic.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/MathJax_Main-Italic.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Math-BoldItalic.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/MathJax_Math-BoldItalic.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Size1-Regular.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/MathJax_Size1-Regular.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Size2-Regular.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/MathJax_Size2-Regular.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Size3-Regular.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/MathJax_Size3-Regular.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Size4-Regular.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/MathJax_Size4-Regular.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_AMS-Regular.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/MathJax_AMS-Regular.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Calligraphic-Regular.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/MathJax_Calligraphic-Regular.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Calligraphic-Bold.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/MathJax_Calligraphic-Bold.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Fraktur-Regular.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/MathJax_Fraktur-Regular.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Fraktur-Bold.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/MathJax_Fraktur-Bold.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_SansSerif-Regular.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/MathJax_SansSerif-Regular.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_SansSerif-Bold.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/MathJax_SansSerif-Bold.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_SansSerif-Italic.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/MathJax_SansSerif-Italic.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Script-Regular.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/MathJax_Script-Regular.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Typewriter-Regular.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/MathJax_Typewriter-Regular.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Vector-Regular.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/MathJax_Vector-Regular.woff",
       "dependencies": []
     },
     "lib/fonts/MathJax_Vector-Bold.woff": {
-      "modifiedTime": 1719300639524,
+      "modifiedTime": 1719300843635,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/MathJax_Vector-Bold.woff",
       "dependencies": []
