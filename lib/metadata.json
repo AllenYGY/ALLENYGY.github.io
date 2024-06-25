@@ -1,6 +1,6 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1719292139585,
+  "lastExport": 1719297122118,
   "pluginVersion": "1.8.03",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd primary-accent-purple secondary-accent-green",
   "useCustomHeadContent": false,
@@ -40,47 +40,6 @@
     "Algorithm/String/KMP.md",
     "Algorithm/String/Aho-Corasick.md",
     "Algorithm/Algorithm.md",
-    "Banner/wolfgang-hasselmann-MlOL3_CD2yg.jpg",
-    "Banner/will-africano-s4a29qbHssg.jpg",
-    "Banner/viktor-forgacs-aV5bDaal6UE.jpg",
-    "Banner/tony-lee-i_XLLP08BOc.jpg",
-    "Banner/tomasz-filipek-4P9I2myRzyM.jpg",
-    "Banner/tepapa-WLTNsjgrjEM.jpg",
-    "Banner/rodrigo-soares-z6IyHYU0uF8.jpg",
-    "Banner/renato-pozzi-FHHpOkaX_cQ.jpg",
-    "Banner/point-normal-5L6MYx-IZz4.jpg",
-    "Banner/peter-vanosdall-uZVtAixV8c8.jpg",
-    "Banner/patrick-schneider-PLrscRq3atA.jpg",
-    "Banner/patrick-schneider-I4fDK4Fz_vw.jpg",
-    "Banner/patrick-hendry-mhZ5yySOPe8.jpg",
-    "Banner/nathan-anderson-Yns1RmM_6pM.jpg",
-    "Banner/nasa-yZygONrUBe8.jpg",
-    "Banner/museum-of-new-zealand-te-papa-tongarewa-XjRKnnfJ0Qw-unsplash.jpg",
-    "Banner/museum-of-new-zealand-te-papa-tongarewa-vgHZtltxZlw-unsplash.jpg",
-    "Banner/museum-of-new-zealand-te-papa-tongarewa-PZiFf1McJnE-unsplash.jpg",
-    "Banner/museum-of-new-zealand-te-papa-tongarewa-EynhuYbe4V4-unsplash.jpg",
-    "Banner/millo-lin-IbngTBpNuMA.jpg",
-    "Banner/michael-bourgault-aHetdmuNoO4.jpg",
-    "Banner/mar-bustos-ARVFsI-32Uk.jpg",
-    "Banner/luca-bravo-1qNAPlUXvqA.jpg",
-    "Banner/lareised-leneseur-2tmgPS-WVAc.jpg",
-    "Banner/jordan-arnold-Anosw0HcGRk.jpg",
-    "Banner/jonny-james-3no88nSvK88.jpg",
-    "Banner/jason-ortego-TznjqhCHR9g.jpg",
-    "Banner/janine-joles-CJIzia8PdV4.jpg",
-    "Banner/guillermo-álvarez--1bgSTV8E4M.jpg",
-    "Banner/febiyanr-UGIy3XjHI3s.jpg",
-    "Banner/eduardo-mallmann-3LPGWASiSbM.jpg",
-    "Banner/dave-hoefler-yYABaqHw9WQ.jpg",
-    "Banner/daniel-olah-5d8wB02u_Nk.jpg",
-    "Banner/claudio-schwarz-GxSTPd0dF3I.jpg",
-    "Banner/christian-joudrey-mWRR1xj95hg.jpg",
-    "Banner/benjamin-behre-i1TP8hZX8c4.jpg",
-    "Banner/B69608FE-9617-4DE0-96DB-8A3EABEE606D.jpg",
-    "Banner/asa-rodger-B8xmtKWLrVo.jpg",
-    "Banner/alessio-soggetti-xXIRSZmzvU8.jpg",
-    "Banner/alessio-soggetti-VJTmFSendQ0.jpg",
-    "Banner/adrien-hobbs-N4V229Gz07Y.jpg",
     "Computer-Network/Assignment/DCN-Assignment1.md",
     "Computer-Network/USTC-L1.md",
     "Computer-Network/Transport-Layer.md",
@@ -290,7 +249,6 @@
     "Home.md",
     "Slides.md",
     "Task Management.md",
-    "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
     "lib/fonts/2d5198822ab091ce4305.woff2",
@@ -330,15 +288,9 @@
     "lib/fonts/mathjax_vector-bold.woff",
     "lib/html/file-tree.html",
     "lib/scripts/webpage.js",
-    "lib/scripts/graph-view.js",
-    "lib/scripts/graph-wasm.js",
-    "lib/scripts/graph-render-worker.js",
-    "lib/scripts/tinycolor.js",
-    "lib/scripts/pixi.js",
     "lib/scripts/minisearch.js",
     "lib/scripts/easy-notice.js",
     "lib/media/favicon.png",
-    "lib/scripts/graph-data.js",
     "lib/scripts/img-zoom.js",
     "lib/styles/obsidian.css",
     "lib/styles/other-plugins.css",
@@ -349,7 +301,6 @@
     "lib/styles/snippets.css"
   ],
   "mainDependencies": [
-    "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
     "lib/fonts/2d5198822ab091ce4305.woff2",
@@ -389,15 +340,9 @@
     "lib/fonts/mathjax_vector-bold.woff",
     "lib/html/file-tree.html",
     "lib/scripts/webpage.js",
-    "lib/scripts/graph-view.js",
-    "lib/scripts/graph-wasm.js",
-    "lib/scripts/graph-render-worker.js",
-    "lib/scripts/tinycolor.js",
-    "lib/scripts/pixi.js",
     "lib/scripts/minisearch.js",
     "lib/scripts/easy-notice.js",
     "lib/media/favicon.png",
-    "lib/scripts/graph-data.js",
     "lib/scripts/img-zoom.js",
     "lib/styles/obsidian.css",
     "lib/styles/other-plugins.css",
@@ -409,337 +354,337 @@
   ],
   "fileInfo": {
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719295559555,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 198547,
+      "modifiedTime": 1719297122118,
+      "sourceSize": 289643,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719295559555,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719295559555,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719295559555,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719295559555,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719295559555,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719295559555,
       "sourceSize": 21030,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 151800,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 316784,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 6246,
+      "modifiedTime": 1719297122118,
+      "sourceSize": 6572,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 2100926,
+      "modifiedTime": 1719297122118,
+      "sourceSize": 2101009,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
@@ -1165,8 +1110,8 @@
       "dependencies": []
     },
     "Home.md": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 1529,
+      "modifiedTime": 1719297122118,
+      "sourceSize": 2544,
       "exportedPath": "home.html",
       "dependencies": []
     },
@@ -2034,252 +1979,6 @@
       "exportedPath": "algorithm/algorithm.html",
       "dependencies": []
     },
-    "Banner/wolfgang-hasselmann-MlOL3_CD2yg.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 2162351,
-      "exportedPath": "banner/wolfgang-hasselmann-mlol3_cd2yg.jpg",
-      "dependencies": []
-    },
-    "Banner/will-africano-s4a29qbHssg.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 5970359,
-      "exportedPath": "banner/will-africano-s4a29qbhssg.jpg",
-      "dependencies": []
-    },
-    "Banner/viktor-forgacs-aV5bDaal6UE.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 798248,
-      "exportedPath": "banner/viktor-forgacs-av5bdaal6ue.jpg",
-      "dependencies": []
-    },
-    "Banner/tony-lee-i_XLLP08BOc.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 4963082,
-      "exportedPath": "banner/tony-lee-i_xllp08boc.jpg",
-      "dependencies": []
-    },
-    "Banner/tomasz-filipek-4P9I2myRzyM.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 1169625,
-      "exportedPath": "banner/tomasz-filipek-4p9i2myrzym.jpg",
-      "dependencies": []
-    },
-    "Banner/tepapa-WLTNsjgrjEM.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 1652256,
-      "exportedPath": "banner/tepapa-wltnsjgrjem.jpg",
-      "dependencies": []
-    },
-    "Banner/rodrigo-soares-z6IyHYU0uF8.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 2826548,
-      "exportedPath": "banner/rodrigo-soares-z6iyhyu0uf8.jpg",
-      "dependencies": []
-    },
-    "Banner/renato-pozzi-FHHpOkaX_cQ.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 4480912,
-      "exportedPath": "banner/renato-pozzi-fhhpokax_cq.jpg",
-      "dependencies": []
-    },
-    "Banner/point-normal-5L6MYx-IZz4.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 407872,
-      "exportedPath": "banner/point-normal-5l6myx-izz4.jpg",
-      "dependencies": []
-    },
-    "Banner/peter-vanosdall-uZVtAixV8c8.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 2857979,
-      "exportedPath": "banner/peter-vanosdall-uzvtaixv8c8.jpg",
-      "dependencies": []
-    },
-    "Banner/patrick-schneider-PLrscRq3atA.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 1242938,
-      "exportedPath": "banner/patrick-schneider-plrscrq3ata.jpg",
-      "dependencies": []
-    },
-    "Banner/patrick-schneider-I4fDK4Fz_vw.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 3324655,
-      "exportedPath": "banner/patrick-schneider-i4fdk4fz_vw.jpg",
-      "dependencies": []
-    },
-    "Banner/patrick-hendry-mhZ5yySOPe8.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 6427565,
-      "exportedPath": "banner/patrick-hendry-mhz5yysope8.jpg",
-      "dependencies": []
-    },
-    "Banner/nathan-anderson-Yns1RmM_6pM.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 2515471,
-      "exportedPath": "banner/nathan-anderson-yns1rmm_6pm.jpg",
-      "dependencies": []
-    },
-    "Banner/nasa-yZygONrUBe8.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 1628617,
-      "exportedPath": "banner/nasa-yzygonrube8.jpg",
-      "dependencies": []
-    },
-    "Banner/museum-of-new-zealand-te-papa-tongarewa-XjRKnnfJ0Qw-unsplash.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 5910870,
-      "exportedPath": "banner/museum-of-new-zealand-te-papa-tongarewa-xjrknnfj0qw-unsplash.jpg",
-      "dependencies": []
-    },
-    "Banner/museum-of-new-zealand-te-papa-tongarewa-vgHZtltxZlw-unsplash.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 5656327,
-      "exportedPath": "banner/museum-of-new-zealand-te-papa-tongarewa-vghztltxzlw-unsplash.jpg",
-      "dependencies": []
-    },
-    "Banner/museum-of-new-zealand-te-papa-tongarewa-PZiFf1McJnE-unsplash.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 9935708,
-      "exportedPath": "banner/museum-of-new-zealand-te-papa-tongarewa-pziff1mcjne-unsplash.jpg",
-      "dependencies": []
-    },
-    "Banner/museum-of-new-zealand-te-papa-tongarewa-EynhuYbe4V4-unsplash.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 5614349,
-      "exportedPath": "banner/museum-of-new-zealand-te-papa-tongarewa-eynhuybe4v4-unsplash.jpg",
-      "dependencies": []
-    },
-    "Banner/millo-lin-IbngTBpNuMA.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 775696,
-      "exportedPath": "banner/millo-lin-ibngtbpnuma.jpg",
-      "dependencies": []
-    },
-    "Banner/michael-bourgault-aHetdmuNoO4.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 1952236,
-      "exportedPath": "banner/michael-bourgault-ahetdmunoo4.jpg",
-      "dependencies": []
-    },
-    "Banner/mar-bustos-ARVFsI-32Uk.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 4955503,
-      "exportedPath": "banner/mar-bustos-arvfsi-32uk.jpg",
-      "dependencies": []
-    },
-    "Banner/luca-bravo-1qNAPlUXvqA.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 2843383,
-      "exportedPath": "banner/luca-bravo-1qnapluxvqa.jpg",
-      "dependencies": []
-    },
-    "Banner/lareised-leneseur-2tmgPS-WVAc.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 1084824,
-      "exportedPath": "banner/lareised-leneseur-2tmgps-wvac.jpg",
-      "dependencies": []
-    },
-    "Banner/jordan-arnold-Anosw0HcGRk.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 4380659,
-      "exportedPath": "banner/jordan-arnold-anosw0hcgrk.jpg",
-      "dependencies": []
-    },
-    "Banner/jonny-james-3no88nSvK88.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 3715604,
-      "exportedPath": "banner/jonny-james-3no88nsvk88.jpg",
-      "dependencies": []
-    },
-    "Banner/jason-ortego-TznjqhCHR9g.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 2206828,
-      "exportedPath": "banner/jason-ortego-tznjqhchr9g.jpg",
-      "dependencies": []
-    },
-    "Banner/janine-joles-CJIzia8PdV4.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 1954333,
-      "exportedPath": "banner/janine-joles-cjizia8pdv4.jpg",
-      "dependencies": []
-    },
-    "Banner/guillermo-álvarez--1bgSTV8E4M.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 2552235,
-      "exportedPath": "banner/guillermo-álvarez-1bgstv8e4m.jpg",
-      "dependencies": []
-    },
-    "Banner/febiyanr-UGIy3XjHI3s.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 2643316,
-      "exportedPath": "banner/febiyanr-ugiy3xjhi3s.jpg",
-      "dependencies": []
-    },
-    "Banner/eduardo-mallmann-3LPGWASiSbM.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 789220,
-      "exportedPath": "banner/eduardo-mallmann-3lpgwasisbm.jpg",
-      "dependencies": []
-    },
-    "Banner/dave-hoefler-yYABaqHw9WQ.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 2942650,
-      "exportedPath": "banner/dave-hoefler-yyabaqhw9wq.jpg",
-      "dependencies": []
-    },
-    "Banner/daniel-olah-5d8wB02u_Nk.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 2654696,
-      "exportedPath": "banner/daniel-olah-5d8wb02u_nk.jpg",
-      "dependencies": []
-    },
-    "Banner/claudio-schwarz-GxSTPd0dF3I.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 2824689,
-      "exportedPath": "banner/claudio-schwarz-gxstpd0df3i.jpg",
-      "dependencies": []
-    },
-    "Banner/christian-joudrey-mWRR1xj95hg.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 5755191,
-      "exportedPath": "banner/christian-joudrey-mwrr1xj95hg.jpg",
-      "dependencies": []
-    },
-    "Banner/benjamin-behre-i1TP8hZX8c4.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 4389081,
-      "exportedPath": "banner/benjamin-behre-i1tp8hzx8c4.jpg",
-      "dependencies": []
-    },
-    "Banner/B69608FE-9617-4DE0-96DB-8A3EABEE606D.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 5528588,
-      "exportedPath": "banner/b69608fe-9617-4de0-96db-8a3eabee606d.jpg",
-      "dependencies": []
-    },
-    "Banner/asa-rodger-B8xmtKWLrVo.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 2319640,
-      "exportedPath": "banner/asa-rodger-b8xmtkwlrvo.jpg",
-      "dependencies": []
-    },
-    "Banner/alessio-soggetti-xXIRSZmzvU8.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 1274987,
-      "exportedPath": "banner/alessio-soggetti-xxirszmzvu8.jpg",
-      "dependencies": []
-    },
-    "Banner/alessio-soggetti-VJTmFSendQ0.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 4452899,
-      "exportedPath": "banner/alessio-soggetti-vjtmfsendq0.jpg",
-      "dependencies": []
-    },
-    "Banner/adrien-hobbs-N4V229Gz07Y.jpg": {
-      "modifiedTime": 1719292139585,
-      "sourceSize": 4167734,
-      "exportedPath": "banner/adrien-hobbs-n4v229gz07y.jpg",
-      "dependencies": []
-    },
     "Computer-Network/Computer-Network.md": {
       "modifiedTime": 1719292139585,
       "sourceSize": 684,
@@ -2449,7 +2148,7 @@
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1719292139585,
+      "modifiedTime": 1719297122118,
       "sourceSize": 57606,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
