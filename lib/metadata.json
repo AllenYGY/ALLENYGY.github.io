@@ -1,6 +1,6 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1719495437607,
+  "lastExport": 1719497474231,
   "pluginVersion": "1.8.03",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd primary-accent-purple secondary-accent-green",
   "useCustomHeadContent": false,
@@ -130,8 +130,6 @@
     "DeepLearning/GradientDescent.md",
     "DeepLearning/BackPropagation.md",
     "DeepLearning/ActivationFunction.md",
-    "English/四六级议论文模板-roy大表哥.pdf",
-    "English/CET-6.md",
     "Fix-Income/珠海市经济产业分析.md",
     "Fix-Income/Fixed-Income-Overview.md",
     "Math/Discrete-Structure/assignment/discrete-mathematics-tutorial.md",
@@ -225,6 +223,43 @@
     "Program/R/R-Data-Structure.md",
     "Program/R/Basic-R.md",
     "Program/ProgramLanguage.md",
+    "Projects/DBM/Database-Management-System.md",
+    "Projects/DCN/Chat-Application.md",
+    "Projects/DPW/Img/video-info.png",
+    "Projects/DPW/Img/user-agent.png",
+    "Projects/DPW/Img/snownlpresult.png",
+    "Projects/DPW/Img/paddlenlpresult.png",
+    "Projects/DPW/Img/datapreparation.png",
+    "Projects/DPW/Img/danmudata.png",
+    "Projects/DPW/Img/dpw.png",
+    "Projects/DPW/Img/cutcomment.png",
+    "Projects/DPW/Img/contex2vec.png",
+    "Projects/DPW/Img/commentdata.png",
+    "Projects/DPW/Img/comment.png",
+    "Projects/DPW/Img/backendapi.png",
+    "Projects/DPW/ppt/slide9.png",
+    "Projects/DPW/ppt/slide8.png",
+    "Projects/DPW/ppt/slide7.png",
+    "Projects/DPW/ppt/slide6.png",
+    "Projects/DPW/ppt/slide5.png",
+    "Projects/DPW/ppt/slide4.png",
+    "Projects/DPW/ppt/slide3.png",
+    "Projects/DPW/ppt/slide2.png",
+    "Projects/DPW/ppt/slide19.png",
+    "Projects/DPW/ppt/slide18.png",
+    "Projects/DPW/ppt/slide17.png",
+    "Projects/DPW/ppt/slide16.png",
+    "Projects/DPW/ppt/slide15.png",
+    "Projects/DPW/ppt/slide14.png",
+    "Projects/DPW/ppt/slide13.png",
+    "Projects/DPW/ppt/slide12.png",
+    "Projects/DPW/ppt/slide11.png",
+    "Projects/DPW/ppt/slide10.png",
+    "Projects/DPW/ppt/slide1.png",
+    "Projects/DPW/Bilibilivista.md",
+    "Projects/DPW/Data-Programming-Workshop.md",
+    "Projects/DPW/Movie-Data-Analysis.md",
+    "Projects/DPW/system-Design-Specification.md",
     "Research/ploidy/Ploidy.md",
     "Research/ploidy/ploidy-review.md",
     "Research/calculatese.md",
@@ -236,7 +271,7 @@
     "Tools/Git/Git-Remote-Repository.md",
     "Tools/Git/Git-Introduction.md",
     "Tools/Git/Git-For-Beginners.md",
-    "Tools/Regex/RegexCheatSheet-byGeekHour.pdf",
+    "Tools/Regex/RegexCheatSheet.pdf",
     "Tools/Regex/Regular-Expression.md",
     "Tools/Shell/Shell.md",
     "Tools/Tools.md",
@@ -354,217 +389,217 @@
   ],
   "fileInfo": {
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
@@ -576,13 +611,13 @@
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1719495437607,
-      "sourceSize": 290063,
+      "modifiedTime": 1719497474231,
+      "sourceSize": 328244,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
@@ -618,19 +653,19 @@
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
@@ -642,49 +677,49 @@
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 151725,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 316784,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 6246,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 2101009,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
@@ -989,12 +1024,6 @@
       "exportedPath": "computer-organization/computer-organization.html",
       "dependencies": []
     },
-    "English/四六级议论文模板-roy大表哥.pdf": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 590770,
-      "exportedPath": "english/四六级议论文模板-roy大表哥.pdf",
-      "dependencies": []
-    },
     "Program/python/regularexpression.md": {
       "modifiedTime": 1719483807752,
       "sourceSize": 198,
@@ -1086,7 +1115,7 @@
       "dependencies": []
     },
     "Home.md": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 3351,
       "exportedPath": "home.html",
       "dependencies": []
@@ -1209,12 +1238,6 @@
       "modifiedTime": 1719483807752,
       "sourceSize": 570,
       "exportedPath": "deeplearning/activationfunction.html",
-      "dependencies": []
-    },
-    "English/CET-6.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 791,
-      "exportedPath": "english/cet-6.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/assignment/discrete-mathematics-tutorial.md": {
@@ -1698,8 +1721,8 @@
       "dependencies": []
     },
     "Tools/Conda/Conda.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 706,
+      "modifiedTime": 1719497474231,
+      "sourceSize": 2817,
       "exportedPath": "tools/conda/conda.html",
       "dependencies": []
     },
@@ -1731,12 +1754,6 @@
       "modifiedTime": 1719483807752,
       "sourceSize": 7326,
       "exportedPath": "tools/git/git-for-beginners.html",
-      "dependencies": []
-    },
-    "Tools/Regex/RegexCheatSheet-byGeekHour.pdf": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 1018408,
-      "exportedPath": "tools/regex/regexcheatsheet-bygeekhour.pdf",
       "dependencies": []
     },
     "Tools/Regex/Regular-Expression.md": {
@@ -2112,7 +2129,7 @@
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1719495437607,
+      "modifiedTime": 1719497474231,
       "sourceSize": 57606,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
@@ -2283,6 +2300,483 @@
       "modifiedTime": 1719494757815,
       "sourceSize": 3209,
       "exportedPath": "research/ploidy/ploidy.html",
+      "dependencies": []
+    },
+    "Projects/DBM/Database-Management-System.md": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 10216,
+      "exportedPath": "projects/dbm/database-management-system.html",
+      "dependencies": []
+    },
+    "Projects/DCN/Chat-Application.md": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 4016,
+      "exportedPath": "projects/dcn/chat-application.html",
+      "dependencies": []
+    },
+    "Projects/DPW/Img/video-info.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 92143,
+      "exportedPath": "projects/dpw/img/video-info.png",
+      "dependencies": []
+    },
+    "Projects/DPW/Img/user-agent.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 66016,
+      "exportedPath": "projects/dpw/img/user-agent.png",
+      "dependencies": []
+    },
+    "Projects/DPW/Img/snownlpresult.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 40652,
+      "exportedPath": "projects/dpw/img/snownlpresult.png",
+      "dependencies": []
+    },
+    "Projects/DPW/Img/paddlenlpresult.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 45391,
+      "exportedPath": "projects/dpw/img/paddlenlpresult.png",
+      "dependencies": []
+    },
+    "Projects/DPW/Img/datapreparation.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 114850,
+      "exportedPath": "projects/dpw/img/datapreparation.png",
+      "dependencies": []
+    },
+    "Projects/DPW/Img/danmudata.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 68350,
+      "exportedPath": "projects/dpw/img/danmudata.png",
+      "dependencies": []
+    },
+    "Projects/DPW/Img/dpw.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 210090,
+      "exportedPath": "projects/dpw/img/dpw.png",
+      "dependencies": []
+    },
+    "Projects/DPW/Img/cutcomment.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 126690,
+      "exportedPath": "projects/dpw/img/cutcomment.png",
+      "dependencies": []
+    },
+    "Projects/DPW/Img/contex2vec.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 314897,
+      "exportedPath": "projects/dpw/img/contex2vec.png",
+      "dependencies": []
+    },
+    "Projects/DPW/Img/commentdata.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 56174,
+      "exportedPath": "projects/dpw/img/commentdata.png",
+      "dependencies": []
+    },
+    "Projects/DPW/Img/comment.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 181426,
+      "exportedPath": "projects/dpw/img/comment.png",
+      "dependencies": []
+    },
+    "Projects/DPW/Img/backendapi.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 225734,
+      "exportedPath": "projects/dpw/img/backendapi.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide9.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 77781,
+      "exportedPath": "projects/dpw/ppt/slide9.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide8.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 89976,
+      "exportedPath": "projects/dpw/ppt/slide8.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide7.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 68289,
+      "exportedPath": "projects/dpw/ppt/slide7.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide6.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 72770,
+      "exportedPath": "projects/dpw/ppt/slide6.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide5.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 102963,
+      "exportedPath": "projects/dpw/ppt/slide5.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide4.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 82505,
+      "exportedPath": "projects/dpw/ppt/slide4.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide3.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 83378,
+      "exportedPath": "projects/dpw/ppt/slide3.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide2.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 84462,
+      "exportedPath": "projects/dpw/ppt/slide2.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide19.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 18206,
+      "exportedPath": "projects/dpw/ppt/slide19.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide18.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 32891,
+      "exportedPath": "projects/dpw/ppt/slide18.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide17.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 93601,
+      "exportedPath": "projects/dpw/ppt/slide17.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide16.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 96187,
+      "exportedPath": "projects/dpw/ppt/slide16.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide15.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 116402,
+      "exportedPath": "projects/dpw/ppt/slide15.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide14.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 69977,
+      "exportedPath": "projects/dpw/ppt/slide14.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide13.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 69976,
+      "exportedPath": "projects/dpw/ppt/slide13.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide12.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 123147,
+      "exportedPath": "projects/dpw/ppt/slide12.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide11.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 144188,
+      "exportedPath": "projects/dpw/ppt/slide11.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide10.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 147516,
+      "exportedPath": "projects/dpw/ppt/slide10.png",
+      "dependencies": []
+    },
+    "Projects/DPW/ppt/slide1.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 607738,
+      "exportedPath": "projects/dpw/ppt/slide1.png",
+      "dependencies": []
+    },
+    "Projects/DPW/Bilibilivista.md": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 10620,
+      "exportedPath": "projects/dpw/bilibilivista.html",
+      "dependencies": [
+        "projects/dpw/img/dpw.png",
+        "projects/dpw/img/dpw.png",
+        "projects/dpw/img/comment.png",
+        "projects/dpw/img/comment.png",
+        "projects/dpw/img/datapreparation.png",
+        "projects/dpw/img/datapreparation.png",
+        "projects/dpw/img/cutcomment.png",
+        "projects/dpw/img/cutcomment.png",
+        "projects/dpw/img/snownlpresult.png",
+        "projects/dpw/img/snownlpresult.png",
+        "projects/dpw/img/contex2vec.png",
+        "projects/dpw/img/contex2vec.png",
+        "projects/dpw/img/paddlenlpresult.png",
+        "projects/dpw/img/paddlenlpresult.png",
+        "projects/dpw/img/user-agent.png",
+        "projects/dpw/img/user-agent.png",
+        "projects/dpw/img/video-info.png",
+        "projects/dpw/img/video-info.png",
+        "projects/dpw/img/commentdata.png",
+        "projects/dpw/img/commentdata.png",
+        "projects/dpw/img/danmudata.png",
+        "projects/dpw/img/danmudata.png",
+        "projects/dpw/img/backendapi.png",
+        "projects/dpw/img/backendapi.png",
+        "projects/dpw/ppt/slide1.png",
+        "projects/dpw/ppt/slide1.png",
+        "projects/dpw/ppt/slide2.png",
+        "projects/dpw/ppt/slide2.png",
+        "projects/dpw/ppt/slide3.png",
+        "projects/dpw/ppt/slide3.png",
+        "projects/dpw/ppt/slide4.png",
+        "projects/dpw/ppt/slide4.png",
+        "projects/dpw/ppt/slide5.png",
+        "projects/dpw/ppt/slide5.png",
+        "projects/dpw/ppt/slide6.png",
+        "projects/dpw/ppt/slide6.png",
+        "projects/dpw/ppt/slide7.png",
+        "projects/dpw/ppt/slide7.png",
+        "projects/dpw/ppt/slide8.png",
+        "projects/dpw/ppt/slide8.png",
+        "projects/dpw/ppt/slide9.png",
+        "projects/dpw/ppt/slide9.png",
+        "projects/dpw/ppt/slide10.png",
+        "projects/dpw/ppt/slide10.png",
+        "projects/dpw/ppt/slide11.png",
+        "projects/dpw/ppt/slide11.png",
+        "projects/dpw/ppt/slide12.png",
+        "projects/dpw/ppt/slide12.png",
+        "projects/dpw/ppt/slide13.png",
+        "projects/dpw/ppt/slide13.png",
+        "projects/dpw/ppt/slide14.png",
+        "projects/dpw/ppt/slide14.png",
+        "projects/dpw/ppt/slide15.png",
+        "projects/dpw/ppt/slide15.png",
+        "projects/dpw/ppt/slide16.png",
+        "projects/dpw/ppt/slide16.png",
+        "projects/dpw/ppt/slide17.png",
+        "projects/dpw/ppt/slide17.png",
+        "projects/dpw/ppt/slide18.png",
+        "projects/dpw/ppt/slide18.png",
+        "projects/dpw/ppt/slide19.png",
+        "projects/dpw/ppt/slide19.png"
+      ]
+    },
+    "Projects/DPW/Data-Programming-Workshop.md": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 426,
+      "exportedPath": "projects/dpw/data-programming-workshop.html",
+      "dependencies": []
+    },
+    "Projects/DPW/Movie-Data-Analysis.md": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 1048,
+      "exportedPath": "projects/dpw/movie-data-analysis.html",
+      "dependencies": []
+    },
+    "Projects/DPW/system-Design-Specification.md": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 5276,
+      "exportedPath": "projects/dpw/system-design-specification.html",
+      "dependencies": []
+    },
+    "Tools/Regex/RegexCheatSheet.pdf": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 1018408,
+      "exportedPath": "tools/regex/regexcheatsheet.pdf",
+      "dependencies": []
+    },
+    "projects/dpw/img/dpw.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 210090,
+      "exportedPath": "projects/dpw/img/dpw.png",
+      "dependencies": []
+    },
+    "projects/dpw/img/comment.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 181426,
+      "exportedPath": "projects/dpw/img/comment.png",
+      "dependencies": []
+    },
+    "projects/dpw/img/datapreparation.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 114850,
+      "exportedPath": "projects/dpw/img/datapreparation.png",
+      "dependencies": []
+    },
+    "projects/dpw/img/cutcomment.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 126690,
+      "exportedPath": "projects/dpw/img/cutcomment.png",
+      "dependencies": []
+    },
+    "projects/dpw/img/snownlpresult.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 40652,
+      "exportedPath": "projects/dpw/img/snownlpresult.png",
+      "dependencies": []
+    },
+    "projects/dpw/img/contex2vec.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 314897,
+      "exportedPath": "projects/dpw/img/contex2vec.png",
+      "dependencies": []
+    },
+    "projects/dpw/img/paddlenlpresult.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 45391,
+      "exportedPath": "projects/dpw/img/paddlenlpresult.png",
+      "dependencies": []
+    },
+    "projects/dpw/img/user-agent.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 66016,
+      "exportedPath": "projects/dpw/img/user-agent.png",
+      "dependencies": []
+    },
+    "projects/dpw/img/video-info.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 92143,
+      "exportedPath": "projects/dpw/img/video-info.png",
+      "dependencies": []
+    },
+    "projects/dpw/img/commentdata.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 56174,
+      "exportedPath": "projects/dpw/img/commentdata.png",
+      "dependencies": []
+    },
+    "projects/dpw/img/danmudata.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 68350,
+      "exportedPath": "projects/dpw/img/danmudata.png",
+      "dependencies": []
+    },
+    "projects/dpw/img/backendapi.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 225734,
+      "exportedPath": "projects/dpw/img/backendapi.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide1.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 607738,
+      "exportedPath": "projects/dpw/ppt/slide1.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide2.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 84462,
+      "exportedPath": "projects/dpw/ppt/slide2.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide3.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 83378,
+      "exportedPath": "projects/dpw/ppt/slide3.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide4.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 82505,
+      "exportedPath": "projects/dpw/ppt/slide4.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide5.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 102963,
+      "exportedPath": "projects/dpw/ppt/slide5.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide6.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 72770,
+      "exportedPath": "projects/dpw/ppt/slide6.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide7.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 68289,
+      "exportedPath": "projects/dpw/ppt/slide7.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide8.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 89976,
+      "exportedPath": "projects/dpw/ppt/slide8.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide9.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 77781,
+      "exportedPath": "projects/dpw/ppt/slide9.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide10.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 147516,
+      "exportedPath": "projects/dpw/ppt/slide10.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide11.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 144188,
+      "exportedPath": "projects/dpw/ppt/slide11.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide12.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 123147,
+      "exportedPath": "projects/dpw/ppt/slide12.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide13.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 69976,
+      "exportedPath": "projects/dpw/ppt/slide13.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide14.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 69977,
+      "exportedPath": "projects/dpw/ppt/slide14.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide15.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 116402,
+      "exportedPath": "projects/dpw/ppt/slide15.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide16.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 96187,
+      "exportedPath": "projects/dpw/ppt/slide16.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide17.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 93601,
+      "exportedPath": "projects/dpw/ppt/slide17.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide18.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 32891,
+      "exportedPath": "projects/dpw/ppt/slide18.png",
+      "dependencies": []
+    },
+    "projects/dpw/ppt/slide19.png": {
+      "modifiedTime": 1719497474231,
+      "sourceSize": 18206,
+      "exportedPath": "projects/dpw/ppt/slide19.png",
       "dependencies": []
     }
   }
