@@ -1,6 +1,6 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><parsererror xmlns="http://www.w3.org/1999/xhtml" style="display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black"><h3>This page contains the following errors:</h3><div style="font-family:monospace;font-size:12px">error on line 8467 at column 423: Input is not proper UTF-8, indicate encoding !
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><parsererror xmlns="http://www.w3.org/1999/xhtml" style="display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black"><h3>This page contains the following errors:</h3><div style="font-family:monospace;font-size:12px">error on line 8714 at column 423: Input is not proper UTF-8, indicate encoding !
 Bytes: 0x01 0x74 0x6F 0x20
-</div><h3>Below is a rendering of the page up to the first error.</h3></parsererror><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 25 Jun 2024 09:27:40 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 25 Jun 2024 09:25:36 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="SparceTable" href="algorithm/basicalgorithm/sparcetable.html" class="internal-link" target="_self" rel="noopener">SparceTable</a>]]></title><description><![CDATA[ 
+</div><h3>Below is a rendering of the page up to the first error.</h3></parsererror><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 27 Jun 2024 10:25:55 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 27 Jun 2024 10:23:27 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="SparceTable" href="algorithm/basicalgorithm/sparcetable.html" class="internal-link" target="_self" rel="noopener">SparceTable</a>]]></title><description><![CDATA[ 
  <br>]]></description><link>https://blog.allenygy.vip/algorithm/basicalgorithm/sparcetable.html</link><guid isPermaLink="false">Algorithm/BasicAlgorithm/SparceTable.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 17:47:50 GMT</pubDate></item><item><title><![CDATA[<strong>SlidingWindow</strong>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
  <br><br><a href="https://blog.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener">#Experience</a> <br>
 <br>枚举右端点，挪动左端点
@@ -52,7 +52,7 @@ Copy]]></description><link>https://blog.allenygy.vip/algorithm/basicalgorithm/di
 <br><a data-tooltip-position="top" aria-label="Discretization" data-href="Discretization" href="https://blog.allenygy.vip/algorithm/basicalgorithm/discretization.html" class="internal-link" target="_self" rel="noopener">离散化</a>
 <br><a data-href="BinarySearch" href="https://blog.allenygy.vip/BinarySearch" class="internal-link" target="_self" rel="noopener">BinarySearch</a>
 <br><a data-tooltip-position="top" aria-label="SlidingWindow" data-href="SlidingWindow" href="https://blog.allenygy.vip/algorithm/basicalgorithm/slidingwindow.html" class="internal-link" target="_self" rel="noopener">双指针</a>
-]]></description><link>https://blog.allenygy.vip/algorithm/basicalgorithm/basic-algorithm-overview.html</link><guid isPermaLink="false">Algorithm/BasicAlgorithm/Basic-Algorithm-overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 17:50:43 GMT</pubDate></item><item><title><![CDATA[<a data-href="Union-Find" href="algorithm/daa/algorithm/union-find.html" class="internal-link" target="_self" rel="noopener">Union-Find</a><sup data-footnote-id="fnref-1-dd739283d4f67e74" class="footnote-ref" id="fnref-1-dd739283d4f67e74"><a data-footref="[inline0" href="#fn-1-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
+]]></description><link>https://blog.allenygy.vip/algorithm/basicalgorithm/basic-algorithm-overview.html</link><guid isPermaLink="false">Algorithm/BasicAlgorithm/Basic-Algorithm-overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 17:50:43 GMT</pubDate></item><item><title><![CDATA[<a data-href="Union-Find" href="algorithm/daa/algorithm/union-find.html" class="internal-link" target="_self" rel="noopener">Union-Find</a><sup data-footnote-id="fnref-1-898f1cb7c822a57c" class="footnote-ref" id="fnref-1-898f1cb7c822a57c"><a data-footref="[inline0" href="#fn-1-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
  <br><br>
 <br>用于解决元素分组问题
 <br>联通问题
@@ -408,7 +408,7 @@ return result;
 
 Copy<br>
 <br>
-<br>并查集<a href="https://blog.allenygy.vip/about:blank#fnref-1-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>并查集<a href="https://blog.allenygy.vip/about:blank#fnref-1-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/algorithm/daa/algorithm/union-find.html</link><guid isPermaLink="false">Algorithm/DAA/Algorithm/Union-Find.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:01:13 GMT</pubDate></item><item><title><![CDATA[Sort Algorithm]]></title><description><![CDATA[ 
  <br><br>
 <br>Bubble Sort
@@ -2930,8 +2930,11 @@ signed main() {
 
 Copy<br><br><br>桂林山水甲天下，漓江更是美不胜收。 漓江上竹筏整齐排列，形成了美丽的风景线，津津、菲菲和皮皮决定乘坐竹筏游览漓江景色。 已知竹筏有2种规格：一种是单人竹筏，长度为1，宽度为1；另一种是双人竹筏，长度为 2，宽度为2。假设漓江江面的面积是n*3，请问多少种不同的竹筏安排方案？<br><br>一行一个整数n,0&lt;n&lt;1000.<br><br>一行一个整数，为铺设方案的数量模12345的结果。<br><br>Input<br>2
 Copy<br>Output<br>3
-Copy<br><br>
-  表示 江面宽度为时铺设方案的数
+Copy<br><br>$$f(n)=\begin{cases}  
+\ 1 &amp; n= 1\<br>
+\ 2 &amp; n= 2\<br>
+d[i-1]+2\times d[i-2] \ &amp;n&gt;2<br>
+\end{cases}$d[i]$  表示 江面宽度为时铺设方案的数
 <br>Why  ?
 当宽度是二的时候，有两种排列方法
 <br><br>#include&lt;bits/stdc++.h&gt;
@@ -2964,8 +2967,11 @@ Copy<br><br><br>桂林为了欢迎广大游客，决定在桂林的各大街道�
 <br>一条蓝色的彩带必须放在一条白色的彩带和一条红色的彩带中间。 津津、菲菲和皮皮决定写一个程序，了解放置彩带的方案数有多少种。
 <br><br>一行一个整数n，表示橱窗的宽度（或者说彩带数目）。<br><br>一行一个整数，表示装饰橱窗的彩带放置方案数。<br><br>Input<br>3
 Copy<br>Output<br>4
-Copy<br><br>
-  表示当橱窗宽度是  时，彩带放置方案数
+Copy<br><br>$$f(n)=\begin{cases}  
+\ 2 &amp; n= 1\<br>
+\ 2 &amp; n= 2\<br>
+d(i-1)+d(i-2) \ &amp;n&gt;2<br>
+\end{cases}$d[i]$  表示当橱窗宽度是  时，彩带放置方案数
 <br>Why ?
 
 <br>假设一共有  条彩带，当前  条彩带排好后，则最后一条彩带
@@ -3378,8 +3384,8 @@ Calculate Reminder: <br>
 
 <br>边：通信链路
 
-<br>接入网链路<a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[1]</a>：主机连接到互联网的链路
-<br>骨干链路<a data-footref="[inline1" href="https://blog.allenygy.vip/about:blank#fn-2-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[2]</a>：路由器间的链路
+<br>接入网链路<a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[1]</a>：主机连接到互联网的链路
+<br>骨干链路<a data-footref="[inline1" href="https://blog.allenygy.vip/about:blank#fn-2-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[2]</a>：路由器间的链路
 
 
 <br>协议：
@@ -3464,8 +3470,8 @@ Calculate Reminder: <br>
 
 <br><br><br><br>
 <br>
-<br>Access<a href="https://blog.allenygy.vip/about:blank#fnref-1-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Backbone<a href="https://blog.allenygy.vip/about:blank#fnref-2-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Access<a href="https://blog.allenygy.vip/about:blank#fnref-1-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Backbone<a href="https://blog.allenygy.vip/about:blank#fnref-2-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/computer-network/ustc-l1.html</link><guid isPermaLink="false">Computer-Network/USTC-L1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:57:31 GMT</pubDate></item><item><title><![CDATA[<a data-href="Transport-Layer" href="computer-network/transport-layer.html" class="internal-link" target="_self" rel="noopener">Transport-Layer</a>]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Operation of TCP 
@@ -6570,7 +6576,188 @@ int main(){
  }
  return 0;
 }
-Copy]]></description><link>https://blog.allenygy.vip/contest/lanqiao/train-1.html</link><guid isPermaLink="false">Contest/Lanqiao/Train-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:26:26 GMT</pubDate></item><item><title><![CDATA[<a data-href="Weekly-Contest-402" href="contest/leetcode/weekly-contest-402.html" class="internal-link" target="_self" rel="noopener">Weekly-Contest-402</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/contest/weekly-contest-402/" rel="noopener" class="external-link" href="https://leetcode.cn/contest/weekly-contest-402/" target="_blank"></a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> 
+Copy]]></description><link>https://blog.allenygy.vip/contest/lanqiao/train-1.html</link><guid isPermaLink="false">Contest/Lanqiao/Train-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:26:26 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://leetcode.cn/contest/weekly-contest-403/" rel="noopener" class="external-link" href="https://leetcode.cn/contest/weekly-contest-403/" target="_blank">Weekly-Contest-403</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:双指针" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#双指针</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:模拟" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#模拟</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:暴力" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#暴力</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:DP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DP</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:状态机DP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#状态机DP</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:枚举" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#枚举</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:暴力" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#暴力</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:模拟" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#模拟</a> 
+ <br><br><br><a href="https://blog.allenygy.vip?query=tag:双指针" class="tag" target="_blank" rel="noopener">#双指针</a><br>
+维护最小值<br>class Solution {
+public:
+    double minimumAverage(vector&lt;int&gt;&amp; nums) {
+        sort(nums.begin(),nums.end());
+        int n =nums.size();
+        int ans=(nums[0]+nums[n-1]);
+        for(int i =0,j=n-1;i&lt;j;i++,j--){
+            ans=min(ans,(nums[i]+nums[j]));
+        }
+        return ans/2.0;
+    }
+};
+Copy<br><br><a href="https://blog.allenygy.vip?query=tag:模拟" class="tag" target="_blank" rel="noopener">#模拟</a> <a href="https://blog.allenygy.vip?query=tag:暴力" class="tag" target="_blank" rel="noopener">#暴力</a><br>class Solution {
+public:
+    int minimumArea(vector&lt;vector&lt;int&gt;&gt;&amp; grid) {
+        if (grid.empty() || grid[0].empty()) return 0;
+    
+        int rows = grid.size();
+        int cols = grid[0].size();
+        
+        int min_row = rows, max_row = -1;
+        int min_col = cols, max_col = -1;
+        
+        for (int r = 0; r &lt; rows; ++r) {
+            for (int c = 0; c &lt; cols; ++c) {
+                if (grid[r][c] == 1) {
+                    min_row = min(min_row, r);
+                    max_row = max(max_row, r);
+                    min_col = min(min_col, c);
+                    max_col = max(max_col, c);
+                }
+            }
+        }
+        
+        if (min_row == rows || max_row == -1) return 0;
+        
+        int height = max_row - min_row + 1;
+        int width = max_col - min_col + 1;
+        
+        return height * width;
+    }
+};
+Copy<br><br><a href="https://blog.allenygy.vip?query=tag:DP" class="tag" target="_blank" rel="noopener">#DP</a> <a href="https://blog.allenygy.vip?query=tag:状态机DP" class="tag" target="_blank" rel="noopener">#状态机DP</a><br>class Solution {
+public:
+    long long maximumTotalCost(vector&lt;int&gt;&amp; nums) {
+        int n = nums.size();
+        vector&lt;array&lt;long long, 2&gt;&gt; f(n+1);
+        for(int i=n-1;i&gt;=0;i--){
+            f[i][0]=f[i+1][1]+nums[i];
+            f[i][1]=max(f[i+1][1]+nums[i],f[i+1][0]-nums[i]);
+        }
+        return f[0][0];
+    }
+};
+Copy<br><br><a href="https://blog.allenygy.vip?query=tag:枚举" class="tag" target="_blank" rel="noopener">#枚举</a> <a href="https://blog.allenygy.vip?query=tag:暴力" class="tag" target="_blank" rel="noopener">#暴力</a> <a href="https://blog.allenygy.vip?query=tag:模拟" class="tag" target="_blank" rel="noopener">#模拟</a><br>枚举六种排列情况<br>
+分别调用 T2 的计算方法求出最小面积<br>class Solution {
+    vector&lt;vector&lt;int&gt;&gt; rotate(vector&lt;vector&lt;int&gt;&gt;&amp; a) {
+        int m = a.size();
+        int n = a[0].size();
+        vector&lt;vector&lt;int&gt;&gt; b(n, vector&lt;int&gt;(m));
+        for (int i = 0; i &lt; m; i++) {
+            for (int j = 0; j &lt; n; j++) {
+                b[j][m - 1 - i] = a[i][j];
+            }
+        }
+        return b;
+    }
+
+    int minimumArea(vector&lt;vector&lt;int&gt;&gt;&amp; a, int u, int d, int l, int r) {
+        int left = a[0].size(), right = 0, top = a.size(), bottom = 0;
+        for (int i = u; i &lt; d; i++) {
+            for (int j = l; j &lt; r; j++) {
+                if (a[i][j] == 1) {
+                    left = min(left, j);
+                    right = max(right, j);
+                    top = min(top, i);
+                    bottom = i;
+                }
+            }
+        }
+        return (right - left + 1) * (bottom - top + 1);
+    }
+
+    int f(vector&lt;vector&lt;int&gt;&gt;&amp; a) {
+        int ans = INT_MAX;
+        int m = a.size();
+        int n = a[0].size();
+        if (m &gt;= 3) {
+            for (int i = 1; i &lt; m; i++) {
+                for (int j = i + 1; j &lt; m; j++) {
+                    // 图片上左
+                    int area = minimumArea(a, 0, i, 0, n);
+                    area += minimumArea(a, i, j, 0, n);
+                    area += minimumArea(a, j, m, 0, n);
+                    ans = min(ans, area);
+                }
+            }
+        }
+        if (m &gt;= 2 &amp;&amp; n &gt;= 2) {
+            for (int i = 1; i &lt; m; i++) {
+                for (int j = 1; j &lt; n; j++) {
+                    // 图片上中
+                    int area = minimumArea(a, 0, i, 0, n);
+                    area += minimumArea(a, i, m, 0, j);
+                    area += minimumArea(a, i, m, j, n);
+                    ans = min(ans, area);
+                    // 图片上右
+                    area = minimumArea(a, 0, i, 0, j);
+                    area += minimumArea(a, 0, i, j, n);
+                    area += minimumArea(a, i, m, 0, n);
+                    ans = min(ans, area);
+                }
+            }
+        }
+        return ans;
+    }
+
+public:
+    int minimumSum(vector&lt;vector&lt;int&gt;&gt;&amp; grid) {
+        auto g = rotate(grid);
+        return min(f(grid), f(g));
+    }
+};
+Copy]]></description><link>https://blog.allenygy.vip/contest/leetcode/weekly-contest-403.html</link><guid isPermaLink="false">Contest/Leetcode/Weekly-Contest-403.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 27 Jun 2024 10:21:35 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://leetcode.cn/contest/biweekly-contest-133/" rel="noopener" class="external-link" href="https://leetcode.cn/contest/biweekly-contest-133/" target="_blank">Biweekly-contest-133</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:贪心" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#贪心</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:贪心" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#贪心</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:DP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DP</a> 
+ <br><br><br>统计不能被 0 整除的数的数量<br>class Solution {
+public:
+    int minimumOperations(vector&lt;int&gt;&amp; nums) {
+        int ans=0;
+
+        for(int i=0;i&lt;nums.size();i++){
+            if(nums[i]%3!=0)
+                ans+=1;
+        }
+        return ans;
+    }
+};
+Copy<br><br><a href="https://blog.allenygy.vip?query=tag:贪心" class="tag" target="_blank" rel="noopener">#贪心</a><br>
+从左至右遍历逐个检查<br>class Solution {
+public:
+    int minOperations(vector&lt;int&gt;&amp; nums) {
+        int n = nums.size();
+        int count = 0;
+        for (int i = 0; i &lt;= n - 3; ++i) {
+            if (nums[i] == 0) {
+                nums[i] = 1 - nums[i];
+                nums[i + 1] = 1 - nums[i + 1];
+                nums[i + 2] = 1 - nums[i + 2];
+                count++;
+                cout&lt;&lt;i&lt;&lt;" ";
+            }
+        }
+
+        if (nums[n - 2] == 0 || nums[n - 1] == 0) {
+            return -1;
+        }
+
+        return count;
+    }
+};
+Copy<br><br><a href="https://blog.allenygy.vip?query=tag:贪心" class="tag" target="_blank" rel="noopener">#贪心</a><br>
+从左至右，每发现一个需要翻转的数<br>
+翻转次数+1<br>
+翻转状态翻转（因为翻转1次，后面所有的都会翻转）<br>class Solution {
+public:
+    int minOperations(vector&lt;int&gt;&amp; nums) {
+        int flips = 0;
+        int n = nums.size();
+        bool shouldBeOne = false;
+
+        for (int i = 0; i &lt; n; ++i) {
+            if (nums[i] == shouldBeOne) {
+                flips++;
+                shouldBeOne = !shouldBeOne;
+            }
+        }
+        return flips;
+    }
+};
+Copy<br><br><a href="https://blog.allenygy.vip?query=tag:DP" class="tag" target="_blank" rel="noopener">#DP</a><br>
+看了题解还是不会]]></description><link>https://blog.allenygy.vip/contest/leetcode/biweekly-contest-133.html</link><guid isPermaLink="false">Contest/Leetcode/Biweekly-contest-133.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 27 Jun 2024 10:13:38 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://leetcode.cn/contest/weekly-contest-402/" rel="noopener" class="external-link" href="https://leetcode.cn/contest/weekly-contest-402/" target="_blank">Weekly-Contest-402</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> 
  <br><br><br>给你一个整数数组&nbsp;hours，表示以&nbsp;小时&nbsp;为单位的时间，返回一个整数，表示满足&nbsp;i &lt; j&nbsp;且&nbsp;hours[i] + hours[j]&nbsp;构成&nbsp;整天&nbsp;的下标对&nbsp;i,&nbsp;j&nbsp;的数目。<br>
 整天&nbsp;定义为时间持续时间是 24 小时的&nbsp;整数倍&nbsp;。<br>
 例如，1 天是 24 小时，2 天是 48 小时，3 天是 72 小时，以此类推。<br>暴力没什么好说的<br>class Solution {
@@ -6629,7 +6816,67 @@ public:
         
     }
 };
-Copy<br>]]></description><link>https://blog.allenygy.vip/contest/leetcode/weekly-contest-402.html</link><guid isPermaLink="false">Contest/Leetcode/Weekly-Contest-402.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:25:08 GMT</pubDate></item><item><title><![CDATA[<a data-href="Weekly-Contest-381" href="contest/leetcode/weekly-contest-381.html" class="internal-link" target="_self" rel="noopener">Weekly-Contest-381</a>(<a rel="noopener" class="external-link" href="https://leetcode.cn/contest/weekly-contest-381/" target="_blank">https://leetcode.cn/contest/weekly-contest-381/</a>)]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> 
+Copy<br><br>树状数组<br>class Fenwick {
+    vector&lt;int&gt; f;
+
+public:
+    Fenwick(int n) : f(n) {}
+
+    void update(int i, int val) {
+        for (; i &lt; f.size(); i += i &amp; -i) {
+            f[i] += val;
+        }
+    }
+
+    int pre(int i) {
+        int res = 0;
+        for (; i &gt; 0; i &amp;= i - 1) {
+            res += f[i];
+        }
+        return res;
+    }
+
+    int query(int l, int r) {
+        if (r &lt; l) {
+            return 0;
+        }
+        return pre(r) - pre(l - 1);
+    }
+};
+
+class Solution {
+public:
+    vector&lt;int&gt; countOfPeaks(vector&lt;int&gt;&amp; nums, vector&lt;vector&lt;int&gt;&gt;&amp; queries) {
+        int n = nums.size();
+        Fenwick f(n - 1);
+        auto update = [&amp;](int i, int val) {
+            if (nums[i - 1] &lt; nums[i] &amp;&amp; nums[i] &gt; nums[i + 1]) {
+                f.update(i, val);
+            }
+        };
+        for (int i = 1; i &lt; n - 1; i++) {
+            update(i, 1);
+        }
+
+        vector&lt;int&gt; ans;
+        for (auto&amp; q : queries) {
+            if (q[0] == 1) {
+                ans.push_back(f.query(q[1] + 1, q[2] - 1));
+                continue;
+            }
+            int i = q[1];
+            for (int j = max(i - 1, 1); j &lt;= min(i + 1, n - 2); ++j) {
+                update(j, -1);
+            }
+            nums[i] = q[2];
+            for (int j = max(i - 1, 1); j &lt;= min(i + 1, n - 2); ++j) {
+                update(j, 1);
+            }
+        }
+        return ans;
+    }
+};
+Copy]]></description><link>https://blog.allenygy.vip/contest/leetcode/weekly-contest-402.html</link><guid isPermaLink="false">Contest/Leetcode/Weekly-Contest-402.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 27 Jun 2024 10:13:48 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://leetcode.cn/contest/weekly-contest-381/" rel="noopener" class="external-link" href="https://leetcode.cn/contest/weekly-contest-381/" target="_blank">Weekly-Contest-381</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> 
  <br><br><br>class Solution { 
 public: 
 	int minimumPushes(string word) {
@@ -6704,7 +6951,7 @@ public:
 		return res; 
 	} 
 };
-Copy<br>]]></description><link>https://blog.allenygy.vip/contest/leetcode/weekly-contest-381.html</link><guid isPermaLink="false">Contest/Leetcode/Weekly-Contest-381.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:25:02 GMT</pubDate></item><item><title><![CDATA[<a data-href="Biweekly-Contest-123" href="contest/leetcode/biweekly-contest-123.html" class="internal-link" target="_self" rel="noopener">Biweekly-Contest-123</a>(<a rel="noopener" class="external-link" href="https://leetcode.cn/contest/biweekly-contest-123/" target="_blank">https://leetcode.cn/contest/biweekly-contest-123/</a>)]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> 
+Copy<br>]]></description><link>https://blog.allenygy.vip/contest/leetcode/weekly-contest-381.html</link><guid isPermaLink="false">Contest/Leetcode/Weekly-Contest-381.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 27 Jun 2024 10:14:06 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://leetcode.cn/contest/biweekly-contest-123/" rel="noopener" class="external-link" href="https://leetcode.cn/contest/biweekly-contest-123/" target="_blank">Biweekly-Contest-123</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> 
  <br><br><br>
 <br>排序
 <br>判断三角形是否存在
@@ -6780,7 +7027,7 @@ public:
 		return ans;
 	}
 };
-Copy<br><a href="https://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" target="_blank">T4</a>]]></description><link>https://blog.allenygy.vip/contest/leetcode/biweekly-contest-123.html</link><guid isPermaLink="false">Contest/Leetcode/Biweekly-Contest-123.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:24:52 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://leetcode.cn/contest/biweekly-contest-122" rel="noopener" class="external-link" href="https://leetcode.cn/contest/biweekly-contest-122" target="_blank">Biweekly-contest-122</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:woc，我是傻逼" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#woc，我是傻逼</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:分组循环" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#分组循环</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:还没开始" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#还没开始</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:还没开始" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#还没开始</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> 
+Copy<br><a href="https://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/solution/on2-you-ya-mei-ju-by-endlesscheng-z86d/" target="_blank">T4</a>]]></description><link>https://blog.allenygy.vip/contest/leetcode/biweekly-contest-123.html</link><guid isPermaLink="false">Contest/Leetcode/Biweekly-Contest-123.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 27 Jun 2024 10:13:56 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://leetcode.cn/contest/biweekly-contest-122" rel="noopener" class="external-link" href="https://leetcode.cn/contest/biweekly-contest-122" target="_blank">Biweekly-contest-122</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:T1" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T1</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:woc，我是傻逼" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#woc，我是傻逼</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T2</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:分组循环" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#分组循环</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T3" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T3</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:还没开始" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#还没开始</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:T4" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#T4</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:还没开始" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#还没开始</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:灵神题解" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#灵神题解</a> 
  <br><br><br>
 <br>开始的时候总想暴力，取第一个数然后两个for循环就过了
 <br>后来看到HMZ，选第一个数然后直接sort取前两位
@@ -6829,7 +7076,7 @@ Copy<br><a href="https://blog.allenygy.vip?query=tag:灵神题解" class="tag" t
 
 <br><a href="https://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/minimize-length-of-array-using-operations/solution/on-nao-jin-ji-zhuan-wan-pythonjavacgo-by-2lea" rel="noopener" class="external-link" href="https://leetcode.cn/problems/minimize-length-of-array-using-operations/solution/on-nao-jin-ji-zhuan-wan-pythonjavacgo-by-2lea" target="_blank">T3</a><br><br><a href="https://blog.allenygy.vip?query=tag:还没开始" class="tag" target="_blank" rel="noopener">#还没开始</a> 可能还没开始看题<br>
 <a href="https://blog.allenygy.vip?query=tag:灵神题解" class="tag" target="_blank" rel="noopener">#灵神题解</a><a data-tooltip-position="top" aria-label="https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/solution/liang-ge-you-xu-ji-he-wei-hu-qian-k-1-xi-zdzx/" rel="noopener" class="external-link" href="https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/solution/liang-ge-you-xu-ji-he-wei-hu-qian-k-1-xi-zdzx/" target="_blank">T4</a>]]></description><link>https://blog.allenygy.vip/contest/leetcode/biweekly-contest-122.html</link><guid isPermaLink="false">Contest/Leetcode/Biweekly-Contest-122.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:24:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="Contest-Overview" href="contest/contest-overview.html" class="internal-link" target="_self" rel="noopener">Contest-Overview</a>]]></title><description><![CDATA[ 
- <br><br>]]></description><link>https://blog.allenygy.vip/contest/contest-overview.html</link><guid isPermaLink="false">Contest/Contest-Overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:35:39 GMT</pubDate></item><item><title><![CDATA[Hands on Data Analytics for Everyone]]></title><description><![CDATA[ 
+ <br><br><br>]]></description><link>https://blog.allenygy.vip/contest/contest-overview.html</link><guid isPermaLink="false">Contest/Contest-Overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 27 Jun 2024 09:54:08 GMT</pubDate></item><item><title><![CDATA[Hands on Data Analytics for Everyone]]></title><description><![CDATA[ 
  <br>
 <br>此文基本包括了uic hands on data 这门课quiz和期末考的知识点， 高亮标注都是考点
 <br>期末project 需要学习KNIME软件来建模  
@@ -6876,7 +7123,7 @@ Data-&gt;Data Preparation-&gt;Model Training-&gt;Model Optimization-&gt;Model Te
 <br>Mean: 
 <br>Variance: 
 <br>Standard deviation:  
-<br>Median: The middle number<a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[1]</a>
+<br>Median: The middle number<a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[1]</a>
 <br>Mode: Most frequently occurring value
 <br><br>
 <br>q%-quantile (0 &lt; q &lt; 100): The value for which q% of the values are smaller and 100-q% are larger. The median is the 50%-quantile
@@ -6912,7 +7159,7 @@ Usually leads to a very scattered histogram in which it is difficult to distingu
 <br>Best Choise
 <br><br>
 <br>
-Boxplot <a data-footref="[inline1" href="https://blog.allenygy.vip/about:blank#fn-2-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[2]</a>
+Boxplot <a data-footref="[inline1" href="https://blog.allenygy.vip/about:blank#fn-2-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[2]</a>
 
 <br>
 Boxplots are a very compact way to visualize and summarize the main characteristics of a numeric attribute, through the median, the IQR, and possible outliers.
@@ -6931,7 +7178,7 @@ Boxplots are a very compact way to visualize and summarize the main characterist
 <br>Suitable for small datasets
 <br><br><br><br>Requires min-max-normalization of numeric columns<br>
 <br>Ratio of missing values: If missing value &gt; threshold, then remove the column.
-<br>Low variance: If variance &lt; threshold, then remove column. <a data-footref="[inline2" href="https://blog.allenygy.vip/about:blank#fn-3-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[3]</a>
+<br>Low variance: If variance &lt; threshold, then remove column. <a data-footref="[inline2" href="https://blog.allenygy.vip/about:blank#fn-3-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[3]</a>
 <br>High Correlation: If(corr(var1,var2) &gt; threshold), then remove var1.
 <br><br><br><br>
 <br>Missing Completely At Random (MCAR): the probability that a value for X is missing does neither depend on the value of X nor on other variables. (Most serious)
@@ -6939,7 +7186,7 @@ Boxplots are a very compact way to visualize and summarize the main characterist
 <br>Not Missing At Random (NMAR): the probability that Y is missing depends on the unobserved value of Y itself
 <br><br>
 <br>Ignore or delete the record
-<br>Fill in (impute) missing value as “unknown”,mean/median/mode <a data-footref="[inline3" href="https://blog.allenygy.vip/about:blank#fn-4-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[4]</a>
+<br>Fill in (impute) missing value as “unknown”,mean/median/mode <a data-footref="[inline3" href="https://blog.allenygy.vip/about:blank#fn-4-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[4]</a>
 <br><br>
 <br>An outlier is a value or data object that is far away or very different from all or most of the other data.
 <br>Errors in measurements or exceptional conditions that don't describe the common functioning of the underlying system.
@@ -6986,7 +7233,7 @@ output data, while an unsupervised learning does not
 <br>Mean absolute error (MAE) 
 <br>Mean squared error (MSE) 
 <br>Root mean squared error (RMSE) 
-<br>R-squared <a data-footref="[inline4" href="https://blog.allenygy.vip/about:blank#fn-5-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[5]</a><br>
+<br>R-squared <a data-footref="[inline4" href="https://blog.allenygy.vip/about:blank#fn-5-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[5]</a><br>
 
 <br><br>
 <br>Training error/Empirical error: the error of the learner/model on the training data
@@ -7001,10 +7248,10 @@ Clustering identifies a finite set of groups (clusters)  in the dataset such tha
 <br>Objects of different clusters  () shall be as dissimilar as possible<br>
 Example:
 <br>Customer segmentation
-<br>Molecule search <a data-footref="[inline5" href="https://blog.allenygy.vip/about:blank#fn-6-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[6]</a>
-<br>Anomaly detection <a data-footref="[inline6" href="https://blog.allenygy.vip/about:blank#fn-7-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[7]</a>
-<br>Structuring large sets of text documents <a data-footref="[inline7" href="https://blog.allenygy.vip/about:blank#fn-8-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[8]</a>
-<br>Generating thematic maps from satellite images <a data-footref="[inline8" href="https://blog.allenygy.vip/about:blank#fn-9-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[9]</a>
+<br>Molecule search <a data-footref="[inline5" href="https://blog.allenygy.vip/about:blank#fn-6-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[6]</a>
+<br>Anomaly detection <a data-footref="[inline6" href="https://blog.allenygy.vip/about:blank#fn-7-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[7]</a>
+<br>Structuring large sets of text documents <a data-footref="[inline7" href="https://blog.allenygy.vip/about:blank#fn-8-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[8]</a>
+<br>Generating thematic maps from satellite images <a data-footref="[inline8" href="https://blog.allenygy.vip/about:blank#fn-9-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[9]</a>
 <br><br>
 <br>Linkage Based<br>
 e.g. Hierarchical Clustering
@@ -7016,16 +7263,16 @@ e.g. k-Means
 <br>Manhattan-Distance ()
 <br>
 <br>
-<br>Found by ordering all data points and picking out the one in the middle - or if there are two middle numbers, taking the mean of those two numbers<a href="https://blog.allenygy.vip/about:blank#fnref-1-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>The middle line of the box, which is the median of the data, represents the average of the sample data. The upper and lower limits of the box are the upper and lower quartiles of the data, respectively. This means that the box contains 50% of the data. The height of the box partly reflects how fluctuating the data is. Above and below the box, there is a line. Represents the maximum and minimum values, sometimes some points "pop out", which can be understood as "outliers"<a href="https://blog.allenygy.vip/about:blank#fnref-2-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Only works for numeric columns<a href="https://blog.allenygy.vip/about:blank#fnref-3-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Found by ordering all data points and picking out the one in the middle - or if there are two middle numbers, taking the mean of those two numbers<a href="https://blog.allenygy.vip/about:blank#fnref-1-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>The middle line of the box, which is the median of the data, represents the average of the sample data. The upper and lower limits of the box are the upper and lower quartiles of the data, respectively. This means that the box contains 50% of the data. The height of the box partly reflects how fluctuating the data is. Above and below the box, there is a line. Represents the maximum and minimum values, sometimes some points "pop out", which can be understood as "outliers"<a href="https://blog.allenygy.vip/about:blank#fnref-2-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Only works for numeric columns<a href="https://blog.allenygy.vip/about:blank#fnref-3-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 <br>A predicted value based on the other attributes (inference-based such as<br>
-Bayesian, Decision Tree<a href="https://blog.allenygy.vip/about:blank#fnref-4-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Proportion of the variance for a dependent variable that’s explained by the regression model.Normally ranges from 0 to 1, the closer to 1 the better performance.<a href="https://blog.allenygy.vip/about:blank#fnref-5-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Find molecules with similar structure to already working ones<a href="https://blog.allenygy.vip/about:blank#fnref-6-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Find unusual patterns in data from sensors monitoring mechanical engines<a href="https://blog.allenygy.vip/about:blank#fnref-7-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>hierarchical clustering of the text documents<a href="https://blog.allenygy.vip/about:blank#fnref-8-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>clustering sets of raster images of the same area (feature vectors)<a href="https://blog.allenygy.vip/about:blank#fnref-9-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+Bayesian, Decision Tree<a href="https://blog.allenygy.vip/about:blank#fnref-4-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Proportion of the variance for a dependent variable that’s explained by the regression model.Normally ranges from 0 to 1, the closer to 1 the better performance.<a href="https://blog.allenygy.vip/about:blank#fnref-5-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Find molecules with similar structure to already working ones<a href="https://blog.allenygy.vip/about:blank#fnref-6-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Find unusual patterns in data from sensors monitoring mechanical engines<a href="https://blog.allenygy.vip/about:blank#fnref-7-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>hierarchical clustering of the text documents<a href="https://blog.allenygy.vip/about:blank#fnref-8-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>clustering sets of raster images of the same area (feature vectors)<a href="https://blog.allenygy.vip/about:blank#fnref-9-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/data-analysis/hoda/hans-on-data-analysis-for-everyone.html</link><guid isPermaLink="false">Data-Analysis/HODA/Hans-On-Data-Analysis-For-Everyone.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 24 Jun 2024 18:28:12 GMT</pubDate></item><item><title><![CDATA[<a data-href="Data-Analysis" href="data-analysis/data-analysis.html" class="internal-link" target="_self" rel="noopener">Data-Analysis</a>]]></title><description><![CDATA[ 
  <br><br>]]></description><link>https://blog.allenygy.vip/data-analysis/data-analysis.html</link><guid isPermaLink="false">Data-Analysis/Data-Analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:27:20 GMT</pubDate></item><item><title><![CDATA[<a data-href="DBM-Assignment-2" href="database-management/assignment/dbm-assignment-2.html" class="internal-link" target="_self" rel="noopener">DBM-Assignment-2</a>]]></title><description><![CDATA[ 
  <br><br><br><br>
@@ -7633,7 +7880,7 @@ Thus, “section” is a weak entity set which depends on “course”.<br>
 <img alt="PWsNRI" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/PWsNRI.png" referrerpolicy="no-referrer"><br>Double rectangles denote weak entity sets. 双矩形边框 表示weak entity<br>
 Dashed underlines denote discriminators of weak entity sets. 虚线下划线 表示 weak entity的键<br>
 Double diamonds denote identifying relationship sets.<br>
-Assume we model the original “enroll” relationship set without constraints. <a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>
+Assume we model the original “enroll” relationship set without constraints. <a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[1]</a><br><br>
 <br>
 Generalization (泛化) is the process of extracting common properties from a set of entities and create a generalized entity from it. It is a bottom-up approach in which two or more entities can be generalized to a higher level entity if they have some attributes in common.
 
@@ -7676,7 +7923,7 @@ If we want to express every person is either a student or an instructor, then th
 And if we assume nobody can be a student and an instructor at the same time, this is a disjoint generalization.<br>
 <img alt="S0PX3U" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/S0PX3U.png" referrerpolicy="no-referrer"><br>
 <br>
-<br>我的评价是真sharuan<a href="https://blog.allenygy.vip/about:blank#fnref-1-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>我的评价是真sharuan<a href="https://blog.allenygy.vip/about:blank#fnref-1-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/database-management/lecture/entity-relationship-model-extended-features.html</link><guid isPermaLink="false">Database-Management/Lecture/Entity-Relationship-Model-Extended-Features.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 25 Jun 2024 04:53:45 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/MnKmwI.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/MnKmwI.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Entity-Relationship-Model-Constraints" href="database-management/lecture/entity-relationship-model-constraints.html" class="internal-link" target="_self" rel="noopener">Entity-Relationship-Model-Constraints</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Cardinality Constraints  基数约束 (one-one/one-many/many-many)
@@ -8088,7 +8335,7 @@ WHERE NOT EXISTS(
     WHERE s1.sID=e1.sID
   )
 )
-Copy<br><a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[1]</a><br>
+Copy<br><a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[1]</a><br>
 <br>Find the students who have taken all courses instructed by Goliath (instructor’s name and assuming that there is no other instructor who is called Goliath). Display your answer by sID and sname.
 <br>Divisor: course that taught by Goliath<br>
 Dividend: enroll<br>SELECT s1.sID,s1.sname
@@ -8114,7 +8361,7 @@ WHERE NOT EXISTS(
   );
 Copy<br>
 <br>
-<br>不需要将student，enroll，course合起来<a href="https://blog.allenygy.vip/about:blank#fnref-1-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>不需要将student，enroll，course合起来<a href="https://blog.allenygy.vip/about:blank#fnref-1-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/database-management/mysql/division-and-correlated-subquery.html</link><guid isPermaLink="false">Database-Management/MySQL/Division-and-Correlated-Subquery.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 25 Jun 2024 04:56:27 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Mysql/Division.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Mysql/Division.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Data-Modification" href="database-management/mysql/data-modification.html" class="internal-link" target="_self" rel="noopener">Data-Modification</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>INSERT
@@ -8416,10 +8663,10 @@ Copy<br>
 
 ]]></description><link>https://blog.allenygy.vip/database-management/mysql/advanced-sql.html</link><guid isPermaLink="false">Database-Management/MySQL/Advanced-SQL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 25 Jun 2024 04:55:49 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Database-Management" data-href="Database-Management" href="database-management/database-management.html" class="internal-link" target="_self" rel="noopener">Database Management</a>]]></title><description><![CDATA[ 
  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/database-management/database-management.html</link><guid isPermaLink="false">Database-Management/Database-Management.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 25 Jun 2024 04:56:56 GMT</pubDate></item><item><title><![CDATA[<a data-href="DeepLearning" href="deeplearning/deeplearning.html" class="internal-link" target="_self" rel="noopener">DeepLearning</a>]]></title><description><![CDATA[ 
- <br>]]></description><link>https://blog.allenygy.vip/deeplearning/deeplearning.html</link><guid isPermaLink="false">DeepLearning/DeepLearning.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 25 Jun 2024 04:58:16 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="GraphNetwork" data-href="GraphNetwork" href="deeplearning/graphnetwork.html" class="internal-link" target="_self" rel="noopener">A Gentle Introduction to Graph Neural Networks</a> <sup data-footnote-id="fnref-1-dd739283d4f67e74" class="footnote-ref" id="fnref-1-dd739283d4f67e74"><a data-footref="[inline0" href="#fn-1-dd739283d4f67e74" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
+ <br>]]></description><link>https://blog.allenygy.vip/deeplearning/deeplearning.html</link><guid isPermaLink="false">DeepLearning/DeepLearning.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 25 Jun 2024 04:58:16 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="GraphNetwork" data-href="GraphNetwork" href="deeplearning/graphnetwork.html" class="internal-link" target="_self" rel="noopener">A Gentle Introduction to Graph Neural Networks</a> <sup data-footnote-id="fnref-1-898f1cb7c822a57c" class="footnote-ref" id="fnref-1-898f1cb7c822a57c"><a data-footref="[inline0" href="#fn-1-898f1cb7c822a57c" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
  <br><br>
 <br>
-<br><a rel="noopener" class="external-link" href="https://distill.pub/2021/gnn-intro/" target="_blank">https://distill.pub/2021/gnn-intro/</a><a href="https://blog.allenygy.vip/about:blank#fnref-1-dd739283d4f67e74" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br><a rel="noopener" class="external-link" href="https://distill.pub/2021/gnn-intro/" target="_blank">https://distill.pub/2021/gnn-intro/</a><a href="https://blog.allenygy.vip/about:blank#fnref-1-898f1cb7c822a57c" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
 ]]></description><link>https://blog.allenygy.vip/deeplearning/graphnetwork.html</link><guid isPermaLink="false">DeepLearning/GraphNetwork.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 24 Jun 2024 17:24:10 GMT</pubDate></item><item><title><![CDATA[<a data-href="GradientDescent" href="deeplearning/gradientdescent.html" class="internal-link" target="_self" rel="noopener">GradientDescent</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Gradient Descent 梯度下降算法 GD
