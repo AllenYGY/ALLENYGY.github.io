@@ -1,6 +1,6 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1719501940805,
+  "lastExport": 1720094833053,
   "pluginVersion": "1.8.03",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd primary-accent-purple secondary-accent-green",
   "useCustomHeadContent": false,
@@ -13,9 +13,9 @@
     "Algorithm/DAA/Algorithm/Union-Find.md",
     "Algorithm/DAA/Algorithm/Sort.md",
     "Algorithm/DAA/Algorithm/Graph-algorithm.md",
+    "Algorithm/DAA/Algorithm/Divide-and-Conquer.md",
     "Algorithm/DAA/Algorithm/Enumeration.md",
     "Algorithm/DAA/Algorithm/Enumeration-subset.md",
-    "Algorithm/DAA/Algorithm/Divide-and-Conquer.md",
     "Algorithm/DAA/Assignment/DAA-Assignment-2.md",
     "Algorithm/DAA/Assignment/DAA-Programming-Assignment.md",
     "Algorithm/DAA/Assignment/DAA-Assignment-0.md",
@@ -124,14 +124,20 @@
     "Database-Management/MySQL/Basic-MySQL.md",
     "Database-Management/MySQL/Aggregation.md",
     "Database-Management/MySQL/Advanced-SQL.md",
-    "Database-Management/Database-Management.md",
+    "Database-Management/NoSQL/NoSQL-Assignment-1.md",
+    "Database-Management/NoSQL/NoSQL.md",
+    "Database-Management/NoSQL/Cassandra.md",
+    "Database-Management/NoSQL/Redis.md",
+    "Database-Management/NoSQL/MongoDB.md",
+    "Database-Management/NoSQL/Neo4J.md",
+    "Database-Management/Database-Management-System.md",
+    "DeepLearning/Parameter-Efficient Fine-Tuning.md",
+    "DeepLearning/Attention.md",
     "DeepLearning/DeepLearning.md",
     "DeepLearning/GraphNetwork.md",
     "DeepLearning/GradientDescent.md",
     "DeepLearning/BackPropagation.md",
     "DeepLearning/ActivationFunction.md",
-    "Fix-Income/珠海市经济产业分析.md",
-    "Fix-Income/Fixed-Income-Overview.md",
     "Math/Discrete-Structure/assignment/discrete-mathematics-tutorial.md",
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-8.md",
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-7.md",
@@ -226,14 +232,15 @@
     "Projects/DBM/Database-Management-System.md",
     "Projects/DCN/Chat-Application.md",
     "Projects/DPW/BilibiliVista-Pre.pdf",
-    "Projects/DPW/BilibiliVista.md",
     "Projects/DPW/Movie-Data-Analysis.md",
+    "Projects/DPW/BilibiliVista.md",
     "Projects/DPW/system-Design-Specification.md",
     "Projects/DPW/Data-Programming-Workshop.md",
-    "Research/ploidy/Ploidy.md",
-    "Research/ploidy/ploidy-review.md",
+    "Research/Ploidy/Ploidy.md",
+    "Research/Ploidy/ploidy-review.md",
+    "Research/COT.md",
     "Research/calculatese.md",
-    "Research/alphafold2.md",
+    "Research/Alphafold2.md",
     "Tools/Conda/Conda.md",
     "Tools/Docker/Docker.md",
     "Tools/Git/Git-Workflow-Model.md",
@@ -358,217 +365,217 @@
   ],
   "fileInfo": {
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
@@ -580,13 +587,13 @@
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1719501940805,
-      "sourceSize": 298670,
+      "modifiedTime": 1720094833053,
+      "sourceSize": 303973,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
@@ -622,19 +629,19 @@
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
@@ -646,49 +653,49 @@
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 151725,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 316784,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 6246,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 2101009,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
@@ -1047,46 +1054,28 @@
       "exportedPath": "program/python/beautifulsoup.html",
       "dependencies": []
     },
-    "Research/ploidy/ploidy-review.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 1466,
-      "exportedPath": "research/ploidy/ploidy-review.html",
-      "dependencies": []
-    },
     "Research/calculatese.md": {
       "modifiedTime": 1719483807752,
       "sourceSize": 238,
       "exportedPath": "research/calculatese.html",
       "dependencies": []
     },
-    "Research/alphafold2.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 7135,
-      "exportedPath": "research/alphafold2.html",
-      "dependencies": []
-    },
     "Archive.md": {
-      "modifiedTime": 1719494757815,
-      "sourceSize": 11673,
+      "modifiedTime": 1720094833053,
+      "sourceSize": 12249,
       "exportedPath": "archive.html",
       "dependencies": []
     },
     "Class.md": {
-      "modifiedTime": 1719494757815,
-      "sourceSize": 14782,
+      "modifiedTime": 1720094833053,
+      "sourceSize": 15203,
       "exportedPath": "class.html",
       "dependencies": []
     },
     "Home.md": {
-      "modifiedTime": 1719501940805,
-      "sourceSize": 3353,
+      "modifiedTime": 1720094833053,
+      "sourceSize": 3362,
       "exportedPath": "home.html",
-      "dependencies": []
-    },
-    "Fix-Income/珠海市经济产业分析.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 4540,
-      "exportedPath": "fix-income/珠海市经济产业分析.html",
       "dependencies": []
     },
     "Contest/Lanqiao/Train-2.md": {
@@ -1141,12 +1130,6 @@
       "modifiedTime": 1719483807752,
       "sourceSize": 2284,
       "exportedPath": "computer-network/ustc-l1.html",
-      "dependencies": []
-    },
-    "Fix-Income/Fixed-Income-Overview.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 1802,
-      "exportedPath": "fix-income/fixed-income-overview.html",
       "dependencies": []
     },
     "Math/Math.md": {
@@ -1984,13 +1967,13 @@
       "dependencies": []
     },
     "Database-Management/Lecture/Key-Concept.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 1632,
+      "modifiedTime": 1720094833053,
+      "sourceSize": 1633,
       "exportedPath": "database-management/lecture/key-concept.html",
       "dependencies": []
     },
     "Database-Management/Lecture/Entity-Relationship-Model-Modeling.md": {
-      "modifiedTime": 1719483807752,
+      "modifiedTime": 1720094833053,
       "sourceSize": 5416,
       "exportedPath": "database-management/lecture/entity-relationship-model-modeling.html",
       "dependencies": []
@@ -2073,12 +2056,6 @@
       "exportedPath": "database-management/mysql/advanced-sql.html",
       "dependencies": []
     },
-    "Database-Management/Database-Management.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 1190,
-      "exportedPath": "database-management/database-management.html",
-      "dependencies": []
-    },
     "DeepLearning/DeepLearning.md": {
       "modifiedTime": 1719483807752,
       "sourceSize": 133,
@@ -2092,7 +2069,7 @@
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1719501940805,
+      "modifiedTime": 1720094833053,
       "sourceSize": 57606,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
@@ -2257,12 +2234,6 @@
       "modifiedTime": 1719494757815,
       "sourceSize": 2394,
       "exportedPath": "computer-organization/assignment/as4/co-assignment-4.html",
-      "dependencies": []
-    },
-    "Research/ploidy/Ploidy.md": {
-      "modifiedTime": 1719494757815,
-      "sourceSize": 3209,
-      "exportedPath": "research/ploidy/ploidy.html",
       "dependencies": []
     },
     "Tools/Regex/RegexCheatSheet.pdf": {
@@ -2497,6 +2468,84 @@
       "modifiedTime": 1719501940805,
       "sourceSize": 11541,
       "exportedPath": "projects/dpw/bilibilivista.html",
+      "dependencies": []
+    },
+    "Database-Management/NoSQL/NoSQL-Assignment-1.md": {
+      "modifiedTime": 1720094833053,
+      "sourceSize": 9024,
+      "exportedPath": "database-management/nosql/nosql-assignment-1.html",
+      "dependencies": []
+    },
+    "Database-Management/NoSQL/NoSQL.md": {
+      "modifiedTime": 1720094833053,
+      "sourceSize": 6494,
+      "exportedPath": "database-management/nosql/nosql.html",
+      "dependencies": []
+    },
+    "Database-Management/NoSQL/Cassandra.md": {
+      "modifiedTime": 1720094833053,
+      "sourceSize": 145,
+      "exportedPath": "database-management/nosql/cassandra.html",
+      "dependencies": []
+    },
+    "Database-Management/NoSQL/Redis.md": {
+      "modifiedTime": 1720094833053,
+      "sourceSize": 118,
+      "exportedPath": "database-management/nosql/redis.html",
+      "dependencies": []
+    },
+    "Database-Management/NoSQL/MongoDB.md": {
+      "modifiedTime": 1720094833053,
+      "sourceSize": 212,
+      "exportedPath": "database-management/nosql/mongodb.html",
+      "dependencies": []
+    },
+    "Database-Management/NoSQL/Neo4J.md": {
+      "modifiedTime": 1720094833053,
+      "sourceSize": 1976,
+      "exportedPath": "database-management/nosql/neo4j.html",
+      "dependencies": []
+    },
+    "Database-Management/Database-Management-System.md": {
+      "modifiedTime": 1720094833053,
+      "sourceSize": 1437,
+      "exportedPath": "database-management/database-management-system.html",
+      "dependencies": []
+    },
+    "DeepLearning/Parameter-Efficient Fine-Tuning.md": {
+      "modifiedTime": 1720094833053,
+      "sourceSize": 216,
+      "exportedPath": "deeplearning/parameter-efficient-fine-tuning.html",
+      "dependencies": []
+    },
+    "DeepLearning/Attention.md": {
+      "modifiedTime": 1720094833053,
+      "sourceSize": 429,
+      "exportedPath": "deeplearning/attention.html",
+      "dependencies": []
+    },
+    "Research/Ploidy/Ploidy.md": {
+      "modifiedTime": 1720094833053,
+      "sourceSize": 3209,
+      "exportedPath": "research/ploidy/ploidy.html",
+      "dependencies": []
+    },
+    "Research/Ploidy/ploidy-review.md": {
+      "modifiedTime": 1720094833053,
+      "sourceSize": 1466,
+      "exportedPath": "research/ploidy/ploidy-review.html",
+      "dependencies": []
+    },
+    "Research/COT.md": {
+      "modifiedTime": 1720094833053,
+      "sourceSize": 114,
+      "exportedPath": "research/cot.html",
+      "dependencies": []
+    },
+    "Research/Alphafold2.md": {
+      "modifiedTime": 1720094833053,
+      "sourceSize": 7135,
+      "exportedPath": "research/alphafold2.html",
       "dependencies": []
     }
   }
