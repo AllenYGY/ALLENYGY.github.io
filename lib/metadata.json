@@ -1,6 +1,6 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1720094833053,
+  "lastExport": 1720252388477,
   "pluginVersion": "1.8.03",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd primary-accent-purple secondary-accent-green",
   "useCustomHeadContent": false,
@@ -8,14 +8,14 @@
   "files": [
     "Algorithm/BasicAlgorithm/SparceTable.md",
     "Algorithm/BasicAlgorithm/SlidingWindow.md",
-    "Algorithm/BasicAlgorithm/Discretization.md",
     "Algorithm/BasicAlgorithm/Basic-Algorithm-overview.md",
+    "Algorithm/BasicAlgorithm/Discretization.md",
     "Algorithm/DAA/Algorithm/Union-Find.md",
-    "Algorithm/DAA/Algorithm/Sort.md",
     "Algorithm/DAA/Algorithm/Graph-algorithm.md",
-    "Algorithm/DAA/Algorithm/Divide-and-Conquer.md",
-    "Algorithm/DAA/Algorithm/Enumeration.md",
+    "Algorithm/DAA/Algorithm/Sort.md",
     "Algorithm/DAA/Algorithm/Enumeration-subset.md",
+    "Algorithm/DAA/Algorithm/Enumeration.md",
+    "Algorithm/DAA/Algorithm/Divide-and-Conquer.md",
     "Algorithm/DAA/Assignment/DAA-Assignment-2.md",
     "Algorithm/DAA/Assignment/DAA-Programming-Assignment.md",
     "Algorithm/DAA/Assignment/DAA-Assignment-0.md",
@@ -30,8 +30,8 @@
     "Algorithm/DSA/AVL.md",
     "Algorithm/Graph/Graph-Overview.md",
     "Algorithm/NumberTheory/Prime-Sieve.md",
-    "Algorithm/Recursion/递归.md",
     "Algorithm/Recursion/递归-二叉树.md",
+    "Algorithm/Recursion/递归.md",
     "Algorithm/Recursion/递推.md",
     "Algorithm/String/Z-Function.md",
     "Algorithm/String/Tire-Tree.md",
@@ -82,11 +82,11 @@
     "Computer-Organization/Lecture/ISA.md",
     "Computer-Organization/Lecture/From-Transistors-to-Gates.md",
     "Computer-Organization/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits.md",
-    "Computer-Organization/Lecture/Finite-State-Machine.md",
+    "Computer-Organization/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.md",
     "Computer-Organization/Lecture/Boolean-Algebra-from-Bits-to-Logic.md",
     "Computer-Organization/Lecture/What-is-a-Computer.md",
     "Computer-Organization/Lecture/From-Machine-Language-to-Assembly-Language.md",
-    "Computer-Organization/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.md",
+    "Computer-Organization/Lecture/Finite-State-Machine.md",
     "Computer-Organization/Lecture/Circuit-Design.md",
     "Computer-Organization/Lecture/Bits-Data-Representation-and-Manipulation.md",
     "Computer-Organization/Computer-Organization.md",
@@ -100,11 +100,12 @@
     "Contest/Leetcode/Biweekly-Contest-122.md",
     "Data-Analysis/HODA/Hans-On-Data-Analysis-For-Everyone.md",
     "Data-Analysis/Data-Analysis.md",
+    "Database-Management/Assignment/NoSQL-Assignment-1.md",
     "Database-Management/Assignment/DBM-Assignment-2.md",
     "Database-Management/Assignment/DBM-Assignment-3.md",
     "Database-Management/Assignment/DBM-Assignment-1.md",
-    "Database-Management/Lecture/Relational-Database-Design-Purpose-&-First-Normal-Form.md",
     "Database-Management/Lecture/Relational-Database-Design-Functional-Dependency.md",
+    "Database-Management/Lecture/Relational-Database-Design-Purpose-&-First-Normal-Form.md",
     "Database-Management/Lecture/Relational-Database-Design-BCNF.md",
     "Database-Management/Lecture/Relational-Database-Design-3rd-Normal-Form.md",
     "Database-Management/Lecture/NormalForm.md",
@@ -124,20 +125,23 @@
     "Database-Management/MySQL/Basic-MySQL.md",
     "Database-Management/MySQL/Aggregation.md",
     "Database-Management/MySQL/Advanced-SQL.md",
-    "Database-Management/NoSQL/NoSQL-Assignment-1.md",
     "Database-Management/NoSQL/NoSQL.md",
     "Database-Management/NoSQL/Cassandra.md",
     "Database-Management/NoSQL/Redis.md",
     "Database-Management/NoSQL/MongoDB.md",
     "Database-Management/NoSQL/Neo4J.md",
     "Database-Management/Database-Management-System.md",
+    "DeepLearning/Prompting and In-Context Learning.md",
+    "DeepLearning/Read Paper Process.md",
+    "DeepLearning/AlexNet.md",
     "DeepLearning/Parameter-Efficient Fine-Tuning.md",
+    "DeepLearning/Chain-of-Thought Reasoning Without Prompting.md",
     "DeepLearning/Attention.md",
-    "DeepLearning/DeepLearning.md",
-    "DeepLearning/GraphNetwork.md",
-    "DeepLearning/GradientDescent.md",
-    "DeepLearning/BackPropagation.md",
-    "DeepLearning/ActivationFunction.md",
+    "DeepLearning/Deep Learning.md",
+    "DeepLearning/Graph Network.md",
+    "DeepLearning/Gradient Descent.md",
+    "DeepLearning/Back Propagation.md",
+    "DeepLearning/Activation Function.md",
     "Math/Discrete-Structure/assignment/discrete-mathematics-tutorial.md",
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-8.md",
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-7.md",
@@ -147,14 +151,14 @@
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-2.md",
     "Math/Discrete-Structure/lecture/tree.md",
     "Math/Discrete-Structure/lecture/sets-and-n-tuple.md",
-    "Math/Discrete-Structure/lecture/representing-graph-and-connectivity.md",
     "Math/Discrete-Structure/lecture/relation.md",
+    "Math/Discrete-Structure/lecture/representing-graph-and-connectivity.md",
     "Math/Discrete-Structure/lecture/propositional-logic.md",
-    "Math/Discrete-Structure/lecture/propositional-equivalence.md",
     "Math/Discrete-Structure/lecture/logic-circuits.md",
+    "Math/Discrete-Structure/lecture/propositional-equivalence.md",
     "Math/Discrete-Structure/lecture/graph-theory.md",
-    "Math/Discrete-Structure/lecture/functions-sequence-and-summations.md",
     "Math/Discrete-Structure/lecture/counting-principles.md",
+    "Math/Discrete-Structure/lecture/functions-sequence-and-summations.md",
     "Math/Discrete-Structure/lecture/boolean-expressions.md",
     "Math/Linear-Algebra/Vector-Space.md",
     "Math/Linear-Algebra/Judgment.md",
@@ -167,8 +171,8 @@
     "Math/Probability-Statistics/Poisson-Distribution.md",
     "Math/Probability-Statistics/Hypothesis-Testing-Two-Population.md",
     "Math/Probability-Statistics/Hypothesis-Testing-Single-Population.md",
-    "Math/Probability-Statistics/Confidence-Interval.md",
     "Math/Probability-Statistics/Chi-Square-Tests.md",
+    "Math/Probability-Statistics/Confidence-Interval.md",
     "Math/Math.md",
     "OperatingSystem/Virtual-Memory.md",
     "OperatingSystem/Threads.md",
@@ -218,8 +222,8 @@
     "Program/Java/tostringandequalsmethods/person.java",
     "Program/Javascript/quick-start.md",
     "Program/python/regularexpression.md",
-    "Program/python/pythonbasic.md",
     "Program/python/python-exceptions.md",
+    "Program/python/pythonbasic.md",
     "Program/python/python-environment-management.md",
     "Program/python/pandas.md",
     "Program/python/numpy.md",
@@ -232,13 +236,12 @@
     "Projects/DBM/Database-Management-System.md",
     "Projects/DCN/Chat-Application.md",
     "Projects/DPW/BilibiliVista-Pre.pdf",
-    "Projects/DPW/Movie-Data-Analysis.md",
     "Projects/DPW/BilibiliVista.md",
+    "Projects/DPW/Movie-Data-Analysis.md",
     "Projects/DPW/system-Design-Specification.md",
     "Projects/DPW/Data-Programming-Workshop.md",
     "Research/Ploidy/Ploidy.md",
     "Research/Ploidy/ploidy-review.md",
-    "Research/COT.md",
     "Research/calculatese.md",
     "Research/Alphafold2.md",
     "Tools/Conda/Conda.md",
@@ -365,217 +368,217 @@
   ],
   "fileInfo": {
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
@@ -587,13 +590,13 @@
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1720094833053,
-      "sourceSize": 303973,
+      "modifiedTime": 1720252388477,
+      "sourceSize": 306451,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
@@ -629,19 +632,19 @@
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
@@ -653,49 +656,49 @@
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 151725,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 316784,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1720094833053,
-      "sourceSize": 6246,
+      "modifiedTime": 1720252388477,
+      "sourceSize": 1014,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 2101009,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
@@ -1061,20 +1064,20 @@
       "dependencies": []
     },
     "Archive.md": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 12249,
       "exportedPath": "archive.html",
       "dependencies": []
     },
     "Class.md": {
-      "modifiedTime": 1720094833053,
+      "modifiedTime": 1720252388477,
       "sourceSize": 15203,
       "exportedPath": "class.html",
       "dependencies": []
     },
     "Home.md": {
-      "modifiedTime": 1720094833053,
-      "sourceSize": 3362,
+      "modifiedTime": 1720252388477,
+      "sourceSize": 3361,
       "exportedPath": "home.html",
       "dependencies": []
     },
@@ -1160,30 +1163,6 @@
       "modifiedTime": 1719483807752,
       "sourceSize": 15810,
       "exportedPath": "algorithm/recursion/递推.html",
-      "dependencies": []
-    },
-    "DeepLearning/GraphNetwork.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 330,
-      "exportedPath": "deeplearning/graphnetwork.html",
-      "dependencies": []
-    },
-    "DeepLearning/GradientDescent.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 451,
-      "exportedPath": "deeplearning/gradientdescent.html",
-      "dependencies": []
-    },
-    "DeepLearning/BackPropagation.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 339,
-      "exportedPath": "deeplearning/backpropagation.html",
-      "dependencies": []
-    },
-    "DeepLearning/ActivationFunction.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 570,
-      "exportedPath": "deeplearning/activationfunction.html",
       "dependencies": []
     },
     "Math/Discrete-Structure/assignment/discrete-mathematics-tutorial.md": {
@@ -2056,12 +2035,6 @@
       "exportedPath": "database-management/mysql/advanced-sql.html",
       "dependencies": []
     },
-    "DeepLearning/DeepLearning.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 133,
-      "exportedPath": "deeplearning/deeplearning.html",
-      "dependencies": []
-    },
     "OperatingSystem/Operating-System.md": {
       "modifiedTime": 1719483807752,
       "sourceSize": 663,
@@ -2069,8 +2042,8 @@
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1720094833053,
-      "sourceSize": 57606,
+      "modifiedTime": 1720252388477,
+      "sourceSize": 12703,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
     },
@@ -2470,12 +2443,6 @@
       "exportedPath": "projects/dpw/bilibilivista.html",
       "dependencies": []
     },
-    "Database-Management/NoSQL/NoSQL-Assignment-1.md": {
-      "modifiedTime": 1720094833053,
-      "sourceSize": 9024,
-      "exportedPath": "database-management/nosql/nosql-assignment-1.html",
-      "dependencies": []
-    },
     "Database-Management/NoSQL/NoSQL.md": {
       "modifiedTime": 1720094833053,
       "sourceSize": 6494,
@@ -2513,8 +2480,8 @@
       "dependencies": []
     },
     "DeepLearning/Parameter-Efficient Fine-Tuning.md": {
-      "modifiedTime": 1720094833053,
-      "sourceSize": 216,
+      "modifiedTime": 1720252388477,
+      "sourceSize": 1805,
       "exportedPath": "deeplearning/parameter-efficient-fine-tuning.html",
       "dependencies": []
     },
@@ -2536,16 +2503,70 @@
       "exportedPath": "research/ploidy/ploidy-review.html",
       "dependencies": []
     },
-    "Research/COT.md": {
-      "modifiedTime": 1720094833053,
-      "sourceSize": 114,
-      "exportedPath": "research/cot.html",
-      "dependencies": []
-    },
     "Research/Alphafold2.md": {
       "modifiedTime": 1720094833053,
       "sourceSize": 7135,
       "exportedPath": "research/alphafold2.html",
+      "dependencies": []
+    },
+    "Database-Management/Assignment/NoSQL-Assignment-1.md": {
+      "modifiedTime": 1720252388477,
+      "sourceSize": 9024,
+      "exportedPath": "database-management/assignment/nosql-assignment-1.html",
+      "dependencies": []
+    },
+    "DeepLearning/Prompting and In-Context Learning.md": {
+      "modifiedTime": 1720252388477,
+      "sourceSize": 2789,
+      "exportedPath": "deeplearning/prompting-and-in-context-learning.html",
+      "dependencies": []
+    },
+    "DeepLearning/Read Paper Process.md": {
+      "modifiedTime": 1720252388477,
+      "sourceSize": 392,
+      "exportedPath": "deeplearning/read-paper-process.html",
+      "dependencies": []
+    },
+    "DeepLearning/AlexNet.md": {
+      "modifiedTime": 1720252388477,
+      "sourceSize": 282,
+      "exportedPath": "deeplearning/alexnet.html",
+      "dependencies": []
+    },
+    "DeepLearning/Chain-of-Thought Reasoning Without Prompting.md": {
+      "modifiedTime": 1720252388477,
+      "sourceSize": 10009,
+      "exportedPath": "deeplearning/chain-of-thought-reasoning-without-prompting.html",
+      "dependencies": []
+    },
+    "DeepLearning/Deep Learning.md": {
+      "modifiedTime": 1720252388477,
+      "sourceSize": 134,
+      "exportedPath": "deeplearning/deep-learning.html",
+      "dependencies": []
+    },
+    "DeepLearning/Graph Network.md": {
+      "modifiedTime": 1720252388477,
+      "sourceSize": 332,
+      "exportedPath": "deeplearning/graph-network.html",
+      "dependencies": []
+    },
+    "DeepLearning/Gradient Descent.md": {
+      "modifiedTime": 1720252388477,
+      "sourceSize": 453,
+      "exportedPath": "deeplearning/gradient-descent.html",
+      "dependencies": []
+    },
+    "DeepLearning/Back Propagation.md": {
+      "modifiedTime": 1720252388477,
+      "sourceSize": 341,
+      "exportedPath": "deeplearning/back-propagation.html",
+      "dependencies": []
+    },
+    "DeepLearning/Activation Function.md": {
+      "modifiedTime": 1720252388477,
+      "sourceSize": 2557,
+      "exportedPath": "deeplearning/activation-function.html",
       "dependencies": []
     }
   }
