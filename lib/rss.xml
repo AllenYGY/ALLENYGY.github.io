@@ -1,439 +1,35 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 06 Jul 2024 07:53:13 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 06 Jul 2024 07:53:08 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="NoSQL-Assignment-1" href="database-management/assignment/nosql-assignment-1.html" class="internal-link" target="_self" rel="noopener">NoSQL-Assignment-1</a>]]></title><description><![CDATA[ 
- <br><br><br>
-<br>NoSQL数据库是不遵循RDBMS原则的数据库和数据存储，NoSQL意思是不仅仅是 SQL
-<br><br>
-<br>图数据库:
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 07 Jul 2024 05:56:58 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 07 Jul 2024 05:56:57 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="CoT-Decoding" href="research/cot-decoding.html" class="internal-link" target="_self" rel="noopener">CoT-Decoding</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:ReadPaper" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#ReadPaper</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:CoT-Decoding" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#CoT-Decoding</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:CoT" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#CoT</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:ReadPaper" class="tag" target="_blank" rel="noopener">#ReadPaper</a> <a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a> <a href="https://blog.allenygy.vip?query=tag:CoT-Decoding" class="tag" target="_blank" rel="noopener">#CoT-Decoding</a> <a href="https://blog.allenygy.vip?query=tag:CoT" class="tag" target="_blank" rel="noopener">#CoT</a><br><br> <a data-tooltip-position="top" aria-label="https://doi.org/10.48550/arXiv.2402.10200" rel="noopener" class="external-link" href="https://doi.org/10.48550/arXiv.2402.10200" target="_blank">Chain-of-Thought Reasoning without Prompting</a>
+这篇文章通过优化解码方法，提出了CoT-Decoding， 提高回答的准确性
+<br>CoT-Decoding  类似做选择题时的排除法<br>
+<br>当解题人认为选项之间差距不大的时候，难以决策，或者说决策的准确性会下降
 
-<br>用于存储数据网络信息，如社交关系。
-<br>如：<a data-href="Neo4J" href="https://blog.allenygy.vip/database-management/nosql/neo4j.html" class="internal-link" target="_self" rel="noopener">Neo4J</a>
+<br>对应到解码就是，不同 token 的概率差距不大的时候
 
 
-<br>文档数据库:
+<br>而当解题人认为选项答案差距较大时，决策的准确性会提高
 
-<br>将每个键与称为文档的复杂数据结构配对。
-<br>如：<a data-href="MongoDB" href="https://blog.allenygy.vip/database-management/nosql/mongodb.html" class="internal-link" target="_self" rel="noopener">MongoDB</a>
+<br>对应到解码就是，不同 token 的概率差距较大的时候
 
 
-<br>键值数据库:
-
-<br>是最简单的 NoSQL 数据库。数据库中的每个项目都以属性名称（或 "键"）的形式与其值一起存储。
-<br>如：<a data-href="Redis" href="https://blog.allenygy.vip/database-management/nosql/redis.html" class="internal-link" target="_self" rel="noopener">Redis</a>
-
-
-<br>列族数据库：
-
-<br>针对大型数据集的查询进行了优化，将数据列（而不是行）存储在一起
-<br>如：<a data-href="Cassandra" href="https://blog.allenygy.vip/database-management/nosql/cassandra.html" class="internal-link" target="_self" rel="noopener">Cassandra</a>
-
-
-<br><br>
-<br>关系型数据库
-
-<br>中心化的
-<br>处理密集，结构化的数据
-<br>满足 ACID 性
-<br>遵循 CA 原则
-
-
-<br>NoSQL
-
-<br>去中心化的
-<br>处理稀疏数据，半/非结构化的数据
-<br>主要是查询，很少更新
-<br>满足 BASE 性
-<br>遵循 AP 或 CP 原则
-
-
-<br><br>
-<br>CAP 定理（CAP Theorem）
-
-<br>是由计算机科学家 Eric Brewer 提出的一个关于分布式数据存储系统的基本定理。该定理指出，在任何分布式数据存储系统中，无法同时完全满足以下三个特性：
-
-<br>一致性（Consistency）：每个客户端都有相同的数据视图。
-<br>可用性（Availability）：每个客户端始终可以读写。
-<br>分区容错性（Partition Tolerance）：系统在分布式物理网络中运行良好
-
-
-
-
-<br>CAP 定理在 NoSQL 数据库中的重要性
-
-<br>NoSQL 数据库的设计通常会在 CAP 定理的背景下进行权衡，以满足特定应用场景的需求：
-
-<br>满足CA原则：系统几乎没有或根本没有分区容错性。一致性和可用性优先
-<br>满足AP原则：一致性受到影响，但系统始终可用，并且在部分分区时也能工作
-
-<br>Cassandra, DynamoDB
-
-
-<br>满足CP原则：可用性受到影响，但一致性和分区容错性优于可用性
-
-<br>MongoDB, HBase, Redis
-
-
-
-
-
-
-<br><br>
-<br>a.高可用性 (High Availability)
-
-<br>每个客户端始终可以读写，读写实时更新
-
-
-<br>b. 可扩展性 (Scalability)
-
-<br>存储空间可扩展
-<br>数据易于扩展
-
-
-<br>c. 分布式系统 (Distributed System)
-
-<br>去中心化的系统
-<br>可有数千台机器分布在世界各地
-
-
-<br><br>
-<br>a.键值存储(Key-Value Store)
-
-<br>简洁：数据主要采用Key-Value(KV)形式储存
-<br>高速：数据驻留内存，重启时可再次加载进行使用
-<br>易扩展：根据系统负载量，灵活添加或删除服务器
-<br>对键可设置失效时间
-
-
-<br>b. 列存储 (Column Store)
-
-<br>更好的可扩展性
-<br>高可用性
-<br>适合离线批量数据处理
-
-
-<br>c.文档数据库(Document Store)
-
-<br>核心概念是 "文档 "的概念，它与 RDBMS 中的行相对应
-<br>以某些标准格式或编码封装和编码数据，如 JSON（BSON）
-<br>文档在数据库中通过代表该文档的唯一密钥进行处理
-<br>将文档作为一个整体处理，避免将文档拆分为其组成的名称/值对
-<br>文档是无模式的，可以是非结构的数据
-
-
-<br>d.图形数据库(Graph Store)
-
-<br>面向图形
-<br>一切都以边、节点或属性的形式存储
-<br>每个节点和边可以有任意数量的属性
-<br>节点和边都可以贴标签
-<br>标签可用于缩小搜索范围
-
-
-<br><br>
-<br>a. 实时分析：
-
-<br>键值数据库Redis,  支持极高的读写速度，适合需要快速响应的实时分析应用。
-
-
-<br>b. 大数据处理：
-
-<br>列族数据库 Cassandra, 能够轻松地横向扩展，处理大数据量和高吞吐量的需求。
-
-
-<br>c. 社交网络：
-
-<br>图数据库 Neo4J，社交网络中的数据天然适合图模型，例如用户、朋友关系、点赞、评论等。Neo4j 通过图形算法和索引，能够高效地进行复杂的关系查询和路径查找，
-
-
-<br>d. 物联网 loT:
-
-<br>文档数据库MongoDB，能够处理结构化、半结构化和非结构化数据。物联网数据通常包括各种类型的传感器数据，这些数据具有高度的灵活性和多样性。MongoDB 提供了高效的存储和查询能力，支持时间序列数据的存储和分析，适合物联网应用中大量多变的数据处理需求。
-
-
-<br><br>
-<br>实际应用场景：社交媒体评论管理
-
-<br>社交媒体评论具有大量非结构化的数据，且用户在高峰期频繁发布和查看评论，系统需要支持高并发读写操作。
-<br>NoSQL 数据库具有可扩展性：NoSQL 数据库（如 MongoDB、Cassandra）能够水平扩展，通过增加更多节点来处理大规模数据和高并发请求。
-<br>关系型数据库通常难以应对如此大规模的数据增长和高并发需求。
-
-
-<br><br>MATCH (v:Vehicle)-[:OWNED_BY]-&gt;(p:Person)
-WITH p, collect(p.name) as owners
-RETURN v, owners
-Copy<br><br><br><br>
-<br>A.&nbsp;OPTIONAL MATCH 不是 Cypher 语句。
-<br>B.&nbsp;OPTIONAL MATCH 为 Cypher 查询提供参数占位符。它保存参数化查询，然后根据客户提供的值与图进行可选匹配。
-<br>C. OPTIONAL MATCH 会搜索可能存在也可能不存在的描述模式，并将模式中不存在的标识符赋值为 NULL。
-<br>D. 可选匹配子句将获取一组属性值，并将其与数据库中的所有节点进行可选匹配。
-<br><br>
-<br>A.&nbsp;MATCH (a:Thing {id:3563}) DETACH DELETE a
-<br>B.&nbsp;MATCH (a:Thing {id:3563}) OPTIONAL MATCH (a)-[r]-() DELETE a, r
-<br>C.&nbsp;MATCH (a:Thing {id:3563}) DELETE a
-<br>D.&nbsp;MATCH (a:Thing {id:3563})-[r]-(b) DELETE a, r
-<br><br>
-<br>A.&nbsp;MATCH (sarah:Person)-[:KNOWS]-&gt;(friend:Person) WHERE sarah.name = "Sarah" RETURN friend
-<br>B.&nbsp;MATCH (sarah:Person)-[:KNOWS*1...2]-&gt;(friend:Person) WHERE sarah.name = "Sarah" RETURN friend
-<br>C. MATCH (sarah:Person)-[:KNOWS]-&gt;(friend:Person) OPTIONAL MATCH (friend)-[:KNOWS]-&gt;(fof:Person) WHERE sarah.name = "Sarah" RETURN friend, fof
-<br>D. 所有这些都是正确的。
-<br><br>// 创建 Show 节点
-CREATE (got:Show {title: "Game of Thrones"})
-	
-// 创建 Character 节点
-CREATE (jon:Character {name: "Jon Snow"})
-CREATE (dany:Character {name: "Daenerys Targaryen"})
-CREATE (tyrion:Character {name: "Tyrion Lannister"})
-	
-// 创建 Actor 节点
-CREATE (kit:Actor {name: "Kit Harington"})
-CREATE (emilia:Actor {name: "Emilia Clarke"})
-CREATE (peter:Actor {name: "Peter Dinklage"})
-	
-CREATE (kit)-[:ACTED_IN]-&gt;(got)
-CREATE (emilia)-[:ACTED_IN]-&gt;(got)
-CREATE (peter)-[:ACTED_IN]-&gt;(got)
-	
-CREATE (jon)-[:HAS_CHARACTER]-&gt;(got)
-CREATE (dany)-[:HAS_CHARACTER]-&gt;(got)
-CREATE (tyrion)-[:HAS_CHARACTER]-&gt;(got)
-	
-CREATE (kit)-[:PLAYS]-&gt;(jon)
-CREATE (emilia)-[:PLAYS]-&gt;(dany)
-CREATE (peter)-[:PLAYS]-&gt;(tyrion)	
-Copy<br><br><br><br><br><br><br>
-<br>A. admin数据库
-<br>B. user数据库
-<br>C. config数据库
-<br>D. test 数据库
-<br><br>
-<br>A. MongoDB单个文档大小上限为64MB
-<br>B. 文档的值只可以是字符串类型
-<br>C. 文档中可以有重复的键
-<br>D. 不建议自定义_id键
-<br><br>
-<br>易用性：灵活的文档模型。JSON格式简单易学
-<br>支持高性能访问数据。存储引擎是文档型数据库的核心组件。
-<br>可扩展性：支持大数据分布式存储，服务能力水平可横向弹性扩展
-]]></description><link>https://blog.allenygy.vip/database-management/assignment/nosql-assignment-1.html</link><guid isPermaLink="false">Database-Management/Assignment/NoSQL-Assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 05 Jul 2024 05:26:19 GMT</pubDate></item><item><title><![CDATA[<a data-href="Prompting and In-Context Learning" href="deeplearning/prompting-and-in-context-learning.html" class="internal-link" target="_self" rel="noopener">Prompting and In-Context Learning</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Prompting" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Prompting</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:In-ContextLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#In-ContextLearning</a> 
- <br><a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a>  <a href="https://blog.allenygy.vip?query=tag:Prompting" class="tag" target="_blank" rel="noopener">#Prompting</a> <a href="https://blog.allenygy.vip?query=tag:In-ContextLearning" class="tag" target="_blank" rel="noopener">#In-ContextLearning</a><br><br><br>
-<br>Need large task-specific datasets for fine-tuning  需要大量专业的数据集
-<br>Train endlessly   不通用
-
-<br>Collect data for task  , fine-tune model to solve task 
-<br>Collect data for task  , fine-tune model to solve task 
-<br>...
-
-
-<br>Prone to overfitting  容易过拟合	
-
-<br>Large models adapt to very narrow task distribution, which may exploit spurious correlations
-
-
-<br>Finetuning large models is expensive to time, memory, and cost
-<br>How to adapt a pre-trained model without fine-tuning<br><br>What is Prompting?
-
-<br>Prompt-based learning (inference)
-<br>A new paradigm in Deep Learning / Machine Learning (NLP, CV)
-<br>Encouraging a pre-trained model to make particular predictions by providing a “prompt” that instructs the model to perform the task effectively
-
-<br>The General workflow of Prompting:	<br>
-<br>Prompt Addition 
-<br>Answer Prediction (Search)
-<br>Post-process the answer
-<br><br>
-<br>
-Given input , this component modifies the input into a prompt 
-
-<br>Append a textual string to the input
-
-
-<br>
-Contains two step 
-
-<br>Define a template with two slots 
-
-<br>An input slot  for input  
-<br>An answer slot  for an intermediate generated answer  that will later be mapped into label 
-
-
-<br>Fill slot  with the input 
-
-
-<br><br><br><br>
-<br>Pre-trained model choice 
-<br>Prompt engineering 
-<br>Answer engineering 
-<br>Multi-Prompt learning
-<br><br><br><br><br><br>A prompt contains any of the following elements<br>
-<br>Instruction − The description of a specific task that you want the model to perform 
-<br>Context − External information or additional context that can steer the model to better responses 
-<br>Input data − The input or question that we are interested to find a response for 
-<br>Output Indicator − The type or format of the output
-<br><br>
-<br>Text classification 
-<br>Text summarization 
-<br>Information extraction 
-<br>Question Answering 
-<br>Conversation 
-<br>Code generation
-<br>Reasoning
-<br><br>
-<br>Zero-shot Prompting      无样本
-<br>Few-shot Prompting      少样本
-<br>Chain-of-Thought Prompting 
-<br>Self-Consistency 
-<br>Tree of Thoughts 
-<br>Multimodal CoT Prompting
-<br>Active-Prompt 
-<br>Generate Knowledge Prompting 
-<br>Retrieval Augmented Generation 
-<br>Automatic Reasoning and Tool-use
-]]></description><link>https://blog.allenygy.vip/deeplearning/prompting-and-in-context-learning.html</link><guid isPermaLink="false">DeepLearning/Prompting and In-Context Learning.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 05 Jul 2024 12:17:42 GMT</pubDate></item><item><title><![CDATA[<a data-href="Read Paper Process" href="deeplearning/read-paper-process.html" class="internal-link" target="_self" rel="noopener">Read Paper Process</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:Research" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Research</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Tip" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tip</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:ReadPaper" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#ReadPaper</a> 
- <br><a href="https://blog.allenygy.vip?query=tag:Research" class="tag" target="_blank" rel="noopener">#Research</a> <a href="https://blog.allenygy.vip?query=tag:Tip" class="tag" target="_blank" rel="noopener">#Tip</a> <a href="https://blog.allenygy.vip?query=tag:ReadPaper" class="tag" target="_blank" rel="noopener">#ReadPaper</a> <br><br>
-<br>Title 
-<br>Abstract 
-<br>Introduction
-<br>Method
-<br>Experiment
-<br>Conclusion
-<br>Reference 
-<br><br>
-<br>Title 
-<br>Abstract 
-<br>Conclusion 
-<br><br>
-<br>Method 
-<br>Experiment 
-<br>Reference
-<br><br>
-<br>Repetition
-]]></description><link>https://blog.allenygy.vip/deeplearning/read-paper-process.html</link><guid isPermaLink="false">DeepLearning/Read Paper Process.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 05 Jul 2024 06:30:17 GMT</pubDate></item><item><title><![CDATA[<a data-href="AlexNet" href="deeplearning/alexnet.html" class="internal-link" target="_self" rel="noopener">AlexNet</a>]]></title><description><![CDATA[ 
- <br><br>This paper doing the work of image classification, which is the first time that CNN is used in the field of image classification.]]></description><link>https://blog.allenygy.vip/deeplearning/alexnet.html</link><guid isPermaLink="false">DeepLearning/AlexNet.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 05 Jul 2024 06:03:32 GMT</pubDate></item><item><title><![CDATA[<a data-href="Parameter-Efficient Fine-Tuning" href="deeplearning/parameter-efficient-fine-tuning.html" class="internal-link" target="_self" rel="noopener">Parameter-Efficient Fine-Tuning</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Fine-Tuning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Fine-Tuning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:PEFT" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#PEFT</a> 
- <br><a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a> <a href="https://blog.allenygy.vip?query=tag:Fine-Tuning" class="tag" target="_blank" rel="noopener">#Fine-Tuning</a> <a href="https://blog.allenygy.vip?query=tag:PEFT" class="tag" target="_blank" rel="noopener">#PEFT</a><br><br><br>
-<br>Modified small part of parameters of pretrained models
-<br>Add extra parameters
-<br>Add increment of parameters of pretrained models 
-
-<br>LoRA, FACT
-
-
-<br><br><br>Only modify (retraining) part of parameters of pretrained models <br>
-<br>Bias and the final linear layer
-<br>Pros 
-
-<br>Simple, but efficient, comparable to full model fine-tuning 
-<br>Can learn downstream tasks sequentially, which helps to deploy efficiently 
-<br>For each downstream task, only very small number of parameters should be stored 
-
-
-<br>For BERT backbone, 0.1% parameters are modified (retrained)
-
-<br><br><br>Idea 
-Add Adapter module to each layer of pretrain models
-<br><br>Idea
-Use prefixs, which can be learned and specific to given tasks, to mimic prompts
-<br><br>Idea 
-
-<br>Construct a prompt for each task, concatenate the prompt with data to input to Large Model 
-<br>Only add prompt (tokens) at input layer, no MLP A Simplified version of Prefix Tuning
-
-<br><br><br>Cons of previous tuning methods 
-
-<br>Adapter Tuning adds Adapter layer in Transformer, which makes the model more deeper and increases the inference time 
-<br>Prompt-based methods, such as Prefix Tuning and Prompt Tuning, are hard to train. In addition, the prompt token occupy the input space so as to decrease the number of available tokens
-
-<br>]]></description><link>https://blog.allenygy.vip/deeplearning/parameter-efficient-fine-tuning.html</link><guid isPermaLink="false">DeepLearning/Parameter-Efficient Fine-Tuning.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 04 Jul 2024 13:24:27 GMT</pubDate></item><item><title><![CDATA[<a data-href="Chain-of-Thought Reasoning Without Prompting" href="deeplearning/chain-of-thought-reasoning-without-prompting.html" class="internal-link" target="_self" rel="noopener">Chain-of-Thought Reasoning Without Prompting</a>]]></title><description><![CDATA[ 
- <br><br>这篇文章主要是想通过改变解码方法，引导出 COT<a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-f0b6dba31b74855a" class="footnote-link" target="_self" rel="noopener">[1]</a>，提高回答的准确性<br><br>传统的解码方法是 Greedy decoding<br>贪婪解码（Greedy Decoding）是一种简单的序列生成方法，通常用于自然语言处理中的文本生成任务。在这种方法中，每一步都选择具有最高概率的下一个词作为输出，直到生成结束符或达到预定的输出长度。<br>具体过程如下：<br>
+<br><br>传统的解码方法是 Greedy decoding<br>贪婪解码（Greedy Decoding）是一种简单的序列生成方法，通常用于自然语言处理中的文本生成任务。在这种方法中，每一步都选择具有最高概率的下一个词作为输出，直到生成结束符或达到预定的输出长度。<br>具体过程如下：<br>
 <br>从模型生成的概率分布中选择概率最高的词作为当前步的输出。
 <br>将这个词作为输入，继续生成下一个词。
 <br>重复上述步骤，直到生成完整的序列。
-<br>贪婪解码的优点是实现简单，速度快，因为它只需在每一步选择一个最高概率的词。然而，这种方法有一个明显的缺点，即它可能会错过全局最优的序列。由于每一步都只选择局部最优的词，贪婪解码可能会导致生成的文本质量较低，缺乏连贯性和多样性。<br>例如，在给定一个语言模型预测下一个词的任务中，如果模型在某一步预测的概率分布为：<br>
+<br>贪婪解码的优点是实现简单，速度快，因为它只需在每一步选择一个最高概率的词。然而，这种方法有一个明显的缺点，即它可能会错过全局最优的序列。由于每一步都只选择局部最优的词，贪婪解码可能会导致生成的文本质量较低，缺乏连贯性和多样性。<br>Example
+例如，在给定一个语言模型预测下一个词的任务中，如果模型在某一步预测的概率分布为：
+
 <br>"The"：0.5
 <br>"A"：0.3
 <br>"An"：0.2
-<br>贪婪解码会选择概率最高的词 "The" 作为输出，然后继续这个过程，选择下一个词，直到生成完整的句子。<br><br><img alt="GSM8K" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ReadPaper/202407051106964.png" referrerpolicy="no-referrer"><br><br>Consequently, the model is predisposed to immediate problem-solving.<br>
-观察发现模型倾向于立刻解决问题，所以不会选择需要更长时间反应的 CoT 路径<br>LLMs indeed cannot reason if we only consider the greedy decoding path.<br>
-LLMs can reason if we consider the alternative decoding paths.<br>他们提出了一种新的解码方法 CoT-decoding<br><br><br>Here  and  represent the top two tokens at the t-th decoding step in the k-th decoding path, chosen for their maximum post-softmax probabilities from the vocabulary, given  being part of the answer tokens.<br>The model's overall confidence in decoding the final answer is approximated by averaging these probability differences for all relevant answer tokens .<br>Example
 
-我们来具体解释如何计算公式中的信心度 ，以这两个解码路径为例：
-假设答案是 "$60" 和 "Kylar needs to pay $60 for 16 glasses."。
-路径 1: "$60"
-
-<br>
-答案长度：
-
-<br>答案 $60 的长度为 2，因为它包含两个 token："$" 和 "60"。
-
-
-<br>
-概率计算：
-
-<br>对于 token "$"，最优概率  和次优概率 。
-<br>对于 token "60"，最优概率  和次优概率 。
-
-
-
-假设：
-
-<br>
-<br>
-<br>
-<br>
-
-
-<br>
-概率差计算：
-
-<br>对于 token "$"：
-<br>对于 token "60"：
-
-
-<br>
-信心度计算：
-
-
-
-路径 2: "Kylar needs to pay $60 for 16 glasses."
-
-<br>
-答案长度：
-
-<br>答案 "Kylar needs to pay 、60、for、16、glasses。
-
-
-<br>
-概率计算：
-
-<br>对于每个 token 计算最优和次优概率。
-<br>假设这些概率如下：
-
-<br>, 
-<br>, 
-<br>, 
-<br>, 
-<br>, 
-<br>, 
-<br>, 
-<br>, 
-<br>, 
-
-
-
-
-<br>
-概率差计算：
-
-<br>对于每个 token 计算概率差。
-
-
-
-
-<br>
-信心度计算：
-
-
-
-通过这种方法，计算每个解码路径的信心度 ，可以帮助模型在前 k 个候选路径中选择最可靠的答案路径。
-<br><br>文章主要进行了讲了三个实验<br>
-<br>
+贪婪解码会选择概率最高的词 "The" 作为输出，然后继续这个过程，选择下一个词，直到生成完整的句子。
+<br><br><img alt="GSM8K" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ReadPaper/202407051106964.png" referrerpolicy="no-referrer"><br><br>Consequently, the model is predisposed to immediate problem-solving.<br>
+观察发现模型倾向于立刻解决问题，不会选择需要更长时间反应的 CoT 路径<br>LLMs indeed cannot reason if we only consider the greedy decoding path.<br>
+LLMs can reason if we consider the alternative decoding paths.<br>他们提出了一种新的解码方法 CoT-decoding<br>文章认为决策时，token概率差距越大，模型决策时就更有信心<br><br><br>Here  and  represent the top two tokens at the t-th decoding step in the k-th decoding path, chosen for their maximum post-softmax probabilities from the vocabulary, given  being part of the answer tokens.<br>The model's overall confidence in decoding the final answer is approximated by averaging these probability differences for all relevant answer tokens .<br><br>论文里主要做了三个大实验<br>
+<br>首先是把 CoT-Decoding 与其他解码方法进行对比 
+<br>然后是测试 CoT-Decoding 在不同参数量的同一个模型影响 
+<br>以及 k 值的选择对结果的影响
 <br>CoT-Decoding Effectively Elicits Reasoning from Language Models
 
 <br>CoT-Decoding 有效地从语言模型引导出推理
@@ -441,22 +37,49 @@ LLMs can reason if we consider the alternative decoding paths.<br>他们提出�
 
 <br>CoT-Decoding Enables a Better Understanding of Model's Intrinsic Reasoning Abilities
 
-<br>CoT-Decoding 更好地理解模型的内在推理能力
+<br>CoT-Decoding 更好地揭露模型的内在推理能力
 
 
 <br>Combining CoT-decoding with CoT-Prompting
 
-<br>将 CoT-Decoding 与 CoT-Prompting 结合
+<br>将 CoT-Decoding 与 CoT-Prompting 结合推理效果更好
 
 
-<br><br>实验对Mistral-7B这个预训练模型进行了测试，结果表明 CoT-decoding 方法可以有效地引导模型进行推理。<br>采用了不同的采样方法，和解码方法对模型进行测试<br>
-<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407061326010.png" referrerpolicy="no-referrer"><br>包括<br>
-<br> (k = 10) 
-<br> (p = 0.9)
-<br> (b = 10) 
-<br> (T = 0.7) 
-<br><br>对不同的模型，采用 CoT--decoding 方法，都提高模型的准确性<br>
-PaLM-2, Mistral and Gemma, all show a significant improvement in performance when using CoT-decoding compared to greedy decoding.<br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407061332678.png" referrerpolicy="no-referrer"><br><br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407061345129.png" referrerpolicy="no-referrer"><br><br><br>更好地理解模型的内在推理能力<br>使用 CoT-Decoding，尝试了常见的几个推理任务<br>以下是这几个符号推理任务的解释：<br>
+<br><br><br>这个实验采用了不同的采样和解码方法对Mistral-7B这个预训练模型进行测试<br>采样方法包括<br>
+<br> k = 10
+<br> p = 0.9
+<br> b = 10
+<br> T = 0.7
+<br>解码方法包括<br>
+<br> 
+<br> 10 paths
+<br> k = 10
+<br><img alt="Result" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407062132592.png" referrerpolicy="no-referrer"><br>作者认为只有 CoT-decoding 方法可以有效地引导模型进行推理。<br><br>在这个实验中，作者针对不同的模型包括 Mistral-7B、PaLM-2 和 Gemma，分别采用Greedy Decoding 和 Cot Decoding 进行测试。<br><img alt="Effectively In Different Models" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407061332678.png" referrerpolicy="no-referrer"><br>PaLM-2, Mistral and Gemma, all show a significant improvement in performance when using CoT-decoding compared to greedy decoding. 
+针对不同的模型，采用 CoT-Decoding 方法，都能提高模型的准确性
+<br><br> 在这个实验中，作者对GSM8K和Year Parity两个测试集<br>
+使用不同参数的同一个模型PaLM-2进行测试<br>
+<br>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407062151542.png" referrerpolicy="no-referrer"><br>
+CoT-decoding reliably improves reasoning performance across model scales (PaLM-2), even when the task does not naturally improve by scaling up only (e.g., year parity).<br>Quote
+
+<br>On GSM8K, CoT Decoding consistently yields +10-30% absolute accuracy gains. 
+<br>On year parity, when using greedy decoding, the model's performance remains flat even after scaling up model sizes.<br>
+CoT-Decoding 在不同参数大小上的模型都能表现出甚至超过下一个参数大小模型的效果
+
+<br><br>在下图的 Large size 和 Instruction-tuned 的两个模型测试结果上看，两者的准确率相差不大<br><img alt="closes the reasoning gap between pre-trained and instruction-tuned models" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407061345129.png" referrerpolicy="no-referrer"><br>Intriguingly, we observe that CoT-decoding enables a pre-trained model to achieve a similar performance of an instruction-tuned model
+
+<br>作者还认为，CoT-Decoding 方法可以部分地缩小预训练和指导调整模型之间的推理差距，而不需要使用任何监督数据。
+
+<br>更有趣的是，CoT-Decoding 可以优化 Instruction-tuned model<br>
+<br>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407062222490.png" referrerpolicy="no-referrer"><br>More interestingly, we observe that CoT decoding can further improve the instruction tuned model<br><br>因为 CoT-Decoding 最后还是得从模型中给出的 K 条路径里选择一条推理路径<br>
+所以 K 的选择会影响最终的结果	<br>在这个实验里，作者对PaLM-2 model 进行不同 K 值的测试<br><img alt="Result" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407071256543.png" referrerpolicy="no-referrer"><br>Quote
+Overall we found that higher values of K typically result in improved model performance, suggesting that in many cases, the correct CoT paths may indeed exist but are often ranked lower during model's decoding.<br>
+For instruction-tuned models, the effect of 𝑘 is less significant, indicating that the process of instruction-tuning effectively brings forth the majority of CoT-paths to the first few decoding paths.
+<br>总体上看，较高的 K 值通常会导致模型性能的提高，这表明在许多情况下，正确的 CoT 路径可能确实存在，但通常在模型的贪心解码过程中排名较低。	<br>
+对于指令微调的模型，K的影响较小，这表明指令调整的过程有效地将大多数 CoT 路径提到了前几个解码路径中。<br>
+<br><br>作者认为 CoT-Decoding 能更好地揭露模型的内在推理能力<br>在这个实验里使用 CoT-Decoding，尝试了常见的几个推理任务<br>以下是这几个符号推理任务的解释：(来自 ChatCPT)
+
 <br>
 Coin Flip Task（抛硬币任务）：
 
@@ -478,122 +101,182 @@ Multi-step Arithmetic Task（多步骤算术任务）：
 <br>难度：任务难度通过问题的深度（𝑑）和长度（𝑙）来调整。深度表示问题包含的步骤数量，长度表示每一步涉及的操作复杂性。随着深度和长度的增加，任务的复杂性也随之增加。
 
 
-<br>对于每个任务，研究者生成了100个例子，涵盖不同的难度级别。这些任务被设计用来测试模型在符号推理方面的能力，以及在不同难度下的表现。对于Web of Lies任务中的第5级难度，研究者使用了Suzgun等人（2022年）的现有数据集，而不是生成新的例子。<br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407061409636.png" referrerpolicy="no-referrer"><br><br>作者认为，CoT-Decoding 可以容易地和 CoT-Prompting 结合<br>CoT-Decoding maintains a strong performance compared to self-consistency (Wang et al., 2023a) when both are combined with CoT-prompts.<br><img alt="Combining CoT-decoding with CoT-Prompting" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407061420054.png" referrerpolicy="no-referrer"><br>Since self-consistency aggregates over multiple paths, we also show the performance based on our path aggregation algorithm, which significantly improves the model's reasoning at a similar cost.<br>
+
+<br><img alt="Result" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407061409636.png" referrerpolicy="no-referrer"><br>Quote
+
+<br>We also looked at the model's top-K decoding paths, and found that models can generate the correct CoT paths when the solution involves at most 1 or 2 step knowledge manipulation, and the model starts to struggle with generating the correct CoT-paths when the steps become 3 or more.
+<br>This mirrors the finding in (McCoy et al., 2023), where the authors show language models are highly influenced by the distribution they have been trained on.
+
+<br>当解决方案涉及最多1或2步知识操作时，模型可以生成正确的 CoT 路径，但当步骤变为3或更多时，模型开始难以生成正确的 CoT 路径。作者认为这表明模型在推理方面的局限性。<br>
+作者也认为这与 (McCoy et al., 2023) 的研究结果一致，他们表明语言模型受到它们训练的分布的影响。	<br>Quote
+
+<br>On Coin-Flip and Web-of-Lies, we observe that the model can generate CoT paths that simulate the process step-by-step, but it can easily lose track of the states, especially when the task complexity increases.
+<br>On Multi-step Arithmetic, we observe that the model tends to perform calculations from left to right in the CoT-decoding paths, rather than following the correct mathematical order.
+
+<br>在 Coin-Flip 和 Web-of-Lies 任务中，我们观察到模型可以生成逐步模拟过程的 CoT 路径，但当任务复杂度增加时，模型很容易失去状态。<br>
+在 Multi-step Arithmetic 任务中，我们观察到模型倾向于在 CoT-decoding 路径中从左到右进行计算，而不是按照正确的数学顺序进行计算。<br>总的来说，就是 CoT-Decoding 可以从模型里选到比较合理的推理路径，但没办法无中生有直接生成正确的推理路径<br><br>最后作者尝试把CoT-Decoding 和 CoT-Prompting 结合，发现效果会更好<br>Quote
+CoT-Decoding maintains a strong performance compared to self-consistency (Wang et al., 2023a) when both are combined with CoT-prompts.
+<br>CoTCoT-Decoding 与 CoT-Prompting 结合后，与 self-consistency 方法相比，性能仍然很强。<br><img alt="Combining CoT-decoding with CoT-Prompting" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407061420054.png" referrerpolicy="no-referrer"><br>Quote
+Since self-consistency aggregates over multiple paths, we also show the performance based on our path aggregation algorithm, which significantly improves the model's reasoning at a similar cost.
+<br>由于 self-consistency 聚合了多个路径，我们还展示了基于我们的路径聚合算法的性能，在成本差不多的情况下，模型的推理能力显著提高。<br>
+<br>Points to know<br>
+<br>采样方法 
+
+<br> 
+<br> 
+<br> 
+<br> 
+
+
+<br>解码方法
+
+<br> 
+
+
+<br>Instruction-tuned 
+]]></description><link>https://blog.allenygy.vip/research/cot-decoding.html</link><guid isPermaLink="false">Research/CoT-Decoding.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 07 Jul 2024 05:56:20 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ReadPaper/202407051106964.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ReadPaper/202407051106964.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Ploidy" href="research/bioinfo/ploidy.html" class="internal-link" target="_self" rel="noopener">Ploidy</a>]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Ploidy traditionally has been investigated by measuring DNA content using flow cytometry
+<br>It can also be inferred from next generation sequencing (NGS) data either by examining k-mer distributions, or by assessing the distribution of allele frequencies at biallelic single nucleotide polymorphisms (SNPs)
+<br><br><br>
+<br>Disadvantage:
+
+<br>does not provide summary statistics that permit quantifying how well the data fit the expected distributions
+<br>this approach is that it is preceded by the identification of variable sites (“SNP calling”), which is carried out using methodologies that benefit from a previously known ploidy level
+
+
+<br>This method was primarily developed for resequencing studies
+<br><br><br>It models base frequencies as a Gaussian Mixture Model (GMM), and uses maximum likelihood to assess empirical data under the assumptions of diploidy, triploidy and tetraploidy.<br>使用高斯混合模型对可变位点的基频分布进行建模并使用最大似然法来选择最合理的倍性模型<br><br><br><br><br><br>latent variables  .<br><br><br><br><br><br>The log-likelihood is calculated after the M-step, and the next E-step is initiated unless the log-likelihood has changed by less then  from the previous M-step.<br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/research/bioinfo/ploidy.html</link><guid isPermaLink="false">Research/BioInfo/Ploidy.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 27 Jun 2024 11:42:53 GMT</pubDate></item><item><title><![CDATA[Calculate Structure Entropy]]></title><description><![CDATA[ 
+ <br><br><br>
 <br>
-<br>Chain of Thought<a href="https://blog.allenygy.vip/about:blank#fnref-1-f0b6dba31b74855a" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>https://blog.allenygy.vip/deeplearning/chain-of-thought-reasoning-without-prompting.html</link><guid isPermaLink="false">DeepLearning/Chain-of-Thought Reasoning Without Prompting.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 06 Jul 2024 07:34:09 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ReadPaper/202407051106964.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/ReadPaper/202407051106964.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Deep Learning" href="deeplearning/deep-learning.html" class="internal-link" target="_self" rel="noopener">Deep Learning</a>]]></title><description><![CDATA[ 
- <br>]]></description><link>https://blog.allenygy.vip/deeplearning/deep-learning.html</link><guid isPermaLink="false">DeepLearning/Deep Learning.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 04 Jul 2024 12:15:57 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Graph Network" data-href="Graph Network" href="deeplearning/graph-network.html" class="internal-link" target="_self" rel="noopener">A Gentle Introduction to Graph Neural Networks</a> <sup data-footnote-id="fnref-1-f0b6dba31b74855a" class="footnote-ref" id="fnref-1-f0b6dba31b74855a"><a data-footref="[inline0" href="#fn-1-f0b6dba31b74855a" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
- <br><br>
 <br>
-<br><a rel="noopener" class="external-link" href="https://distill.pub/2021/gnn-intro/" target="_blank">https://distill.pub/2021/gnn-intro/</a><a href="https://blog.allenygy.vip/about:blank#fnref-1-f0b6dba31b74855a" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>https://blog.allenygy.vip/deeplearning/graph-network.html</link><guid isPermaLink="false">DeepLearning/Graph Network.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 04 Jul 2024 12:15:47 GMT</pubDate></item><item><title><![CDATA[<a data-href="Gradient Descent" href="deeplearning/gradient-descent.html" class="internal-link" target="_self" rel="noopener">Gradient Descent</a>]]></title><description><![CDATA[ 
- <br><br>
-<br>Gradient Descent 梯度下降算法 GD
-<br>Stochastic Gradient Descent 随机梯度下降 SGD
-<br>Momentum 动量
-<br>Adaptive learning 自适应学习 
-
-<br>AdaGrad 
-<br>RMSProp
-
-
-<br>Momentum &amp; Adaptive learning
-
-<br>Adam
-
-
-]]></description><link>https://blog.allenygy.vip/deeplearning/gradient-descent.html</link><guid isPermaLink="false">DeepLearning/Gradient Descent.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 04 Jul 2024 12:15:42 GMT</pubDate></item><item><title><![CDATA[<a data-href="Back Propagation" href="deeplearning/back-propagation.html" class="internal-link" target="_self" rel="noopener">Back Propagation</a>]]></title><description><![CDATA[ 
- <br><br>
-<br>Back Propagation 反向传播算法 BP
-<br>加速计算参数梯度值
-<br>Computation Graphs 计算图 
-]]></description><link>https://blog.allenygy.vip/deeplearning/back-propagation.html</link><guid isPermaLink="false">DeepLearning/Back Propagation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 04 Jul 2024 12:15:52 GMT</pubDate></item><item><title><![CDATA[<a data-href="Activation Function" href="deeplearning/activation-function.html" class="internal-link" target="_self" rel="noopener">Activation Function</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:激活函数" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#激活函数</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:深度学习" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#深度学习</a> 
- <br><a href="https://blog.allenygy.vip?query=tag:激活函数" class="tag" target="_blank" rel="noopener">#激活函数</a> <a href="https://blog.allenygy.vip?query=tag:深度学习" class="tag" target="_blank" rel="noopener">#深度学习</a><br><br><br>
-<br>增加非线性表达  使得神经网络可以拟合任意函数 
-<br>连续可导的函数  可以使用梯度下降法进行参数更新
-<br>定义域是   可以映射所有实数
-<br>单调递增的函数  不改变输入的响应状态
-<br><br>Def
-
 <br>
-<br>导致梯度消失 
-
-<br>参数不会被更新
-
-
-<br>Sigmoid 
-<br>Tanh
+<br>2m
+]]></description><link>https://blog.allenygy.vip/research/bioinfo/calculate-se.html</link><guid isPermaLink="false">Research/BioInfo/Calculate SE.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 13:49:22 GMT</pubDate></item><item><title><![CDATA[<a data-href="Ploidy-review" href="research/bioinfo/ploidy-review.html" class="internal-link" target="_self" rel="noopener">Ploidy-review</a>]]></title><description><![CDATA[ 
+ <br><br>
+<br>求断点
+<br>预处理断点数据
+<br>求极值
 <br><br>
-<br>Rectified Linear Unit 修正线性单元  RELU 
-
-<br>解决梯度消失问题 
-
-
-<br>RELU  Leaky ReLU, Parametric ReLU, ...
-<br><br><img alt="Sigmoid" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407051516842.png" referrerpolicy="no-referrer"><br><br>Sigmoid−5−4−3−2−101234500.10.20.30.40.50.60.70.80.91<br>Cons
+<br><br>
 
 <br>
-非零均值函数
+<br><br><br>
+<br>对每个断点算出所有的 
+<br> 已知<br>
+ 给定  的每一组  可求
+<br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/research/bioinfo/ploidy-review.html</link><guid isPermaLink="false">Research/BioInfo/Ploidy-review.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 06 Jul 2024 11:55:13 GMT</pubDate></item><item><title><![CDATA[<a data-href="MySQL and NoSQL database comparison for IoT application" href="MySQL and NoSQL database comparison for IoT application" class="internal-link" target="_self" rel="noopener">MySQL and NoSQL database comparison for IoT application</a>]]></title><description><![CDATA[ 
+ <br>]]></description><link>https://blog.allenygy.vip/research/mysql-and-nosql-database-comparison-for-iot-application-.md/mysql-and-nosql-database-comparison-for-iot-application-.md.html</link><guid isPermaLink="false">Research/MySQL and NoSQL database comparison for IoT application .md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 07 Jul 2024 04:41:19 GMT</pubDate></item><item><title><![CDATA[<a data-href="AlphaFold2" href="research/alphafold2.html" class="internal-link" target="_self" rel="noopener">AlphaFold2</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:ReadPaper" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#ReadPaper</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Bioinformatics" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Bioinformatics</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:ProteinStructurePrediction" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#ProteinStructurePrediction</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:AlphaFold2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AlphaFold2</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Transformer" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Transformer</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:ReadPaper" class="tag" target="_blank" rel="noopener">#ReadPaper</a> <a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a> <a href="https://blog.allenygy.vip?query=tag:Bioinformatics" class="tag" target="_blank" rel="noopener">#Bioinformatics</a> <a href="https://blog.allenygy.vip?query=tag:ProteinStructurePrediction" class="tag" target="_blank" rel="noopener">#ProteinStructurePrediction</a>	<a href="https://blog.allenygy.vip?query=tag:AlphaFold2" class="tag" target="_blank" rel="noopener">#AlphaFold2</a> <a href="https://blog.allenygy.vip?query=tag:Transformer" class="tag" target="_blank" rel="noopener">#Transformer</a><br><br><a data-tooltip-position="top" aria-label="https://www.nature.com/articles/s41586-021-03819-2" rel="noopener" class="external-link" href="https://www.nature.com/articles/s41586-021-03819-2" target="_blank">Highly accurate protein structure prediction with AlphaFold</a>
 
-<br>导致参数同时（正向/反向）更新，不利于收敛	
+<br><a data-href="AlphaFold2" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">AlphaFold2</a> 被 《Science》 评选为2021年AI在科学界最大的突破
+<br><a data-href="AlphaFold2" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">AlphaFold2</a> 把通过氨基酸序列对蛋白质三维结构预测的误差，降低到原子级别
+
+<br><br><img alt="Model architecture" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" referrerpolicy="no-referrer"><br>模型大概可以分成四个部分<br>
+<br>Feature Extraction
+<br>Encoder
+<br>Decoder
+<br>Recycling
+<br><br>特征提取两部分信息<br>
+<br>MSA 
+<br>Pairing &amp; Templates 
+<br><br>MSA提取序列在多物种中的共进化信息<br>
+<br>在基因数据库中搜索相似的氨基酸序列
+
+<br>多序列比对
 
 
+<br>得到不同氨基酸序列的特征
+<br><img alt="FeatureExtraction" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/FeatureExtraction.png" referrerpolicy="no-referrer"><br><br>提取氨基酸之间的特征<br>
+<br>氨基酸之间的关系 
+<br>在结构数据库中搜索，从已知的氨基酸序列的结构中搜索得到空间信息
+<br><br><br>MSA Representation<br>
+<br>s: s 行氨基酸序列 
+
+<br>第一行是人的氨基酸序列 
+<br>后面s-1 是从基因数据库中匹配到的不同物种的氨基酸序列 
+
+
+<br>r: r个氨基酸
+<br>c:  每个氨基酸表示为长为c的向量
+<br><img alt="Encoder Input" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/EncoderInput.png" referrerpolicy="no-referrer"><br>Pair Representation <br>
+<br>r: r个氨基酸
+<br>c: 每个氨基酸表示为长为c的向量
+<br>主要用于表示氨基酸两两之间的空间信息
+<br><br>
+<br>与Transformer 不同
+
+<br>Transformer 输入的是一段序列
+<br>Evoformer 在这里输入的是一个二维的矩阵 
+
+
+<br><img alt="a" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/a.png" referrerpolicy="no-referrer"><br>MSA和Pair都会进入多头自注意力模块<br>
+<br>具有残差连接和在元素作用上的MLP
+<br>Pair的部分还需要加入物理上三角不等式的处理<br>与Transformer不同<br>
+<br>氨基酸对 (Pair Representation) 之间的信息会加入对序列的建模<br>
+- 序列建模之后也会加入对氨基酸对的建模<br>
+- 自注意力机制做两次<br>
+- 因为输入是一个二维的矩阵<br>
+<img alt="a" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/a.png" referrerpolicy="no-referrer">
+<br><br>
+<br>输出的矩阵维度不发生变化, c发生变化
+<br><img alt="Encoder Output" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/EncoderOutput.png" referrerpolicy="no-referrer"><br><br>根据Encoder的输出拿到<br>
+<br>Single Representation (r, c) 人氨基酸序列
+
+<br>人类氨基酸所有的特征的表示
+
+
+<br>Pair Representation (r, r, c) 氨基酸对
+
+<br>氨基酸之间的相关信息
+
+
+<br>Backbone frames 
+
+<br>氨基酸序列主干的空间结构
+
+
+<br><img alt="Decoder" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/Decoder/Decoder.png" referrerpolicy="no-referrer"><br>
+<img style="zoom:50%;" alt="Decoder" src="" referrerpolicy="no-referrer"><br><br><br>记录下一个氨基酸与上一个氨基酸的相对位置<br>
+<br>R基部分原子的旋转的角度
+
+<br>欧几里得变换
+<br> 
+<br>极性，电荷可以限制 A, B 值
+
+
+<br>先预测backbone上氨基酸的相对位置
+<br>再预测每个氨基酸R基上的原子的相对位置<br>
+<img style="zoom: 50%;" alt="ProteinPrediction" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/ProteinPrediction.png" referrerpolicy="no-referrer">
+<br><br>把编码器的输出和解码器的输出通过回收机制传回编码器的输入<br>
+<br>类似RNN，但是这里的梯度不反传, 只经过56层就可以计算梯度
+<br><img alt="Model architecture" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" referrerpolicy="no-referrer"><br><br>Training<br>
 <br>
-导数最大值 
-
-<br>导致每层梯度被动缩小 4 倍	
-
-<br>导致开始的几层梯度几乎不变
-
-<br>就是梯度消失现象 gradient vanishing problem
-
-
-
-
-
-
-
-<br><br>Abstract
-Derivatives of tanh and tanh−10−8−6−4−20246810−1-0.8-0.6-0.4-0.200.20.40.60.81
-
-<br>Pros	
-
-<br>零均值函数	
-
-<br>比 Sigmoid 更快收敛
-
-
-
-<br>Cons	
-
-<br>饱和函数
-
-<br>梯度消失 
-
-
-
-<br>Warning
-<img alt="tanh" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407051530904.png" referrerpolicy="no-referrer">
-<br><br>Abstract
-
-ReLU−2-1.5−1-0.500.511.5200.20.40.60.811.21.41.61.82
-<br>Pros
-
-<br>非零均值函数 
-
-<br>收敛速度快
-
-
-<br>非饱和函数 
-
-<br>避免梯度消失问题
-
-
-
-]]></description><link>https://blog.allenygy.vip/deeplearning/activation-function.html</link><guid isPermaLink="false">DeepLearning/Activation Function.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 05 Jul 2024 12:10:28 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407051516842.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407051516842.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
+<br>  <br>
+<br>特征对齐损失，用于量化模型预测的原子位置与实际原子位置之间的差异。 
+<br><br>
+<br>辅助损失，它可能与多个预测任务相关，例如二级结构预测、溶剂可及性预测等。
+<br> <br>
+<br>距离损失，它衡量模型预测的残基间距离与真实结构之间的误差。
+<br>Training<br>
+<br>
+<br> <br>
+<br>多序列比对损失，用于确保模型预测与进化信息一致。
+<br> <br>
+<br>构象损失，用于确保整体蛋白质构象的准确性。
+<br>Fine-tuning<br>
+<br>
+<br> <br>
+<br>用于处理实验解析度的损失，用于在蛋白质结构中考虑到实验数据的不确定性。
+<br> <br>
+<br>违反物理或生物化学约束的损失。
+<br><br><br>先在有标号的数据集PDB里训练一个模型, 通过这个模型预测没有标号的数据形成一个大一些的数据集，然后选择置信度较高的数据，加上原来有标号的数据，训练新的模型<br>
+<br>Using an approach similar to noisy student self-distillation.
+<br>In this procedure, we use a trained network to predict the structure of around 350,000 diverse sequences from Uniclust3036 and make a new dataset of predicted structures filtered to a high-confidence subset.
+]]></description><link>https://blog.allenygy.vip/research/alphafold2.html</link><guid isPermaLink="false">Research/AlphaFold2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 06 Jul 2024 12:15:20 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
  <br><br>
 <br><a data-tooltip-position="top" aria-label="Database-Management/NoSQL/NoSQL-Assignment-1.md" data-href="Database-Management/NoSQL/NoSQL-Assignment-1.md" href="https://blog.allenygy.vip/Database-Management/NoSQL/NoSQL-Assignment-1" class="internal-link" target="_self" rel="noopener">NoSQL-Assignment-1</a>
-<br><a data-tooltip-position="top" aria-label="Chain-of-Thought Reasoning Without Prompting" data-href="Chain-of-Thought Reasoning Without Prompting" href="https://blog.allenygy.vip/deeplearning/chain-of-thought-reasoning-without-prompting.html" class="internal-link" target="_self" rel="noopener">Chain-of-Thought Reasoning Without Prompting</a>
+<br><a data-tooltip-position="top" aria-label="CoT-Decoding" data-href="CoT-Decoding" href="https://blog.allenygy.vip/research/cot-decoding.html" class="internal-link" target="_self" rel="noopener">CoT-Decoding</a>
 <br><a data-tooltip-position="top" aria-label="DeepLearning/Attention.md" data-href="DeepLearning/Attention.md" href="https://blog.allenygy.vip/deeplearning/attention.html" class="internal-link" target="_self" rel="noopener">Attention</a>
 <br><a data-tooltip-position="top" aria-label="Database-Management/NoSQL/NoSQL.md" data-href="Database-Management/NoSQL/NoSQL.md" href="https://blog.allenygy.vip/database-management/nosql/nosql.html" class="internal-link" target="_self" rel="noopener">NoSQL</a>
 <br><a data-tooltip-position="top" aria-label="Database-Management/NoSQL/Cassandra.md" data-href="Database-Management/NoSQL/Cassandra.md" href="https://blog.allenygy.vip/database-management/nosql/cassandra.html" class="internal-link" target="_self" rel="noopener">Cassandra</a>
@@ -622,10 +305,10 @@ ReLU−2-1.5−1-0.500.511.5200.20.40.60.811.21.41.61.82
 <br><a data-tooltip-position="top" aria-label="Tools/Docker/Docker.md" data-href="Tools/Docker/Docker.md" href="https://blog.allenygy.vip/tools/docker/docker.html" class="internal-link" target="_self" rel="noopener">Docker</a>
 <br><a data-tooltip-position="top" aria-label="Tools/Git/Git-For-Beginners.md" data-href="Tools/Git/Git-For-Beginners.md" href="https://blog.allenygy.vip/tools/git/git-for-beginners.html" class="internal-link" target="_self" rel="noopener">Git-For-Beginners</a>
 <br><a data-tooltip-position="top" aria-label="Tools/Conda/Conda.md" data-href="Tools/Conda/Conda.md" href="https://blog.allenygy.vip/tools/conda/conda.html" class="internal-link" target="_self" rel="noopener">Conda</a>
-<br><a data-tooltip-position="top" aria-label="Research/Ploidy/Ploidy.md" data-href="Research/Ploidy/Ploidy.md" href="https://blog.allenygy.vip/research/ploidy/ploidy.html" class="internal-link" target="_self" rel="noopener">Ploidy</a>
-<br><a data-tooltip-position="top" aria-label="Research/calculatese.md" data-href="Research/calculatese.md" href="https://blog.allenygy.vip/research/calculatese.html" class="internal-link" target="_self" rel="noopener">calculatese</a>
-<br><a data-tooltip-position="top" aria-label="Research/Ploidy/ploidy-review.md" data-href="Research/Ploidy/ploidy-review.md" href="https://blog.allenygy.vip/research/ploidy/ploidy-review.html" class="internal-link" target="_self" rel="noopener">ploidy-review</a>
-<br><a data-tooltip-position="top" aria-label="Research/Alphafold2.md" data-href="Research/Alphafold2.md" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">Alphafold2</a>
+<br><a data-tooltip-position="top" aria-label="Ploidy" data-href="Ploidy" href="https://blog.allenygy.vip/research/bioinfo/ploidy.html" class="internal-link" target="_self" rel="noopener">Ploidy</a>
+<br><a data-tooltip-position="top" aria-label="Calculate SE" data-href="Calculate SE" href="https://blog.allenygy.vip/research/bioinfo/calculate-se.html" class="internal-link" target="_self" rel="noopener">Calculate SE</a>
+<br><a data-tooltip-position="top" aria-label="Ploidy-review" data-href="Ploidy-review" href="https://blog.allenygy.vip/research/bioinfo/ploidy-review.html" class="internal-link" target="_self" rel="noopener">Ploidy-review</a>
+<br><a data-tooltip-position="top" aria-label="AlphaFold2" data-href="AlphaFold2" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">AlphaFold2</a>
 <br><a data-tooltip-position="top" aria-label="Program/R/R-Data-Structure.md" data-href="Program/R/R-Data-Structure.md" href="https://blog.allenygy.vip/program/r/r-data-structure.html" class="internal-link" target="_self" rel="noopener">R-Data-Structure</a>
 <br><a data-tooltip-position="top" aria-label="Tools/Regex/Regular-Expression.md" data-href="Tools/Regex/Regular-Expression.md" href="https://blog.allenygy.vip/tools/regex/regular-expression.html" class="internal-link" target="_self" rel="noopener">Regular-Expression</a>
 <br><a data-tooltip-position="top" aria-label="Program/R/Basic-R.md" data-href="Program/R/Basic-R.md" href="https://blog.allenygy.vip/program/r/basic-r.html" class="internal-link" target="_self" rel="noopener">Basic-R</a>
@@ -780,7 +463,7 @@ ReLU−2-1.5−1-0.500.511.5200.20.40.60.811.21.41.61.82
 <br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Assignment/DAA-Assignment-0.md" data-href="Algorithm/DAA/Assignment/DAA-Assignment-0.md" href="https://blog.allenygy.vip/algorithm/daa/assignment/daa-assignment-0.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-0</a>
 <br><br>
 <br><a data-tooltip-position="top" aria-label="Algorithm/DAA/Assignment/DAA-Assignment-1.md" data-href="Algorithm/DAA/Assignment/DAA-Assignment-1.md" href="https://blog.allenygy.vip/algorithm/daa/assignment/daa-assignment-1.html" class="internal-link" target="_self" rel="noopener">DAA-Assignment-1</a>
-]]></description><link>https://blog.allenygy.vip/archive.html</link><guid isPermaLink="false">Archive.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 05 Jul 2024 06:32:29 GMT</pubDate></item><item><title><![CDATA[Class]]></title><description><![CDATA[ 
+]]></description><link>https://blog.allenygy.vip/archive.html</link><guid isPermaLink="false">Archive.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 06 Jul 2024 12:17:27 GMT</pubDate></item><item><title><![CDATA[Class]]></title><description><![CDATA[ 
  <br>
 <br>
 
@@ -1271,19 +954,19 @@ ReLU−2-1.5−1-0.500.511.5200.20.40.60.811.21.41.61.82
 
 
 <br>
-<a data-tooltip-position="top" aria-label="Chain-of-Thought Reasoning Without Prompting" data-href="Chain-of-Thought Reasoning Without Prompting" href="https://blog.allenygy.vip/deeplearning/chain-of-thought-reasoning-without-prompting.html" class="internal-link" target="_self" rel="noopener">Chain-of-Thought Reasoning Without Prompting</a>
+<a data-tooltip-position="top" aria-label="CoT-Decoding" data-href="CoT-Decoding" href="https://blog.allenygy.vip/research/cot-decoding.html" class="internal-link" target="_self" rel="noopener">CoT-Decoding</a>
 
 <br>
-<a data-tooltip-position="top" aria-label="Research/calculatese.md" data-href="Research/calculatese.md" href="https://blog.allenygy.vip/research/calculatese.html" class="internal-link" target="_self" rel="noopener">calculatese</a>
+<a data-tooltip-position="top" aria-label="Calculate SE" data-href="Calculate SE" href="https://blog.allenygy.vip/research/bioinfo/calculate-se.html" class="internal-link" target="_self" rel="noopener">Calculate SE</a>
 
 <br>
-<a data-tooltip-position="top" aria-label="Research/Alphafold2.md" data-href="Research/Alphafold2.md" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">Alphafold2</a>
+<a data-tooltip-position="top" aria-label="AlphaFold2" data-href="AlphaFold2" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">AlphaFold2</a>
 
 <br>
 
 
-<br><a data-tooltip-position="top" aria-label="Research/Ploidy/Ploidy.md" data-href="Research/Ploidy/Ploidy.md" href="https://blog.allenygy.vip/research/ploidy/ploidy.html" class="internal-link" target="_self" rel="noopener">Ploidy</a>
-<br><a data-tooltip-position="top" aria-label="Research/Ploidy/ploidy-review.md" data-href="Research/Ploidy/ploidy-review.md" href="https://blog.allenygy.vip/research/ploidy/ploidy-review.html" class="internal-link" target="_self" rel="noopener">ploidy-review</a>
+<br><a data-tooltip-position="top" aria-label="Ploidy" data-href="Ploidy" href="https://blog.allenygy.vip/research/bioinfo/ploidy.html" class="internal-link" target="_self" rel="noopener">Ploidy</a>
+<br><a data-tooltip-position="top" aria-label="Ploidy-review" data-href="Ploidy-review" href="https://blog.allenygy.vip/research/bioinfo/ploidy-review.html" class="internal-link" target="_self" rel="noopener">Ploidy-review</a>
 
 
 
@@ -1329,8 +1012,8 @@ ReLU−2-1.5−1-0.500.511.5200.20.40.60.811.21.41.61.82
 
 
 
-]]></description><link>https://blog.allenygy.vip/class.html</link><guid isPermaLink="false">Class.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 05 Jul 2024 06:32:29 GMT</pubDate></item><item><title><![CDATA[Home]]></title><description><![CDATA[ 
- <br><br><br><br><br>使用 Obsidian 283 天，共创建 282 篇笔记、175 个标签、58个待办。 <br>MonWedFriFebMarAprMayJunJullessmore<br>
+]]></description><link>https://blog.allenygy.vip/class.html</link><guid isPermaLink="false">Class.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 06 Jul 2024 12:17:27 GMT</pubDate></item><item><title><![CDATA[Home]]></title><description><![CDATA[ 
+ <br><br><br><br><br>使用 Obsidian 284 天，共创建 286 篇笔记、181 个标签、58个待办。 <br>MonWedFriFebMarAprMayJunJullessmore<br>
 <br>NOTE
 
 <br><a data-href="Computer-Organization" href="https://blog.allenygy.vip/computer-organization/computer-organization.html" class="internal-link" target="_self" rel="noopener">Computer-Organization</a>
@@ -1360,7 +1043,458 @@ ReLU−2-1.5−1-0.500.511.5200.20.40.60.811.21.41.61.82
 
 
 
-]]></description><link>https://blog.allenygy.vip/home.html</link><guid isPermaLink="false">Home.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 06 Jul 2024 07:48:59 GMT</pubDate></item><item><title><![CDATA[<a data-href="Key-Concept" href="database-management/lecture/key-concept.html" class="internal-link" target="_self" rel="noopener">Key-Concept</a>]]></title><description><![CDATA[ 
+]]></description><link>https://blog.allenygy.vip/home.html</link><guid isPermaLink="false">Home.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 06 Jul 2024 13:02:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="NoSQL-Assignment-1" href="database-management/assignment/nosql-assignment-1.html" class="internal-link" target="_self" rel="noopener">NoSQL-Assignment-1</a>]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>NoSQL数据库是不遵循RDBMS原则的数据库和数据存储，NoSQL意思是不仅仅是 SQL
+<br><br>
+<br>图数据库:
+
+<br>用于存储数据网络信息，如社交关系。
+<br>如：<a data-href="Neo4J" href="https://blog.allenygy.vip/database-management/nosql/neo4j.html" class="internal-link" target="_self" rel="noopener">Neo4J</a>
+
+
+<br>文档数据库:
+
+<br>将每个键与称为文档的复杂数据结构配对。
+<br>如：<a data-href="MongoDB" href="https://blog.allenygy.vip/database-management/nosql/mongodb.html" class="internal-link" target="_self" rel="noopener">MongoDB</a>
+
+
+<br>键值数据库:
+
+<br>是最简单的 NoSQL 数据库。数据库中的每个项目都以属性名称（或 "键"）的形式与其值一起存储。
+<br>如：<a data-href="Redis" href="https://blog.allenygy.vip/database-management/nosql/redis.html" class="internal-link" target="_self" rel="noopener">Redis</a>
+
+
+<br>列族数据库：
+
+<br>针对大型数据集的查询进行了优化，将数据列（而不是行）存储在一起
+<br>如：<a data-href="Cassandra" href="https://blog.allenygy.vip/database-management/nosql/cassandra.html" class="internal-link" target="_self" rel="noopener">Cassandra</a>
+
+
+<br><br>
+<br>关系型数据库
+
+<br>中心化的
+<br>处理密集，结构化的数据
+<br>满足 ACID 性
+<br>遵循 CA 原则
+
+
+<br>NoSQL
+
+<br>去中心化的
+<br>处理稀疏数据，半/非结构化的数据
+<br>主要是查询，很少更新
+<br>满足 BASE 性
+<br>遵循 AP 或 CP 原则
+
+
+<br><br>
+<br>CAP 定理（CAP Theorem）
+
+<br>是由计算机科学家 Eric Brewer 提出的一个关于分布式数据存储系统的基本定理。该定理指出，在任何分布式数据存储系统中，无法同时完全满足以下三个特性：
+
+<br>一致性（Consistency）：每个客户端都有相同的数据视图。
+<br>可用性（Availability）：每个客户端始终可以读写。
+<br>分区容错性（Partition Tolerance）：系统在分布式物理网络中运行良好
+
+
+
+
+<br>CAP 定理在 NoSQL 数据库中的重要性
+
+<br>NoSQL 数据库的设计通常会在 CAP 定理的背景下进行权衡，以满足特定应用场景的需求：
+
+<br>满足CA原则：系统几乎没有或根本没有分区容错性。一致性和可用性优先
+<br>满足AP原则：一致性受到影响，但系统始终可用，并且在部分分区时也能工作
+
+<br>Cassandra, DynamoDB
+
+
+<br>满足CP原则：可用性受到影响，但一致性和分区容错性优于可用性
+
+<br>MongoDB, HBase, Redis
+
+
+
+
+
+
+<br><br>
+<br>a.高可用性 (High Availability)
+
+<br>每个客户端始终可以读写，读写实时更新
+
+
+<br>b. 可扩展性 (Scalability)
+
+<br>存储空间可扩展
+<br>数据易于扩展
+
+
+<br>c. 分布式系统 (Distributed System)
+
+<br>去中心化的系统
+<br>可有数千台机器分布在世界各地
+
+
+<br><br>
+<br>a.键值存储(Key-Value Store)
+
+<br>简洁：数据主要采用Key-Value(KV)形式储存
+<br>高速：数据驻留内存，重启时可再次加载进行使用
+<br>易扩展：根据系统负载量，灵活添加或删除服务器
+<br>对键可设置失效时间
+
+
+<br>b. 列存储 (Column Store)
+
+<br>更好的可扩展性
+<br>高可用性
+<br>适合离线批量数据处理
+
+
+<br>c.文档数据库(Document Store)
+
+<br>核心概念是 "文档 "的概念，它与 RDBMS 中的行相对应
+<br>以某些标准格式或编码封装和编码数据，如 JSON（BSON）
+<br>文档在数据库中通过代表该文档的唯一密钥进行处理
+<br>将文档作为一个整体处理，避免将文档拆分为其组成的名称/值对
+<br>文档是无模式的，可以是非结构的数据
+
+
+<br>d.图形数据库(Graph Store)
+
+<br>面向图形
+<br>一切都以边、节点或属性的形式存储
+<br>每个节点和边可以有任意数量的属性
+<br>节点和边都可以贴标签
+<br>标签可用于缩小搜索范围
+
+
+<br><br>
+<br>a. 实时分析：
+
+<br>键值数据库Redis,  支持极高的读写速度，适合需要快速响应的实时分析应用。
+
+
+<br>b. 大数据处理：
+
+<br>列族数据库 Cassandra, 能够轻松地横向扩展，处理大数据量和高吞吐量的需求。
+
+
+<br>c. 社交网络：
+
+<br>图数据库 Neo4J，社交网络中的数据天然适合图模型，例如用户、朋友关系、点赞、评论等。Neo4j 通过图形算法和索引，能够高效地进行复杂的关系查询和路径查找，
+
+
+<br>d. 物联网 loT:
+
+<br>文档数据库MongoDB，能够处理结构化、半结构化和非结构化数据。物联网数据通常包括各种类型的传感器数据，这些数据具有高度的灵活性和多样性。MongoDB 提供了高效的存储和查询能力，支持时间序列数据的存储和分析，适合物联网应用中大量多变的数据处理需求。
+
+
+<br><br>
+<br>实际应用场景：社交媒体评论管理
+
+<br>社交媒体评论具有大量非结构化的数据，且用户在高峰期频繁发布和查看评论，系统需要支持高并发读写操作。
+<br>NoSQL 数据库具有可扩展性：NoSQL 数据库（如 MongoDB、Cassandra）能够水平扩展，通过增加更多节点来处理大规模数据和高并发请求。
+<br>关系型数据库通常难以应对如此大规模的数据增长和高并发需求。
+
+
+<br><br>MATCH (v:Vehicle)-[:OWNED_BY]-&gt;(p:Person)
+WITH p, collect(p.name) as owners
+RETURN v, owners
+Copy<br><br><br><br>
+<br>A.&nbsp;OPTIONAL MATCH 不是 Cypher 语句。
+<br>B.&nbsp;OPTIONAL MATCH 为 Cypher 查询提供参数占位符。它保存参数化查询，然后根据客户提供的值与图进行可选匹配。
+<br>C. OPTIONAL MATCH 会搜索可能存在也可能不存在的描述模式，并将模式中不存在的标识符赋值为 NULL。
+<br>D. 可选匹配子句将获取一组属性值，并将其与数据库中的所有节点进行可选匹配。
+<br><br>
+<br>A.&nbsp;MATCH (a:Thing {id:3563}) DETACH DELETE a
+<br>B.&nbsp;MATCH (a:Thing {id:3563}) OPTIONAL MATCH (a)-[r]-() DELETE a, r
+<br>C.&nbsp;MATCH (a:Thing {id:3563}) DELETE a
+<br>D.&nbsp;MATCH (a:Thing {id:3563})-[r]-(b) DELETE a, r
+<br><br>
+<br>A.&nbsp;MATCH (sarah:Person)-[:KNOWS]-&gt;(friend:Person) WHERE sarah.name = "Sarah" RETURN friend
+<br>B.&nbsp;MATCH (sarah:Person)-[:KNOWS*1...2]-&gt;(friend:Person) WHERE sarah.name = "Sarah" RETURN friend
+<br>C. MATCH (sarah:Person)-[:KNOWS]-&gt;(friend:Person) OPTIONAL MATCH (friend)-[:KNOWS]-&gt;(fof:Person) WHERE sarah.name = "Sarah" RETURN friend, fof
+<br>D. 所有这些都是正确的。
+<br><br>// 创建 Show 节点
+CREATE (got:Show {title: "Game of Thrones"})
+	
+// 创建 Character 节点
+CREATE (jon:Character {name: "Jon Snow"})
+CREATE (dany:Character {name: "Daenerys Targaryen"})
+CREATE (tyrion:Character {name: "Tyrion Lannister"})
+	
+// 创建 Actor 节点
+CREATE (kit:Actor {name: "Kit Harington"})
+CREATE (emilia:Actor {name: "Emilia Clarke"})
+CREATE (peter:Actor {name: "Peter Dinklage"})
+	
+CREATE (kit)-[:ACTED_IN]-&gt;(got)
+CREATE (emilia)-[:ACTED_IN]-&gt;(got)
+CREATE (peter)-[:ACTED_IN]-&gt;(got)
+	
+CREATE (jon)-[:HAS_CHARACTER]-&gt;(got)
+CREATE (dany)-[:HAS_CHARACTER]-&gt;(got)
+CREATE (tyrion)-[:HAS_CHARACTER]-&gt;(got)
+	
+CREATE (kit)-[:PLAYS]-&gt;(jon)
+CREATE (emilia)-[:PLAYS]-&gt;(dany)
+CREATE (peter)-[:PLAYS]-&gt;(tyrion)	
+Copy<br><br><br><br><br><br><br>
+<br>A. admin数据库
+<br>B. user数据库
+<br>C. config数据库
+<br>D. test 数据库
+<br><br>
+<br>A. MongoDB单个文档大小上限为64MB
+<br>B. 文档的值只可以是字符串类型
+<br>C. 文档中可以有重复的键
+<br>D. 不建议自定义_id键
+<br><br>
+<br>易用性：灵活的文档模型。JSON格式简单易学
+<br>支持高性能访问数据。存储引擎是文档型数据库的核心组件。
+<br>可扩展性：支持大数据分布式存储，服务能力水平可横向弹性扩展
+]]></description><link>https://blog.allenygy.vip/database-management/assignment/nosql-assignment-1.html</link><guid isPermaLink="false">Database-Management/Assignment/NoSQL-Assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 05 Jul 2024 05:26:19 GMT</pubDate></item><item><title><![CDATA[<a data-href="Prompting and In-Context Learning" href="deeplearning/prompting-and-in-context-learning.html" class="internal-link" target="_self" rel="noopener">Prompting and In-Context Learning</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Prompting" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Prompting</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:In-ContextLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#In-ContextLearning</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a>  <a href="https://blog.allenygy.vip?query=tag:Prompting" class="tag" target="_blank" rel="noopener">#Prompting</a> <a href="https://blog.allenygy.vip?query=tag:In-ContextLearning" class="tag" target="_blank" rel="noopener">#In-ContextLearning</a><br><br><br>
+<br>Need large task-specific datasets for fine-tuning  需要大量专业的数据集
+<br>Train endlessly   不通用
+
+<br>Collect data for task  , fine-tune model to solve task 
+<br>Collect data for task  , fine-tune model to solve task 
+<br>...
+
+
+<br>Prone to overfitting  容易过拟合	
+
+<br>Large models adapt to very narrow task distribution, which may exploit spurious correlations
+
+
+<br>Finetuning large models is expensive to time, memory, and cost
+<br>How to adapt a pre-trained model without fine-tuning<br><br>What is Prompting?
+
+<br>Prompt-based learning (inference)
+<br>A new paradigm in Deep Learning / Machine Learning (NLP, CV)
+<br>Encouraging a pre-trained model to make particular predictions by providing a “prompt” that instructs the model to perform the task effectively
+
+<br>The General workflow of Prompting:	<br>
+<br>Prompt Addition 
+<br>Answer Prediction (Search)
+<br>Post-process the answer
+<br><br>
+<br>
+Given input , this component modifies the input into a prompt 
+
+<br>Append a textual string to the input
+
+
+<br>
+Contains two step 
+
+<br>Define a template with two slots 
+
+<br>An input slot  for input  
+<br>An answer slot  for an intermediate generated answer  that will later be mapped into label 
+
+
+<br>Fill slot  with the input 
+
+
+<br><br><br><br>
+<br>Pre-trained model choice 
+<br>Prompt engineering 
+<br>Answer engineering 
+<br>Multi-Prompt learning
+<br><br><br><br><br><br>A prompt contains any of the following elements<br>
+<br>Instruction − The description of a specific task that you want the model to perform 
+<br>Context − External information or additional context that can steer the model to better responses 
+<br>Input data − The input or question that we are interested to find a response for 
+<br>Output Indicator − The type or format of the output
+<br><br>
+<br>Text classification 
+<br>Text summarization 
+<br>Information extraction 
+<br>Question Answering 
+<br>Conversation 
+<br>Code generation
+<br>Reasoning
+<br><br>
+<br>Zero-shot Prompting      无样本
+<br>Few-shot Prompting      少样本
+<br>Chain-of-Thought Prompting 
+<br>Self-Consistency 
+<br>Tree of Thoughts 
+<br>Multimodal CoT Prompting
+<br>Active-Prompt 
+<br>Generate Knowledge Prompting 
+<br>Retrieval Augmented Generation 
+<br>Automatic Reasoning and Tool-use
+]]></description><link>https://blog.allenygy.vip/deeplearning/prompting-and-in-context-learning.html</link><guid isPermaLink="false">DeepLearning/Prompting and In-Context Learning.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 05 Jul 2024 12:17:42 GMT</pubDate></item><item><title><![CDATA[<a data-href="Read Paper Process" href="deeplearning/read-paper-process.html" class="internal-link" target="_self" rel="noopener">Read Paper Process</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:Research" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Research</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Tip" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Tip</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:ReadPaper" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#ReadPaper</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:Research" class="tag" target="_blank" rel="noopener">#Research</a> <a href="https://blog.allenygy.vip?query=tag:Tip" class="tag" target="_blank" rel="noopener">#Tip</a> <a href="https://blog.allenygy.vip?query=tag:ReadPaper" class="tag" target="_blank" rel="noopener">#ReadPaper</a> <br><br>
+<br>Title 
+<br>Abstract 
+<br>Introduction
+<br>Method
+<br>Experiment
+<br>Conclusion
+<br>Reference 
+<br><br>
+<br>Title 
+<br>Abstract 
+<br>Conclusion 
+<br><br>
+<br>Method 
+<br>Experiment 
+<br>Reference
+<br><br>
+<br>Repetition
+]]></description><link>https://blog.allenygy.vip/deeplearning/read-paper-process.html</link><guid isPermaLink="false">DeepLearning/Read Paper Process.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 05 Jul 2024 06:30:17 GMT</pubDate></item><item><title><![CDATA[<a data-href="AlexNet" href="deeplearning/alexnet.html" class="internal-link" target="_self" rel="noopener">AlexNet</a>]]></title><description><![CDATA[ 
+ <br><br>This paper doing the work of image classification, which is the first time that CNN is used in the field of image classification.]]></description><link>https://blog.allenygy.vip/deeplearning/alexnet.html</link><guid isPermaLink="false">DeepLearning/AlexNet.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 05 Jul 2024 06:03:32 GMT</pubDate></item><item><title><![CDATA[<a data-href="Parameter-Efficient Fine-Tuning" href="deeplearning/parameter-efficient-fine-tuning.html" class="internal-link" target="_self" rel="noopener">Parameter-Efficient Fine-Tuning</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Fine-Tuning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Fine-Tuning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:PEFT" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#PEFT</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a> <a href="https://blog.allenygy.vip?query=tag:Fine-Tuning" class="tag" target="_blank" rel="noopener">#Fine-Tuning</a> <a href="https://blog.allenygy.vip?query=tag:PEFT" class="tag" target="_blank" rel="noopener">#PEFT</a><br><br><br>
+<br>Modified small part of parameters of pretrained models
+<br>Add extra parameters
+<br>Add increment of parameters of pretrained models 
+
+<br>LoRA, FACT
+
+
+<br><br><br>Only modify (retraining) part of parameters of pretrained models <br>
+<br>Bias and the final linear layer
+<br>Pros 
+
+<br>Simple, but efficient, comparable to full model fine-tuning 
+<br>Can learn downstream tasks sequentially, which helps to deploy efficiently 
+<br>For each downstream task, only very small number of parameters should be stored 
+
+
+<br>For BERT backbone, 0.1% parameters are modified (retrained)
+
+<br><br><br>Idea 
+Add Adapter module to each layer of pretrain models
+<br><br>Idea
+Use prefixs, which can be learned and specific to given tasks, to mimic prompts
+<br><br>Idea 
+
+<br>Construct a prompt for each task, concatenate the prompt with data to input to Large Model 
+<br>Only add prompt (tokens) at input layer, no MLP A Simplified version of Prefix Tuning
+
+<br><br><br>Cons of previous tuning methods 
+
+<br>Adapter Tuning adds Adapter layer in Transformer, which makes the model more deeper and increases the inference time 
+<br>Prompt-based methods, such as Prefix Tuning and Prompt Tuning, are hard to train. In addition, the prompt token occupy the input space so as to decrease the number of available tokens
+
+<br>]]></description><link>https://blog.allenygy.vip/deeplearning/parameter-efficient-fine-tuning.html</link><guid isPermaLink="false">DeepLearning/Parameter-Efficient Fine-Tuning.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 04 Jul 2024 13:24:27 GMT</pubDate></item><item><title><![CDATA[<a data-href="Deep Learning" href="deeplearning/deep-learning.html" class="internal-link" target="_self" rel="noopener">Deep Learning</a>]]></title><description><![CDATA[ 
+ <br>]]></description><link>https://blog.allenygy.vip/deeplearning/deep-learning.html</link><guid isPermaLink="false">DeepLearning/Deep Learning.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 04 Jul 2024 12:15:57 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Graph Network" data-href="Graph Network" href="deeplearning/graph-network.html" class="internal-link" target="_self" rel="noopener">A Gentle Introduction to Graph Neural Networks</a> <sup data-footnote-id="fnref-1-f0b6dba31b74855a" class="footnote-ref" id="fnref-1-f0b6dba31b74855a"><a data-footref="[inline0" href="#fn-1-f0b6dba31b74855a" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
+ <br><br>
+<br>
+<br><a rel="noopener" class="external-link" href="https://distill.pub/2021/gnn-intro/" target="_blank">https://distill.pub/2021/gnn-intro/</a><a href="https://blog.allenygy.vip/about:blank#fnref-1-f0b6dba31b74855a" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>https://blog.allenygy.vip/deeplearning/graph-network.html</link><guid isPermaLink="false">DeepLearning/Graph Network.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 04 Jul 2024 12:15:47 GMT</pubDate></item><item><title><![CDATA[<a data-href="Gradient Descent" href="deeplearning/gradient-descent.html" class="internal-link" target="_self" rel="noopener">Gradient Descent</a>]]></title><description><![CDATA[ 
+ <br><br>
+<br>Gradient Descent 梯度下降算法 GD
+<br>Stochastic Gradient Descent 随机梯度下降 SGD
+<br>Momentum 动量
+<br>Adaptive learning 自适应学习 
+
+<br>AdaGrad 
+<br>RMSProp
+
+
+<br>Momentum &amp; Adaptive learning
+
+<br>Adam
+
+
+]]></description><link>https://blog.allenygy.vip/deeplearning/gradient-descent.html</link><guid isPermaLink="false">DeepLearning/Gradient Descent.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 04 Jul 2024 12:15:42 GMT</pubDate></item><item><title><![CDATA[<a data-href="Back Propagation" href="deeplearning/back-propagation.html" class="internal-link" target="_self" rel="noopener">Back Propagation</a>]]></title><description><![CDATA[ 
+ <br><br>
+<br>Back Propagation 反向传播算法 BP
+<br>加速计算参数梯度值
+<br>Computation Graphs 计算图 
+]]></description><link>https://blog.allenygy.vip/deeplearning/back-propagation.html</link><guid isPermaLink="false">DeepLearning/Back Propagation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 04 Jul 2024 12:15:52 GMT</pubDate></item><item><title><![CDATA[<a data-href="Activation Function" href="deeplearning/activation-function.html" class="internal-link" target="_self" rel="noopener">Activation Function</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:激活函数" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#激活函数</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:深度学习" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#深度学习</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:激活函数" class="tag" target="_blank" rel="noopener">#激活函数</a> <a href="https://blog.allenygy.vip?query=tag:深度学习" class="tag" target="_blank" rel="noopener">#深度学习</a><br><br><br>
+<br>增加非线性表达  使得神经网络可以拟合任意函数 
+<br>连续可导的函数  可以使用梯度下降法进行参数更新
+<br>定义域是   可以映射所有实数
+<br>单调递增的函数  不改变输入的响应状态
+<br><br>Def
+
+<br>
+<br>导致梯度消失 
+
+<br>参数不会被更新
+
+
+<br>Sigmoid 
+<br>Tanh
+<br><br>
+<br>Rectified Linear Unit 修正线性单元  RELU 
+
+<br>解决梯度消失问题 
+
+
+<br>RELU  Leaky ReLU, Parametric ReLU, ...
+<br><br><img alt="Sigmoid" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407051516842.png" referrerpolicy="no-referrer"><br><br>Sigmoid−5−4−3−2−101234500.10.20.30.40.50.60.70.80.91<br>Cons
+
+<br>
+非零均值函数
+
+<br>导致参数同时（正向/反向）更新，不利于收敛	
+
+
+<br>
+导数最大值 
+
+<br>导致每层梯度被动缩小 4 倍	
+
+<br>导致开始的几层梯度几乎不变
+
+<br>就是梯度消失现象 gradient vanishing problem
+
+
+
+
+
+
+
+<br><br>Abstract
+Derivatives of tanh and tanh−10−8−6−4−20246810−1-0.8-0.6-0.4-0.200.20.40.60.81
+
+<br>Pros	
+
+<br>零均值函数	
+
+<br>比 Sigmoid 更快收敛
+
+
+
+<br>Cons	
+
+<br>饱和函数
+
+<br>梯度消失 
+
+
+
+<br>Warning
+<img alt="tanh" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407051530904.png" referrerpolicy="no-referrer">
+<br><br>Abstract
+
+ReLU−2-1.5−1-0.500.511.5200.20.40.60.811.21.41.61.82
+<br>Pros
+
+<br>非零均值函数 
+
+<br>收敛速度快
+
+
+<br>非饱和函数 
+
+<br>避免梯度消失问题
+
+
+
+]]></description><link>https://blog.allenygy.vip/deeplearning/activation-function.html</link><guid isPermaLink="false">DeepLearning/Activation Function.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 05 Jul 2024 12:10:28 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407051516842.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407051516842.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Key-Concept" href="database-management/lecture/key-concept.html" class="internal-link" target="_self" rel="noopener">Key-Concept</a>]]></title><description><![CDATA[ 
  <br><br><br>
 <br>super key (超键)
 <br>candidate key (候选键)
@@ -1847,142 +1981,7 @@ Copy]]></description><link>https://blog.allenygy.vip/database-management/nosql/n
 Attention Mechanism is an attempt to implement the same action of selectively concentrating on a few relevant things while ignoring others in deep neural networks
 <br>Why is Attention needed in deep learning ？<br><br>
 <br>intra-attention
-]]></description><link>https://blog.allenygy.vip/deeplearning/attention.html</link><guid isPermaLink="false">DeepLearning/Attention.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 02 Jul 2024 11:24:01 GMT</pubDate></item><item><title><![CDATA[<a data-href="Ploidy" href="research/ploidy/ploidy.html" class="internal-link" target="_self" rel="noopener">Ploidy</a>]]></title><description><![CDATA[ 
- <br><br><br><br>
-<br>Ploidy traditionally has been investigated by measuring DNA content using flow cytometry
-<br>It can also be inferred from next generation sequencing (NGS) data either by examining k-mer distributions, or by assessing the distribution of allele frequencies at biallelic single nucleotide polymorphisms (SNPs)
-<br><br><br>
-<br>Disadvantage:
-
-<br>does not provide summary statistics that permit quantifying how well the data fit the expected distributions
-<br>this approach is that it is preceded by the identification of variable sites (“SNP calling”), which is carried out using methodologies that benefit from a previously known ploidy level
-
-
-<br>This method was primarily developed for resequencing studies
-<br><br><br>It models base frequencies as a Gaussian Mixture Model (GMM), and uses maximum likelihood to assess empirical data under the assumptions of diploidy, triploidy and tetraploidy.<br>使用高斯混合模型对可变位点的基频分布进行建模并使用最大似然法来选择最合理的倍性模型<br><br><br><br><br><br>latent variables  .<br><br><br><br><br><br>The log-likelihood is calculated after the M-step, and the next E-step is initiated unless the log-likelihood has changed by less then  from the previous M-step.<br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/research/ploidy/ploidy.html</link><guid isPermaLink="false">Research/Ploidy/Ploidy.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 27 Jun 2024 11:42:53 GMT</pubDate></item><item><title><![CDATA[<a data-href="ploidy-review" href="research/ploidy/ploidy-review.html" class="internal-link" target="_self" rel="noopener">ploidy-review</a>]]></title><description><![CDATA[ 
- <br><br>
-<br>求断点
-<br>预处理断点数据
-<br>求极值
-<br><br>
-<br><br>
-
-<br>
-<br><br><br>
-<br>对每个断点算出所有的 
-<br> 已知<br>
- 给定  的每一组  可求
-<br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/research/ploidy/ploidy-review.html</link><guid isPermaLink="false">Research/Ploidy/ploidy-review.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 23 Jun 2024 18:05:07 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://www.nature.com/articles/s41586-021-03819-2" rel="noopener" class="external-link" href="https://www.nature.com/articles/s41586-021-03819-2" target="_blank">AlphaFold2</a>]]></title><description><![CDATA[ 
- <br><br><br><br>
-<br><a data-href="Alphafold2" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">Alphafold2</a> 被 《Science》 评选为2021年AI在科学界最大的突破
-<br><a data-href="Alphafold2" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">Alphafold2</a> 把通过氨基酸序列对蛋白质三维结构预测的误差，降低到原子级别
-<br><br><br><img alt="Model architecture" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" referrerpolicy="no-referrer"><br>
-<br>Feature Extraction
-<br>Encoder
-<br>Decoder
-<br>Recycling
-<br><br><br><br>
-<br>在基因数据库中搜索相似的氨基酸序列
-
-<br>多序列比对
-
-
-<br>得到不同氨基酸序列的特征
-<br>MSA的作用是为了提取出一个a序列在多物种中的共进化信息
-<br><img align="right" style="zoom:50%;" alt="FeatureExtraction" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/FeatureExtraction.png" referrerpolicy="no-referrer"><br><br><br><br>
-<br>氨基酸之间的关系 
-<br>在结构数据库中搜索，从已知的氨基酸序列的结构中搜索得到空间信息
-<br>氨基酸之间的特征
-<br><img align="right" style="zoom:50%;" alt="FeatureExtraction" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/FeatureExtraction.png" referrerpolicy="no-referrer"><br><br><br><br>MSA Representation<br>
-<br>s: s 行氨基酸序列 
-
-<br>第一行是人的氨基酸序列 
-<br>后面s-1 是从基因数据库中匹配到的不同物种的氨基酸序列 
-
-
-<br>r: r个氨基酸
-<br>c:  每个氨基酸表示为长为c的向量
-<br><img align="right" style="zoom:30%;" alt="EncoderInput.png" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/EncoderInput.png" referrerpolicy="no-referrer"><br><br><br><br>Pair Representation <br>
-<br>r: r个氨基酸
-<br>c: 每个氨基酸表示为长为c的向量
-<br>主要用于表示氨基酸两两之间的空间信息
-<br><img align="right" style="zoom:40%;" alt="EncoderInput.png" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/EncoderInput.png" referrerpolicy="no-referrer"><br><br><br><br>
-<br>与Transformer 不同
-
-<br>Transformer 输入的是一段序列
-<br>Evoformer 在这里输入的是一个二维的矩阵 
-
-
-<br><img alt="a" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/a.png" referrerpolicy="no-referrer"><br><br><br><br>MSA和Pair都会进入多头自注意力模块<br>
-<br>具有残差连接和在元素作用上的MLP
-<br>Pair的部分还需要加入物理上三角不等式的处理<br><img alt="a" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/a.png" referrerpolicy="no-referrer"><br><br><br><br>与Transformer不同<br>
-<br>氨基酸对 (Pair Representation) 之间的信息会加入对序列的建模
-
-<br>序列建模之后也会加入对氨基酸对的建模
-<br>自注意力机制做两次
-
-<br>因为输入是一个二维的矩阵
-
-
-
-
-<br><img alt="a" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/a.png" referrerpolicy="no-referrer"><br><br><br><br>
-<br>输出的矩阵维度不发生变化, c发生变化
-<br><img align="right" style="zoom:50%;" alt="EncoderOutput.png" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/EncoderOutput.png" referrerpolicy="no-referrer"><br><br><br>根据Encoder的输出拿到<br>
-<br>Single Representation (r, c) 人氨基酸序列
-
-<br>人类氨基酸所有的特征的表示
-
-
-<br>Pair Representation (r, r, c) 氨基酸对
-
-<br>氨基酸之间的相关信息
-
-
-<br>Backbone frames 
-
-<br>氨基酸序列主干的空间结构
-
-
-<br><img style="zoom:50%;" alt="Decoder" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/Decoder/Decoder.png" referrerpolicy="no-referrer"><br><br><br>记录下一个氨基酸与上一个氨基酸的相对位置<br>
-<br>R基部分原子的旋转的角度
-
-<br>欧几里得变换
-<br> 
-<br>极性，电荷可以限制 A, B 值
-
-
-<br>先预测backbone上氨基酸的相对位置
-<br>再预测每个氨基酸R基上的原子的相对位置<br>
-<img style="zoom: 50%;" alt="ProteinPrediction" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/ProteinPrediction.png" referrerpolicy="no-referrer">
-<br><br><br>把编码器的输出和解码器的输出通过回收机制传回编码器的输入<br>
-<br>类似RNN，但是这里的梯度不反传, 只经过56层就可以计算梯度
-<br><img alt="Model architecture" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" referrerpolicy="no-referrer"><br><br><br>Training<br>
-<br>
-<br>  <br>
-<br>特征对齐损失，用于量化模型预测的原子位置与实际原子位置之间的差异。 
-<br><br>
-<br>辅助损失，它可能与多个预测任务相关，例如二级结构预测、溶剂可及性预测等。
-<br> <br>
-<br>距离损失，它衡量模型预测的残基间距离与真实结构之间的误差。
-<br><br><br>Training<br>
-<br>
-<br> <br>
-<br>多序列比对损失，用于确保模型预测与进化信息一致。
-<br> <br>
-<br>构象损失，用于确保整体蛋白质构象的准确性。
-<br><br><br>Fine-tuning<br>
-<br>
-<br> <br>
-<br>用于处理实验解析度的损失，用于在蛋白质结构中考虑到实验数据的不确定性。
-<br> <br>
-<br>违反物理或生物化学约束的损失。
-<br><br><br><br><br>先在有标号的数据集PDB里训练一个模型, 通过这个模型预测没有标号的数据形成一个大一些的数据集，然后选择置信度较高的数据，加上原来有标号的数据，训练新的模型<br>
-<br>Using an approach similar to noisy student self-distillation.
-<br>In this procedure, we use a trained network to predict the structure of around 350,000 diverse sequences from Uniclust3036 and make a new dataset of predicted structures filtered to a high-confidence subset.
-<br><br><br>随机遮住或更改一些氨基酸，然后用类似Bert的方法预测氨基酸<br>
-<br>Additionally, we randomly mask out or mutate individual residues within the MSA  have a Bidirectional Encoder Representations from Transformers BERT to predict the masked elements of the MSA sequences. 
-<br><br>]]></description><link>https://blog.allenygy.vip/research/alphafold2.html</link><guid isPermaLink="false">Research/Alphafold2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 03 Jul 2024 13:40:25 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://github.com/BiliVista" rel="noopener" class="external-link" href="https://github.com/BiliVista" target="_blank">BilibiliVista</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:AllenYGY" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AllenYGY</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:WMHGYP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#WMHGYP</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Project" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Project</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Python" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Python</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:DPW" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DPW</a> 
+]]></description><link>https://blog.allenygy.vip/deeplearning/attention.html</link><guid isPermaLink="false">DeepLearning/Attention.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 02 Jul 2024 11:24:01 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://github.com/BiliVista" rel="noopener" class="external-link" href="https://github.com/BiliVista" target="_blank">BilibiliVista</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:AllenYGY" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AllenYGY</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:WMHGYP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#WMHGYP</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Project" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Project</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Python" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Python</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:DPW" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DPW</a> 
  <br><br>Author: <a href="https://blog.allenygy.vip?query=tag:AllenYGY" class="tag" target="_blank" rel="noopener">#AllenYGY</a> <a href="https://blog.allenygy.vip?query=tag:WMHGYP" class="tag" target="_blank" rel="noopener">#WMHGYP</a><br>
 Tags: <a href="https://blog.allenygy.vip?query=tag:Project" class="tag" target="_blank" rel="noopener">#Project</a> <a href="https://blog.allenygy.vip?query=tag:Python" class="tag" target="_blank" rel="noopener">#Python</a> <a href="https://blog.allenygy.vip?query=tag:DPW" class="tag" target="_blank" rel="noopener">#DPW</a><br>
 <br>Our codes are open source on github<br>
