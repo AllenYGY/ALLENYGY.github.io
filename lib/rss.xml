@@ -1,4 +1,589 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 14 Jul 2024 09:32:30 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 14 Jul 2024 09:32:14 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="Graph-Overview" href="algorithm/graph/graph-overview.html" class="internal-link" target="_self" rel="noopener">Graph-Overview</a>]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 14 Jul 2024 15:44:46 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 14 Jul 2024 15:44:40 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="NoSQL-Assignment-2" href="database-management-system/assignment/nosql-assignment-2.html" class="internal-link" target="_self" rel="noopener">NoSQL-Assignment-2</a>]]></title><description><![CDATA[ 
+ <br><br><br>REmote DIctionary Server（Redis）是一个开源的内存 NoSQL 数据库项目，它实现了一个分布式、内存键值存储，并具有可选的耐用性。<br><br>
+<br>读写速度极快
+<br>持久、可扩展
+<br>直接数据访问
+<br><br>
+<br>String
+<br>List
+<br>Hash
+<br>Set 
+<br>Zset
+<br><br>
+<br>发送者（发布者）不需要向特定的接收者（订阅者）发送消息。 
+<br>相反，发布的消息被归类到频道中，而不知道有哪些订阅者。 
+<br>订阅者对一个或多个频道表示兴趣，只接收感兴趣的信息，而不知道有哪些发布者。
+<br><br>依靠原子性实现•要么处理所有命令，要么不处理任何命令。<br>
+EXEC 命令会触发事务中所有命令的执行。<br>
+如果客户端在调用 MULTI 命令之前，在事务上下文中失去了与服务器的连接，则不会执行任何操作。相反，如果调用 EXEC 命令，则会执行所有操作。<br><br>
+<br>Redis最与众不同的数据结构是：ZSet
+<br>特点：
+
+<br>对排序集进行添加、删除或更新等操作的速度非常快
+<br>由于元素是按顺序提取的，而不是事后排序，因此还可以通过得分或排名（位置）快速获取范围。
+
+
+<br><br>Expire 命令可以为键设置过期时间，当键过期时，Redis 会自动删除该键。<br><br>
+<br>场景：MySQL+ Redis 的组合使用，Redis 作为 MySQL 的缓存层使用，MySQL作为主要存储
+<br>原因：Redis 是一个高性能的缓存数据库，可以快速读写数据，适合存储热点数据，提高系统性能。
+<br><br>Cassandra 是：<br>
+<br>一种开源、可线性扩展、分布式和容错的 NoSQL 数据库。设计用于处理海量数据。
+<br>主要特点：	<br>
+<br>大规模可扩展架构
+<br>无主架构
+<br>线性扩展性能 
+<br>无单点故障 
+<br>故障节点可轻松恢复
+<br>具有灵活、动态的数据模型，可调整的数据一致性，多数据中心复制 
+<br>数据压缩效率高
+<br><br>
+<br>传统关系型数据库面向行设计，内部组织结构围绕行的处理，适合 OLTP场景
+<br>Cassandra 列族数据库面向列设计，主要处理列，适合 OLAP 场景
+<br><br>复制策略是指 Cassandra 如何在集群中复制数据，放置数据副本<br>
+<br>Cassandra 提供两种复制策略，包括SimpleStrategy 和 NetworkTopologyStrategy
+
+<br>SimpleStrategy 用于只有一个数据中心的情况。SimpleStrategy 会在分区器选择的节点上放置第一个副本。之后，其余副本按顺时针方向放置在节点环中。	
+<br>NetworkTopologyStrategy 用于有多个数据中心的情况。在网络拓扑策略中，会为每个数据中心分别设置副本。网络拓扑策略在环中按顺时针方向放置副本，直到到达另一个机架中的第一个节点
+
+
+<br><br>
+<br>Cassandra 使用标记删除的方式，而不是立即删除数据。标记删除的数据会在后续的清理过程中删除。<br>
+注意的地方：
+<br>如果标记删除的数据过多，会影响查询性能，因为查询时需要扫描和过滤这些标记删除的数据。
+<br>需要注意Cassandra表的TTL（生存时间）设置，如果TTL设置不当，可能导致大量的tombstone积累。
+<br><br>Cassandra Query Language（CQL）是 Cassandra 数据库的查询语言。<br><br>Apache Cassandra 的设计目标主要围绕着可扩展性、高可用性和无单点故障展开。<br><br>Cassandra 的主要成分包括：	<br>
+<br>节点
+<br>数据中心
+<br>集群
+<br>分区器
+<br><br>社交媒体的评论管理<br>
+Cassandra 面向列设计，适合处理大量数据，适合社交媒体评论管理场景，可以快速写入和读取评论数据，支持高并发读写操作。	]]></description><link>https://blog.allenygy.vip/database-management-system/assignment/nosql-assignment-2.html</link><guid isPermaLink="false">Database-Management-System/Assignment/NoSQL-Assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 14 Jul 2024 12:32:59 GMT</pubDate></item><item><title><![CDATA[<a data-href="NoSQL-Review" href="database-management-system/nosql/nosql-review.html" class="internal-link" target="_self" rel="noopener">NoSQL-Review</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Assignment" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Assignment</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Neo4j" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Neo4j</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Mongodb" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Mongodb</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:NoSQL" class="tag" target="_blank" rel="noopener">#NoSQL</a> <a href="https://blog.allenygy.vip?query=tag:Assignment" class="tag" target="_blank" rel="noopener">#Assignment</a> <a href="https://blog.allenygy.vip?query=tag:Neo4j" class="tag" target="_blank" rel="noopener">#Neo4j</a> <a href="https://blog.allenygy.vip?query=tag:Mongodb" class="tag" target="_blank" rel="noopener">#Mongodb</a><br><br><br>
+<br>NoSQL数据库是一种非关系型数据库，它不遵循传统的关系数据库管理系统（RDBMS）的结构。
+<br>NoSQL数据库的设计初衷是为了解决大规模数据集的存储和检索问题，特别是在分布式环境中。
+<br>NoSQL数据库适用于需要处理大量数据、高吞吐量和灵活数据模型的应用程序，例如大数据应用、实时分析、内容管理系统等。
+<br><br>
+<br>
+键值存储（Key-Value Stores）:
+
+<br>这种类型的数据库通过键值对来存储数据，键是唯一的，用于检索值。
+<br>例子：Redis, Riak
+
+
+<br>
+文档存储（Document Stores）：
+
+<br>文档存储数据库存储类似于JSON或XML的文档，这些文档可以包含多种数据类型和结构。 
+
+<br>例子：MongoDB, CouchDB。
+
+
+
+
+<br>
+列存储（Column Stores）：
+
+<br>列存储数据库将数据存储在列中，而不是行，这使得它们非常适合处理大量的写入操作和列查询。
+<br>例子：Cassandra, HBase。
+
+
+<br>
+图形数据库（Graph Databases）：
+
+<br>图形数据库用于存储实体之间的关系，非常适合社交网络、推荐系统等需要处理复杂关系的应用。
+<br>例子：Neo4j, OrientDB
+
+
+<br><br><br>
+<br>关系型数据库
+
+<br>中心化的
+<br>处理密集，结构化的数据
+<br>满足 ACID 性
+<br>遵循 CA 原则
+
+
+<br>NoSQL
+
+<br>去中心化的
+<br>处理稀疏数据，半/非结构化的数据
+<br>主要是查询，很少更新
+<br>满足 BASE 性
+<br>遵循 AP 或 CP 原则
+
+
+<br><br>CAP定理，也称为布鲁尔定理（Brewer's theorem）
+是由计算机科学家埃里克·布鲁尔在2000年提出的一个概念，用来描述分布式系统在设计时需要做出的权衡。
+<br> 一致性（Consistency）
+在分布式系统中，当一个数据项更新后，所有节点应保证对该数据项的读取都将得到更新后的值。也就是说，如果一个节点更新了数据，其他节点在读取时也应该得到这个最新的数据。
+<br>可用性（Availability） 
+系统在任何时候都能够响应客户端的请求。即使在部分节点失败的情况下，系统仍然能够提供服务。
+<br>分区容错性（Partition Tolerance） 
+系统在网络分区（即网络中的一部分节点无法与其他节点通信）的情况下仍然能够继续运行。
+<br>CAP 定理 - 最多可以处理三个属性中的两个属性
+CAP定理的核心观点是，在任何给定时间，一个分布式系统最多只能同时满足上述三个特性中的两个。这意味着设计者必须在这三个特性中做出选择：
+
+<br>CA: 如果选择一致性和可用性，系统将无法容忍网络分区，一旦发生分区，系统将无法继续服务。SQL
+<br>CP: 如果选择一致性和分区容错性，系统在网络分区的情况下将无法保证所有请求都能得到响应。 MongoDB, HBase, Redis
+<br>AP: 如果选择可用性和分区容错性，系统将无法保证在所有节点上数据的一致性，可能会采用最终一致性模型。 CouchBD, Cassandra, DynamoDB, Riak
+
+<br>在NoSQL数据库中，CAP定理的重要性体现在：
+
+<br>设计决策：
+
+<br>NoSQL数据库的设计者和开发者需要根据CAP定理来决定数据库的架构，特别是当面对大规模分布式系统时。
+
+
+<br>性能优化：
+
+<br>在分布式系统中，为了提高性能和可扩展性，很多NoSQL数据库选择了可用性和分区容错性，牺牲了强一致性，采用最终一致性模型。
+
+
+<br>应用场景：
+
+<br>不同的NoSQL数据库根据其应用场景和需求，可能在CAP定理的三个特性中做出不同的权衡。例如，一些数据库可能更注重一致性，而另一些则可能更注重可用性和分区容错性
+
+
+
+<br><br>高可用性（High Availability）
+高可用性是指系统在面对硬件故障、软件故障、网络问题或其他问题时，仍能继续运行并提供服务的能力。在NoSQL数据库中，高可用性通常通过以下方式实现：
+副本：数据在多个节点上进行复制，以便在主节点故障时，其他副本可以接管服务。<br>
+故障转移：系统能够自动检测到节点故障，并迅速将请求重定向到健康的节点。<br>
+冗余：通过在不同的物理位置或服务器上存储数据副本，减少单点故障的风险。
+<br>可扩展性（Scalability）
+可扩展性是指系统能够通过增加资源(如服务器、存储或处理能力)<br>
+来应对增长的工作负载。NoSQL数据库的可扩展性通常分为两种：
+
+<br>垂直扩展（Vertical Scaling）：通过增加单个服务器的资源（如CPU、内存） 来提升性能。
+<br>水平扩展（Horizontal Scaling）：通过增加更多的服务器或节点来分散负载，这是NoSQL数据库的常见扩展方式，允许系统几乎无限地扩展以处理更大的数据量和更高的并发请求。
+
+<br>分布式系统（Distributed System）
+分布式系统是由多个物理或逻辑上分离的计算机组件组成的系统，这些组件通过网络相互连接和通信，协同工作以完成复杂的任务。在NoSQL数据库的上下文中，分布式系统的特点包括：
+数据分布：数据被分割并存储在多个节点上，以实现负载均衡和冗余。<br>
+网络通信：节点之间通过网络进行数据交换和协调。<br>
+容错性：系统设计能够处理节点或网络的故障，确保整体服务的连续性。<br>
+一致性：尽管数据分布在多个节点上，系统仍需保证数据的一致性，可能是强一致性或最终一致性。<br>
+并发控制：系统需要管理多个用户或进程同时对数据进行读写操作，避免冲突和数据损坏。
+<br><br>
+<br>a.键值存储(Key-Value Store)
+
+<br>简洁：数据主要采用Key-Value(KV)形式储存
+<br>高速：数据驻留内存，重启时可再次加载进行使用
+<br>易扩展：根据系统负载量，灵活添加或删除服务器
+<br>对键可设置失效时间
+
+
+<br>b. 列存储 (Column Store)
+
+<br>更好的可扩展性
+<br>高可用性
+<br>适合离线批量数据处理
+
+
+<br>c.文档数据库(Document Store)
+
+<br>核心概念是 "文档 "的概念，它与 RDBMS 中的行相对应
+<br>以某些标准格式或编码封装和编码数据，如 JSON（BSON）
+<br>文档在数据库中通过代表该文档的唯一密钥进行处理
+<br>将文档作为一个整体处理，避免将文档拆分为其组成的名称/值对
+<br>文档是无模式的，可以是非结构的数据
+
+
+<br>d.图形数据库(Graph Store)
+
+<br>面向图形
+<br>一切都以边、节点或属性的形式存储
+<br>每个节点和边可以有任意数量的属性
+<br>节点和边都可以贴标签
+<br>标签可用于缩小搜索范围
+
+
+<br><br><br>a. 实时分析：<br>
+适用数据库：列族数据库（如Canssandra）<br>
+原因：优化了时间戳索引和快速的数据插入与查询，适合实时数据的收集和分析。全文搜索引擎则提供了强大的文本处理和搜索能力，适合实时日志分析和监控。<br>
+b. 大数据处理：<br>
+适用数据库：列存储数据库（如Cassandra, HBase） 或 文档数据库（如MongoDB）。<br>
+原因：列存储数据库优化了列的读写操作，适合处理大规模数据集，特别是在需要快速列查询的场景。文档数据库则因其灵活性和丰富的查询功能，适合处理结构化或半结构化的大数据。<br>
+c. 社交网络：<br>
+适用数据库：图形数据库（如Neo4j, OrientDB）。<br>
+原因：社交网络中存在大量的用户关系和交互数据，图形数据库能够高效地存储和查询这些复杂的关系，支持社交网络中的好友关系、社交图谱分析等。<br>
+d. 物联网 (IoT)：<br>
+适用数据库：键值数据库（如Redis） 或 文档数据库（如MongoDB）。<br>
+原因：物联网设备产生大量的非结构化，时序数据库可以高效地存储和查询这些数据。同时，物联网数据通常是半结构化的，文档数据库的灵活性使其成为处理这类数据的理想选择。<br><br>实际应用场景：社交媒体平台<br>
+应用描述：<br>
+一个社交媒体平台允许用户创建个人资料、发布状态更新、分享图片和视频、关注其他用户以及参与评论和点赞等社交互动。<br>
+<br>数据模型的灵活性：<br>
+社交媒体平台的数据结构经常变化，例如用户资料、帖子、评论等，它们可能是半结构化的，包含多种数据类型。NoSQL数据库如MongoDB允许灵活的数据模型，无需预先定义严格的模式。
+<br>水平扩展性：<br>
+社交媒体平台可能迅速增长，需要处理大量用户和数据。NoSQL数据库如Cassandra设计用于水平扩展，通过增加更多节点来处理更大的数据量和用户请求。<br>
+高性能的读写操作：<br>
+用户生成内容和实时交互需要快速响应。NoSQL数据库通常提供高性能的读写操作，特别是在分布式环境中。
+<br>高可用性：<br>
+社交媒体平台需要24/7的高可用性。NoSQL数据库通过数据复制和故障转移机制，确保服务的持续可用性。
+<br>处理非关系型数据：<br>
+社交媒体数据如用户关系图、内容推荐等，是高度互联的非关系型数据。图形数据库如Neo4j可以有效地存储和查询这些复杂的网络关系。
+<br>大规模数据处理：<br>
+社交媒体平台产生的数据量巨大，包括用户生成的内容、日志数据等。使用Hadoop或Spark等大数据处理框架与NoSQL数据库结合，可以高效地处理和分析这些数据。
+<br>多样化的查询需求：<br>
+社交媒体平台需要支持复杂的查询，如搜索、推荐、趋势分析等。NoSQL数据库提供了丰富的查询语言和API，可以满足这些需求。
+<br>成本效益：<br>
+与关系型数据库相比，NoSQL数据库通常提供更灵活的部署选项，包括云服务，这有助于降低成本和提高资源利用率。
+<br>开发速度：<br>
+社交媒体平台需要快速迭代和部署新功能。NoSQL数据库的灵活性有助于加速开发过程，减少模式变更的复杂性。<br>
+通过上述原因，社交媒体平台选择使用NoSQL数据库而不是关系型数据库，可以更好地满足其业务需求，提供更好的用户体验，并支持快速增长和变化
+<br>OPTIONAL MATCH 会搜索可能存在也可能不存在的描述模式，并将模式中不存在的标识符赋值为 NULL。<br><br>// 创建 Show 节点
+CREATE (got:Show {title: "Game of Thrones"})
+	
+// 创建 Character 节点
+CREATE (jon:Character {name: "Jon Snow"})
+CREATE (dany:Character {name: "Daenerys Targaryen"})
+CREATE (tyrion:Character {name: "Tyrion Lannister"})
+	
+// 创建 Actor 节点
+CREATE (kit:Actor {name: "Kit Harington"})
+CREATE (emilia:Actor {name: "Emilia Clarke"})
+CREATE (peter:Actor {name: "Peter Dinklage"})
+	
+CREATE (kit)-[:ACTED_IN]-&gt;(got)
+CREATE (emilia)-[:ACTED_IN]-&gt;(got)
+CREATE (peter)-[:ACTED_IN]-&gt;(got)
+	
+CREATE (jon)-[:HAS_CHARACTER]-&gt;(got)
+CREATE (dany)-[:HAS_CHARACTER]-&gt;(got)
+CREATE (tyrion)-[:HAS_CHARACTER]-&gt;(got)
+	
+CREATE (kit)-[:PLAYS]-&gt;(jon)
+CREATE (emilia)-[:PLAYS]-&gt;(dany)
+CREATE (peter)-[:PLAYS]-&gt;(tyrion)	
+Copy<br><br>
+<br>易用性：灵活的文档模型。JSON格式简单易学
+<br>支持高性能访问数据。存储引擎是文档型数据库的核心组件。
+<br>可扩展性：支持大数据分布式存储，服务能力水平可横向弹性扩展
+<br><br>OLTP
+英文全称是 Online Transaction Processing System，在线事务处理系统<br>
+可以理解为日常的业务系统，比如像 ERP、OA、CRM 等等，这些业务系统主要是管理企业的基本业务流程，对数据的处理方式主要是以增、删、改为主
+<br>OLAP
+英文全称是 Online Analytical Processing System，在线分析处理系统<br>
+可以理解为分析型系统，比如在商业智能BI应用中，支撑到前端可视化分析的数据仓库
+<br>主要差异
+
+<br>
+<br>
+什么是 Redis？
+
+<br>
+Redis的特点是什么？
+
+<br>
+Redis的数据结构有哪些？
+
+<br>
+Redis的发布与订阅功能是什么？
+
+<br>
+Redis事务如何实现？
+
+<br>
+Redis最与众不同的数据结构式什么？有什么特点？
+
+<br>
+Redis如何快速实现过期？
+
+<br>
+请描述一个实际应用场景，说明为什么选择使用 Redis数据库。
+
+<br>
+请简要介绍一下Cassandra是什么，以及它的主要特点是什么？
+
+<br>
+Cassandra与传统关系型数据库的主要区别是什么？
+
+<br>
+什么是Cassandra的复制策略？如何配置数据的复制和分布？
+
+<br>
+Cassandra的数据删除是如何工作的？有没有什么需要注意的地方？
+
+<br>
+Cassandra数据库中使用哪种查询语言？
+
+<br>
+Cassandra的设计目标是什么？
+
+<br>
+Cassandra的主要成分是什么？
+
+<br>
+请描述一个实际应用场景，说明为什么选择使用 Cassandra数据库？
+
+]]></description><link>https://blog.allenygy.vip/database-management-system/nosql/nosql-review.html</link><guid isPermaLink="false">Database-Management-System/NoSQL/NoSQL-Review.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 14 Jul 2024 14:58:52 GMT</pubDate></item><item><title><![CDATA[<a data-href="Cassandra" href="database-management-system/nosql/cassandra.html" class="internal-link" target="_self" rel="noopener">Cassandra</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DataBase" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DataBase</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:DataBase" class="tag" target="_blank" rel="noopener">#DataBase</a> <a href="https://blog.allenygy.vip?query=tag:NoSQL" class="tag" target="_blank" rel="noopener">#NoSQL</a> <br><br><br><br>
+<br>安装 Cassandra (此处采用 homebrew 包管理器进行安装)
+<br>brew install cassandra
+Copy<br><br>
+<br>MacOS 后台启动 Cassandra
+<br>brew services start cassandra
+Copy<br>
+<br>命令行启动 Cassandra
+<br>cqlsh
+Copy<br><br>
+<br>命令行关闭 Cassandra
+<br>exit	
+Copy<br>
+<br>MacOS 后台关闭 Cassandra
+<br>brew services stop cassandra
+Copy<br><br>Cassandra 是：<br>
+<br>一种开源、可线性扩展、分布式和容错的 NoSQL 数据库。设计用于处理海量数据。
+<br><br>主要特点：	<br>
+<br>大规模可扩展架构
+<br>无主架构
+<br>线性扩展性能 
+<br>无单点故障 
+<br>故障节点可轻松恢复
+<br>具有灵活、动态的数据模型，可调整的数据一致性，多数据中心复制 
+<br>数据压缩效率高
+<br><br>
+<br>传统关系型数据库面向行设计，内部组织结构围绕行的处理，适合 OLTP场景
+<br>Cassandra 列族数据库面向列设计，主要处理列，适合 OLAP 场景
+<br><br>复制策略是指 Cassandra 如何在集群中复制数据，放置数据副本<br><br>Cassandra 提供两种复制策略，包括SimpleStrategy 和 NetworkTopologyStrategy<br>
+<br>SimpleStrategy 用于只有一个数据中心的情况。SimpleStrategy 会在分区器选择的节点上放置第一个副本。之后，其余副本按顺时针方向放置在节点环中
+<br>NetworkTopologyStrategy 用于有多个数据中心的情况。在网络拓扑策略中，会为每个数据中心分别设置副本。网络拓扑策略在环中按顺时针方向放置副本，直到到达另一个机架中的第一个节点
+<br><br>
+<br>Cassandra 使用标记删除的方式，而不是立即删除数据。标记删除的数据会在后续的清理过程中删除。<br>
+注意的地方：
+<br>如果标记删除的数据过多，会影响查询性能，因为查询时需要扫描和过滤这些标记删除的数据。
+<br>需要注意Cassandra表的TTL（生存时间）设置，如果TTL设置不当，可能导致大量的tombstone积累。
+<br><br>Cassandra Query Language（CQL）是 Cassandra 数据库的查询语言。<br><br>Apache Cassandra 的设计目标主要围绕着可扩展性、高可用性和无单点故障展开。<br><br>Cassandra 的主要成分包括：	<br>
+<br>节点
+<br>数据中心
+<br>集群
+<br>分区器
+<br><br>社交媒体的评论管理<br>
+Cassandra 面向列设计，适合处理大量数据，适合社交媒体评论管理场景，可以快速写入和读取评论数据，支持高并发读写操作。	]]></description><link>https://blog.allenygy.vip/database-management-system/nosql/cassandra.html</link><guid isPermaLink="false">Database-Management-System/NoSQL/Cassandra.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 14 Jul 2024 12:51:47 GMT</pubDate></item><item><title><![CDATA[MySQL and NoSQL database comparison for IoT application]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:Database" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Database</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:integration" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#integration</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:SQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SQL</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:ReadPaper" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#ReadPaper</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:Database" class="tag" target="_blank" rel="noopener">#Database</a> <a href="https://blog.allenygy.vip?query=tag:integration" class="tag" target="_blank" rel="noopener">#integration</a>  <a href="https://blog.allenygy.vip?query=tag:NoSQL" class="tag" target="_blank" rel="noopener">#NoSQL</a> <a href="https://blog.allenygy.vip?query=tag:SQL" class="tag" target="_blank" rel="noopener">#SQL</a> <a href="https://blog.allenygy.vip?query=tag:ReadPaper" class="tag" target="_blank" rel="noopener">#ReadPaper</a>  <br><br><br>
+<br>What is IOT？
+<br>SQL Versus NoSQL
+<br>Experiment 
+<br>SQL and NoSQL Integration
+<br>Conclusion
+<br><br>
+<br>IoT refers to any object/thing around us which is connected to internet. 
+<br>This object is also able to communicate through internet.
+<br>Like temperature sensor connected to oven, fridge or just to measure a room temperature. IoT is network of such things which may communicate with each other or with user.<br>IoT is having application in various domains like smart city, industrial, medical services, etc.<br><br><br><br>Temperature, humidity, soil moisture sensors are used in the hardware along with the water level detection.<br>Sprinkler motor is turned ON depending on the inputs from soil moisture and water level in the tank. If the soil moisture level drops below the threshold value and if water level is TRUE, then sprinkler motor turns ON.<br><br><img alt="System Architecture" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png" referrerpolicy="no-referrer"><br>The data from these sensors is collected and is sent to database server and user email ID. The aim is to further utilize this data for analysis using data processing tools.<br>Data is stored in both MySQL and MongoDB database systems for carrying out the comparison study.<br><br><img alt="MySQL" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101137755.png" referrerpolicy="no-referrer"><br>Db.collection.insert({
+	sensor_id: &lt;sensor ID number&gt;,
+	Humidity: &lt;humidity sensor reading&gt;, 
+	Soil_moisture: &lt;moisture sensor reading&gt;, 
+	Temperature: &lt;temperature sensor reading&gt;, 
+	CreateDate: new Date(), 
+	Userid: &lt;User ID&gt; 
+})
+Copy<br><br>
+<br>SELECT query with varying number of threads 
+<br>Here is the summary of the first two experiments from the document comparing MySQL and MongoDB databases for an IoT application:<br><br>Measure the response time of SELECT queries with varying numbers of threads.<br>
+<br>Setup: The number of threads was varied from 1 to 10. Each SELECT query fetched 1000 records from a database containing 10,000 records.
+<br>Results: 
+
+<br>For up to 4 threads, the response times for MySQL and MongoDB were similar.
+<br>At 10 threads, MongoDB showed a significant increase in response time compared to MySQL.
+<br>Observation: Too many threads in MongoDB can overwhelm the system, leading to increased latency and CPU starvation.
+
+
+<br><br>
+<br>Objective: Measure the response time for INSERT queries with varying numbers of threads.
+<br>Setup: Similar to the SELECT query test, the number of threads was varied from 1 to 10.
+<br>Results: 
+
+<br>The response time for MySQL increased at a faster rate compared to MongoDB.
+<br>MongoDB demonstrated faster performance for INSERT operations.
+<br>Observation: MongoDB outperformed MySQL in write latency, making it a better choice for applications with heavy write operations.
+
+
+<br>These experiments highlight the differences in performance characteristics between MySQL and MongoDB, with MongoDB showing advantages in handling write operations under load, while MySQL maintained more stable read performance with higher thread counts.<br>
+<br>INSERT query with varying number of threads 
+<br>SELECT query with varying number of records 
+<br>INSERT query with varying number of records
+<br>Each database has its own advantages and disadvantages.<br>
+<br>MongoDB showed less response time in some scenarios compared to MySQL.
+<br>MySQL responses were more stable compared to MongoDB.
+<br><br>
+<br>SQL + X[NoSQL]
+
+<br>Redis+MySQL As a Caching Layer for MySQL
+
+
+<br>Hybrid Database
+
+<br>MSI Architecture 
+
+
+<br><br>Scenario: Improve read performance and reduce database load.<br><img alt="Redis" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101217920.png" referrerpolicy="no-referrer"><br>
+<br>MySQL: Serves as the primary persistent data storage, handling complex queries and transactions.
+<br>Redis: Acts as a caching layer, storing frequently accessed or common data such as user sessions and popular product information.
+<br>Example:<br>
+When a user requests data, the application first checks the Redis cache. If the data is found in the cache, it is returned immediately. If not, the data is fetched from MySQL, then stored in Redis for future requests. This approach reduces the load on MySQL and improves the overall response time of the application.<br>缓存层
+场景：提高读性能，减少数据库负载。
+
+<br>MySQL：作为主要的持久化数据存储，处理复杂的查询和事务。 
+<br>Redis：作为缓存层，存储常用或频繁访问的数据，如用户会话、热门商品信息等。
+
+<br><br>MSI mainly includes eight components<br>
+<br>API dispatcher 
+<br>SQL parser 
+<br>SQL optimizer 
+<br>SQL router 
+<br>SQL executor 
+<br>DBMS adapter 
+<br>Result merger 
+<br>Meta-data management
+<br><img alt="MSI Architecture" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101200521.png" referrerpolicy="no-referrer"><br>
+<br>The MSI's input and the result of the SQL process is the MSI's output.
+<br><br>
+<br>SQL and NoSQL databases offer unique sets of capabilities and advantages. 
+<br>The key to successful integration lies in understanding the intrinsic properties of each database type and crafting a strategy tailored to the specific needs of the organization.
+<br><br>
+<br><a data-tooltip-position="top" aria-label="https://doi.org/10.1002/spe.2666" rel="noopener" class="external-link" href="https://doi.org/10.1002/spe.2666" target="_blank">An integration approach of hybrid databases based on SQL in cloud computing environment</a>
+<br><a data-tooltip-position="top" aria-label="https://www.lonti.com/blog/integration-strategies-between-sql-and-nosql-databases" rel="noopener" class="external-link" href="https://www.lonti.com/blog/integration-strategies-between-sql-and-nosql-databases" target="_blank">Integration Strategies Between SQL and NoSQL Databases</a>
+<br><a data-tooltip-position="top" aria-label="https://www.softwaretestinghelp.com/hybrid-database/" rel="noopener" class="external-link" href="https://www.softwaretestinghelp.com/hybrid-database/" target="_blank">What Is Hybrid Database? List Of The Best Hybrid Databases</a>
+<br><a data-tooltip-position="top" aria-label="https://medium.com/@gouri.benni/an-overview-on-a-hybrid-database-approach-using-graph-and-relational-database-fb216e0a24f1" rel="noopener" class="external-link" href="https://medium.com/@gouri.benni/an-overview-on-a-hybrid-database-approach-using-graph-and-relational-database-fb216e0a24f1" target="_blank">An Overview on “A Hybrid Database Approach Using Graph and Relational Database”</a>
+<br><a data-tooltip-position="top" aria-label="https://ieeexplore.ieee.org/document/7887957" rel="noopener" class="external-link" href="https://ieeexplore.ieee.org/document/7887957" target="_blank">MySQL and NoSQL database comparison for IoT application</a>
+]]></description><link>https://blog.allenygy.vip/research/sql-and-nosql-integration.html</link><guid isPermaLink="false">Research/SQL and NoSQL Integration.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 14 Jul 2024 10:04:22 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="AlphaFold2" href="research/alphafold2.html" class="internal-link" target="_self" rel="noopener">AlphaFold2</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:ReadPaper" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#ReadPaper</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Bioinformatics" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Bioinformatics</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:ProteinStructurePrediction" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#ProteinStructurePrediction</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:AlphaFold2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AlphaFold2</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Transformer" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Transformer</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:ReadPaper" class="tag" target="_blank" rel="noopener">#ReadPaper</a> <a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a> <a href="https://blog.allenygy.vip?query=tag:Bioinformatics" class="tag" target="_blank" rel="noopener">#Bioinformatics</a> <a href="https://blog.allenygy.vip?query=tag:ProteinStructurePrediction" class="tag" target="_blank" rel="noopener">#ProteinStructurePrediction</a>	<a href="https://blog.allenygy.vip?query=tag:AlphaFold2" class="tag" target="_blank" rel="noopener">#AlphaFold2</a> <a href="https://blog.allenygy.vip?query=tag:Transformer" class="tag" target="_blank" rel="noopener">#Transformer</a><br><br><a data-tooltip-position="top" aria-label="https://www.nature.com/articles/s41586-021-03819-2" rel="noopener" class="external-link" href="https://www.nature.com/articles/s41586-021-03819-2" target="_blank">Highly accurate protein structure prediction with AlphaFold</a>
+
+<br><a data-href="AlphaFold2" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">AlphaFold2</a> 被 《Science》 评选为2021年AI在科学界最大的突破
+<br><a data-href="AlphaFold2" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">AlphaFold2</a> 把通过氨基酸序列对蛋白质三维结构预测的误差，降低到原子级别
+
+<br><br><img alt="Model architecture" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" referrerpolicy="no-referrer"><br>模型大概可以分成四个部分<br>
+<br>Feature Extraction
+<br>Encoder
+<br>Decoder
+<br>Recycling
+<br><br>特征提取两部分信息<br>
+<br>MSA 
+<br>Pairing &amp; Templates 
+<br><br>MSA提取序列在多物种中的共进化信息<br>
+<br>在基因数据库中搜索相似的氨基酸序列
+
+<br>多序列比对
+
+
+<br>得到不同氨基酸序列的特征
+<br><img alt="FeatureExtraction" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/FeatureExtraction.png" referrerpolicy="no-referrer"><br><br>提取氨基酸之间的特征<br>
+<br>氨基酸之间的关系 
+<br>在结构数据库中搜索，从已知的氨基酸序列的结构中搜索得到空间信息
+<br><br><br>MSA Representation<br>
+<br>s: s 行氨基酸序列 
+
+<br>第一行是人的氨基酸序列 
+<br>后面s-1 是从基因数据库中匹配到的不同物种的氨基酸序列 
+
+
+<br>r: r个氨基酸
+<br>c:  每个氨基酸表示为长为c的向量
+<br><img alt="Encoder Input" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/EncoderInput.png" referrerpolicy="no-referrer"><br>Pair Representation <br>
+<br>r: r个氨基酸
+<br>c: 每个氨基酸表示为长为c的向量
+<br>主要用于表示氨基酸两两之间的空间信息
+<br><br>
+<br>与Transformer 不同
+
+<br>Transformer 输入的是一段序列
+<br>Evoformer 在这里输入的是一个二维的矩阵 
+
+
+<br><img alt="a" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/a.png" referrerpolicy="no-referrer"><br>MSA和Pair都会进入多头自注意力模块<br>
+<br>具有残差连接和在元素作用上的MLP
+<br>Pair的部分还需要加入物理上三角不等式的处理<br>与Transformer不同<br>
+<br>氨基酸对 (Pair Representation) 之间的信息会加入对序列的建模<br>
+- 序列建模之后也会加入对氨基酸对的建模<br>
+- 自注意力机制做两次<br>
+- 因为输入是一个二维的矩阵<br>
+<img alt="a" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/a.png" referrerpolicy="no-referrer">
+<br><br>
+<br>输出的矩阵维度不发生变化, c发生变化
+<br><img alt="Encoder Output" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/EncoderOutput.png" referrerpolicy="no-referrer"><br><br>根据Encoder的输出拿到<br>
+<br>Single Representation (r, c) 人氨基酸序列
+
+<br>人类氨基酸所有的特征的表示
+
+
+<br>Pair Representation (r, r, c) 氨基酸对
+
+<br>氨基酸之间的相关信息
+
+
+<br>Backbone frames 
+
+<br>氨基酸序列主干的空间结构
+
+
+<br><img alt="Decoder" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/Decoder/Decoder.png" referrerpolicy="no-referrer"><br><br><br>记录下一个氨基酸与上一个氨基酸的相对位置<br>
+<br>R基部分原子的旋转的角度
+
+<br>欧几里得变换
+<br> 
+<br>极性，电荷可以限制 A, B 值
+
+
+<br>先预测backbone上氨基酸的相对位置
+<br>再预测每个氨基酸R基上的原子的相对位置<br>
+<img style="zoom: 50%;" alt="ProteinPrediction" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/ProteinPrediction.png" referrerpolicy="no-referrer">
+<br><br>把编码器的输出和解码器的输出通过回收机制传回编码器的输入<br>
+<br>类似RNN，但是这里的梯度不反传, 只经过56层就可以计算梯度
+<br><img alt="Model architecture" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" referrerpolicy="no-referrer"><br><br>Training<br>
+<br>
+<br>  <br>
+<br>特征对齐损失，用于量化模型预测的原子位置与实际原子位置之间的差异。 
+<br><br>
+<br>辅助损失，它可能与多个预测任务相关，例如二级结构预测、溶剂可及性预测等。
+<br> <br>
+<br>距离损失，它衡量模型预测的残基间距离与真实结构之间的误差。
+<br>Training<br>
+<br>
+<br> <br>
+<br>多序列比对损失，用于确保模型预测与进化信息一致。
+<br> <br>
+<br>构象损失，用于确保整体蛋白质构象的准确性。
+<br>Fine-tuning<br>
+<br>
+<br> <br>
+<br>用于处理实验解析度的损失，用于在蛋白质结构中考虑到实验数据的不确定性。
+<br> <br>
+<br>违反物理或生物化学约束的损失。
+<br><br><br>先在有标号的数据集PDB里训练一个模型, 通过这个模型预测没有标号的数据形成一个大一些的数据集，然后选择置信度较高的数据，加上原来有标号的数据，训练新的模型<br>
+<br>Using an approach similar to noisy student self-distillation.
+<br>In this procedure, we use a trained network to predict the structure of around 350,000 diverse sequences from Uniclust3036 and make a new dataset of predicted structures filtered to a high-confidence subset.
+]]></description><link>https://blog.allenygy.vip/research/alphafold2.html</link><guid isPermaLink="false">Research/AlphaFold2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 14 Jul 2024 09:49:48 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Home]]></title><description><![CDATA[ 
+ <br><br><br><br><br>使用 Obsidian 292 天，共创建 293 篇笔记、195 个标签、58个待办。 <br>MonWedFriFebMarAprMayJunJullessmore<br>
+<br>NOTE
+
+<br><a data-href="Computer-Organization" href="https://blog.allenygy.vip/computer-organization/computer-organization.html" class="internal-link" target="_self" rel="noopener">Computer-Organization</a>
+<br><a data-href="Computer-Network" href="https://blog.allenygy.vip/computer-network/computer-network.html" class="internal-link" target="_self" rel="noopener">Computer-Network</a>
+<br><a data-href="Operating-System" href="https://blog.allenygy.vip/operatingsystem/operating-system.html" class="internal-link" target="_self" rel="noopener">Operating-System</a>
+<br><a data-href="Database-Management-System" href="https://blog.allenygy.vip/projects/dbm/database-management-system.html" class="internal-link" target="_self" rel="noopener">Database-Management-System</a>
+
+
+<br>WORK
+
+<br><a data-href="Archive" href="https://blog.allenygy.vip/archive.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="IbArchive" aria-label="IbArchive" data-icon="IbArchive" aria-hidden="true"><svg width="16px" height="16px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 9v8c0 1.886 0 2.828.586 3.414C5.172 21 6.114 21 8 21h8c1.886 0 2.828 0 3.414-.586C20 19.828 20 18.886 20 17V9M6 9h12c.932 0 1.398 0 1.765-.152a2 2 0 0 0 1.083-1.083C21 7.398 21 6.932 21 6c0-.932 0-1.398-.152-1.765a2 2 0 0 0-1.083-1.083C19.398 3 18.932 3 18 3H6c-.932 0-1.398 0-1.765.152a2 2 0 0 0-1.083 1.083C3 4.602 3 5.068 3 6c0 .932 0 1.398.152 1.765a2 2 0 0 0 1.083 1.083C4.602 9 5.068 9 6 9zm3 4h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Archive</a>
+<br><a data-href="Class" href="https://blog.allenygy.vip/class.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FabBattleNet" aria-label="FabBattleNet" data-icon="FabBattleNet" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M448.61 225.62c26.87.18 35.57-7.43 38.92-12.37 12.47-16.32-7.06-47.6-52.85-71.33 17.76-33.58 30.11-63.68 36.34-85.3 3.38-11.83 1.09-19 .45-20.25-1.72 10.52-15.85 48.46-48.2 100.05-25-11.22-56.52-20.1-93.77-23.8-8.94-16.94-34.88-63.86-60.48-88.93C252.18 7.14 238.7 1.07 228.18.22h-.05c-13.83-1.55-22.67 5.85-27.4 11-17.2 18.53-24.33 48.87-25 84.07-7.24-12.35-17.17-24.63-28.5-25.93h-.18c-20.66-3.48-38.39 29.22-36 81.29-38.36 1.38-71 5.75-93 11.23-9.9 2.45-16.22 7.27-17.76 9.72 1-.38 22.4-9.22 111.56-9.22 5.22 53 29.75 101.82 26 93.19-9.73 15.4-38.24 62.36-47.31 97.7-5.87 22.88-4.37 37.61.15 47.14 5.57 12.75 16.41 16.72 23.2 18.26 25 5.71 55.38-3.63 86.7-21.14-7.53 12.84-13.9 28.51-9.06 39.34 7.31 19.65 44.49 18.66 88.44-9.45 20.18 32.18 40.07 57.94 55.7 74.12a39.79 39.79 0 0 0 8.75 7.09c5.14 3.21 8.58 3.37 8.58 3.37-8.24-6.75-34-38-62.54-91.78 22.22-16 45.65-38.87 67.47-69.27 122.82 4.6 143.29-24.76 148-31.64 14.67-19.88 3.43-57.44-57.32-93.69zm-77.85 106.22c23.81-37.71 30.34-67.77 29.45-92.33 27.86 17.57 47.18 37.58 49.06 58.83 1.14 12.93-8.1 29.12-78.51 33.5zM216.9 387.69c9.76-6.23 19.53-13.12 29.2-20.49 6.68 13.33 13.6 26.1 20.6 38.19-40.6 21.86-68.84 12.76-49.8-17.7zm215-171.35c-10.29-5.34-21.16-10.34-32.38-15.05a722.459 722.459 0 0 0 22.74-36.9c39.06 24.1 45.9 53.18 9.64 51.95zM279.18 398c-5.51-11.35-11-23.5-16.5-36.44 43.25 1.27 62.42-18.73 63.28-20.41 0 .07-25 15.64-62.53 12.25a718.78 718.78 0 0 0 85.06-84q13.06-15.31 24.93-31.11c-.36-.29-1.54-3-16.51-12-51.7 60.27-102.34 98-132.75 115.92-20.59-11.18-40.84-31.78-55.71-61.49-20-39.92-30-82.39-31.57-116.07 12.3.91 25.27 2.17 38.85 3.88-22.29 36.8-14.39 63-13.47 64.23 0-.07-.95-29.17 20.14-59.57a695.23 695.23 0 0 0 44.67 152.84c.93-.38 1.84.88 18.67-8.25-26.33-74.47-33.76-138.17-34-173.43 20-12.42 48.18-19.8 81.63-17.81 44.57 2.67 86.36 15.25 116.32 30.71q-10.69 15.66-23.33 32.47C365.63 152 339.1 145.84 337.5 146c.11 0 25.9 14.07 41.52 47.22a717.63 717.63 0 0 0-115.34-31.71 646.608 646.608 0 0 0-39.39-6.05c-.07.45-1.81 1.85-2.16 20.33C300 190.28 358.78 215.68 389.36 233c.74 23.55-6.95 51.61-25.41 79.57-24.6 37.31-56.39 67.23-84.77 85.43zm27.4-287c-44.56-1.66-73.58 7.43-94.69 20.67 2-52.3 21.31-76.38 38.21-75.28C267 52.15 305 108.55 306.58 111zm-130.65 3.1c.48 12.11 1.59 24.62 3.21 37.28-14.55-.85-28.74-1.25-42.4-1.26-.08 3.24-.12-51 24.67-49.59h.09c5.76 1.09 10.63 6.88 14.43 13.57zm-28.06 162c20.76 39.7 43.3 60.57 65.25 72.31-46.79 24.76-77.53 20-84.92 4.51-.2-.21-11.13-15.3 19.67-76.81zm210.06 74.8"></path></svg></span>Class</a>
+<br><a data-href="Friends" href="https://blog.allenygy.vip/friends.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="IbLink" aria-label="IbLink" data-icon="IbLink" aria-hidden="true"><svg width="16px" height="16px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.3 9a1 1 0 0 0 0-2v2zm0 8a1 1 0 1 0 0-2v2zm5.4-2a1 1 0 1 0 0 2v-2zm0-8a1 1 0 1 0 0 2V7zM7 9h2.3V7H7v2zm2.3 6H7v2h2.3v-2zm7.7 0h-2.3v2H17v-2zm-2.3-6H17V7h-2.3v2zM2 12a5 5 0 0 0 5 5v-2a3 3 0 0 1-3-3H2zm18 0a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5h-2zm2 0a5 5 0 0 0-5-5v2a3 3 0 0 1 3 3h2zM4 12a3 3 0 0 1 3-3V7a5 5 0 0 0-5 5h2z" fill="currentColor"></path><path d="M15 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span>Friends</a>
+<br><a data-href="slides" href="https://blog.allenygy.vip/slides.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="CoShow" aria-label="CoShow" data-icon="CoShow" aria-hidden="true"><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Edit / Show"><g id="Vector"><path d="M3.5868 13.7788C5.36623 15.5478 8.46953 17.9999 12.0002 17.9999C15.5308 17.9999 18.6335 15.5478 20.413 13.7788C20.8823 13.3123 21.1177 13.0782 21.2671 12.6201C21.3738 12.2933 21.3738 11.7067 21.2671 11.3799C21.1177 10.9218 20.8823 10.6877 20.413 10.2211C18.6335 8.45208 15.5308 6 12.0002 6C8.46953 6 5.36623 8.45208 3.5868 10.2211C3.11714 10.688 2.88229 10.9216 2.7328 11.3799C2.62618 11.7067 2.62618 12.2933 2.7328 12.6201C2.88229 13.0784 3.11714 13.3119 3.5868 13.7788Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></g></svg></span>slides</a>
+
+
+<br>Focus
+
+<br><a data-href="Algorithm" href="https://blog.allenygy.vip/algorithm/algorithm.html" class="internal-link" target="_self" rel="noopener">Algorithm</a>
+<br><a data-href="Deep Learning" href="https://blog.allenygy.vip/deeplearning/deep-learning.html" class="internal-link" target="_self" rel="noopener">Deep Learning</a>
+
+
+<br><br><br><br><br>
+
+
+
+
+
+
+]]></description><link>https://blog.allenygy.vip/home.html</link><guid isPermaLink="false">Home.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 14 Jul 2024 10:05:15 GMT</pubDate></item><item><title><![CDATA[<a data-href="Graph-Overview" href="algorithm/graph/graph-overview.html" class="internal-link" target="_self" rel="noopener">Graph-Overview</a>]]></title><description><![CDATA[ 
  <br><br><br>
 <br>阶（Order）：图G中点集V的大小称作图G的阶
 
@@ -63,66 +648,7 @@ MySQL则是一个关系型数据库，能够存储大量数据，并通过SQL查
 <br>Redis：使用其列表（list）或发布/订阅（pub/sub）功能实现消息队列，处理异步任务。
 <br>示例：<br>
 <br>电子商务网站中，订单生成后，将订单处理任务放入 Redis 队列，后台服务从队列中取出任务进行处理。
-<br>]]></description><link>https://blog.allenygy.vip/database-management-system/application/mysql+redis.html</link><guid isPermaLink="false">Database-Management-System/Application/MySQL+Redis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 09 Jul 2024 15:38:34 GMT</pubDate></item><item><title><![CDATA[<a data-href="NoSQL-Assignment-2" href="database-management-system/assignment/nosql-assignment-2.html" class="internal-link" target="_self" rel="noopener">NoSQL-Assignment-2</a>]]></title><description><![CDATA[ 
- <br><br><br>REmote DIctionary Server（Redis）是一个开源的内存 NoSQL 数据库项目，它实现了一个分布式、内存键值存储，并具有可选的耐用性。<br><br>
-<br>读写速度极快
-<br>持久、可扩展
-<br>直接数据访问
-<br><br>
-<br>String
-<br>List
-<br>Hash
-<br>Set 
-<br>Zset
-<br><br>
-<br>发送者（发布者）不需要向特定的接收者（订阅者）发送消息。 
-<br>相反，发布的消息被归类到频道中，而不知道有哪些订阅者。 
-<br>订阅者对一个或多个频道表示兴趣，只接收感兴趣的信息，而不知道有哪些发布者。
-<br><br>依靠原子性实现•要么处理所有命令，要么不处理任何命令。<br>
-EXEC 命令会触发事务中所有命令的执行。<br>
-如果客户端在调用 MULTI 命令之前，在事务上下文中失去了与服务器的连接，则不会执行任何操作。相反，如果调用 EXEC 命令，则会执行所有操作。<br><br>
-<br>Redis最与众不同的数据结构是：ZSet
-<br>特点：
-
-<br>对排序集进行添加、删除或更新等操作的速度非常快
-<br>由于元素是按顺序提取的，而不是事后排序，因此还可以通过得分或排名（位置）快速获取范围。
-
-
-<br><br>Expire 命令可以为键设置过期时间，当键过期时，Redis 会自动删除该键。<br><br>
-<br>场景：MySQL+ Redis 的组合使用，Redis 作为 MySQL 的缓存层使用，MySQL作为主要存储
-<br>原因：Redis 是一个高性能的缓存数据库，可以快速读写数据，适合存储热点数据，提高系统性能。
-<br><br>Cassandra 是：<br>
-<br>一种开源、可线性扩展、分布式和容错的 NoSQL 数据库。设计用于处理海量数据。
-<br>主要特点：	<br>
-<br>大规模可扩展架构
-<br>无主架构
-<br>线性扩展性能 
-<br>无单点故障 
-<br>故障节点可轻松恢复
-<br>具有灵活、动态的数据模型，可调整的数据一致性，多数据中心复制 
-<br>数据压缩效率高
-<br><br>
-<br>传统关系型数据库面向行设计，内部组织结构围绕行的处理，适合 OLTP场景
-<br>Cassandra 列族数据库面向列设计，主要处理列，适合 OLAP 场景
-<br><br>复制策略是指 Cassandra 如何在集群中复制数据，放置数据副本<br>
-<br>Cassandra 提供两种复制策略，包括SimpleStrategy 和 NetworkTopologyStrategy
-
-<br>SimpleStrategy 用于只有一个数据中心的情况。SimpleStrategy 会在分区器选择的节点上放置第一个副本。之后，其余副本按顺时针方向放置在节点环中。	
-<br>NetworkTopologyStrategy 用于有多个数据中心的情况。在网络拓扑策略中，会为每个数据中心分别设置副本。网络拓扑策略在环中按顺时针方向放置副本，直到到达另一个机架中的第一个节点
-
-
-<br><br>
-<br>Cassandra 使用标记删除的方式，而不是立即删除数据。标记删除的数据会在后续的清理过程中删除。<br>
-注意的地方：
-<br>如果标记删除的数据过多，会影响查询性能，因为查询时需要扫描和过滤这些标记删除的数据。
-<br>需要注意Cassandra表的TTL（生存时间）设置，如果TTL设置不当，可能导致大量的tombstone积累。
-<br><br>Cassandra Query Language（CQL）是 Cassandra 数据库的查询语言。<br><br>Apache Cassandra 的设计目标主要围绕着可扩展性、高可用性和无单点故障展开。<br><br>Cassandra 的主要成分包括：	<br>
-<br>节点
-<br>数据中心
-<br>集群
-<br>分区器
-<br><br>社交媒体的评论管理<br>
-Cassandra 面向列设计，适合处理大量数据，适合社交媒体评论管理场景，可以快速写入和读取评论数据，支持高并发读写操作。	]]></description><link>https://blog.allenygy.vip/database-management-system/assignment/nosql-assignment-2.html</link><guid isPermaLink="false">Database-Management-System/Assignment/NoSQL-Assignment-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 12 Jul 2024 07:06:01 GMT</pubDate></item><item><title><![CDATA[<a data-href="NoSQL-Assignment-1" href="database-management-system/assignment/nosql-assignment-1.html" class="internal-link" target="_self" rel="noopener">NoSQL-Assignment-1</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Assignment" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Assignment</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Neo4j" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Neo4j</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Mongodb" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Mongodb</a> 
+<br>]]></description><link>https://blog.allenygy.vip/database-management-system/application/mysql+redis.html</link><guid isPermaLink="false">Database-Management-System/Application/MySQL+Redis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 09 Jul 2024 15:38:34 GMT</pubDate></item><item><title><![CDATA[<a data-href="NoSQL-Assignment-1" href="database-management-system/assignment/nosql-assignment-1.html" class="internal-link" target="_self" rel="noopener">NoSQL-Assignment-1</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Assignment" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Assignment</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Neo4j" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Neo4j</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Mongodb" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Mongodb</a> 
  <br><a href="https://blog.allenygy.vip?query=tag:NoSQL" class="tag" target="_blank" rel="noopener">#NoSQL</a> <a href="https://blog.allenygy.vip?query=tag:Assignment" class="tag" target="_blank" rel="noopener">#Assignment</a> <a href="https://blog.allenygy.vip?query=tag:Neo4j" class="tag" target="_blank" rel="noopener">#Neo4j</a> <a href="https://blog.allenygy.vip?query=tag:Mongodb" class="tag" target="_blank" rel="noopener">#Mongodb</a><br><br><br>
 <br>NoSQL数据库是不遵循RDBMS原则的数据库和数据存储，NoSQL意思是不仅仅是 SQL
 <br><br>
@@ -1227,209 +1753,7 @@ Copy<br>
 <br>SET NULL and SET DEFAULT.
 
 
-]]></description><link>https://blog.allenygy.vip/database-management-system/mysql/advanced-sql.html</link><guid isPermaLink="false">Database-Management-System/MySQL/Advanced-SQL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 25 Jun 2024 04:55:49 GMT</pubDate></item><item><title><![CDATA[<a data-href="NoSQL-Review" href="database-management-system/nosql/nosql-review.html" class="internal-link" target="_self" rel="noopener">NoSQL-Review</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Assignment" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Assignment</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Neo4j" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Neo4j</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Mongodb" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Mongodb</a> 
- <br><a href="https://blog.allenygy.vip?query=tag:NoSQL" class="tag" target="_blank" rel="noopener">#NoSQL</a> <a href="https://blog.allenygy.vip?query=tag:Assignment" class="tag" target="_blank" rel="noopener">#Assignment</a> <a href="https://blog.allenygy.vip?query=tag:Neo4j" class="tag" target="_blank" rel="noopener">#Neo4j</a> <a href="https://blog.allenygy.vip?query=tag:Mongodb" class="tag" target="_blank" rel="noopener">#Mongodb</a><br><br><br>
-<br>NoSQL数据库是一种非关系型数据库，它不遵循传统的关系数据库管理系统（RDBMS）的结构。
-<br>NoSQL数据库的设计初衷是为了解决大规模数据集的存储和检索问题，特别是在分布式环境中。
-<br>NoSQL数据库适用于需要处理大量数据、高吞吐量和灵活数据模型的应用程序，例如大数据应用、实时分析、内容管理系统等。
-<br><br>
-<br>
-键值存储（Key-Value Stores）:
-
-<br>这种类型的数据库通过键值对来存储数据，键是唯一的，用于检索值。
-<br>例子：Redis, Riak
-
-
-<br>
-文档存储（Document Stores）：
-
-<br>文档存储数据库存储类似于JSON或XML的文档，这些文档可以包含多种数据类型和结构。 
-
-<br>例子：MongoDB, CouchDB。
-
-
-
-
-<br>
-列存储（Column Stores）：
-
-<br>列存储数据库将数据存储在列中，而不是行，这使得它们非常适合处理大量的写入操作和列查询。
-<br>例子：Cassandra, HBase。
-
-
-<br>
-图形数据库（Graph Databases）：
-
-<br>图形数据库用于存储实体之间的关系，非常适合社交网络、推荐系统等需要处理复杂关系的应用。
-<br>例子：Neo4j, OrientDB
-
-
-<br><br><br>
-<br>关系型数据库
-
-<br>中心化的
-<br>处理密集，结构化的数据
-<br>满足 ACID 性
-<br>遵循 CA 原则
-
-
-<br>NoSQL
-
-<br>去中心化的
-<br>处理稀疏数据，半/非结构化的数据
-<br>主要是查询，很少更新
-<br>满足 BASE 性
-<br>遵循 AP 或 CP 原则
-
-
-<br><br>CAP定理，也称为布鲁尔定理（Brewer's theorem）
-是由计算机科学家埃里克·布鲁尔在2000年提出的一个概念，用来描述分布式系统在设计时需要做出的权衡。
-<br> 一致性（Consistency）
-在分布式系统中，当一个数据项更新后，所有节点应保证对该数据项的读取都将得到更新后的值。也就是说，如果一个节点更新了数据，其他节点在读取时也应该得到这个最新的数据。
-<br>可用性（Availability） 
-系统在任何时候都能够响应客户端的请求。即使在部分节点失败的情况下，系统仍然能够提供服务。
-<br>分区容错性（Partition Tolerance） 
-系统在网络分区（即网络中的一部分节点无法与其他节点通信）的情况下仍然能够继续运行。
-<br>CAP 定理 - 最多可以处理三个属性中的两个属性
-CAP定理的核心观点是，在任何给定时间，一个分布式系统最多只能同时满足上述三个特性中的两个。这意味着设计者必须在这三个特性中做出选择：
-
-<br>CA: 如果选择一致性和可用性，系统将无法容忍网络分区，一旦发生分区，系统将无法继续服务。SQL
-<br>CP: 如果选择一致性和分区容错性，系统在网络分区的情况下将无法保证所有请求都能得到响应。 MongoDB, HBase, Redis
-<br>AP: 如果选择可用性和分区容错性，系统将无法保证在所有节点上数据的一致性，可能会采用最终一致性模型。 CouchBD, Cassandra, DynamoDB, Riak
-
-<br>在NoSQL数据库中，CAP定理的重要性体现在：
-
-<br>设计决策：
-
-<br>NoSQL数据库的设计者和开发者需要根据CAP定理来决定数据库的架构，特别是当面对大规模分布式系统时。
-
-
-<br>性能优化：
-
-<br>在分布式系统中，为了提高性能和可扩展性，很多NoSQL数据库选择了可用性和分区容错性，牺牲了强一致性，采用最终一致性模型。
-
-
-<br>应用场景：
-
-<br>不同的NoSQL数据库根据其应用场景和需求，可能在CAP定理的三个特性中做出不同的权衡。例如，一些数据库可能更注重一致性，而另一些则可能更注重可用性和分区容错性
-
-
-
-<br><br>高可用性（High Availability）
-高可用性是指系统在面对硬件故障、软件故障、网络问题或其他问题时，仍能继续运行并提供服务的能力。在NoSQL数据库中，高可用性通常通过以下方式实现：
-副本：数据在多个节点上进行复制，以便在主节点故障时，其他副本可以接管服务。<br>
-故障转移：系统能够自动检测到节点故障，并迅速将请求重定向到健康的节点。<br>
-冗余：通过在不同的物理位置或服务器上存储数据副本，减少单点故障的风险。
-<br>可扩展性（Scalability）
-可扩展性是指系统能够通过增加资源(如服务器、存储或处理能力)<br>
-来应对增长的工作负载。NoSQL数据库的可扩展性通常分为两种：
-
-<br>垂直扩展（Vertical Scaling）：通过增加单个服务器的资源（如CPU、内存） 来提升性能。
-<br>水平扩展（Horizontal Scaling）：通过增加更多的服务器或节点来分散负载，这是NoSQL数据库的常见扩展方式，允许系统几乎无限地扩展以处理更大的数据量和更高的并发请求。
-
-<br>分布式系统（Distributed System）
-分布式系统是由多个物理或逻辑上分离的计算机组件组成的系统，这些组件通过网络相互连接和通信，协同工作以完成复杂的任务。在NoSQL数据库的上下文中，分布式系统的特点包括：
-数据分布：数据被分割并存储在多个节点上，以实现负载均衡和冗余。<br>
-网络通信：节点之间通过网络进行数据交换和协调。<br>
-容错性：系统设计能够处理节点或网络的故障，确保整体服务的连续性。<br>
-一致性：尽管数据分布在多个节点上，系统仍需保证数据的一致性，可能是强一致性或最终一致性。<br>
-并发控制：系统需要管理多个用户或进程同时对数据进行读写操作，避免冲突和数据损坏。
-<br><br>
-<br>a.键值存储(Key-Value Store)
-
-<br>简洁：数据主要采用Key-Value(KV)形式储存
-<br>高速：数据驻留内存，重启时可再次加载进行使用
-<br>易扩展：根据系统负载量，灵活添加或删除服务器
-<br>对键可设置失效时间
-
-
-<br>b. 列存储 (Column Store)
-
-<br>更好的可扩展性
-<br>高可用性
-<br>适合离线批量数据处理
-
-
-<br>c.文档数据库(Document Store)
-
-<br>核心概念是 "文档 "的概念，它与 RDBMS 中的行相对应
-<br>以某些标准格式或编码封装和编码数据，如 JSON（BSON）
-<br>文档在数据库中通过代表该文档的唯一密钥进行处理
-<br>将文档作为一个整体处理，避免将文档拆分为其组成的名称/值对
-<br>文档是无模式的，可以是非结构的数据
-
-
-<br>d.图形数据库(Graph Store)
-
-<br>面向图形
-<br>一切都以边、节点或属性的形式存储
-<br>每个节点和边可以有任意数量的属性
-<br>节点和边都可以贴标签
-<br>标签可用于缩小搜索范围
-
-
-<br><br><br>a. 实时分析：<br>
-适用数据库：列族数据库（如Canssandra）<br>
-原因：优化了时间戳索引和快速的数据插入与查询，适合实时数据的收集和分析。全文搜索引擎则提供了强大的文本处理和搜索能力，适合实时日志分析和监控。<br>
-b. 大数据处理：<br>
-适用数据库：列存储数据库（如Cassandra, HBase） 或 文档数据库（如MongoDB）。<br>
-原因：列存储数据库优化了列的读写操作，适合处理大规模数据集，特别是在需要快速列查询的场景。文档数据库则因其灵活性和丰富的查询功能，适合处理结构化或半结构化的大数据。<br>
-c. 社交网络：<br>
-适用数据库：图形数据库（如Neo4j, OrientDB）。<br>
-原因：社交网络中存在大量的用户关系和交互数据，图形数据库能够高效地存储和查询这些复杂的关系，支持社交网络中的好友关系、社交图谱分析等。<br>
-d. 物联网 (IoT)：<br>
-适用数据库：键值数据库（如Redis） 或 文档数据库（如MongoDB）。<br>
-原因：物联网设备产生大量的非结构化，时序数据库可以高效地存储和查询这些数据。同时，物联网数据通常是半结构化的，文档数据库的灵活性使其成为处理这类数据的理想选择。<br><br>实际应用场景：社交媒体平台<br>
-应用描述：<br>
-一个社交媒体平台允许用户创建个人资料、发布状态更新、分享图片和视频、关注其他用户以及参与评论和点赞等社交互动。<br>
-<br>数据模型的灵活性：<br>
-社交媒体平台的数据结构经常变化，例如用户资料、帖子、评论等，它们可能是半结构化的，包含多种数据类型。NoSQL数据库如MongoDB允许灵活的数据模型，无需预先定义严格的模式。
-<br>水平扩展性：<br>
-社交媒体平台可能迅速增长，需要处理大量用户和数据。NoSQL数据库如Cassandra设计用于水平扩展，通过增加更多节点来处理更大的数据量和用户请求。<br>
-高性能的读写操作：<br>
-用户生成内容和实时交互需要快速响应。NoSQL数据库通常提供高性能的读写操作，特别是在分布式环境中。
-<br>高可用性：<br>
-社交媒体平台需要24/7的高可用性。NoSQL数据库通过数据复制和故障转移机制，确保服务的持续可用性。
-<br>处理非关系型数据：<br>
-社交媒体数据如用户关系图、内容推荐等，是高度互联的非关系型数据。图形数据库如Neo4j可以有效地存储和查询这些复杂的网络关系。
-<br>大规模数据处理：<br>
-社交媒体平台产生的数据量巨大，包括用户生成的内容、日志数据等。使用Hadoop或Spark等大数据处理框架与NoSQL数据库结合，可以高效地处理和分析这些数据。
-<br>多样化的查询需求：<br>
-社交媒体平台需要支持复杂的查询，如搜索、推荐、趋势分析等。NoSQL数据库提供了丰富的查询语言和API，可以满足这些需求。
-<br>成本效益：<br>
-与关系型数据库相比，NoSQL数据库通常提供更灵活的部署选项，包括云服务，这有助于降低成本和提高资源利用率。
-<br>开发速度：<br>
-社交媒体平台需要快速迭代和部署新功能。NoSQL数据库的灵活性有助于加速开发过程，减少模式变更的复杂性。<br>
-通过上述原因，社交媒体平台选择使用NoSQL数据库而不是关系型数据库，可以更好地满足其业务需求，提供更好的用户体验，并支持快速增长和变化
-<br>OPTIONAL MATCH 会搜索可能存在也可能不存在的描述模式，并将模式中不存在的标识符赋值为 NULL。<br><br>// 创建 Show 节点
-CREATE (got:Show {title: "Game of Thrones"})
-	
-// 创建 Character 节点
-CREATE (jon:Character {name: "Jon Snow"})
-CREATE (dany:Character {name: "Daenerys Targaryen"})
-CREATE (tyrion:Character {name: "Tyrion Lannister"})
-	
-// 创建 Actor 节点
-CREATE (kit:Actor {name: "Kit Harington"})
-CREATE (emilia:Actor {name: "Emilia Clarke"})
-CREATE (peter:Actor {name: "Peter Dinklage"})
-	
-CREATE (kit)-[:ACTED_IN]-&gt;(got)
-CREATE (emilia)-[:ACTED_IN]-&gt;(got)
-CREATE (peter)-[:ACTED_IN]-&gt;(got)
-	
-CREATE (jon)-[:HAS_CHARACTER]-&gt;(got)
-CREATE (dany)-[:HAS_CHARACTER]-&gt;(got)
-CREATE (tyrion)-[:HAS_CHARACTER]-&gt;(got)
-	
-CREATE (kit)-[:PLAYS]-&gt;(jon)
-CREATE (emilia)-[:PLAYS]-&gt;(dany)
-CREATE (peter)-[:PLAYS]-&gt;(tyrion)	
-Copy<br><br>
-<br>易用性：灵活的文档模型。JSON格式简单易学
-<br>支持高性能访问数据。存储引擎是文档型数据库的核心组件。
-<br>可扩展性：支持大数据分布式存储，服务能力水平可横向弹性扩展
-]]></description><link>https://blog.allenygy.vip/database-management-system/nosql/nosql-review.html</link><guid isPermaLink="false">Database-Management-System/NoSQL/NoSQL-Review.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 14 Jul 2024 07:06:46 GMT</pubDate></item><item><title><![CDATA[<a data-href="NoSQL" href="database-management-system/nosql/nosql.html" class="internal-link" target="_self" rel="noopener">NoSQL</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DataBase" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DataBase</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> 
+]]></description><link>https://blog.allenygy.vip/database-management-system/mysql/advanced-sql.html</link><guid isPermaLink="false">Database-Management-System/MySQL/Advanced-SQL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 25 Jun 2024 04:55:49 GMT</pubDate></item><item><title><![CDATA[<a data-href="NoSQL" href="database-management-system/nosql/nosql.html" class="internal-link" target="_self" rel="noopener">NoSQL</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DataBase" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DataBase</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> 
  <br><a href="https://blog.allenygy.vip?query=tag:DataBase" class="tag" target="_blank" rel="noopener">#DataBase</a>  <a href="https://blog.allenygy.vip?query=tag:NoSQL" class="tag" target="_blank" rel="noopener">#NoSQL</a> <br><br>What is NoSQL
 
 <br>Not Only SQL 
@@ -1706,23 +2030,7 @@ NoSQL分布式集群系统由多个节点构成
 <br>领导者选举 Leader Election
 <br>日志复制 Log Replication
 <br>安全性 Safety
-<br>]]></description><link>https://blog.allenygy.vip/database-management-system/nosql/nosql.html</link><guid isPermaLink="false">Database-Management-System/NoSQL/NoSQL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 09 Jul 2024 07:01:44 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/NoSQLType.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/NoSQLType.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Cassandra" href="database-management-system/nosql/cassandra.html" class="internal-link" target="_self" rel="noopener">Cassandra</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DataBase" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DataBase</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> 
- <br><a href="https://blog.allenygy.vip?query=tag:DataBase" class="tag" target="_blank" rel="noopener">#DataBase</a> <a href="https://blog.allenygy.vip?query=tag:NoSQL" class="tag" target="_blank" rel="noopener">#NoSQL</a> <br><br><br><br>
-<br>安装 Cassandra (此处采用 homebrew 包管理器进行安装)
-<br>brew install cassandra
-Copy<br><br>
-<br>MacOS 后台启动 Cassandra
-<br>brew services start cassandra
-Copy<br>
-<br>命令行启动 Cassandra
-<br>cqlsh
-Copy<br><br>
-<br>命令行关闭 Cassandra
-<br>exit	
-Copy<br>
-<br>MacOS 后台关闭 Cassandra
-<br>brew services stop cassandra
-Copy]]></description><link>https://blog.allenygy.vip/database-management-system/nosql/cassandra.html</link><guid isPermaLink="false">Database-Management-System/NoSQL/Cassandra.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 09 Jul 2024 07:00:24 GMT</pubDate></item><item><title><![CDATA[<a data-href="Redis" href="database-management-system/nosql/redis.html" class="internal-link" target="_self" rel="noopener">Redis</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:Redis" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Redis</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NOTE" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NOTE</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:DBMS" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DBMS</a> 
+<br>]]></description><link>https://blog.allenygy.vip/database-management-system/nosql/nosql.html</link><guid isPermaLink="false">Database-Management-System/NoSQL/NoSQL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 09 Jul 2024 07:01:44 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/NoSQLType.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/NoSQLType.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Redis" href="database-management-system/nosql/redis.html" class="internal-link" target="_self" rel="noopener">Redis</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:Redis" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Redis</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NOTE" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NOTE</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:DBMS" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DBMS</a> 
  <br><a href="https://blog.allenygy.vip?query=tag:Redis" class="tag" target="_blank" rel="noopener">#Redis</a> <a href="https://blog.allenygy.vip?query=tag:NoSQL" class="tag" target="_blank" rel="noopener">#NoSQL</a> <a href="https://blog.allenygy.vip?query=tag:NOTE" class="tag" target="_blank" rel="noopener">#NOTE</a> <a href="https://blog.allenygy.vip?query=tag:DBMS" class="tag" target="_blank" rel="noopener">#DBMS</a><br><br><br>哈希 的实质是一个算法。 <br>
 <br>任意长度的信息（可以是字符串、数据或者任何文件）经过哈希运算后，输出一个固定长度的值，这个值就是哈希值。
 <br>哈希运算是一种压缩映射，在哈希计算器中无论输入什么样的数据，最后得到的结果都是一个固定长度的数字/字母混合的随机数列
@@ -3111,108 +3419,7 @@ Frontend<br>
 <br><br><img alt="Backend Code" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/BiliVistaImg/BackendCode.png" referrerpolicy="no-referrer"><br>
 <br>
 <br>SnowNLP is a library focused on natural language processing tasks for Chinese text, such as favorability rate analysis and text processing.<a href="https://blog.allenygy.vip/about:blank#fnref-1-b04f94a8e0b12ddf" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>https://blog.allenygy.vip/projects/dpw/bilibilivista.html</link><guid isPermaLink="false">Projects/DPW/BilibiliVista.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 11 Jul 2024 13:41:35 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/BiliVistaImg/DPW.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/BiliVistaImg/DPW.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[MySQL and NoSQL database comparison for IoT application]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:Database" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Database</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:integration" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#integration</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:SQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#SQL</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:ReadPaper" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#ReadPaper</a> 
- <br><a href="https://blog.allenygy.vip?query=tag:Database" class="tag" target="_blank" rel="noopener">#Database</a> <a href="https://blog.allenygy.vip?query=tag:integration" class="tag" target="_blank" rel="noopener">#integration</a>  <a href="https://blog.allenygy.vip?query=tag:NoSQL" class="tag" target="_blank" rel="noopener">#NoSQL</a> <a href="https://blog.allenygy.vip?query=tag:SQL" class="tag" target="_blank" rel="noopener">#SQL</a> <a href="https://blog.allenygy.vip?query=tag:ReadPaper" class="tag" target="_blank" rel="noopener">#ReadPaper</a>  <br><br><br>
-<br>What is IOT？
-<br>SQL Versus NoSQL
-<br>Experiment 
-<br>SQL and NoSQL Integration
-<br>Conclusion
-<br><br>
-<br>IoT refers to any object/thing around us which is connected to internet. 
-<br>This object is also able to communicate through internet.
-<br>Like temperature sensor connected to oven, fridge or just to measure a room temperature. IoT is network of such things which may communicate with each other or with user.<br>IoT is having application in various domains like smart city, industrial, medical services, etc.<br><br><br><br>Temperature, humidity, soil moisture sensors are used in the hardware along with the water level detection.<br>Sprinkler motor is turned ON depending on the inputs from soil moisture and water level in the tank. If the soil moisture level drops below the threshold value and if water level is TRUE, then sprinkler motor turns ON.<br><br><img alt="System Architecture" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png" referrerpolicy="no-referrer"><br>The data from these sensors is collected and is sent to database server and user email ID. The aim is to further utilize this data for analysis using data processing tools.<br>Data is stored in both MySQL and MongoDB database systems for carrying out the comparison study.<br><br><img alt="MySQL" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101137755.png" referrerpolicy="no-referrer"><br>Db.collection.insert({
-	sensor_id: &lt;sensor ID number&gt;,
-	Humidity: &lt;humidity sensor reading&gt;, 
-	Soil_moisture: &lt;moisture sensor reading&gt;, 
-	Temperature: &lt;temperature sensor reading&gt;, 
-	CreateDate: new Date(), 
-	Userid: &lt;User ID&gt; 
-})
-Copy<br><br>
-<br>SELECT query with varying number of threads 
-<br>Here is the summary of the first two experiments from the document comparing MySQL and MongoDB databases for an IoT application:<br><br>Measure the response time of SELECT queries with varying numbers of threads.<br>
-<br>Setup: The number of threads was varied from 1 to 10. Each SELECT query fetched 1000 records from a database containing 10,000 records.
-<br>Results: 
-
-<br>For up to 4 threads, the response times for MySQL and MongoDB were similar.
-<br>At 10 threads, MongoDB showed a significant increase in response time compared to MySQL.
-<br>Observation: Too many threads in MongoDB can overwhelm the system, leading to increased latency and CPU starvation.
-
-
-<br><br>
-<br>Objective: Measure the response time for INSERT queries with varying numbers of threads.
-<br>Setup: Similar to the SELECT query test, the number of threads was varied from 1 to 10.
-<br>Results: 
-
-<br>The response time for MySQL increased at a faster rate compared to MongoDB.
-<br>MongoDB demonstrated faster performance for INSERT operations.
-<br>Observation: MongoDB outperformed MySQL in write latency, making it a better choice for applications with heavy write operations.
-
-
-<br>These experiments highlight the differences in performance characteristics between MySQL and MongoDB, with MongoDB showing advantages in handling write operations under load, while MySQL maintained more stable read performance with higher thread counts.<br>
-<br>INSERT query with varying number of threads 
-<br>SELECT query with varying number of records 
-<br>INSERT query with varying number of records
-<br>Each database has its own advantages and disadvantages.<br>
-<br>MongoDB showed less response time in some scenarios compared to MySQL.
-<br>MySQL responses were more stable compared to MongoDB.
-<br><br>主要是针对不同NoSQL 数据库的特性进行结合<br>
-<br>Redis
-
-<br>As a Caching Layer for MySQL
-
-
-<br>Cassandra
-
-<br>Comment System 
-
-
-<br><br>Scenario: Improve read performance and reduce database load.<br><img alt="Redis" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101217920.png" referrerpolicy="no-referrer"><br>
-<br>MySQL: Serves as the primary persistent data storage, handling complex queries and transactions.
-<br>Redis: Acts as a caching layer, storing frequently accessed or common data such as user sessions and popular product information.
-<br>Example:<br>
-When a user requests data, the application first checks the Redis cache. If the data is found in the cache, it is returned immediately. If not, the data is fetched from MySQL, then stored in Redis for future requests. This approach reduces the load on MySQL and improves the overall response time of the application.<br>缓存层
-场景：提高读性能，减少数据库负载。
-
-<br>MySQL：作为主要的持久化数据存储，处理复杂的查询和事务。 
-<br>Redis：作为缓存层，存储常用或频繁访问的数据，如用户会话、热门商品信息等。
-
-<br><br>Scenario: A globally distributed social media platform needs to handle user information, social relationships, and massive amounts of user activity data.<br>Solution:<br>
-<br>MySQL stores structured data such as user basic information and friend relationships.
-<br>Cassandra stores massive amounts of distributed data such as user posts, comments, and likes.
-<br>Advantages:<br>
-<br>MySQL provides complex relational queries and consistency guarantees.
-<br>Cassandra's distributed architecture and linear scalability are suitable for handling massive data volumes and high write loads.
-<br>Specific Use Cases:<br>
-<br>Querying user basic information and friend lists.
-<br>Distributed storage and rapid retrieval of user posts and comments.
-<br><br>MSI mainly includes eight components<br>
-<br>API dispatcher 
-<br>SQL parser 
-<br>SQL optimizer 
-<br>SQL router 
-<br>SQL executor 
-<br>DBMS adapter 
-<br>Result merger 
-<br>Meta-data management
-<br><img alt="MSI Architecture" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101200521.png" referrerpolicy="no-referrer"><br>
-<br>The MSI's input and the result of the SQL process is the MSI's output.
-<br><br>
-<br>SQL + Neo4j is suitable for managing and analyzing complex relational data.
-<br>SQL + MongoDB is ideal for scenarios requiring flexible document storage, such as medical information management.
-<br>SQL + Redis is perfect for high-performance caching and real-time data processing, such as online gaming.
-<br>SQL + Cassandra is excellent for distributed storage and rapid writing of massive data, such as global social media platforms.
-<br><br>
-<br>SQL and NoSQL databases offer unique sets of capabilities and advantages. 
-<br>The key to successful integration lies in understanding the intrinsic properties of each database type and crafting a strategy tailored to the specific needs of the organization.
-<br><br>
-<br><a data-tooltip-position="top" aria-label="https://doi.org/10.1002/spe.2666" rel="noopener" class="external-link" href="https://doi.org/10.1002/spe.2666" target="_blank">An integration approach of hybrid databases based on SQL in cloud computing environment</a>
-<br><a data-tooltip-position="top" aria-label="https://www.lonti.com/blog/integration-strategies-between-sql-and-nosql-databases" rel="noopener" class="external-link" href="https://www.lonti.com/blog/integration-strategies-between-sql-and-nosql-databases" target="_blank">Integration Strategies Between SQL and NoSQL Databases</a>
-<br><a data-tooltip-position="top" aria-label="https://www.softwaretestinghelp.com/hybrid-database/" rel="noopener" class="external-link" href="https://www.softwaretestinghelp.com/hybrid-database/" target="_blank">What Is Hybrid Database? List Of The Best Hybrid Databases</a>
-<br><a data-tooltip-position="top" aria-label="https://medium.com/@gouri.benni/an-overview-on-a-hybrid-database-approach-using-graph-and-relational-database-fb216e0a24f1" rel="noopener" class="external-link" href="https://medium.com/@gouri.benni/an-overview-on-a-hybrid-database-approach-using-graph-and-relational-database-fb216e0a24f1" target="_blank">An Overview on “A Hybrid Database Approach Using Graph and Relational Database”</a>
-<br><a data-tooltip-position="top" aria-label="https://ieeexplore.ieee.org/document/7887957" rel="noopener" class="external-link" href="https://ieeexplore.ieee.org/document/7887957" target="_blank">MySQL and NoSQL database comparison for IoT application</a>
-]]></description><link>https://blog.allenygy.vip/research/sql-and-nosql-integration.html</link><guid isPermaLink="false">Research/SQL and NoSQL Integration.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 10 Jul 2024 10:49:33 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
+]]></description><link>https://blog.allenygy.vip/projects/dpw/bilibilivista.html</link><guid isPermaLink="false">Projects/DPW/BilibiliVista.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 11 Jul 2024 13:41:35 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/BiliVistaImg/DPW.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/BiliVistaImg/DPW.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
  <br><br><br>
 <br><a data-tooltip-position="top" aria-label="MySQL and NoSQL database comparison for IoT application" data-href="MySQL and NoSQL database comparison for IoT application" href="https://blog.allenygy.vip/MySQL and NoSQL database comparison for IoT application" class="internal-link" target="_self" rel="noopener">MySQL and NoSQL database comparison for IoT application</a>
 <br><a data-tooltip-position="top" aria-label="DeepLearning/Bert.md" data-href="DeepLearning/Bert.md" href="https://blog.allenygy.vip/deeplearning/bert.html" class="internal-link" target="_self" rel="noopener">Bert</a>
@@ -3672,38 +3879,7 @@ When a user requests data, the application first checks the Redis cache. If the 
 <br><a data-tooltip-position="top" aria-label="Tools/Regex/Regular-Expression.md" data-href="Tools/Regex/Regular-Expression.md" href="https://blog.allenygy.vip/tools/regex/regular-expression.html" class="internal-link" target="_self" rel="noopener">Regular-Expression</a>
 <br><br>
 <br><a data-tooltip-position="top" aria-label="Tools/Shell/Shell.md" data-href="Tools/Shell/Shell.md" href="https://blog.allenygy.vip/tools/shell/shell.html" class="internal-link" target="_self" rel="noopener">Shell</a>
-]]></description><link>https://blog.allenygy.vip/class.html</link><guid isPermaLink="false">Class.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 14 Jul 2024 05:55:29 GMT</pubDate></item><item><title><![CDATA[Home]]></title><description><![CDATA[ 
- <br><br><br><br><br>使用 Obsidian 291 天，共创建 293 篇笔记、195 个标签、58个待办。 <br>MonWedFriFebMarAprMayJunJullessmore<br>
-<br>NOTE
-
-<br><a data-href="Computer-Organization" href="https://blog.allenygy.vip/computer-organization/computer-organization.html" class="internal-link" target="_self" rel="noopener">Computer-Organization</a>
-<br><a data-href="Computer-Network" href="https://blog.allenygy.vip/computer-network/computer-network.html" class="internal-link" target="_self" rel="noopener">Computer-Network</a>
-<br><a data-href="Operating-System" href="https://blog.allenygy.vip/operatingsystem/operating-system.html" class="internal-link" target="_self" rel="noopener">Operating-System</a>
-<br><a data-href="Projects/DBM/Database-Management-System" href="https://blog.allenygy.vip/projects/dbm/database-management-system.html" class="internal-link" target="_self" rel="noopener">Projects/DBM/Database-Management-System</a>
-
-
-<br>WORK
-
-<br><a data-href="Archive" href="https://blog.allenygy.vip/archive.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="IbArchive" aria-label="IbArchive" data-icon="IbArchive" aria-hidden="true"><svg width="16px" height="16px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 9v8c0 1.886 0 2.828.586 3.414C5.172 21 6.114 21 8 21h8c1.886 0 2.828 0 3.414-.586C20 19.828 20 18.886 20 17V9M6 9h12c.932 0 1.398 0 1.765-.152a2 2 0 0 0 1.083-1.083C21 7.398 21 6.932 21 6c0-.932 0-1.398-.152-1.765a2 2 0 0 0-1.083-1.083C19.398 3 18.932 3 18 3H6c-.932 0-1.398 0-1.765.152a2 2 0 0 0-1.083 1.083C3 4.602 3 5.068 3 6c0 .932 0 1.398.152 1.765a2 2 0 0 0 1.083 1.083C4.602 9 5.068 9 6 9zm3 4h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Archive</a>
-<br><a data-href="Class" href="https://blog.allenygy.vip/class.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FabBattleNet" aria-label="FabBattleNet" data-icon="FabBattleNet" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M448.61 225.62c26.87.18 35.57-7.43 38.92-12.37 12.47-16.32-7.06-47.6-52.85-71.33 17.76-33.58 30.11-63.68 36.34-85.3 3.38-11.83 1.09-19 .45-20.25-1.72 10.52-15.85 48.46-48.2 100.05-25-11.22-56.52-20.1-93.77-23.8-8.94-16.94-34.88-63.86-60.48-88.93C252.18 7.14 238.7 1.07 228.18.22h-.05c-13.83-1.55-22.67 5.85-27.4 11-17.2 18.53-24.33 48.87-25 84.07-7.24-12.35-17.17-24.63-28.5-25.93h-.18c-20.66-3.48-38.39 29.22-36 81.29-38.36 1.38-71 5.75-93 11.23-9.9 2.45-16.22 7.27-17.76 9.72 1-.38 22.4-9.22 111.56-9.22 5.22 53 29.75 101.82 26 93.19-9.73 15.4-38.24 62.36-47.31 97.7-5.87 22.88-4.37 37.61.15 47.14 5.57 12.75 16.41 16.72 23.2 18.26 25 5.71 55.38-3.63 86.7-21.14-7.53 12.84-13.9 28.51-9.06 39.34 7.31 19.65 44.49 18.66 88.44-9.45 20.18 32.18 40.07 57.94 55.7 74.12a39.79 39.79 0 0 0 8.75 7.09c5.14 3.21 8.58 3.37 8.58 3.37-8.24-6.75-34-38-62.54-91.78 22.22-16 45.65-38.87 67.47-69.27 122.82 4.6 143.29-24.76 148-31.64 14.67-19.88 3.43-57.44-57.32-93.69zm-77.85 106.22c23.81-37.71 30.34-67.77 29.45-92.33 27.86 17.57 47.18 37.58 49.06 58.83 1.14 12.93-8.1 29.12-78.51 33.5zM216.9 387.69c9.76-6.23 19.53-13.12 29.2-20.49 6.68 13.33 13.6 26.1 20.6 38.19-40.6 21.86-68.84 12.76-49.8-17.7zm215-171.35c-10.29-5.34-21.16-10.34-32.38-15.05a722.459 722.459 0 0 0 22.74-36.9c39.06 24.1 45.9 53.18 9.64 51.95zM279.18 398c-5.51-11.35-11-23.5-16.5-36.44 43.25 1.27 62.42-18.73 63.28-20.41 0 .07-25 15.64-62.53 12.25a718.78 718.78 0 0 0 85.06-84q13.06-15.31 24.93-31.11c-.36-.29-1.54-3-16.51-12-51.7 60.27-102.34 98-132.75 115.92-20.59-11.18-40.84-31.78-55.71-61.49-20-39.92-30-82.39-31.57-116.07 12.3.91 25.27 2.17 38.85 3.88-22.29 36.8-14.39 63-13.47 64.23 0-.07-.95-29.17 20.14-59.57a695.23 695.23 0 0 0 44.67 152.84c.93-.38 1.84.88 18.67-8.25-26.33-74.47-33.76-138.17-34-173.43 20-12.42 48.18-19.8 81.63-17.81 44.57 2.67 86.36 15.25 116.32 30.71q-10.69 15.66-23.33 32.47C365.63 152 339.1 145.84 337.5 146c.11 0 25.9 14.07 41.52 47.22a717.63 717.63 0 0 0-115.34-31.71 646.608 646.608 0 0 0-39.39-6.05c-.07.45-1.81 1.85-2.16 20.33C300 190.28 358.78 215.68 389.36 233c.74 23.55-6.95 51.61-25.41 79.57-24.6 37.31-56.39 67.23-84.77 85.43zm27.4-287c-44.56-1.66-73.58 7.43-94.69 20.67 2-52.3 21.31-76.38 38.21-75.28C267 52.15 305 108.55 306.58 111zm-130.65 3.1c.48 12.11 1.59 24.62 3.21 37.28-14.55-.85-28.74-1.25-42.4-1.26-.08 3.24-.12-51 24.67-49.59h.09c5.76 1.09 10.63 6.88 14.43 13.57zm-28.06 162c20.76 39.7 43.3 60.57 65.25 72.31-46.79 24.76-77.53 20-84.92 4.51-.2-.21-11.13-15.3 19.67-76.81zm210.06 74.8"></path></svg></span>Class</a>
-<br><a data-href="Friends" href="https://blog.allenygy.vip/friends.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="IbLink" aria-label="IbLink" data-icon="IbLink" aria-hidden="true"><svg width="16px" height="16px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.3 9a1 1 0 0 0 0-2v2zm0 8a1 1 0 1 0 0-2v2zm5.4-2a1 1 0 1 0 0 2v-2zm0-8a1 1 0 1 0 0 2V7zM7 9h2.3V7H7v2zm2.3 6H7v2h2.3v-2zm7.7 0h-2.3v2H17v-2zm-2.3-6H17V7h-2.3v2zM2 12a5 5 0 0 0 5 5v-2a3 3 0 0 1-3-3H2zm18 0a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5h-2zm2 0a5 5 0 0 0-5-5v2a3 3 0 0 1 3 3h2zM4 12a3 3 0 0 1 3-3V7a5 5 0 0 0-5 5h2z" fill="currentColor"></path><path d="M15 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span>Friends</a>
-<br><a data-href="slides" href="https://blog.allenygy.vip/slides.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="CoShow" aria-label="CoShow" data-icon="CoShow" aria-hidden="true"><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Edit / Show"><g id="Vector"><path d="M3.5868 13.7788C5.36623 15.5478 8.46953 17.9999 12.0002 17.9999C15.5308 17.9999 18.6335 15.5478 20.413 13.7788C20.8823 13.3123 21.1177 13.0782 21.2671 12.6201C21.3738 12.2933 21.3738 11.7067 21.2671 11.3799C21.1177 10.9218 20.8823 10.6877 20.413 10.2211C18.6335 8.45208 15.5308 6 12.0002 6C8.46953 6 5.36623 8.45208 3.5868 10.2211C3.11714 10.688 2.88229 10.9216 2.7328 11.3799C2.62618 11.7067 2.62618 12.2933 2.7328 12.6201C2.88229 13.0784 3.11714 13.3119 3.5868 13.7788Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></g></svg></span>slides</a>
-
-
-<br>Focus
-
-<br><a data-href="Algorithm" href="https://blog.allenygy.vip/algorithm/algorithm.html" class="internal-link" target="_self" rel="noopener">Algorithm</a>
-<br><a data-href="Deep Learning" href="https://blog.allenygy.vip/deeplearning/deep-learning.html" class="internal-link" target="_self" rel="noopener">Deep Learning</a>
-
-
-<br><br><br><br><br>
-
-
-
-
-
-
-]]></description><link>https://blog.allenygy.vip/home.html</link><guid isPermaLink="false">Home.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 14 Jul 2024 05:55:29 GMT</pubDate></item><item><title><![CDATA[<a data-href="CoT-Decoding" href="research/cot-decoding.html" class="internal-link" target="_self" rel="noopener">CoT-Decoding</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:ReadPaper" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#ReadPaper</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:CoT-Decoding" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#CoT-Decoding</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:CoT" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#CoT</a> 
+]]></description><link>https://blog.allenygy.vip/class.html</link><guid isPermaLink="false">Class.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 14 Jul 2024 05:55:29 GMT</pubDate></item><item><title><![CDATA[<a data-href="CoT-Decoding" href="research/cot-decoding.html" class="internal-link" target="_self" rel="noopener">CoT-Decoding</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:ReadPaper" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#ReadPaper</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:CoT-Decoding" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#CoT-Decoding</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:CoT" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#CoT</a> 
  <br><a href="https://blog.allenygy.vip?query=tag:ReadPaper" class="tag" target="_blank" rel="noopener">#ReadPaper</a> <a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a> <a href="https://blog.allenygy.vip?query=tag:CoT-Decoding" class="tag" target="_blank" rel="noopener">#CoT-Decoding</a> <a href="https://blog.allenygy.vip?query=tag:CoT" class="tag" target="_blank" rel="noopener">#CoT</a><br><br> <a data-tooltip-position="top" aria-label="https://doi.org/10.48550/arXiv.2402.10200" rel="noopener" class="external-link" href="https://doi.org/10.48550/arXiv.2402.10200" target="_blank">Chain-of-Thought Reasoning without Prompting</a>
 这篇文章通过优化解码方法，提出了CoT-Decoding， 提高回答的准确性
 <br>CoT-Decoding  类似做选择题时的排除法<br>
@@ -4420,114 +4596,7 @@ ReLU−2-1.5−1-0.500.511.5200.20.40.60.811.21.41.61.82
 <br>对每个断点算出所有的 
 <br> 已知<br>
  给定  的每一组  可求
-<br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/research/bioinfo/ploidy-review.html</link><guid isPermaLink="false">Research/BioInfo/Ploidy-review.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 06 Jul 2024 11:55:13 GMT</pubDate></item><item><title><![CDATA[<a data-href="AlphaFold2" href="research/alphafold2.html" class="internal-link" target="_self" rel="noopener">AlphaFold2</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:ReadPaper" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#ReadPaper</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Bioinformatics" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Bioinformatics</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:ProteinStructurePrediction" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#ProteinStructurePrediction</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:AlphaFold2" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#AlphaFold2</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Transformer" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Transformer</a> 
- <br><a href="https://blog.allenygy.vip?query=tag:ReadPaper" class="tag" target="_blank" rel="noopener">#ReadPaper</a> <a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a> <a href="https://blog.allenygy.vip?query=tag:Bioinformatics" class="tag" target="_blank" rel="noopener">#Bioinformatics</a> <a href="https://blog.allenygy.vip?query=tag:ProteinStructurePrediction" class="tag" target="_blank" rel="noopener">#ProteinStructurePrediction</a>	<a href="https://blog.allenygy.vip?query=tag:AlphaFold2" class="tag" target="_blank" rel="noopener">#AlphaFold2</a> <a href="https://blog.allenygy.vip?query=tag:Transformer" class="tag" target="_blank" rel="noopener">#Transformer</a><br><br><a data-tooltip-position="top" aria-label="https://www.nature.com/articles/s41586-021-03819-2" rel="noopener" class="external-link" href="https://www.nature.com/articles/s41586-021-03819-2" target="_blank">Highly accurate protein structure prediction with AlphaFold</a>
-
-<br><a data-href="AlphaFold2" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">AlphaFold2</a> 被 《Science》 评选为2021年AI在科学界最大的突破
-<br><a data-href="AlphaFold2" href="https://blog.allenygy.vip/research/alphafold2.html" class="internal-link" target="_self" rel="noopener">AlphaFold2</a> 把通过氨基酸序列对蛋白质三维结构预测的误差，降低到原子级别
-
-<br><br><img alt="Model architecture" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" referrerpolicy="no-referrer"><br>模型大概可以分成四个部分<br>
-<br>Feature Extraction
-<br>Encoder
-<br>Decoder
-<br>Recycling
-<br><br>特征提取两部分信息<br>
-<br>MSA 
-<br>Pairing &amp; Templates 
-<br><br>MSA提取序列在多物种中的共进化信息<br>
-<br>在基因数据库中搜索相似的氨基酸序列
-
-<br>多序列比对
-
-
-<br>得到不同氨基酸序列的特征
-<br><img alt="FeatureExtraction" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/FeatureExtraction.png" referrerpolicy="no-referrer"><br><br>提取氨基酸之间的特征<br>
-<br>氨基酸之间的关系 
-<br>在结构数据库中搜索，从已知的氨基酸序列的结构中搜索得到空间信息
-<br><br><br>MSA Representation<br>
-<br>s: s 行氨基酸序列 
-
-<br>第一行是人的氨基酸序列 
-<br>后面s-1 是从基因数据库中匹配到的不同物种的氨基酸序列 
-
-
-<br>r: r个氨基酸
-<br>c:  每个氨基酸表示为长为c的向量
-<br><img alt="Encoder Input" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/EncoderInput.png" referrerpolicy="no-referrer"><br>Pair Representation <br>
-<br>r: r个氨基酸
-<br>c: 每个氨基酸表示为长为c的向量
-<br>主要用于表示氨基酸两两之间的空间信息
-<br><br>
-<br>与Transformer 不同
-
-<br>Transformer 输入的是一段序列
-<br>Evoformer 在这里输入的是一个二维的矩阵 
-
-
-<br><img alt="a" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/a.png" referrerpolicy="no-referrer"><br>MSA和Pair都会进入多头自注意力模块<br>
-<br>具有残差连接和在元素作用上的MLP
-<br>Pair的部分还需要加入物理上三角不等式的处理<br>与Transformer不同<br>
-<br>氨基酸对 (Pair Representation) 之间的信息会加入对序列的建模<br>
-- 序列建模之后也会加入对氨基酸对的建模<br>
-- 自注意力机制做两次<br>
-- 因为输入是一个二维的矩阵<br>
-<img alt="a" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/a.png" referrerpolicy="no-referrer">
-<br><br>
-<br>输出的矩阵维度不发生变化, c发生变化
-<br><img alt="Encoder Output" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/EncoderOutput.png" referrerpolicy="no-referrer"><br><br>根据Encoder的输出拿到<br>
-<br>Single Representation (r, c) 人氨基酸序列
-
-<br>人类氨基酸所有的特征的表示
-
-
-<br>Pair Representation (r, r, c) 氨基酸对
-
-<br>氨基酸之间的相关信息
-
-
-<br>Backbone frames 
-
-<br>氨基酸序列主干的空间结构
-
-
-<br><img alt="Decoder" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/Decoder/Decoder.png" referrerpolicy="no-referrer"><br>
-<img style="zoom:50%;" alt="Decoder" src="" referrerpolicy="no-referrer"><br><br><br>记录下一个氨基酸与上一个氨基酸的相对位置<br>
-<br>R基部分原子的旋转的角度
-
-<br>欧几里得变换
-<br> 
-<br>极性，电荷可以限制 A, B 值
-
-
-<br>先预测backbone上氨基酸的相对位置
-<br>再预测每个氨基酸R基上的原子的相对位置<br>
-<img style="zoom: 50%;" alt="ProteinPrediction" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/ProteinPrediction.png" referrerpolicy="no-referrer">
-<br><br>把编码器的输出和解码器的输出通过回收机制传回编码器的输入<br>
-<br>类似RNN，但是这里的梯度不反传, 只经过56层就可以计算梯度
-<br><img alt="Model architecture" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" referrerpolicy="no-referrer"><br><br>Training<br>
-<br>
-<br>  <br>
-<br>特征对齐损失，用于量化模型预测的原子位置与实际原子位置之间的差异。 
-<br><br>
-<br>辅助损失，它可能与多个预测任务相关，例如二级结构预测、溶剂可及性预测等。
-<br> <br>
-<br>距离损失，它衡量模型预测的残基间距离与真实结构之间的误差。
-<br>Training<br>
-<br>
-<br> <br>
-<br>多序列比对损失，用于确保模型预测与进化信息一致。
-<br> <br>
-<br>构象损失，用于确保整体蛋白质构象的准确性。
-<br>Fine-tuning<br>
-<br>
-<br> <br>
-<br>用于处理实验解析度的损失，用于在蛋白质结构中考虑到实验数据的不确定性。
-<br> <br>
-<br>违反物理或生物化学约束的损失。
-<br><br><br>先在有标号的数据集PDB里训练一个模型, 通过这个模型预测没有标号的数据形成一个大一些的数据集，然后选择置信度较高的数据，加上原来有标号的数据，训练新的模型<br>
-<br>Using an approach similar to noisy student self-distillation.
-<br>In this procedure, we use a trained network to predict the structure of around 350,000 diverse sequences from Uniclust3036 and make a new dataset of predicted structures filtered to a high-confidence subset.
-]]></description><link>https://blog.allenygy.vip/research/alphafold2.html</link><guid isPermaLink="false">Research/AlphaFold2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 06 Jul 2024 12:15:20 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="AlexNet" href="deeplearning/alexnet.html" class="internal-link" target="_self" rel="noopener">AlexNet</a>]]></title><description><![CDATA[ 
+<br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/research/bioinfo/ploidy-review.html</link><guid isPermaLink="false">Research/BioInfo/Ploidy-review.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 06 Jul 2024 11:55:13 GMT</pubDate></item><item><title><![CDATA[<a data-href="AlexNet" href="deeplearning/alexnet.html" class="internal-link" target="_self" rel="noopener">AlexNet</a>]]></title><description><![CDATA[ 
  <br><br>This paper doing the work of image classification, which is the first time that CNN is used in the field of image classification.]]></description><link>https://blog.allenygy.vip/deeplearning/alexnet.html</link><guid isPermaLink="false">DeepLearning/AlexNet.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 05 Jul 2024 06:03:32 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="Graph Network" data-href="Graph Network" href="deeplearning/graph-network.html" class="internal-link" target="_self" rel="noopener">A Gentle Introduction to Graph Neural Networks</a> <sup data-footnote-id="fnref-1-f0b6dba31b74855a" class="footnote-ref" id="fnref-1-f0b6dba31b74855a"><a data-footref="[inline0" href="#fn-1-f0b6dba31b74855a" class="footnote-link" target="_self" rel="noopener">[1]</a></sup>]]></title><description><![CDATA[ 
  <br><br>
 <br>
