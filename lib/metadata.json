@@ -1,6 +1,6 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1720971880867,
+  "lastExport": 1721136250585,
   "pluginVersion": "1.8.03",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd primary-accent-purple secondary-accent-green",
   "useCustomHeadContent": false,
@@ -37,20 +37,20 @@
     "Algorithm/String/Tire-Tree.md",
     "Algorithm/String/String-Overview.md",
     "Algorithm/String/Manacher-Algorithm.md",
-    "Algorithm/String/KMP.md",
     "Algorithm/String/Aho-Corasick.md",
+    "Algorithm/String/KMP.md",
     "Algorithm/Algorithm.md",
-    "Computer-Network/Assignment/DCN-Assignment1.md",
-    "Computer-Network/USTC-L1.md",
-    "Computer-Network/Transport-Layer.md",
-    "Computer-Network/Standardized-Networks.md",
-    "Computer-Network/Physical-Layer.md",
-    "Computer-Network/Network-Layer.md",
-    "Computer-Network/Dcn-Review.md",
-    "Computer-Network/Data-Link-Layer.md",
-    "Computer-Network/Computer-Network.md",
-    "Computer-Network/Basic-Concepts.md",
-    "Computer-Network/Application-Layer.md",
+    "Computer Network/Assignment/DCN-Assignment1.md",
+    "Computer Network/USTC L1.md",
+    "Computer Network/Transport Layer.md",
+    "Computer Network/Standardized Networks.md",
+    "Computer Network/Physical Layer.md",
+    "Computer Network/Network Layer.md",
+    "Computer Network/DCN Review.md",
+    "Computer Network/Data Link Layer.md",
+    "Computer Network/Computer Network.md",
+    "Computer Network/Basic Concepts.md",
+    "Computer Network/Application Layer.md",
     "Computer-Organization/Assignment/Assignment-1/logic.drawio",
     "Computer-Organization/Assignment/Assignment-1/CO-Assignment-1.md",
     "Computer-Organization/Assignment/Assignment-2/k-map.png",
@@ -67,8 +67,8 @@
     "Computer-Organization/Assignment/Assignment-4/CO-Assignment-4.md",
     "Computer-Organization/Draw/d-sr-latch.png",
     "Computer-Organization/Draw/d-sr-latch.drawio",
-    "Computer-Organization/Lab/Lab8.md",
     "Computer-Organization/Lab/Lab7.md",
+    "Computer-Organization/Lab/Lab8.md",
     "Computer-Organization/Lab/Lab6.md",
     "Computer-Organization/Lab/Lab5.md",
     "Computer-Organization/Lab/Lab3.md",
@@ -80,9 +80,9 @@
     "Computer-Organization/Lecture/Vonneumann-Architecture/cu.png",
     "Computer-Organization/Lecture/What-is-a-Computer.md",
     "Computer-Organization/Lecture/Microarchitecture.md",
+    "Computer-Organization/Lecture/From-Machine-Language-to-Assembly-Language.md",
     "Computer-Organization/Lecture/ISA.md",
     "Computer-Organization/Lecture/From-Transistors-to-Gates.md",
-    "Computer-Organization/Lecture/From-Machine-Language-to-Assembly-Language.md",
     "Computer-Organization/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits.md",
     "Computer-Organization/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.md",
     "Computer-Organization/Lecture/Finite-State-Machine.md",
@@ -95,56 +95,56 @@
     "Contest/Leetcode/Weekly-Contest-403.md",
     "Contest/Leetcode/Biweekly-contest-133.md",
     "Contest/Leetcode/Weekly-Contest-402.md",
-    "Contest/Leetcode/Biweekly-Contest-122.md",
     "Contest/Leetcode/Weekly-Contest-381.md",
     "Contest/Leetcode/Biweekly-Contest-123.md",
-    "Data-Analysis/HODA/Hans-On-Data-Analysis-For-Everyone.md",
-    "Data-Analysis/Data-Analysis.md",
-    "Database-Management-System/Application/MySQL+Redis.md",
-    "Database-Management-System/Assignment/NoSQL-Assignment-2.md",
-    "Database-Management-System/Assignment/NoSQL-Assignment-1.md",
-    "Database-Management-System/Assignment/RDBMS-Assignment-2.md",
-    "Database-Management-System/Assignment/RDBMS-Assignment-3.md",
-    "Database-Management-System/Assignment/RDBMS-Assignment-1.md",
-    "Database-Management-System/MySQL/Set-Operation-&-Where-Subquery.md",
-    "Database-Management-System/MySQL/Null-Subquery.md",
-    "Database-Management-System/MySQL/Join.md",
-    "Database-Management-System/MySQL/Division-and-Correlated-Subquery.md",
-    "Database-Management-System/MySQL/Data-Modification.md",
-    "Database-Management-System/MySQL/Data-Definition.md",
-    "Database-Management-System/MySQL/Cross-table-Query.md",
-    "Database-Management-System/MySQL/Basic-MySQL.md",
-    "Database-Management-System/MySQL/Aggregation.md",
-    "Database-Management-System/MySQL/Advanced-SQL.md",
-    "Database-Management-System/NoSQL/NoSQL-Review.md",
-    "Database-Management-System/NoSQL/NoSQL.md",
-    "Database-Management-System/NoSQL/Cassandra.md",
-    "Database-Management-System/NoSQL/Redis.md",
-    "Database-Management-System/NoSQL/MongoDB.md",
-    "Database-Management-System/NoSQL/Neo4j.md",
-    "Database-Management-System/RDBMS/Relational-Database-Design-Purpose-&-First-Normal-Form.md",
-    "Database-Management-System/RDBMS/Relational-Database-Design-Functional-Dependency.md",
-    "Database-Management-System/RDBMS/Relational-Database-Design-BCNF.md",
-    "Database-Management-System/RDBMS/Relational-Database-Design-3rd-Normal-Form.md",
-    "Database-Management-System/RDBMS/NormalForm.md",
-    "Database-Management-System/RDBMS/Logical-Design.md",
-    "Database-Management-System/RDBMS/Key-Concept.md",
-    "Database-Management-System/RDBMS/Entity-Relationship-Model-Modeling.md",
-    "Database-Management-System/RDBMS/Entity-Relationship-Model-Extended-Features.md",
-    "Database-Management-System/RDBMS/Entity-Relationship-Model-Constraints.md",
-    "Database-Management-System/RDBMS/Design-Issues.md",
-    "Database-Management-System/Database-Management-System.md",
-    "DeepLearning/ERNIE.md",
-    "DeepLearning/Bert.md",
-    "DeepLearning/Prompting and In Context Learning.md",
-    "DeepLearning/AlexNet.md",
-    "DeepLearning/PEFT.md",
-    "DeepLearning/Attention.md",
-    "DeepLearning/Deep Learning.md",
-    "DeepLearning/Graph Network.md",
-    "DeepLearning/Gradient Descent.md",
-    "DeepLearning/Back Propagation.md",
-    "DeepLearning/Activation Function.md",
+    "Contest/Leetcode/Biweekly-Contest-122.md",
+    "Data Analysis/HODA/Hans-On-Data-Analysis-For-Everyone.md",
+    "Data Analysis/Data Analysis.md",
+    "Database Management System/Application/MySQL+Redis.md",
+    "Database Management System/Assignment/NoSQL-Assignment-2.md",
+    "Database Management System/Assignment/NoSQL-Assignment-1.md",
+    "Database Management System/Assignment/RDBMS-Assignment-2.md",
+    "Database Management System/Assignment/RDBMS-Assignment-3.md",
+    "Database Management System/Assignment/RDBMS-Assignment-1.md",
+    "Database Management System/MySQL/Set-Operation-&-Where-Subquery.md",
+    "Database Management System/MySQL/Null-Subquery.md",
+    "Database Management System/MySQL/Join.md",
+    "Database Management System/MySQL/Division-and-Correlated-Subquery.md",
+    "Database Management System/MySQL/Data-Modification.md",
+    "Database Management System/MySQL/Data-Definition.md",
+    "Database Management System/MySQL/Cross-table-Query.md",
+    "Database Management System/MySQL/Basic-MySQL.md",
+    "Database Management System/MySQL/Aggregation.md",
+    "Database Management System/MySQL/Advanced-SQL.md",
+    "Database Management System/NoSQL/NoSQL-Review.md",
+    "Database Management System/NoSQL/NoSQL.md",
+    "Database Management System/NoSQL/Cassandra.md",
+    "Database Management System/NoSQL/Redis.md",
+    "Database Management System/NoSQL/MongoDB.md",
+    "Database Management System/NoSQL/Neo4j.md",
+    "Database Management System/RDBMS/Relational-Database-Design-Purpose-&-First-Normal-Form.md",
+    "Database Management System/RDBMS/Relational-Database-Design-Functional-Dependency.md",
+    "Database Management System/RDBMS/Relational-Database-Design-BCNF.md",
+    "Database Management System/RDBMS/Relational-Database-Design-3rd-Normal-Form.md",
+    "Database Management System/RDBMS/NormalForm.md",
+    "Database Management System/RDBMS/Logical-Design.md",
+    "Database Management System/RDBMS/Key-Concept.md",
+    "Database Management System/RDBMS/Entity-Relationship-Model-Modeling.md",
+    "Database Management System/RDBMS/Entity-Relationship-Model-Extended-Features.md",
+    "Database Management System/RDBMS/Entity-Relationship-Model-Constraints.md",
+    "Database Management System/RDBMS/Design-Issues.md",
+    "Database Management System/Database-Management-System.md",
+    "Deep Learning/ERNIE.md",
+    "Deep Learning/Bert.md",
+    "Deep Learning/Prompting and In Context Learning.md",
+    "Deep Learning/AlexNet.md",
+    "Deep Learning/PEFT.md",
+    "Deep Learning/Attention.md",
+    "Deep Learning/Deep Learning.md",
+    "Deep Learning/Graph Network.md",
+    "Deep Learning/Gradient Descent.md",
+    "Deep Learning/Back Propagation.md",
+    "Deep Learning/Activation Function.md",
     "Math/Discrete-Structure/assignment/discrete-mathematics-tutorial.md",
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-8.md",
     "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-7.md",
@@ -177,19 +177,19 @@
     "Math/Probability-Statistics/Confidence-Interval.md",
     "Math/Probability-Statistics/Chi-Square-Tests.md",
     "Math/Math.md",
-    "OperatingSystem/Virtual-Memory.md",
-    "OperatingSystem/Threads.md",
-    "OperatingSystem/Process.md",
-    "OperatingSystem/Process-Synchronization.md",
-    "OperatingSystem/Operating-System.md",
-    "OperatingSystem/Operating-System-Structure.md",
-    "OperatingSystem/Operating-System-Introduction.md",
-    "OperatingSystem/Main-Memory.md",
-    "OperatingSystem/NJU-OS-PA0.md",
-    "OperatingSystem/Linux-Basic-Operation.md",
-    "OperatingSystem/File-System-Interface.md",
-    "OperatingSystem/File-System-Implementation.md",
-    "OperatingSystem/Cpu-Scheduling.md",
+    "Operating System/Virtual Memory.md",
+    "Operating System/Threads.md",
+    "Operating System/Process Synchronization.md",
+    "Operating System/Process.md",
+    "Operating System/Operating System Introduction.md",
+    "Operating System/Operating System.md",
+    "Operating System/Operating System Structure.md",
+    "Operating System/Main Memory.md",
+    "Operating System/NJU OS PA0.md",
+    "Operating System/File System Implementation.md",
+    "Operating System/File System Interface.md",
+    "Operating System/Linux Basic Operation.md",
+    "Operating System/Cpu Scheduling.md",
     "Program/C/Multithreads.md",
     "Program/C/Pointers.md",
     "Program/C/Macro.md",
@@ -200,8 +200,8 @@
     "Program/Cpp/Map.md",
     "Program/Cpp/Algorithm-Library.md",
     "Program/Java/Generics/generics.java",
-    "Program/Java/Interfaces/usb.java",
     "Program/Java/Interfaces/testdemo.java",
+    "Program/Java/Interfaces/usb.java",
     "Program/Java/Interfaces/printer.java",
     "Program/Java/Interfaces/phone.java",
     "Program/Java/Interfaces/computer.java",
@@ -214,35 +214,34 @@
     "Program/Java/Lecture/Array-and-Generics.md",
     "Program/Java/Lecture/Abstract-Methods-and-Classes-Interfaces.md",
     "Program/Java/test/usb.java",
-    "Program/Java/test/printer.java",
     "Program/Java/test/testdemo.java",
-    "Program/Java/test/phone.java",
+    "Program/Java/test/printer.java",
     "Program/Java/test/computer.java",
+    "Program/Java/test/phone.java",
     "Program/Java/tostringandequalsmethods/test4.java",
     "Program/Java/tostringandequalsmethods/test3.java",
     "Program/Java/tostringandequalsmethods/test2.java",
     "Program/Java/tostringandequalsmethods/student.java",
     "Program/Java/tostringandequalsmethods/person.java",
     "Program/Javascript/quick-start.md",
-    "Program/python/regularexpression.md",
-    "Program/python/pythonbasic.md",
-    "Program/python/python-exceptions.md",
-    "Program/python/python-environment-management.md",
-    "Program/python/pandas.md",
-    "Program/python/numpy.md",
-    "Program/python/matplotlib.md",
-    "Program/python/datetime.md",
-    "Program/python/beautifulsoup.md",
+    "Program/Python/regularexpression.md",
+    "Program/Python/pythonbasic.md",
+    "Program/Python/python-exceptions.md",
+    "Program/Python/python-environment-management.md",
+    "Program/Python/pandas.md",
+    "Program/Python/numpy.md",
+    "Program/Python/matplotlib.md",
+    "Program/Python/datetime.md",
+    "Program/Python/beautifulsoup.md",
     "Program/R/R-Data-Structure.md",
     "Program/R/Basic-R.md",
-    "Program/ProgramLanguage.md",
-    "Projects/DBM/Database-Management-System.md",
+    "Program/Program Language.md",
+    "Projects/DBM/Database Management System.md",
     "Projects/DCN/Chat-Application.md",
-    "Projects/DPW/ERNIE-Fine-Tuning.md",
     "Projects/DPW/BilibiliVista-Pre.pdf",
     "Projects/DPW/Movie-Data-Analysis.md",
     "Projects/DPW/BilibiliVista.md",
-    "Projects/DPW/system-Design-Specification.md",
+    "Projects/DPW/System-Design-Specification.md",
     "Projects/DPW/Data-Programming-Workshop.md",
     "Research/BioInfo/Ploidy.md",
     "Research/BioInfo/Ploidy-review.md",
@@ -375,217 +374,217 @@
   ],
   "fileInfo": {
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
@@ -597,13 +596,13 @@
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1720971880867,
-      "sourceSize": 313619,
+      "modifiedTime": 1721136250585,
+      "sourceSize": 313602,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
@@ -639,19 +638,19 @@
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
@@ -663,49 +662,49 @@
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 151725,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 316784,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 1014,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 2101009,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
@@ -932,75 +931,21 @@
       "exportedPath": "computer-organization/computer-organization.html",
       "dependencies": []
     },
-    "Program/python/regularexpression.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 198,
-      "exportedPath": "program/python/regularexpression.html",
-      "dependencies": []
-    },
-    "Program/python/pythonbasic.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 2940,
-      "exportedPath": "program/python/pythonbasic.html",
-      "dependencies": []
-    },
-    "Program/python/python-exceptions.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 12905,
-      "exportedPath": "program/python/python-exceptions.html",
-      "dependencies": []
-    },
-    "Program/python/python-environment-management.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 415,
-      "exportedPath": "program/python/python-environment-management.html",
-      "dependencies": []
-    },
-    "Program/python/pandas.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 176,
-      "exportedPath": "program/python/pandas.html",
-      "dependencies": []
-    },
-    "Program/python/numpy.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 25422,
-      "exportedPath": "program/python/numpy.html",
-      "dependencies": []
-    },
-    "Program/python/matplotlib.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 184,
-      "exportedPath": "program/python/matplotlib.html",
-      "dependencies": []
-    },
-    "Program/python/datetime.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 11921,
-      "exportedPath": "program/python/datetime.html",
-      "dependencies": []
-    },
-    "Program/python/beautifulsoup.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 190,
-      "exportedPath": "program/python/beautifulsoup.html",
-      "dependencies": []
-    },
     "Archive.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 11584,
+      "modifiedTime": 1721136250585,
+      "sourceSize": 11203,
       "exportedPath": "archive.html",
       "dependencies": []
     },
     "Class.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 14188,
+      "modifiedTime": 1721136250585,
+      "sourceSize": 13807,
       "exportedPath": "class.html",
       "dependencies": []
     },
     "Home.md": {
-      "modifiedTime": 1720971880867,
-      "sourceSize": 3363,
+      "modifiedTime": 1721136250585,
+      "sourceSize": 3362,
       "exportedPath": "home.html",
       "dependencies": []
     },
@@ -1038,24 +983,6 @@
       "modifiedTime": 1719483807752,
       "sourceSize": 2672,
       "exportedPath": "contest/leetcode/biweekly-contest-122.html",
-      "dependencies": []
-    },
-    "Data-Analysis/HODA/Hans-On-Data-Analysis-For-Everyone.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 12618,
-      "exportedPath": "data-analysis/hoda/hans-on-data-analysis-for-everyone.html",
-      "dependencies": []
-    },
-    "Data-Analysis/Data-Analysis.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 247,
-      "exportedPath": "data-analysis/data-analysis.html",
-      "dependencies": []
-    },
-    "Computer-Network/USTC-L1.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 2284,
-      "exportedPath": "computer-network/ustc-l1.html",
       "dependencies": []
     },
     "Math/Math.md": {
@@ -1274,78 +1201,6 @@
       "exportedPath": "math/probability-statistics/chi-square-tests.html",
       "dependencies": []
     },
-    "OperatingSystem/Virtual-Memory.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 7242,
-      "exportedPath": "operatingsystem/virtual-memory.html",
-      "dependencies": []
-    },
-    "OperatingSystem/Threads.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 18753,
-      "exportedPath": "operatingsystem/threads.html",
-      "dependencies": []
-    },
-    "OperatingSystem/Process.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 17026,
-      "exportedPath": "operatingsystem/process.html",
-      "dependencies": []
-    },
-    "OperatingSystem/Process-Synchronization.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 29248,
-      "exportedPath": "operatingsystem/process-synchronization.html",
-      "dependencies": []
-    },
-    "OperatingSystem/Operating-System-Structure.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 10901,
-      "exportedPath": "operatingsystem/operating-system-structure.html",
-      "dependencies": []
-    },
-    "OperatingSystem/Operating-System-Introduction.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 21642,
-      "exportedPath": "operatingsystem/operating-system-introduction.html",
-      "dependencies": []
-    },
-    "OperatingSystem/NJU-OS-PA0.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 5695,
-      "exportedPath": "operatingsystem/nju-os-pa0.html",
-      "dependencies": []
-    },
-    "OperatingSystem/Main-Memory.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 1931,
-      "exportedPath": "operatingsystem/main-memory.html",
-      "dependencies": []
-    },
-    "OperatingSystem/Linux-Basic-Operation.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 4167,
-      "exportedPath": "operatingsystem/linux-basic-operation.html",
-      "dependencies": []
-    },
-    "OperatingSystem/File-System-Interface.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 9254,
-      "exportedPath": "operatingsystem/file-system-interface.html",
-      "dependencies": []
-    },
-    "OperatingSystem/File-System-Implementation.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 1454,
-      "exportedPath": "operatingsystem/file-system-implementation.html",
-      "dependencies": []
-    },
-    "OperatingSystem/Cpu-Scheduling.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 27185,
-      "exportedPath": "operatingsystem/cpu-scheduling.html",
-      "dependencies": []
-    },
     "Program/C/Pointers.md": {
       "modifiedTime": 1719483807752,
       "sourceSize": 176,
@@ -1562,12 +1417,6 @@
       "exportedPath": "program/r/basic-r.html",
       "dependencies": []
     },
-    "Program/ProgramLanguage.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 568,
-      "exportedPath": "program/programlanguage.html",
-      "dependencies": []
-    },
     "Tools/Conda/Conda.md": {
       "modifiedTime": 1719497474231,
       "sourceSize": 2817,
@@ -1644,60 +1493,6 @@
       "modifiedTime": 1719483807752,
       "sourceSize": 1270,
       "exportedPath": "web/vue/vue-application.html",
-      "dependencies": []
-    },
-    "Computer-Network/Assignment/DCN-Assignment1.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 6592,
-      "exportedPath": "computer-network/assignment/dcn-assignment1.html",
-      "dependencies": []
-    },
-    "Computer-Network/Transport-Layer.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 2135,
-      "exportedPath": "computer-network/transport-layer.html",
-      "dependencies": []
-    },
-    "Computer-Network/Standardized-Networks.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 4696,
-      "exportedPath": "computer-network/standardized-networks.html",
-      "dependencies": []
-    },
-    "Computer-Network/Physical-Layer.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 1563,
-      "exportedPath": "computer-network/physical-layer.html",
-      "dependencies": []
-    },
-    "Computer-Network/Network-Layer.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 8171,
-      "exportedPath": "computer-network/network-layer.html",
-      "dependencies": []
-    },
-    "Computer-Network/Dcn-Review.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 12803,
-      "exportedPath": "computer-network/dcn-review.html",
-      "dependencies": []
-    },
-    "Computer-Network/Data-Link-Layer.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 9014,
-      "exportedPath": "computer-network/data-link-layer.html",
-      "dependencies": []
-    },
-    "Computer-Network/Basic-Concepts.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 15545,
-      "exportedPath": "computer-network/basic-concepts.html",
-      "dependencies": []
-    },
-    "Computer-Network/Application-Layer.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 200,
-      "exportedPath": "computer-network/application-layer.html",
       "dependencies": []
     },
     "Computer-Organization/Lecture/Vonneumann-Architecture/register.png": {
@@ -1808,20 +1603,8 @@
       "exportedPath": "algorithm/algorithm.html",
       "dependencies": []
     },
-    "Computer-Network/Computer-Network.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 684,
-      "exportedPath": "computer-network/computer-network.html",
-      "dependencies": []
-    },
-    "OperatingSystem/Operating-System.md": {
-      "modifiedTime": 1719483807752,
-      "sourceSize": 663,
-      "exportedPath": "operatingsystem/operating-system.html",
-      "dependencies": []
-    },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1720971880867,
+      "modifiedTime": 1721136250585,
       "sourceSize": 12703,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
@@ -2162,12 +1945,6 @@
       "exportedPath": "projects/dpw/ppt/slide19.png",
       "dependencies": []
     },
-    "Projects/DBM/Database-Management-System.md": {
-      "modifiedTime": 1719501594145,
-      "sourceSize": 10216,
-      "exportedPath": "projects/dbm/database-management-system.html",
-      "dependencies": []
-    },
     "Projects/DCN/Chat-Application.md": {
       "modifiedTime": 1719501594145,
       "sourceSize": 4065,
@@ -2178,12 +1955,6 @@
       "modifiedTime": 1719501594145,
       "sourceSize": 1048,
       "exportedPath": "projects/dpw/movie-data-analysis.html",
-      "dependencies": []
-    },
-    "Projects/DPW/system-Design-Specification.md": {
-      "modifiedTime": 1719501594145,
-      "sourceSize": 5276,
-      "exportedPath": "projects/dpw/system-design-specification.html",
       "dependencies": []
     },
     "Projects/DPW/Data-Programming-Workshop.md": {
@@ -2202,48 +1973,6 @@
       "modifiedTime": 1720949534570,
       "sourceSize": 11637,
       "exportedPath": "projects/dpw/bilibilivista.html",
-      "dependencies": []
-    },
-    "DeepLearning/Attention.md": {
-      "modifiedTime": 1720094833053,
-      "sourceSize": 429,
-      "exportedPath": "deeplearning/attention.html",
-      "dependencies": []
-    },
-    "DeepLearning/AlexNet.md": {
-      "modifiedTime": 1720252388477,
-      "sourceSize": 282,
-      "exportedPath": "deeplearning/alexnet.html",
-      "dependencies": []
-    },
-    "DeepLearning/Deep Learning.md": {
-      "modifiedTime": 1720349638725,
-      "sourceSize": 704,
-      "exportedPath": "deeplearning/deep-learning.html",
-      "dependencies": []
-    },
-    "DeepLearning/Graph Network.md": {
-      "modifiedTime": 1720252388477,
-      "sourceSize": 332,
-      "exportedPath": "deeplearning/graph-network.html",
-      "dependencies": []
-    },
-    "DeepLearning/Gradient Descent.md": {
-      "modifiedTime": 1720252388477,
-      "sourceSize": 453,
-      "exportedPath": "deeplearning/gradient-descent.html",
-      "dependencies": []
-    },
-    "DeepLearning/Back Propagation.md": {
-      "modifiedTime": 1720252388477,
-      "sourceSize": 341,
-      "exportedPath": "deeplearning/back-propagation.html",
-      "dependencies": []
-    },
-    "DeepLearning/Activation Function.md": {
-      "modifiedTime": 1720348910471,
-      "sourceSize": 2574,
-      "exportedPath": "deeplearning/activation-function.html",
       "dependencies": []
     },
     "Research/BioInfo/Ploidy.md": {
@@ -2372,250 +2101,514 @@
       "exportedPath": "computer-organization/draw/d-sr-latch.drawio",
       "dependencies": []
     },
-    "DeepLearning/Bert.md": {
-      "modifiedTime": 1720349222971,
-      "sourceSize": 237,
-      "exportedPath": "deeplearning/bert.html",
-      "dependencies": []
-    },
-    "DeepLearning/PEFT.md": {
-      "modifiedTime": 1720348910471,
-      "sourceSize": 1810,
-      "exportedPath": "deeplearning/peft.html",
-      "dependencies": []
-    },
-    "DeepLearning/Prompting and In Context Learning.md": {
-      "modifiedTime": 1720349638725,
-      "sourceSize": 2789,
-      "exportedPath": "deeplearning/prompting-and-in-context-learning.html",
-      "dependencies": []
-    },
     "Research/Read Paper Process.md": {
       "modifiedTime": 1720349638725,
       "sourceSize": 392,
       "exportedPath": "research/read-paper-process.html",
       "dependencies": []
     },
-    "Database-Management-System/Application/MySQL+Redis.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 2360,
-      "exportedPath": "database-management-system/application/mysql+redis.html",
-      "dependencies": []
-    },
-    "Database-Management-System/Assignment/NoSQL-Assignment-2.md": {
-      "modifiedTime": 1720971880867,
-      "sourceSize": 4671,
-      "exportedPath": "database-management-system/assignment/nosql-assignment-2.html",
-      "dependencies": []
-    },
-    "Database-Management-System/Assignment/NoSQL-Assignment-1.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 9063,
-      "exportedPath": "database-management-system/assignment/nosql-assignment-1.html",
-      "dependencies": []
-    },
-    "Database-Management-System/Assignment/RDBMS-Assignment-2.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 4191,
-      "exportedPath": "database-management-system/assignment/rdbms-assignment-2.html",
-      "dependencies": []
-    },
-    "Database-Management-System/Assignment/RDBMS-Assignment-3.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 4717,
-      "exportedPath": "database-management-system/assignment/rdbms-assignment-3.html",
-      "dependencies": []
-    },
-    "Database-Management-System/Assignment/RDBMS-Assignment-1.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 3892,
-      "exportedPath": "database-management-system/assignment/rdbms-assignment-1.html",
-      "dependencies": []
-    },
-    "Database-Management-System/MySQL/Set-Operation-&-Where-Subquery.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 3275,
-      "exportedPath": "database-management-system/mysql/set-operation-&-where-subquery.html",
-      "dependencies": []
-    },
-    "Database-Management-System/MySQL/Null-Subquery.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 2231,
-      "exportedPath": "database-management-system/mysql/null-subquery.html",
-      "dependencies": []
-    },
-    "Database-Management-System/MySQL/Join.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 4636,
-      "exportedPath": "database-management-system/mysql/join.html",
-      "dependencies": []
-    },
-    "Database-Management-System/MySQL/Division-and-Correlated-Subquery.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 3461,
-      "exportedPath": "database-management-system/mysql/division-and-correlated-subquery.html",
-      "dependencies": []
-    },
-    "Database-Management-System/MySQL/Data-Modification.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 3245,
-      "exportedPath": "database-management-system/mysql/data-modification.html",
-      "dependencies": []
-    },
-    "Database-Management-System/MySQL/Data-Definition.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 3356,
-      "exportedPath": "database-management-system/mysql/data-definition.html",
-      "dependencies": []
-    },
-    "Database-Management-System/MySQL/Cross-table-Query.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 845,
-      "exportedPath": "database-management-system/mysql/cross-table-query.html",
-      "dependencies": []
-    },
-    "Database-Management-System/MySQL/Basic-MySQL.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 2013,
-      "exportedPath": "database-management-system/mysql/basic-mysql.html",
-      "dependencies": []
-    },
-    "Database-Management-System/MySQL/Aggregation.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 2536,
-      "exportedPath": "database-management-system/mysql/aggregation.html",
-      "dependencies": []
-    },
-    "Database-Management-System/MySQL/Advanced-SQL.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 1370,
-      "exportedPath": "database-management-system/mysql/advanced-sql.html",
-      "dependencies": []
-    },
-    "Database-Management-System/NoSQL/NoSQL-Review.md": {
-      "modifiedTime": 1720971880867,
-      "sourceSize": 19666,
-      "exportedPath": "database-management-system/nosql/nosql-review.html",
-      "dependencies": []
-    },
-    "Database-Management-System/NoSQL/NoSQL.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 6494,
-      "exportedPath": "database-management-system/nosql/nosql.html",
-      "dependencies": []
-    },
-    "Database-Management-System/NoSQL/Cassandra.md": {
-      "modifiedTime": 1720971880867,
-      "sourceSize": 3128,
-      "exportedPath": "database-management-system/nosql/cassandra.html",
-      "dependencies": []
-    },
-    "Database-Management-System/NoSQL/Redis.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 15412,
-      "exportedPath": "database-management-system/nosql/redis.html",
-      "dependencies": []
-    },
-    "Database-Management-System/NoSQL/MongoDB.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 212,
-      "exportedPath": "database-management-system/nosql/mongodb.html",
-      "dependencies": []
-    },
-    "Database-Management-System/NoSQL/Neo4j.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 7712,
-      "exportedPath": "database-management-system/nosql/neo4j.html",
-      "dependencies": []
-    },
-    "Database-Management-System/RDBMS/Relational-Database-Design-Purpose-&-First-Normal-Form.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 1467,
-      "exportedPath": "database-management-system/rdbms/relational-database-design-purpose-&-first-normal-form.html",
-      "dependencies": []
-    },
-    "Database-Management-System/RDBMS/Relational-Database-Design-Functional-Dependency.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 3489,
-      "exportedPath": "database-management-system/rdbms/relational-database-design-functional-dependency.html",
-      "dependencies": []
-    },
-    "Database-Management-System/RDBMS/Relational-Database-Design-BCNF.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 1396,
-      "exportedPath": "database-management-system/rdbms/relational-database-design-bcnf.html",
-      "dependencies": []
-    },
-    "Database-Management-System/RDBMS/Relational-Database-Design-3rd-Normal-Form.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 706,
-      "exportedPath": "database-management-system/rdbms/relational-database-design-3rd-normal-form.html",
-      "dependencies": []
-    },
-    "Database-Management-System/RDBMS/NormalForm.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 636,
-      "exportedPath": "database-management-system/rdbms/normalform.html",
-      "dependencies": []
-    },
-    "Database-Management-System/RDBMS/Logical-Design.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 4224,
-      "exportedPath": "database-management-system/rdbms/logical-design.html",
-      "dependencies": []
-    },
-    "Database-Management-System/RDBMS/Key-Concept.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 1632,
-      "exportedPath": "database-management-system/rdbms/key-concept.html",
-      "dependencies": []
-    },
-    "Database-Management-System/RDBMS/Entity-Relationship-Model-Modeling.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 5416,
-      "exportedPath": "database-management-system/rdbms/entity-relationship-model-modeling.html",
-      "dependencies": []
-    },
-    "Database-Management-System/RDBMS/Entity-Relationship-Model-Extended-Features.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 4780,
-      "exportedPath": "database-management-system/rdbms/entity-relationship-model-extended-features.html",
-      "dependencies": []
-    },
-    "Database-Management-System/RDBMS/Entity-Relationship-Model-Constraints.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 3653,
-      "exportedPath": "database-management-system/rdbms/entity-relationship-model-constraints.html",
-      "dependencies": []
-    },
-    "Database-Management-System/RDBMS/Design-Issues.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 1338,
-      "exportedPath": "database-management-system/rdbms/design-issues.html",
-      "dependencies": []
-    },
-    "Database-Management-System/Database-Management-System.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 1464,
-      "exportedPath": "database-management-system/database-management-system.html",
-      "dependencies": []
-    },
-    "DeepLearning/ERNIE.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 224,
-      "exportedPath": "deeplearning/ernie.html",
-      "dependencies": []
-    },
-    "Projects/DPW/ERNIE-Fine-Tuning.md": {
-      "modifiedTime": 1720949534570,
-      "sourceSize": 201,
-      "exportedPath": "projects/dpw/ernie-fine-tuning.html",
-      "dependencies": []
-    },
     "Research/SQL and NoSQL Integration.md": {
       "modifiedTime": 1720971880867,
       "sourceSize": 6536,
       "exportedPath": "research/sql-and-nosql-integration.html",
+      "dependencies": []
+    },
+    "Computer Network/Assignment/DCN-Assignment1.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 6592,
+      "exportedPath": "computer-network/assignment/dcn-assignment1.html",
+      "dependencies": []
+    },
+    "Computer Network/USTC L1.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 2284,
+      "exportedPath": "computer-network/ustc-l1.html",
+      "dependencies": []
+    },
+    "Computer Network/Transport Layer.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 2135,
+      "exportedPath": "computer-network/transport-layer.html",
+      "dependencies": []
+    },
+    "Computer Network/Standardized Networks.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 4696,
+      "exportedPath": "computer-network/standardized-networks.html",
+      "dependencies": []
+    },
+    "Computer Network/Physical Layer.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 1563,
+      "exportedPath": "computer-network/physical-layer.html",
+      "dependencies": []
+    },
+    "Computer Network/Network Layer.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 8171,
+      "exportedPath": "computer-network/network-layer.html",
+      "dependencies": []
+    },
+    "Computer Network/DCN Review.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 12803,
+      "exportedPath": "computer-network/dcn-review.html",
+      "dependencies": []
+    },
+    "Computer Network/Data Link Layer.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 9014,
+      "exportedPath": "computer-network/data-link-layer.html",
+      "dependencies": []
+    },
+    "Computer Network/Computer Network.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 684,
+      "exportedPath": "computer-network/computer-network.html",
+      "dependencies": []
+    },
+    "Computer Network/Basic Concepts.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 15545,
+      "exportedPath": "computer-network/basic-concepts.html",
+      "dependencies": []
+    },
+    "Computer Network/Application Layer.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 200,
+      "exportedPath": "computer-network/application-layer.html",
+      "dependencies": []
+    },
+    "Data Analysis/HODA/Hans-On-Data-Analysis-For-Everyone.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 12618,
+      "exportedPath": "data-analysis/hoda/hans-on-data-analysis-for-everyone.html",
+      "dependencies": []
+    },
+    "Data Analysis/Data Analysis.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 247,
+      "exportedPath": "data-analysis/data-analysis.html",
+      "dependencies": []
+    },
+    "Database Management System/Application/MySQL+Redis.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 2360,
+      "exportedPath": "database-management-system/application/mysql+redis.html",
+      "dependencies": []
+    },
+    "Database Management System/Assignment/NoSQL-Assignment-2.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 4671,
+      "exportedPath": "database-management-system/assignment/nosql-assignment-2.html",
+      "dependencies": []
+    },
+    "Database Management System/Assignment/NoSQL-Assignment-1.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 9063,
+      "exportedPath": "database-management-system/assignment/nosql-assignment-1.html",
+      "dependencies": []
+    },
+    "Database Management System/Assignment/RDBMS-Assignment-2.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 4191,
+      "exportedPath": "database-management-system/assignment/rdbms-assignment-2.html",
+      "dependencies": []
+    },
+    "Database Management System/Assignment/RDBMS-Assignment-3.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 4717,
+      "exportedPath": "database-management-system/assignment/rdbms-assignment-3.html",
+      "dependencies": []
+    },
+    "Database Management System/Assignment/RDBMS-Assignment-1.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 3892,
+      "exportedPath": "database-management-system/assignment/rdbms-assignment-1.html",
+      "dependencies": []
+    },
+    "Database Management System/MySQL/Set-Operation-&-Where-Subquery.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 3275,
+      "exportedPath": "database-management-system/mysql/set-operation-&-where-subquery.html",
+      "dependencies": []
+    },
+    "Database Management System/MySQL/Null-Subquery.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 2231,
+      "exportedPath": "database-management-system/mysql/null-subquery.html",
+      "dependencies": []
+    },
+    "Database Management System/MySQL/Join.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 4636,
+      "exportedPath": "database-management-system/mysql/join.html",
+      "dependencies": []
+    },
+    "Database Management System/MySQL/Division-and-Correlated-Subquery.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 3461,
+      "exportedPath": "database-management-system/mysql/division-and-correlated-subquery.html",
+      "dependencies": []
+    },
+    "Database Management System/MySQL/Data-Modification.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 3245,
+      "exportedPath": "database-management-system/mysql/data-modification.html",
+      "dependencies": []
+    },
+    "Database Management System/MySQL/Data-Definition.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 3356,
+      "exportedPath": "database-management-system/mysql/data-definition.html",
+      "dependencies": []
+    },
+    "Database Management System/MySQL/Cross-table-Query.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 845,
+      "exportedPath": "database-management-system/mysql/cross-table-query.html",
+      "dependencies": []
+    },
+    "Database Management System/MySQL/Basic-MySQL.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 2013,
+      "exportedPath": "database-management-system/mysql/basic-mysql.html",
+      "dependencies": []
+    },
+    "Database Management System/MySQL/Aggregation.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 2536,
+      "exportedPath": "database-management-system/mysql/aggregation.html",
+      "dependencies": []
+    },
+    "Database Management System/MySQL/Advanced-SQL.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 1370,
+      "exportedPath": "database-management-system/mysql/advanced-sql.html",
+      "dependencies": []
+    },
+    "Database Management System/NoSQL/NoSQL-Review.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 19644,
+      "exportedPath": "database-management-system/nosql/nosql-review.html",
+      "dependencies": []
+    },
+    "Database Management System/NoSQL/NoSQL.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 6494,
+      "exportedPath": "database-management-system/nosql/nosql.html",
+      "dependencies": []
+    },
+    "Database Management System/NoSQL/Cassandra.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 3128,
+      "exportedPath": "database-management-system/nosql/cassandra.html",
+      "dependencies": []
+    },
+    "Database Management System/NoSQL/Redis.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 15357,
+      "exportedPath": "database-management-system/nosql/redis.html",
+      "dependencies": []
+    },
+    "Database Management System/NoSQL/MongoDB.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 212,
+      "exportedPath": "database-management-system/nosql/mongodb.html",
+      "dependencies": []
+    },
+    "Database Management System/NoSQL/Neo4j.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 7712,
+      "exportedPath": "database-management-system/nosql/neo4j.html",
+      "dependencies": []
+    },
+    "Database Management System/RDBMS/Relational-Database-Design-Purpose-&-First-Normal-Form.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 1467,
+      "exportedPath": "database-management-system/rdbms/relational-database-design-purpose-&-first-normal-form.html",
+      "dependencies": []
+    },
+    "Database Management System/RDBMS/Relational-Database-Design-Functional-Dependency.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 3489,
+      "exportedPath": "database-management-system/rdbms/relational-database-design-functional-dependency.html",
+      "dependencies": []
+    },
+    "Database Management System/RDBMS/Relational-Database-Design-BCNF.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 1396,
+      "exportedPath": "database-management-system/rdbms/relational-database-design-bcnf.html",
+      "dependencies": []
+    },
+    "Database Management System/RDBMS/Relational-Database-Design-3rd-Normal-Form.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 706,
+      "exportedPath": "database-management-system/rdbms/relational-database-design-3rd-normal-form.html",
+      "dependencies": []
+    },
+    "Database Management System/RDBMS/NormalForm.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 636,
+      "exportedPath": "database-management-system/rdbms/normalform.html",
+      "dependencies": []
+    },
+    "Database Management System/RDBMS/Logical-Design.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 4224,
+      "exportedPath": "database-management-system/rdbms/logical-design.html",
+      "dependencies": []
+    },
+    "Database Management System/RDBMS/Key-Concept.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 1632,
+      "exportedPath": "database-management-system/rdbms/key-concept.html",
+      "dependencies": []
+    },
+    "Database Management System/RDBMS/Entity-Relationship-Model-Modeling.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 5416,
+      "exportedPath": "database-management-system/rdbms/entity-relationship-model-modeling.html",
+      "dependencies": []
+    },
+    "Database Management System/RDBMS/Entity-Relationship-Model-Extended-Features.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 4780,
+      "exportedPath": "database-management-system/rdbms/entity-relationship-model-extended-features.html",
+      "dependencies": []
+    },
+    "Database Management System/RDBMS/Entity-Relationship-Model-Constraints.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 3653,
+      "exportedPath": "database-management-system/rdbms/entity-relationship-model-constraints.html",
+      "dependencies": []
+    },
+    "Database Management System/RDBMS/Design-Issues.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 1338,
+      "exportedPath": "database-management-system/rdbms/design-issues.html",
+      "dependencies": []
+    },
+    "Database Management System/Database-Management-System.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 1437,
+      "exportedPath": "database-management-system/database-management-system.html",
+      "dependencies": []
+    },
+    "Deep Learning/ERNIE.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 224,
+      "exportedPath": "deep-learning/ernie.html",
+      "dependencies": []
+    },
+    "Deep Learning/Bert.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 237,
+      "exportedPath": "deep-learning/bert.html",
+      "dependencies": []
+    },
+    "Deep Learning/Prompting and In Context Learning.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 2789,
+      "exportedPath": "deep-learning/prompting-and-in-context-learning.html",
+      "dependencies": []
+    },
+    "Deep Learning/AlexNet.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 282,
+      "exportedPath": "deep-learning/alexnet.html",
+      "dependencies": []
+    },
+    "Deep Learning/PEFT.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 1810,
+      "exportedPath": "deep-learning/peft.html",
+      "dependencies": []
+    },
+    "Deep Learning/Attention.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 429,
+      "exportedPath": "deep-learning/attention.html",
+      "dependencies": []
+    },
+    "Deep Learning/Deep Learning.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 560,
+      "exportedPath": "deep-learning/deep-learning.html",
+      "dependencies": []
+    },
+    "Deep Learning/Graph Network.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 332,
+      "exportedPath": "deep-learning/graph-network.html",
+      "dependencies": []
+    },
+    "Deep Learning/Gradient Descent.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 453,
+      "exportedPath": "deep-learning/gradient-descent.html",
+      "dependencies": []
+    },
+    "Deep Learning/Back Propagation.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 341,
+      "exportedPath": "deep-learning/back-propagation.html",
+      "dependencies": []
+    },
+    "Deep Learning/Activation Function.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 2574,
+      "exportedPath": "deep-learning/activation-function.html",
+      "dependencies": []
+    },
+    "Operating System/Virtual Memory.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 7242,
+      "exportedPath": "operating-system/virtual-memory.html",
+      "dependencies": []
+    },
+    "Operating System/Threads.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 18753,
+      "exportedPath": "operating-system/threads.html",
+      "dependencies": []
+    },
+    "Operating System/Process Synchronization.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 29248,
+      "exportedPath": "operating-system/process-synchronization.html",
+      "dependencies": []
+    },
+    "Operating System/Process.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 17026,
+      "exportedPath": "operating-system/process.html",
+      "dependencies": []
+    },
+    "Operating System/Operating System Introduction.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 21642,
+      "exportedPath": "operating-system/operating-system-introduction.html",
+      "dependencies": []
+    },
+    "Operating System/Operating System.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 663,
+      "exportedPath": "operating-system/operating-system.html",
+      "dependencies": []
+    },
+    "Operating System/Operating System Structure.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 10901,
+      "exportedPath": "operating-system/operating-system-structure.html",
+      "dependencies": []
+    },
+    "Operating System/Main Memory.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 1931,
+      "exportedPath": "operating-system/main-memory.html",
+      "dependencies": []
+    },
+    "Operating System/NJU OS PA0.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 5695,
+      "exportedPath": "operating-system/nju-os-pa0.html",
+      "dependencies": []
+    },
+    "Operating System/File System Implementation.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 1454,
+      "exportedPath": "operating-system/file-system-implementation.html",
+      "dependencies": []
+    },
+    "Operating System/File System Interface.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 9254,
+      "exportedPath": "operating-system/file-system-interface.html",
+      "dependencies": []
+    },
+    "Operating System/Linux Basic Operation.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 4167,
+      "exportedPath": "operating-system/linux-basic-operation.html",
+      "dependencies": []
+    },
+    "Operating System/Cpu Scheduling.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 27185,
+      "exportedPath": "operating-system/cpu-scheduling.html",
+      "dependencies": []
+    },
+    "Program/Python/regularexpression.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 198,
+      "exportedPath": "program/python/regularexpression.html",
+      "dependencies": []
+    },
+    "Program/Python/pythonbasic.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 2940,
+      "exportedPath": "program/python/pythonbasic.html",
+      "dependencies": []
+    },
+    "Program/Python/python-exceptions.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 12905,
+      "exportedPath": "program/python/python-exceptions.html",
+      "dependencies": []
+    },
+    "Program/Python/python-environment-management.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 415,
+      "exportedPath": "program/python/python-environment-management.html",
+      "dependencies": []
+    },
+    "Program/Python/pandas.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 176,
+      "exportedPath": "program/python/pandas.html",
+      "dependencies": []
+    },
+    "Program/Python/numpy.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 25422,
+      "exportedPath": "program/python/numpy.html",
+      "dependencies": []
+    },
+    "Program/Python/matplotlib.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 184,
+      "exportedPath": "program/python/matplotlib.html",
+      "dependencies": []
+    },
+    "Program/Python/datetime.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 11921,
+      "exportedPath": "program/python/datetime.html",
+      "dependencies": []
+    },
+    "Program/Python/beautifulsoup.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 190,
+      "exportedPath": "program/python/beautifulsoup.html",
+      "dependencies": []
+    },
+    "Program/Program Language.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 570,
+      "exportedPath": "program/program-language.html",
+      "dependencies": []
+    },
+    "Projects/DBM/Database Management System.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 10204,
+      "exportedPath": "projects/dbm/database-management-system.html",
+      "dependencies": []
+    },
+    "Projects/DPW/System-Design-Specification.md": {
+      "modifiedTime": 1721136250585,
+      "sourceSize": 5276,
+      "exportedPath": "projects/dpw/system-design-specification.html",
       "dependencies": []
     }
   }
