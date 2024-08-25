@@ -1,4 +1,725 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 21 Aug 2024 15:17:30 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 21 Aug 2024 15:17:29 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="Gradient Descent" href="deep-learning/00-basic/gradient-descent.html" class="internal-link" target="_self" rel="noopener">Gradient Descent</a>]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 25 Aug 2024 10:01:40 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 25 Aug 2024 10:01:35 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="Softmax and Argmax" href="deep-learning/00-basic/softmax-and-argmax.html" class="internal-link" target="_self" rel="noopener">Softmax and Argmax</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Softmax" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Softmax</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Argmax" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Argmax</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a> <a href="https://blog.allenygy.vip?query=tag:Softmax" class="tag" target="_blank" rel="noopener">#Softmax</a> <a href="https://blog.allenygy.vip?query=tag:Argmax" class="tag" target="_blank" rel="noopener">#Argmax</a><br><br>
+<br>argmax
+<br>softmax
+<br><br>The argmax function returns the index of the maximum value in a given array or function. Mathematically, it can be represented as:<br><br>
+<br>简单的说, 有一个数组, argmax 会找到最大数字的下标
+<br>Example
+给定数组如下
+
+<br>
+<br>argmax 将会返回3，因为最大值 在数组的下标是3
+
+<br>
+<br>优点在于可以简单直接的解释输出
+<br>缺点在与argmax不可导，不可用于训练模型
+<br>所以一般可以用argmax输出，softmax训练<br><br>The softmax function converts a vector of values into probabilities, such that the sum of all probabilities equals 1. The formula for softmax is:<br><br>Where:<br>
+<br>
+ is the  element of the input vector.
+
+<br>
+ represents the exponential of the  element.
+
+<br>
+The denominator is the sum of the exponentials of all elements in the input vector.
+
+<br>
+这种转换在多类分类问题中特别有用，其中softmax函数的输出表示不同类的预测概率。
+
+<br>Example
+给定数组如下
+
+<br>
+<br>softmax函数将返回一个概率向量:<br>
+
+
+]]></description><link>https://blog.allenygy.vip/deep-learning/00-basic/softmax-and-argmax.html</link><guid isPermaLink="false">Deep Learning/00-Basic/Softmax and Argmax.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 25 Aug 2024 09:48:17 GMT</pubDate></item><item><title><![CDATA[<a data-href="Loss Function" href="deep-learning/00-basic/loss-function.html" class="internal-link" target="_self" rel="noopener">Loss Function</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:LossFunction" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#LossFunction</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a>  <a href="https://blog.allenygy.vip?query=tag:LossFunction" class="tag" target="_blank" rel="noopener">#LossFunction</a><br><br>
+<br>Mean Squared Error (MSE)
+<br>Cross Entropy Loss
+<br><br><br>
+<br>Used for regression tasks. Measures the average squared difference between actual values  and predicted values .
+<br><br><br>
+<br>Also used for regression tasks. It measures the average absolute difference between actual and predicted values.
+<br><br><br>
+<br>
+通常用于处理分类问题
+
+<br> 即为分类总数
+<br> 即为真实类别概率
+<br> 即为对该类别的预测概率
+
+
+<br>
+通常, , 因为真实值是确定的，可化简得到
+
+<br><br>Flex
+
+
+Cross Entropy012345678910−3-2.5−2-1.5−1-0.500.51
+<br>
+The derivative of cross entropy012345678910-1.8-1.6-1.4-1.2−1-0.8-0.6-0.4-0.20
+
+
+<br><br><br>
+<br>Typically used for "maximum-margin" classifiers like Support Vector Machines (SVM).
+<br><br><br>
+<br>A loss function used in regression that is less sensitive to outliers than MSE.
+<br><br><br>
+<br>Measures how one probability distribution  diverges from a second probability distribution . Often used in variational inference or generative models.
+<br><br><br>
+<br>Used for classification problems, particularly in models like neural networks with a softmax output.
+]]></description><link>https://blog.allenygy.vip/deep-learning/00-basic/loss-function.html</link><guid isPermaLink="false">Deep Learning/00-Basic/Loss Function.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 25 Aug 2024 09:55:43 GMT</pubDate></item><item><title><![CDATA[<a data-href="Dropout" href="deep-learning/00-basic/dropout.html" class="internal-link" target="_self" rel="noopener">Dropout</a>]]></title><description><![CDATA[ 
+ <br><br><br>一个好的模型需要对输入数据的扰动鲁棒<br>
+<br>使用噪音的数据等价于 Tikhonov 正则
+<br>丢弃法：在层之间加入噪音
+<br><br>
+<br>对加入噪音得到， 希望期望不变
+<br><br>
+<br>丢弃法对每个元素进行如下扰动
+<br><br><br>
+<br>通常将丢弃法作用在隐藏全连接层的输出上
+<br><br>Flex
+
+
+<img alt="MLP" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202408242153171.png" referrerpolicy="no-referrer">
+
+
+
+<img alt="Dropout" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202408242158498.png" referrerpolicy="no-referrer">
+
+<br><br>
+<br>dropout 将一些输出项随机置0来空值模型复杂度
+<br>常作用在多层感知机的隐藏层输出上
+<br>丢弃概率是空值模型复杂度的超参数
+<br><br>import torch 
+def dropout_layer(X,dropout):
+	assert 0&lt;= dropout &lt;=1 #概率值在0-1之间
+	if dropout == 1:
+		return torch.zeros_like(X)
+	if dropout == 0:
+		return X
+	mask = (torch.randn(X.shape) &gt; dropout).float
+	return mask * X / (1.0-dropout)
+	
+RunCopy]]></description><link>https://blog.allenygy.vip/deep-learning/00-basic/dropout.html</link><guid isPermaLink="false">Deep Learning/00-Basic/Dropout.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 25 Aug 2024 09:55:44 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202408242153171.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202408242153171.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Overfitting and Underfitting" href="deep-learning/00-basic/overfitting-and-underfitting.html" class="internal-link" target="_self" rel="noopener">Overfitting and Underfitting</a>]]></title><description><![CDATA[ 
+ <br><br>数据<br>模型容量<br>
+<br>拟合各种函数的能力
+<br>低容量的模型难以拟合训练数据
+<br>高容量的模型可以记住所有的训练数据 
+<br>]]></description><link>https://blog.allenygy.vip/deep-learning/00-basic/overfitting-and-underfitting.html</link><guid isPermaLink="false">Deep Learning/00-Basic/Overfitting and Underfitting.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 21 Aug 2024 16:46:55 GMT</pubDate></item><item><title><![CDATA[<a data-href="K Cross Verified" href="deep-learning/00-basic/k-cross-verified.html" class="internal-link" target="_self" rel="noopener">K Cross Verified</a>]]></title><description><![CDATA[ 
+ <br><br>常用于数据不足时<br>
+<br>将训练数据分成 k 块
+<br>For i=1,...,k
+
+<br>使用第i块作为验证数据集，其余作为训练数据集
+
+
+<br>报告 k个验证集的平均
+<br>常用：K=5，10<br>
+数据较大时，也可以 K = 3]]></description><link>https://blog.allenygy.vip/deep-learning/00-basic/k-cross-verified.html</link><guid isPermaLink="false">Deep Learning/00-Basic/K Cross Verified.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 21 Aug 2024 15:51:09 GMT</pubDate></item><item><title><![CDATA[<a data-href="Softmax Regression" href="deep-learning/02-softmax-regression/softmax-regression.html" class="internal-link" target="_self" rel="noopener">Softmax Regression</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Softmax" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Softmax</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Regression" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Regression</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a>  <a href="https://blog.allenygy.vip?query=tag:Softmax" class="tag" target="_blank" rel="noopener">#Softmax</a> <a href="https://blog.allenygy.vip?query=tag:Regression" class="tag" target="_blank" rel="noopener">#Regression</a> <br>]]></description><link>https://blog.allenygy.vip/deep-learning/02-softmax-regression/softmax-regression.html</link><guid isPermaLink="false">Deep Learning/02-SoftMax Regression/Softmax Regression.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 25 Aug 2024 10:00:37 GMT</pubDate></item><item><title><![CDATA[<a data-href="MLP" href="deep-learning/03-multiple-layer-perceptron/mlp.html" class="internal-link" target="_self" rel="noopener">MLP</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:MLP" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#MLP</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a> <a href="https://blog.allenygy.vip?query=tag:MLP" class="tag" target="_blank" rel="noopener">#MLP</a> <br>]]></description><link>https://blog.allenygy.vip/deep-learning/03-multiple-layer-perceptron/mlp.html</link><guid isPermaLink="false">Deep Learning/03-Multiple Layer Perceptron/MLP.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 25 Aug 2024 09:59:35 GMT</pubDate></item><item><title><![CDATA[<a data-href="Weight Decay" href="deep-learning/weight-decay.html" class="internal-link" target="_self" rel="noopener">Weight Decay</a>]]></title><description><![CDATA[ 
+ <br>]]></description><link>https://blog.allenygy.vip/deep-learning/weight-decay.html</link><guid isPermaLink="false">Deep Learning/Weight Decay.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 23 Aug 2024 09:47:27 GMT</pubDate></item><item><title><![CDATA[OperatingSystem]]></title><description><![CDATA[ 
+ <br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/operating-system/operating-system.html</link><guid isPermaLink="false">Operating System/Operating System.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 24 Aug 2024 05:57:37 GMT</pubDate></item><item><title><![CDATA[<a data-href="CPU Scheduling" href="operating-system/cpu-scheduling.html" class="internal-link" target="_self" rel="noopener">CPU Scheduling</a>]]></title><description><![CDATA[ 
+ <br><br><br>To maximize CPU utilization<br>
+Using Multiprogramming<br>CPU-I/O Burst Cycle
+
+<br>Process execution consists of a cycle of CPU execution and I/O wait 
+<br>CPU burst followed by I/O burst
+<br><img alt="Burst-Duration" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Burst-duration.png" referrerpolicy="no-referrer">
+<br>横轴表示CPU Burst时间  
+
+<br>
+
+<br>短CPU突发：大多数进程都会有大量的短时间CPU突发，这表示进程在执行较短时间的计算后就会等待I/O操作。
+<br>长CPU突发：只有少数进程会有较长时间的CPU突发，这些通常是计算密集型的进程，在执行更长时间的计算之后才会进行I/O操作。 
+
+<br><br>The CPU scheduler selects a process from the processes in ready queue , and allocates the CPU to it  
+
+<br>Ready queue 就绪队列 may be ordered in various ways
+
+<br>When does the CPU Scheduling  happen ？
+
+<br>switches from running to waiting state (non-preemptive自愿 )
+
+<br>Example: the process does an I/O system call.
+
+
+<br>switches from running to ready state (preemptive 非自愿)
+
+<br>Example: there is a clock interrupt.
+
+
+<br>switches from waiting to ready (preemptive)
+
+<br>Example: there is a hard disk controller interrupt because the I/O is finished.
+
+
+<br>terminates (non-preemptive)
+
+<br>Preemptive vs. Nonpreemptive Scheduling
+
+<br>When a process is pre-empted, 当进程非自愿离开CPU
+
+<br>It is moved from its current processor
+<br>However, it still remains in memory and in ready queue 仍保留在就绪队列
+
+
+<br>When a process is non-preemptive 当进程自愿离开CPU
+
+<br>Process runs until completion or until they yield control of a processor 进程运行直至完成或让出处理器控制权
+<br>Disadvantage: Unimportant processes can block important ones indefinitely
+
+<br>进程易阻塞
+
+
+
+
+
+<br>Why preemptive scheduling is used?
+
+<br>Improve response times 
+<br>Create interactive environments (real-time)
+
+<br><br>Concept
+
+<br>Throughput: number of processes that complete their execution per time unit吞吐量 
+<br>Response Time: amount of time it takes from when a request was submitted until the first response is produced, not output (for time-sharing environment) 等待时间-进程在就绪队列中等待的总时间
+<br>Turnaround Time: amount of time to execute a particular process (from start to end of process, including waiting time) 执行特定流程的时间(从流程的开始到结束，包括等待时间)
+
+<br>Turnaround Time = Waiting time + time for all CPU bursts  
+
+
+
+<br>Scheduling Criteria
+
+<br>Maximize
+
+<br>CPU Utilization<a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-09e45a79c3758118" class="footnote-link" target="_self" rel="noopener">[1]</a>
+<br>Throughput<a data-footref="[inline1" href="https://blog.allenygy.vip/about:blank#fn-2-09e45a79c3758118" class="footnote-link" target="_self" rel="noopener">[2]</a>
+
+
+<br>Minimize 
+
+<br>Response time 
+<br>Waiting time 
+<br>Turnaround time
+
+
+
+<br><br>Scheduling Algorithm
+
+<br>
+First-Come, First-Served FCFS
+
+<br>
+Shortest-Job-First SJF
+
+<br>
+Priority Scheduling PS
+
+<br>
+Round-Robin RR
+
+<br>
+Multilevel Queue Scheduling MQS
+
+<br>
+Multilevel Feedback Queue Scheduling MFQS
+
+
+<br><br>Scheduling
+
+<br>Suppose that the processes arrive in the ready queue at time  in the following order:  
+
+<br><br>FCFS Example 
+
+<br>The Gantt Chart for the schedule is:
+<br><img alt="Gantt Schedule" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/GanttChart.png" referrerpolicy="no-referrer">
+<br>Waiting time: 
+<br>Average waiting time: 
+<br>Average turnaround time:  
+
+<br>Change Example
+Suppose the order is changed to this 
+
+<br>The Gantt Chart for the schedule is:
+<br><img alt="GanttChart-1" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/GanttChart-1.png" referrerpolicy="no-referrer">
+<br>Waiting time: 
+<br>Average waiting time: 
+<br>Average turnaround time:  
+
+<br>Convoy effect护送效应 - short process behind long process<br><br>Scheduling
+
+<br>SJF is optimal – gives minimum average waiting time for a given set of processes 
+<br>The difficulty is knowing the length of the next CPU request  Could ask the user
+
+<br><br>SJF Example
+
+<br>The Gantt Chart for the schedule is:
+<br><img alt="GanttChart-2" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/GanttChart-2.png" referrerpolicy="no-referrer">
+<br>Average waiting time =  
+<br>Average turnaround time = 
+
+<br><br>Estimation Method
+Use the length of previous CPU bursts, with exponential averaging<br>
+
+
+<br> 是对下一个CPU突发的预测时间。 
+<br> 是第n个CPU突发的实际长度。 
+<br> 是第n个CPU突发的预测时间（基于过去的观测）。 
+<br> 是一个介于0和1之间的权重，用来平衡最近的实际CPU突发时间和之前的预测。<br>
+
+
+<br><br>Scheduling Algorithm
+The preemptive version of SJF is also called shortest-remaining-time-first 
+
+<br>Preemption: If a new process arrives in the ready queue while a current process is executing, the remaining time to complete the current process is compared with the total time required by the new process to finish. If the new process requires less time than what the current process has left, the current process is preempted (put back in the ready queue) and the CPU is given to the new process.
+<br>Efficiency: This algorithm is effective in terms of average waiting time and turnaround time. By giving preference to processes that are closest to completion, it minimizes the amount of time each process has to wait to complete its execution.
+<br>Starvation: A potential downside of SRTF is that longer processes may suffer starvation; if shorter processes keep arriving, the longer processes may be postponed indefinitely.
+<br>Dynamic: Unlike SJF, which is static and decides on a process before it starts executing, SRTF has to make decisions dynamically as new processes arrive and as the remaining execution times of the processes in the ready queue change.
+
+<br><br>SRTF Example
+
+<br>The Gantt Chart for the schedule is:
+<br><img alt="GanttChart-3" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Gantt-Chart-3.png" referrerpolicy="no-referrer">
+<br>Average waiting time =  
+<br>Average turnaround time = 
+
+<br><br>Scheduling Algorithm
+
+<br>Each process gets a small unit of CPU time (time quantum 定额, usually 10-100 milliseconds.
+<br>After q has elapsed, the process is preempted by a clock interrupt and added to the end of the ready queue.
+<br>Timer interrupts every quantum q to schedule next process
+<br>If there are n processes in the ready queue and the time quantum is q. No process waits more than 
+<br>Performance
+
+<br>q too large   FCFS
+<br>q too small   too much time is spent on context switch
+
+<br>q should be large compared to context switch time
+<br>q usually 10ms to 100ms, context switch &lt; 10 usec (微秒)
+
+
+
+
+
+<br><br>SRTF
+<img alt="GanttChart-4" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Gantt-Chart-4.png" referrerpolicy="no-referrer">
+
+<br>Average waiting time: 
+<br>Average turnaround time:  
+
+<br><br>The CPU is allocated to the process with the highest priority<br>
+(smallest integer  highest priority)<br>Two policies 
+
+<br>Preemptive 
+
+<br>the current process is pre-empted immediately by high priority process
+
+
+<br>Non-preemptive<br>
+-the current process finishes its burst first, then scheduler chooses the process with highest priority
+
+SJF is priority scheduling where priority is the inverse of predicted next CPU burst time
+<br>What is the Problem in Proority Scheduling ?
+
+<br>Problem: Starvation: low priority processes may never execute 
+<br>Solution: Aging: as time progresses increase the priority of the process
+
+<br><br>Priority Scheduling (not preemptive)
+<img alt="GanttChart-5" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Gantt-Chart-5.png" referrerpolicy="no-referrer"><br>
+Average waiting time = 
+<br><br>Priority Scheduling  
+<img alt="Gantt-Chart-6" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Gantt-Chart-6.png" referrerpolicy="no-referrer"><br>
+Average waiting time = 
+<br><br>Multilevel Queue
+
+<br>Ready queue is partitioned into separate queues, e.g.:
+
+<br>Foreground (interactive processes) 
+<br>Background (batch processes)
+
+
+<br>Process permanently in a given queue (stay in that queue) Each queue has its own scheduling algorithm:
+
+<br>Foreground – RR 
+<br>Background – FCFS 
+
+
+<br>Scheduling must be done between the queues:
+
+<br>Fixed priority scheduling 
+
+<br>Each queue has a given priority
+
+<br>High priority queue is served before low priority queue
+<br>Possibility of starvation 
+
+
+
+
+<br>Time slice 
+
+<br>Each queue gets a certain amount of CPU time
+
+
+
+
+<br><img alt="MultilevelQueuePriority" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/MultilevelQueuePriority.png" referrerpolicy="no-referrer">
+
+<br><br>Multilevel Feedback Queue
+
+<br>A process can move between the various queues; 
+
+<br>aging can be considered in this way (prevent starvation) 
+<br>advantage: prevent 
+
+
+<br>The multilevel feedback queue scheduler 
+
+<br>the most general CPU scheduling algorithm 
+<br>defined by the following parameters: 
+
+<br>number of queues
+<br>scheduling algorithms for each queue 
+<br>Policies on moving process between queues 
+
+<br>when to upgrade a processes 
+<br>when to demote 降级 a processes 
+<br>which queue a process will enter when that process needs service
+
+
+
+
+
+
+
+<br>Example of Multilevel Feedback Queue
+Three queues: FCFS+RR
+
+<br> – RR with time quantum 8 milliseconds
+<br> – RR with time quantum 16 milliseconds
+<br> – FCFS<br>
+<img alt="MFQ" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Example-MFQ.png" referrerpolicy="no-referrer">
+
+<br>Scheduling
+
+<br>A new job enters queue  which is served FCFS 
+<br>When it gains CPU, job receives 8 milliseconds 
+<br>If it does not finish in 8 milliseconds, job is moved to queue   
+<br>At  job is again served FCFS and receives 16 additional milliseconds 
+<br>If it still does not complete, it is preempted and moved to queue  where it runs until completion but with a low priority
+
+<br><br>Distinguish between user-level and kernel-level threads<br>
+<br>
+When threads are supported by kernel,   threads are scheduled, not processes<br>
+当内核支持线程时，内核调度的是线程，而不是进程
+Example
+Many-to-one and many-to-many models,
+
+<br>Thread library schedules user-level threads to run on kernel threads (LWP: light-weight process)
+
+Typically priority is set by programmer 优先级人为设置
+
+
+<br>
+Kernel threads are scheduled by Kernel onto available CPU 内核线程被可利用的CPU调度
+
+<br>system-contention scope SCS 
+<br>competition is among all kernel-level threads from all processes in the system
+
+
+<br>
+<img alt="ThreadScheduling-1" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ThreadScheduling-1.png" referrerpolicy="no-referrer">
+
+<br>
+<img alt="ThreadScheduling-2" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ThreadScheduling-2.png" referrerpolicy="no-referrer">
+
+<br><br>The term Multiprocessor now applies to the following system architectures:<br>
+<br>Multicore CPUs 
+<br>Multithreaded cores 
+<br>NUMA systems
+<br><br>Symmetric multiprocessing (SMP) is where each processor is self scheduling<br>Two Scheduling Method
+
+<br>All threads may be in a common ready queue (a) 所有进程共用一个就绪队列
+<br>Each processor may have its own private queue of threads（b）每个处理机都有私有的队列<br>
+<img alt="SMP" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/SMP.png" referrerpolicy="no-referrer">
+
+<br><br>When multiple processor cores are on same physical chip ----》 Multicore Processor <br>
+<br>Multicore Processor ==&gt; Recent trend
+<br>Advantage
+ Faster and consumes less power
+<br>Disadvantage
+Memory Stall Growing<a data-footref="[inline2" href="https://blog.allenygy.vip/about:blank#fn-3-09e45a79c3758118" class="footnote-link" target="_self" rel="noopener">[3]</a>
+<br>Solution： 每个核都有多个硬件线程<br>
+<br>Each core has more than one hardware threads. If one thread has a memory stall, switch to another thread!
+<br><br>Chip-multithreading  CMT assigns each core multiple hardware threads. <br>
+<br>(Intel refers to this as hyper-threading.)
+<br>On a quad-core system (4核) with 2 hardware threads per core, the operating system sees 8 logical processors.<br>Abstract
+在一个四核（4核）系统中，如果每个核心支持2个硬件线程，操作系统看到的8个逻辑处理器其实是由这种硬件线程技术（也称为超线程技术）使得每个物理核心能够同时处理两个线程。这种技术允许CPU更高效地利用其资源，特别是在某些核心的一部分资源（如执行单元）在特定时刻未被充分使用时。<br>
+具体来说，超线程技术通过使每个物理核心在操作系统层面呈现为两个逻辑处理器来工作。这样，操作系统和应用程序可以将这些逻辑处理器视为独立的处理单元，从而在逻辑上扩展了CPU的并行处理能力。<br>
+因此，在这样一个四核处理器中，由于每个核心可以处理两个线程，总共就有(4 \times 2 = 8)个逻辑处理器。这就是操作系统为什么会看到8个逻辑处理器的原因。这种安排使得处理器在处理多任务或多线程应用程序时更为高效，尤其是在等待I/O操作或进行其他非CPU密集型任务时，可以更好地利用CPU资源。
+<br>Two levels of scheduling: 可以在两个层次调度 Multithreaded Multicore System<br>
+<br>The operating system deciding which software thread to run on a logical CPU OS决定谁进CPU(逻辑上)
+<br>Each core decides which hardware thread to run on the physical core Core 决定谁进入物理核心
+<br><br>Load balancing
+Load balancing attempts to keep workload evenly distributed 
+
+<br>Push migration – periodic task checks load on each processor, and pushes tasks from overloaded CPU to other less loaded CPUs 
+<br>Pull migration – idle CPUs pulls waiting tasks from busy CPU
+
+<br>Push and pull migration need not be mutually exclusive  推迁移、拉迁移不必相互互斥<br>
+<br>They are often implemented in parallel on load-balancing systems.
+<br><br>处理器亲和性指的是线程或进程倾向于在被分配运行的同一个CPU上运行的性质。 当线程在一个处理器上运行时，它的数据会被存储在该处理器的高速缓存（cache）中。如果这个线程之后继续在同一个处理器上运行，它可以更快地访问之前的数据，因为数据已经在缓存中了。<br>Load balancing may affect processor affinity<br>
+<br>
+A thread may be moved from one processor to another to balance loads
+
+<br>
+That thread loses the contents of what it had in the cache of the processor it was moved off
+
+<br>
+Soft affinity软亲和性：操作系统会尽量让线程在同一个处理器上运行，但不保证。系统负载均衡器可能会根据需要将线程迁移到其他处理器。<br>
+
+
+<br>
+Hard affinity应亲和性：进程可以指定它希望运行的处理器集合。如果设置了硬亲和性，即使在负载高的情况下，内核也不会将进程移动到它未指定运行的处理器上。
+
+<br><br>NUMA and CPU Scheduling
+在NUMA架构中，计算机的内存被分割成多个区域，每个CPU都有一块局部内存。这些内存区域之间的访问速度可能不一样：<br>
+局部内存（Local memory）：与某个CPU相邻的内存，这个CPU访问局部内存的速度快（fast access）。<br>
+非局部内存（Non-local memory）：不与该CPU相邻的内存，该CPU访问非局部内存的速度慢（slow access）。<br>
+NUMA-aware操作系统在调度线程到CPU时会考虑内存访问的非一致性。它会尝试将线程分配到可以快速访问所需数据的CPU上。这意味着操作系统会考虑线程正在使用的数据的内存位置，并尽量让线程在靠近这些数据的CPU上运行。<br>
+这样做的好处是减少了内存访问延迟，提高了处理速度。但是，如果线程被调度到远离其数据的CPU上，它访问内存的速度将会慢下来，这可能会降低性能。<br>
+<img alt="NUMA-CPU-Scheduling" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/NUMA-CPU-Scheduling.png" referrerpolicy="no-referrer">
+<br><br>Why Real-Time CPU Scheduling? 
+  实时CPU调度（Real-Time CPU Scheduling）是一种操作系统的调度机制，它确保能够满足实时任务的时间要求。实时操作系统（RTOS）通常需要这种调度策略，因为它们运行着要求在特定时间内完成或响应的任务。
+<br>Two kinds of RTOS
+
+<br>Soft real-time systems 尽可能在截止时间内完成任务
+
+<br>Critical real-time tasks have the highest priority, but no guarantee as to when tasks will be scheduled (best try only) 
+
+
+<br>Hard real-time systems 严格在截止时间前完成任务
+
+<br>a task must be serviced by its deadline (guarantee)
+
+
+
+<br><br>Event latency 
+
+<br>the amount of time that elapses from when an event occurs to when it is serviced.
+
+<br>Two kinds of Event Latency
+
+<br>Interrupt latency 中断延迟– time from arrival of interrupt to start of kernel interrupt service routine (ISR) that services interrupt 
+
+<br><img alt="Interrupt Latency" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/InterruptLatency.png" referrerpolicy="no-referrer">
+
+
+<br>Dispatch latency 调度延迟 – time for scheduler to take current process off CPU and switch to another
+
+<br><img alt="Dispatch Latency" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/DispatchLatency.png" referrerpolicy="no-referrer"> 
+
+
+
+<br><br>For real-time scheduling, scheduler must support preemptive, priority-based scheduling 
+
+<br>But only guarantees soft real-time 
+<br>For hard real-time, must also provide ability to meet deadlines
+
+<br>Process need new Characteristic
+New Characteristic: periodically require CPU at constant intervals
+
+<br>Process Time <a data-footref="[inline3" href="https://blog.allenygy.vip/about:blank#fn-4-09e45a79c3758118" class="footnote-link" target="_self" rel="noopener">[4]</a>: 进程需要CPU的时间
+<br>Deadline <a data-footref="[inline4" href="https://blog.allenygy.vip/about:blank#fn-5-09e45a79c3758118" class="footnote-link" target="_self" rel="noopener">[5]</a>: 进程必须完成其任务的最后期限
+<br>Period <a data-footref="[inline5" href="https://blog.allenygy.vip/about:blank#fn-6-09e45a79c3758118" class="footnote-link" target="_self" rel="noopener">[6]</a>: 进程每隔一定时间就需要运行的周期。
+<br>Rate of period task<a data-footref="[inline6" href="https://blog.allenygy.vip/about:blank#fn-7-09e45a79c3758118" class="footnote-link" target="_self" rel="noopener">[7]</a>: 
+<br>Relation: 
+<br><img alt="PriorityBasedScheduling" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/PriorityBasedScheduling.png" referrerpolicy="no-referrer">
+
+<br><br>Priority is assigned based on the inverse of its period<br><br>Example of Rate Monotonic Scheduling
+Asume Priority : <br>
+ needs to run for 20 ms every 50 ms.<br>
+- <br>
+ needs to run for 35 ms every 100 ms.<br>
+- <br>
+Assume deadline <br>
+假定每个任务的截止时间d等于其周期p，即每个任务必须在下一个周期开始之前完成。<br>
+<img alt="RateMonotonicScheduling" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/RateMonotonicScheduling.png" referrerpolicy="no-referrer">
+<br>Missed Deadlines Case
+  needs to run for 25 ms every 50 ms.<br>
+- <br>
+ needs to run for 35 ms every 80 ms.<br>
+- 
+
+<br><img alt="RateMonotonicScheduling-MissedDeadline" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/RateMontonicScheduling-MissedDeadlinesCase.png" referrerpolicy="no-referrer"> 
+<br>In this case It can't satisfy the Hard real-time systems
+
+<br><br>Priorities are assigned according to deadlines<br><br>EDF Example 
+  needs to run for 25 ms every 50 ms.<br>
+- <br>
+ needs to run for 35 ms every 80 ms.<br>
+- <br>
+<img alt="EDF" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/EDF.png" referrerpolicy="no-referrer">
+<br><br>T shares are allocated among all processes in the system<br>Example of Proportional Share Scheduling
+ T = 20, therefore there are 20 shares, where one share represents 5% of the CPU time
+
+<br>An application receives N shares where 
+<br>This ensures each application will receive  of the total processor time 
+<br>Example: an application receives N = 5 shares the application then has 5 / 20 = 25% of the CPU time.
+<br>This percentage of CPU time is available to the application whether the application uses it or not.
+<br>无论应用程序是否使用这些CPU时间，这些份额都被保留给它。
+
+<br><br>
+<br>Linux Scheduling 
+<br>Windows Scheduling
+<br><br> Scheduling classes 
+
+<br>2 scheduling classes are included, others can be added
+
+<br>default 
+<br>real-time 
+
+
+<br>Each process/task has specific priority
+
+<br>
+<br>Real-time scheduling according to POSIX.1b 
+
+<br>Real-time tasks have static priorities
+
+
+<br>Real-time plus normal tasks map into global priority scheme 
+
+<br>Nice value of -20 maps to global priority 100 
+<br>Nice value of +19 maps to priority 139
+<br><img alt="LinuxScheduling-Priority" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/LinuxScheduling-Priority.png" referrerpolicy="no-referrer">
+
+
+<br><br>Scheduler picks highest priority task in highest scheduling class<br>
+<br>Quantum is not fixed 时间片不固定
+<br>Calculated based on nice value from -20 to +19 
+
+<br>Lower value is higher priority
+
+
+<br>CFS Mechanism
+
+<br>CFS maintains per task virtual run time in variable vruntime <a data-footref="[inline7" href="https://blog.allenygy.vip/about:blank#fn-8-09e45a79c3758118" class="footnote-link" target="_self" rel="noopener">[8]</a>
+<br>Associated with decay factor based on priority of task =&gt; lower priority is higher decay rate  <a data-footref="[inline8" href="https://blog.allenygy.vip/about:blank#fn-9-09e45a79c3758118" class="footnote-link" target="_self" rel="noopener">[9]</a>
+<br>Normal default priority (Nice value: 0) yields virtual run time = actual run time 
+<br>To decide next task to run, scheduler picks task with lowest virtual run time <a data-footref="[inline9" href="https://blog.allenygy.vip/about:blank#fn-10-09e45a79c3758118" class="footnote-link" target="_self" rel="noopener">[10]</a><br>
+<img alt="LinuxScheduling" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/LinuxScheduling.png" referrerpolicy="no-referrer">
+
+<br><br>Windows uses priority-based preemptive scheduling<br>
+<br>
+Highest-priority thread runs next 
+
+<br>Thread runs until 
+
+<br>
+
+<br>blocks,
+
+
+<br>
+
+<br>uses time slice,
+
+
+<br>
+
+<br>preempted by higher-priority thread
+
+
+
+
+
+
+<br>
+Real-time threads can preempt non-real-time
+
+<br>
+32-level priority scheme 
+
+<br>Variable class is 1-15, real-time class is 16-31 
+<br>Priority 0 is memory-management thread 
+<br>There is a queue for each priority 
+<br>If no run-able thread, runs idle thread
+
+
+<br>
+<img alt="Windows Scheduling" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/WindowsScheduling.png" referrerpolicy="no-referrer">
+
+<br>
+Windows操作系统中进程可以属于六种优先级类别，每个类别中各个相对优先级的数值。Windows API定义了实时类（real-time class）和变量类（variable class），每个类别中都有不同的优先级级别。
+
+<br>
+在实时类别中，有一个时间关键（time-critical）优先级，这是最高的优先级，数值为31。其他优先级依次降低，直到最低的空闲（idle）优先级，数值为16。这些优先级是为需要即时响应的任务设计的，比如那些在特定时间限制内必须完成的任务。
+
+<br>
+在变量类别中，优先级从高（high）到空闲（idle）不等。每个优先级类别还有相对优先级，如正常（normal）类别的优先级数值范围从15到6不等。这些优先级通常用于普通应用程序和后台任务。
+
+<br>
+“变量”（Variable 意味着线程的优先级可以改变，即使它们属于同一类别。这允许操作系统根据当前的需求和资源情况动态调整进程的优先级。
+
+<br>
+在调度时，系统会选择优先级数值最高的线程来执行，确保时间敏感的任务能够获得及时的处理。通过这种方式，操作系统可以管理多任务环境中的资源分配，确保关键任务能够及时完成，同时为不太重要的任务提供必要的CPU时间。
+
+<br>
+<br>
+<br>keep the CPU as busy as possible<a href="https://blog.allenygy.vip/about:blank#fnref-1-09e45a79c3758118" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>Increase throughput as high as possible<a href="https://blog.allenygy.vip/about:blank#fnref-2-09e45a79c3758118" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>An event that occurs when a thread is on CPU and accesses memory content that is not in the CPU’s cache. The thread’s execution stalls while the memory content is retrieved and fetched<a href="https://blog.allenygy.vip/about:blank#fnref-3-09e45a79c3758118" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>处理时间<a href="https://blog.allenygy.vip/about:blank#fnref-4-09e45a79c3758118" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>截止时间<a href="https://blog.allenygy.vip/about:blank#fnref-5-09e45a79c3758118" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>周期时间<a href="https://blog.allenygy.vip/about:blank#fnref-6-09e45a79c3758118" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>周期任务的频率<a href="https://blog.allenygy.vip/about:blank#fnref-7-09e45a79c3758118" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>虚拟运行时间（vruntime）：CFS使用一个名为vruntime的变量来追踪每个进程应该获得的CPU时间。vruntime的增加速度取决于进程的优先级：优先级较低的进程（nice值较高）的vruntime增长得更快。<a href="https://blog.allenygy.vip/about:blank#fnref-8-09e45a79c3758118" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>衰减因子：CFS使用衰减因子来根据进程的优先级调整其vruntime，优先级越低的进程，其vruntime的增长越快，从而减少它们被调度的概率。<a href="https://blog.allenygy.vip/about:blank#fnref-9-09e45a79c3758118" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+<br>选择下一个运行的进程：当需要选择下一个运行的进程时，CFS选择vruntime最低的进程，以尝试平等地分配CPU时间给每个进程。<a href="https://blog.allenygy.vip/about:blank#fnref-10-09e45a79c3758118" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+]]></description><link>https://blog.allenygy.vip/operating-system/cpu-scheduling.html</link><guid isPermaLink="false">Operating System/CPU Scheduling.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sat, 24 Aug 2024 05:57:37 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Burst-duration.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Burst-duration.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Exploring Chain of Thought Techniques]]></title><description><![CDATA[ 
+ <br><br>During this summer course, in the Reading Paper phase, our group was assigned the paper "Chain-of-Thought reasoning without prompting". After reading this paper, I developed an interest in the Chain of Thought (CoT) approach. Therefore, in my Individual Report, I would like to further explore and summarize the literature related to Chain of Thought.<br><br>Chain of Thought is a series of short sentences that mimic the reasoning process a person might go through when answering a question. CoT Promoting is a method that provides a series of prompts to guide the model through a series of thoughts. In my view, CoT Promoting offers a paradigm for thinking when answering questions—similar to the steps we take when solving problems—except here, the process of thinking is handed over to the model to generate answers.<br>Compared to Zero Shot learning, CoT Promoting has several advantages:<br>
+<br>First, CoT provides explainability. When we receive an answer, we not only get the solution but also understand how it was derived.
+<br>Secondly, CoT breaks down complex problems into simpler steps, enhancing the accuracy of the answers.
+<br>Experiments on three large language models show that chain-of-thought prompting improves performance on a range of arithmetic, commonsense, and symbolic reasoning tasks.<br><img style="zoom:50%;" alt="Chain-of-Thought Result" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407252346079.png" referrerpolicy="no-referrer"><br>PaLM 540B uses chain-of-thought prompting to achieve new state of-the-art performance on the GSM8K benchmark of math word problems.<br><br>Through reviewing relevant literature, I believe there are two main methods to elicit the Chain of Thought: one is through prompting, and the other is by changing the decoding approach.<br><br>Let's first look at how to elicit Chain of Thought through prompting. After reviewing the literature, I have identified several approaches. Here, I will mainly introduce two methods: Auto-CoT and Active Prompting.<br><br>CoT prompting can be divided into two major paradigms. The first paradigm, known as Zero-Shot-CoT, involves adding a simple prompt such as "Let's think step by step" following the test question to facilitate reasoning chains in Large Language Models (LLMs). This approach does not require input-output demonstrations and is task-agnostic. The second paradigm, Manual-CoT, relies on manually designed demonstrations. Each demonstration includes a question followed by a reasoning chain that leads to the answer. Although Manual-CoT has demonstrated superior performance, it requires significant manual effort to design task-specific demonstrations.<br><img alt="Zero Shot CoT and Manual CoT" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407251741501.png" referrerpolicy="no-referrer"><br>However, manually designing CoT prompting requires a significant amount of manpower and is not suitable for all tasks. Therefore, the authors have proposed Auto CoT, an automated method for designing CoT prompting. Briefly, Auto-CoT consists of two main steps:<br>
+<br>Partition questions of a given dataset into eight clusters** — sentence-BERT is used to encode the questions, and then clusters are formed based on cosine similarity.
+<br>Select a representative question from each cluster and generate its reasoning chain using Zero-Shot-CoT with simple heuristics — the heuristics involve not selecting a question with more than 60 tokens or a rationale with more than five reasoning steps. These heuristics aim to improve the likelihood of the auto-generated response being correct.
+<br><img alt="Auto CoT" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407251729807.png" referrerpolicy="no-referrer"><br>In fact, the authors initially attempted to generate a series of reasoning explanations using the Zero-Shot-CoT approach. However, they found that this simple method could not effectively replace the benefits brought by manual design, as errors often occurred in the reasoning chains generated by Zero-Shot-CoT.<br>Further analysis revealed that the diversity of problems in the reasoning explanations is crucial for mitigating the errors caused by Zero-Shot-CoT.<br>This is also why the article emphasizes the approach of "Let's think not just step by step, but also one by one."<br><br>In this method, the focus is on how to select prompts for Chain of Thought (CoT). Simply put, it's similar to how during an exam, we identify the questions that confuse us the most and prioritize learning them, rather than randomly choosing questions to study. This approach helps achieve better results.<br>The authors employed four uncertainty metrics—disagreement, entropy, variance, and confidence, with disagreement and entropy being the main metrics used in their experiments.<br>Subsequently, the questions identified as the most uncertain based on these metrics are selected for manual annotation.<br>These 'n' uncertain questions are annotated by human annotators to generate CoT rationales and then used as examples for few-shot prompting along with the test question to generate responses.<br><img alt="Active Promoting" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407251635179.png" referrerpolicy="no-referrer"><br>Overall, the approach of Auto CoT is based on diversity. It involves partitioning questions into clusters and generating reasoning chains for representative questions from each cluster. This method utilizes sentence embeddings and cosine similarity to ensure a wide coverage of different types of problems within a dataset, aiming to generate a broad spectrum of reasoning paths that enhance the model's ability to tackle diverse challenges.<br>On the other hand, Active Prompting is based on uncertainty. It prioritizes the selection of prompts by identifying questions with high levels of uncertainty, using metrics like disagreement and entropy. These uncertain questions are then manually annotated to create detailed CoT rationales. This approach ensures that the model is trained on the most challenging aspects of a dataset, which may require nuanced reasoning or exhibit higher error rates in automated reasoning processes.<br>Both methods aim to improve the reasoning capabilities of language models by guiding them in how to think through problems, but they approach the task from different angles—Auto CoT through the lens of problem diversity, and Active Prompting through the lens of targeting uncertainty.<br><br>The traditional decoding method is greedy decoding. Greedy decoding is a simple method for generating sequences where, at each step, the word with the highest probability is selected as the output, until an end symbol is generated or a predetermined output length is reached. The advantages of greedy decoding are its simplicity and speed, as it only requires selecting the highest probability word at each step. However, this method has a significant drawback: it may miss the globally optimal sequence. Since it selects only the locally optimal word at each step, greedy decoding can lead to lower quality text generation, lacking in coherence and diversity.<br><br><img alt="Self Consistency Decoding" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407260033779.png" referrerpolicy="no-referrer"><br>Self-Consistency Decoding essentially aggregates the answers by selecting the most frequently occurring result as the answer. First, a set of candidate outputs is sampled from the language model's decoder, generating a group of different candidate reasoning paths. Then, the answers are aggregated by marginalizing the sampled reasoning paths and selecting the most consistent answer from the generated results.<br><img alt="Self Consistency Decoding" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407260054056.png" referrerpolicy="no-referrer"><br>Self-consistency significantly enhances arithmetic reasoning performance across all four language models, surpassing the results achieved with chain-of-thought prompting. This approach yields substantial gains across the models and has achieved state-of-the-art results on five out of six tasks.<br><br>CoT-Decoding builds upon Self-Consistency by introducing a confidence metric. This method calculates the confidence level for each reasoning path and aggregates paths that lead to the same answer, ultimately selecting the path with the highest confidence as the final reasoning path. The concept mirrors the elimination method used in multiple-choice tests, where incorrect options are first excluded to identify the most probable answer from the remaining choices.<br><img alt="CoT-Decoding" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407080251459.png" referrerpolicy="no-referrer"><br>This approach is particularly effective when there is a significant difference between the options. When options are closely matched, decision-making becomes challenging, and the accuracy of decisions decreases—akin to scenarios in decoding where the probability differences between tokens are minimal. In contrast, when the disparity between answer options is marked, decision-making confidence increases, similar to when there is a significant difference in token probabilities during decoding. CoT-Decoding enhances confidence assessment by accumulating the difference in probabilities between the top-2 predicted tokens.<br><img alt="Result" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407062132592.png" referrerpolicy="no-referrer"><br>In the final part of the study, the authors compared various sampling and decoding methods in their experiments. The results indicate that CoT-Decoding achieved the best performance across all tasks, demonstrating that CoT-Decoding is an effective decoding method that can enhance the performance of models.	<br><br>This report has explored the Chain of Thought (CoT) approach, focusing on enhancing the reasoning capabilities of language models through diverse prompting and decoding strategies. Auto CoT and Active Prompting refine how models generate and improve answers by harnessing problem diversity and addressing uncertainty, respectively. Meanwhile, decoding techniques like Self-Consistency Decoding and CoT Decoding improve answer accuracy and confidence by emphasizing the most consistent and probable outcomes. <br><br>Diao, S., Wang, P., Lin, Y., Pan, R., Liu, X., &amp; Zhang, T. (2024). Active Prompting with Chain-of-Thought for Large Language Models (No. arXiv:2302.12246). arXiv. <a rel="noopener" class="external-link" href="https://doi.org/10.48550/arXiv.2302.12246" target="_blank">https://doi.org/10.48550/arXiv.2302.12246</a><br>Kim, S., Joo, S. J., Kim, D., Jang, J., Ye, S., Shin, J., &amp; Seo, M. (2023). The CoT Collection: Improving Zero-shot and Few-shot Learning of Language Models via Chain-of-Thought Fine-Tuning (No. arXiv:2305.14045). arXiv. <a rel="noopener" class="external-link" href="https://doi.org/10.48550/arXiv.2305.14045" target="_blank">https://doi.org/10.48550/arXiv.2305.14045</a><br>Wang, X., Wei, J., Schuurmans, D., Le, Q., Chi, E., Narang, S., Chowdhery, A., &amp; Zhou, D. (2023). Self-Consistency Improves Chain of Thought Reasoning in Language Models (No. arXiv:2203.11171). arXiv. <a rel="noopener" class="external-link" href="https://doi.org/10.48550/arXiv.2203.11171" target="_blank">https://doi.org/10.48550/arXiv.2203.11171</a><br>Wang, X., &amp; Zhou, D. (2024). Chain-of-Thought Reasoning Without Prompting (No. arXiv:2402.10200). arXiv. <a rel="noopener" class="external-link" href="https://doi.org/10.48550/arXiv.2402.10200" target="_blank">https://doi.org/10.48550/arXiv.2402.10200</a><br>Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q., &amp; Zhou, D. (2023). Chain-of-Thought Prompting Elicits Reasoning in Large Language Models (No. arXiv:2201.11903). arXiv. <a rel="noopener" class="external-link" href="https://doi.org/10.48550/arXiv.2201.11903" target="_blank">https://doi.org/10.48550/arXiv.2201.11903</a><br>Zhang, Z., Zhang, A., Li, M., &amp; Smola, A. (2022). Automatic Chain of Thought Prompting in Large Language Models (No. arXiv:2210.03493). arXiv. <a rel="noopener" class="external-link" href="https://doi.org/10.48550/arXiv.2210.03493" target="_blank">https://doi.org/10.48550/arXiv.2210.03493</a>]]></description><link>https://blog.allenygy.vip/research/cot/cot-individual-report.html</link><guid isPermaLink="false">Research/CoT/CoT Individual Report.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 25 Jul 2024 17:37:37 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407252346079.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202407252346079.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Home]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>NOTE
+
+<br><a data-href="Computer-Organization" href="https://blog.allenygy.vip/computer-organization/computer-organization.html" class="internal-link" target="_self" rel="noopener">Computer-Organization</a>
+<br><a data-href="Computer Network" href="https://blog.allenygy.vip/computer-network/computer-network.html" class="internal-link" target="_self" rel="noopener">Computer Network</a>
+<br><a data-href="Operating System" href="https://blog.allenygy.vip/operating-system/operating-system.html" class="internal-link" target="_self" rel="noopener">Operating System</a>
+<br><a data-href="Database Management System" href="https://blog.allenygy.vip/projects/dbm/database-management-system.html" class="internal-link" target="_self" rel="noopener">Database Management System</a>
+
+
+<br>WORK
+
+<br><a data-href="Archive" href="https://blog.allenygy.vip/archive.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="IbArchive" aria-label="IbArchive" data-icon="IbArchive" aria-hidden="true" style="transform: translateY(20%);"><svg width="16px" height="16px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 9v8c0 1.886 0 2.828.586 3.414C5.172 21 6.114 21 8 21h8c1.886 0 2.828 0 3.414-.586C20 19.828 20 18.886 20 17V9M6 9h12c.932 0 1.398 0 1.765-.152a2 2 0 0 0 1.083-1.083C21 7.398 21 6.932 21 6c0-.932 0-1.398-.152-1.765a2 2 0 0 0-1.083-1.083C19.398 3 18.932 3 18 3H6c-.932 0-1.398 0-1.765.152a2 2 0 0 0-1.083 1.083C3 4.602 3 5.068 3 6c0 .932 0 1.398.152 1.765a2 2 0 0 0 1.083 1.083C4.602 9 5.068 9 6 9zm3 4h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Archive</a>
+<br><a data-href="Class" href="https://blog.allenygy.vip/class.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FabBattleNet" aria-label="FabBattleNet" data-icon="FabBattleNet" aria-hidden="true" style="transform: translateY(20%);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M448.61 225.62c26.87.18 35.57-7.43 38.92-12.37 12.47-16.32-7.06-47.6-52.85-71.33 17.76-33.58 30.11-63.68 36.34-85.3 3.38-11.83 1.09-19 .45-20.25-1.72 10.52-15.85 48.46-48.2 100.05-25-11.22-56.52-20.1-93.77-23.8-8.94-16.94-34.88-63.86-60.48-88.93C252.18 7.14 238.7 1.07 228.18.22h-.05c-13.83-1.55-22.67 5.85-27.4 11-17.2 18.53-24.33 48.87-25 84.07-7.24-12.35-17.17-24.63-28.5-25.93h-.18c-20.66-3.48-38.39 29.22-36 81.29-38.36 1.38-71 5.75-93 11.23-9.9 2.45-16.22 7.27-17.76 9.72 1-.38 22.4-9.22 111.56-9.22 5.22 53 29.75 101.82 26 93.19-9.73 15.4-38.24 62.36-47.31 97.7-5.87 22.88-4.37 37.61.15 47.14 5.57 12.75 16.41 16.72 23.2 18.26 25 5.71 55.38-3.63 86.7-21.14-7.53 12.84-13.9 28.51-9.06 39.34 7.31 19.65 44.49 18.66 88.44-9.45 20.18 32.18 40.07 57.94 55.7 74.12a39.79 39.79 0 0 0 8.75 7.09c5.14 3.21 8.58 3.37 8.58 3.37-8.24-6.75-34-38-62.54-91.78 22.22-16 45.65-38.87 67.47-69.27 122.82 4.6 143.29-24.76 148-31.64 14.67-19.88 3.43-57.44-57.32-93.69zm-77.85 106.22c23.81-37.71 30.34-67.77 29.45-92.33 27.86 17.57 47.18 37.58 49.06 58.83 1.14 12.93-8.1 29.12-78.51 33.5zM216.9 387.69c9.76-6.23 19.53-13.12 29.2-20.49 6.68 13.33 13.6 26.1 20.6 38.19-40.6 21.86-68.84 12.76-49.8-17.7zm215-171.35c-10.29-5.34-21.16-10.34-32.38-15.05a722.459 722.459 0 0 0 22.74-36.9c39.06 24.1 45.9 53.18 9.64 51.95zM279.18 398c-5.51-11.35-11-23.5-16.5-36.44 43.25 1.27 62.42-18.73 63.28-20.41 0 .07-25 15.64-62.53 12.25a718.78 718.78 0 0 0 85.06-84q13.06-15.31 24.93-31.11c-.36-.29-1.54-3-16.51-12-51.7 60.27-102.34 98-132.75 115.92-20.59-11.18-40.84-31.78-55.71-61.49-20-39.92-30-82.39-31.57-116.07 12.3.91 25.27 2.17 38.85 3.88-22.29 36.8-14.39 63-13.47 64.23 0-.07-.95-29.17 20.14-59.57a695.23 695.23 0 0 0 44.67 152.84c.93-.38 1.84.88 18.67-8.25-26.33-74.47-33.76-138.17-34-173.43 20-12.42 48.18-19.8 81.63-17.81 44.57 2.67 86.36 15.25 116.32 30.71q-10.69 15.66-23.33 32.47C365.63 152 339.1 145.84 337.5 146c.11 0 25.9 14.07 41.52 47.22a717.63 717.63 0 0 0-115.34-31.71 646.608 646.608 0 0 0-39.39-6.05c-.07.45-1.81 1.85-2.16 20.33C300 190.28 358.78 215.68 389.36 233c.74 23.55-6.95 51.61-25.41 79.57-24.6 37.31-56.39 67.23-84.77 85.43zm27.4-287c-44.56-1.66-73.58 7.43-94.69 20.67 2-52.3 21.31-76.38 38.21-75.28C267 52.15 305 108.55 306.58 111zm-130.65 3.1c.48 12.11 1.59 24.62 3.21 37.28-14.55-.85-28.74-1.25-42.4-1.26-.08 3.24-.12-51 24.67-49.59h.09c5.76 1.09 10.63 6.88 14.43 13.57zm-28.06 162c20.76 39.7 43.3 60.57 65.25 72.31-46.79 24.76-77.53 20-84.92 4.51-.2-.21-11.13-15.3 19.67-76.81zm210.06 74.8"></path></svg></span>Class</a>
+<br><a data-href="Friends" href="https://blog.allenygy.vip/friends.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="IbLink" aria-label="IbLink" data-icon="IbLink" aria-hidden="true" style="transform: translateY(20%);"><svg width="16px" height="16px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.3 9a1 1 0 0 0 0-2v2zm0 8a1 1 0 1 0 0-2v2zm5.4-2a1 1 0 1 0 0 2v-2zm0-8a1 1 0 1 0 0 2V7zM7 9h2.3V7H7v2zm2.3 6H7v2h2.3v-2zm7.7 0h-2.3v2H17v-2zm-2.3-6H17V7h-2.3v2zM2 12a5 5 0 0 0 5 5v-2a3 3 0 0 1-3-3H2zm18 0a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5h-2zm2 0a5 5 0 0 0-5-5v2a3 3 0 0 1 3 3h2zM4 12a3 3 0 0 1 3-3V7a5 5 0 0 0-5 5h2z" fill="currentColor"></path><path d="M15 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span>Friends</a>
+<br><a data-href="Slides" href="https://blog.allenygy.vip/slides.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="CoShow" aria-label="CoShow" data-icon="CoShow" aria-hidden="true" style="transform: translateY(20%);"><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Edit / Show"><g id="Vector"><path d="M3.5868 13.7788C5.36623 15.5478 8.46953 17.9999 12.0002 17.9999C15.5308 17.9999 18.6335 15.5478 20.413 13.7788C20.8823 13.3123 21.1177 13.0782 21.2671 12.6201C21.3738 12.2933 21.3738 11.7067 21.2671 11.3799C21.1177 10.9218 20.8823 10.6877 20.413 10.2211C18.6335 8.45208 15.5308 6 12.0002 6C8.46953 6 5.36623 8.45208 3.5868 10.2211C3.11714 10.688 2.88229 10.9216 2.7328 11.3799C2.62618 11.7067 2.62618 12.2933 2.7328 12.6201C2.88229 13.0784 3.11714 13.3119 3.5868 13.7788Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></g></svg></span>Slides</a>
+
+
+<br>Focus
+
+<br><a data-href="Algorithm" href="https://blog.allenygy.vip/algorithm/algorithm.html" class="internal-link" target="_self" rel="noopener">Algorithm</a>
+<br><a data-href="Deep Learning" href="https://blog.allenygy.vip/deep-learning/deep-learning.html" class="internal-link" target="_self" rel="noopener">Deep Learning</a>
+
+
+<br><br>使用 Obsidian 333 天，共创建 346 篇笔记、228 个标签、58个待办。 <br>MonWedFriMarAprMayJunJulAuglessmore<br> <br><br><br><br>
+
+
+
+
+
+
+]]></description><link>https://blog.allenygy.vip/home.html</link><guid isPermaLink="false">Home.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 25 Aug 2024 10:01:04 GMT</pubDate></item><item><title><![CDATA[<a data-href="Gradient Descent" href="deep-learning/00-basic/gradient-descent.html" class="internal-link" target="_self" rel="noopener">Gradient Descent</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>Gradient Descent 梯度下降算法 GD
 <br>Stochastic Gradient Descent 随机梯度下降 SGD
@@ -2693,38 +3414,7 @@ RunCopy]]></description><link>https://blog.allenygy.vip/program/python/pandas.ht
 <br>
 &lt;img src=$1&gt;
 
-]]></description><link>https://blog.allenygy.vip/tools/regex/regular-expression.html</link><guid isPermaLink="false">Tools/Regex/Regular-Expression.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 13 Aug 2024 17:28:38 GMT</pubDate></item><item><title><![CDATA[Home]]></title><description><![CDATA[ 
- <br><br><br><br>
-<br>NOTE
-
-<br><a data-href="Computer-Organization" href="https://blog.allenygy.vip/computer-organization/computer-organization.html" class="internal-link" target="_self" rel="noopener">Computer-Organization</a>
-<br><a data-href="Computer Network" href="https://blog.allenygy.vip/computer-network/computer-network.html" class="internal-link" target="_self" rel="noopener">Computer Network</a>
-<br><a data-href="Operating System" href="https://blog.allenygy.vip/operating-system/operating-system.html" class="internal-link" target="_self" rel="noopener">Operating System</a>
-<br><a data-href="Database Management System" href="https://blog.allenygy.vip/projects/dbm/database-management-system.html" class="internal-link" target="_self" rel="noopener">Database Management System</a>
-
-
-<br>WORK
-
-<br><a data-href="Archive" href="https://blog.allenygy.vip/archive.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="IbArchive" aria-label="IbArchive" data-icon="IbArchive" aria-hidden="true" style="transform: translateY(20%);"><svg width="16px" height="16px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 9v8c0 1.886 0 2.828.586 3.414C5.172 21 6.114 21 8 21h8c1.886 0 2.828 0 3.414-.586C20 19.828 20 18.886 20 17V9M6 9h12c.932 0 1.398 0 1.765-.152a2 2 0 0 0 1.083-1.083C21 7.398 21 6.932 21 6c0-.932 0-1.398-.152-1.765a2 2 0 0 0-1.083-1.083C19.398 3 18.932 3 18 3H6c-.932 0-1.398 0-1.765.152a2 2 0 0 0-1.083 1.083C3 4.602 3 5.068 3 6c0 .932 0 1.398.152 1.765a2 2 0 0 0 1.083 1.083C4.602 9 5.068 9 6 9zm3 4h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Archive</a>
-<br><a data-href="Class" href="https://blog.allenygy.vip/class.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="FabBattleNet" aria-label="FabBattleNet" data-icon="FabBattleNet" aria-hidden="true" style="transform: translateY(20%);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" width="16px" height="16px"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M448.61 225.62c26.87.18 35.57-7.43 38.92-12.37 12.47-16.32-7.06-47.6-52.85-71.33 17.76-33.58 30.11-63.68 36.34-85.3 3.38-11.83 1.09-19 .45-20.25-1.72 10.52-15.85 48.46-48.2 100.05-25-11.22-56.52-20.1-93.77-23.8-8.94-16.94-34.88-63.86-60.48-88.93C252.18 7.14 238.7 1.07 228.18.22h-.05c-13.83-1.55-22.67 5.85-27.4 11-17.2 18.53-24.33 48.87-25 84.07-7.24-12.35-17.17-24.63-28.5-25.93h-.18c-20.66-3.48-38.39 29.22-36 81.29-38.36 1.38-71 5.75-93 11.23-9.9 2.45-16.22 7.27-17.76 9.72 1-.38 22.4-9.22 111.56-9.22 5.22 53 29.75 101.82 26 93.19-9.73 15.4-38.24 62.36-47.31 97.7-5.87 22.88-4.37 37.61.15 47.14 5.57 12.75 16.41 16.72 23.2 18.26 25 5.71 55.38-3.63 86.7-21.14-7.53 12.84-13.9 28.51-9.06 39.34 7.31 19.65 44.49 18.66 88.44-9.45 20.18 32.18 40.07 57.94 55.7 74.12a39.79 39.79 0 0 0 8.75 7.09c5.14 3.21 8.58 3.37 8.58 3.37-8.24-6.75-34-38-62.54-91.78 22.22-16 45.65-38.87 67.47-69.27 122.82 4.6 143.29-24.76 148-31.64 14.67-19.88 3.43-57.44-57.32-93.69zm-77.85 106.22c23.81-37.71 30.34-67.77 29.45-92.33 27.86 17.57 47.18 37.58 49.06 58.83 1.14 12.93-8.1 29.12-78.51 33.5zM216.9 387.69c9.76-6.23 19.53-13.12 29.2-20.49 6.68 13.33 13.6 26.1 20.6 38.19-40.6 21.86-68.84 12.76-49.8-17.7zm215-171.35c-10.29-5.34-21.16-10.34-32.38-15.05a722.459 722.459 0 0 0 22.74-36.9c39.06 24.1 45.9 53.18 9.64 51.95zM279.18 398c-5.51-11.35-11-23.5-16.5-36.44 43.25 1.27 62.42-18.73 63.28-20.41 0 .07-25 15.64-62.53 12.25a718.78 718.78 0 0 0 85.06-84q13.06-15.31 24.93-31.11c-.36-.29-1.54-3-16.51-12-51.7 60.27-102.34 98-132.75 115.92-20.59-11.18-40.84-31.78-55.71-61.49-20-39.92-30-82.39-31.57-116.07 12.3.91 25.27 2.17 38.85 3.88-22.29 36.8-14.39 63-13.47 64.23 0-.07-.95-29.17 20.14-59.57a695.23 695.23 0 0 0 44.67 152.84c.93-.38 1.84.88 18.67-8.25-26.33-74.47-33.76-138.17-34-173.43 20-12.42 48.18-19.8 81.63-17.81 44.57 2.67 86.36 15.25 116.32 30.71q-10.69 15.66-23.33 32.47C365.63 152 339.1 145.84 337.5 146c.11 0 25.9 14.07 41.52 47.22a717.63 717.63 0 0 0-115.34-31.71 646.608 646.608 0 0 0-39.39-6.05c-.07.45-1.81 1.85-2.16 20.33C300 190.28 358.78 215.68 389.36 233c.74 23.55-6.95 51.61-25.41 79.57-24.6 37.31-56.39 67.23-84.77 85.43zm27.4-287c-44.56-1.66-73.58 7.43-94.69 20.67 2-52.3 21.31-76.38 38.21-75.28C267 52.15 305 108.55 306.58 111zm-130.65 3.1c.48 12.11 1.59 24.62 3.21 37.28-14.55-.85-28.74-1.25-42.4-1.26-.08 3.24-.12-51 24.67-49.59h.09c5.76 1.09 10.63 6.88 14.43 13.57zm-28.06 162c20.76 39.7 43.3 60.57 65.25 72.31-46.79 24.76-77.53 20-84.92 4.51-.2-.21-11.13-15.3 19.67-76.81zm210.06 74.8"></path></svg></span>Class</a>
-<br><a data-href="Friends" href="https://blog.allenygy.vip/friends.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="IbLink" aria-label="IbLink" data-icon="IbLink" aria-hidden="true" style="transform: translateY(20%);"><svg width="16px" height="16px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.3 9a1 1 0 0 0 0-2v2zm0 8a1 1 0 1 0 0-2v2zm5.4-2a1 1 0 1 0 0 2v-2zm0-8a1 1 0 1 0 0 2V7zM7 9h2.3V7H7v2zm2.3 6H7v2h2.3v-2zm7.7 0h-2.3v2H17v-2zm-2.3-6H17V7h-2.3v2zM2 12a5 5 0 0 0 5 5v-2a3 3 0 0 1-3-3H2zm18 0a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5h-2zm2 0a5 5 0 0 0-5-5v2a3 3 0 0 1 3 3h2zM4 12a3 3 0 0 1 3-3V7a5 5 0 0 0-5 5h2z" fill="currentColor"></path><path d="M15 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span>Friends</a>
-<br><a data-href="Slides" href="https://blog.allenygy.vip/slides.html" class="internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="CoShow" aria-label="CoShow" data-icon="CoShow" aria-hidden="true" style="transform: translateY(20%);"><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Edit / Show"><g id="Vector"><path d="M3.5868 13.7788C5.36623 15.5478 8.46953 17.9999 12.0002 17.9999C15.5308 17.9999 18.6335 15.5478 20.413 13.7788C20.8823 13.3123 21.1177 13.0782 21.2671 12.6201C21.3738 12.2933 21.3738 11.7067 21.2671 11.3799C21.1177 10.9218 20.8823 10.6877 20.413 10.2211C18.6335 8.45208 15.5308 6 12.0002 6C8.46953 6 5.36623 8.45208 3.5868 10.2211C3.11714 10.688 2.88229 10.9216 2.7328 11.3799C2.62618 11.7067 2.62618 12.2933 2.7328 12.6201C2.88229 13.0784 3.11714 13.3119 3.5868 13.7788Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></g></svg></span>Slides</a>
-
-
-<br>Focus
-
-<br><a data-href="Algorithm" href="https://blog.allenygy.vip/algorithm/algorithm.html" class="internal-link" target="_self" rel="noopener">Algorithm</a>
-<br><a data-href="Deep Learning" href="https://blog.allenygy.vip/deep-learning/deep-learning.html" class="internal-link" target="_self" rel="noopener">Deep Learning</a>
-
-
-<br><br>使用 Obsidian 330 天，共创建 337 篇笔记、221 个标签、58个待办。 <br>MonWedFriMarAprMayJunJulAuglessmore<br> <br><br><br><br>
-
-
-
-
-
-
-]]></description><link>https://blog.allenygy.vip/home.html</link><guid isPermaLink="false">Home.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 07 Aug 2024 06:45:35 GMT</pubDate></item><item><title><![CDATA[Assignment-1]]></title><description><![CDATA[ 
+]]></description><link>https://blog.allenygy.vip/tools/regex/regular-expression.html</link><guid isPermaLink="false">Tools/Regex/Regular-Expression.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 13 Aug 2024 17:28:38 GMT</pubDate></item><item><title><![CDATA[Assignment-1]]></title><description><![CDATA[ 
  <br><br><br>
 <br>
 Define what a Turing machine is.
@@ -11785,8 +12475,7 @@ Security
 <br>Group identifier (group ID) allows set of users to be defined
 
 
-<br>]]></description><link>https://blog.allenygy.vip/operating-system/operating-system-introduction.html</link><guid isPermaLink="false">Operating System/Operating System Introduction.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 16 Jul 2024 13:19:36 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ComputerSystemArchitecture.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ComputerSystemArchitecture.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[OperatingSystem]]></title><description><![CDATA[ 
- <br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/operating-system/operating-system.html</link><guid isPermaLink="false">Operating System/Operating System.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 16 Jul 2024 13:19:53 GMT</pubDate></item><item><title><![CDATA[<a data-href="Operating System Structure" href="operating-system/operating-system-structure.html" class="internal-link" target="_self" rel="noopener">Operating System Structure</a>]]></title><description><![CDATA[ 
+<br>]]></description><link>https://blog.allenygy.vip/operating-system/operating-system-introduction.html</link><guid isPermaLink="false">Operating System/Operating System Introduction.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 16 Jul 2024 13:19:36 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ComputerSystemArchitecture.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ComputerSystemArchitecture.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Operating System Structure" href="operating-system/operating-system-structure.html" class="internal-link" target="_self" rel="noopener">Operating System Structure</a>]]></title><description><![CDATA[ 
  <br><br><br><img alt="OS-Service" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/OS-Services.png" referrerpolicy="no-referrer"><br>
 <br>Two categories of services
 
@@ -12589,567 +13278,7 @@ Copy<br>rename命令支持多种参数，下面介绍一些常用参数:<br>
 <br>-f：强制执行，忽略存在的文件
 <br>-i：忽略大小写
 <br>-h：显示帮助信息。
-<br><br>]]></description><link>https://blog.allenygy.vip/operating-system/linux-basic-operation.html</link><guid isPermaLink="false">Operating System/Linux Basic Operation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 16 Jul 2024 13:19:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="Cpu Scheduling" href="operating-system/cpu-scheduling.html" class="internal-link" target="_self" rel="noopener">Cpu Scheduling</a>]]></title><description><![CDATA[ 
- <br><br><br>To maximize CPU utilization<br>
-Using Multiprogramming<br>CPU-I/O Burst Cycle
-
-<br>Process execution consists of a cycle of CPU execution and I/O wait 
-<br>CPU burst followed by I/O burst
-<br><img alt="Burst-Duration" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Burst-duration.png" referrerpolicy="no-referrer">
-<br>横轴表示CPU Burst时间  
-
-<br>
-
-<br>短CPU突发：大多数进程都会有大量的短时间CPU突发，这表示进程在执行较短时间的计算后就会等待I/O操作。
-<br>长CPU突发：只有少数进程会有较长时间的CPU突发，这些通常是计算密集型的进程，在执行更长时间的计算之后才会进行I/O操作。 
-
-<br><br>The CPU scheduler selects a process from the processes in ready queue , and allocates the CPU to it  
-
-<br>Ready queue 就绪队列 may be ordered in various ways
-
-<br>When does the CPU Scheduling  happen ？
-
-<br>switches from running to waiting state (non-preemptive自愿 )
-
-<br>Example: the process does an I/O system call.
-
-
-<br>switches from running to ready state (preemptive 非自愿)
-
-<br>Example: there is a clock interrupt.
-
-
-<br>switches from waiting to ready (preemptive)
-
-<br>Example: there is a hard disk controller interrupt because the I/O is finished.
-
-
-<br>terminates (non-preemptive)
-
-<br>Preemptive vs. Nonpreemptive Scheduling
-
-<br>When a process is pre-empted, 当进程非自愿离开CPU
-
-<br>It is moved from its current processor
-<br>However, it still remains in memory and in ready queue 仍保留在就绪队列
-
-
-<br>When a process is non-preemptive 当进程自愿离开CPU
-
-<br>Process runs until completion or until they yield control of a processor 进程运行直至完成或让出处理器控制权
-<br>Disadvantage: Unimportant processes can block important ones indefinitely
-
-<br>进程易阻塞
-
-
-
-
-
-<br>Why preemptive scheduling is used?
-
-<br>Improve response times 
-<br>Create interactive environments (real-time)
-
-<br><br>Concept
-
-<br>Throughput: number of processes that complete their execution per time unit吞吐量 
-<br>Response Time: amount of time it takes from when a request was submitted until the first response is produced, not output (for time-sharing environment) 等待时间-进程在就绪队列中等待的总时间
-<br>Turnaround Time: amount of time to execute a particular process (from start to end of process, including waiting time) 执行特定流程的时间(从流程的开始到结束，包括等待时间)
-
-<br>Turnaround Time = Waiting time + time for all CPU bursts  
-
-
-
-<br>Scheduling Criteria
-
-<br>Maximize
-
-<br>CPU Utilization<a data-footref="[inline0" href="https://blog.allenygy.vip/about:blank#fn-1-503b919a96bcdae5" class="footnote-link" target="_self" rel="noopener">[1]</a>
-<br>Throughput<a data-footref="[inline1" href="https://blog.allenygy.vip/about:blank#fn-2-503b919a96bcdae5" class="footnote-link" target="_self" rel="noopener">[2]</a>
-
-
-<br>Minimize 
-
-<br>Response time 
-<br>Waiting time 
-<br>Turnaround time
-
-
-
-<br><br>Scheduling Algorithm
-
-<br>
-First-Come, First-Served FCFS
-
-<br>
-Shortest-Job-First SJF
-
-<br>
-Priority Scheduling PS
-
-<br>
-Round-Robin RR
-
-<br>
-Multilevel Queue Scheduling MQS
-
-<br>
-Multilevel Feedback Queue Scheduling MFQS
-
-
-<br><br>Scheduling
-
-<br>Suppose that the processes arrive in the ready queue at time  in the following order:  
-
-<br><br>FCFS Example 
-
-<br>The Gantt Chart for the schedule is:
-<br><img alt="Gantt Schedule" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/GanttChart.png" referrerpolicy="no-referrer">
-<br>Waiting time: 
-<br>Average waiting time: 
-<br>Average turnaround time:  
-
-<br>Change Example
-Suppose the order is changed to this 
-
-<br>The Gantt Chart for the schedule is:
-<br><img alt="GanttChart-1" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/GanttChart-1.png" referrerpolicy="no-referrer">
-<br>Waiting time: 
-<br>Average waiting time: 
-<br>Average turnaround time:  
-
-<br>Convoy effect护送效应 - short process behind long process<br><br>Scheduling
-
-<br>SJF is optimal – gives minimum average waiting time for a given set of processes 
-<br>The difficulty is knowing the length of the next CPU request  Could ask the user
-
-<br><br>SJF Example
-
-<br>The Gantt Chart for the schedule is:
-<br><img alt="GanttChart-2" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/GanttChart-2.png" referrerpolicy="no-referrer">
-<br>Average waiting time =  
-<br>Average turnaround time = 
-
-<br><br>Estimation Method
-Use the length of previous CPU bursts, with exponential averaging<br>
-
-
-<br> 是对下一个CPU突发的预测时间。 
-<br> 是第n个CPU突发的实际长度。 
-<br> 是第n个CPU突发的预测时间（基于过去的观测）。 
-<br> 是一个介于0和1之间的权重，用来平衡最近的实际CPU突发时间和之前的预测。<br>
-
-
-<br><br>Scheduling Algorithm
-The preemptive version of SJF is also called shortest-remaining-time-first 
-
-<br>Preemption: If a new process arrives in the ready queue while a current process is executing, the remaining time to complete the current process is compared with the total time required by the new process to finish. If the new process requires less time than what the current process has left, the current process is preempted (put back in the ready queue) and the CPU is given to the new process.
-<br>Efficiency: This algorithm is effective in terms of average waiting time and turnaround time. By giving preference to processes that are closest to completion, it minimizes the amount of time each process has to wait to complete its execution.
-<br>Starvation: A potential downside of SRTF is that longer processes may suffer starvation; if shorter processes keep arriving, the longer processes may be postponed indefinitely.
-<br>Dynamic: Unlike SJF, which is static and decides on a process before it starts executing, SRTF has to make decisions dynamically as new processes arrive and as the remaining execution times of the processes in the ready queue change.
-
-<br><br>SRTF Example
-
-<br>The Gantt Chart for the schedule is:
-<br><img alt="GanttChart-3" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Gantt-Chart-3.png" referrerpolicy="no-referrer">
-<br>Average waiting time =  
-<br>Average turnaround time = 
-
-<br><br>Scheduling Algorithm
-
-<br>Each process gets a small unit of CPU time (time quantum 定额, usually 10-100 milliseconds.
-<br>After q has elapsed, the process is preempted by a clock interrupt and added to the end of the ready queue.
-<br>Timer interrupts every quantum q to schedule next process
-<br>If there are n processes in the ready queue and the time quantum is q. No process waits more than 
-<br>Performance
-
-<br>q too large   FCFS
-<br>q too small   too much time is spent on context switch
-
-<br>q should be large compared to context switch time
-<br>q usually 10ms to 100ms, context switch &lt; 10 usec (微秒)
-
-
-
-
-
-<br><br>SRTF
-<img alt="GanttChart-4" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Gantt-Chart-4.png" referrerpolicy="no-referrer">
-
-<br>Average waiting time: 
-<br>Average turnaround time:  
-
-<br><br>The CPU is allocated to the process with the highest priority<br>
-(smallest integer  highest priority)<br>Two policies 
-
-<br>Preemptive 
-
-<br>the current process is pre-empted immediately by high priority process
-
-
-<br>Non-preemptive<br>
--the current process finishes its burst first, then scheduler chooses the process with highest priority
-
-SJF is priority scheduling where priority is the inverse of predicted next CPU burst time
-<br>What is the Problem in Proority Scheduling ?
-
-<br>Problem: Starvation: low priority processes may never execute 
-<br>Solution: Aging: as time progresses increase the priority of the process
-
-<br><br>Priority Scheduling (not preemptive)
-<img alt="GanttChart-5" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Gantt-Chart-5.png" referrerpolicy="no-referrer"><br>
-Average waiting time = 
-<br><br>Priority Scheduling  
-<img alt="Gantt-Chart-6" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Gantt-Chart-6.png" referrerpolicy="no-referrer"><br>
-Average waiting time = 
-<br><br>Multilevel Queue
-
-<br>Ready queue is partitioned into separate queues, e.g.:
-
-<br>Foreground (interactive processes) 
-<br>Background (batch processes)
-
-
-<br>Process permanently in a given queue (stay in that queue) Each queue has its own scheduling algorithm:
-
-<br>Foreground – RR 
-<br>Background – FCFS 
-
-
-<br>Scheduling must be done between the queues:
-
-<br>Fixed priority scheduling 
-
-<br>Each queue has a given priority
-
-<br>High priority queue is served before low priority queue
-<br>Possibility of starvation 
-
-
-
-
-<br>Time slice 
-
-<br>Each queue gets a certain amount of CPU time
-
-
-
-
-<br><img alt="MultilevelQueuePriority" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/MultilevelQueuePriority.png" referrerpolicy="no-referrer">
-
-<br><br>Multilevel Feedback Queue
-
-<br>A process can move between the various queues; 
-
-<br>aging can be considered in this way (prevent starvation) 
-<br>advantage: prevent 
-
-
-<br>The multilevel feedback queue scheduler 
-
-<br>the most general CPU scheduling algorithm 
-<br>defined by the following parameters: 
-
-<br>number of queues
-<br>scheduling algorithms for each queue 
-<br>Policies on moving process between queues 
-
-<br>when to upgrade a processes 
-<br>when to demote 降级 a processes 
-<br>which queue a process will enter when that process needs service
-
-
-
-
-
-
-
-<br>Example of Multilevel Feedback Queue
-Three queues: FCFS+RR
-
-<br> – RR with time quantum 8 milliseconds
-<br> – RR with time quantum 16 milliseconds
-<br> – FCFS<br>
-<img alt="MFQ" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Example-MFQ.png" referrerpolicy="no-referrer">
-
-<br>Scheduling
-
-<br>A new job enters queue  which is served FCFS 
-<br>When it gains CPU, job receives 8 milliseconds 
-<br>If it does not finish in 8 milliseconds, job is moved to queue   
-<br>At  job is again served FCFS and receives 16 additional milliseconds 
-<br>If it still does not complete, it is preempted and moved to queue  where it runs until completion but with a low priority
-
-<br><br>Distinguish between user-level and kernel-level threads<br>
-<br>
-When threads are supported by kernel,   threads are scheduled, not processes<br>
-当内核支持线程时，内核调度的是线程，而不是进程
-Example
-Many-to-one and many-to-many models,
-
-<br>Thread library schedules user-level threads to run on kernel threads (LWP: light-weight process)
-
-Typically priority is set by programmer 优先级人为设置
-
-
-<br>
-Kernel threads are scheduled by Kernel onto available CPU 内核线程被可利用的CPU调度
-
-<br>system-contention scope SCS 
-<br>competition is among all kernel-level threads from all processes in the system
-
-
-<br>
-<img alt="ThreadScheduling-1" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ThreadScheduling-1.png" referrerpolicy="no-referrer">
-
-<br>
-<img alt="ThreadScheduling-2" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/ThreadScheduling-2.png" referrerpolicy="no-referrer">
-
-<br><br>The term Multiprocessor now applies to the following system architectures:<br>
-<br>Multicore CPUs 
-<br>Multithreaded cores 
-<br>NUMA systems
-<br><br>Symmetric multiprocessing (SMP) is where each processor is self scheduling<br>Two Scheduling Method
-
-<br>All threads may be in a common ready queue (a) 所有进程共用一个就绪队列
-<br>Each processor may have its own private queue of threads（b）每个处理机都有私有的队列<br>
-<img alt="SMP" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/SMP.png" referrerpolicy="no-referrer">
-
-<br><br>When multiple processor cores are on same physical chip ----》 Multicore Processor <br>
-<br>Multicore Processor ==&gt; Recent trend
-<br>Advantage
- Faster and consumes less power
-<br>Disadvantage
-Memory Stall Growing<a data-footref="[inline2" href="https://blog.allenygy.vip/about:blank#fn-3-503b919a96bcdae5" class="footnote-link" target="_self" rel="noopener">[3]</a>
-<br>Solution： 每个核都有多个硬件线程<br>
-<br>Each core has more than one hardware threads. If one thread has a memory stall, switch to another thread!
-<br><br>Chip-multithreading  CMT assigns each core multiple hardware threads. <br>
-<br>(Intel refers to this as hyper-threading.)
-<br>On a quad-core system (4核) with 2 hardware threads per core, the operating system sees 8 logical processors.<br>Abstract
-在一个四核（4核）系统中，如果每个核心支持2个硬件线程，操作系统看到的8个逻辑处理器其实是由这种硬件线程技术（也称为超线程技术）使得每个物理核心能够同时处理两个线程。这种技术允许CPU更高效地利用其资源，特别是在某些核心的一部分资源（如执行单元）在特定时刻未被充分使用时。<br>
-具体来说，超线程技术通过使每个物理核心在操作系统层面呈现为两个逻辑处理器来工作。这样，操作系统和应用程序可以将这些逻辑处理器视为独立的处理单元，从而在逻辑上扩展了CPU的并行处理能力。<br>
-因此，在这样一个四核处理器中，由于每个核心可以处理两个线程，总共就有(4 \times 2 = 8)个逻辑处理器。这就是操作系统为什么会看到8个逻辑处理器的原因。这种安排使得处理器在处理多任务或多线程应用程序时更为高效，尤其是在等待I/O操作或进行其他非CPU密集型任务时，可以更好地利用CPU资源。
-<br>Two levels of scheduling: 可以在两个层次调度 Multithreaded Multicore System<br>
-<br>The operating system deciding which software thread to run on a logical CPU OS决定谁进CPU(逻辑上)
-<br>Each core decides which hardware thread to run on the physical core Core 决定谁进入物理核心
-<br><br>Load balancing
-Load balancing attempts to keep workload evenly distributed 
-
-<br>Push migration – periodic task checks load on each processor, and pushes tasks from overloaded CPU to other less loaded CPUs 
-<br>Pull migration – idle CPUs pulls waiting tasks from busy CPU
-
-<br>Push and pull migration need not be mutually exclusive  推迁移、拉迁移不必相互互斥<br>
-<br>They are often implemented in parallel on load-balancing systems.
-<br><br>处理器亲和性指的是线程或进程倾向于在被分配运行的同一个CPU上运行的性质。 当线程在一个处理器上运行时，它的数据会被存储在该处理器的高速缓存（cache）中。如果这个线程之后继续在同一个处理器上运行，它可以更快地访问之前的数据，因为数据已经在缓存中了。<br>Load balancing may affect processor affinity<br>
-<br>
-A thread may be moved from one processor to another to balance loads
-
-<br>
-That thread loses the contents of what it had in the cache of the processor it was moved off
-
-<br>
-Soft affinity软亲和性：操作系统会尽量让线程在同一个处理器上运行，但不保证。系统负载均衡器可能会根据需要将线程迁移到其他处理器。<br>
-
-
-<br>
-Hard affinity应亲和性：进程可以指定它希望运行的处理器集合。如果设置了硬亲和性，即使在负载高的情况下，内核也不会将进程移动到它未指定运行的处理器上。
-
-<br><br>NUMA and CPU Scheduling
-在NUMA架构中，计算机的内存被分割成多个区域，每个CPU都有一块局部内存。这些内存区域之间的访问速度可能不一样：<br>
-局部内存（Local memory）：与某个CPU相邻的内存，这个CPU访问局部内存的速度快（fast access）。<br>
-非局部内存（Non-local memory）：不与该CPU相邻的内存，该CPU访问非局部内存的速度慢（slow access）。<br>
-NUMA-aware操作系统在调度线程到CPU时会考虑内存访问的非一致性。它会尝试将线程分配到可以快速访问所需数据的CPU上。这意味着操作系统会考虑线程正在使用的数据的内存位置，并尽量让线程在靠近这些数据的CPU上运行。<br>
-这样做的好处是减少了内存访问延迟，提高了处理速度。但是，如果线程被调度到远离其数据的CPU上，它访问内存的速度将会慢下来，这可能会降低性能。<br>
-<img alt="NUMA-CPU-Scheduling" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/NUMA-CPU-Scheduling.png" referrerpolicy="no-referrer">
-<br><br>Why Real-Time CPU Scheduling? 
-  实时CPU调度（Real-Time CPU Scheduling）是一种操作系统的调度机制，它确保能够满足实时任务的时间要求。实时操作系统（RTOS）通常需要这种调度策略，因为它们运行着要求在特定时间内完成或响应的任务。
-<br>Two kinds of RTOS
-
-<br>Soft real-time systems 尽可能在截止时间内完成任务
-
-<br>Critical real-time tasks have the highest priority, but no guarantee as to when tasks will be scheduled (best try only) 
-
-
-<br>Hard real-time systems 严格在截止时间前完成任务
-
-<br>a task must be serviced by its deadline (guarantee)
-
-
-
-<br><br>Event latency 
-
-<br>the amount of time that elapses from when an event occurs to when it is serviced.
-
-<br>Two kinds of Event Latency
-
-<br>Interrupt latency 中断延迟– time from arrival of interrupt to start of kernel interrupt service routine (ISR) that services interrupt 
-
-<br><img alt="Interrupt Latency" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/InterruptLatency.png" referrerpolicy="no-referrer">
-
-
-<br>Dispatch latency 调度延迟 – time for scheduler to take current process off CPU and switch to another
-
-<br><img alt="Dispatch Latency" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/DispatchLatency.png" referrerpolicy="no-referrer"> 
-
-
-
-<br><br>For real-time scheduling, scheduler must support preemptive, priority-based scheduling 
-
-<br>But only guarantees soft real-time 
-<br>For hard real-time, must also provide ability to meet deadlines
-
-<br>Process need new Characteristic
-New Characteristic: periodically require CPU at constant intervals
-
-<br>Process Time <a data-footref="[inline3" href="https://blog.allenygy.vip/about:blank#fn-4-503b919a96bcdae5" class="footnote-link" target="_self" rel="noopener">[4]</a>: 进程需要CPU的时间
-<br>Deadline <a data-footref="[inline4" href="https://blog.allenygy.vip/about:blank#fn-5-503b919a96bcdae5" class="footnote-link" target="_self" rel="noopener">[5]</a>: 进程必须完成其任务的最后期限
-<br>Period <a data-footref="[inline5" href="https://blog.allenygy.vip/about:blank#fn-6-503b919a96bcdae5" class="footnote-link" target="_self" rel="noopener">[6]</a>: 进程每隔一定时间就需要运行的周期。
-<br>Rate of period task<a data-footref="[inline6" href="https://blog.allenygy.vip/about:blank#fn-7-503b919a96bcdae5" class="footnote-link" target="_self" rel="noopener">[7]</a>: 
-<br>Relation: 
-<br><img alt="PriorityBasedScheduling" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/PriorityBasedScheduling.png" referrerpolicy="no-referrer">
-
-<br><br>Priority is assigned based on the inverse of its period<br><br>Example of Rate Monotonic Scheduling
-Asume Priority : <br>
- needs to run for 20 ms every 50 ms.<br>
-- <br>
- needs to run for 35 ms every 100 ms.<br>
-- <br>
-Assume deadline <br>
-假定每个任务的截止时间d等于其周期p，即每个任务必须在下一个周期开始之前完成。<br>
-<img alt="RateMonotonicScheduling" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/RateMonotonicScheduling.png" referrerpolicy="no-referrer">
-<br>Missed Deadlines Case
-  needs to run for 25 ms every 50 ms.<br>
-- <br>
- needs to run for 35 ms every 80 ms.<br>
-- 
-
-<br><img alt="RateMonotonicScheduling-MissedDeadline" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/RateMontonicScheduling-MissedDeadlinesCase.png" referrerpolicy="no-referrer"> 
-<br>In this case It can't satisfy the Hard real-time systems
-
-<br><br>Priorities are assigned according to deadlines<br><br>EDF Example 
-  needs to run for 25 ms every 50 ms.<br>
-- <br>
- needs to run for 35 ms every 80 ms.<br>
-- <br>
-<img alt="EDF" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/EDF.png" referrerpolicy="no-referrer">
-<br><br>T shares are allocated among all processes in the system<br>Example of Proportional Share Scheduling
- T = 20, therefore there are 20 shares, where one share represents 5% of the CPU time
-
-<br>An application receives N shares where 
-<br>This ensures each application will receive  of the total processor time 
-<br>Example: an application receives N = 5 shares the application then has 5 / 20 = 25% of the CPU time.
-<br>This percentage of CPU time is available to the application whether the application uses it or not.
-<br>无论应用程序是否使用这些CPU时间，这些份额都被保留给它。
-
-<br><br>
-<br>Linux Scheduling 
-<br>Windows Scheduling
-<br><br> Scheduling classes 
-
-<br>2 scheduling classes are included, others can be added
-
-<br>default 
-<br>real-time 
-
-
-<br>Each process/task has specific priority
-
-<br>
-<br>Real-time scheduling according to POSIX.1b 
-
-<br>Real-time tasks have static priorities
-
-
-<br>Real-time plus normal tasks map into global priority scheme 
-
-<br>Nice value of -20 maps to global priority 100 
-<br>Nice value of +19 maps to priority 139
-<br><img alt="LinuxScheduling-Priority" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/LinuxScheduling-Priority.png" referrerpolicy="no-referrer">
-
-
-<br><br>Scheduler picks highest priority task in highest scheduling class<br>
-<br>Quantum is not fixed 时间片不固定
-<br>Calculated based on nice value from -20 to +19 
-
-<br>Lower value is higher priority
-
-
-<br>CFS Mechanism
-
-<br>CFS maintains per task virtual run time in variable vruntime <a data-footref="[inline7" href="https://blog.allenygy.vip/about:blank#fn-8-503b919a96bcdae5" class="footnote-link" target="_self" rel="noopener">[8]</a>
-<br>Associated with decay factor based on priority of task =&gt; lower priority is higher decay rate  <a data-footref="[inline8" href="https://blog.allenygy.vip/about:blank#fn-9-503b919a96bcdae5" class="footnote-link" target="_self" rel="noopener">[9]</a>
-<br>Normal default priority (Nice value: 0) yields virtual run time = actual run time 
-<br>To decide next task to run, scheduler picks task with lowest virtual run time <a data-footref="[inline9" href="https://blog.allenygy.vip/about:blank#fn-10-503b919a96bcdae5" class="footnote-link" target="_self" rel="noopener">[10]</a><br>
-<img alt="LinuxScheduling" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/LinuxScheduling.png" referrerpolicy="no-referrer">
-
-<br><br>Windows uses priority-based preemptive scheduling<br>
-<br>
-Highest-priority thread runs next 
-
-<br>Thread runs until 
-
-<br>
-
-<br>blocks,
-
-
-<br>
-
-<br>uses time slice,
-
-
-<br>
-
-<br>preempted by higher-priority thread
-
-
-
-
-
-
-<br>
-Real-time threads can preempt non-real-time
-
-<br>
-32-level priority scheme 
-
-<br>Variable class is 1-15, real-time class is 16-31 
-<br>Priority 0 is memory-management thread 
-<br>There is a queue for each priority 
-<br>If no run-able thread, runs idle thread
-
-
-<br>
-<img alt="Windows Scheduling" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/WindowsScheduling.png" referrerpolicy="no-referrer">
-
-<br>
-Windows操作系统中进程可以属于六种优先级类别，每个类别中各个相对优先级的数值。Windows API定义了实时类（real-time class）和变量类（variable class），每个类别中都有不同的优先级级别。
-
-<br>
-在实时类别中，有一个时间关键（time-critical）优先级，这是最高的优先级，数值为31。其他优先级依次降低，直到最低的空闲（idle）优先级，数值为16。这些优先级是为需要即时响应的任务设计的，比如那些在特定时间限制内必须完成的任务。
-
-<br>
-在变量类别中，优先级从高（high）到空闲（idle）不等。每个优先级类别还有相对优先级，如正常（normal）类别的优先级数值范围从15到6不等。这些优先级通常用于普通应用程序和后台任务。
-
-<br>
-“变量”（Variable 意味着线程的优先级可以改变，即使它们属于同一类别。这允许操作系统根据当前的需求和资源情况动态调整进程的优先级。
-
-<br>
-在调度时，系统会选择优先级数值最高的线程来执行，确保时间敏感的任务能够获得及时的处理。通过这种方式，操作系统可以管理多任务环境中的资源分配，确保关键任务能够及时完成，同时为不太重要的任务提供必要的CPU时间。
-
-<br>
-<br>
-<br>keep the CPU as busy as possible<a href="https://blog.allenygy.vip/about:blank#fnref-1-503b919a96bcdae5" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>Increase throughput as high as possible<a href="https://blog.allenygy.vip/about:blank#fnref-2-503b919a96bcdae5" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>An event that occurs when a thread is on CPU and accesses memory content that is not in the CPU’s cache. The thread’s execution stalls while the memory content is retrieved and fetched<a href="https://blog.allenygy.vip/about:blank#fnref-3-503b919a96bcdae5" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>处理时间<a href="https://blog.allenygy.vip/about:blank#fnref-4-503b919a96bcdae5" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>截止时间<a href="https://blog.allenygy.vip/about:blank#fnref-5-503b919a96bcdae5" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>周期时间<a href="https://blog.allenygy.vip/about:blank#fnref-6-503b919a96bcdae5" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>周期任务的频率<a href="https://blog.allenygy.vip/about:blank#fnref-7-503b919a96bcdae5" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>虚拟运行时间（vruntime）：CFS使用一个名为vruntime的变量来追踪每个进程应该获得的CPU时间。vruntime的增加速度取决于进程的优先级：优先级较低的进程（nice值较高）的vruntime增长得更快。<a href="https://blog.allenygy.vip/about:blank#fnref-8-503b919a96bcdae5" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>衰减因子：CFS使用衰减因子来根据进程的优先级调整其vruntime，优先级越低的进程，其vruntime的增长越快，从而减少它们被调度的概率。<a href="https://blog.allenygy.vip/about:blank#fnref-9-503b919a96bcdae5" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-<br>选择下一个运行的进程：当需要选择下一个运行的进程时，CFS选择vruntime最低的进程，以尝试平等地分配CPU时间给每个进程。<a href="https://blog.allenygy.vip/about:blank#fnref-10-503b919a96bcdae5" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
-]]></description><link>https://blog.allenygy.vip/operating-system/cpu-scheduling.html</link><guid isPermaLink="false">Operating System/Cpu Scheduling.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 16 Jul 2024 13:19:53 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Burst-duration.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Burst-duration.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://github.com/ALLENYGY/DataBase-Management-System-Project" rel="noopener" class="external-link" href="https://github.com/ALLENYGY/DataBase-Management-System-Project" target="_blank">Courier Station Information Management System</a>]]></title><description><![CDATA[ 
+<br><br>]]></description><link>https://blog.allenygy.vip/operating-system/linux-basic-operation.html</link><guid isPermaLink="false">Operating System/Linux Basic Operation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 16 Jul 2024 13:19:45 GMT</pubDate></item><item><title><![CDATA[<a data-tooltip-position="top" aria-label="https://github.com/ALLENYGY/DataBase-Management-System-Project" rel="noopener" class="external-link" href="https://github.com/ALLENYGY/DataBase-Management-System-Project" target="_blank">Courier Station Information Management System</a>]]></title><description><![CDATA[ 
  <br><br><br>
 <br>There is only one courier station in each region.
 <br>The address in this area is the address of the delivery station.
