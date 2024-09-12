@@ -1,6 +1,6 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1726104745284,
+  "lastExport": 1726104958285,
   "pluginVersion": "1.8.03",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd primary-accent-purple secondary-accent-green",
   "useCustomHeadContent": false,
@@ -73,8 +73,8 @@
     "Computer Organization/Lab/Lab5.md",
     "Computer Organization/Lab/Lab3.md",
     "Computer Organization/Lab/Lab2.md",
-    "Computer Organization/Lecture/Vonneumann-Architecture/register.png",
     "Computer Organization/Lecture/Vonneumann-Architecture/memory.png",
+    "Computer Organization/Lecture/Vonneumann-Architecture/register.png",
     "Computer Organization/Lecture/Vonneumann-Architecture/lc-3.png",
     "Computer Organization/Lecture/Vonneumann-Architecture/lc-3.drawio",
     "Computer Organization/Lecture/Vonneumann-Architecture/cu.png",
@@ -163,70 +163,14 @@
     "Deep Learning/Deep Learning.md",
     "English/IELTS/Listen/Listen-1.md",
     "English/IELTS/Listen/IELTS-Map.md",
-    "English/IELTS/Speak/Record/900 Sentences/9.6.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.27.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题2 家庭.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题1 自己.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题13 衣服.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题21 机器人.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/9.5.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题27 音乐.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题26 爱好.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/9.3.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题25 电影.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题24 文化娱乐.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/9.2.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题23 颜色.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题22 收藏.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.31.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题20 日记.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.30.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题19 手工工艺.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.29.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题18 礼物.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.28.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题17 信或卡片.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题16 金钱.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.26.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题15 烹饪与食物.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.24.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题14 计算机.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.23.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题12 书籍.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.22.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题11 领导人.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.21.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题10 老师.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.20.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题9 老人.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.19.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题8 邻居.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题7 名人.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.17.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.16.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题6 同事.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题5 孩子.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.15.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题4 同学.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.14.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.13.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/话题3 朋友.m4a",
-    "English/IELTS/Speak/Record/900 Sentences/8.12.m4a",
-    "English/IELTS/Speak/Record/Part 1/5 Chocolate.m4a",
-    "English/IELTS/Speak/Record/Part 1/6 Happy Things.m4a",
-    "English/IELTS/Speak/Record/Part 1/3 Language.m4a",
-    "English/IELTS/Speak/Record/Part 1/2 Sharing.m4a",
-    "English/IELTS/Speak/Record/Part 1/4 Pen & Pencil.m4a",
-    "English/IELTS/Speak/Record/Part 1/1 Small Businesses.m4a",
     "English/IELTS/Speak/IELTS-Part-2.md",
     "English/IELTS/Speak/IELTS-Part-1.md",
     "English/IELTS/Speak/Note for the Video.md",
     "English/IELTS/Speak/IELTS-SPEAK-OVERVIEW.md",
-    "English/IELTS/Speak/Speak.md",
     "English/IELTS/Speak/Part 2.md",
+    "English/IELTS/Speak/Speak.md",
     "English/IELTS/Speak/Note for the record.md",
     "English/IELTS/Speak/Vocabulary Notebook.md",
-    "English/IELTS/Speak/Needs-Problem-Trends.pdf",
     "English/IELTS/Write/Task1/Dynamic Charts.md",
     "English/IELTS/Write/Task1/IELTS-Write-Task1.md",
     "English/IELTS/Write/Task2/Fuel Cost.md",
@@ -235,9 +179,9 @@
     "English/IELTS/Write/Task2/Retirement Community.md",
     "English/IELTS/Write/Task2/IELTS Write Task2 Logical chain.md",
     "English/IELTS/Write/Fuel Cost.md",
-    "English/IELTS/Write/WRITE Lesson.md",
     "English/IELTS/Write/Generation Gap.md",
     "English/IELTS/Write/Retirement Community.md",
+    "English/IELTS/Write/WRITE Lesson.md",
     "English/Words/Quiz.md",
     "English/Words/Media.md",
     "English/Words/Gender.md",
@@ -482,217 +426,217 @@
   ],
   "fileInfo": {
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
@@ -704,13 +648,13 @@
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 399235,
+      "modifiedTime": 1726104958285,
+      "sourceSize": 344028,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
@@ -746,19 +690,19 @@
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
@@ -770,49 +714,49 @@
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 151847,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 316784,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 1014,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 2112537,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
@@ -1574,7 +1518,7 @@
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1726104745284,
+      "modifiedTime": 1726104958285,
       "sourceSize": 31253,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
@@ -2851,336 +2795,6 @@
       "exportedPath": "english/ielts/listen/ielts-map.html",
       "dependencies": []
     },
-    "English/IELTS/Speak/Record/900 Sentences/9.6.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 149219,
-      "exportedPath": "english/ielts/speak/record/900-sentences/9.6.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.27.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 117729,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.27.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题2 家庭.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 488410,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题2-家庭.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题1 自己.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 474665,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题1-自己.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题13 衣服.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 488304,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题13-衣服.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题21 机器人.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 617768,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题21-机器人.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/9.5.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 817207,
-      "exportedPath": "english/ielts/speak/record/900-sentences/9.5.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题27 音乐.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 380984,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题27-音乐.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题26 爱好.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 574386,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题26-爱好.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/9.3.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 96476,
-      "exportedPath": "english/ielts/speak/record/900-sentences/9.3.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题25 电影.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 585016,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题25-电影.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题24 文化娱乐.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 747290,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题24-文化娱乐.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/9.2.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 274728,
-      "exportedPath": "english/ielts/speak/record/900-sentences/9.2.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题23 颜色.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 664914,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题23-颜色.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题22 收藏.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 651148,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题22-收藏.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.31.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 90534,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.31.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题20 日记.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 531224,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题20-日记.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.30.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 82382,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.30.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题19 手工工艺.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 762089,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题19-手工工艺.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.29.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 50714,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.29.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题18 礼物.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 560091,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题18-礼物.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.28.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 73856,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.28.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题17 信或卡片.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 572684,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题17-信或卡片.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题16 金钱.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 496510,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题16-金钱.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.26.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 199835,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.26.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题15 烹饪与食物.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 478385,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题15-烹饪与食物.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.24.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 71929,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.24.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题14 计算机.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 534427,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题14-计算机.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.23.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 52571,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.23.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题12 书籍.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 644162,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题12-书籍.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.22.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 293849,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.22.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题11 领导人.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 574140,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题11-领导人.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.21.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 51265,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.21.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题10 老师.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 572520,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题10-老师.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.20.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 116906,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.20.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题9 老人.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 563711,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题9-老人.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.19.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 245386,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.19.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题8 邻居.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 576461,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题8-邻居.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题7 名人.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 674847,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题7-名人.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.17.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 184778,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.17.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.16.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 140421,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.16.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题6 同事.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 557271,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题6-同事.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题5 孩子.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 475981,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题5-孩子.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.15.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 185248,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.15.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题4 同学.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 380400,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题4-同学.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.14.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 67419,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.14.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.13.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 71011,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.13.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/话题3 朋友.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 545697,
-      "exportedPath": "english/ielts/speak/record/900-sentences/话题3-朋友.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/900 Sentences/8.12.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 134757,
-      "exportedPath": "english/ielts/speak/record/900-sentences/8.12.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/Part 1/5 Chocolate.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 368852,
-      "exportedPath": "english/ielts/speak/record/part-1/5-chocolate.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/Part 1/6 Happy Things.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 511901,
-      "exportedPath": "english/ielts/speak/record/part-1/6-happy-things.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/Part 1/3 Language.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 394917,
-      "exportedPath": "english/ielts/speak/record/part-1/3-language.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/Part 1/2 Sharing.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 361353,
-      "exportedPath": "english/ielts/speak/record/part-1/2-sharing.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/Part 1/4 Pen & Pencil.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 435189,
-      "exportedPath": "english/ielts/speak/record/part-1/4-pen-&-pencil.m4a",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Record/Part 1/1 Small Businesses.m4a": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 359111,
-      "exportedPath": "english/ielts/speak/record/part-1/1-small-businesses.m4a",
-      "dependencies": []
-    },
     "English/IELTS/Speak/IELTS-Part-2.md": {
       "modifiedTime": 1726104745284,
       "sourceSize": 13218,
@@ -3227,12 +2841,6 @@
       "modifiedTime": 1726104745284,
       "sourceSize": 178,
       "exportedPath": "english/ielts/speak/vocabulary-notebook.html",
-      "dependencies": []
-    },
-    "English/IELTS/Speak/Needs-Problem-Trends.pdf": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 216406,
-      "exportedPath": "english/ielts/speak/needs-problem-trends.pdf",
       "dependencies": []
     },
     "English/IELTS/Write/Task1/Dynamic Charts.md": {
