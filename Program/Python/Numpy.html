@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    Numpy &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Numpy" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="[[Numpy]]" />
+<meta property="og:description" content="[[Numpy]]" />
+<link rel="canonical" href="https://allenygy.github.io/Program/Python/Numpy" />
+<meta property="og:url" content="https://allenygy.github.io/Program/Python/Numpy" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-13T13:40:44+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Numpy" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-09-13T13:40:44+08:00","datePublished":"2024-09-13T13:40:44+08:00","description":"[[Numpy]]","headline":"Numpy","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/Program/Python/Numpy"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/Program/Python/Numpy"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://allenygy.github.io">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://allenygy.github.io">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/contents">
+        <i class="fa-solid fa-book fa-fw"></i> 目录
+      </a>
+      
+      <a class="sidebar-nav-item" href="/OS">
+        <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DCN">
+        <i class="fa-solid fa-network-wired"></i> 计算机网络
+      </a>
+      
+      <a class="sidebar-nav-item" href="/CO">
+        <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Program">
+        <i class="fa-solid fa-code fa-fw"></i> 编程语言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Math">
+        <i class="fa-solid fa-tools fa-fw"></i> 数学
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DBM">
+        <i class="fa-solid fa-database fa-fw"></i> 数据库
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Tools">
+        <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/links">
+        <i class="fa-solid fa-user-friends fa-fw"></i> 友链
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#numpy">Numpy</a>
+    <ol>
+      <li><a href="#creating-arrays-from-python-lists">Creating Arrays from Python Lists</a></li>
+      <li><a href="#creating-arrays-from-scratch">Creating Arrays from Scratch</a>
+        <ol>
+          <li><a href="#create-array-with-same-data">Create array with same data</a></li>
+          <li><a href="#create-with-rules">Create with rules</a></li>
+        </ol>
+      </li>
+      <li><a href="#numpy-standard-data-types">NumPy Standard Data Types</a></li>
+    </ol>
+  </li>
+  <li><a href="#manipulation-of-numpy-arrays">Manipulation of NumPy Arrays</a>
+    <ol>
+      <li><a href="#numpy-array-attributes">NumPy Array Attributes</a></li>
+      <li><a href="#array-indexing-accessing-single-elements">Array Indexing: Accessing Single Elements</a></li>
+      <li><a href="#array-slicing-accessing-subarrays">Array Slicing: Accessing Subarrays</a>
+        <ol>
+          <li><a href="#one-dimensional-subarrays">One-dimensional subarrays</a></li>
+          <li><a href="#multi-dimensional-subarrays">Multi-dimensional subarrays</a>
+            <ol>
+              <li><a href="#accessing-array-rows-and-columns">Accessing array rows and columns</a></li>
+            </ol>
+          </li>
+          <li><a href="#subarrays-as-no-copy-views">Subarrays as no-copy views</a></li>
+          <li><a href="#creating-copies-of-arrays">Creating copies of arrays</a></li>
+        </ol>
+      </li>
+      <li><a href="#reshaping-of-arrays">Reshaping of Arrays</a></li>
+      <li><a href="#array-concatenation-and-splitting">Array Concatenation and Splitting</a>
+        <ol>
+          <li><a href="#concatenation-of-arrays">Concatenation of arrays</a></li>
+          <li><a href="#splitting-of-arrays">Splitting of arrays</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li><a href="#computation-on-numpy-arrays-universal-functions--%E9%80%9A%E7%94%A8%E5%87%BD%E6%95%B0">Computation on NumPy Arrays: Universal Functions ( 通用函数)</a>
+    <ol>
+      <li><a href="#the-slowness-of-loops">The Slowness of Loops</a></li>
+      <li><a href="#introducing-ufuncs">Introducing UFuncs</a></li>
+      <li><a href="#exploring-numpys-ufuncs">Exploring NumPy’s UFuncs</a>
+        <ol>
+          <li><a href="#array-arithmetic">Array arithmetic</a></li>
+          <li><a href="#absolute-value">Absolute value</a></li>
+          <li><a href="#trigonometric-functions">Trigonometric functions</a></li>
+          <li><a href="#exponents-and-logarithms">Exponents and logarithms</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "03/20/2024 16:27:40")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/ALLENYGY/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        46万
+        
+          
+        
+        4千
+        361字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">Numpy</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2024-06-11 01:16:00 Tuesday
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2024-05-15 14:24:00 Wednesday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        18269字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        61分
+        
+        
+        
+        <br>
+        
+        Python and NOTE
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="numpy"><a class="internal-link" href="/Program/Python/Numpy">Numpy</a></h1>
+
+<h2 id="creating-arrays-from-python-lists">Creating Arrays from Python Lists</h2>
+
+<ol>
+  <li>Using List Create <code class="language-plaintext highlighter-rouge">numpy array</code></li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># integer array:
+</span><span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p><strong>Output:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([1, 4, 2, 5, 3])
+</code></pre></div></div>
+
+<ol>
+  <li>NumPy is <em>constrained</em> to arrays that all contain the <strong>same type.</strong>
+    <ul>
+      <li>If types do not match, NumPy will upcast if possible (here, integers are up-cast to floating point):</li>
+    </ul>
+  </li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mf">3.14</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p><strong>Output:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([3.14, 4.  , 2.  , 3.  ])
+</code></pre></div></div>
+
+<ol>
+  <li>Explicitly set the data type of the resulting array, use the <code class="language-plaintext highlighter-rouge">dtype</code> keyword:</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="sh">'</span><span class="s">float32</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Output:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([1., 2., 3., 4.], dtype=float32)
+</code></pre></div></div>
+
+<ol>
+  <li>NumPy arrays can explicitly be <strong>multi-dimensional</strong></li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># nested lists result in multi-dimensional arrays
+</span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="nf">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
+<span class="n">a</span>
+</code></pre></div></div>
+
+<p><strong>Output</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([[2, 3, 4], [4, 5, 6], [6, 7, 8]])
+</code></pre></div></div>
+
+<h2 id="creating-arrays-from-scratch">Creating Arrays from Scratch</h2>
+
+<p>Especially for larger arrays, it is more efficient to create arrays from scratch using routines built into NumPy.</p>
+
+<h3 id="create-array-with-same-data">Create array with same data</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">zeros</span><span class="p">(</span><span class="o">&lt;</span><span class="n">createshape</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=&lt;</span><span class="n">datatype</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="n">np</span><span class="p">.</span><span class="nf">ones</span><span class="p">(</span><span class="o">&lt;</span><span class="n">createshape</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=&lt;</span><span class="n">datatype</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="n">np</span><span class="p">.</span><span class="nf">full</span><span class="p">(</span><span class="o">&lt;</span><span class="n">createshape</span><span class="o">&gt;</span><span class="p">,</span><span class="o">&lt;</span><span class="n">fill</span> <span class="n">number</span><span class="o">&gt;</span><span class="p">)</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>[!example]- Example: Create a length-10 integer array filled with zeros</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">zeros</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+</code></pre></div>  </div>
+  <p><strong>Output</strong></p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote>
+  <p>[!example]- Example: Create a 3x5 floating-point array filled with ones</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+</code></pre></div>  </div>
+  <p><strong>Output</strong></p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([[1., 1., 1., 1., 1.], [1., 1., 1., 1., 1.], [1., 1., 1., 1., 1.]])
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote>
+  <p>[!example]- Example: Create a 3x5 array filled with 3.14</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">full</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="mf">3.14</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([[3.14, 3.14, 3.14, 3.14, 3.14],
+       [3.14, 3.14, 3.14, 3.14, 3.14],
+       [3.14, 3.14, 3.14, 3.14, 3.14]])
+</code></pre></div>  </div>
+
+</blockquote>
+
+<h3 id="create-with-rules">Create with rules</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span> <span class="c1">#Starting at start, ending at end, stepping by step
+</span><span class="n">np</span><span class="p">.</span><span class="nf">linspace</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span> <span class="c1">#Starting at start, ending at end, Divide by step
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">random</span><span class="p">(</span><span class="o">&lt;</span><span class="n">shape</span><span class="o">&gt;</span><span class="p">)</span> <span class="c1">#Uniformly distributed
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">normal</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">shape</span><span class="o">&gt;</span><span class="p">)</span> <span class="c1">#Construct range from a to b normally distributed matrix 
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">shape</span><span class="o">&gt;</span><span class="p">)</span> <span class="c1">#random integers in the interval [0, 10)
+</span><span class="n">np</span><span class="p">.</span><span class="nf">eye</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="c1"># Construct identity matrix 
+</span></code></pre></div></div>
+
+<blockquote>
+  <p>[!example]- Example: Create an array filled with a linear sequence</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Starting at 0, ending at 20, stepping by 2
+# (this is similar to the built-in range() function)
+</span><span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18])
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote>
+  <p>[!example]- Example: Create an array of five values evenly spaced between 0 and 1</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create an array of five values evenly spaced between 0 and 1
+</span><span class="n">np</span><span class="p">.</span><span class="nf">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	array([0.  , 0.25, 0.5 , 0.75, 1.  ])
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote>
+  <p>[!example]- Example: Create a 3x3 array of uniformly distributed</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># random values between 0 and 1
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">random</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</code></pre></div>  </div>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([[0.37598881, 0.21179029, 0.70865879],
+       [0.95135829, 0.7208924 , 0.90282807],
+       [0.94199024, 0.31798853, 0.96914883]])
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote>
+  <p>[!example]- Example: Create a 3x3 array of normally distributed random values</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># with mean 0 and standard deviation 1
+</span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</code></pre></div>  </div>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([[-0.60396295, -1.2562087 , -0.70299877],
+       [ 1.19554453,  0.16795621, -1.08435634],
+       [-1.53097616, -0.88395816, -0.16151936]])
+</code></pre></div>  </div>
+
+</blockquote>
+
+<blockquote>
+  <p>[!example]- Example: Create a 3x3 array of random integers in the interval [0, 10)</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</code></pre></div>  </div>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([[6, 1, 5],
+       [5, 8, 9],
+       [9, 6, 4]])
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote>
+  <p>[!example]- Example: Create a 3x3 <strong>identity matrix</strong></p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">eye</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([[1., 0., 0.],
+       [0., 1., 0.],
+       [0., 0., 1.]])
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote>
+  <p>[!example]- Create an uninitialized array of three integers</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># The values will be whatever happens to already exist at that memory location
+</span><span class="n">np</span><span class="p">.</span><span class="nf">empty</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([1., 1., 1.])
+</code></pre></div>  </div>
+</blockquote>
+
+<h2 id="numpy-standard-data-types">NumPy Standard Data Types</h2>
+
+<ul>
+  <li>NumPy arrays contain values of a single type, so it is important to have detailed knowledge of those types and their limitations.</li>
+  <li>Because NumPy is built in C, the types will <strong>be familiar to</strong> users of C language.</li>
+</ul>
+
+<p>Note that when constructing an array, they can be specified using a string:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">zeros</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="sh">'</span><span class="s">int16</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Or using the associated NumPy object:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">zeros</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">int16</span><span class="p">)</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>[!abstract]- The standard NumPy data types are listed in the following table.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Data type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">bool_</code></td>
+        <td>Boolean (True or False) stored as a byte</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">int_</code></td>
+        <td>Default integer type (same as C <code class="language-plaintext highlighter-rouge">long</code>; normally either <code class="language-plaintext highlighter-rouge">int64</code> or <code class="language-plaintext highlighter-rouge">int32</code>)</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">intc</code></td>
+        <td>Identical to C <code class="language-plaintext highlighter-rouge">int</code> (normally <code class="language-plaintext highlighter-rouge">int32</code> or <code class="language-plaintext highlighter-rouge">int64</code>)</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">intp</code></td>
+        <td>Integer used for indexing (same as C <code class="language-plaintext highlighter-rouge">ssize_t</code>; normally either <code class="language-plaintext highlighter-rouge">int32</code> or <code class="language-plaintext highlighter-rouge">int64</code>)</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">int8</code></td>
+        <td>Byte (-128 to 127)</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">int16</code></td>
+        <td>Integer (-32768 to 32767)</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">int32</code></td>
+        <td>Integer (-2147483648 to 2147483647)</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">int64</code></td>
+        <td>Integer (-9223372036854775808 to 9223372036854775807)</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">uint8</code></td>
+        <td>Unsigned integer (0 to 255)</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">uint16</code></td>
+        <td>Unsigned integer (0 to 65535)</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">uint32</code></td>
+        <td>Unsigned integer (0 to 4294967295)</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">uint64</code></td>
+        <td>Unsigned integer (0 to 18446744073709551615)</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">float_</code></td>
+        <td>Shorthand for <code class="language-plaintext highlighter-rouge">float64</code>.</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">float16</code></td>
+        <td>Half precision float: sign bit, 5 bits exponent, 10 bits mantissa</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">float32</code></td>
+        <td>Single precision float: sign bit, 8 bits exponent, 23 bits mantissa</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">float64</code></td>
+        <td>Double precision float: sign bit, 11 bits exponent, 52 bits mantissa</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">complex_</code></td>
+        <td>Shorthand for <code class="language-plaintext highlighter-rouge">complex128</code>.</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">complex64</code></td>
+        <td>Complex number, represented by two 32-bit floats</td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">complex128</code></td>
+        <td>Complex number, represented by two 64-bit floats</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<h1 id="manipulation-of-numpy-arrays">Manipulation of NumPy Arrays</h1>
+
+<p>This section will present several examples of using NumPy array manipulation to access data and subarrays, and to split, reshape, and join the arrays.</p>
+
+<p>Get to know them well!</p>
+
+<p>We’ll cover a few categories of basic array manipulations here:</p>
+
+<ul>
+  <li><em>Attributes of arrays</em>: Determining the size, shape, memory consumption, and data types of arrays</li>
+  <li><em>Indexing of arrays</em>: Getting and setting the value of individual array elements</li>
+  <li><em>Slicing of arrays</em>: Getting and setting smaller subarrays within a larger array</li>
+  <li><em>Reshaping of arrays</em>: Changing the shape of a given array</li>
+  <li><em>Joining and splitting of arrays</em>: Combining multiple arrays into one, and splitting one array into many</li>
+</ul>
+
+<h2 id="numpy-array-attributes">NumPy Array Attributes</h2>
+
+<p>First let’s discuss some useful array attributes.
+We’ll start by defining three random arrays, a one-dimensional, two-dimensional, and three-dimensional array.
+We’ll use NumPy’s random number generator, which we will <em>seed</em> with a set value in order to ensure that the same random arrays are generated each time this code is run:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># seed for reproducibility
+</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>  <span class="c1"># One-dimensional array
+</span><span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>  <span class="c1"># Two-dimensional array
+</span><span class="n">x3</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>  <span class="c1"># Three-dimensional array
+</span></code></pre></div></div>
+
+<p>Each array has attributes <code class="language-plaintext highlighter-rouge">ndim</code> (the number of dimensions), <code class="language-plaintext highlighter-rouge">shape</code> (the size of each dimension), and <code class="language-plaintext highlighter-rouge">size</code> (the total size of the array):</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x3 ndim: </span><span class="sh">"</span><span class="p">,</span> <span class="n">x3</span><span class="p">.</span><span class="n">ndim</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x3 shape:</span><span class="sh">"</span><span class="p">,</span> <span class="n">x3</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x3 size: </span><span class="sh">"</span><span class="p">,</span> <span class="n">x3</span><span class="p">.</span><span class="n">size</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x3 ndim:  3
+x3 shape: (3, 4, 5)
+x3 size:  60
+</code></pre></div></div>
+
+<p>Another useful attribute is the <code class="language-plaintext highlighter-rouge">dtype</code>, the data type of the array:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">dtype:</span><span class="sh">"</span><span class="p">,</span> <span class="n">x3</span><span class="p">.</span><span class="n">dtype</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dtype: int64
+</code></pre></div></div>
+
+<p>Other attributes include <code class="language-plaintext highlighter-rouge">itemsize</code>, which lists the size (in bytes) of each array element, and <code class="language-plaintext highlighter-rouge">nbytes</code>, which lists the total size (in bytes) of the array:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">itemsize:</span><span class="sh">"</span><span class="p">,</span> <span class="n">x3</span><span class="p">.</span><span class="n">itemsize</span><span class="p">,</span> <span class="sh">"</span><span class="s">bytes</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">nbytes:</span><span class="sh">"</span><span class="p">,</span> <span class="n">x3</span><span class="p">.</span><span class="n">nbytes</span><span class="p">,</span> <span class="sh">"</span><span class="s">bytes</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>itemsize: 8 bytes
+nbytes: 480 bytes
+</code></pre></div></div>
+
+<p>In general, we expect that <code class="language-plaintext highlighter-rouge">nbytes</code> is equal to <code class="language-plaintext highlighter-rouge">itemsize</code> times <code class="language-plaintext highlighter-rouge">size</code>.</p>
+
+<h2 id="array-indexing-accessing-single-elements">Array Indexing: Accessing Single Elements</h2>
+
+<p>If you are familiar with Python’s standard list indexing, indexing in NumPy will feel quite familiar.
+In a one-dimensional array, the $i^{th}$ value (counting from zero) can be accessed by specifying the desired index in square brackets, just as with Python lists:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x1</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([5, 0, 3, 3, 7, 9])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5
+</code></pre></div></div>
+
+<p>To index from the end of the array, you can use negative indices:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>9
+</code></pre></div></div>
+
+<p>In a multi-dimensional array, items can be accessed using a comma-separated tuple of indices:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x2</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([[3, 5, 2, 4],
+       [7, 6, 8, 8],
+       [1, 6, 7, 7]])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x2</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x2</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>7
+</code></pre></div></div>
+
+<p><strong>Q4</strong>: What is x2[-1, -2]?</p>
+
+<p>Values can also be modified using any of the above index notation:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x2</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">x2</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([[12,  5,  2,  4],
+       [ 7,  6,  8,  8],
+       [ 1,  6,  7,  7]])
+</code></pre></div></div>
+
+<p>Keep in mind that, unlike Python lists, NumPy arrays have a fixed type.
+This means, for example, that if you attempt to insert a floating-point value to an integer array, the value will be silently truncated. Don’t be caught unaware by this behavior!</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">3.14159</span>  <span class="c1"># this will be truncated!
+</span><span class="n">x1</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([3, 0, 3, 3, 7, 9])
+</code></pre></div></div>
+
+<h2 id="array-slicing-accessing-subarrays">Array Slicing: Accessing Subarrays</h2>
+
+<p>Just as we can use square brackets to access individual array elements, we can also use them to access subarrays with the <em>slice</em> notation, marked by the colon (<code class="language-plaintext highlighter-rouge">:</code>) character.
+The NumPy slicing syntax follows that of the standard Python list; to access a slice of an array <code class="language-plaintext highlighter-rouge">x</code>, use this:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">stop</span><span class="p">:</span><span class="n">step</span><span class="p">]</span>
+</code></pre></div></div>
+<p>If any of these are unspecified, they default to the values <code class="language-plaintext highlighter-rouge">start=0</code>, <code class="language-plaintext highlighter-rouge">stop=</code><em><code class="language-plaintext highlighter-rouge">size of dimension</code></em>, <code class="language-plaintext highlighter-rouge">step=1</code>.
+We’ll take a look at accessing sub-arrays in one dimension and in multiple dimensions.</p>
+
+<h3 id="one-dimensional-subarrays">One-dimensional subarrays</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">x</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>  <span class="c1"># first five elements
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([0, 1, 2, 3, 4])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">[</span><span class="mi">5</span><span class="p">:]</span>  <span class="c1"># elements after index 5
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([5, 6, 7, 8, 9])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>  <span class="c1"># middle sub-array
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([4, 5, 6])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">[::</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># every other element
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([0, 2, 4, 6, 8])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># every other element, starting at index 1
+</span></code></pre></div></div>
+
+<p>A potentially confusing case is when the <code class="language-plaintext highlighter-rouge">step</code> value is negative.
+In this case, the array is reversed. <code class="language-plaintext highlighter-rouge">start</code> is the starting index of the reversed list, while <code class="language-plaintext highlighter-rouge">stop</code> is the stopping index
+This becomes a convenient way to reverse an array:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># all elements, reversed
+</span></code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">[</span><span class="mi">5</span><span class="p">::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># reversed list starting from index 5
+</span></code></pre></div></div>
+
+<p><strong>Q5</strong>: What is x[-2::-2]?</p>
+
+<h3 id="multi-dimensional-subarrays">Multi-dimensional subarrays</h3>
+
+<p>Multi-dimensional slices work in the same way, with multiple slices separated by commas.
+For example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x2</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x2</span><span class="p">[:</span><span class="mi">2</span><span class="p">,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span>  <span class="c1"># first two rows, first three columns
+</span></code></pre></div></div>
+
+<p><strong>Q5</strong>: What is x2[:4, :5]?</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x2</span><span class="p">[:</span><span class="mi">3</span><span class="p">,</span> <span class="p">::</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># all rows, every other column
+</span></code></pre></div></div>
+
+<p>Finally, subarray dimensions can even be reversed together:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x2</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># reverse rows and columns together
+</span></code></pre></div></div>
+
+<h4 id="accessing-array-rows-and-columns">Accessing array rows and columns</h4>
+
+<p>One commonly needed routine is accessing of single rows or columns of an array.
+This can be done by combining indexing and slicing, using an empty slice marked by a single colon (<code class="language-plaintext highlighter-rouge">:</code>):</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="n">x2</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">])</span>  <span class="c1"># first column of x2
+</span></code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x2</span><span class="p">[:,</span><span class="mi">0</span><span class="p">].</span><span class="n">shape</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="n">x2</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:])</span>  <span class="c1"># first row of x2
+</span></code></pre></div></div>
+
+<p>In the case of row access, the empty slice can be omitted for a more compact syntax:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="n">x2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># equivalent to x2[0, :]
+</span></code></pre></div></div>
+
+<h3 id="subarrays-as-no-copy-views">Subarrays as no-copy views</h3>
+
+<p>One important–and extremely useful–thing to know about array slices is that they return <em>views</em> rather than <em>copies</em> of the array data.
+This is one area in which NumPy array slicing differs from Python list slicing: in lists, slices will be copies.
+Consider our two-dimensional array from before:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Let’s extract a $2 \times 2$ subarray from this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x2_sub</span> <span class="o">=</span> <span class="n">x2</span><span class="p">[:</span><span class="mi">2</span><span class="p">,</span> <span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">x2_sub</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Now if we modify this subarray, we’ll see that the original array is changed! Observe:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x2_sub</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">99</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">x2_sub</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This default behavior is actually quite useful: it means that when we work with large datasets, we can access and process pieces of these datasets without the need to copy the underlying data buffer.</p>
+
+<h3 id="creating-copies-of-arrays">Creating copies of arrays</h3>
+
+<p>Despite the nice features of array views, it is sometimes useful to instead explicitly copy the data within an array or a subarray. This can be most easily done with the <code class="language-plaintext highlighter-rouge">copy()</code> method:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x2_sub_copy</span> <span class="o">=</span> <span class="n">x2</span><span class="p">[:</span><span class="mi">2</span><span class="p">,</span> <span class="p">:</span><span class="mi">2</span><span class="p">].</span><span class="nf">copy</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">x2_sub_copy</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>If we now modify this subarray, the original array is not touched:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x2_sub_copy</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">x2_sub_copy</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="reshaping-of-arrays">Reshaping of Arrays</h2>
+
+<p>Another useful type of operation is reshaping of arrays.
+The most flexible way of doing this is with the <code class="language-plaintext highlighter-rouge">reshape</code> method.
+For example, if you want to put the numbers 1 through 9 in a $3 \times 3$ grid, you can do the following:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">grid</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">).</span><span class="nf">reshape</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Note that for this to work, the size of the initial array must match the size of the reshaped array. 
+Where possible, the <code class="language-plaintext highlighter-rouge">reshape</code> method will use a no-copy view of the initial array, but with non-contiguous memory buffers this is not always the case.</p>
+
+<p>Another common reshaping pattern is the conversion of a one-dimensional array into a two-dimensional row or column matrix.
+This can be done with the <code class="language-plaintext highlighter-rouge">reshape</code> method, or more easily done by making use of the <code class="language-plaintext highlighter-rouge">newaxis</code> keyword within a slice operation:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">x</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># row vector via newaxis
+</span><span class="n">x</span><span class="p">[</span><span class="n">np</span><span class="p">.</span><span class="n">newaxis</span><span class="p">,</span> <span class="p">:]</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># column vector via reshape
+</span><span class="n">x</span><span class="p">.</span><span class="nf">reshape</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p><strong>Q6:</strong> What has been changed after the reshape method?</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># column vector via newaxis
+</span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">x</span><span class="p">[:,</span> <span class="n">np</span><span class="p">.</span><span class="n">newaxis</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h2 id="array-concatenation-and-splitting">Array Concatenation and Splitting</h2>
+
+<p>All of the preceding routines worked on single arrays. It’s also possible to combine multiple arrays into one, and to conversely split a single array into multiple arrays. We’ll take a look at those operations here.</p>
+
+<h3 id="concatenation-of-arrays">Concatenation of arrays</h3>
+
+<p>Concatenation, or joining of two arrays in NumPy, is primarily accomplished using the routines <code class="language-plaintext highlighter-rouge">np.concatenate</code>, <code class="language-plaintext highlighter-rouge">np.vstack</code>, and <code class="language-plaintext highlighter-rouge">np.hstack</code>.
+<code class="language-plaintext highlighter-rouge">np.concatenate</code> takes a tuple or list of arrays as its first argument, as we can see here:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">np</span><span class="p">.</span><span class="nf">concatenate</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>You can also concatenate more than two arrays at once:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">z</span> <span class="o">=</span> <span class="p">[</span><span class="mi">99</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">99</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">concatenate</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">]))</span>
+</code></pre></div></div>
+
+<p>It can also be used for two-dimensional arrays:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">grid</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># concatenate along the first axis
+</span><span class="n">np</span><span class="p">.</span><span class="nf">concatenate</span><span class="p">([</span><span class="n">grid</span><span class="p">,</span> <span class="n">grid</span><span class="p">])</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># concatenate along the second axis (zero-indexed)
+</span><span class="n">np</span><span class="p">.</span><span class="nf">concatenate</span><span class="p">([</span><span class="n">grid</span><span class="p">,</span> <span class="n">grid</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>For working with arrays of mixed dimensions, it can be clearer to use the <code class="language-plaintext highlighter-rouge">np.vstack</code> (vertical stack) and <code class="language-plaintext highlighter-rouge">np.hstack</code> (horizontal stack) functions:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+
+<span class="c1"># vertically stack the arrays
+</span><span class="n">np</span><span class="p">.</span><span class="nf">vstack</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">grid</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p><strong>Q7</strong>：What may happen if we use hstack function in the previous cell?</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># horizontally stack the arrays
+</span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">99</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">99</span><span class="p">]])</span>
+<span class="n">np</span><span class="p">.</span><span class="nf">hstack</span><span class="p">([</span><span class="n">grid</span><span class="p">,</span> <span class="n">y</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>Similary, <code class="language-plaintext highlighter-rouge">np.dstack</code> will stack arrays along the third axis.</p>
+
+<h3 id="splitting-of-arrays">Splitting of arrays</h3>
+
+<p>The opposite of concatenation is splitting, which is implemented by the functions <code class="language-plaintext highlighter-rouge">np.split</code>, <code class="language-plaintext highlighter-rouge">np.hsplit</code>, and <code class="language-plaintext highlighter-rouge">np.vsplit</code>.  For each of these, we can pass a list of indices giving the split points:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span> <span class="c1"># split at third position and fifth position.
+</span><span class="nf">print</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Notice that <em>N</em> split-points, leads to <em>N + 1</em> subarrays.
+The related functions <code class="language-plaintext highlighter-rouge">np.hsplit</code> and <code class="language-plaintext highlighter-rouge">np.vsplit</code> are similar:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">grid</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="mi">16</span><span class="p">).</span><span class="nf">reshape</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">grid</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">upper</span><span class="p">,</span> <span class="n">lower</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">vsplit</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">upper</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">lower</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">hsplit</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">left</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">right</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Similarly, <code class="language-plaintext highlighter-rouge">np.dsplit</code> will split arrays along the third axis.</p>
+
+<h1 id="computation-on-numpy-arrays-universal-functions--通用函数">Computation on NumPy Arrays: Universal Functions ( 通用函数)</h1>
+
+<p>Computation on NumPy arrays can be very fast, or it can be very slow.
+The key to making it fast is to use <em>vectorized</em> operations, generally implemented through NumPy’s <em>universal functions</em> (ufuncs).
+This section motivates the need for NumPy’s ufuncs, which can be used to make repeated calculations on array elements much more efficient.
+It then introduces many of the most common and useful arithmetic ufuncs available in the NumPy package.</p>
+
+<h2 id="the-slowness-of-loops">The Slowness of Loops</h2>
+
+<p>The relative slowness of Python generally manifests itself in situations where many small operations are being repeated – for instance looping over arrays to operate on each element.
+For example, imagine we have an array of values and we’d like to compute the reciprocal (倒数) of each.
+A straightforward approach might look like this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">compute_reciprocals</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">empty</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">values</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">values</span><span class="p">)):</span>
+        <span class="n">output</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">output</span>
+        
+<span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="nf">compute_reciprocals</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This implementation probably feels fairly natural to someone from, say, a C or Java background.
+But if we measure the execution time of this code for a large input, we see that this operation is very slow, perhaps surprisingly so!
+We’ll benchmark this with IPython’s <code class="language-plaintext highlighter-rouge">%timeit</code> :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">big_array</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">1000000</span><span class="p">)</span>
+<span class="o">%</span><span class="n">timeit</span> <span class="nf">compute_reciprocals</span><span class="p">(</span><span class="n">big_array</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>It takes several seconds to compute these million operations and to store the result!
+When even cell phones have processing speeds measured in Giga-FLOPS (i.e., billions of numerical operations per second), this seems almost absurdly slow.
+It turns out that the bottleneck here is not the operations themselves, but the type-checking and function dispatches that CPython must do at each cycle of the loop.
+Each time the reciprocal is computed, Python first examines the object’s type and does a dynamic lookup of the correct function to use for that type.
+If we were working in compiled code instead, this type specification would be known before the code executes and the result could be computed much more efficiently.</p>
+
+<h2 id="introducing-ufuncs">Introducing UFuncs</h2>
+
+<p>For many types of operations, NumPy provides a convenient interface into just this kind of statically typed, compiled routine. This is known as a <em>vectorized</em> operation.
+This can be accomplished by simply performing an operation on the array, which will then be applied to each element.
+This vectorized approach is designed to push the loop into the compiled layer that underlies NumPy, leading to much faster execution.</p>
+
+<p>Compare the results of the following two:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="nf">compute_reciprocals</span><span class="p">(</span><span class="n">values</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">/</span> <span class="n">values</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Looking at the execution time for our big array, we see that it completes orders of magnitude faster than the Python loop:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%</span><span class="nf">timeit </span><span class="p">(</span><span class="mf">1.0</span> <span class="o">/</span> <span class="n">big_array</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Vectorized operations in NumPy are implemented via <em>ufuncs</em>, whose main purpose is to quickly execute repeated operations on values in NumPy arrays.
+Ufuncs are extremely flexible – before we saw an operation between a scalar and an array, but we can also operate between two arrays:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>And ufunc operations are not limited to one-dimensional arrays–they can also act on multi-dimensional arrays as well:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="mi">9</span><span class="p">).</span><span class="nf">reshape</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="mi">2</span> <span class="o">**</span> <span class="n">x</span>
+</code></pre></div></div>
+
+<p>Computations using vectorization through ufuncs are nearly always more efficient than their counterpart implemented using Python loops, especially as the arrays grow in size.
+Any time you see such a loop in a Python script, you should consider whether it can be replaced with a vectorized expression.</p>
+
+<h2 id="exploring-numpys-ufuncs">Exploring NumPy’s UFuncs</h2>
+
+<p>Ufuncs exist in two flavors: <em>unary ufuncs</em>, which operate on a single input, and <em>binary ufuncs</em>, which operate on two inputs.
+We’ll see examples of both these types of functions here.</p>
+
+<h3 id="array-arithmetic">Array arithmetic</h3>
+
+<p>NumPy’s ufuncs feel very natural to use because they make use of Python’s native arithmetic operators.
+The standard addition, subtraction, multiplication, and division can all be used:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x     =</span><span class="sh">"</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x + 5 =</span><span class="sh">"</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x - 5 =</span><span class="sh">"</span><span class="p">,</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x * 2 =</span><span class="sh">"</span><span class="p">,</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x / 2 =</span><span class="sh">"</span><span class="p">,</span> <span class="n">x</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x // 2 =</span><span class="sh">"</span><span class="p">,</span> <span class="n">x</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># floor division
+</span></code></pre></div></div>
+
+<p>There is also a unary ufunc for negation, and a <code class="language-plaintext highlighter-rouge">**</code> operator for exponentiation, and a <code class="language-plaintext highlighter-rouge">%</code> operator for modulus:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">-x     = </span><span class="sh">"</span><span class="p">,</span> <span class="o">-</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x ** 2 = </span><span class="sh">"</span><span class="p">,</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x % 2  = </span><span class="sh">"</span><span class="p">,</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>In addition, these can be strung together however you wish, and the standard order of operations is respected:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">-</span><span class="p">(</span><span class="mf">0.5</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<p>Each of these arithmetic operations are simply convenient wrappers around specific functions built into NumPy; for example, the <code class="language-plaintext highlighter-rouge">+</code> operator is a wrapper for the <code class="language-plaintext highlighter-rouge">add</code> function:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The following table lists the arithmetic operators implemented in NumPy:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Equivalent ufunc</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td><code class="language-plaintext highlighter-rouge">np.add</code></td>
+      <td>Addition (e.g., <code class="language-plaintext highlighter-rouge">1 + 1 = 2</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-</code></td>
+      <td><code class="language-plaintext highlighter-rouge">np.subtract</code></td>
+      <td>Subtraction (e.g., <code class="language-plaintext highlighter-rouge">3 - 2 = 1</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-</code></td>
+      <td><code class="language-plaintext highlighter-rouge">np.negative</code></td>
+      <td>Unary negation (e.g., <code class="language-plaintext highlighter-rouge">-2</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">*</code></td>
+      <td><code class="language-plaintext highlighter-rouge">np.multiply</code></td>
+      <td>Multiplication (e.g., <code class="language-plaintext highlighter-rouge">2 * 3 = 6</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/</code></td>
+      <td><code class="language-plaintext highlighter-rouge">np.divide</code></td>
+      <td>Division (e.g., <code class="language-plaintext highlighter-rouge">3 / 2 = 1.5</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">//</code></td>
+      <td><code class="language-plaintext highlighter-rouge">np.floor_divide</code></td>
+      <td>Floor division (e.g., <code class="language-plaintext highlighter-rouge">3 // 2 = 1</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">**</code></td>
+      <td><code class="language-plaintext highlighter-rouge">np.power</code></td>
+      <td>Exponentiation (e.g., <code class="language-plaintext highlighter-rouge">2 ** 3 = 8</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%</code></td>
+      <td><code class="language-plaintext highlighter-rouge">np.mod</code></td>
+      <td>Modulus/remainder (e.g., <code class="language-plaintext highlighter-rouge">9 % 4 = 1</code>)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="absolute-value">Absolute value</h3>
+
+<p>Just as NumPy understands Python’s built-in arithmetic operators, it also understands Python’s built-in absolute value function:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="nf">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The corresponding NumPy ufunc is <code class="language-plaintext highlighter-rouge">np.absolute</code>, which is also available under the alias <code class="language-plaintext highlighter-rouge">np.abs</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">absolute</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="nf">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This ufunc can also handle complex data, in which the absolute value returns the magnitude:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">3</span> <span class="o">-</span> <span class="mf">4j</span><span class="p">,</span> <span class="mi">4</span> <span class="o">-</span> <span class="mf">3j</span><span class="p">,</span> <span class="mi">2</span> <span class="o">+</span> <span class="mf">0j</span><span class="p">,</span> <span class="mi">0</span> <span class="o">+</span> <span class="mf">1j</span><span class="p">])</span>
+<span class="n">np</span><span class="p">.</span><span class="nf">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="trigonometric-functions">Trigonometric functions</h3>
+
+<p>NumPy provides a large number of useful ufuncs, and some of the most useful for the data scientist are the trigonometric functions.
+We’ll start by defining an array of angles:</p>
+
+<p><strong>Q8</strong>: What is the Chinese of <code class="language-plaintext highlighter-rouge">Trigonometric functions</code>?</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Now we can compute some trigonometric functions on these values:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">theta      = </span><span class="sh">"</span><span class="p">,</span> <span class="n">theta</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">sin(theta) = </span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">cos(theta) = </span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">tan(theta) = </span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">tan</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>The values are computed to within machine precision, which is why values that should be zero do not always hit exactly zero.
+Inverse trigonometric functions are also available:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x         = </span><span class="sh">"</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">arcsin(x) = </span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">arcsin</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">arccos(x) = </span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">arccos</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">arctan(x) = </span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">arctan</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h3 id="exponents-and-logarithms">Exponents and logarithms</h3>
+
+<p>Another common type of operation available in a NumPy ufunc are the exponentials:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x     =</span><span class="sh">"</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">e^x   =</span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">exp</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">2^x   =</span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">exp2</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">3^x   =</span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">power</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>The inverse of the exponentials, the logarithms, are also available.
+The basic <code class="language-plaintext highlighter-rouge">np.log</code> gives the natural logarithm; if you prefer to compute the base-2 logarithm or the base-10 logarithm, these are available as well:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">x        =</span><span class="sh">"</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">ln(x)    =</span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">log2(x)  =</span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">log2</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">log10(x) =</span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">log10</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>There are also some specialized versions that are useful for maintaining precision with very small input:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">exp(x) - 1 =</span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">expm1</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">log(1 + x) =</span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="nf">log1p</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>When <code class="language-plaintext highlighter-rouge">x</code> is very small, these functions give more precise values than if the raw <code class="language-plaintext highlighter-rouge">np.log</code> or <code class="language-plaintext highlighter-rouge">np.exp</code> were to be used.</p>
+
+<p>There are many, many more ufuncs available in both NumPy and <code class="language-plaintext highlighter-rouge">scipy.special</code>.
+Because the documentation of these packages is available online, a web search along the lines of “gamma function python” will generally find the relevant information.</p>
+
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/Management/TaskManagement">Task Management</a><br>
+                    <!-- <div style="font-size: 0.9em">[[TaskManagement]]
+</div> -->
+                </div>
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/Program/Python/Numpy">Numpy</a><br>
+                    <!-- <div style="font-size: 0.9em">[[Numpy]]
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+<style>
+  pre.language-vega-lite,
+  code.language-vega-lite {
+    display: none;
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-vega-lite"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+        vegaEmbed(m, JSON.parse(x.textContent));
+      }'
+></script>
+
+
+
+
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+

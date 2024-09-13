@@ -1,0 +1,2095 @@
+
+[
+  
+    {
+      "title"    : "Basic Algorithm Overview",
+      "category" : "",
+      "tags"     : "NOTE",
+      "date"     : "2024-06-17T20:30",
+      
+      
+      "url"      : "/Algorithm/BasicAlgorithm/Basic-Algorithm-Overview"
+      
+    } ,
+  
+    {
+      "title"    : "Discretization",
+      "category" : "",
+      "tags"     : "NOTE",
+      "date"     : "2024-06-21T18:09",
+      
+      
+      "url"      : "/Algorithm/BasicAlgorithm/Discretization"
+      
+    } ,
+  
+    {
+      "title"    : "Slidingwindow",
+      "category" : "",
+      "tags"     : "SlidingWindow, NOTE, Algorithm",
+      "date"     : "2024-02-03",
+      
+      
+      "url"      : "/Algorithm/BasicAlgorithm/SlidingWindow"
+      
+    } ,
+  
+    {
+      "title"    : "Sparcetable",
+      "category" : "",
+      "tags"     : "NOTE",
+      "date"     : "2024-06-17T20:29",
+      
+      
+      "url"      : "/Algorithm/BasicAlgorithm/SparceTable"
+      
+    } ,
+  
+    {
+      "title"    : "Divide And Conquer",
+      "category" : "",
+      "tags"     : "NOTE, DC, Algorithm",
+      "date"     : "2024-02-28",
+      
+      
+      "url"      : "/Algorithm/DAA/Algorithm/Divide-and-Conquer"
+      
+    } ,
+  
+    {
+      "title"    : "Enumeration Subset",
+      "category" : "",
+      "tags"     : "NOTE, Enumernation, Algorithm",
+      "date"     : "2024-03-27T08:36",
+      
+      
+      "url"      : "/Algorithm/DAA/Algorithm/Enumeration-Subset"
+      
+    } ,
+  
+    {
+      "title"    : "Enumeration",
+      "category" : "",
+      "tags"     : "NOTE, Enumernation, Algorithm",
+      "date"     : "2024-01-15",
+      
+      
+      "url"      : "/Algorithm/DAA/Algorithm/Enumeration"
+      
+    } ,
+  
+    {
+      "title"    : "Graph Algorithm",
+      "category" : "",
+      "tags"     : "Graph, Algorithm, NOTE",
+      "date"     : "2024-04-07T22:33",
+      
+      
+      "url"      : "/Algorithm/DAA/Algorithm/Graph-Algorithm"
+      
+    } ,
+  
+    {
+      "title"    : "Sort",
+      "category" : "",
+      "tags"     : "NOTE, Sort, Algorithm",
+      "date"     : "2023-12-31",
+      
+      
+      "url"      : "/Algorithm/DAA/Algorithm/Sort"
+      
+    } ,
+  
+    {
+      "title"    : "Union Find",
+      "category" : "",
+      "tags"     : "NOTE, DataStructure, UnionFind, Algorithm",
+      "date"     : "2024-02-28",
+      
+      
+      "url"      : "/Algorithm/DAA/Algorithm/Union-Find"
+      
+    } ,
+  
+    {
+      "title"    : "Tutorial 1",
+      "category" : "",
+      "tags"     : "NOTE, DAA, Tutorial",
+      "date"     : "2024-03-04",
+      
+      
+      "url"      : "/Algorithm/DAA/Tutorial/Tutorial-1"
+      
+    } ,
+  
+    {
+      "title"    : "Avl",
+      "category" : "",
+      "tags"     : "NOTE, DataStructure, AVL, Algorithm",
+      "date"     : "2024-01-16",
+      
+      
+      "url"      : "/Algorithm/DSA/AVL"
+      
+    } ,
+  
+    {
+      "title"    : "B+tree",
+      "category" : "",
+      "tags"     : "NOTE, DataStructure, BTree, Algorithm",
+      "date"     : "2024-01-16",
+      
+      
+      "url"      : "/Algorithm/DSA/B+Tree"
+      
+    } ,
+  
+    {
+      "title"    : "Binarytree",
+      "category" : "",
+      "tags"     : "NOTE, DataStructure, Tree, Algorithm",
+      "date"     : "2024-01-16",
+      
+      
+      "url"      : "/Algorithm/DSA/BinaryTree"
+      
+    } ,
+  
+    {
+      "title"    : "Fenwick",
+      "category" : "",
+      "tags"     : "NOTE, DataStructure, Fenwick",
+      "date"     : "2024-06-21T18:07",
+      
+      
+      "url"      : "/Algorithm/DSA/Fenwick"
+      
+    } ,
+  
+    {
+      "title"    : "Graph Overview",
+      "category" : "",
+      "tags"     : "Graph, Overview",
+      "date"     : "2024-05-09T23:36",
+      
+      
+      "url"      : "/Algorithm/Graph/Graph-Overview"
+      
+    } ,
+  
+    {
+      "title"    : "Prime Sieve",
+      "category" : "",
+      "tags"     : "NOTE, NumberTheory, Algorithm",
+      "date"     : "2024-01-16",
+      
+      
+      "url"      : "/Algorithm/NumberTheory/Prime-Sieve"
+      
+    } ,
+  
+    {
+      "title"    : "Recursion 1",
+      "category" : "",
+      "tags"     : "Algorithm, Share, Recursion",
+      "date"     : "2024-06-10T14:23",
+      
+      
+      "url"      : "/Algorithm/Recursion/Recursion-1"
+      
+    } ,
+  
+    {
+      "title"    : "Recursion 2",
+      "category" : "",
+      "tags"     : "Algorithm, Share, Recursion",
+      "date"     : "2024-06-10T18:37",
+      
+      
+      "url"      : "/Algorithm/Recursion/Recursion-2"
+      
+    } ,
+  
+    {
+      "title"    : "Recursion Binarytree",
+      "category" : "",
+      "tags"     : "NOTE, Algorithm, Recursion",
+      "date"     : "2024-02-01",
+      
+      
+      "url"      : "/Algorithm/Recursion/Recursion-BinaryTree"
+      
+    } ,
+  
+    {
+      "title"    : "Aho Corasick",
+      "category" : "",
+      "tags"     : "String, Algorithm, NOTE",
+      "date"     : "2024-06-22T00:54",
+      
+      
+      "url"      : "/Algorithm/STRING/Aho-Corasick"
+      
+    } ,
+  
+    {
+      "title"    : "Kmp",
+      "category" : "",
+      "tags"     : "KMP, Algorithm, String, NOTE",
+      "date"     : "2024-06-22T00:53",
+      
+      
+      "url"      : "/Algorithm/STRING/KMP"
+      
+    } ,
+  
+    {
+      "title"    : "Manacher Algorithm",
+      "category" : "",
+      "tags"     : "Manacher, String, NOTE, Algorithm",
+      "date"     : "2024-06-22T00:52",
+      
+      
+      "url"      : "/Algorithm/STRING/Manacher-Algorithm"
+      
+    } ,
+  
+    {
+      "title"    : "String Overview",
+      "category" : "",
+      "tags"     : "Algorithm, String, Navigation",
+      "date"     : "2024-06-16T00:36",
+      
+      
+      "url"      : "/Algorithm/STRING/String-Overview"
+      
+    } ,
+  
+    {
+      "title"    : "Tire Tree",
+      "category" : "",
+      "tags"     : "Tire-Tree, Algorithm, NOTE",
+      "date"     : "2024-06-22T00:53",
+      
+      
+      "url"      : "/Algorithm/STRING/Tire-Tree"
+      
+    } ,
+  
+    {
+      "title"    : "Z Function",
+      "category" : "",
+      "tags"     : "String, Z-Function, Algorithm, NOTE",
+      "date"     : "2024-06-22T00:57",
+      
+      
+      "url"      : "/Algorithm/STRING/Z-Function"
+      
+    } ,
+  
+    {
+      "title"    : "Computer Organization",
+      "category" : "",
+      "tags"     : "Navigation",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/CO/Computer-Organization"
+      
+    } ,
+  
+    {
+      "title"    : "Lab2",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2023-11-03T00:59",
+      
+      
+      "url"      : "/CO/Lab/Lab2"
+      
+    } ,
+  
+    {
+      "title"    : "Lab3",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2023-11-03T00:59",
+      
+      
+      "url"      : "/CO/Lab/Lab3"
+      
+    } ,
+  
+    {
+      "title"    : "Lab5",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2023-11-21T14:46",
+      
+      
+      "url"      : "/CO/Lab/Lab5"
+      
+    } ,
+  
+    {
+      "title"    : "Lab6",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2023-11-29T23:45",
+      
+      
+      "url"      : "/CO/Lab/Lab6"
+      
+    } ,
+  
+    {
+      "title"    : "Lab7",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/CO/Lab/Lab7"
+      
+    } ,
+  
+    {
+      "title"    : "Lab8",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2023-12-23T02:13",
+      
+      
+      "url"      : "/CO/Lab/Lab8"
+      
+    } ,
+  
+    {
+      "title"    : "Bits Data Representation And Manipulation",
+      "category" : "",
+      "tags"     : "NOTE, CO, Lec2",
+      "date"     : "2023-11-03T00:59",
+      
+      
+      "url"      : "/CO/Lecture/Bits-Data-Representation-and-Manipulation"
+      
+    } ,
+  
+    {
+      "title"    : "Boolean Algebra From Bits To Logic",
+      "category" : "",
+      "tags"     : "NOTE, CO, Lec3",
+      "date"     : "2023-11-03T00:59",
+      
+      
+      "url"      : "/CO/Lecture/Boolean-Algebra-From-Bits-to-Logic"
+      
+    } ,
+  
+    {
+      "title"    : "Circuitdesign",
+      "category" : "",
+      "tags"     : "NOTE, CO, CircuitDesign",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/CO/Lecture/CircuitDesign"
+      
+    } ,
+  
+    {
+      "title"    : "Finite State Machine",
+      "category" : "",
+      "tags"     : "NOTE, CO, Lec7",
+      "date"     : "2023-11-03T00:59",
+      
+      
+      "url"      : "/CO/Lecture/Finite-State-Machine"
+      
+    } ,
+  
+    {
+      "title"    : "From Gates To Circuits I Combinational Circuits",
+      "category" : "",
+      "tags"     : "NOTE, CO, Lec5",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/CO/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits"
+      
+    } ,
+  
+    {
+      "title"    : "From Gates To Circuits Ii Sequential Circuits",
+      "category" : "",
+      "tags"     : "NOTE, CO, Lec6",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/CO/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits"
+      
+    } ,
+  
+    {
+      "title"    : "From Machine Language To Assembly Language",
+      "category" : "",
+      "tags"     : "NOTE, CO, Lec9",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/CO/Lecture/From-Machine-Language-to-Assembly-Language"
+      
+    } ,
+  
+    {
+      "title"    : "From Transistors To Gates",
+      "category" : "",
+      "tags"     : "NOTE, CO, Lec4",
+      "date"     : "2023-11-03T00:59",
+      
+      
+      "url"      : "/CO/Lecture/From-Transistors-to-Gates"
+      
+    } ,
+  
+    {
+      "title"    : "Isa",
+      "category" : "",
+      "tags"     : "NOTE, CO, Lec9",
+      "date"     : "2023-11-20T21:25",
+      
+      
+      "url"      : "/CO/Lecture/ISA"
+      
+    } ,
+  
+    {
+      "title"    : "Microarchitecture",
+      "category" : "",
+      "tags"     : "NOTE, CO, Lec8",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/CO/Lecture/Microarchitecture"
+      
+    } ,
+  
+    {
+      "title"    : "What Is A Computer",
+      "category" : "",
+      "tags"     : "NOTE, CO, Lec1",
+      "date"     : "2023-11-03T00:59",
+      
+      
+      "url"      : "/CO/Lecture/What-is-a-Computer"
+      
+    } ,
+  
+    {
+      "title"    : "Contest Overview",
+      "category" : "",
+      "tags"     : "Overview, Contest",
+      "date"     : "2024-01-29",
+      
+      
+      "url"      : "/Contest/Contest-Overview"
+      
+    } ,
+  
+    {
+      "title"    : "Week 1",
+      "category" : "",
+      "tags"     : "Contest",
+      "date"     : "2024-03-20",
+      
+      
+      "url"      : "/Contest/Lanqiao/Week-1"
+      
+    } ,
+  
+    {
+      "title"    : "Biweekly Contest 122",
+      "category" : "",
+      "tags"     : "Contest",
+      "date"     : "2024-01-29",
+      
+      
+      "url"      : "/Contest/Leetcode/Biweekly-contest-122"
+      
+    } ,
+  
+    {
+      "title"    : "Biweekly Contest 123",
+      "category" : "",
+      "tags"     : "Contest",
+      "date"     : "2024-02-04",
+      
+      
+      "url"      : "/Contest/Leetcode/Biweekly-contest-123"
+      
+    } ,
+  
+    {
+      "title"    : "Weekly Contest 381",
+      "category" : "",
+      "tags"     : "Contest",
+      "date"     : "2024-02-06",
+      
+      
+      "url"      : "/Contest/Leetcode/Weekly-contest-381"
+      
+    } ,
+  
+    {
+      "title"    : "Weekly Contest 402",
+      "category" : "",
+      "tags"     : "Contest",
+      "date"     : "2024-06-16T12:09",
+      
+      
+      "url"      : "/Contest/Leetcode/Weekly-contest-402"
+      
+    } ,
+  
+    {
+      "title"    : "Database Management System",
+      "category" : "",
+      "tags"     : "Navigation",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/DBM/DataBase-Management-System"
+      
+    } ,
+  
+    {
+      "title"    : "Design Issues",
+      "category" : "",
+      "tags"     : "DataBase, NOTE, Lec4",
+      "date"     : "2023-11-04T14:49",
+      
+      
+      "url"      : "/DBM/Lecture/Design-Issues"
+      
+    } ,
+  
+    {
+      "title"    : "Entity Relationship Model Constraints",
+      "category" : "",
+      "tags"     : "DataBase, NOTE, Lec2",
+      "date"     : "2023-11-03T00:59",
+      
+      
+      "url"      : "/DBM/Lecture/Entity-Relationship-Model-Constraints"
+      
+    } ,
+  
+    {
+      "title"    : "Entity Relationship Model Extended Features",
+      "category" : "",
+      "tags"     : "DataBase, NOTE, Lec3",
+      "date"     : "2023-11-03T00:59",
+      
+      
+      "url"      : "/DBM/Lecture/Entity-Relationship-Model-Extended-Features"
+      
+    } ,
+  
+    {
+      "title"    : "Entity Relationship Model Modeling",
+      "category" : "",
+      "tags"     : "DataBase, NOTE, Lec1",
+      "date"     : "2023-11-03T00:59",
+      
+      
+      "url"      : "/DBM/Lecture/Entity-Relationship-Model-Modeling"
+      
+    } ,
+  
+    {
+      "title"    : "Key Concept",
+      "category" : "",
+      "tags"     : "DataBase, NOTE",
+      "date"     : "2023-11-10",
+      
+      
+      "url"      : "/DBM/Lecture/Key-concept"
+      
+    } ,
+  
+    {
+      "title"    : "Logical Design",
+      "category" : "",
+      "tags"     : "DataBase, NOTE, Lec5",
+      "date"     : "2023-11-10T13:40",
+      
+      
+      "url"      : "/DBM/Lecture/Logical-Design"
+      
+    } ,
+  
+    {
+      "title"    : "Normalform",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2023-12-27T21:40",
+      
+      
+      "url"      : "/DBM/Lecture/NormalForm"
+      
+    } ,
+  
+    {
+      "title"    : "Relational Database Design 3rd Normal Form",
+      "category" : "",
+      "tags"     : "DataBase, NOTE, Lec10",
+      "date"     : "2023-12-10T17:03",
+      
+      
+      "url"      : "/DBM/Lecture/Relational-Database-Design-3rd-Normal-Form"
+      
+    } ,
+  
+    {
+      "title"    : "Relational Database Design Bcnf",
+      "category" : "",
+      "tags"     : "DataBase, NOTE, Lec9",
+      "date"     : "2023-12-27T17:12",
+      
+      
+      "url"      : "/DBM/Lecture/Relational-Database-Design-BCNF"
+      
+    } ,
+  
+    {
+      "title"    : "Relational Database Design Functional Dependency",
+      "category" : "",
+      "tags"     : "DataBase, NOTE, Lec8",
+      "date"     : "2023-12-28T00:16",
+      
+      
+      "url"      : "/DBM/Lecture/Relational-Database-Design-Functional-Dependency"
+      
+    } ,
+  
+    {
+      "title"    : "Relational Database Design Purpose &amp; First Normal Form",
+      "category" : "",
+      "tags"     : "DataBase, NOTE, Lec6",
+      "date"     : "2023-12-03T22:39",
+      
+      
+      "url"      : "/DBM/Lecture/Relational-Database-Design-Purpose-&-First-Normal-Form"
+      
+    } ,
+  
+    {
+      "title"    : "Advanced Sql",
+      "category" : "",
+      "tags"     : "MySQL, NOTE, Lec10",
+      "date"     : "2023-12-27T21:06",
+      
+      
+      "url"      : "/DBM/MySQL/Advanced-SQL"
+      
+    } ,
+  
+    {
+      "title"    : "Aggregation",
+      "category" : "",
+      "tags"     : "MySQL, NOTE, Lec4",
+      "date"     : "2023-11-18T12:09",
+      
+      
+      "url"      : "/DBM/MySQL/Aggregation"
+      
+    } ,
+  
+    {
+      "title"    : "Basic Mysql",
+      "category" : "",
+      "tags"     : "MySQL, NOTE, Lec1",
+      "date"     : "2023-11-17T15:52",
+      
+      
+      "url"      : "/DBM/MySQL/Basic-MySQL"
+      
+    } ,
+  
+    {
+      "title"    : "Cross Table Query",
+      "category" : "",
+      "tags"     : "MySQL, NOTE, Lec2",
+      "date"     : "2023-11-17T17:15",
+      
+      
+      "url"      : "/DBM/MySQL/Cross-table-Query"
+      
+    } ,
+  
+    {
+      "title"    : "Data Definition",
+      "category" : "",
+      "tags"     : "MySQL, NOTE, Lec5",
+      "date"     : "2023-11-18T12:37",
+      
+      
+      "url"      : "/DBM/MySQL/Data-Definition"
+      
+    } ,
+  
+    {
+      "title"    : "Data Modification",
+      "category" : "",
+      "tags"     : "MySQL, NOTE, Lec6",
+      "date"     : "2023-11-18T13:46",
+      
+      
+      "url"      : "/DBM/MySQL/Data-Modification"
+      
+    } ,
+  
+    {
+      "title"    : "Division And Correlated Subquery",
+      "category" : "",
+      "tags"     : "MySQL, NOTE, Lec9",
+      "date"     : "2023-12-27T18:49",
+      
+      
+      "url"      : "/DBM/MySQL/Division-and-Correlated-Subquery"
+      
+    } ,
+  
+    {
+      "title"    : "Join",
+      "category" : "",
+      "tags"     : "MySQL, NOTE, Lec3",
+      "date"     : "2023-11-17T18:18",
+      
+      
+      "url"      : "/DBM/MySQL/Join"
+      
+    } ,
+  
+    {
+      "title"    : "Null Subquery",
+      "category" : "",
+      "tags"     : "MySQL, NOTE, Lec7",
+      "date"     : "2023-12-27T01:37",
+      
+      
+      "url"      : "/DBM/MySQL/Null-Subquery"
+      
+    } ,
+  
+    {
+      "title"    : "Set Operation &amp; Where Subquery",
+      "category" : "",
+      "tags"     : "MySQL, NOTE, Lec8",
+      "date"     : "2023-12-27T21:21",
+      
+      
+      "url"      : "/DBM/MySQL/Set-Operation-&-WHERE-subquery"
+      
+    } ,
+  
+    {
+      "title"    : "Data-Analysis",
+      "category" : "",
+      "tags"     : "Navigation",
+      "date"     : "2023-11-04",
+      
+      
+      "url"      : "/DataAnalysis/Data-Analysis"
+      
+    } ,
+  
+    {
+      "title"    : "Hands on Data Analytics for Everyone",
+      "category" : "",
+      "tags"     : "DataAnalysis, NOTE",
+      "date"     : "2024-01-16",
+      
+      
+      "url"      : "/DataAnalysis/HODA/HODA"
+      
+    } ,
+  
+    {
+      "title"    : "Activationfunction",
+      "category" : "",
+      "tags"     : "DeepLearning, ActivationFunction, NOTE",
+      "date"     : "2024-04-06T16:42",
+      
+      
+      "url"      : "/DeepLearning/ActivationFunction"
+      
+    } ,
+  
+    {
+      "title"    : "Backpropagation",
+      "category" : "",
+      "tags"     : "DeepLearning, BackPropagation, NOTE",
+      "date"     : "2024-04-06T16:21",
+      
+      
+      "url"      : "/DeepLearning/BackPropagation"
+      
+    } ,
+  
+    {
+      "title"    : "Gradientdescent",
+      "category" : "",
+      "tags"     : "DeepLearning, GradientDecent, NOTE",
+      "date"     : "2024-04-05T23:05",
+      
+      
+      "url"      : "/DeepLearning/GradientDescent"
+      
+    } ,
+  
+    {
+      "title"    : "Graphnetwork",
+      "category" : "",
+      "tags"     : "DeepLearning, Network, Graph, Research, Paper",
+      "date"     : "2024-04-28T22:21",
+      
+      
+      "url"      : "/DeepLearning/GraphNetwork"
+      
+    } ,
+  
+    {
+      "title"    : "Cet 6",
+      "category" : "",
+      "tags"     : "NOTE",
+      "date"     : "2024-06-15T13:15",
+      
+      
+      "url"      : "/English/CET-6"
+      
+    } ,
+  
+    {
+      "title"    : "Fixedincomeoverview",
+      "category" : "",
+      "tags"     : "NOTE, Finance",
+      "date"     : "2024-03-01T22:33",
+      
+      
+      "url"      : "/FixIncome/FixedIncomeOverview"
+      
+    } ,
+  
+    {
+      "title"    : "珠海市经济产业分析",
+      "category" : "",
+      "tags"     : "NOTE",
+      "date"     : "2024-05-04T13:34",
+      
+      
+      "url"      : "/FixIncome/%E7%8F%A0%E6%B5%B7%E5%B8%82%E7%BB%8F%E6%B5%8E%E4%BA%A7%E4%B8%9A%E5%88%86%E6%9E%90"
+      
+    } ,
+  
+    {
+      "title"    : "Task Management",
+      "category" : "",
+      "tags"     : "Management",
+      "date"     : "2024-05-11T13:42",
+      
+      
+      "url"      : "/Management/TaskManagement"
+      
+    } ,
+  
+    {
+      "title"    : "Boolean Expressions",
+      "category" : "",
+      "tags"     : "BooleanAlgebra, DNF&CNF, DiscreteStructure, Lec14, NOTE",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/Math/DiscreteStructure/Lecture/Boolean-Expressions"
+      
+    } ,
+  
+    {
+      "title"    : "Counting Principles",
+      "category" : "",
+      "tags"     : "Counting-Principles, DiscreteStructure, Lec7, NOTE",
+      "date"     : "2023-12-23T02:12",
+      
+      
+      "url"      : "/Math/DiscreteStructure/Lecture/Counting-Principles"
+      
+    } ,
+  
+    {
+      "title"    : "Functions Sequence And Summations",
+      "category" : "",
+      "tags"     : "Function, Sequence, Summation, DiscreteStructure, Lec6, NOTE",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/Math/DiscreteStructure/Lecture/Functions-Sequence-and-Summations"
+      
+    } ,
+  
+    {
+      "title"    : "Graph Theory",
+      "category" : "",
+      "tags"     : "Graph, DiscreteStructure, Lec11, NOTE",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/Math/DiscreteStructure/Lecture/Graph-Theory"
+      
+    } ,
+  
+    {
+      "title"    : "Logic Circuits",
+      "category" : "",
+      "tags"     : "BooleanAlgebra, DNF&CNF, DiscreteStructure, Lec15, NOTE",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/Math/DiscreteStructure/Lecture/Logic-Circuits"
+      
+    } ,
+  
+    {
+      "title"    : "Propositional Equivalence",
+      "category" : "",
+      "tags"     : "Propositional-Equivalence, DiscreteStructure, Lec2, NOTE",
+      "date"     : "2023-12-23T02:12",
+      
+      
+      "url"      : "/Math/DiscreteStructure/Lecture/Propositional-Equivalence"
+      
+    } ,
+  
+    {
+      "title"    : "Propositional Logic",
+      "category" : "",
+      "tags"     : "Propositional-Logic, DiscreteStructure, Lec1, NOTE",
+      "date"     : "2023-12-23T02:12",
+      
+      
+      "url"      : "/Math/DiscreteStructure/Lecture/Propositional-Logic"
+      
+    } ,
+  
+    {
+      "title"    : "Relation",
+      "category" : "",
+      "tags"     : "Relation, DiscreteStructure, Lec10, NOTE",
+      "date"     : "2023-12-23T02:12",
+      
+      
+      "url"      : "/Math/DiscreteStructure/Lecture/Relation"
+      
+    } ,
+  
+    {
+      "title"    : "Representing Graph And Connectivity",
+      "category" : "",
+      "tags"     : "Graph, Representation, DiscreteStructure, Lec12, NOTE",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/Math/DiscreteStructure/Lecture/Representing-Graph-and-Connectivity"
+      
+    } ,
+  
+    {
+      "title"    : "Sets And N Tuple",
+      "category" : "",
+      "tags"     : "Sets, Tuple, DiscreteStructure, Lec5, NOTE",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/Math/DiscreteStructure/Lecture/Sets-and-N-tuple"
+      
+    } ,
+  
+    {
+      "title"    : "Tree",
+      "category" : "",
+      "tags"     : "Tree, DiscreteStructure, Lec13, NOTE",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/Math/DiscreteStructure/Lecture/Tree"
+      
+    } ,
+  
+    {
+      "title"    : "Eigenvalues And Eigenvectors",
+      "category" : "",
+      "tags"     : "Eigenvectors, Eigenvalues, Lec4, NOTE, LinearAlgebra",
+      "date"     : "2023-12-23T02:12",
+      
+      
+      "url"      : "/Math/LinearAlgebra/Eigenvalues-and-Eigenvectors"
+      
+    } ,
+  
+    {
+      "title"    : "Linear Transformations",
+      "category" : "",
+      "tags"     : "LinearTransformations, Lec2, NOTE, LinearAlgebra",
+      "date"     : "2023-12-23T02:12",
+      
+      
+      "url"      : "/Math/LinearAlgebra/Linear-Transformations"
+      
+    } ,
+  
+    {
+      "title"    : "Matrixoperation",
+      "category" : "",
+      "tags"     : "Matrix, Lec0, NOTE, LinearAlgebra",
+      "date"     : "2024-04-06T17:28",
+      
+      
+      "url"      : "/Math/LinearAlgebra/MatrixOperation"
+      
+    } ,
+  
+    {
+      "title"    : "Orthogonality",
+      "category" : "",
+      "tags"     : "Orthogonality, Lec3, NOTE, LinearAlgebra",
+      "date"     : "2023-12-23T02:12",
+      
+      
+      "url"      : "/Math/LinearAlgebra/Orthogonality"
+      
+    } ,
+  
+    {
+      "title"    : "Product",
+      "category" : "",
+      "tags"     : "LinearAlgebra, Matrix, OuterProducts, InnerProducts, NOTE",
+      "date"     : "2024-04-08T09:46",
+      
+      
+      "url"      : "/Math/LinearAlgebra/Product"
+      
+    } ,
+  
+    {
+      "title"    : "Vector Space",
+      "category" : "",
+      "tags"     : "VectorSpaces, Lec1, NOTE, LinearAlgebra",
+      "date"     : "2023-12-27T02:00",
+      
+      
+      "url"      : "/Math/LinearAlgebra/Vector-Space"
+      
+    } ,
+  
+    {
+      "title"    : "Judgment",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-04-06T17:13",
+      
+      
+      "url"      : "/Math/LinearAlgebra/judgment"
+      
+    } ,
+  
+    {
+      "title"    : "Math",
+      "category" : "",
+      "tags"     : "DiscreteStructure, LinearAlgebra, ProbabilityStatics, Navigation",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/Math/Math"
+      
+    } ,
+  
+    {
+      "title"    : "Chi Square Tests",
+      "category" : "",
+      "tags"     : "Chi-Square, Lec5, ProbabilityStatics, NOTE",
+      "date"     : "2023-12-30T09:21",
+      
+      
+      "url"      : "/Math/ProbabilityStatistics/Chi-Square-Tests"
+      
+    } ,
+  
+    {
+      "title"    : "Confidence Interval",
+      "category" : "",
+      "tags"     : "ConfidenceInterval, Lec2, NOTE, ProbabilityStatics",
+      "date"     : "2023-12-30T09:21",
+      
+      
+      "url"      : "/Math/ProbabilityStatistics/Confidence-Interval"
+      
+    } ,
+  
+    {
+      "title"    : "Hypothesis Testing Single Population",
+      "category" : "",
+      "tags"     : "Hypothesis-Testing, Lec3, NOTE, ProbabilityStatics",
+      "date"     : "2023-12-30T09:21",
+      
+      
+      "url"      : "/Math/ProbabilityStatistics/Hypothesis-Testing-Single-Population"
+      
+    } ,
+  
+    {
+      "title"    : "Hypothesis Testing Two Population",
+      "category" : "",
+      "tags"     : "Hypothesis-Testing, Lec4, NOTE, ProbabilityStatics",
+      "date"     : "2023-12-31T17:35",
+      
+      
+      "url"      : "/Math/ProbabilityStatistics/Hypothesis-Testing-Two-Population"
+      
+    } ,
+  
+    {
+      "title"    : "Poisson Distribution",
+      "category" : "",
+      "tags"     : "Poisson, Distribution, ProbabilityStatics, NOTE",
+      "date"     : "2024-01-16T21:03",
+      
+      
+      "url"      : "/Math/ProbabilityStatistics/Poisson-Distribution"
+      
+    } ,
+  
+    {
+      "title"    : "Probability Theory",
+      "category" : "",
+      "tags"     : "Sets, Probability, Conditional, Lec1, NOTE, ProbabilityStatics",
+      "date"     : "2023-12-30T00:14",
+      
+      
+      "url"      : "/Math/ProbabilityStatistics/Probability-Theory"
+      
+    } ,
+  
+    {
+      "title"    : "Navigation",
+      "category" : "",
+      "tags"     : "Navigation",
+      "date"     : "2024-02-19",
+      
+      
+      "url"      : "/Navigation"
+      
+    } ,
+  
+    {
+      "title"    : "Application Layer",
+      "category" : "",
+      "tags"     : "NOTE",
+      "date"     : "2024-05-11T14:04",
+      
+      
+      "url"      : "/Network/Application-Layer"
+      
+    } ,
+  
+    {
+      "title"    : "Basic Concepts",
+      "category" : "",
+      "tags"     : "NOTE, Network, Lec1",
+      "date"     : "2024-02-20T11:32",
+      
+      
+      "url"      : "/Network/Basic-Concepts"
+      
+    } ,
+  
+    {
+      "title"    : "Dcn Review",
+      "category" : "",
+      "tags"     : "NOTE, DCN",
+      "date"     : "2024-05-28T21:39",
+      
+      
+      "url"      : "/Network/DCN-Review"
+      
+    } ,
+  
+    {
+      "title"    : "Data Communication Network",
+      "category" : "",
+      "tags"     : "Navigation",
+      "date"     : "2024-03-22",
+      
+      
+      "url"      : "/Network/Data-Communication-Network"
+      
+    } ,
+  
+    {
+      "title"    : "Data Link Layer",
+      "category" : "",
+      "tags"     : "Data-Link-Layer, NOTE, Network, Lec3",
+      "date"     : "2024-03-19T10:17",
+      
+      
+      "url"      : "/Network/Data-Link-Layer"
+      
+    } ,
+  
+    {
+      "title"    : "Network Layer",
+      "category" : "",
+      "tags"     : "Network-Layer, NOTE, Network",
+      "date"     : "2024-04-24T20:24",
+      
+      
+      "url"      : "/Network/Network-Layer"
+      
+    } ,
+  
+    {
+      "title"    : "Physical Layer",
+      "category" : "",
+      "tags"     : "Physical-Layer, NOTE, Network, Lec2",
+      "date"     : "2024-03-19T10:15",
+      
+      
+      "url"      : "/Network/Physical-Layer"
+      
+    } ,
+  
+    {
+      "title"    : "Standardized Networks",
+      "category" : "",
+      "tags"     : "NOTE, Network, Lec6",
+      "date"     : "2024-05-28T20:51",
+      
+      
+      "url"      : "/Network/Standardized-Networks"
+      
+    } ,
+  
+    {
+      "title"    : "Transport Layer",
+      "category" : "",
+      "tags"     : "Transport-Layer, NOTE, Network",
+      "date"     : "2024-05-11T14:03",
+      
+      
+      "url"      : "/Network/Transport-Layer"
+      
+    } ,
+  
+    {
+      "title"    : "Ustc L1",
+      "category" : "",
+      "tags"     : "NOTE, Network, USTC, Lec1",
+      "date"     : "2024-03-19",
+      
+      
+      "url"      : "/Network/USTC-L1"
+      
+    } ,
+  
+    {
+      "title"    : "Cpu Scheduling",
+      "category" : "",
+      "tags"     : "OS, NOTE, Lec5",
+      "date"     : "2024-03-20T22:56",
+      
+      
+      "url"      : "/OperatingSystem/CPU-Scheduling"
+      
+    } ,
+  
+    {
+      "title"    : "File System Implementation",
+      "category" : "",
+      "tags"     : "NOTE",
+      "date"     : "2024-05-11T14:08",
+      
+      
+      "url"      : "/OperatingSystem/File-System-Implementation"
+      
+    } ,
+  
+    {
+      "title"    : "File System Interface",
+      "category" : "",
+      "tags"     : "OS, FileSystem, NOTE",
+      "date"     : "2024-05-11T14:08",
+      
+      
+      "url"      : "/OperatingSystem/File-System-Interface"
+      
+    } ,
+  
+    {
+      "title"    : "Linux Basic Operation",
+      "category" : "",
+      "tags"     : "OS, NOTE, Linux, Basic",
+      "date"     : "2024-03-20",
+      
+      
+      "url"      : "/OperatingSystem/Linux-Basic-Operation"
+      
+    } ,
+  
+    {
+      "title"    : "Main Memory",
+      "category" : "",
+      "tags"     : "Lec7, OS, NOTE",
+      "date"     : "2024-04-18T15:14",
+      
+      
+      "url"      : "/OperatingSystem/Main-Memory"
+      
+    } ,
+  
+    {
+      "title"    : "Nju Os Pa0",
+      "category" : "",
+      "tags"     : "OS, NOTE, GNU/Linux, Debian, NJU",
+      "date"     : "2024-03-20T17:14",
+      
+      
+      "url"      : "/OperatingSystem/NJU-OS-PA0"
+      
+    } ,
+  
+    {
+      "title"    : "Operating System Introduction",
+      "category" : "",
+      "tags"     : "OS, NOTE, Introduction, Lec1",
+      "date"     : "2024-01-20T17:14",
+      
+      
+      "url"      : "/OperatingSystem/Operating-System-Introduction"
+      
+    } ,
+  
+    {
+      "title"    : "Operating System Structure",
+      "category" : "",
+      "tags"     : "OS, NOTE, Lec2",
+      "date"     : "2024-03-20T17:14",
+      
+      
+      "url"      : "/OperatingSystem/Operating-System-Structure"
+      
+    } ,
+  
+    {
+      "title"    : "OperatingSystem",
+      "category" : "",
+      "tags"     : "Navigation",
+      "date"     : "2024-03-22",
+      
+      
+      "url"      : "/OperatingSystem/OperatingSystem"
+      
+    } ,
+  
+    {
+      "title"    : "Process Synchronization",
+      "category" : "",
+      "tags"     : "Lec6, OS, NOTE",
+      "date"     : "2024-04-11T16:09",
+      
+      
+      "url"      : "/OperatingSystem/Process-Synchronization"
+      
+    } ,
+  
+    {
+      "title"    : "Process",
+      "category" : "",
+      "tags"     : "OS, NOTE, Lec3",
+      "date"     : "2024-03-20T17:14",
+      
+      
+      "url"      : "/OperatingSystem/Process"
+      
+    } ,
+  
+    {
+      "title"    : "Threads",
+      "category" : "",
+      "tags"     : "OS, NOTE, Lec4",
+      "date"     : "2024-03-20T17:14",
+      
+      
+      "url"      : "/OperatingSystem/Threads"
+      
+    } ,
+  
+    {
+      "title"    : "Virtual Memory",
+      "category" : "",
+      "tags"     : "Lec8, OS, NOTE",
+      "date"     : "2024-05-11T14:10",
+      
+      
+      "url"      : "/OperatingSystem/Virtual-Memory"
+      
+    } ,
+  
+    {
+      "title"    : "Fileoperation",
+      "category" : "",
+      "tags"     : "C, NOTE",
+      "date"     : "2024-03-24",
+      
+      
+      "url"      : "/Program/C/FileOperation"
+      
+    } ,
+  
+    {
+      "title"    : "Macro",
+      "category" : "",
+      "tags"     : "C, NOTE",
+      "date"     : "2024-02-19T23:53",
+      
+      
+      "url"      : "/Program/C/Macro"
+      
+    } ,
+  
+    {
+      "title"    : "Multithreads",
+      "category" : "",
+      "tags"     : "C, NOTE",
+      "date"     : "2024-03-24",
+      
+      
+      "url"      : "/Program/C/MultiThreads"
+      
+    } ,
+  
+    {
+      "title"    : "Pointers",
+      "category" : "",
+      "tags"     : "C, NOTE",
+      "date"     : "2024-03-24",
+      
+      
+      "url"      : "/Program/C/Pointers"
+      
+    } ,
+  
+    {
+      "title"    : "Algorithm Library",
+      "category" : "",
+      "tags"     : "Cpp, Algorithm, API, NOTE",
+      "date"     : "2024-04-12T15:04",
+      
+      
+      "url"      : "/Program/Cpp/Algorithm-Library"
+      
+    } ,
+  
+    {
+      "title"    : "Map",
+      "category" : "",
+      "tags"     : "HashMap, STL, NOTE",
+      "date"     : "2024-04-20T11:27",
+      
+      
+      "url"      : "/Program/Cpp/Map"
+      
+    } ,
+  
+    {
+      "title"    : "Priority Queue",
+      "category" : "",
+      "tags"     : "DataStructure, Cpp, NOTE",
+      "date"     : "2024-04-30T19:23",
+      
+      
+      "url"      : "/Program/Cpp/Priority-Queue"
+      
+    } ,
+  
+    {
+      "title"    : "Vector",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2023-11-03T00:59",
+      
+      
+      "url"      : "/Program/Cpp/Vector"
+      
+    } ,
+  
+    {
+      "title"    : "Iota",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2023-11-03T00:59",
+      
+      
+      "url"      : "/Program/Cpp/iota"
+      
+    } ,
+  
+    {
+      "title"    : "Abstract Methods And Classes Interfaces",
+      "category" : "",
+      "tags"     : "NOTE, Java, Lec5, Program",
+      "date"     : "2023-11-07T00:59",
+      
+      
+      "url"      : "/Program/Java/Lecture/Abstract-Methods-and-Classes-Interfaces"
+      
+    } ,
+  
+    {
+      "title"    : "Array And Generics",
+      "category" : "",
+      "tags"     : "NOTE, Java, Lec7, Program",
+      "date"     : "2023-12-30T00:59",
+      
+      
+      "url"      : "/Program/Java/Lecture/Array-and-Generics"
+      
+    } ,
+  
+    {
+      "title"    : "Creating Java Classes",
+      "category" : "",
+      "tags"     : "NOTE, Java, Lec3, Program",
+      "date"     : "2023-11-05T00:59",
+      
+      
+      "url"      : "/Program/Java/Lecture/Creating-Java-Classes"
+      
+    } ,
+  
+    {
+      "title"    : "Exception Handling",
+      "category" : "",
+      "tags"     : "NOTE, Java, Lec6, Program",
+      "date"     : "2023-12-27T01:55",
+      
+      
+      "url"      : "/Program/Java/Lecture/Exception-Handling"
+      
+    } ,
+  
+    {
+      "title"    : "Inheritance",
+      "category" : "",
+      "tags"     : "NOTE, Java, Lec4, Program",
+      "date"     : "2023-11-06T00:59",
+      
+      
+      "url"      : "/Program/Java/Lecture/Inheritance"
+      
+    } ,
+  
+    {
+      "title"    : "Java Introduction",
+      "category" : "",
+      "tags"     : "NOTE, Java, Lec0, Program",
+      "date"     : "2023-11-01T00:59",
+      
+      
+      "url"      : "/Program/Java/Lecture/Java-Introduction"
+      
+    } ,
+  
+    {
+      "title"    : "Java Programming Essentials",
+      "category" : "",
+      "tags"     : "NOTE, Java, Lec2, Program",
+      "date"     : "2023-11-04T00:59",
+      
+      
+      "url"      : "/Program/Java/Lecture/Java-Programming-Essentials"
+      
+    } ,
+  
+    {
+      "title"    : "Unified Modeling Language",
+      "category" : "",
+      "tags"     : "NOTE, Java, Lec1, Program",
+      "date"     : "2023-11-02T00:59",
+      
+      
+      "url"      : "/Program/Java/Lecture/Unified-Modeling-Language"
+      
+    } ,
+  
+    {
+      "title"    : "Quick Start",
+      "category" : "",
+      "tags"     : "Javascript, Program, NOTE",
+      "date"     : "2024-04-14T00:21",
+      
+      
+      "url"      : "/Program/Javascript/Quick-Start"
+      
+    } ,
+  
+    {
+      "title"    : "Programlanguage",
+      "category" : "",
+      "tags"     : "Navigation",
+      "date"     : "2024-02-22T11:10",
+      
+      
+      "url"      : "/Program/ProgramLanguage"
+      
+    } ,
+  
+    {
+      "title"    : "Beautifulsoup",
+      "category" : "",
+      "tags"     : "NOTE",
+      "date"     : "2024-05-11T13:42",
+      
+      
+      "url"      : "/Program/Python/BeautifulSoup"
+      
+    } ,
+  
+    {
+      "title"    : "Datetime",
+      "category" : "",
+      "tags"     : "Python, NOTE",
+      "date"     : "2024-05-11T13:40",
+      
+      
+      "url"      : "/Program/Python/DateTime"
+      
+    } ,
+  
+    {
+      "title"    : "Matplotlib",
+      "category" : "",
+      "tags"     : "NOTE",
+      "date"     : "2024-05-11T13:41",
+      
+      
+      "url"      : "/Program/Python/Matplotlib"
+      
+    } ,
+  
+    {
+      "title"    : "Numpy",
+      "category" : "",
+      "tags"     : "Python, NOTE",
+      "date"     : "2024-05-15T14:24",
+      
+      
+      "url"      : "/Program/Python/Numpy"
+      
+    } ,
+  
+    {
+      "title"    : "Pandas",
+      "category" : "",
+      "tags"     : "NOTE",
+      "date"     : "2024-05-11T13:41",
+      
+      
+      "url"      : "/Program/Python/Pandas"
+      
+    } ,
+  
+    {
+      "title"    : "Python Environment Management",
+      "category" : "",
+      "tags"     : "NOTE",
+      "date"     : "2024-05-10T19:45",
+      
+      
+      "url"      : "/Program/Python/Python-Environment-Management"
+      
+    } ,
+  
+    {
+      "title"    : "Python Exceptions",
+      "category" : "",
+      "tags"     : "Python, NOTE",
+      "date"     : "2024-05-11T13:40",
+      
+      
+      "url"      : "/Program/Python/Python-Exceptions"
+      
+    } ,
+  
+    {
+      "title"    : "Pythonbasic",
+      "category" : "",
+      "tags"     : "NOTE, Python, Program",
+      "date"     : "2024-02-19T16:28",
+      
+      
+      "url"      : "/Program/Python/PythonBasic"
+      
+    } ,
+  
+    {
+      "title"    : "Regularexpression",
+      "category" : "",
+      "tags"     : "NOTE",
+      "date"     : "2024-05-11T13:42",
+      
+      
+      "url"      : "/Program/Python/RegularExpression"
+      
+    } ,
+  
+    {
+      "title"    : "Basic R",
+      "category" : "",
+      "tags"     : "NOTE, R, Lec1, Program",
+      "date"     : "2023-11-03T00:59",
+      
+      
+      "url"      : "/Program/R/Basic-R"
+      
+    } ,
+  
+    {
+      "title"    : "R Data Structure",
+      "category" : "",
+      "tags"     : "NOTE, R, Lec1, Program",
+      "date"     : "2023-12-27T01:56",
+      
+      
+      "url"      : "/Program/R/R-Data-Structure"
+      
+    } ,
+  
+    {
+      "title"    : "Regular Expression",
+      "category" : "",
+      "tags"     : "Regular-Expression, String, NOTE",
+      "date"     : "2024-04-25T15:16",
+      
+      
+      "url"      : "/Program/Regular-Expression"
+      
+    } ,
+  
+    {
+      "title"    : "Data Programming Workshop",
+      "category" : "",
+      "tags"     : "DPW, Project, Document",
+      "date"     : "2024-04-14T16:53",
+      
+      
+      "url"      : "/Projects/AnalysisVista/Data-Programming-Workshop"
+      
+    } ,
+  
+    {
+      "title"    : "System Design Specification",
+      "category" : "",
+      "tags"     : "Document, SDS, DPW",
+      "date"     : "2024-04-23T19:35",
+      
+      
+      "url"      : "/Projects/AnalysisVista/System-Design-Specification"
+      
+    } ,
+  
+    {
+      "title"    : "Chat Application",
+      "category" : "",
+      "tags"     : "Project, Network, Cpp, Document",
+      "date"     : "2024-05-01T14:28",
+      
+      
+      "url"      : "/Projects/ChatApplication/Chat-Application"
+      
+    } ,
+  
+    {
+      "title"    : "Database Management System",
+      "category" : "",
+      "tags"     : "DBM, Project, Document",
+      "date"     : "2024-03-27T14:13",
+      
+      
+      "url"      : "/Projects/CourierStationInformationManagementSystem/Database-Management-System"
+      
+    } ,
+  
+    {
+      "title"    : "Bilibilivista",
+      "category" : "",
+      "tags"     : "Project, Python, DPW",
+      "date"     : "2024-05-19T19:57",
+      
+      
+      "url"      : "/Projects/MovieDataAnalysis/BilibiliVista"
+      
+    } ,
+  
+    {
+      "title"    : "Moviedataanalysis",
+      "category" : "",
+      "tags"     : "Project",
+      "date"     : "2024-05-10T21:11",
+      
+      
+      "url"      : "/Projects/MovieDataAnalysis/MovieDataAnalysis"
+      
+    } ,
+  
+    {
+      "title"    : "Alphafold2",
+      "category" : "",
+      "tags"     : "DeepLearning, Research, Paper",
+      "date"     : "2024-04-06T22:36",
+      
+      
+      "url"      : "/Research/AlphaFold2"
+      
+    } ,
+  
+    {
+      "title"    : "Bert",
+      "category" : "",
+      "tags"     : "NOTE",
+      "date"     : "2024-04-22T15:09",
+      
+      
+      "url"      : "/Research/Bert"
+      
+    } ,
+  
+    {
+      "title"    : "Calculatese",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2023-12-23T02:13",
+      
+      
+      "url"      : "/Research/CalculateSE"
+      
+    } ,
+  
+    {
+      "title"    : "Ploidy Review",
+      "category" : "",
+      "tags"     : "Ploidy, Method, Research, Paper",
+      "date"     : "2024-01-20T11:18",
+      
+      
+      "url"      : "/Research/Ploidy/Ploidy-Review"
+      
+    } ,
+  
+    {
+      "title"    : "Ploidy",
+      "category" : "",
+      "tags"     : "Ploidy, Research, Paper",
+      "date"     : "2024-01-19T11:25",
+      
+      
+      "url"      : "/Research/Ploidy/Ploidy"
+      
+    } ,
+  
+    {
+      "title"    : "Myresume",
+      "category" : "",
+      "tags"     : "Resume",
+      "date"     : "2024-04-06T22:36",
+      
+      
+      "url"      : "/Resume/MyResume"
+      
+    } ,
+  
+    {
+      "title"    : "Resume",
+      "category" : "",
+      "tags"     : "Resume",
+      "date"     : "2024-04-06T22:36",
+      
+      
+      "url"      : "/Resume/Resume"
+      
+    } ,
+  
+    {
+      "title"    : "Manacher",
+      "category" : "",
+      "tags"     : "Manacher, String, NOTE, Algorithm",
+      "date"     : "2024-06-22T00:52",
+      
+      
+      "url"      : "/Share/Manacher"
+      
+    } ,
+  
+    {
+      "title"    : "Conda",
+      "category" : "",
+      "tags"     : "Conda, NOTE",
+      "date"     : "2023-12-23T02:12",
+      
+      
+      "url"      : "/Tools/Conda/Conda"
+      
+    } ,
+  
+    {
+      "title"    : "Docker",
+      "category" : "",
+      "tags"     : "Docker, NOTE",
+      "date"     : "2024-02-22T11:12",
+      
+      
+      "url"      : "/Tools/Docker/Docker"
+      
+    } ,
+  
+    {
+      "title"    : "Git For Beginners",
+      "category" : "",
+      "tags"     : "Git, NOTE",
+      "date"     : "2024-02-22T11:12",
+      
+      
+      "url"      : "/Tools/Git/Git-For-Beginners"
+      
+    } ,
+  
+    {
+      "title"    : "Git Introduction",
+      "category" : "",
+      "tags"     : "Git, NOTE",
+      "date"     : "2024-01-30T02:14",
+      
+      
+      "url"      : "/Tools/Git/Git-Introduction"
+      
+    } ,
+  
+    {
+      "title"    : "Git Remote Repository",
+      "category" : "",
+      "tags"     : "Git, NOTE",
+      "date"     : "2024-01-28T11:37",
+      
+      
+      "url"      : "/Tools/Git/Git-Remote-Repository"
+      
+    } ,
+  
+    {
+      "title"    : "Git Workflow Model",
+      "category" : "",
+      "tags"     : "Git, NOTE",
+      "date"     : "2024-01-22T22:21",
+      
+      
+      "url"      : "/Tools/Git/Git-Workflow-Model"
+      
+    } ,
+  
+    {
+      "title"    : "Shell",
+      "category" : "",
+      "tags"     : "NOTE, Shell",
+      "date"     : "2024-02-22T11:12",
+      
+      
+      "url"      : "/Tools/Shell/Shell"
+      
+    } ,
+  
+    {
+      "title"    : "Tools",
+      "category" : "",
+      "tags"     : "Navigation",
+      "date"     : "2024-02-22T11:11",
+      
+      
+      "url"      : "/Tools/Tools"
+      
+    } ,
+  
+    {
+      "title"    : "Css Introduction",
+      "category" : "",
+      "tags"     : "NOTE, WEB, CSS",
+      "date"     : "2024-01-30T00:22",
+      
+      
+      "url"      : "/Web/CSS/CSS-Introduction"
+      
+    } ,
+  
+    {
+      "title"    : "Quick Start",
+      "category" : "",
+      "tags"     : "Javascript, Program, NOTE",
+      "date"     : "2024-04-14T00:21",
+      
+      
+      "url"      : "/Web/JS/Quick-Start"
+      
+    } ,
+  
+    {
+      "title"    : "Obsidian Git Operation",
+      "category" : "",
+      "tags"     : "NOTE, Extension, Git",
+      "date"     : "2024-02-23",
+      
+      
+      "url"      : "/Workflow/Obsidian/Obsidian-Git/Obsidian-Git-Operation"
+      
+    } 
+  
+  ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } 
+  
+]

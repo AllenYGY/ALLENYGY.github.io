@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    Recursion 1 &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Recursion 1" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="[[Recursion-1]]" />
+<meta property="og:description" content="[[Recursion-1]]" />
+<link rel="canonical" href="https://allenygy.github.io/Algorithm/Recursion/Recursion-1" />
+<meta property="og:url" content="https://allenygy.github.io/Algorithm/Recursion/Recursion-1" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-13T13:40:44+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Recursion 1" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-09-13T13:40:44+08:00","datePublished":"2024-09-13T13:40:44+08:00","description":"[[Recursion-1]]","headline":"Recursion 1","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/Algorithm/Recursion/Recursion-1"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/Algorithm/Recursion/Recursion-1"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://allenygy.github.io">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://allenygy.github.io">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/contents">
+        <i class="fa-solid fa-book fa-fw"></i> 目录
+      </a>
+      
+      <a class="sidebar-nav-item" href="/OS">
+        <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DCN">
+        <i class="fa-solid fa-network-wired"></i> 计算机网络
+      </a>
+      
+      <a class="sidebar-nav-item" href="/CO">
+        <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Program">
+        <i class="fa-solid fa-code fa-fw"></i> 编程语言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Math">
+        <i class="fa-solid fa-tools fa-fw"></i> 数学
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DBM">
+        <i class="fa-solid fa-database fa-fw"></i> 数据库
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Tools">
+        <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/links">
+        <i class="fa-solid fa-user-friends fa-fw"></i> 友链
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#recursion-1">Recursion-1</a>
+    <ol>
+      <li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E9%80%92%E6%8E%A8">什么是递推?</a></li>
+      <li><a href="#%E9%87%87%E7%94%A8%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E9%80%92%E6%8E%A8%E7%AE%97%E6%B3%95%E7%9A%84%E4%B8%89%E8%A6%81%E7%B4%A0">采用数组实现递推算法的三要素</a></li>
+      <li><a href="#%E9%80%92%E6%8E%A8%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95">递推算法实现方法</a>
+        <ol>
+          <li><a href="#%E5%85%94%E5%AD%90%E7%9A%84%E6%95%85%E4%BA%8B">兔子的故事</a>
+            <ol>
+              <li><a href="#code">CODE</a></li>
+            </ol>
+          </li>
+          <li><a href="#%E6%AF%8D%E7%89%9B%E7%9A%84%E6%95%85%E4%BA%8B">母牛的故事</a>
+            <ol>
+              <li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0">题目描述</a></li>
+              <li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F">输入格式</a></li>
+              <li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F">输出格式</a></li>
+              <li><a href="#%E6%A0%B7%E4%BE%8B">样例</a></li>
+              <li><a href="#code-1">CODE</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#%E5%AE%9E%E6%88%98%E8%AE%AD%E7%BB%83">实战训练</a>
+        <ol>
+          <li><a href="#%E4%B8%8A%E5%8F%B0%E9%98%B6">上台阶</a>
+            <ol>
+              <li><a href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0">问题描述</a></li>
+              <li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F-1">输入格式</a></li>
+              <li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F-1">输出格式</a></li>
+              <li><a href="#%E6%A0%B7%E4%BE%8B-1">样例</a></li>
+              <li><a href="#%E9%A2%98%E8%A7%A3">题解</a></li>
+              <li><a href="#code-2">CODE</a></li>
+            </ol>
+          </li>
+          <li><a href="#%E9%AA%A8%E7%89%8C%E9%97%AE%E9%A2%98">骨牌问题</a>
+            <ol>
+              <li><a href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0-1">问题描述</a></li>
+              <li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F-2">输入格式</a></li>
+              <li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F-2">输出格式</a></li>
+              <li><a href="#%E6%A0%B7%E4%BE%8B-2">样例</a></li>
+              <li><a href="#%E9%A2%98%E8%A7%A3-1">题解</a></li>
+              <li><a href="#code-3">CODE</a></li>
+            </ol>
+          </li>
+          <li><a href="#%E6%BC%93%E6%B1%9F%E7%9A%84%E7%AB%B9%E7%AD%8F">漓江的竹筏</a>
+            <ol>
+              <li><a href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0-2">问题描述</a></li>
+              <li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F-3">输入格式</a></li>
+              <li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F-3">输出格式</a></li>
+              <li><a href="#%E6%A0%B7%E4%BE%8B-3">样例</a></li>
+              <li><a href="#%E9%A2%98%E8%A7%A3-2">题解</a></li>
+              <li><a href="#code-4">CODE</a></li>
+            </ol>
+          </li>
+          <li><a href="#%E8%BF%8E%E5%AE%BE%E5%BD%A9%E5%B8%A6">迎宾彩带</a>
+            <ol>
+              <li><a href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0-3">问题描述</a></li>
+              <li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F-4">输入格式</a></li>
+              <li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F-4">输出格式</a></li>
+              <li><a href="#%E6%A0%B7%E4%BE%8B-4">样例</a></li>
+              <li><a href="#%E9%A2%98%E8%A7%A3-3">题解</a></li>
+              <li><a href="#code-5">CODE</a></li>
+            </ol>
+          </li>
+          <li><a href="#%E6%9C%80%E7%9F%AD%E8%B7%9D%E7%A6%BB">最短距离</a>
+            <ol>
+              <li><a href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0-4">问题描述</a></li>
+              <li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F-5">输入格式</a></li>
+              <li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F-5">输出格式</a></li>
+              <li><a href="#%E6%A0%B7%E4%BE%8B-5">样例</a></li>
+              <li><a href="#%E9%A2%98%E8%A7%A3-4">题解</a>
+                <ol>
+                  <li><a href="#%E6%9B%BC%E5%93%88%E9%A1%BF%E8%B7%9D%E7%A6%BB">曼哈顿距离</a></li>
+                </ol>
+              </li>
+              <li><a href="#code-6">CODE</a></li>
+            </ol>
+          </li>
+          <li><a href="#%E7%8C%B4%E5%AD%90%E5%90%83%E6%A1%83%E5%AD%90">猴子吃桃子</a>
+            <ol>
+              <li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-1">题目描述</a></li>
+              <li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F-6">输入格式</a></li>
+              <li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F-6">输出格式</a></li>
+              <li><a href="#code-7">CODE</a></li>
+            </ol>
+          </li>
+          <li><a href="#%E9%AA%A8%E7%89%8C%E9%93%BA%E6%96%B9%E6%A0%BC">骨牌铺方格</a>
+            <ol>
+              <li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-2">题目描述</a></li>
+              <li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F-7">输入格式</a></li>
+              <li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F-7">输出格式</a></li>
+              <li><a href="#%E6%A0%B7%E4%BE%8B-6">样例</a></li>
+              <li><a href="#code-8">CODE</a></li>
+            </ol>
+          </li>
+          <li><a href="#pell-%E6%95%B0%E5%88%97">Pell 数列</a>
+            <ol>
+              <li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-3">题目描述</a></li>
+              <li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F-8">输入格式</a></li>
+              <li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F-8">输出格式</a></li>
+              <li><a href="#%E6%A0%B7%E4%BE%8B-7">样例</a></li>
+              <li><a href="#code-9">CODE</a></li>
+            </ol>
+          </li>
+          <li><a href="#%E5%81%B6%E6%95%B0%E4%B8%AA%E4%B8%89">偶数个三</a>
+            <ol>
+              <li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-4">题目描述</a></li>
+              <li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F-9">输入格式</a></li>
+              <li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F-9">输出格式</a></li>
+              <li><a href="#%E6%A0%B7%E4%BE%8B-8">样例</a></li>
+              <li><a href="#code-10">CODE</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "03/20/2024 16:27:40")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/ALLENYGY/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        49万
+        
+          
+        
+        8千
+        496字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">Recursion 1</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2024-06-22 16:18:00 Saturday
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2024-06-10 14:23:00 Monday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        7860字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        27分
+        
+        
+        
+        <br>
+        
+        Algorithm, Share, and Recursion
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="recursion-1"><a class="internal-link" href="/Algorithm/Recursion/Recursion-1">Recursion-1</a></h1>
+
+<h2 id="什么是递推">什么是递推?</h2>
+
+<p>递推是<strong>按照一定的规律</strong>来求<em>序列中的每一项</em>,一般是通过计算前面的一些项来得出序列中的指定项。
+其思想是把一个复杂的庞大的计算过程转化为对<strong>简单过程的多次重复</strong>,该算法利用了计算机运算速度快和不知疲倦的机器特点。</p>
+
+<h2 id="采用数组实现递推算法的三要素">采用数组实现递推算法的三要素</h2>
+
+<ol>
+  <li>将问题用数组形式表达</li>
+  <li>求解递推关系,<strong>列出递推表达式</strong></li>
+  <li>寻找<strong>边界值</strong></li>
+</ol>
+
+<h2 id="递推算法实现方法">递推算法实现方法</h2>
+
+<ol>
+  <li>首先知道小规模的数列</li>
+  <li>求解递推关系,列出递推表达式</li>
+</ol>
+
+<h3 id="兔子的故事">兔子的故事</h3>
+
+<blockquote>
+  <p>[!question]+ 🐰的故事
+已知一对兔子，每个月可以生一对小兔子，小兔子出生后的第二个月会变成成年兔子，会继续生小兔子。
+第一个月，我们有1对小兔子。
+第二个月，我们有1对成年兔子的兔子。
+第三个月，我们有1对成年兔子的兔子，有1对小兔子，共2对。
+第四个月，我们有2对成年兔子的兔子，有1对小兔子，共3对。
+第五个月，我们有3对成年兔子的兔子，有2对小兔子，共5对。
+现在我们希望知道第n个月，一共有多少只兔子。</p>
+</blockquote>
+
+<blockquote>
+  <p>[!success]+ 题解
+假设：第$i$个月的大兔为$a(i)$幼兔为$b(i)$,总数$f(i)$.</p>
+
+  <p>$f(i)=a(i)+b(i)$</p>
+
+  <p>已知：一对成年兔每个月可以生一对小兔子</p>
+
+  <p>$b(i)=a(i-1)$</p>
+
+  <p>已知：下个月的成年兔是由上个月的成年兔和幼兔组成的</p>
+
+  <p>$a(i)=a(i-1)+b(i-1)=f(i-1)$</p>
+
+  <p>$\therefore b(i)=a(i-1)=a(i-2)+b(i-2)=f(i-2)$</p>
+
+  <p>$f(i)=a(i)+b(i)$
+$f(i)=f(i-1)+f(i-2)$</p>
+</blockquote>
+
+<h4 id="code">CODE</h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#define int long long
+#define endl '\n'
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="k">const</span> <span class="kt">int</span> <span class="n">MOD</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">MAXN</span> <span class="o">=</span> <span class="mi">1000000</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">val</span><span class="p">[</span><span class="n">MAXN</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+<span class="n">val</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">val</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+
+<span class="kt">signed</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+	<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">val</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">!=</span><span class="mi">0</span><span class="p">){</span>
+		<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">val</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+		<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">x</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+		<span class="n">val</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">val</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">val</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span><span class="o">%</span><span class="n">MOD</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">val</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="母牛的故事"><a href="https://mna.wang/problem/3073">母牛的故事</a></h3>
+
+<blockquote>
+  <p>[!question]+ 母牛的故事</p>
+
+  <h4 id="题目描述">题目描述</h4>
+
+  <p>有一头母牛，从第二年起，它每年年初生一头小母牛。每头小母牛从第四个年头开始，每年年初也生一头小母牛。请编程实现在第n年的时候，共有多少头母牛？</p>
+
+  <h4 id="输入格式">输入格式</h4>
+
+  <p>输入数据由多个测试实例组成，每个测试实例占一行，包括一个整数n(0&lt;n&lt;55)，n的含义如题目中描述。</p>
+
+  <p>n=0表示输入数据的结束，不做处理。</p>
+
+  <h4 id="输出格式">输出格式</h4>
+
+  <p>对于每个测试实例，输出在第n年的时候母牛的数量。每个输出占一行。</p>
+
+  <h4 id="样例">样例</h4>
+
+  <p><em>Input</em></p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+4
+5
+0
+</code></pre></div>  </div>
+
+  <p><em>Output</em></p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+4
+6
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote>
+  <p>[!success]+  题解</p>
+
+  <p>第n年的牛的数量为：n-1年的数量和今年新出生的牛的数量
+今年新出生的牛的数量为 n-3 年前牛的数量</p>
+</blockquote>
+
+<h4 id="code-1">CODE</h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#define int long long
+#define endl '\n'
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="k">const</span> <span class="kt">int</span> <span class="n">MOD</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">MAXN</span> <span class="o">=</span> <span class="mi">1000000</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">val</span><span class="p">[</span><span class="n">MAXN</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+
+<span class="kt">void</span> <span class="nf">solve</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span>
+<span class="p">{</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">val</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">!=</span><span class="mi">0</span><span class="p">){</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">val</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">val</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+    <span class="n">val</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span>
+    <span class="n">val</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">4</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">x</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">val</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">val</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">val</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">3</span><span class="p">]);</span>
+    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">val</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">signed</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">solve</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="实战训练">实战训练</h2>
+
+<h3 id="上台阶">上台阶</h3>
+
+<h4 id="问题描述">问题描述</h4>
+
+<p>楼梯有$n(100 &gt; n &gt; 0)$阶台阶,上楼时可以一步上$1$阶,也可以一步上$2$阶,也可以一步上$3$阶
+编程计算共有多少种不同的走法。</p>
+
+<h4 id="输入格式-1">输入格式</h4>
+
+<p>输入的每一行包括一组测试数据，即为台阶数n。最后一行为0，表示测试结束。</p>
+
+<h4 id="输出格式-1">输出格式</h4>
+
+<p>每一行输出对应一行输入的结果，即为走法的数目。</p>
+
+<h4 id="样例-1">样例</h4>
+
+<p><em>Input</em></p>
+
+<pre><code class="language-txt">1
+2
+3
+4
+0
+</code></pre>
+
+<p><em>Output</em></p>
+
+<pre><code class="language-txt">1
+2
+4
+7
+</code></pre>
+
+<h4 id="题解">题解</h4>
+
+<blockquote>
+  <p>[!success]+
+\(f(n)=\begin{cases}  
+\ 1 &amp; n= 1\\
+\ 2 &amp; n= 2\\
+\ 4 &amp; n= 3\\
+f[i-1]+ f[i-2] + f[i-3]\ &amp;n&gt;3
+\end{cases}\)
+$f[i]$表示走到第$i$级台阶的走法</p>
+</blockquote>
+
+<blockquote>
+  <p>[!question]+ Why？
+要上第$i$级楼梯 $f[i]$
+可以从$i-1$级楼梯一次走一步上去 $f[i-1]$
+可以从$i-2$级楼梯一次性走两步上去 $f[i-2]$
+可以从$i-3$级楼梯一次性走三步上去 $f[i-3]$</p>
+</blockquote>
+
+<h4 id="code-2">CODE</h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#define int long long
+#define endl '\n'
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">101</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+
+<span class="kt">signed</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span>
+    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="mi">4</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">n</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">4</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">3</span><span class="p">];</span>
+        <span class="p">}</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="骨牌问题">骨牌问题</h3>
+
+<h4 id="问题描述-1">问题描述</h4>
+
+<p>在2×n的一个长方形方格中,用一个1×2的骨牌铺满方格,输入n ,输出铺放方案的总数. 例如n=3时,为2× 3方格，骨牌的铺放方案有三种,如下图：</p>
+
+<h4 id="输入格式-2">输入格式</h4>
+
+<p>输入数据由多行组成，每行包含一个整数n,表示该测试实例的长方形方格的规格是2×n (0&lt; n&lt;=50)。</p>
+
+<h4 id="输出格式-2">输出格式</h4>
+
+<p> 对于每个测试实例，请输出铺放方案的总数，每个实例的输出占一行。</p>
+
+<h4 id="样例-2">样例</h4>
+
+<p><em>Input</em></p>
+
+<pre><code class="language-txt">1
+3
+2
+</code></pre>
+
+<p><em>Output</em></p>
+
+<pre><code class="language-txt">1
+3
+2
+</code></pre>
+
+<h4 id="题解-1">题解</h4>
+
+<p>为了使方格铺满，每次要么铺一个2×1的骨牌，要么铺两个1×2的骨牌，要么铺两个2×1的骨牌首先，分析边界值：2×1方格只有1种铺法，2×2方格只有2种铺法.如图：</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Share/202406101734284.png" alt="骨牌问题" /></p>
+
+<blockquote>
+  <p>[!success]+ $dp(i)=dp(i-1)+dp(i-2)$
+$dp[i$]表示铺满$2*i$的长方形方格，一共有多少方案数</p>
+
+  <ul>
+    <li>$dp[n]=dp[n-1]+dp[n-2]$ 铺到最后要么剩$2\times 2$或者$1\times2$</li>
+    <li>$dp[n-1]$ 表示前$2\times (n-1)$ 已铺满，剩最后$1\times 2$只能竖着放</li>
+    <li>$dp[n-2]$为铺满 $2\times (n-2)$ 网格的方案数
+(如果前面的2*(n-2)的网格已经铺满, 那么最后的$2\times 2$只能是横着放两块,否则会与$dp[n-1]$重复).</li>
+  </ul>
+</blockquote>
+
+<h4 id="code-3">CODE</h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#define int long long
+#define endl '\n'
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">51</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+<span class="kt">signed</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">];</span>
+        <span class="p">}</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h3 id="漓江的竹筏"><a href="https://mna.wang/problem/3062">漓江的竹筏</a></h3>
+
+<h4 id="问题描述-2">问题描述</h4>
+
+<p>桂林山水甲天下，漓江更是美不胜收。 漓江上竹筏整齐排列，形成了美丽的风景线，津津、菲菲和皮皮决定乘坐竹筏游览漓江景色。 已知竹筏有2种规格：一种是单人竹筏，长度为1，宽度为1；另一种是双人竹筏，长度为 2，宽度为2。假设漓江江面的面积是n*3，请问多少种不同的竹筏安排方案？</p>
+
+<h4 id="输入格式-3">输入格式</h4>
+
+<p>一行一个整数n,0&lt;n&lt;1000.</p>
+
+<h4 id="输出格式-3">输出格式</h4>
+
+<p>一行一个整数，为铺设方案的数量模12345的结果。</p>
+
+<h4 id="样例-3">样例</h4>
+
+<p><em>Input</em></p>
+
+<pre><code class="language-txt">2
+</code></pre>
+
+<p><em>Output</em></p>
+
+<pre><code class="language-txt">3
+</code></pre>
+
+<h4 id="题解-2">题解</h4>
+
+<blockquote>
+  <p>[!success]+ \(f(n)=\begin{cases}  
+\ 1 &amp; n= 1\\
+\ 2 &amp; n= 2\\
+d[i-1]+2\times d[i-2] \ &amp;n&gt;2  
+\end{cases}\)
+$d[i]$  表示 江面宽度为$i$时铺设方案的数</p>
+</blockquote>
+
+<blockquote>
+  <p>[!question]+ Why $2\times d[i-2]$ ?
+当宽度是二的时候，有两种排列方法</p>
+</blockquote>
+
+<h4 id="code-4">CODE</h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#define int long long
+#define endl '\n';
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="k">const</span> <span class="kt">int</span> <span class="n">MOD</span><span class="o">=</span><span class="mi">12345</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">f</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">==</span><span class="mi">2</span><span class="p">)</span> <span class="k">return</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">signed</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">d</span><span class="p">[</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+    <span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">d</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span><span class="o">%</span><span class="n">MOD</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">d</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="迎宾彩带"><a href="https://mna.wang/problem/3063">迎宾彩带</a></h3>
+
+<h4 id="问题描述-3">问题描述</h4>
+
+<p>桂林为了欢迎广大游客，决定在桂林的各大街道上布置迎宾彩带。 目前有白色、蓝色和红色的彩带，并满足以下两个条件：</p>
+
+<ol>
+  <li>相同颜色的彩带不能放在相邻的位置</li>
+  <li>一条蓝色的彩带必须放在一条白色的彩带和一条红色的彩带中间。 津津、菲菲和皮皮决定写一个程序，了解放置彩带的方案数有多少种。</li>
+</ol>
+
+<h4 id="输入格式-4">输入格式</h4>
+
+<p>一行一个整数n，表示橱窗的宽度（或者说彩带数目）。</p>
+
+<h4 id="输出格式-4">输出格式</h4>
+
+<p>一行一个整数，表示装饰橱窗的彩带放置方案数。</p>
+
+<h4 id="样例-4">样例</h4>
+
+<p><em>Input</em></p>
+
+<pre><code class="language-txt">3
+</code></pre>
+
+<p><em>Output</em></p>
+
+<pre><code class="language-txt">4
+</code></pre>
+
+<h4 id="题解-3">题解</h4>
+
+<blockquote>
+  <p>[!success]+ \(f(n)=\begin{cases}  
+\ 2 &amp; n= 1\\
+\ 2 &amp; n= 2\\
+d(i-1)+d(i-2) \ &amp;n&gt;2  
+\end{cases}\)
+$d[i]$  表示当橱窗宽度是 $i$ 时，彩带放置方案数</p>
+
+</blockquote>
+
+<blockquote>
+  <p>[!question]+ Why ?</p>
+
+  <ul>
+    <li>假设一共有 $n$ 条彩带，当前 $n-1$ 条彩带排好后，则最后一条彩带
+      <ul>
+        <li>一定只能是红色或者只能是白色</li>
+      </ul>
+    </li>
+    <li>对于第 $n-2$ 条彩带存在两种可能</li>
+    <li>蓝色或者不是蓝色
+      <ul>
+        <li>当为蓝色时第 $n-3$ 条彩带也必然是确定的 $d[n-2]$</li>
+        <li>不为蓝色时第 $n-3$ 条彩带不能确定 $d[n-1]$
+$\therefore d[i]=d[i-1]+d[i-2]$</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<h4 id="code-5">CODE</h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#define int long long
+#define endl '\n';
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">signed</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h3 id="最短距离"><a href="https://mna.wang/problem/3064">最短距离</a></h3>
+
+<h4 id="问题描述-4">问题描述</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>桂林的景点很多，为了让更多的游客可以顺利游玩。在不影响游览品质的前提下，旅游公司 决定通过改变路线的方法分流游客。 方案是：每个旅行团都跳过其中的一个景点（但是不能跳过$1$号和$n$号景点），使得它从$1$号景点开始，到达$n$号景点所经过的总距离最小。 假设每一个景点i都有一个坐标$(x_i,y_i)$，$c$从$(x_1,y_1)$的景点$1$到$(x_2,y_2)$ 的景点 $2$ 的距离为：$</td>
+      <td>x_1-x_2</td>
+      <td>+</td>
+      <td>y_1-y_2</td>
+      <td>$</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="输入格式-5">输入格式</h4>
+
+<p>第1行1个正整数n，表示城市个数。</p>
+
+<p>接下来的n行，每行2个数x_i和y_i,表示城市i的坐标。</p>
+
+<h4 id="输出格式-5">输出格式</h4>
+
+<p>一行一个数，使得它从1号城市开始，跳过某一个城市，到达n号城市所经过的最小总距离。</p>
+
+<h4 id="样例-5">样例</h4>
+
+<p><em>Input</em></p>
+
+<pre><code class="language-txt">4
+0 0
+8 3
+11 -1
+10 0
+</code></pre>
+
+<p><em>Output</em></p>
+
+<pre><code class="language-txt">14
+</code></pre>
+
+<h4 id="题解-4">题解</h4>
+
+<ol>
+  <li>先计算出总距离S (每个景点之间的曼哈顿距离总和)</li>
+  <li>逐个跳过景点维护最小距离</li>
+</ol>
+
+<blockquote>
+  <p>[!success]+
+\(f(i) = S - a[i] - a[i + 1] + dist(i - 1, i + 1)\)
+\(m=min(f(i),m)\)</p>
+
+  <ul>
+    <li>$m$ 初始化为 $S$</li>
+    <li>$f[i]$  表示跳过景点$i$ 的总距离</li>
+    <li>$S$ 表示不跳过任何一个景点的总距离</li>
+    <li>$a[i]$ 表示从景点$i-1$ 到 景点$i$ 的距离</li>
+    <li>$dist()$ 表示 两景点之间的曼哈顿距离</li>
+  </ul>
+</blockquote>
+
+<h5 id="曼哈顿距离">曼哈顿距离</h5>
+
+<p>假设 A, B两点坐标分别为$(x_i,y_i)$ ，$(x_j,y_j)$
+从$A$到$B$的曼哈顿距离为: $|x_i-x_i|+|y_j-y_j|$</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">manhattandist</span><span class="p">(</span><span class="kt">int</span> <span class="n">x1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x2</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y2</span><span class="p">){</span>
+    <span class="k">return</span> <span class="n">abs</span><span class="p">(</span><span class="n">x1</span> <span class="o">-</span> <span class="n">x2</span><span class="p">)</span> <span class="o">+</span> <span class="n">abs</span><span class="p">(</span><span class="n">y1</span> <span class="o">-</span> <span class="n">y2</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="code-6">CODE</h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#define int long long
+#define endl '\n'
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="mi">100005</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="mi">100005</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="mi">100005</span><span class="p">];</span>
+
+<span class="kt">int</span> <span class="nf">manhattandist</span><span class="p">(</span><span class="kt">int</span> <span class="n">x1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x2</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y2</span><span class="p">){</span>
+    <span class="k">return</span> <span class="n">abs</span><span class="p">(</span><span class="n">x1</span> <span class="o">-</span> <span class="n">x2</span><span class="p">)</span> <span class="o">+</span> <span class="n">abs</span><span class="p">(</span><span class="n">y1</span> <span class="o">-</span> <span class="n">y2</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+<span class="kt">int</span> <span class="nf">dist</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="kt">int</span> <span class="n">j</span><span class="p">){</span>
+    <span class="k">return</span> <span class="n">manhattandist</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">j</span><span class="p">]);</span>
+<span class="p">}</span>
+
+
+<span class="kt">signed</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;&gt;</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">dist</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span> 
+        <span class="n">s</span> <span class="o">+=</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>                
+    <span class="p">}</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">s</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="n">s</span> <span class="o">-</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dist</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span> 
+    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">m</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h3 id="猴子吃桃子"><a href="https://mna.wang/problem/3065">猴子吃桃子</a></h3>
+
+<h4 id="题目描述-1">题目描述</h4>
+
+<p>猴子吃桃子问题：猴子第一天摘下若干个桃子，当即吃了一半还不过瘾，又多吃了一个；第二天又将剩下的桃子吃掉一半又多吃了一个；以后每天早上都吃了前一天剩下的一半零一个。到了第十天想再吃时，见只剩下一个桃子，求第一天共摘了多少个桃子？</p>
+
+<h4 id="输入格式-6">输入格式</h4>
+
+<p>无</p>
+
+<h4 id="输出格式-6">输出格式</h4>
+
+<p>一个整数，第一天共有多少个桃子</p>
+
+<h4 id="code-7">CODE</h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">peaches_2</span><span class="p">(</span><span class="kt">int</span> <span class="n">day</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">day</span> <span class="o">==</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span> 
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">peaches_2</span><span class="p">(</span><span class="n">day</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">peaches_1</span><span class="p">(</span><span class="kt">int</span> <span class="n">day</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">total_peaches</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="p">;</span> <span class="o">--</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">total_peaches</span> <span class="o">=</span> <span class="p">(</span><span class="n">total_peaches</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">total_peaches</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">day</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> 
+    <span class="kt">int</span> <span class="n">total_peaches</span> <span class="o">=</span> <span class="n">peaches_1</span><span class="p">(</span><span class="n">day</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">total_peaches</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="骨牌铺方格"><a href="https://mna.wang/problem/3066">骨牌铺方格</a></h3>
+
+<h4 id="题目描述-2">题目描述</h4>
+
+<p>有1×n（n&lt;=50）的一个长方形，用1×1、1×2和1×3的骨牌铺满方格，请问有多少种铺法？ 例如当n=3时为1×3的方格。此时用1×1、1×2和1×3的骨牌铺满方格，共有四种铺法。如下图：<img src="https://img.lsyz.top/2022/11/11/24b69da8710e7.png" alt="a0c46b6c3a466ecaa86db38ca5ca6072.png" title="a0c46b6c3a466ecaa86db38ca5ca6072.png" /></p>
+
+<h4 id="输入格式-7">输入格式</h4>
+
+<p>一个整数n（n&lt;=50）</p>
+
+<h4 id="输出格式-7">输出格式</h4>
+
+<p>骨牌的铺法</p>
+
+<h4 id="样例-6">样例</h4>
+
+<p><em>Input</em></p>
+
+<pre><code class="language-txt">3
+</code></pre>
+
+<p><em>OutPut</em></p>
+
+<pre><code class="language-txt">4
+</code></pre>
+
+<h4 id="code-8">CODE</h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span>
+<span class="cp">#define int long long
+#define endl '\n'
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">signed</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">dp</span><span class="p">[</span><span class="mi">52</span><span class="p">];</span>   
+    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="mi">4</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">4</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">3</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="pell-数列"><a href="https://mna.wang/problem/3067">Pell 数列</a></h3>
+
+<h4 id="题目描述-3">题目描述</h4>
+
+<p>Pell数列$a_1,a_2,a_3,\dots$的定义是这样的，$a_1=1, a_2=2,\dots, a_n=2*a_{n-1}(n&gt;2)$，。 给出一个正整数k，要求Pell数列的第$k$项模上$32767$是多少。</p>
+
+<h4 id="输入格式-8">输入格式</h4>
+
+<p>第1行是测试数据的组数n，后面跟着n行输入。每组测试数据占1行，包括一个正整数k (1 ≤ k &lt; 1000000)。</p>
+
+<h4 id="输出格式-8">输出格式</h4>
+
+<p>n行，每行输出对应一个输入。输出应是一个非负整数。</p>
+
+<h4 id="样例-7">样例</h4>
+
+<p><em>Input</em></p>
+
+<pre><code class="language-txt">2
+1
+8
+</code></pre>
+
+<p><em>Output</em></p>
+
+<pre><code class="language-txt">1
+408
+</code></pre>
+
+<h4 id="code-9">CODE</h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#define int long long
+#define endl '\n'
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">1000001</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+
+<span class="kt">void</span> <span class="nf">solve</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">){</span>
+
+    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span><span class="o">%</span><span class="mi">32767</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">signed</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">T</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">T</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">T</span><span class="o">--</span><span class="p">){</span>
+        <span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">!=</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+        <span class="k">else</span><span class="p">{</span>
+            <span class="n">solve</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+            <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="偶数个三"><a href="https://mna.wang/problem/3068">偶数个三</a></h3>
+
+<h4 id="题目描述-4">题目描述</h4>
+
+<p>请编程求出所有的n位数中，有多少个数中有偶数个数字3.结果模12345。(1&lt;=n&lt;=1000)</p>
+
+<h4 id="输入格式-9">输入格式</h4>
+
+<p>一行一个正整数n，0&lt;n&lt;1000.</p>
+
+<h4 id="输出格式-9">输出格式</h4>
+
+<p>一行一个正整数，表示n位数中有多少个数有偶数个3.</p>
+
+<h4 id="样例-8">样例</h4>
+
+<p><em>input</em></p>
+
+<pre><code class="language-txt">2
+</code></pre>
+
+<p><em>Output</em></p>
+
+<pre><code class="language-txt">73
+</code></pre>
+
+<h4 id="code-10">CODE</h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#define int long long
+#define endl '\n'
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">signed</span> <span class="nf">main</span><span class="p">(){</span>
+  <span class="kt">int</span> <span class="n">f</span><span class="p">[</span><span class="mi">1001</span><span class="p">][</span><span class="mi">2</span><span class="p">],</span><span class="n">n</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="mi">9</span><span class="p">;</span>
+  <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
+  <span class="n">f</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">f</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="mi">9</span><span class="p">;</span>                        
+  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>    <span class="p">{</span>   
+     <span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="n">n</span><span class="p">)</span>  <span class="c1">// i是最高位</span>
+      <span class="n">x</span><span class="o">-=</span><span class="mi">1</span><span class="p">;</span>
+      <span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span><span class="o">%</span><span class="mi">12345</span><span class="p">;</span>
+      <span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">%</span><span class="mi">12345</span><span class="p">;</span>   
+   <span class="p">}</span>
+   <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">f</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">0</span><span class="p">];</span> 
+   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/Algorithm/Recursion/Recursion-1">Recursion 1</a><br>
+                    <!-- <div style="font-size: 0.9em">[[Recursion-1]]
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+<style>
+  pre.language-vega-lite,
+  code.language-vega-lite {
+    display: none;
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-vega-lite"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+        vegaEmbed(m, JSON.parse(x.textContent));
+      }'
+></script>
+
+
+
+
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    Alphafold2 &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Alphafold2" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="AlphaFold2" />
+<meta property="og:description" content="AlphaFold2" />
+<link rel="canonical" href="https://allenygy.github.io/Research/AlphaFold2" />
+<meta property="og:url" content="https://allenygy.github.io/Research/AlphaFold2" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-13T13:40:44+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Alphafold2" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-09-13T13:40:44+08:00","datePublished":"2024-09-13T13:40:44+08:00","description":"AlphaFold2","headline":"Alphafold2","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/Research/AlphaFold2"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/Research/AlphaFold2"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://allenygy.github.io">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://allenygy.github.io">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/contents">
+        <i class="fa-solid fa-book fa-fw"></i> 目录
+      </a>
+      
+      <a class="sidebar-nav-item" href="/OS">
+        <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DCN">
+        <i class="fa-solid fa-network-wired"></i> 计算机网络
+      </a>
+      
+      <a class="sidebar-nav-item" href="/CO">
+        <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Program">
+        <i class="fa-solid fa-code fa-fw"></i> 编程语言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Math">
+        <i class="fa-solid fa-tools fa-fw"></i> 数学
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DBM">
+        <i class="fa-solid fa-database fa-fw"></i> 数据库
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Tools">
+        <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/links">
+        <i class="fa-solid fa-user-friends fa-fw"></i> 友链
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#alphafold2">AlphaFold2</a>
+    <ol>
+      <li><a href="#alphafold2-1">AlphaFold2</a></li>
+      <li><a href="#model-architecture">Model Architecture</a></li>
+      <li><a href="#feature-extraction">Feature Extraction</a>
+        <ol>
+          <li><a href="#msa-multi-sequence-alignment">MSA (Multi-Sequence-Alignment)</a></li>
+        </ol>
+      </li>
+      <li><a href="#feature-extraction-1">Feature Extraction</a>
+        <ol>
+          <li><a href="#pairing--templates">Pairing &amp; Templates</a></li>
+          <li><a href="#encoder">Encoder</a>
+            <ol>
+              <li><a href="#encoder-input">Encoder Input</a></li>
+            </ol>
+          </li>
+          <li><a href="#encoder-1">Encoder</a>
+            <ol>
+              <li><a href="#encoder-input-1">Encoder Input</a></li>
+            </ol>
+          </li>
+          <li><a href="#encoder-2">Encoder</a>
+            <ol>
+              <li><a href="#evoformer-block">Evoformer Block</a></li>
+            </ol>
+          </li>
+          <li><a href="#encoder-3">Encoder</a>
+            <ol>
+              <li><a href="#evoformer-block-1">Evoformer Block</a></li>
+            </ol>
+          </li>
+          <li><a href="#encoder-4">Encoder</a>
+            <ol>
+              <li><a href="#evoformer-block-2">Evoformer Block</a></li>
+            </ol>
+          </li>
+          <li><a href="#encoder-5">Encoder</a>
+            <ol>
+              <li><a href="#encoder-output">Encoder Output</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#decoder">Decoder</a>
+        <ol>
+          <li><a href="#protein-3d-structure-prediction">Protein 3D Structure Prediction</a></li>
+        </ol>
+      </li>
+      <li><a href="#recycling">Recycling</a></li>
+      <li><a href="#loss-function">Loss Function</a></li>
+      <li><a href="#loss-function-1">Loss Function</a></li>
+      <li><a href="#loss-function-2">Loss Function</a></li>
+      <li><a href="#training-with-labelled-and-unlabelled-data">Training with labelled and unlabelled data</a>
+        <ol>
+          <li><a href="#noisy-student-self-distillation">Noisy student self-distillation</a></li>
+          <li><a href="#bert">BERT</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li><a href="#transformer">Transformer</a></li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "03/20/2024 16:27:40")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/ALLENYGY/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        46万
+        
+          
+        
+        3千
+        241字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.3.1/dist/reveal.min.css,npm/reveal.js@4.3.1/dist/theme/serif.min.css"
+/>
+<style>
+  .sidebar {
+    line-height: 1.5;
+  }
+  .reveal .slides {
+    text-align: left;
+  }
+  .reveal a,
+  .reveal a:hover,
+  .reveal a:focus {
+    color: inherit;
+    border-bottom: 1px solid var(--theme-base-color);
+  }
+</style>
+
+<div class="slides">
+  <section
+    data-markdown data-separator='&lt;!-- .slide --&gt;'
+     data-separator-vertical='&lt;!-- .slide vertical=true --&gt;'
+     data-background-color='White'
+     >
+    <textarea data-template><h1 id="alphafold2"><a href="https://www.nature.com/articles/s41586-021-03819-2">AlphaFold2</a></h1>
+
+<!-- .slide -->
+
+<h2 id="alphafold2-1"><a class="internal-link" href="/Research/AlphaFold2">AlphaFold2</a></h2>
+
+<ul>
+  <li><a class="internal-link" href="/Research/AlphaFold2">AlphaFold2</a> 被 <em>《Science》</em> 评选为2021年AI在科学界最大的突破</li>
+  <li><a class="internal-link" href="/Research/AlphaFold2">AlphaFold2</a> 把通过氨基酸序列对蛋白质三维结构预测的误差，降低到原子级别</li>
+</ul>
+
+<!-- .slide -->
+
+<h2 id="model-architecture">Model Architecture</h2>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" alt="Model architecture" /></p>
+
+<ul>
+  <li><em>Feature Extraction</em></li>
+  <li><em>Encoder</em></li>
+  <li><em>Decoder</em></li>
+  <li><em>Recycling</em></li>
+</ul>
+
+<!-- .slide -->
+
+<h2 id="feature-extraction">Feature Extraction</h2>
+
+<h3 id="msa-multi-sequence-alignment">MSA <em>(Multi-Sequence-Alignment)</em></h3>
+
+<ul>
+  <li>在基因数据库中搜索相似的氨基酸序列
+    <ul>
+      <li>多序列比对</li>
+    </ul>
+  </li>
+  <li>得到不同氨基酸序列的特征</li>
+  <li>MSA的作用是为了提取出一个a序列在多物种中的共进化信息</li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/FeatureExtraction.png" alt="FeatureExtraction" style="zoom:50%;" align="right" /></p>
+
+<!-- .slide vertical=true -->
+
+<h2 id="feature-extraction-1">Feature Extraction</h2>
+
+<h3 id="pairing--templates">Pairing &amp; Templates</h3>
+
+<ul>
+  <li>氨基酸之间的关系</li>
+  <li>在结构数据库中搜索，从已知的氨基酸序列的结构中搜索得到空间信息</li>
+  <li>氨基酸之间的特征</li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/FeatureExtraction.png" alt="FeatureExtraction" style="zoom:50%;" align="right" /></p>
+
+<!-- .slide -->
+
+<h3 id="encoder">Encoder</h3>
+
+<h4 id="encoder-input">Encoder Input</h4>
+
+<p><strong>MSA Representation</strong></p>
+<ul>
+  <li><em>s</em>: <em>s</em> 行氨基酸序列
+    <ul>
+      <li>第一行是人的氨基酸序列</li>
+      <li>后面<em>s-1</em> 是从基因数据库中匹配到的不同物种的氨基酸序列</li>
+    </ul>
+  </li>
+  <li><em>r</em>: <em>r</em>个氨基酸</li>
+  <li><em>c</em>:  每个氨基酸表示为长为<em>c</em>的向量</li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/EncoderInput.png" alt="EncoderInput.png" style="zoom:30%;" align="right" /></p>
+
+<!-- .slide vertical=true -->
+
+<h3 id="encoder-1">Encoder</h3>
+
+<h4 id="encoder-input-1">Encoder Input</h4>
+
+<p><strong>Pair Representation</strong></p>
+<ul>
+  <li><em>r</em>: <em>r</em>个氨基酸</li>
+  <li><em>c</em>: 每个氨基酸表示为长为<em>c</em>的向量</li>
+  <li>主要用于表示氨基酸两两之间的空间信息</li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/EncoderInput.png" alt="EncoderInput.png" style="zoom:40%;" align="right" /></p>
+
+<!-- .slide -->
+
+<h3 id="encoder-2">Encoder</h3>
+
+<h4 id="evoformer-block">Evoformer Block</h4>
+
+<ul>
+  <li>与Transformer 不同
+    <ul>
+      <li>Transformer 输入的是一段序列</li>
+      <li>Evoformer 在这里输入的是一个二维的矩阵</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/a.png" alt="a" /></p>
+
+<!-- .slide vertical=true -->
+
+<h3 id="encoder-3">Encoder</h3>
+
+<h4 id="evoformer-block-1">Evoformer Block</h4>
+
+<p><em>MSA</em>和<em>Pair</em>都会进入多头自注意力模块</p>
+<ul>
+  <li>具有残差连接和在元素作用上的MLP</li>
+</ul>
+
+<p><em>Pair</em>的部分还需要加入物理上三角不等式的处理</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/a.png" alt="a" /></p>
+
+<!-- .slide vertical=true -->
+
+<h3 id="encoder-4">Encoder</h3>
+
+<h4 id="evoformer-block-2">Evoformer Block</h4>
+
+<p><strong>与Transformer不同</strong></p>
+<ul>
+  <li>氨基酸对 <em>(Pair Representation)</em> 之间的信息会加入对序列的建模
+    <ul>
+      <li>序列建模之后也会加入对氨基酸对的建模</li>
+      <li>自注意力机制做两次
+        <ul>
+          <li>因为输入是一个二维的矩阵</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/a.png" alt="a" /></p>
+
+<!-- .slide -->
+
+<h3 id="encoder-5">Encoder</h3>
+
+<h4 id="encoder-output">Encoder Output</h4>
+
+<ul>
+  <li>输出的矩阵维度不发生变化, <em>c</em>发生变化</li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/EncoderOutput.png" alt="EncoderOutput.png" style="zoom:50%;" align="right" /></p>
+
+<!-- .slide -->
+
+<h2 id="decoder">Decoder</h2>
+
+<p>根据<em>Encoder</em>的输出拿到</p>
+<ul>
+  <li>Single Representation <em>(r, c)</em> 人氨基酸序列
+    <ul>
+      <li>人类氨基酸所有的特征的表示</li>
+    </ul>
+  </li>
+  <li>Pair Representation <em>(r, r, c)</em> 氨基酸对
+    <ul>
+      <li>氨基酸之间的相关信息</li>
+    </ul>
+  </li>
+  <li>Backbone frames
+    <ul>
+      <li>氨基酸序列主干的空间结构</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/Decoder/Decoder.png" alt="Decoder" style="zoom:50%;" /></p>
+
+<!-- .slide -->
+
+<h3 id="protein-3d-structure-prediction">Protein 3D Structure Prediction</h3>
+
+<p>记录下一个氨基酸与上一个氨基酸的相对位置</p>
+<ul>
+  <li>R基部分原子的旋转的角度
+    <ul>
+      <li>欧几里得变换</li>
+      <li>$y=Ax+B,\ A\in R^{3}$</li>
+      <li>极性，电荷可以限制 <em>A, B</em> 值</li>
+    </ul>
+  </li>
+  <li>先预测<em>backbone</em>上氨基酸的相对位置</li>
+  <li>再预测每个氨基酸R基上的原子的相对位置
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/ProteinPrediction.png" alt="ProteinPrediction" style="zoom: 50%;" /></li>
+</ul>
+
+<!-- .slide -->
+
+<h2 id="recycling">Recycling</h2>
+
+<p>把编码器的输出和解码器的输出通过回收机制传回编码器的输入</p>
+<ul>
+  <li>类似RNN，但是这里的梯度不反传, 只经过56层就可以计算梯度</li>
+</ul>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Research/AlphaFold/e.png" alt="Model architecture" /></p>
+
+<!-- .slide -->
+
+<h2 id="loss-function">Loss Function</h2>
+
+<p><em>Training</em></p>
+<ul>
+  <li>$\mathcal{L} = 0.5L_{FAPE} + 0.5L_{aux} + 0.3L_{dist} + 2.0L_{msa} + 0.01L_{conf}$</li>
+</ul>
+
+<p>$L_{FAPE}$</p>
+<ul>
+  <li>特征对齐损失，用于量化模型预测的原子位置与实际原子位置之间的差异。</li>
+</ul>
+
+<p>$L_{aux}$</p>
+<ul>
+  <li>辅助损失，它可能与多个预测任务相关，例如二级结构预测、溶剂可及性预测等。</li>
+</ul>
+
+<p>$L_{dist}$</p>
+<ul>
+  <li>距离损失，它衡量模型预测的残基间距离与真实结构之间的误差。</li>
+</ul>
+
+<!-- .slide vertical=true -->
+
+<h2 id="loss-function-1">Loss Function</h2>
+
+<p><em>Training</em></p>
+<ul>
+  <li>$\mathcal{L} = 0.5L_{FAPE} + 0.5L_{aux} + 0.3L_{dist} + 2.0L_{msa} + 0.01L_{conf}$</li>
+</ul>
+
+<p>$L_{msa}$</p>
+<ul>
+  <li>多序列比对损失，用于确保模型预测与进化信息一致。</li>
+</ul>
+
+<p>$L_{conf}$</p>
+<ul>
+  <li>构象损失，用于确保整体蛋白质构象的准确性。</li>
+</ul>
+
+<!-- .slide vertical=true -->
+
+<h2 id="loss-function-2">Loss Function</h2>
+
+<p><em>Fine-tuning</em></p>
+<ul>
+  <li>$\mathcal{L}= 0.5L_{FAPE} + 0.5L_{aux} + 0.3L_{dist} + 2.0L_{msa} + 0.01L_{conf} + 0.01L_{exp_resolved} + 1.0L_{viol}$</li>
+</ul>
+
+<p>$L_{exp_resolved}$</p>
+<ul>
+  <li>用于处理实验解析度的损失，用于在蛋白质结构中考虑到实验数据的不确定性。</li>
+</ul>
+
+<p>$L_{viol}$</p>
+<ul>
+  <li>违反物理或生物化学约束的损失。</li>
+</ul>
+
+<!-- .slide -->
+
+<h2 id="training-with-labelled-and-unlabelled-data">Training with labelled and unlabelled data</h2>
+
+<!-- .slide -->
+
+<h3 id="noisy-student-self-distillation">Noisy student self-distillation</h3>
+
+<p>先在有标号的数据集<em>PDB</em>里训练一个模型, 通过这个模型预测没有标号的数据形成一个大一些的数据集，然后选择置信度较高的数据，加上原来有标号的数据，训练新的模型</p>
+
+<ul>
+  <li>Using an approach similar to <em>noisy student self-distillation</em>.</li>
+  <li>In this procedure, we use a trained network to predict the structure of around 350,000 diverse sequences from <code class="language-plaintext highlighter-rouge">Uniclust3036</code> and <em>make a new dataset</em> of predicted structures filtered to a high-confidence subset.</li>
+</ul>
+
+<!-- .slide vertical=true -->
+
+<h3 id="bert">BERT</h3>
+
+<p>随机遮住或更改一些氨基酸，然后用类似Bert的方法预测氨基酸</p>
+
+<ul>
+  <li>Additionally, we randomly <strong>mask</strong> out or <strong>mutate</strong> individual residues within the MSA  have a Bidirectional Encoder Representations from Transformers <em>BERT</em> to predict the masked elements of the MSA sequences.</li>
+</ul>
+
+<!-- .slide -->
+
+<h1 id="transformer"><a href="https://arxiv.org/abs/1706.03762">Transformer</a></h1>
+</textarea>
+  </section>
+</div>
+<script
+  async="async"
+  src="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.3.1/dist/reveal.min.js,npm/reveal.js@4.3.1/plugin/markdown/markdown.min.js,npm/reveal.js@4.3.1/plugin/math/math.min.js"
+  onload="
+  for(let x of document.getElementsByClassName('wrap'))
+    x.classList.add('reveal');
+  Reveal.initialize({
+    height: '100%',
+    mouseWheel: true,
+    navigationMode: 'linear',
+    plugins: [ RevealMarkdown,RevealMath.KaTeX ]
+  });
+"></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+

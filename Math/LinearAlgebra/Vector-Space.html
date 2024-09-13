@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    Vector Space &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Vector Space" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="[[Vector-Space]]" />
+<meta property="og:description" content="[[Vector-Space]]" />
+<link rel="canonical" href="https://allenygy.github.io/Math/LinearAlgebra/Vector-Space" />
+<meta property="og:url" content="https://allenygy.github.io/Math/LinearAlgebra/Vector-Space" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-13T13:40:44+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Vector Space" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-09-13T13:40:44+08:00","datePublished":"2024-09-13T13:40:44+08:00","description":"[[Vector-Space]]","headline":"Vector Space","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/Math/LinearAlgebra/Vector-Space"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/Math/LinearAlgebra/Vector-Space"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://allenygy.github.io">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://allenygy.github.io">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/contents">
+        <i class="fa-solid fa-book fa-fw"></i> 目录
+      </a>
+      
+      <a class="sidebar-nav-item" href="/OS">
+        <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DCN">
+        <i class="fa-solid fa-network-wired"></i> 计算机网络
+      </a>
+      
+      <a class="sidebar-nav-item" href="/CO">
+        <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Program">
+        <i class="fa-solid fa-code fa-fw"></i> 编程语言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Math">
+        <i class="fa-solid fa-tools fa-fw"></i> 数学
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DBM">
+        <i class="fa-solid fa-database fa-fw"></i> 数据库
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Tools">
+        <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/links">
+        <i class="fa-solid fa-user-friends fa-fw"></i> 友链
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#vector-space">Vector-Space</a>
+    <ol>
+      <li><a href="#11-vector-and-vector-space-axioms">1.1. Vector and Vector Space Axioms</a>
+        <ol>
+          <li><a href="#111-mathbbrn-euclidean-vector-spaces">1.1.1. $\mathbb{R}^{n}$ ^[Euclidean Vector Spaces]</a>
+            <ol>
+              <li><a href="#addition-and-scalar-multiplication">Addition and Scalar Multiplication</a></li>
+              <li><a href="#prove-a-vectorspace">Prove a VectorSpace</a></li>
+              <li><a href="#zero-vector">Zero vector</a></li>
+              <li><a href="#negative-vector">Negative Vector</a></li>
+            </ol>
+          </li>
+          <li><a href="#112-vector-space-axioms">1.1.2. Vector Space Axioms</a>
+            <ol>
+              <li><a href="#rmtimes-n-is-a-vector-space-here-vector-is-one-mn-matrix">$R^{m\times n}$ is a Vector Space ^[Here “vector” is one m×n matrix]</a></li>
+              <li><a href="#cab-is-a-vector-space">$C[a,b]$ is a Vector Space</a></li>
+              <li><a href="#p_n-is-a-vector-space">$P_n$ is a Vector Space</a></li>
+            </ol>
+          </li>
+          <li><a href="#113-theorem">1.1.3. Theorem</a></li>
+        </ol>
+      </li>
+      <li><a href="#12-subspace--null-space">1.2. Subspace &amp; Null space</a>
+        <ol>
+          <li><a href="#121-subspaces-of-vector-spaces">1.2.1. Subspaces of Vector Spaces</a>
+            <ol>
+              <li><a href="#trivial-subspace">Trivial subspace</a></li>
+            </ol>
+          </li>
+          <li><a href="#122-null-space-of-a-matrix">1.2.2. Null space of a Matrix</a></li>
+          <li><a href="#123-the-span-of-a-set-of-vectors">1.2.3. The Span of a Set of Vectors</a></li>
+          <li><a href="#124-theorem">1.2.4. Theorem</a></li>
+          <li><a href="#125-spanning-set">1.2.5. Spanning Set</a>
+            <ol>
+              <li><a href="#how-to-check-if-a-set-spans-rn">How to check if a set spans $R^n$</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#13-linear-independence">1.3. Linear Independence</a>
+        <ol>
+          <li><a href="#131-linear-dependence">1.3.1. Linear Dependence</a></li>
+          <li><a href="#132-theorem-130">1.3.2. Theorem 1.3.0</a></li>
+          <li><a href="#133-linear-independence">1.3.3. Linear Independence</a></li>
+          <li><a href="#134-theorem-131-only-square-matrix">1.3.4. Theorem 1.3.1 ^[Only Square matrix]</a></li>
+          <li><a href="#135-theorem-132">1.3.5. Theorem 1.3.2</a></li>
+        </ol>
+      </li>
+      <li><a href="#14-basis-and-dimension">1.4. Basis and Dimension</a>
+        <ol>
+          <li><a href="#141-standard-basis-of-rn">1.4.1. Standard Basis of $R^n$</a></li>
+          <li><a href="#142-dimension">1.4.2. Dimension</a></li>
+          <li><a href="#143-theorem-141">1.4.3. Theorem 1.4.1</a>
+            <ol>
+              <li><a href="#important-corollary-142">Important Corollary (1.4.2)</a></li>
+            </ol>
+          </li>
+          <li><a href="#144-theorem-143">1.4.4. Theorem 1.4.3</a></li>
+          <li><a href="#145-theorem-144">1.4.5. Theorem 1.4.4</a></li>
+        </ol>
+      </li>
+      <li><a href="#15-change-of-basis">1.5. Change of Basis</a>
+        <ol>
+          <li><a href="#151-coordinate-vector">1.5.1. Coordinate Vector</a></li>
+          <li><a href="#152-changing-coordinates">1.5.2. Changing Coordinates</a></li>
+        </ol>
+      </li>
+      <li><a href="#16-row-space--column-space">1.6. Row space &amp; column space</a>
+        <ol>
+          <li><a href="#161-row-space--column-space">1.6.1. Row space &amp; column space</a></li>
+          <li><a href="#162-theorem-161">1.6.2. Theorem 1.6.1</a></li>
+          <li><a href="#163-theorem-162">1.6.3. Theorem 1.6.2</a></li>
+          <li><a href="#164-rank">1.6.4. Rank</a></li>
+          <li><a href="#165-dimension-theorem-163">1.6.5. Dimension Theorem 1.6.3</a></li>
+          <li><a href="#166-consistency-theorem-for-linear-system-164">1.6.6. Consistency theorem for Linear System 1.6.4</a></li>
+          <li><a href="#167-nullity">1.6.7. Nullity</a></li>
+          <li><a href="#168-theorem-165">1.6.8. Theorem 1.6.5</a></li>
+          <li><a href="#169-property">1.6.9. Property</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "03/20/2024 16:27:40")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/ALLENYGY/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        48万
+        
+          
+        
+        6千
+        770字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">Vector Space</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2024-04-08 22:58:00 Monday
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2023-12-27 02:00:00 Wednesday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        9974字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        34分
+        
+        
+        
+        <br>
+        
+        VectorSpaces, Lec1, NOTE, and LinearAlgebra
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="vector-space"><a class="internal-link" href="/Math/LinearAlgebra/Vector-Space">Vector-Space</a></h1>
+
+<h2 id="11-vector-and-vector-space-axioms">1.1. Vector and Vector Space Axioms</h2>
+
+<h3 id="111-mathbbrn-euclidean-vector-spaces">1.1.1. $\mathbb{R}^{n}$ ^[Euclidean Vector Spaces]</h3>
+
+<ul>
+  <li>Definition:
+    <ul>
+      <li>The set of all column n-vectors ${[u_1,u_2,…,u_n]}^T$ is called
+n-dimensional real space and is denoted $R^n$.^[Perhaps the most elementary vector spaces are the Euclidean vector spaces $R^n$.]</li>
+      <li>$u_i$ is the $i_{th}$ component of $[u_1,u_2,…,u_n]^T$.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="addition-and-scalar-multiplication">Addition and Scalar Multiplication</h4>
+
+<ul>
+  <li>Let $u=[u_1,u_2,…,u_n ]^T$ and $v=[v_1,v_2,…,v_n ]^T$ be two elements of $R^n$ and let c be a scalar. Addition and scalar multiplication are defined as
+    <ul>
+      <li>Addition:
+\(u+v=[u_1+v_1,u_2+v_2,...,u_n+v_n ]^T\)</li>
+      <li>Scalar multiplication:
+\(cu=[cu_1,cu_2,...,cu_n ]^T\)</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="prove-a-vectorspace">Prove a VectorSpace</h4>
+
+<ul>
+  <li>$u, v\in R^n -&gt; u+v \in R^n$  ($R^n$ is closed under addition)</li>
+  <li>$u \in R^n, c \in R, cu \in R^n$ ($R^n$ is closed under scalar multiplication)</li>
+</ul>
+
+<h4 id="zero-vector">Zero vector</h4>
+
+<ul>
+  <li>Definition:
+  The vector $[0,0,…,0]^T$, having n zero components, is called the zero vector of $R^n$ and is denoted 0.</li>
+  <li>Property: for any vector v, 0 + v = v, v + 0 = v.</li>
+</ul>
+
+<h4 id="negative-vector">Negative Vector</h4>
+
+<ul>
+  <li>Definition:
+  The vector $(–1)u$ is written $–u$ and is called the negative of $u$. It is a vector having the same magnitude as $u$, but lies in the opposite direction to $u$.</li>
+  <li>Property: for any vector $u$, $u + (–u) = 0 = (- u) + u $</li>
+</ul>
+
+<h3 id="112-vector-space-axioms">1.1.2. Vector Space Axioms</h3>
+
+<ul>
+  <li>Definition:
+Let V be a set on which the operations of addition and scalar multiplication are defined.^[By this we mean that, with each pair of elements x and y in V, we can associate a unique element x+y that is also in V, and with each element x in V and each scalar α, we can associate a unique element αx in V.] The set V together with the operations of addition and scalar multiplication is said to form a vector space
+if the following axioms are satisfied:
+    <ul>
+      <li>$A_1$.  $x + y = y + x$  for any x and y in V.</li>
+      <li>$A_2$. $(x + y) + z = x + (y + z)$ for any x, y, and z in V.</li>
+      <li>$A_3$. There exists an element 0 in V such that x + 0 = x for each x ∈ V.</li>
+      <li>$A_4$. For each x ∈ V, there exists an element −x in V such that x + (−x) = 0.</li>
+      <li>$A_5. α(x + y) = αx + αy$ for each scalar α and any x and y in V.</li>
+      <li>$A_6. (α + β)x = αx + βx$ for any scalars α and β and any x ∈ V.</li>
+      <li>$A_7. (αβ)x = α(βx)$ for any scalars α and β and any x ∈ V.</li>
+      <li>$A_8. 1x = x$ for all x ∈ V.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="rmtimes-n-is-a-vector-space-here-vector-is-one-mn-matrix">$R^{m\times n}$ is a Vector Space ^[Here “vector” is one m×n matrix]</h4>
+
+<ul>
+  <li>prove:
+    <ul>
+      <li>Addition: $A+B= (a_{ij})+(b_{ij})= (a_{ij}+b_{ij})$ [the sum is still an m×n matrix]</li>
+      <li>Scalar multiplication: $cA = c(a_{ij}) =(ca_{ij})$ [It is still an m×n matrix]</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="cab-is-a-vector-space">$C[a,b]$ is a Vector Space</h4>
+
+<ul>
+  <li>Definition:
+  $C[a,b]$ is the set of all real-valued continuous functions defined on the interval $[a,b]$. Vectors in this case are continuous real-valued functions.</li>
+  <li>prove:
+    <ul>
+      <li>Addition: $(f+g)(x) = f(x) + g(x)$</li>
+      <li>Scalar multiplication: (𝛼𝑓)(x) =𝛼𝑓(x)</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="p_n-is-a-vector-space">$P_n$ is a Vector Space</h4>
+
+<p>Definition:
+A polynomial of degree k (k≥0) is a function of the form
+$p(x)= a_0 + a_1x + a_2x^2 +  …  + a_k x^k$  where $a_k≠0$.
+$0(x) = 0$ is also considered to be a polynomial.</p>
+
+<h3 id="113-theorem">1.1.3. Theorem</h3>
+
+<ul>
+  <li>If V is a vector space and x ∈V , then
+    <ol>
+      <li>0x = 0</li>
+      <li>x + v = 0 implies that v = -x</li>
+      <li>(-1)x = -x.</li>
+    </ol>
+  </li>
+  <li>Proof
+    <ol>
+      <li>x=(1+0)x=1x+0x=x+0x, therefore 0x=0</li>
+      <li>x+v=0, then –x=-x+0=-x+(x+v)=v</li>
+      <li>0=0x=(1-1)x=1x+(-1)x, x+(-1)x=0, therefore (-1)x=-x</li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="12-subspace--null-space">1.2. Subspace &amp; Null space</h2>
+
+<h3 id="121-subspaces-of-vector-spaces">1.2.1. Subspaces of Vector Spaces</h3>
+
+<ul>
+  <li>Definition:
+  Let V be a vector space (for example, $R^n$). A nonempty subset S of V is a subspace if it is closed under addition and closed under scalar multiplication.</li>
+</ul>
+
+<p>To show that a subset S of a vector space forms a subspace, we must show that</p>
+
+<ul>
+  <li>S is nonempty (it contains the zero vector)</li>
+  <li>$u, v\in S ⇒ u+v \in S$    (S is closed under addition)</li>
+  <li>$u \in S, c \in R ⇒ cu \in S$ (S is closed under scalar multiplication)</li>
+</ul>
+
+<h4 id="trivial-subspace">Trivial subspace</h4>
+
+<ul>
+  <li>Definition:
+  If V is a vector space, then V is a subspace of itself, and S = {0} is a subspace of V.
+  All the other subspaces are referred to as proper subspaces.</li>
+  <li>We refer to {0} as the zero subspace.</li>
+</ul>
+
+<h3 id="122-null-space-of-a-matrix">1.2.2. Null space of a Matrix</h3>
+
+<ul>
+  <li>Definition:
+For a m×n matrix A, let 𝑁(A) denote the set of all solutions to the homogeneous system Ax = 0, that is 𝑁(A)={$x \inR^n$|Ax=𝟎}
+Null space is a subspace
+    <ul>
+      <li>Addition: if 𝒙,𝒚∈𝑁(A), then A𝒙=𝟎,  A𝒚=𝟎⇒A(𝒙+𝒚)=𝟎, so x+𝑦∈𝑁(A)</li>
+      <li>Scalar multiplication: if 𝒙∈𝑁(A), c∈R, then A𝒙=𝟎⇒A(c𝒙)=𝟎 ⇒ c𝒙∈𝑁(A)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="123-the-span-of-a-set-of-vectors">1.2.3. The Span of a Set of Vectors</h3>
+
+<ul>
+  <li>Definition:
+    <ul>
+      <li>For vectors $v_1,v_2,…,v_n$ from a vector space V and scalars $a_1,a_2,…,a_n,$ the sum $a_1v_1+a_2v_2+…+a_nv_n$ is called a linear combination of $v_1,v_2,…,v_n$.</li>
+      <li>The set of all possible linear combinations of $v_1,v_2,…,v_n$ is called the span of $v_1,v_2,…,v_n$, denoted by $Span(v_1,v_2,…,v_n)$:
+$Span$($v_1,v_2,…,v_n$)={$a_1 v_1+a_2 v_2+⋯+a_n v_n a_i∈R$}</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="124-theorem">1.2.4. Theorem</h3>
+
+<p>If $v_1,v_2,…,v_n$ are vectors from a vector space V , then $Span(v_1,v_2,…,v_n)$ is a subspace of V.</p>
+
+<h3 id="125-spanning-set">1.2.5. Spanning Set</h3>
+
+<ul>
+  <li>Definition:
+The set of vectors {$v_1,v_2,…,v_n$} is a spanning set for a vector space V if and only if every vector in V can be written as a linear combination of $v_1,v_2,…,v_n$, that is to say, for any x𝜖V there exist scalars $a_1,a_2,…,a_n$ such that \(x=a_1v_1+a_2v_2+...+a_n v_n\)</li>
+</ul>
+
+<h4 id="how-to-check-if-a-set-spans-rn">How to check if a set spans $R^n$</h4>
+
+<ul>
+  <li>Step 1: Put the column vectors into a matrix, A=[$v_1, v_2$,…]</li>
+  <li>Step 2: Augment the matrix by the vector $b=[a, b, c]^T$</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Step 3: Row reduce the augmented matrix $[A</td>
+          <td>b]$ to check whether it is consistent for All a, b, c</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Step 4: If $[A</td>
+          <td>b]$ is consistent for All a, b, c, then the columns of $A, v_1, v_2,…$, is a spanning set of $R^n$.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h2 id="13-linear-independence">1.3. Linear Independence</h2>
+
+<h3 id="131-linear-dependence">1.3.1. Linear Dependence</h3>
+
+<ul>
+  <li>Definition:
+The vectors $v_1,v_2,…,v_n$ in a vector space V are said to be linearly dependent (线性相关) if and only if there exist scalars $a_1,a_2,…,a_n$, not all zero, such that
+\(a_1 v_1+a_2 v_2+...+a_n v_n=0\)</li>
+  <li>Let $A=[v_1,v_2,…,v_n]$, then $v_1,v_2,…,v_n$ is linearly dependent if and only if the null space of A, 𝑁(A), is NOT the zero subspace {0}.</li>
+</ul>
+
+<h3 id="132-theorem-130">1.3.2. Theorem 1.3.0</h3>
+
+<p>Nonzero vectors $v_1,v_2,…,v_n$ are linearly dependent if and only if at least one vector is a linear combination of the others.</p>
+
+<h3 id="133-linear-independence">1.3.3. Linear Independence</h3>
+
+<ul>
+  <li>Definition:
+The vectors $v_1,v_2,…,v_n$ in a vector space V are said to be  linearly independent (线性无关) if \(a_1 v_1+a_2 v_2+...+a_n v_n=0\)
+implies that all the scalers $a_1,a_2,…,a_n$ must equal to 0.</li>
+  <li>Let $A=[v_1,v_2,…,v_n]$, then $v_1,v_2,…,v_n$ is linearly independent if and only if the null space of A is the zero subspace: 𝑁(A)={𝟎}.</li>
+  <li>None of the vectors $v_1,v_2,…,v_n$ can be written as a linear combination of the others.</li>
+</ul>
+
+<h3 id="134-theorem-131-only-square-matrix">1.3.4. Theorem 1.3.1 ^[Only Square matrix]</h3>
+
+<p>Let $x_1,x_2,…,x_n$ be n vectors in $R^n$ and let $X=[x_1,x_2,…,x_n]$.</p>
+
+<ul>
+  <li>The vectors $x_1,x_2,…,x_n$ will be linearly dependent if and only if 𝑋 is singular.</li>
+</ul>
+
+<h3 id="135-theorem-132">1.3.5. Theorem 1.3.2</h3>
+
+<p>Let $v_1, …, v_n$ be vectors in a vector space V.</p>
+
+<ul>
+  <li>A vector $v \in Span(v_1, …, v_n)$ can be written uniquely as a linear combination of $v_1, …, v_n$ if and only if $v_1, …, v_n$ are linearly independent.</li>
+</ul>
+
+<h2 id="14-basis-and-dimension">1.4. Basis and Dimension</h2>
+
+<ul>
+  <li>Definition：
+  The vectors $v_1,v_2,…,v_n$ form a basis for a vector space V if and only if
+    <ul>
+      <li>$v_1,v_2,…,v_n$ are linearly independent.</li>
+      <li>$v_1,v_2,…,v_n$ span V.</li>
+    </ul>
+  </li>
+  <li>If $v_1,v_2,…,v_n$ form a basis for V, then:for any 𝒃∈V, there exists unique $a_1, a_2,…, a_n,$ such that \(b=a_1 v_1+a_2 v_2,+⋯+a_n v_n\)</li>
+</ul>
+
+<h3 id="141-standard-basis-of-rn">1.4.1. Standard Basis of $R^n$</h3>
+
+<ul>
+  <li>Definition：
+  The set {$e_1=[1, 0, …, 0]^T, e_2=[0, 1, …, 0]^T, …, e_n=[0, …, 1]^T$} of n vectors is the standard basis for $R^n$.
+    <ul>
+      <li>Standard basis for $R^3$: {$e_1,e_2,e_3$}.</li>
+      <li>Standard basis for $P_4$: {$1, x, x^2,x^3$}.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="142-dimension">1.4.2. Dimension</h3>
+
+<ul>
+  <li>Definition:
+  Let V be a vector space. If V has a basis consisting of n vectors, we say that V has dimension n and write dim V=n</li>
+  <li>The subspace {0} of V is said to have dimension 0.</li>
+  <li>V is  finite dimensional if there is a finite set of vectors that spans V; otherwise V is infinite dimensional.
+    <ul>
+      <li>dim R^n = n</li>
+      <li>dim R^(m×n) = m×n</li>
+      <li>dim Pn = n</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="143-theorem-141">1.4.3. Theorem 1.4.1</h3>
+
+<ul>
+  <li>If S = {$v_1,v_2,…,v_n$} is a spanning set for a vector space V , then any collection of m vectors in V with m &gt; n is linearly dependent.</li>
+</ul>
+
+<h4 id="important-corollary-142">Important Corollary (1.4.2)</h4>
+
+<ul>
+  <li>If {$v_1,v_2,…,v_n$} and {$u_1,u_2,…,u_m$} are both bases for a vector space V , then m = n.</li>
+</ul>
+
+<h3 id="144-theorem-143">1.4.4. Theorem 1.4.3</h3>
+
+<p>If V is a vector space with dim ⁡V = n &gt; 0, then</p>
+
+<ul>
+  <li>Any set of n linearly independent vectors also spans V;</li>
+  <li>Any n vectors that span V are also linearly independent</li>
+</ul>
+
+<h3 id="145-theorem-144">1.4.5. Theorem 1.4.4</h3>
+
+<p>If V is a vector space with dim V = n &gt; 0, then</p>
+
+<ul>
+  <li>No set with k &lt; n vectors can span V ;</li>
+  <li>Any subset of k &lt; n linearly independent vectors can be extended to form a basis for V;</li>
+  <li>Any spanning set of V with m &gt; n vectors can be cut down to form a basis for V .</li>
+</ul>
+
+<h2 id="15-change-of-basis">1.5. Change of Basis</h2>
+
+<h3 id="151-coordinate-vector">1.5.1. Coordinate Vector</h3>
+
+<ul>
+  <li>Definition：
+Let V be a vector space and let E={$v_1,v_2,…,v_n$} be an ordered basis for V. If v is any element of V, then v can be written uniquely in the form
+\(v=c_1 v_1+c_2 v_2+...+c_n v_n\) where $c_1,c_2…,c_n$ are scalers.
+Thus, we can associate each vector v a unique column vector {$c_1,c_2…,c_n$}$^T$. The vector is called the coordinate vector of v with respect to (w.r.t). the ordered basis E, denoted $[v]_E$.</li>
+</ul>
+
+<h3 id="152-changing-coordinates">1.5.2. Changing Coordinates</h3>
+
+<p>Given vector $x=[x_1,x_2]^T$, find its coordinates (w.r.t). $u_1$ and $u_2$.</p>
+
+<ul>
+  <li>As we have x=Uc.</li>
+  <li>Matrix U is nonsingular, therefore $c=U^{−1}x$.</li>
+  <li>Thus, $U^{−1}$ is the transition matrix from {$e_1,e_2$} to {$u_1,u_2$}.</li>
+</ul>
+
+<p>Given vector $c_1 u_1+c_2 u_2$, find its coordinates w.r.t. $e_1$ and $e_2$.</p>
+
+<ul>
+  <li>If c is the coordinate vector of x with respect to the basis {$u_1,u_2, …$}, then
+    <ul>
+      <li>x=Uc</li>
+    </ul>
+  </li>
+  <li>And
+    <ul>
+      <li>$c=U^{−1}x$</li>
+    </ul>
+  </li>
+  <li>Where U={$u_1,u_2,…$} is called the ==transition matrix== from the {$u_1,u_2, …$} to the standard basis {$e_1,e_2,…$}, and $U^{−1}$ is the transition matrix from {$e_1,e_2,…$} to {$u_1,u_2,…$}.</li>
+</ul>
+
+<p>Changing coordinate vectors from one basis {$v_1,v_2$} of $R^2$ to another basis {$u_1,u_2$}:</p>
+
+<ul>
+  <li>Suppose for a given vector x, its coordinates (w.r.t.) {$v_1,v_2$} are known: \(x=c_1 v_1+c_2 v_2\)
+We want to write x as $d_1 u_1+d_2 u_2$.</li>
+  <li>We have $x=c_1 v_1+c_2 v_2=d_1 u_1+d_2 u_2$; Let $V=[v_1,v_2]$ and $U=[u_1,u_2]$.</li>
+  <li>Then \(Vc=Ud ⇒  d=U^{−1} Vc\) \(S=U^{−1}V\) is the transition matrix from {$v_1,v_2$} to {$u_1,u_2$}.</li>
+  <li>Property
+    <ul>
+      <li>A transition matrix is nonsingular</li>
+      <li>If S is the transition matrix from {$v_1,v_2,…,v_n$} to {$u_1, u_2,…,u_n$}, then $S^{−1}$ is the transition matrix from {$u_1, u_2,…,u_n$} to {$v_1,v_2,…,v_n$}.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="16-row-space--column-space">1.6. Row space &amp; column space</h2>
+
+<h3 id="161-row-space--column-space">1.6.1. Row space &amp; column space</h3>
+
+<p>For an m×n matrix A, the rows are n-vectors from $R^{1×n}$, and the column vectors are m-vectors from $R^m$.</p>
+
+<ul>
+  <li>Definition:
+    <ul>
+      <li>For an m×n matrix A, the subspace of $R^{1×n}$ spanned by the row vectors of A is called the row space of A.</li>
+      <li>The subspace of $R^m$ spanned by the column vectors of A is called the column space of A.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="162-theorem-161">1.6.2. Theorem 1.6.1</h3>
+
+<ul>
+  <li>Two row-equivalent matrices have the same row space.</li>
+</ul>
+
+<h3 id="163-theorem-162">1.6.3. Theorem 1.6.2</h3>
+
+<ul>
+  <li>Two row-equivalent matrices have the same null space.</li>
+  <li>If U is the rref of A and $c_1 u_1+c_2 u_2+…=0$, then als $c_1 a_1+c_2 a_2+…=0$.</li>
+  <li>All the column vectors of A corresponding to the leading variables in U form a basis of the column space of A.</li>
+</ul>
+
+<h3 id="164-rank">1.6.4. Rank</h3>
+
+<ul>
+  <li>Definition:
+The rank of a matrix A is the dimension of the row space of A, denoted rank(A).</li>
+  <li>Property: The rank of a reduced row echelon form is equal to the number of lead variables</li>
+</ul>
+
+<h3 id="165-dimension-theorem-163">1.6.5. Dimension Theorem 1.6.3</h3>
+
+<ul>
+  <li>dim(Row Space A) = dim(Column Space A) = rank(A).</li>
+</ul>
+
+<h3 id="166-consistency-theorem-for-linear-system-164">1.6.6. Consistency theorem for Linear System 1.6.4</h3>
+
+<ul>
+  <li>The linear system Ax = 𝐛 is consistent if and only if 𝐛 is in the column space of A.
+    <ul>
+      <li>An n×n square matrix A is nonsingular if and only if the column vectors of A form a basis for $R^n$ ⇔ Ax=b always have unique solution ⇔ 𝑟ank(A)=n⇔det⁡(A)≠0</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="167-nullity">1.6.7. Nullity</h3>
+
+<ul>
+  <li>Definition:
+The nullity of a matrix A is the dimension of the null space of A, that is nullity(A) = dim(𝑁(A)).</li>
+  <li>Properties：
+    <ul>
+      <li>The number of lead variables:   rank(A)</li>
+      <li>The number of free variables:   dim(N(A))</li>
+      <li>The number of variables:        n</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="168-theorem-165">1.6.8. Theorem 1.6.5</h3>
+
+<ul>
+  <li>rank(A)+dim(N(A))=n</li>
+</ul>
+
+<h3 id="169-property">1.6.9. Property</h3>
+
+<p>Let $A∈R^{m×n}$. The following are equivalent:</p>
+
+<ul>
+  <li>The columns of A are linearly independent</li>
+  <li>𝑁(A)={𝟎}</li>
+  <li>Nullity(A) = 0</li>
+  <li>A𝒙=𝒃 has at most 1 solution for any 𝒃</li>
+</ul>
+
+<p>Let $A∈R^{m×n}$. The following are equivalent:</p>
+
+<ul>
+  <li>The columns of A spans $R^m$</li>
+  <li>The column space of A is $R^m$</li>
+  <li>Rank(A) = m</li>
+  <li>A𝒙=𝒃 always have at least 1 solution for any 𝒃</li>
+</ul>
+
+<hr />
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/Math/LinearAlgebra/Vector-Space">Vector Space</a><br>
+                    <!-- <div style="font-size: 0.9em">[[Vector-Space]]
+</div> -->
+                </div>
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/Math/Math">Math</a><br>
+                    <!-- <div style="font-size: 0.9em">Mathematica
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+<style>
+  pre.language-vega-lite,
+  code.language-vega-lite {
+    display: none;
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-vega-lite"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+        vegaEmbed(m, JSON.parse(x.textContent));
+      }'
+></script>
+
+
+
+
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+

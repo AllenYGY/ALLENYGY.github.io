@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    Python Exceptions &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Python Exceptions" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="[[Python-Exceptions]]" />
+<meta property="og:description" content="[[Python-Exceptions]]" />
+<link rel="canonical" href="https://allenygy.github.io/Program/Python/Python-Exceptions" />
+<meta property="og:url" content="https://allenygy.github.io/Program/Python/Python-Exceptions" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-13T13:40:44+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Python Exceptions" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-09-13T13:40:44+08:00","datePublished":"2024-09-13T13:40:44+08:00","description":"[[Python-Exceptions]]","headline":"Python Exceptions","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/Program/Python/Python-Exceptions"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/Program/Python/Python-Exceptions"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://allenygy.github.io">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://allenygy.github.io">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/contents">
+        <i class="fa-solid fa-book fa-fw"></i> 目录
+      </a>
+      
+      <a class="sidebar-nav-item" href="/OS">
+        <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DCN">
+        <i class="fa-solid fa-network-wired"></i> 计算机网络
+      </a>
+      
+      <a class="sidebar-nav-item" href="/CO">
+        <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Program">
+        <i class="fa-solid fa-code fa-fw"></i> 编程语言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Math">
+        <i class="fa-solid fa-tools fa-fw"></i> 数学
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DBM">
+        <i class="fa-solid fa-database fa-fw"></i> 数据库
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Tools">
+        <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/links">
+        <i class="fa-solid fa-user-friends fa-fw"></i> 友链
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#python-exceptions">Python-Exceptions</a>
+    <ol>
+      <li><a href="#what-is-exception">What is Exception?</a></li>
+      <li><a href="#handling-an-exception">Handling an exception</a>
+        <ol>
+          <li><a href="#syntax">Syntax</a></li>
+          <li><a href="#the-except-clause-with-no-exceptions-default-exception">The except Clause with No Exceptions (Default Exception)</a></li>
+          <li><a href="#the-try-finally-clause">The try-finally Clause</a></li>
+        </ol>
+      </li>
+      <li><a href="#raise-user-defined-exception">Raise user defined Exception</a>
+    1.  <a href="#example-5">Example 5</a></li>
+      <li><a href="#3-assertions-in-python">3. Assertions in Python</a>
+    1.  <a href="#syntax-1">Syntax</a>
+    1.  <a href="#example-5-1">Example 5</a></li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "03/20/2024 16:27:40")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/ALLENYGY/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        46万
+        
+          
+        
+        3千
+        808字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">Python Exceptions</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2024-06-11 01:15:00 Tuesday
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2024-05-11 13:40:00 Saturday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        9591字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        32分
+        
+        
+        
+        <br>
+        
+        Python and NOTE
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="python-exceptions"><a class="internal-link" href="/Program/Python/Python-Exceptions">Python-Exceptions</a></h1>
+
+<p><em>With thanks to Dr. Eric Zhao from the Finance Mathematics Program, BNU-HKBU United International College</em></p>
+
+<h2 id="what-is-exception">What is Exception?</h2>
+
+<ul>
+  <li>
+    <p>An <strong>exception</strong> is an <strong>event</strong>, which occurs during the execution of a program that disrupts the normal flow of the program’s instructions. In general, when a Python script encounters a situation that it cannot cope with, it raises an exception.</p>
+  </li>
+  <li>
+    <p>An exception is a Python object that represents an error.</p>
+  </li>
+  <li>
+    <p>When a Python script raises an exception, it must either handle the exception immediately otherwise it <strong>terminates</strong> and quits.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>[!example ]- Example 1</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fileDir</span> <span class="o">=</span> <span class="sh">''</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nf">open</span><span class="p">(</span><span class="n">fileDir</span><span class="p">,</span> <span class="sh">'</span><span class="s">r</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">f</span><span class="p">.</span><span class="nf">close</span><span class="p">()</span>
+</code></pre></div>  </div>
+
+  <ul>
+    <li>
+      <p><strong>Explanation:</strong> Since Python cannot find the file under <code class="language-plaintext highlighter-rouge">fileDir</code>, it will raise <code class="language-plaintext highlighter-rouge">IOError</code> immediately. The program will terminate and Python will quit.</p>
+    </li>
+    <li>
+      <p>Python has many built-in Exceptions. You can check <a href="https://docs.python.org/3/library/exceptions.html">here</a>.</p>
+    </li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li>
+    <p>In some cases, you would know that some <em>suspicious</em> code may raise an exception (e.g. irregular user input), you can defend your program by placing the suspicious code in a <strong>try</strong> block, and handles the potential exceptions explicitly in <strong>except</strong> block.</p>
+  </li>
+  <li>
+    <p>This is very helpful to write <em>strong</em> and <em>reliable</em> code.</p>
+  </li>
+</ul>
+
+<h2 id="handling-an-exception">Handling an exception</h2>
+
+<h3 id="syntax">Syntax</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span><span class="p">:</span> <span class="c1"># You do your error prone operations here;
+</span>	<span class="c1">#statement2
+</span>	<span class="c1">#statement3
+</span><span class="k">except</span> <span class="n">Exception1</span><span class="p">:</span>
+	<span class="c1">#If there is Exception1, then execute this block.
+</span><span class="k">except</span> <span class="n">Exception2</span><span class="p">:</span>
+	<span class="c1">#If there is Exception2, then execute this block.
+</span><span class="k">else</span><span class="p">:</span>
+	<span class="c1">#If there is no exception then execute this block.
+</span></code></pre></div></div>
+
+<p><strong>Workflow</strong></p>
+
+<ul>
+  <li>
+    <p>It works in the following way:</p>
+  </li>
+  <li>
+    <p>First all lines between try and except statements.</p>
+  </li>
+  <li>
+    <p>If ExceptionName happens during execution of the statements then except clause statements execute</p>
+  </li>
+  <li>
+    <p>If no exception happens then the statements inside except clause does not execute.</p>
+  </li>
+  <li>
+    <p>If the Exception is not handled in the except block then it goes out of try block.</p>
+  </li>
+</ul>
+
+<p><strong>Attention</strong></p>
+
+<ul>
+  <li>
+    <p>Here are few important points about the above-mentioned syntax:</p>
+  </li>
+  <li>
+    <p>A single <code class="language-plaintext highlighter-rouge">try</code> statement can have multiple <code class="language-plaintext highlighter-rouge">except</code> statements. This is useful when the <code class="language-plaintext highlighter-rouge">try</code> block contains statements that may throw different types of exceptions.</p>
+  </li>
+  <li>
+    <p>You can also provide a generic <code class="language-plaintext highlighter-rouge">except</code> clause, which handles any exception.</p>
+  </li>
+  <li>
+    <p>After the <code class="language-plaintext highlighter-rouge">except</code> clause(s), you can include an <code class="language-plaintext highlighter-rouge">else</code> clause. The code in the <code class="language-plaintext highlighter-rouge">else</code> block executes if the code in the <code class="language-plaintext highlighter-rouge">try</code> block does not raise an exception.</p>
+  </li>
+  <li>
+    <p>The <code class="language-plaintext highlighter-rouge">else</code> block is a good place for code that does not need the <code class="language-plaintext highlighter-rouge">try</code> block’s protection.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>[!example]- Example-2</p>
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fh</span> <span class="o">=</span> <span class="nf">open</span><span class="p">(</span><span class="sh">'</span><span class="s">testfile.txt</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">r</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">fh</span><span class="p">.</span><span class="nf">read</span><span class="p">()</span>
+<span class="n">fh</span><span class="p">.</span><span class="nf">close</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span><span class="p">:</span>
+	<span class="n">fh</span> <span class="o">=</span> <span class="nf">open</span><span class="p">(</span><span class="sh">'</span><span class="s">testfile.txt</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">r</span><span class="sh">'</span><span class="p">)</span>
+	<span class="n">s</span> <span class="o">=</span> <span class="n">fh</span><span class="p">.</span><span class="nf">read</span><span class="p">()</span>
+	<span class="n">fh</span><span class="p">.</span><span class="nf">close</span><span class="p">()</span>
+	<span class="nf">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="k">except</span> <span class="nb">FileNotFoundError</span><span class="p">:</span>
+	<span class="nf">print </span><span class="p">(</span><span class="sh">"</span><span class="s">Error: can</span><span class="sh">'</span><span class="s">t find file</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="nf">print </span><span class="p">(</span><span class="sh">"</span><span class="s">Read succeeded!</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print </span><span class="p">(</span><span class="sh">"</span><span class="s">Haha</span><span class="sh">"</span><span class="p">)</span> <span class="c1"># Always printed
+</span>
+</code></pre></div>  </div>
+  <p><strong>Output</strong></p>
+  <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error: can<span class="s1">'t find file
+Haha
+</span></code></pre></div>  </div>
+</blockquote>
+
+<p>The result depends on whether your current directory contains the <code class="language-plaintext highlighter-rouge">testfile.txt</code>. If exists, the file will be read and then the <code class="language-plaintext highlighter-rouge">else</code> statement will be executed. If not, <code class="language-plaintext highlighter-rouge">except FileNotFoundError</code> will be executed.</p>
+
+<blockquote>
+  <p>[!example]- Example 3</p>
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">get_number</span><span class="p">():</span>
+<span class="c1">#"Returns a float number"
+</span>	<span class="n">number</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Enter a float number: </span><span class="sh">"</span><span class="p">))</span>
+	<span class="k">return</span> <span class="n">number</span>
+  
+<span class="n">i</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">!=</span> <span class="mf">8.0</span><span class="p">:</span>
+	<span class="k">try</span><span class="p">:</span>
+		<span class="n">i</span> <span class="o">=</span> <span class="nf">get_number</span><span class="p">()</span>
+	<span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+		<span class="nf">print </span><span class="p">(</span><span class="sh">"</span><span class="s">You entered a wrong value.</span><span class="sh">"</span><span class="p">)</span>
+	<span class="k">else</span><span class="p">:</span>
+		<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">There is no error. i is:</span><span class="sh">'</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+	<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">haha</span><span class="sh">'</span><span class="p">)</span> <span class="c1"># Always printed every time around the loop
+</span><span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">after loop</span><span class="sh">'</span><span class="p">)</span> <span class="c1"># Always printed
+</span></code></pre></div>  </div>
+
+  <p><strong>Output</strong></p>
+
+  <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter a float number: 8.0
+There is no error. i is: 8.0
+haha
+after loop
+</code></pre></div>  </div>
+</blockquote>
+
+<h3 id="the-except-clause-with-no-exceptions-default-exception">The <em>except</em> Clause with No Exceptions (Default Exception)</h3>
+
+<ul>
+  <li>You can also use the <code class="language-plaintext highlighter-rouge">except</code> statement with no exceptions defined as follows</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span><span class="p">:</span>
+	<span class="c1">#You do your operations here;
+</span><span class="k">except</span><span class="p">:</span>
+	<span class="c1">#If there has exception, then execute this block.
+</span><span class="k">else</span><span class="p">:</span>
+	<span class="c1">#If no exception then execute this block.
+</span></code></pre></div></div>
+
+<ul>
+  <li>This kind of a <code class="language-plaintext highlighter-rouge">try-except</code> statement catches <strong>all</strong> the exceptions that occur. Using this kind of <code class="language-plaintext highlighter-rouge">try-except</code> statement is <strong>not</strong> considered a good programming practice though, because it catches all exceptions but does not make the programmer identify the root cause of the problem that may occur.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span><span class="p">:</span>
+	<span class="k">assert</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Input a value: </span><span class="sh">'</span><span class="p">))</span> <span class="o">==</span> <span class="mi">3</span>
+<span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+	<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">Input type is not appropriate</span><span class="sh">'</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+	<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">Other errors like assertion error</span><span class="sh">'</span><span class="p">)</span>  
+<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">If the error is handled, then you can see this.</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Output</strong></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input a value: 3
+If the error is handled, <span class="k">then </span>you can see this.
+</code></pre></div></div>
+
+<h3 id="the-try-finally-clause">The try-finally Clause</h3>
+
+<ul>
+  <li>You can use a <code class="language-plaintext highlighter-rouge">finally</code> block along with a <code class="language-plaintext highlighter-rouge">try</code> block. The <code class="language-plaintext highlighter-rouge">finally</code> block is a place to put any code that must execute, whether the <code class="language-plaintext highlighter-rouge">try</code> block raised an exception or not. The syntax of the <code class="language-plaintext highlighter-rouge">try-finally</code> statement is:</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span><span class="p">:</span>
+	<span class="c1">#You do your operations here;
+</span><span class="k">except</span> <span class="o">&lt;</span><span class="n">expeciton</span><span class="o">&gt;</span><span class="p">:</span>
+	<span class="c1">#Due to any exception, this may be skipped.
+</span><span class="k">finally</span><span class="p">:</span>
+	<span class="c1">#This would always be executed.
+</span></code></pre></div></div>
+
+<blockquote>
+  <p>[!example]- Example 4</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">testFunc</span><span class="p">():</span>
+	<span class="k">try</span><span class="p">:</span>
+		<span class="n">f</span> <span class="o">=</span> <span class="nf">open</span><span class="p">(</span><span class="sh">'</span><span class="s">test.txt</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">w</span><span class="sh">'</span><span class="p">)</span> <span class="c1"># Succeeds
+</span>		<span class="n">f</span><span class="p">.</span><span class="nf">dummyFunction</span><span class="p">()</span> <span class="c1"># Exception here
+</span>	<span class="k">except</span> <span class="nb">AttributeError</span><span class="p">:</span>
+		<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">Exception appears happening here</span><span class="sh">'</span><span class="p">)</span>
+		<span class="k">return</span> <span class="c1"># no matter what, "finally" will be executed
+</span>	<span class="k">finally</span><span class="p">:</span>
+		<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">I am finally here</span><span class="sh">'</span><span class="p">)</span>
+		<span class="n">f</span><span class="p">.</span><span class="nf">close</span><span class="p">()</span> <span class="c1"># We always close the file, even when doing return  
+</span>		
+<span class="nf">testFunc</span><span class="p">()</span>
+</code></pre></div>  </div>
+  <p><strong>Output</strong></p>
+  <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Exception appears happening here
+I am finally here
+</code></pre></div>  </div>
+</blockquote>
+
+<h2 id="raise-user-defined-exception">Raise user defined Exception</h2>
+
+<ul>
+  <li>
+    <p>You can create your own exception by inheriting the Python built-in <code class="language-plaintext highlighter-rouge">Exception</code> class.</p>
+  </li>
+  <li>
+    <p>When certain condition meets, you can <code class="language-plaintext highlighter-rouge">raise</code> the exception <strong>object</strong> which is defined.</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">ShortInputException</span><span class="p">(</span><span class="nb">Exception</span><span class="p">):</span> <span class="c1"># inherit from the "Exception" class
+</span>	<span class="sh">'''</span><span class="s">A user-defined exception class containing two variables.</span><span class="sh">'''</span>
+	<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">atleast</span><span class="p">):</span>
+		<span class="nb">Exception</span><span class="p">.</span><span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+		<span class="n">self</span><span class="p">.</span><span class="n">length</span> <span class="o">=</span> <span class="n">length</span>
+		<span class="n">self</span><span class="p">.</span><span class="n">atleast</span> <span class="o">=</span> <span class="n">atleast</span>
+	<span class="k">def</span> <span class="nf">shortInputExceptionAction</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+		<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">shortInputException can do many operations here</span><span class="sh">'</span><span class="p">)</span>
+		<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">Your input length %d, but the length should be at least %d</span><span class="sh">'</span><span class="o">%</span> <span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">length</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">atleast</span><span class="p">))</span>
+
+<span class="k">try</span><span class="p">:</span>
+	<span class="n">s</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter Something: </span><span class="sh">'</span><span class="p">)</span>
+	<span class="k">if</span> <span class="nf">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+	<span class="k">raise</span> <span class="nc">ShortInputException</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="mi">3</span><span class="p">)</span> <span class="c1"># create and raise (activate) your own Exception object
+</span>
+<span class="k">except</span> <span class="nb">KeyboardInterrupt</span><span class="p">:</span> <span class="c1"># When using the Kernel -&gt; Interrupt menu
+</span>
+<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">Why did you do interrupt me?</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="k">except</span> <span class="n">ShortInputException</span> <span class="k">as</span> <span class="n">x</span><span class="p">:</span> <span class="c1"># x is now the name for the exception object which is handled in this block
+</span>
+<span class="n">x</span><span class="p">.</span><span class="nf">shortInputExceptionAction</span><span class="p">()</span>
+
+<span class="k">else</span><span class="p">:</span>
+
+<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">No exception was raised.</span><span class="sh">'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p>Enter Something: 3333</p>
+
+<p>No exception was raised.</p>
+
+<ul>
+  <li>You can create as many exception classes as needed.</li>
+</ul>
+
+<h4 id="example-5">Example 5</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">class</span> <span class="nc">ShortInputException</span><span class="p">(</span><span class="nb">Exception</span><span class="p">):</span>
+
+<span class="sh">'''</span><span class="s">A user-defined exception class.</span><span class="sh">'''</span>
+
+<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">atleast</span><span class="p">):</span>
+
+<span class="nb">Exception</span><span class="p">.</span><span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+
+<span class="n">self</span><span class="p">.</span><span class="n">length</span> <span class="o">=</span> <span class="n">length</span>
+
+<span class="n">self</span><span class="p">.</span><span class="n">atleast</span> <span class="o">=</span> <span class="n">atleast</span>
+
+  
+
+<span class="k">def</span> <span class="nf">shortInputExceptionAction</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+
+<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">shortInputException can do many operations here</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">Your input length %d, but the length should be at least %d</span><span class="sh">'</span><span class="o">%</span> <span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">length</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">atleast</span><span class="p">))</span>
+
+  
+
+<span class="k">class</span> <span class="nc">LongInputException</span><span class="p">(</span><span class="nb">Exception</span><span class="p">):</span>
+
+<span class="sh">'''</span><span class="s">A user-defined exception class.</span><span class="sh">'''</span>
+
+<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">atmost</span><span class="p">):</span>
+
+<span class="nb">Exception</span><span class="p">.</span><span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+
+<span class="n">self</span><span class="p">.</span><span class="n">length</span> <span class="o">=</span> <span class="n">length</span>
+
+<span class="n">self</span><span class="p">.</span><span class="n">atmost</span> <span class="o">=</span> <span class="n">atmost</span>
+
+  
+
+<span class="k">def</span> <span class="nf">longInputExceptionAction</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+
+<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">longInputExceptionAction can do many operations here</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">Your input length %d, but the length should be at most %d</span><span class="sh">'</span><span class="o">%</span> <span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">length</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">atmost</span><span class="p">))</span>
+
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">try</span><span class="p">:</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter Something: </span><span class="sh">'</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="nf">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+
+<span class="k">raise</span> <span class="nc">ShortInputException</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="mi">3</span><span class="p">)</span> <span class="c1"># raise your own Exception object
+</span>
+<span class="k">if</span> <span class="nf">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">7</span><span class="p">:</span>
+
+<span class="k">raise</span> <span class="nc">LongInputException</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="mi">7</span><span class="p">)</span>
+
+<span class="k">except</span> <span class="nb">KeyboardInterrupt</span><span class="p">:</span> <span class="c1"># When using the Kernel -&gt; Interrupt menu
+</span>
+<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">Why did you do interrupt me?</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="k">except</span> <span class="n">ShortInputException</span> <span class="k">as</span> <span class="n">x</span><span class="p">:</span> <span class="c1"># x is the "ShortInputException" object
+</span>
+<span class="n">x</span><span class="p">.</span><span class="nf">shortInputExceptionAction</span><span class="p">()</span>
+
+<span class="k">except</span> <span class="n">LongInputException</span> <span class="k">as</span> <span class="n">x</span><span class="p">:</span>
+
+<span class="n">x</span><span class="p">.</span><span class="nf">longInputExceptionAction</span><span class="p">()</span>
+
+<span class="k">else</span><span class="p">:</span>
+
+<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">No exception was raised.</span><span class="sh">'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p>Enter Something: 33333</p>
+
+<p>No exception was raised.</p>
+
+<h2 id="3-assertions-in-python">3. Assertions in Python</h2>
+
+<ul>
+  <li>
+    <p>The <code class="language-plaintext highlighter-rouge">assert</code> statement will help you check the validity of an expression. If the expression is false, Python raises an <code class="language-plaintext highlighter-rouge">AssertionError</code> exception.</p>
+  </li>
+  <li>
+    <p>Programmers often place assertions to check whether the input or the result obtained fulfills the expectation.</p>
+  </li>
+</ul>
+
+<h4 id="syntax-1">Syntax</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+assert Expression[, ArgumentExpression]
+
+</code></pre></div></div>
+
+<ul>
+  <li>If the assertion fails, Python uses <code class="language-plaintext highlighter-rouge">ArgumentExpression</code> as the argument for the <code class="language-plaintext highlighter-rouge">AssertionError</code>. <code class="language-plaintext highlighter-rouge">AssertionError</code> exceptions can be caught and handled like any other exception using the <code class="language-plaintext highlighter-rouge">try-except</code> statement, but if not handled, they will terminate the program and produce a traceback.</li>
+</ul>
+
+<h4 id="example-5-1">Example 5</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">def</span> <span class="nf">KelvinToFahrenheit</span><span class="p">(</span><span class="n">Temperature</span><span class="p">):</span>
+
+<span class="c1"># assert Temperature &gt;= 0, "So cold, temperature below zero"
+</span>
+<span class="nf">return </span><span class="p">(</span><span class="n">Temperature</span> <span class="o">-</span> <span class="mi">273</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.8</span> <span class="o">+</span> <span class="mi">32</span>
+
+  
+
+<span class="nf">print </span><span class="p">(</span><span class="nc">KelvinToFahrenheit</span><span class="p">(</span><span class="mi">273</span><span class="p">))</span>
+
+<span class="nf">print </span><span class="p">(</span><span class="nf">int</span><span class="p">(</span><span class="nc">KelvinToFahrenheit</span><span class="p">(</span><span class="mf">505.78</span><span class="p">)))</span>
+
+<span class="nf">print </span><span class="p">(</span><span class="nc">KelvinToFahrenheit</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">))</span>
+
+</code></pre></div></div>
+
+<p>32.0</p>
+
+<p>451</p>
+
+<p>-468.40000000000003</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">def</span> <span class="nf">KelvinToFahrenheit</span><span class="p">(</span><span class="n">Temperature</span><span class="p">):</span>
+
+<span class="k">try</span><span class="p">:</span>
+
+<span class="k">assert</span> <span class="n">Temperature</span> <span class="o">&gt;=</span> <span class="mi">0</span>
+
+<span class="nf">return </span><span class="p">(</span><span class="n">Temperature</span> <span class="o">-</span> <span class="mi">273</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.8</span> <span class="o">+</span> <span class="mi">32</span>
+
+<span class="k">except</span> <span class="nb">AssertionError</span><span class="p">:</span>
+
+<span class="nf">print </span><span class="p">(</span><span class="sh">'</span><span class="s">So cold, temperature below zero</span><span class="sh">'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nc">KelvinToFahrenheit</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p>So cold, temperature below zero</p>
+
+<p><strong>Task 1:</strong> Complete the function <code class="language-plaintext highlighter-rouge">divide</code> which takes two strings, <code class="language-plaintext highlighter-rouge">m</code> and <code class="language-plaintext highlighter-rouge">n</code> as the arguments. The function should return <code class="language-plaintext highlighter-rouge">m/n</code> as the result.</p>
+
+<p>Note that</p>
+
+<ul>
+  <li>
+    <p>if <code class="language-plaintext highlighter-rouge">m</code> or <code class="language-plaintext highlighter-rouge">n</code> are not numbers, the function should return <code class="language-plaintext highlighter-rouge">'Error: Not numbers'</code>;</p>
+  </li>
+  <li>
+    <p>if <code class="language-plaintext highlighter-rouge">n</code> is zero, the function should return <code class="language-plaintext highlighter-rouge">'Error: Zero divisor'</code>.</p>
+  </li>
+</ul>
+
+<p>You program should not crash in any of the cases above.</p>
+
+<p><em>Note: You are NOT allowed to use any if-branches!</em></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+
+<span class="k">try</span><span class="p">:</span>
+
+<span class="c1"># Attempt to convert strings to floats
+</span>
+<span class="n">m</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">m</span> <span class="o">/</span> <span class="n">n</span> <span class="c1"># This can raise a ZeroDivisionError
+</span>
+<span class="k">return</span> <span class="n">result</span>
+
+<span class="k">except</span> <span class="nb">ZeroDivisionError</span><span class="p">:</span> <span class="c1"># Handle division by zero
+</span>
+<span class="k">return</span> <span class="sh">'</span><span class="s">Error: Zero divisor</span><span class="sh">'</span>
+
+<span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span> <span class="c1"># Handle non-numeric values
+</span>
+<span class="k">return</span> <span class="sh">'</span><span class="s">Error: Not numbers</span><span class="sh">'</span>
+
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">assert</span> <span class="nf">divide</span><span class="p">(</span><span class="sh">'</span><span class="s">2</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">haha</span><span class="sh">'</span><span class="p">)</span> <span class="o">==</span> <span class="sh">'</span><span class="s">Error: Not numbers</span><span class="sh">'</span>
+
+<span class="k">assert</span> <span class="nf">divide</span><span class="p">(</span><span class="sh">'</span><span class="s">haha</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">0</span><span class="sh">'</span><span class="p">)</span> <span class="o">==</span> <span class="sh">'</span><span class="s">Error: Not numbers</span><span class="sh">'</span>
+
+<span class="k">assert</span> <span class="nf">divide</span><span class="p">(</span><span class="sh">'</span><span class="s">2</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">0</span><span class="sh">'</span><span class="p">)</span> <span class="o">==</span> <span class="sh">'</span><span class="s">Error: Zero divisor</span><span class="sh">'</span>
+
+<span class="k">assert</span> <span class="nf">divide</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mf">5.0</span>
+
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># This cell contains hidden tests, do NOT delete!
+</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># This cell contains hidden tests, do NOT delete!
+</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># This cell contains hidden tests, do NOT delete!
+</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># This cell contains hidden tests, do NOT delete!
+</span>
+</code></pre></div></div>
+
+<p><strong>Task 2:</strong> Complete the function <code class="language-plaintext highlighter-rouge">robustLog</code> which takes two strings, <code class="language-plaintext highlighter-rouge">b</code> and <code class="language-plaintext highlighter-rouge">x</code> as the arguments. The function should first convert <code class="language-plaintext highlighter-rouge">b</code> and <code class="language-plaintext highlighter-rouge">x</code> to real numbers and then return $log_bx$.</p>
+
+<p>Note that</p>
+
+<ul>
+  <li>
+    <p>if <code class="language-plaintext highlighter-rouge">b</code> or <code class="language-plaintext highlighter-rouge">x</code> are not real numbers, the function should return <code class="language-plaintext highlighter-rouge">'Error: Not real'</code>;</p>
+  </li>
+  <li>
+    <p>if <code class="language-plaintext highlighter-rouge">b</code> or <code class="language-plaintext highlighter-rouge">x</code> are not positive, the function should return <code class="language-plaintext highlighter-rouge">'Error: Non-positive values'</code>;</p>
+  </li>
+  <li>
+    <p>if <code class="language-plaintext highlighter-rouge">b</code> equals to 1, the function should return <code class="language-plaintext highlighter-rouge">'Error: Zero divisor'</code>.</p>
+  </li>
+</ul>
+
+<p>You program should not crash in any of the cases above.</p>
+
+<p><em>Hint: To compute the logarithm, You can import math and use math.log().</em></p>
+
+<p><em>Note: You are NOT allowed to use any if-branches!</em></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+  
+
+<span class="kn">import</span> <span class="n">math</span>
+
+<span class="k">def</span> <span class="nf">robustLog</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+
+<span class="k">try</span><span class="p">:</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># Check for errors using assertions which will raise an AssertionError if conditions fail
+</span>
+<span class="k">assert</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="sh">'</span><span class="s">Error: Non-positive values</span><span class="sh">'</span>
+
+<span class="k">assert</span> <span class="n">b</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">,</span> <span class="sh">'</span><span class="s">Error: Zero divisor</span><span class="sh">'</span>
+
+<span class="k">return</span> <span class="n">math</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+<span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span> <span class="c1"># Handle conversion errors
+</span>
+<span class="k">return</span> <span class="sh">'</span><span class="s">Error: Not real</span><span class="sh">'</span>
+
+<span class="k">except</span> <span class="nb">AssertionError</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span> <span class="c1"># Handle assertions
+</span>
+<span class="k">return</span> <span class="nf">str</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+
+  
+  
+
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">assert</span> <span class="nf">robustLog</span><span class="p">(</span><span class="sh">'</span><span class="s">haha</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">10</span><span class="sh">'</span><span class="p">)</span> <span class="o">==</span> <span class="sh">'</span><span class="s">Error: Not real</span><span class="sh">'</span>
+
+<span class="k">assert</span> <span class="nf">robustLog</span><span class="p">(</span><span class="sh">'</span><span class="s">1</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">haha</span><span class="sh">'</span><span class="p">)</span> <span class="o">==</span> <span class="sh">'</span><span class="s">Error: Not real</span><span class="sh">'</span>
+
+<span class="k">assert</span> <span class="nf">robustLog</span><span class="p">(</span><span class="sh">'</span><span class="s">2</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">0</span><span class="sh">'</span><span class="p">)</span> <span class="o">==</span> <span class="sh">'</span><span class="s">Error: Non-positive values</span><span class="sh">'</span>
+
+<span class="k">assert</span> <span class="nf">robustLog</span><span class="p">(</span><span class="sh">'</span><span class="s">-1</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">3</span><span class="sh">'</span><span class="p">)</span> <span class="o">==</span> <span class="sh">'</span><span class="s">Error: Non-positive values</span><span class="sh">'</span>
+
+<span class="k">assert</span> <span class="nf">robustLog</span><span class="p">(</span><span class="sh">'</span><span class="s">1</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">-3</span><span class="sh">'</span><span class="p">)</span> <span class="o">==</span> <span class="sh">'</span><span class="s">Error: Non-positive values</span><span class="sh">'</span>
+
+<span class="k">assert</span> <span class="nf">robustLog</span><span class="p">(</span><span class="sh">'</span><span class="s">1</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">3</span><span class="sh">'</span><span class="p">)</span> <span class="o">==</span> <span class="sh">'</span><span class="s">Error: Zero divisor</span><span class="sh">'</span>
+
+<span class="k">assert</span> <span class="nf">robustLog</span><span class="p">(</span><span class="sh">'</span><span class="s">2</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">8</span><span class="sh">'</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># This cell contains hidden tests, do NOT delete!
+</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># This cell contains hidden tests, do NOT delete!
+</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># This cell contains hidden tests, do NOT delete!
+</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># This cell contains hidden tests, do NOT delete!
+</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># This cell contains hidden tests, do NOT delete!
+</span>
+</code></pre></div></div>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/Management/TaskManagement">Task Management</a><br>
+                    <!-- <div style="font-size: 0.9em">[[TaskManagement]]
+</div> -->
+                </div>
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/Program/Python/Python-Exceptions">Python Exceptions</a><br>
+                    <!-- <div style="font-size: 0.9em">[[Python-Exceptions]]
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+<style>
+  pre.language-vega-lite,
+  code.language-vega-lite {
+    display: none;
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-vega-lite"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+        vegaEmbed(m, JSON.parse(x.textContent));
+      }'
+></script>
+
+
+
+
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+

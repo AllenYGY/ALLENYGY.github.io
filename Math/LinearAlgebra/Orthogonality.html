@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    Orthogonality &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Orthogonality" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="[[Orthogonality]]" />
+<meta property="og:description" content="[[Orthogonality]]" />
+<link rel="canonical" href="https://allenygy.github.io/Math/LinearAlgebra/Orthogonality" />
+<meta property="og:url" content="https://allenygy.github.io/Math/LinearAlgebra/Orthogonality" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-13T13:40:44+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Orthogonality" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-09-13T13:40:44+08:00","datePublished":"2024-09-13T13:40:44+08:00","description":"[[Orthogonality]]","headline":"Orthogonality","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/Math/LinearAlgebra/Orthogonality"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/Math/LinearAlgebra/Orthogonality"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://allenygy.github.io">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://allenygy.github.io">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/contents">
+        <i class="fa-solid fa-book fa-fw"></i> 目录
+      </a>
+      
+      <a class="sidebar-nav-item" href="/OS">
+        <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DCN">
+        <i class="fa-solid fa-network-wired"></i> 计算机网络
+      </a>
+      
+      <a class="sidebar-nav-item" href="/CO">
+        <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Program">
+        <i class="fa-solid fa-code fa-fw"></i> 编程语言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Math">
+        <i class="fa-solid fa-tools fa-fw"></i> 数学
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DBM">
+        <i class="fa-solid fa-database fa-fw"></i> 数据库
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Tools">
+        <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/links">
+        <i class="fa-solid fa-user-friends fa-fw"></i> 友链
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#orthogonality">Orthogonality</a>
+    <ol>
+      <li><a href="#11-the-scalar-product-in-mathbbrn">1.1. The Scalar Product in $\mathbb{R}^n$</a>
+        <ol>
+          <li><a href="#111-scalar-product">1.1.1. Scalar Product</a></li>
+          <li><a href="#112-length">1.1.2. Length</a></li>
+          <li><a href="#113-angle">1.1.3. Angle</a>
+            <ol>
+              <li><a href="#orthogonal">Orthogonal</a></li>
+            </ol>
+          </li>
+          <li><a href="#114-projection">1.1.4. Projection</a>
+            <ol>
+              <li><a href="#projecting-vector-onto-a-line">Projecting vector onto a line</a></li>
+              <li><a href="#projection-matrix-paata-at">Projection Matrix: (P=A(A^TA)^-A^T)</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#12-orthogonal-subspaces">1.2. Orthogonal Subspaces</a>
+        <ol>
+          <li><a href="#121-orthogonal-subspaces">1.2.1. Orthogonal Subspaces</a></li>
+          <li><a href="#122-orthogonal-complement">1.2.2. Orthogonal Complement</a></li>
+          <li><a href="#123-theorem-321">1.2.3. Theorem 3.2.1</a></li>
+          <li><a href="#124-theorem-322">1.2.4. Theorem 3.2.2</a></li>
+          <li><a href="#125-fundamental-subspaces">1.2.5. Fundamental subspaces</a></li>
+          <li><a href="#126-theorem-323">1.2.6. Theorem 3.2.3</a></li>
+          <li><a href="#127-theorem-324">1.2.7. Theorem 3.2.4</a></li>
+          <li><a href="#128-direct-sum">1.2.8. Direct Sum</a></li>
+          <li><a href="#129-direct-sum-theorem-325">1.2.9. Direct Sum Theorem 3.2.5</a></li>
+          <li><a href="#1210-theorem-326">1.2.10. Theorem 3.2.6</a></li>
+        </ol>
+      </li>
+      <li><a href="#13-least-squares-problems">1.3. Least Squares Problems</a>
+        <ol>
+          <li><a href="#131-line-of-best-fit">1.3.1. Line of best fit</a></li>
+          <li><a href="#132-least-square-solutions">1.3.2. Least Square Solutions</a></li>
+          <li><a href="#133-theorem-331">1.3.3. Theorem 3.3.1</a></li>
+          <li><a href="#134-projection-formula">1.3.4. Projection formula</a></li>
+        </ol>
+      </li>
+      <li><a href="#14-%E2%85%B4-orthonormal-sets">1.4. Ⅴ Orthonormal Sets</a>
+        <ol>
+          <li><a href="#141-note-on-inner-product-spaces">1.4.1. Note on Inner Product Spaces</a></li>
+          <li><a href="#142-orthogonal-set">1.4.2. Orthogonal Set</a></li>
+          <li><a href="#143-orthonormal-set">1.4.3. Orthonormal Set</a></li>
+          <li><a href="#144-theorem-nonzero-orthogonal-set-is-linearly-independent-351">1.4.4. Theorem [Nonzero orthogonal set is linearly independent] 3.5.1</a></li>
+          <li><a href="#145-orthonormal-basis">1.4.5. Orthonormal Basis</a>
+            <ol>
+              <li><a href="#orthonormal-basis-and-coordinates">Orthonormal Basis and Coordinates</a>
+                <ol>
+                  <li><a href="#theorem-352">Theorem 3.5.2</a></li>
+                </ol>
+              </li>
+              <li><a href="#orthonormal-sets-and-projection">Orthonormal Sets and Projection</a>
+                <ol>
+                  <li><a href="#theorem-353">Theorem 3.5.3</a></li>
+                  <li><a href="#theorem-projection-formula-354">Theorem [Projection formula] 3.5.4</a></li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li><a href="#146-orthogonal-matrix">1.4.6. Orthogonal matrix</a></li>
+          <li><a href="#147-theorem-355">1.4.7. Theorem 3.5.5</a>
+            <ol>
+              <li><a href="#orthonormal-sets-and-least-squares">Orthonormal Sets and Least Squares</a>
+                <ol>
+                  <li><a href="#theorem-354">Theorem 3.5.4</a></li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#15summary">1.5.Summary</a></li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "03/20/2024 16:27:40")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/ALLENYGY/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        48万
+        
+          
+        
+        7千
+        45字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">Orthogonality</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2024-04-08 22:58:00 Monday
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2023-12-23 02:12:00 Saturday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        8550字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        29分
+        
+        
+        
+        <br>
+        
+        Orthogonality, Lec3, NOTE, and LinearAlgebra
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="orthogonality"><a class="internal-link" href="/Math/LinearAlgebra/Orthogonality">Orthogonality</a></h1>
+
+<h2 id="11-the-scalar-product-in-mathbbrn">1.1. The Scalar Product in $\mathbb{R}^n$</h2>
+
+<h3 id="111-scalar-product">1.1.1. Scalar Product</h3>
+
+<ul>
+  <li>Definition:
+For vectors x and y in $\mathbb{R}^n$, the 1×1 matrix $x^T y$ (also treated as a scalar) is called the scalar product of  x and y, and is given by
+\(x^T y= x_1 y_1+ x_2 y_2+…+ x_n y_n\)</li>
+  <li>Other names: inner product ⟨x,y⟩, dot product x⋅y</li>
+</ul>
+
+<h3 id="112-length">1.1.2. Length</h3>
+
+<ul>
+  <li>Definition:
+For a vector x in $\mathbb{R}^n$, the ==Euclidean length== (norm, magnitude)
+‖x‖ of x  is defined to be
+\(‖x‖=\sqrt{x^T x}=\sqrt{ x_1^2+ x_2^2+…+ x_n^2}\)</li>
+  <li>A vector u in \mathbb{R}^n is a unit vector if and only if ‖u‖=1.</li>
+  <li>If x is a nonzero vector, then $x/‖x‖$  is a unit vector in the direction of x.</li>
+  <li>The distance between two vectors x and y is \(‖x−y‖=\sqrt{( x_1−y_1 )^𝟐+( x_2−y_2 )^2+…+( x_n−y_n )^2}\)</li>
+</ul>
+
+<h3 id="113-angle">1.1.3. Angle</h3>
+
+<ul>
+  <li>Definition:
+Let the angle between the two vectors be 𝜃 (0≤𝜃≤𝜋), then $x^T y$=‖x‖‖y‖  cos⁡𝜃, i.e. if u=x/‖x‖ ,𝐯=y/‖y‖</li>
+  <li>
+\[cos⁡\theta=(x^T y)/‖x‖‖y‖ =u^T 𝐯\]
+  </li>
+</ul>
+
+<h4 id="orthogonal">Orthogonal</h4>
+
+<ul>
+  <li>Definition:
+If $x^T y$=0, then we say that x and y are orthogonal, and denote x{\bot}y.</li>
+</ul>
+
+<h3 id="114-projection">1.1.4. Projection</h3>
+
+<h4 id="projecting-vector-onto-a-line">Projecting vector onto a line</h4>
+
+<ul>
+  <li>scalar projection: $\alpha=(x^T y)/$ ‖y‖.</li>
+  <li>vector projection: p = \alpha \frac{y}{‖y‖} =$((x^T y)/(y^T y)) y$.
+If u is a unit vector, then</li>
+  <li>The scalar projection of x onto u is
+\(\alpha=x^T u.\)</li>
+  <li>The vector projection of x onto u is
+\(p=\alpha u=(x^T u)  u.\)</li>
+</ul>
+
+<h4 id="projection-matrix-paata-at">Projection Matrix: \(P=A(A^TA)^-A^T\)</h4>
+
+<h2 id="12-orthogonal-subspaces">1.2. Orthogonal Subspaces</h2>
+
+<h3 id="121-orthogonal-subspaces">1.2.1. Orthogonal Subspaces</h3>
+
+<ul>
+  <li>Definition:
+Two subspaces 𝑋 and y of $\mathbb{R}^n$ are said to be orthogonal if $x^T y=0$ for every x∈𝑋 and every y∈y.
+If 𝑋 and y are orthogonal, we write 𝑋{\bot}y.
+Note: 𝑋 and y are subspaces of the same vector space $\mathbb{R}^n$.</li>
+  <li>In $\mathbb{R}^2, S𝑝an(𝒆_1 ){\bot}S𝑝an(𝒆_2 )$.</li>
+  <li>In $\mathbb{R}^3$, \(Span(𝒆_1 ){\bot}S𝑝an(𝒆_2 )\) \(S𝑝an(𝒆_1,𝒆_2 ){\bot}S𝑝an(𝒆_3 )\)</li>
+</ul>
+
+<h3 id="122-orthogonal-complement">1.2.2. Orthogonal Complement</h3>
+
+<ul>
+  <li>Definition:
+For a subspace y of \mathbb{R}^n, the set of vectors in $\mathbb{R}^n$ that are orthogonal to every vector in y will be denoted $y^{\bot}$. Thus, $y^{\bot}$={$x∈\mathbb{R}^n |x^T y=0$  for every  $ y∈y$}</li>
+  <li>The set $y^{\bot}$ is called the orthogonal complement of y</li>
+  <li>$y^{\bot}$ is the “biggest” subspace orthogonal to y.</li>
+</ul>
+
+<h3 id="123-theorem-321">1.2.3. Theorem 3.2.1</h3>
+
+<p>If 𝑋 and y are orthogonal subspaces of $\mathbb{R}^n$, then 𝑋∩y={𝟎}</p>
+
+<h3 id="124-theorem-322">1.2.4. Theorem 3.2.2</h3>
+
+<p>If y is a subspace of $\mathbb{R}^n$, then $y^T$ is also a subspace of $\mathbb{R}^n$.</p>
+
+<h3 id="125-fundamental-subspaces">1.2.5. Fundamental subspaces</h3>
+
+<ul>
+  <li>Let A be an m×n matrix.
+    <ul>
+      <li>As a linear transformation, $A: \mathbb{R}^n\rightarrow  \mathbb{R}^m$. ==(m-n)==
+N(A) is a subspace of $\mathbb{R}^n$ (where $Ax=𝟎$).
+The range of A = the column space of A (subspace of $\mathbb{R}^m$):
+R(A)={$b∈\mathbb{R}^m$ |b = Ax for some  $x∈\mathbb{R}^n$ } \(R(A)\in R^m\)
+—</li>
+      <li>As a linear transformation, $A^T:\mathbb{R}^m\rightarrow  \mathbb{R}^n$. ==(n-m)==
+N($A^T$) is a subspace of $\mathbb{R}^m$ (where $A^T x=𝟎$).
+The column space of $A^T$, $R(A^T)$ is a subspace of ==$\mathbb{R}^n$==
+ $R(A^T)$={$y∈\mathbb{R}^n $|$y =A^T x$ for some  $x∈\mathbb{R}^m$ } $R(A^T)\in R^n$
+—</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The column space of $A^T$ is basically the row space of A, except row vectors “stands up” and become column vectors in $\mathbb{R}^n$.
+Thus, $y∈R(A^T )$  if and only if $y^T$ is in the row space of A.</p>
+
+<ul>
+  <li>$\mathbb{R}^m: N(A^{\bot}), R(A)$</li>
+  <li>$\mathbb{R}^n: N(A), R(A^T)$</li>
+</ul>
+
+<hr />
+
+<h3 id="126-theorem-323">1.2.6. Theorem 3.2.3</h3>
+
+<p>If A is an m×n matrix, then</p>
+
+<ul>
+  <li>$N(A)=R(A^T)^{\bot}$</li>
+  <li>$N(A^T)=R(A)^{\bot}$
+$a_1  x_1+a_2  x_2+…=0⇔
+\left[
+\begin{matrix}
+ a_1 <br />
+ a_2 <br />
+ \vdots
+\end{matrix}
+\right]
+{\bot}
+\left[
+\begin{matrix}
+ x_1 <br />
+ x_2 <br />
+ \vdots
+\end{matrix}
+\right]$ ^[$A^T{\bot}X^T$]</li>
+</ul>
+
+<h3 id="127-theorem-324">1.2.7. Theorem 3.2.4</h3>
+
+<p>If S is a subspace of $\mathbb{R}^n$, then dim $S$+ dim $S^{\bot}$=n.
+Furthermore, if {$x_1,x_2,…,x_𝑟$} is a basis for S and {$x_{𝑟+1}, …,x_n$} is a basis for $S^{\bot}$, then {$x_1,x_2,…,x_𝑟,x_{𝑟+1}, …,x_n$} is a basis for $\mathbb{R}^n$.</p>
+
+<h3 id="128-direct-sum">1.2.8. Direct Sum</h3>
+
+<ul>
+  <li>Definition:
+If U and 𝑉 are subspaces of a vector space 𝑊 and each 𝐰∈𝑊 can be written uniquely as a sum u + 𝐯, where u∈U and 𝐯∈𝑉, then we say that 𝑊 is a direct sum of U and 𝑉, and we write \(𝑊=U{\oplus} 𝑉\)</li>
+</ul>
+
+<h3 id="129-direct-sum-theorem-325">1.2.9. Direct Sum Theorem 3.2.5</h3>
+
+<p>If S is a subspace of $\mathbb{R}^n$, then $\mathbb{R}^n=S{\oplus}  S^{\bot}$.</p>
+
+<h3 id="1210-theorem-326">1.2.10. Theorem 3.2.6</h3>
+
+<p>If S is a subspace of $\mathbb{R}^n$, then $(S^{\bot})^{\bot}=S$</p>
+
+<hr />
+
+<p>For a subspace S in $\mathbb{R}^n$:</p>
+
+<ul>
+  <li>
+\[S∩S^{\bot}={𝟎}\]
+  </li>
+  <li>
+\[dim(⁡S)+dim⁡(S^{\bot})=n\]
+  </li>
+  <li>
+\[\mathbb{R}^n=S{\oplus} S^{\bot}\]
+  </li>
+  <li>\((S^{\bot})^{\bot}=S\)
+For a m×n matrix A:</li>
+  <li>Subspaces of $\mathbb{R}^n: N(A), R(A^T)$. ^[ \(A^T\rightarrow  R(A^T)\)\(X^T\rightarrow  N(A)\) ]</li>
+  <li>\(N(A)=R(A^T)^{\bot}\)\(\mathbb{R}^n=N(A){\oplus} R(A^T)\)</li>
+  <li>Subspaces of $\mathbb{R}^m: R(A), N(A^T)$. ^[ \(A\rightarrow  R(A)\)\(X\rightarrow  N(A^T)\) ]</li>
+  <li>\(N(A^T )=R(A)^{\bot}\)\(\mathbb{R}^m=R(A) N(A^T)\)</li>
+</ul>
+
+<h2 id="13-least-squares-problems">1.3. Least Squares Problems</h2>
+
+<h3 id="131-line-of-best-fit">1.3.1. Line of best fit</h3>
+
+<ul>
+  <li>$y=𝑐_0+𝑐_1  x$</li>
+</ul>
+
+\[\left[
+  \begin{matrix}
+   1 &amp; x \\ 1 &amp; y \\ 1 &amp; z
+  \end{matrix}\right]
+  \left[\begin{matrix}
+   c_0 \\ c_1 \\
+  \end{matrix}\right]
+=\left[\begin{matrix}
+   b_0 \\ b_1 \\ b_2
+  \end{matrix}\right]\]
+
+<hr />
+
+<h3 id="132-least-square-solutions">1.3.2. Least Square Solutions</h3>
+
+<ul>
+  <li>For an m×n matrix A, if the linear system Ax=b does not have a solution $x∈\mathbb{R}^n$, we still want a vector $\hat{x} \in \mathbb{R}^n $  such that $A\hatx$ is closest to b.</li>
+  <li>If 𝑟(x)=b−Ax, we seek to minimize ‖𝑟(x)‖,  which is the same as minimizing ‖𝑟(x)‖$^2$</li>
+  <li>A vector $x \in \mathbb{R}^n$ that minimizes ‖𝑟(x)‖$^2$=‖b−Ax‖$^2$ is called a least squares solution of $Ax=b$.</li>
+  <li>$p=A\hatx$ is the vector in S=R(A), the column space of A, that is closest to b.</li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>$b−p=b−A\hatx =𝐫(\hatx) ∈R(A)^{\bot}$
+\(R(A)^{\bot}=N(A^T)\)</li>
+  <li>Therefore, $b−A\hatx ∈N(A^T)$
+$⇒A^T (b−A\hat{x})=A^T b−A^T A\hat{x}=𝟎$</li>
+</ul>
+
+<hr />
+<p>Summary</p>
+
+<ul>
+  <li>To solve the least squares problem \(Ax=b\)</li>
+  <li>We need to solve \(A^T Ax=A^T b\)</li>
+  <li>Least squares solution x minimizes ‖𝑟(x)‖$^2$=‖b−Ax‖$^2$ and b−Ax is orthogonal to R(A).</li>
+</ul>
+
+<hr />
+<h3 id="133-theorem-331">1.3.3. <a name="Theorem3.3.1"></a>Theorem 3.3.1</h3>
+<p>If A is an m×n matrix of rank n, the normal equation \(A^T Ax=A^T b\)
+have a unique solution \(\hatx=(A^T A)^{−1} A^T b\)
+$\hatx$ is the unique least squares solution of $Ax=b$.</p>
+<h3 id="134-projection-formula">1.3.4. <a name="Projectionformula"></a>Projection formula</h3>
+<p>If A is an m×n matrix of rank n (i.e. columns are independent),</p>
+
+<ul>
+  <li>The unique least squares solution of Ax=b is \(\hatx =(A^T A)^{−1} A^T b\)</li>
+  <li>The projection of b onto R(A) is \(p=A\hatx =A(A^T A)^{−1}  A^T b\)</li>
+  <li>Projection is a linear operator, with projection matrix \(𝑃=A(A^T A)^{−1} A^T\)</li>
+</ul>
+
+<h2 id="14-ⅴ-orthonormal-sets">1.4. <a name="OrthonormalSets"></a>Ⅴ Orthonormal Sets</h2>
+<h3 id="141-note-on-inner-product-spaces">1.4.1. <a name="NoteonInnerProductSpaces"></a>Note on Inner Product Spaces</h3>
+<p>For ANy vector space 𝑉, there is an abstract definition of inner product ⟨x,y⟩: it must satisfy</p>
+
+<ul>
+  <li>⟨x,x⟩≥0, with equality if and only if x=𝟎</li>
+  <li>⟨x,y⟩=⟨y,x⟩</li>
+  <li>⟨x+𝛽y,𝐳⟩=⟨x,𝐳⟩+𝛽⟨y,𝐳⟩</li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>⟨x,y⟩ in $\mathbb{R}^n$, it means the scalar product $x^T y$.</li>
+</ul>
+
+<h3 id="142-orthogonal-set">1.4.2. <a name="OrthogonalSet"></a>Orthogonal Set</h3>
+
+<ul>
+  <li>Definition:
+A set {$𝐯_1,𝐯_2, …,𝐯_k$} of nonzero vectors is said to be an orthogonal set if ⟨$𝐯_i,𝐯_𝑗$⟩=0 whenever i≠𝑗.</li>
+</ul>
+
+<h3 id="143-orthonormal-set">1.4.3. <a name="OrthonormalSet"></a>Orthonormal Set</h3>
+
+<ul>
+  <li>Definition:
+An orthonormal set of vectors is an orthogonal set of unit vectors.
+you can turn an orthogonal set into an orthonormal set by scaling each vector to have unit length: $u_i=𝐯_i/(‖𝐯_i ‖)$</li>
+</ul>
+
+<h3 id="144-theorem-nonzero-orthogonal-set-is-linearly-independent-351">1.4.4. <a name="TheoremNonzeroorthogonalsetislinearlyindependent3.5.1"></a>Theorem [Nonzero orthogonal set is linearly independent] 3.5.1</h3>
+<p>If {$𝐯_1,𝐯_2, …,𝐯_k$} is an orthogonal set of nonzero vectors, then $𝐯_1,𝐯_2, …,𝐯_k$ is linearly independent. ^[If $a_1 𝐯_1+a_2 𝐯_2+…+a_k 𝐯_k$=𝟎, need to show $a_1=a_2=…=0$.
+Taking the inner product of 𝐯_1 on both sides:
+$⟨𝐯_1,a_1 𝐯_1+a_2 𝐯_2+…+a_k 𝐯_k ⟩=a_1 ⟨𝐯_1, 𝐯_1 ⟩+a_2 ⟨𝐯_1, 𝐯_2 ⟩+…+a_k ⟨𝐯_1, 𝐯_k ⟩
+=a_1 ⟨𝐯_1, 𝐯_1 ⟩=0$
+but since $𝐯_1≠𝟎$, ⟨$𝐯_1, 𝐯_1$⟩=‖$𝐯_1$‖$^2$&gt;0, so $a_1=0$.]</p>
+<h3 id="145-orthonormal-basis">1.4.5. <a name="OrthonormalBasis"></a>Orthonormal Basis</h3>
+<p>If 𝐵={$u_1,u_2, …,u_k$} is an orthonormal set, then by the theorem above, 𝐵 is a basis for the subspace S=Span($u_1,u_2, …,u_k$)=R(U).
+We say that 𝐵 is an orthonormal basis for S.</p>
+<h4 id="orthonormal-basis-and-coordinates">Orthonormal Basis and Coordinates</h4>
+<h5 id="theorem-352">Theorem 3.5.2</h5>
+<p>Let {$u_1,u_2, …,u_n$} be an orthonormal basis for 𝑉. If $x=𝑐_1 u_1+…+𝑐_n u_n$, then $𝑐_i= ⟨x,u_i⟩$.
+In other words, for any x∈𝑉 \(x=⟨x,u_1 ⟩ u_1+…+⟨x,u_n ⟩ u_n\)
+\(x= a_1 u_1+a_2 u_2+…+a_n u_n\)\(y= 𝑏_1 u_1+𝑏_2 u_2+…+𝑏_n u_n\)
+then
+^[Proof: $⟨x,u_i ⟩ =a_i ⇒⟨x,y⟩=⟨x,\sum𝑏_i u_i ⟩=\sum𝑏_i ⟨x,u_i ⟩=\suma_i 𝑏_i.$]
+              \(⟨x,y⟩=\sum_{i=1}^n a_i 𝑏_i.\)<br />
+In other word, $⟨x,y⟩=[x]_𝐵^T [y]_𝐵$</p>
+
+<ul>
+  <li>Parseval’s formula
+If $x= a_1 u_1+a_2 u_2+…+a_n u_n$, then ‖x‖$^2=\sum_{i=1}^n a_i^2.$
+in other word, ‖​x‖$^2=[x]_𝐵^T [x]_𝐵$</li>
+</ul>
+
+<h4 id="orthonormal-sets-and-projection">Orthonormal Sets and Projection</h4>
+
+<ul>
+  <li>The unique least squares solution of Ax=b is \(\hatx =(A^T A)^{−1} A^T b\)</li>
+  <li>The projection of b onto R(A) is \(p=A\hatx =A(A^T A)^{−1}  A^T b\)</li>
+  <li>Projection is a linear operator, with projection matrix \(𝑃=A(A^T A)^{−1} A^T\)</li>
+</ul>
+
+<h5 id="theorem-353">Theorem 3.5.3</h5>
+<p>If the column vectors of m×n matrix A form an orthonormal set of vectors in $\mathbb{R}^m$, then the projection of $b∈\mathbb{R}^m$ onto S=R(A) is \(p=A\hatx =AA^Tb\)
+projection matrix: \(𝑃=UU^T\)</p>
+<h5 id="theorem-projection-formula-354">Theorem [Projection formula] 3.5.4</h5>
+<p>If {$u_1,u_2, …,u_k$} is an orthonormal basis for a nonzero subspace S of $\mathbb{R}^m$, then the projection of $b∈\mathbb{R}^m$ onto S is
+\(p=(b^T u_1 ) u_1+…+(b^T u_k ) u_k\)</p>
+
+<hr />
+<h3 id="146-orthogonal-matrix">1.4.6. <a name="Orthogonalmatrix"></a>Orthogonal matrix</h3>
+
+<ul>
+  <li>Definition:
+An n×n matrix 𝑄 is called an orthogonal matrix if the columns of 𝑄 form an orthonormal basis in $\mathbb{R}^n$.</li>
+</ul>
+
+<h3 id="147-theorem-355">1.4.7. Theorem 3.5.5</h3>
+<p>An n×n matrix 𝑄 is an orthogonal matrix if and only if
+\(𝑄^T 𝑄=𝐼_n\)</p>
+
+<ul>
+  <li>Properties
+Let 𝑄 be an n×n matrix. The following are equivalent:
+    <ul>
+      <li>𝑄 is an orthogonal matrix.</li>
+      <li>The columns of 𝑄 form an orthonormal basis for $\mathbb{R}^n$.</li>
+      <li>==$𝑄^T 𝑄=𝐼$, that is, $𝑄^T=𝑄^{−1}$==.</li>
+      <li>$(𝑄x)^T (𝑄y)=x^T 𝑄^T 𝑄y=x^T y$ for all $x,y∈\mathbb{R}^n$.</li>
+      <li>‖𝑄x‖=‖x‖ for all $x∈\mathbb{R}^n$.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="orthonormal-sets-and-least-squares">Orthonormal Sets and Least Squares</h4>
+
+<ul>
+  <li>Least Square
+\(A^T A\hatx =A^T b⇒\hatx =(A^T A)^{−1} A^T b\)</li>
+</ul>
+
+<h5 id="theorem-354">Theorem 3.5.4</h5>
+<p>If the column vectors of m×n matrix A form an orthonormal set of vectors in $\mathbb{R}^m$, then $A^T A=𝐼_n$ and the solution to the least squares problem Ax=b is \(\hatx =A^T b\)</p>
+
+<h2 id="15summary">1.5.Summary</h2>
+
+<ul>
+  <li>Orthogonal set: $⟨𝐯_i,𝐯_𝑗 ⟩=0$ when i≠𝑗</li>
+  <li>Vectors in an orthogonal set are linearly independent</li>
+  <li>Orthonormal set/basis: $⟨u_i,u_𝑗 ⟩$=𝛿$_{i𝑗}$</li>
+  <li>Orthogonal matrix: $U^T U=𝐼, U^(−1)=U^T$</li>
+  <li>If {$u_1,u_2, …,u_n$} is an orthonormal basis for 𝑉:
+    <ul>
+      <li>$x=⟨x,u_1 ⟩ u_1+…+⟨x,u_n ⟩ u_n $</li>
+      <li>$⟨x,y⟩=\sum_i a_i 𝑏_i$, ‖x‖$^2=\sum_i a_i^2$</li>
+    </ul>
+  </li>
+  <li>If {$u_1,u_2, …,u_k$} is an orthonormal basis for a subspace S=R(U):</li>
+  <li>Least squares solution to Ux=b is $\hatx =U^T b$</li>
+  <li>Projection of b onto S is $p=UU^T b=\sum_i (b^T u_i ) u_i$</li>
+</ul>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/Math/LinearAlgebra/Orthogonality">Orthogonality</a><br>
+                    <!-- <div style="font-size: 0.9em">[[Orthogonality]]
+</div> -->
+                </div>
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/Math/Math">Math</a><br>
+                    <!-- <div style="font-size: 0.9em">Mathematica
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+<style>
+  pre.language-vega-lite,
+  code.language-vega-lite {
+    display: none;
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-vega-lite"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+        vegaEmbed(m, JSON.parse(x.textContent));
+      }'
+></script>
+
+
+
+
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+

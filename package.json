@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "bundle exec jekyll build --trace"
+  },
+  "name": "myblog",
+  "description": "--- layout: home title:  created: 2024-03-20 updated: 2024-03-22 permalink: /contents jekyll-theme-ObJekyll:   default:     sidebar:       open: true ---",
+  "version": "1.0.0",
+  "main": "sw.js",
+  "author": "",
+  "license": "ISC"
+}

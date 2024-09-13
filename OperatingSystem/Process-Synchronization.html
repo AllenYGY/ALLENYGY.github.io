@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    Process Synchronization &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Process Synchronization" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="[[Process-Synchronization]]" />
+<meta property="og:description" content="[[Process-Synchronization]]" />
+<link rel="canonical" href="https://allenygy.github.io/OperatingSystem/Process-Synchronization" />
+<meta property="og:url" content="https://allenygy.github.io/OperatingSystem/Process-Synchronization" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-13T13:40:44+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Process Synchronization" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-09-13T13:40:44+08:00","datePublished":"2024-09-13T13:40:44+08:00","description":"[[Process-Synchronization]]","headline":"Process Synchronization","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/OperatingSystem/Process-Synchronization"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/OperatingSystem/Process-Synchronization"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://allenygy.github.io">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://allenygy.github.io">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/contents">
+        <i class="fa-solid fa-book fa-fw"></i> 目录
+      </a>
+      
+      <a class="sidebar-nav-item" href="/OS">
+        <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DCN">
+        <i class="fa-solid fa-network-wired"></i> 计算机网络
+      </a>
+      
+      <a class="sidebar-nav-item" href="/CO">
+        <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Program">
+        <i class="fa-solid fa-code fa-fw"></i> 编程语言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Math">
+        <i class="fa-solid fa-tools fa-fw"></i> 数学
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DBM">
+        <i class="fa-solid fa-database fa-fw"></i> 数据库
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Tools">
+        <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/links">
+        <i class="fa-solid fa-user-friends fa-fw"></i> 友链
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#process-synchronization">Process-Synchronization</a>
+    <ol>
+      <li><a href="#main-content">Main Content</a></li>
+      <li><a href="#background">Background</a></li>
+      <li><a href="#critical-section-%E4%B8%B4%E7%95%8C%E5%8C%BA">Critical Section 临界区</a>
+        <ol>
+          <li><a href="#requirements--solution-to-critical-section-problem">Requirements &amp; Solution to Critical Section Problem</a>
+            <ol>
+              <li><a href="#requirement">Requirement</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#software-synchronization-solution">Software Synchronization Solution</a>
+        <ol>
+          <li><a href="#solution-i-%E5%8D%95%E6%A0%87%E5%BF%97%E6%B3%95">Solution-I 单标志法</a></li>
+          <li><a href="#solution-ii-%E5%8F%8C%E6%A0%87%E5%BF%97%E5%85%88%E6%A3%80%E6%9F%A5%E8%AF%BE%E4%BB%B6%E6%9C%AA%E6%8F%90%E5%8F%8A">Solution-II 双标志先检查（课件未提及）</a></li>
+          <li><a href="#solution-iii-%E5%8F%8C%E6%A0%87%E5%BF%97%E5%90%8E%E6%A3%80%E6%9F%A5%E8%AF%BE%E4%BB%B6%E6%9C%AA%E6%8F%90%E5%8F%8A">Solution-III 双标志后检查（课件未提及）</a></li>
+          <li><a href="#petersons-solution">Peterson’s Solution</a></li>
+        </ol>
+      </li>
+      <li><a href="#synchronization-hardware-solution">Synchronization Hardware Solution</a>
+        <ol>
+          <li><a href="#disable-interrupts-%E4%B8%AD%E6%96%AD%E5%B1%8F%E8%94%BD%E6%96%B9%E6%B3%95">Disable interrupts 中断屏蔽方法</a></li>
+          <li><a href="#solution-to-critical-section-problem-using-locks">Solution to Critical-section Problem Using Locks</a></li>
+          <li><a href="#test-and-set-instruction">Test and Set Instruction</a></li>
+          <li><a href="#compare-and-swap-instruction">Compare and Swap Instruction</a></li>
+        </ol>
+      </li>
+      <li><a href="#mutex-lock-%E4%BA%92%E6%96%A5%E9%94%81">Mutex Lock 互斥锁</a></li>
+      <li><a href="#semaphore-%E4%BF%A1%E5%8F%B7%E9%87%8F">Semaphore 信号量</a>
+        <ol>
+          <li><a href="#%E6%95%B4%E5%9E%8B%E4%BF%A1%E5%8F%B7%E9%87%8F">整型信号量</a></li>
+          <li><a href="#%E7%BA%AA%E5%BD%95%E5%9E%8B%E4%BF%A1%E5%8F%B7%E9%87%8F">纪录型信号量</a></li>
+          <li><a href="#semaphore-mechanism-implements-process-mutual-exclusion-synchronization-and-precursor">Semaphore mechanism implements process mutual exclusion, synchronization and precursor</a></li>
+          <li><a href="#process-mutual-exclusion-%E4%BF%A1%E5%8F%B7%E9%87%8F%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E8%BF%9B%E7%A8%8B%E4%BA%92%E6%96%A5">Process mutual exclusion 信号量机制实现进程互斥</a></li>
+          <li><a href="#process-synchronization-%E4%BF%A1%E5%8F%B7%E9%87%8F%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5">Process synchronization 信号量机制实现进程同步</a></li>
+          <li><a href="#process-precursor-%E4%BF%A1%E5%8F%B7%E9%87%8F%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E8%BF%9B%E7%A8%8B%E5%89%8D%E9%A9%B1">Process precursor 信号量机制实现进程前驱</a></li>
+        </ol>
+      </li>
+      <li><a href="#classic-problems-of-synchronization">Classic Problems of Synchronization</a>
+        <ol>
+          <li><a href="#producer-consumer-problem-%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E9%97%AE%E9%A2%98">Producer consumer problem 生产者消费者问题</a>
+            <ol>
+              <li><a href="#multi-producer-and-consumer-problem">Multi-Producer and Consumer Problem</a></li>
+            </ol>
+          </li>
+          <li><a href="#smokers-problem-%E5%90%B8%E7%83%9F%E8%80%85%E9%97%AE%E9%A2%98">Smokers Problem 吸烟者问题</a></li>
+          <li><a href="#readers-writers-problem">Readers Writers Problem</a></li>
+          <li><a href="#dining-philosophers-problem">Dining Philosophers Problem</a></li>
+        </ol>
+      </li>
+      <li><a href="#deadlock-and-starvation-%E6%AD%BB%E9%94%81%E4%B8%8E%E9%A5%A5%E9%A5%BF">Deadlock and Starvation 死锁与饥饿</a>
+        <ol>
+          <li><a href="#priority-inversion">Priority Inversion</a></li>
+        </ol>
+      </li>
+      <li><a href="#monitors-%E7%AE%A1%E7%A8%8B">Monitors 管程</a></li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "03/20/2024 16:27:40")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/ALLENYGY/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        47万
+        
+          
+        
+        字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">Process Synchronization</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2024-06-01 12:42:00 Saturday
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2024-04-11 16:09:00 Thursday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        16940字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        57分
+        
+        
+        
+        <br>
+        
+        Lec6, OS, and NOTE
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="process-synchronization"><a class="internal-link" href="/OperatingSystem/Process-Synchronization">Process-Synchronization</a></h1>
+
+<h2 id="main-content">Main Content</h2>
+
+<ul>
+  <li>Background</li>
+  <li>The Critical Section <em>临界区</em></li>
+  <li>Synchronization Software <em>软件实现同步</em></li>
+  <li>Synchronization Hardware <em>硬件实现同步</em></li>
+  <li>Mutex Locks <em>互斥</em></li>
+  <li>Semaphores <em>信号两</em></li>
+  <li>Classic Problems of Synchronization <em>同步问题</em></li>
+  <li>Monitors <em>管程</em></li>
+  <li>Deadlock and Starvation <em>死锁与饥饿</em></li>
+</ul>
+
+<h2 id="background">Background</h2>
+
+<p>Processes can execute concurrently <em>进程并发地执行</em></p>
+<ul>
+  <li>May be interrupted at any time, partially completing execution.
+    <ul>
+      <li><em>如当一个进程时间片用尽，被另一个进程切换</em></li>
+    </ul>
+  </li>
+  <li>Concurrent access to shared data may result in data inconsistency.
+    <ul>
+      <li><em>如果此时访问相同的数据，将导致数据不一致</em></li>
+    </ul>
+  </li>
+</ul>
+
+<p>进程具有异步性。
+异步性：各并发执行的进程以及各自独立的、不可预知的速度向前推进。</p>
+
+<p>To solve this problem, we need to make processes access the same data mutually exclusive <em>令进程互斥地访问相同数据来解决数据不一致的问题</em></p>
+
+<p><strong>Race condition:</strong></p>
+<ul>
+  <li>Several processes access and manipulate the same data concurrently</li>
+  <li>Outcome depends on which order each access takes place.</li>
+</ul>
+
+<h2 id="critical-section-临界区">Critical Section <em>临界区</em></h2>
+
+<p>Critical section problem is to design a protocol that the processes can use to cooperate.</p>
+
+<blockquote>
+  <p>[!info]+ Critical Section</p>
+  <ul>
+    <li>The segment of code in a process that modifies shared variables, tables, files</li>
+    <li>When one process is in critical section, other process should not enter their critical sections for these shared data. <em>互斥访问</em></li>
+  </ul>
+</blockquote>
+
+<p>一个时间段内只允许一个进程使用的资源称为临界资源。
+临界资源只能互斥的访问。</p>
+
+<p>对临界资源的互斥访问，可以在逻辑上分成四部分：</p>
+<ul>
+  <li>Entry section <em>进入区</em>
+    <ul>
+      <li>Ask for Permission <em>申请权限</em></li>
+    </ul>
+  </li>
+  <li>Critical section <em>临界区</em>
+    <ul>
+      <li>Protect this Section</li>
+    </ul>
+  </li>
+  <li>Exit section <em>退出区</em>
+    <ul>
+      <li>Do sth in order to allow other process to enter critical  section</li>
+    </ul>
+  </li>
+  <li>Reminder section <em>剩余区</em></li>
+</ul>
+
+<blockquote>
+  <p>[!abstract]+ Process with critical section should follow the following steps</p>
+  <ol>
+    <li>execute entry section to ask for permission</li>
+    <li>then execute critical section</li>
+    <li>execute exit section to allow other process to enter critical section</li>
+    <li>then execute remainder section</li>
+  </ol>
+</blockquote>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">do</span> <span class="p">{</span>
+	<span class="n">entry</span> <span class="n">section</span>
+		<span class="n">critical</span> <span class="n">section</span>
+	<span class="n">exit</span> <span class="n">section</span> 
+		<span class="n">reminder</span> <span class="n">section</span> 
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="requirements--solution-to-critical-section-problem">Requirements &amp; Solution to Critical Section Problem</h3>
+
+<h4 id="requirement">Requirement</h4>
+
+<blockquote>
+  <p>[!success]+ Requirements to Critical Section Problem</p>
+  <ol>
+    <li><strong><em>Mutual Exclusion</em></strong> <em>互斥访问（忙则等待）</em>
+      <ul>
+        <li>If process $P_i$ is executing in its critical section, then no other processes can be executing in their critical sections.</li>
+      </ul>
+    </li>
+    <li><strong><em>Progress</em></strong> <em>空闲让进</em>
+      <ul>
+        <li>If no process is executing in its critical section and if other processes want to enter critical section, one of them must be selected. They cannot be postponed indefinitely.</li>
+      </ul>
+    </li>
+    <li><strong><em>Bounded Waiting</em></strong> <em>有限等待</em>
+      <ul>
+        <li>If a process has made a request to enter its critical section, then, before that request is granted, there is a bound to the times that others can enter critical section.</li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!info]- Assumptions in the solution</p>
+  <ol>
+    <li>Each process executes at a nonzero speed</li>
+    <li>No concerning relative speed of the n processes</li>
+    <li>The load and store machine-language instructions are atomic (that is, cannot be interrupted)</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!quote]- 为了实现对临界资源的互斥访问，同时保证系统整体性能，需要遵循以下原则:</p>
+  <ol>
+    <li>空闲让进。临界区空闲时，可以允许一个请求进入临界区的进程立即进入临界区:</li>
+    <li>忙则等待。当已有进程进入临界区时，其他试图进入临界区的进程必须等待;</li>
+    <li>有限等待。对请求访问的进程，应保证能在有限时间内进入临界区(保证不会饥饿)</li>
+    <li>让权等待。当进程不能进入临界区时，应立即释放处理机，防止进程忙等待。<em>(课件未提及)</em></li>
+  </ol>
+</blockquote>
+
+<h2 id="software-synchronization-solution">Software Synchronization Solution</h2>
+
+<blockquote>
+  <p>[!success]+ Solution to Critical Section Problem</p>
+  <ol>
+    <li>单标志法</li>
+    <li>双标志先检查</li>
+    <li>双标志后检查</li>
+    <li>Peterson算法</li>
+  </ol>
+</blockquote>
+
+<h3 id="solution-i-单标志法">Solution-I <em>单标志法</em></h3>
+
+<p>turn’s value is initialized to be either i or j</p>
+
+<ul>
+  <li>$P_i$</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">do</span><span class="p">{</span>
+	<span class="k">while</span><span class="p">(</span><span class="n">turn</span><span class="o">==</span><span class="n">j</span><span class="p">);</span> <span class="c1">// Entry section</span>
+		<span class="n">critical</span> <span class="n">section</span><span class="p">;</span> <span class="c1">// turn is i </span>
+	<span class="n">turn</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span> <span class="c1">// Exit section</span>
+		<span class="n">reminder</span> <span class="n">section</span><span class="p">;</span> 
+<span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li>$P_j$</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">do</span><span class="p">{</span>
+	<span class="k">while</span><span class="p">(</span><span class="n">turn</span><span class="o">==</span><span class="n">i</span><span class="p">);</span> <span class="c1">// Entry section</span>
+		<span class="n">critical</span> <span class="n">section</span><span class="p">;</span> <span class="c1">// turn is i </span>
+	<span class="n">turn</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span> <span class="c1">// Exit section</span>
+		<span class="n">reminder</span> <span class="n">section</span><span class="p">;</span> 
+<span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Mutual Exclusion： Yes</li>
+  <li>Progress： No</li>
+  <li>Bounded waiting： Yes</li>
+</ul>
+
+<p>Can’t Satisfy <em>Progress</em> <em>无法实现，空闲让进</em></p>
+
+<h3 id="solution-ii-双标志先检查课件未提及">Solution-II <em>双标志先检查</em>（课件未提及）</h3>
+
+<ul>
+  <li>在进入临界区前先检查其他进程是否进入临界区
+    <ul>
+      <li>如果存在进程进程进入临界区，则等待</li>
+      <li>否则，标志自己进入临界区</li>
+    </ul>
+  </li>
+  <li>存在问题：当越过判断时发生进程切换，则无法互斥访问数据 <em>违反忙则等待</em></li>
+  <li>原因：检查上锁无法连贯执行</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> <span class="n">flag</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+<span class="n">flag</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
+<span class="n">flag</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>$P_0$</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// For P0 Process</span>
+<span class="k">while</span><span class="p">(</span><span class="n">flag</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="n">flag</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="n">critical</span> <span class="n">section</span><span class="p">;</span>
+<span class="n">flag</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<span class="n">reminder</span> <span class="n">section</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>$P_1$</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// For P0 Process</span>
+<span class="k">while</span><span class="p">(</span><span class="n">flag</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="n">flag</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="n">critical</span> <span class="n">section</span><span class="p">;</span>
+<span class="n">flag</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<span class="n">reminder</span> <span class="n">section</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="solution-iii-双标志后检查课件未提及">Solution-III <em>双标志后检查</em>（课件未提及）</h3>
+
+<ul>
+  <li>
+    <p>先上锁后检查以解决 <em>双标志先检查</em> 的问题</p>
+  </li>
+  <li>在进入临界区前先标志自己需要进入临界区，然后检查其他进程是否进入临界区
+    <ul>
+      <li>如果存在进程进程进入临界区，则等待</li>
+      <li>否则，则进入临界区</li>
+    </ul>
+  </li>
+  <li>存在问题：当标记时发生进程切换，多个进程都需要进入临界区—<em>导致死锁</em></li>
+  <li>违反<em>空闲让进</em>，<em>有限等待</em></li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> <span class="n">flag</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+<span class="n">flag</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
+<span class="n">flag</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>$P_0$</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// For P0 Process</span>
+<span class="n">flag</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="k">while</span><span class="p">(</span><span class="n">flag</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="n">critical</span> <span class="n">section</span><span class="p">;</span>
+<span class="n">flag</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<span class="n">reminder</span> <span class="n">section</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>$P_1$</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// For P0 Process</span>
+<span class="n">flag</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="k">while</span><span class="p">(</span><span class="n">flag</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="n">critical</span> <span class="n">section</span><span class="p">;</span>
+<span class="n">flag</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<span class="n">reminder</span> <span class="n">section</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="petersons-solution">Peterson’s Solution</h3>
+
+<p>It is a classic software-based solution to the critical-section problem</p>
+
+<ul>
+  <li>Good algorithmic description of solving the problem</li>
+</ul>
+
+<p>Solution for two processes by using two variables:</p>
+<ul>
+  <li>int turn; // indicates whose turn it is to enter the critical section.  <em>表示谦让</em>  <strong>最后谦让的无法执行</strong></li>
+  <li>boolean flag[2] // indicate if a process is ready to enter the critical section. <em>表达意愿</em>
+    <ul>
+      <li>flag[i] = true implies that process $P_i$ is ready!</li>
+      <li>It is initialized to FALSE.</li>
+    </ul>
+  </li>
+  <li>$P_i$</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">do</span><span class="p">{</span>
+	<span class="n">flag</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span> <span class="c1">//ready</span>
+	<span class="n">turn</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span> <span class="c1">//allow pj to enter</span>
+	<span class="k">while</span><span class="p">(</span><span class="n">flag</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">turn</span> <span class="o">==</span> <span class="n">j</span><span class="p">);</span>
+	<span class="n">critical</span> <span class="n">section</span>
+	<span class="n">falg</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span> <span class="c1">//exit</span>
+	<span class="n">reminder</span> <span class="n">section</span> 
+<span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li>$P_j$</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">do</span><span class="p">{</span>
+	<span class="n">flag</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span> <span class="c1">//ready</span>
+	<span class="n">turn</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span> <span class="c1">//allow pj to enter</span>
+	<span class="k">while</span><span class="p">(</span><span class="n">flag</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">turn</span> <span class="o">==</span> <span class="n">j</span><span class="p">);</span>
+	<span class="n">critical</span> <span class="n">section</span>
+	<span class="n">falg</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span> <span class="c1">//exit</span>
+	<span class="n">reminder</span> <span class="n">section</span> 
+<span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Mutual Exclusion： Yes</li>
+  <li>Progress： Yes</li>
+  <li>Bounded waiting： Yes</li>
+</ul>
+
+<h2 id="synchronization-hardware-solution">Synchronization Hardware Solution</h2>
+
+<p>Software-based solutions are not guaranteed to work on modern computer architecture</p>
+
+<p>Many systems provide hardware support for implementing the critical section code.</p>
+
+<p>Modern machines provide special atomic hardware instructions 
+Atomic = non-interruptible，the atomic hardware instruction will do the following work</p>
+
+<h3 id="disable-interrupts-中断屏蔽方法">Disable interrupts <em>中断屏蔽方法</em></h3>
+
+<p><em>Uniprocessors</em> -  could disable interrupts  <em>单处理器 禁止中断 实现</em>
+Currently running code would execute without preemption</p>
+<ul>
+  <li>Too inefficient</li>
+</ul>
+
+<blockquote>
+  <p>[!abstract]+ Advantage &amp; Disadvantage
+Advantage:</p>
+  <ul>
+    <li>简单</li>
+  </ul>
+
+  <p>Disadvantage:</p>
+  <ul>
+    <li>不适用于多处理机</li>
+    <li>只适用于操作系统内核进程，不适用于用户进程
+      <ul>
+        <li>因为开/关中断指令只能运行在内核态，这组指令不能让用户随意使用</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<h3 id="solution-to-critical-section-problem-using-locks">Solution to Critical-section Problem Using Locks</h3>
+
+<p>Use the idea of locking</p>
+<ul>
+  <li>Protecting critical regions via locks</li>
+  <li>A process that wants to enter the critical section must first get the lock.</li>
+  <li>If the lock is already acquired by another process, the process will wait until the lock becomes available.
+%% 	- Violate Progress <em>违反空闲让进</em>  %%</li>
+</ul>
+
+<blockquote>
+  <p>[!success]- Solution to Critical-section Problem Using Locks</p>
+  <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">do</span> <span class="p">{</span>
+	<span class="n">acquire</span> <span class="n">lock</span><span class="p">;</span> <span class="c1">// Entry section</span>
+	<span class="n">critical</span> <span class="n">section</span><span class="p">;</span>
+	<span class="n">release</span> <span class="n">lock</span><span class="p">;</span> <span class="c1">// Exit Section </span>
+	<span class="n">reminder</span> <span class="n">section</span><span class="p">;</span>
+<span class="p">}</span><span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<ol>
+  <li>Test memory word and set value</li>
+  <li>Swap contents of two memory words</li>
+</ol>
+
+<h3 id="test-and-set-instruction">Test and Set Instruction</h3>
+
+<blockquote>
+  <p>[!tip]+ TS 指令
+Definition:  TS 指令由硬件实现的，只能一气呵成。</p>
+</blockquote>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> <span class="nf">test_and_set</span><span class="p">(</span><span class="kt">bool</span> <span class="o">*</span><span class="n">target</span><span class="p">);</span> <span class="c1">// Do nothing just wait;</span>
+	<span class="cm">/*Critical  section*/</span>	
+ 	<span class="kt">bool</span> <span class="n">rv</span> <span class="o">=</span> <span class="o">*</span><span class="n">target</span><span class="err">；</span>
+ 	<span class="o">*</span><span class="n">target</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+ 	<span class="k">return</span> <span class="n">rv</span><span class="p">;</span>
+</code></pre></div></div>
+<ul>
+  <li>Using Test and Set:
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">do</span> <span class="p">{</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">test_and_set</span><span class="p">(</span><span class="o">&amp;</span><span class="n">lock</span><span class="p">));</span>
+  <span class="cm">/*Critical  section*/</span>	
+  <span class="n">lock</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="cm">/*Reminder Section*/</span>
+<span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<ol>
+  <li>This instruction is executed atomically by CPU as a single hardware instruction.</li>
+  <li>In practice, target is a pointer to the lock itself, shared by all the processes that want to acquire the lock.
+    <ul>
+      <li>If target if FALSE, the return value of <code class="language-plaintext highlighter-rouge">rv</code> is FALSE, means lock is FALSE (available), target’s new value is TRUE</li>
+      <li>If target is true, the return value of <code class="language-plaintext highlighter-rouge">rv</code> is TRUE, means lock is TRUE (locked)</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<ul>
+  <li>When lock = true, keep while looping.</li>
+  <li>When lock = false, process can enter the critical section</li>
+  <li>And set lock = true, block other processes to enter.</li>
+  <li>After finish the critical section, reset lock = false, to allow other processes to enter the critical section.</li>
+</ul>
+
+<blockquote>
+  <p>[!abstract]+ Advantage &amp; Disadvantage
+Advantage:</p>
+  <ul>
+    <li>实现简单</li>
+  </ul>
+
+  <p>Disadvantage:</p>
+  <ul>
+    <li>不满足“让权等待”</li>
+    <li>暂时无法进入临界区的进程会占用CPU并循环执行TSL指令，从而导致 “忙等</li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li>Mutual Exclusion： Yes</li>
+  <li>Progress： Yes</li>
+  <li>Bounded waiting： No <strong>?</strong></li>
+</ul>
+
+<h3 id="compare-and-swap-instruction">Compare and Swap Instruction</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Exchange Instruction </code>/<code class="language-plaintext highlighter-rouge">XCHG Instruction </code></p>
+
+<blockquote>
+  <p>[!tip]+ Swap 指令
+Definition:  TS 指令由硬件实现的，只能一气呵成。</p>
+  <ol>
+    <li>In practice, value is a pointer to the lock itself, shared by all the processes that want to acquire the lock.</li>
+    <li>Set 	<code class="language-plaintext highlighter-rouge">*value</code> (the lock) to the value of the passed parameter new_value but only if <code class="language-plaintext highlighter-rouge">*value</code> == expected. That is, the swap takes place only under this condition.</li>
+  </ol>
+</blockquote>
+
+<p>Returns as result the original value of the lock. Similar to test_and_set but with an integer lock and an extra condition.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">compare_and_swap</span> <span class="p">(</span><span class="kt">int</span> <span class="o">*</span><span class="n">value</span><span class="p">,</span> <span class="kt">int</span> <span class="n">expected</span><span class="p">,</span> <span class="kt">int</span> <span class="n">new_value</span><span class="p">){</span>
+ 	
+ 	<span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="o">*</span><span class="n">value</span><span class="p">;</span>
+ 	<span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">value</span><span class="o">==</span><span class="n">expected</span><span class="p">)</span>
+ 		<span class="o">*</span><span class="n">value</span><span class="o">=</span><span class="n">new_value</span><span class="p">;</span>
+ 	<span class="k">return</span> <span class="n">temp</span><span class="p">;</span>
+ <span class="p">}</span>
+</code></pre></div></div>
+<blockquote>
+  <p>Lock: 上锁</p>
+</blockquote>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> 
+<span class="nf">while</span><span class="p">(</span><span class="n">test_and_set</span><span class="p">(</span><span class="o">&amp;</span><span class="n">lock</span><span class="p">));</span>
+<span class="n">lock</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="mutex-lock-互斥锁">Mutex Lock <em>互斥锁</em></h2>
+
+<p><code class="language-plaintext highlighter-rouge">Previous hardware-based solutions are complicated and generally inaccessible to application programmers</code></p>
+
+<p>OS designers build <code class="language-plaintext highlighter-rouge">high level</code> software tools to solve critical section problem</p>
+<blockquote>
+  <p>[!info]+ Mutex Lock</p>
+  <ul>
+    <li>Use mutex lock to protect a critical section by first
+      <ul>
+        <li>acquire() a lock then release() the lock</li>
+      </ul>
+    </li>
+    <li>Assumption: Calls to acquire() and release() must be atomic
+      <ul>
+        <li>Usually implemented via hardware atomic instructions</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">acquire</span> <span class="p">(){</span>
+	<span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">available</span><span class="p">);</span>
+	<span class="n">available</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">release</span> <span class="p">(){</span>
+	<span class="n">available</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This solution still requires busy waiting  This lock therefore is called a spin lock</p>
+<ul>
+  <li><em>忙等待</em> 违反让权等待</li>
+  <li><em>spin lock</em>  TSL, SWAP, 单标志法</li>
+</ul>
+
+<blockquote>
+  <p>需忙等，进程时间片用完才下处理机，违反让权等待
+一般用于多处理器，一个核忙等，其他核照常工作，并快速释放临界区
+不太适用于单处理机系统、忙等的过程中不可能解锁</p>
+</blockquote>
+
+<h2 id="semaphore-信号量">Semaphore <em>信号量</em></h2>
+
+<blockquote>
+  <p>[!info]+ Background 
+Semaphore is a synchronization tool more sophisticated than mutex locks</p>
+  <ul>
+    <li>用户进程可以通过使用操作系统提供的一对原语来对信号量进行操作，从而很方便的实现了进程互斥、进程同步。
+      <ul>
+        <li>从而很方便的实现了进程互斥、进程同步。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><em>信号量</em>其实就是一个变量(可以是一个<em>整数</em>，也可以是更复杂的<em>记录型变量</em>)，可以用一个信号量来表示系统中某种资源的数量</p>
+  <ul>
+    <li>比如:系统中只有一台打印机，就可以设置一个初值为1的信号量</li>
+  </ul>
+
+  <p>原语是一种特殊的程序段，其执行只能一气呵成，不可被中断。<strong>原语是由关中断/开中断指令实现的。</strong> 软件解决方案的主要问题是由 <strong>“进入区的各种操作无法一气呵成”</strong>，因此如果能把进入区、退出区的操作都用“原语”实现，使这些操作能“一气呵成”就能避免问题。</p>
+  <ul>
+    <li>一对原语:wait(s)原语和signal(s)原语，可以把原语理解为我们自己写的函数，函数名分别为wait和signal，括号里的信号量S其实就是函数调用时传入的一个参数。</li>
+    <li><em>Wait、signal</em> 原语常简称为P、V操作(来自荷兰语<code class="language-plaintext highlighter-rouge">proberen</code>和<code class="language-plaintext highlighter-rouge">verhogen</code>)。</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>POSIX Named Semaphore Normally used among <strong>different processes</strong>
+POSIX Named Semaphore Normally used among <strong>different threads within a process</strong></p>
+</blockquote>
+
+<h3 id="整型信号量"><em>整型信号量</em></h3>
+
+<p>Semaphore S: an integer variable S can only be accessed via two atomic operations</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kt">int</span> <span class="n">S</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+
+<span class="c1">//acquire lock</span>
+<span class="kt">void</span> <span class="nf">wait</span><span class="p">(</span><span class="kt">int</span> <span class="n">S</span><span class="p">){</span>
+	<span class="k">while</span><span class="p">(</span><span class="n">S</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">){</span>
+		<span class="n">S</span><span class="o">-=</span><span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">//release lock</span>
+<span class="kt">void</span> <span class="nf">signal</span><span class="p">(</span><span class="kt">int</span> <span class="n">S</span><span class="p">){</span>
+	<span class="n">S</span><span class="o">+=</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>仍旧<em>Busy waiting</em></li>
+  <li>无法让权等待</li>
+</ul>
+
+<h3 id="纪录型信号量"><em>纪录型信号量</em></h3>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
+	<span class="kt">int</span> <span class="n">value</span><span class="p">;</span>
+	<span class="k">struct</span> <span class="nc">process</span><span class="o">*</span> <span class="n">L</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">semaphore</span><span class="p">;</span>
+
+<span class="c1">// acquire lock</span>
+<span class="kt">void</span> <span class="nf">wait</span><span class="p">(</span><span class="n">semaphore</span> <span class="n">S</span><span class="p">){</span>
+	<span class="n">S</span><span class="p">.</span><span class="n">value</span><span class="o">--</span><span class="p">;</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">value</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">){</span>
+		<span class="n">block</span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">L</span><span class="p">);</span> <span class="c1">//阻塞该进程</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">//release lock</span>
+<span class="kt">void</span> <span class="nf">signal</span><span class="p">(</span><span class="n">semaphore</span> <span class="n">S</span><span class="p">){</span>
+	<span class="n">S</span><span class="p">.</span><span class="n">value</span><span class="o">++</span><span class="p">;</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">value</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">){</span>
+		<span class="n">wakeup</span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">L</span><span class="p">);</span> <span class="c1">//唤醒进程为就绪态</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h3 id="semaphore-mechanism-implements-process-mutual-exclusion-synchronization-and-precursor">Semaphore mechanism implements process mutual exclusion, synchronization and precursor</h3>
+
+<p><code class="language-plaintext highlighter-rouge">信号量机制实现进程互斥、同步、前驱</code>
+$P(S)$ 申请一个资源<code class="language-plaintext highlighter-rouge">S</code>, 如果资源不够就阻塞等待
+$V(S)$ 释放一个资源<code class="language-plaintext highlighter-rouge">S</code>, 如果有进程在等待该资源，则唤醒一个进程</p>
+
+<h3 id="process-mutual-exclusion-信号量机制实现进程互斥">Process mutual exclusion <code class="language-plaintext highlighter-rouge">信号量机制实现进程互斥</code></h3>
+
+<ol>
+  <li>分析并发进程的关键活动，划定临界区</li>
+  <li>设置互斥信号量mutex，初值为1</li>
+  <li>进入区P(mutex) – 申请资源</li>
+  <li>退出区V(mutex) – 释放资源</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">semaphore</span> <span class="n">mutex</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+
+<span class="n">P1</span><span class="p">(){</span>
+	<span class="n">P</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+	<span class="p">...;</span>
+	<span class="n">V</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">P2</span><span class="p">(){</span>
+	<span class="n">P</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+	<span class="p">...;</span>
+	<span class="n">V</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<blockquote>
+  <p>[!warning]- P, V操作必须成对出现</p>
+  <ul>
+    <li>缺少P(mutex) 就不能保证临界资源的互斥访问。</li>
+    <li>缺少V(mutex) 会导资源永不被释放，等待进程永不被唤醒。</li>
+  </ul>
+</blockquote>
+
+<h3 id="process-synchronization-信号量机制实现进程同步">Process synchronization <code class="language-plaintext highlighter-rouge">信号量机制实现进程同步</code></h3>
+
+<ol>
+  <li>分析什么地方需要实现“同步关系”，即 “一前一后” 执行的两个操作</li>
+  <li>设置同步信号量<code class="language-plaintext highlighter-rouge">S</code>，初始为0</li>
+  <li>在<code class="language-plaintext highlighter-rouge">前操作</code>之后执行 <code class="language-plaintext highlighter-rouge">V(S)</code></li>
+  <li>在<code class="language-plaintext highlighter-rouge">后操作</code>之前执行 <code class="language-plaintext highlighter-rouge">P(S)</code>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">前V后P</code></li>
+    </ul>
+  </li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">semaphore</span> <span class="n">S</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="n">P1</span><span class="p">(){</span>
+	<span class="p">...;</span>
+	<span class="n">V</span><span class="p">(</span><span class="n">S</span><span class="p">);</span>
+	<span class="p">...;</span>
+<span class="p">}</span>
+<span class="n">P2</span><span class="p">(){</span>
+	<span class="n">P</span><span class="p">(</span><span class="n">S</span><span class="p">);</span>
+	<span class="p">...;</span>
+	<span class="p">...;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>保证了只能先执行<code class="language-plaintext highlighter-rouge">P1()</code>再执行	<code class="language-plaintext highlighter-rouge">P2()</code></p>
+
+<h3 id="process-precursor-信号量机制实现进程前驱">Process precursor <code class="language-plaintext highlighter-rouge">信号量机制实现进程前驱</code></h3>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Process_Synchornization_Semaphore.png" alt="Process precursor" /></p>
+
+<h2 id="classic-problems-of-synchronization">Classic Problems of Synchronization</h2>
+
+<ul>
+  <li>Producer consumer problem <em>Bounded-Buffer Problem</em></li>
+  <li>Readers Writers Problem</li>
+  <li>Dining Philosophers Problem</li>
+</ul>
+
+<h3 id="producer-consumer-problem-生产者消费者问题">Producer consumer problem <code class="language-plaintext highlighter-rouge">生产者消费者问题</code></h3>
+
+<blockquote>
+  <p>[!question]+ Producer-Consumer problem</p>
+  <ul>
+    <li>n buffers, each holds one item</li>
+    <li>Semaphore mutex initialized to the value 1</li>
+    <li>Semaphore full initialized to the value 0</li>
+    <li>Semaphore empty initialized to the value n</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!info]- 生产者消费者问题</p>
+  <ul>
+    <li>系统中有一组生产者进程和一组消费者进程，生产者进程每次生产一个产品进程每次从缓冲区中取出一个产品并使用。(注:这里的“产品”理解为某种数据)
+生产者、消费者共享一个初始为空、大小为n的缓冲区。
+只有缓冲区没满时，生产者才能把产品放入缓冲区，否则必须等待。 <strong>同步关系</strong>
+只有缓冲区不空时，消费者才能从中取出产品，否则必须等待。 <strong>同步关系</strong>
+缓冲区是临界资源，各进程必须互斥地访问。 <strong>互斥关系</strong>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Producer-Consumer-Problem.png" alt="Producer consumer problem" /></li>
+  </ul>
+</blockquote>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">semaphore</span> <span class="n">mutex</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// 互斥信号量，实现对缓冲区的互斥访问</span>
+<span class="n">semaphore</span> <span class="n">empty</span> <span class="o">=</span> <span class="n">n</span><span class="p">;</span> <span class="c1">// 同步信号量，表示空闲缓冲区的数量</span>
+<span class="n">semaphore</span> <span class="n">full</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// 同步信号量，表示产品的数量，也即非空缓冲区的数量</span>
+
+<span class="n">producer</span><span class="p">(){</span>
+	<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+		<span class="p">...;</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">empty</span><span class="p">);</span><span class="c1">//消耗一个空闲缓冲区</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+		<span class="p">...;</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">full</span><span class="p">);</span> <span class="c1">//增加一个产品</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">consumer</span><span class="p">(){</span>
+	<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">full</span><span class="p">);</span> <span class="c1">//消耗一个产品</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+		<span class="p">...;</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">empty</span><span class="p">);</span> <span class="c1">//增加一个空闲区</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>[!tip]+ 同步关系在线程之间实现，互斥关系在线程内实现</p>
+</blockquote>
+
+<h4 id="multi-producer-and-consumer-problem">Multi-Producer and Consumer Problem</h4>
+
+<p><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Multi-Producer-Consumer-Problem.png" alt="Multi-Producer and Consumer Problem" /></p>
+
+<h3 id="smokers-problem-吸烟者问题">Smokers Problem <code class="language-plaintext highlighter-rouge">吸烟者问题</code></h3>
+
+<blockquote>
+  <p>[!question]+ Smokers Problem</p>
+  <ol>
+    <li>假设一个系统有三个抽烟者进程和一个供应者进程。</li>
+    <li>每个抽烟者不停地卷烟并抽掉它，但是要卷起并抽掉一支烟，抽烟者需要有三种材料:烟草、纸和胶水。</li>
+    <li>三个抽烟者中，第一个拥有烟草、第二个拥有纸、第三个拥有胶水。</li>
+    <li>供应者进程无限地提供三种材料，供应者每次将两种材料放桌子上，拥有剩下那种材料的抽烟者卷一根烟并抽掉它，并给供应者进程一个信号告诉完成了，供应者就会放另外两种材料再桌上，这个过程一直重复(让三个抽烟者轮流地抽烟)
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Smokers-Problem.png" alt="Smokers Problem" /></li>
+  </ol>
+</blockquote>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">semaphore</span> <span class="n">offer1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">semaphore</span> <span class="n">offer2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">semaphore</span> <span class="n">offer3</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">semaphore</span> <span class="n">finish</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="n">provider</span><span class="p">(){</span>
+	<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="mi">0</span><span class="p">){</span>
+			<span class="p">...;</span><span class="c1">// put Combination-1</span>
+			<span class="n">V</span><span class="p">(</span><span class="n">offer1</span><span class="p">);</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="mi">2</span><span class="p">){</span>
+			<span class="p">...;</span><span class="c1">// put Combination-2</span>
+			<span class="n">V</span><span class="p">(</span><span class="n">offer2</span><span class="p">);</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="mi">3</span><span class="p">){</span>
+			<span class="p">...;</span><span class="c1">// put Combination-3</span>
+			<span class="n">V</span><span class="p">(</span><span class="n">offer3</span><span class="p">);</span>
+		<span class="p">}</span>
+		<span class="n">i</span><span class="o">=</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">3</span><span class="p">;</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">finish</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">smoker1</span><span class="p">(){</span>
+	<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">offer1</span><span class="p">);</span>
+		<span class="p">...;</span><span class="c1">// Get Combination-1</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">finish</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="n">smoker2</span><span class="p">(){</span>
+	<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">offer2</span><span class="p">);</span>
+		<span class="p">...;</span><span class="c1">// Get Combination-2</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">finish</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="n">smoker3</span><span class="p">(){</span>
+	<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">offer3</span><span class="p">);</span>
+		<span class="p">...;</span><span class="c1">// Get Combination-3</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">finish</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h3 id="readers-writers-problem">Readers Writers Problem</h3>
+
+<blockquote>
+  <p>[!question]+ Readers-Writers Problem</p>
+  <ul>
+    <li>Allow multiple readers to read at the same time</li>
+    <li>Only one single writer can access the shared data at the same time</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!info]- Readers Writers Problem <code class="language-plaintext highlighter-rouge">读者写者问题</code>
+有读者和写者两组并发进程，共享一个文件，当两个或两个以上的读进程同时访问共享数据时不会产生副作用，但若某个写进程和其他进程(读进程或写进程)同时访问共享数据时则可能导致数据不一致的错误。</p>
+  <ol>
+    <li>允许多个读者可以同时对文件执行读操作;</li>
+    <li>只允许一个写者往文件中写信息;</li>
+    <li>任一写者在完成写操作之前不允许其他读者或写者工作;</li>
+    <li>写者执行写操作前，应让已有的读者和写者全部退出。</li>
+  </ol>
+</blockquote>
+
+<p>互斥关系：读进程-写进程，写进程-写进程</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">semaphore</span> <span class="n">rw</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// 用于实现对共享文件的互斥访问</span>
+<span class="kt">int</span> <span class="n">count</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>   <span class="c1">// 记录当前有几个读进程在访问文件</span>
+<span class="n">semaphore</span> <span class="n">mutex</span><span class="p">;</span> <span class="c1">// 用于保证对count变量的互斥访问</span>
+</code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">writer</span><span class="p">(){</span>
+	<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">rw</span><span class="p">);</span>
+		<span class="p">...;</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">rw</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span> <span class="c1">// 各读进程互斥访问count</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="c1">// 第一个读进程关门</span>
+			<span class="n">P</span><span class="p">(</span><span class="n">rw</span><span class="p">);</span>
+		<span class="n">count</span><span class="o">++</span><span class="p">;</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+		<span class="n">count</span><span class="o">--</span><span class="p">;</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="c1">// 最后一个读进程开门</span>
+			<span class="n">V</span><span class="p">(</span><span class="n">rw</span><span class="p">);</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+	<span class="p">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>这样的实现存在问题：
+如果一直有读进程进入那么写进程将会 <strong>starvation</strong>
+需要实现读写公平的算法</p>
+</blockquote>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">semaphore</span> <span class="n">rw</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// 用于实现对共享文件的互斥访问</span>
+<span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>   <span class="c1">// 记录当前有几个读进程在访问文件</span>
+<span class="n">semaphore</span> <span class="n">mutex</span><span class="p">;</span> <span class="c1">// 用于保证对count变量的互斥访问</span>
+<span class="n">semaphore</span> <span class="n">w</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">//实现读写公平 可以理解成排队</span>
+</code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">writer</span><span class="p">(){</span>
+	<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">w</span><span class="p">);</span>  <span class="c1">//谁先抢到 谁先排队</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">rw</span><span class="p">);</span>
+		<span class="p">...;</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">rw</span><span class="p">);</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">w</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">reader</span><span class="p">(){</span>
+	<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">w</span><span class="p">);</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span> <span class="c1">// 各读进程互斥访问count</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="c1">// 第一个读进程关门</span>
+			<span class="n">P</span><span class="p">(</span><span class="n">rw</span><span class="p">);</span>
+		<span class="n">count</span><span class="o">++</span><span class="p">;</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">w</span><span class="p">);</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+		<span class="n">count</span><span class="o">--</span><span class="p">;</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="c1">// 最后一个读进程开门</span>
+			<span class="n">V</span><span class="p">(</span><span class="n">rw</span><span class="p">);</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>[!success]+ <strong>Case Analysis</strong></p>
+  <ol>
+    <li>读者1 –&gt; 读者2
+读者2会被阻塞在<code class="language-plaintext highlighter-rouge">P(w)</code>, 直到读者1 <code class="language-plaintext highlighter-rouge">V(w)</code></li>
+    <li>写者1 –&gt; 写者2
+写者2会被阻塞在写者线程的<code class="language-plaintext highlighter-rouge">P(w)</code>, 直到写者1 <code class="language-plaintext highlighter-rouge">V(w)</code></li>
+    <li>写者1–&gt; 读者1
+读者1会被阻塞在读者线程的<code class="language-plaintext highlighter-rouge">P(w)</code>, 直到写者1 <code class="language-plaintext highlighter-rouge">V(w)</code></li>
+  </ol>
+
+  <p>总的来说，新增的 <code class="language-plaintext highlighter-rouge">w</code> 信号量实现了一个排队的功能，读者和写者都可以排队</p>
+</blockquote>
+
+<h3 id="dining-philosophers-problem">Dining Philosophers Problem</h3>
+
+<blockquote>
+  <p>[!question]+ Dining Philosophers Problem</p>
+  <ol>
+    <li>Philosophers spend their lives alternating thinking and eating Don’t interact with their neighbors, occasionally try to pick up 2 chopsticks (one at a time) to eat from bowl</li>
+    <li>Need both chopsticks to eat, then release both when done In the case of 5 philosophers
+      <ul>
+        <li>Shared data 
+ 	- Bowl of rice (data set)
+ 	- Semaphore chopstick [5] initialized to 1
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Dining_Philosophers_Problem.png" alt="Dining Philosophers Problem" /></li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!info]- 哲学家进餐问题</p>
+  <ol>
+    <li>一张圆桌上坐着5名哲学家，每两个哲学家之间的桌上摆一根筷子，桌子的中间是一碗米饭。</li>
+    <li>哲学家们倾注毕生的精力用于思考和进餐，哲学家在思考时，并不影响他人。</li>
+    <li>只有当哲学家饥饿时，才试图拿起左、右两根筷子(一根一根地拿起)。</li>
+    <li>如果筷子已在他人手上，则需等待。</li>
+    <li>饥饿的哲学家只有同时拿起两根筷子才可以开始进餐，当进餐完毕后，放下筷子继续思考。</li>
+  </ol>
+</blockquote>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">semaphore</span> <span class="n">chopstick</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
+<span class="n">Pi</span> <span class="p">(){</span> <span class="c1">//i 号哲学家的进程</span>
+	<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">chopstick</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span> <span class="c1">//Take Left chopstick </span>
+		<span class="n">P</span><span class="p">(</span><span class="n">chopstick</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">5</span><span class="p">]);</span> <span class="c1">//Take Right chopstick </span>
+		<span class="p">...;</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">chopstick</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span> <span class="c1">//Put Left chopstick </span>
+		<span class="n">V</span><span class="p">(</span><span class="n">chopstick</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">5</span><span class="p">]);</span> <span class="c1">//Put Right chopstick </span>
+		<span class="p">...;</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>如果每个哲学家同时拿起左边的筷子, 将导致死锁</p>
+
+<blockquote>
+  <p>[!success]+ Solution</p>
+  <ol>
+    <li>每次只允许4个哲学家拿筷子，这样最后至少会有一个哲学家可以进餐。
+<code class="language-plaintext highlighter-rouge">新定义一个等于4的信号量</code></li>
+    <li>奇数号哲学家拿左边筷子，偶数号拿右边筷子</li>
+    <li>仅当一个哲学家左右两双筷子都可以使用时才能拿起筷子</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ 解释仅当一个哲学家左右两双筷子都可以使用时才能拿起筷子
+更准确的说法应该是:各哲学家拿筷子这件事必须互斥的执行。</p>
+  <ul>
+    <li>这就保证了即使一个哲学家在拿筷子拿到一半时被阻塞，也不会有别的哲学家会继续尝试拿筷子。</li>
+    <li>这样的话，当前正在吃饭的哲学家放下筷子后，被阻塞的哲学家就可以获得等待的筷子了。</li>
+  </ul>
+</blockquote>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">semaphore</span> <span class="n">chopstick</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
+<span class="n">semaphore</span> <span class="n">mutex</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">//互斥地取筷子</span>
+<span class="n">Pi</span> <span class="p">(){</span> <span class="c1">//i 号哲学家的进程</span>
+	<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+		<span class="n">P</span><span class="p">(</span><span class="n">chopstick</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span> <span class="c1">//Take Left chopstick </span>
+		<span class="n">P</span><span class="p">(</span><span class="n">chopstick</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">5</span><span class="p">]);</span> <span class="c1">//Take Right chopstick </span>
+		<span class="n">V</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+		<span class="p">...;</span>
+		<span class="n">V</span><span class="p">(</span><span class="n">chopstick</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span> <span class="c1">//Put Left chopstick </span>
+		<span class="n">V</span><span class="p">(</span><span class="n">chopstick</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">5</span><span class="p">]);</span> <span class="c1">//Put Right chopstick </span>
+		<span class="p">...;</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="deadlock-and-starvation-死锁与饥饿">Deadlock and Starvation <em>死锁与饥饿</em></h2>
+
+<blockquote>
+  <p>[!info]+ Deadlock - Processes wait for each other</p>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ Starvation – indefinite blocking 
+A process may never be removed from the semaphore queue in which it is suspended</p>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ Priority Inversion – Scheduling problem when lower-priority
+Process holds a lock needed by higher-priority process</p>
+</blockquote>
+
+<h3 id="priority-inversion">Priority Inversion</h3>
+<blockquote>
+  <p>[!example]+ <strong>Priority Inversion Example Explained:</strong></p>
+  <ol>
+    <li><strong>Process Priorities and Resource Requirement:</strong>
+      <ul>
+        <li>Assume three processes: $L$, $M$, and $H$ with priorities $L &lt; M &lt; H$.</li>
+        <li>Process $H$ requires a resource $R$ which is currently held by process $L$.</li>
+      </ul>
+    </li>
+    <li><strong>Scenario Development:</strong>
+      <ul>
+        <li>Process $H$ must wait for $L$ to finish using the resource $R$ because $L$ has it locked.</li>
+        <li>However, process $M$ becomes runnable and, due to its higher priority compared to $L$, it preempts $L$.</li>
+      </ul>
+    </li>
+    <li><strong>Consequence of Priority Inversion:</strong>
+      <ul>
+        <li>Process $M$ (with middle priority) has affected how long process $H$ must wait for $L$ to relinquish resource $R$.</li>
+        <li>Even though $M$ does not need $R$, its operation delays $L’s$ release of $R$, thereby delaying $H$ further, which is a clear instance of priority inversion.</li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
+
+<p>This situation shows how a lower-priority task (in this case $L$) can indirectly prevent a higher-priority task $H$ from progressing by holding onto a needed resource longer due to the intervention of a medium-priority task ($M$). This is problematic in real-time systems where such delays can lead to failures or missed deadlines. Solutions often involve using priority inheritance protocols where $L$ would temporarily inherit $H’s$ higher priority to avoid being preempted by $M$, thus resolving the inversion more swiftly.</p>
+
+<blockquote>
+  <p>[!example]- <strong>优先级反转示例解释：</strong></p>
+  <ol>
+    <li><strong>进程优先级和资源需求：</strong>
+      <ul>
+        <li>假设有三个进程：$L$、$M$ 和 $H$，它们的优先级依次为 $L &lt; M &lt; H$。</li>
+        <li>进程 $H$ 需要一个资源 $R$，该资源当前由进程 $L$ 持有。</li>
+      </ul>
+    </li>
+    <li><strong>场景发展：</strong>
+      <ul>
+        <li>进程 $H$ 必须等待 $L$ 完成使用资源 $R$，因为 $L$ 正在锁定该资源。</li>
+        <li>然而，进程 $M$ 变为可运行状态，并由于其优先级高于 $L$，它抢占了 $L$。</li>
+      </ul>
+    </li>
+    <li><strong>优先级反转的后果：</strong>
+      <ul>
+        <li>中等优先级的进程 $M$ 影响了高优先级的进程 $H$ 必须等待低优先级的 $L$ 释放资源 $R$ 的时间。</li>
+        <li>尽管 $M$ 不需要 $R$ 资源，其操作延迟了 $L$ 释放 $R$，进而延迟了 $H$，这就是一个典型的优先级反转的例子。</li>
+      </ul>
+    </li>
+  </ol>
+
+  <p>这种情况显示了一个低优先级任务（在这个例子中是 $L$）如何因为持有所需资源而间接阻止高优先级任务（$H$）的进行，由于中优先级任务（$M$）的介入使得 $L$ 持有资源的时间延长。这在实时系统中是有问题的，因为这样的延迟可能导致故障或错过截止时间。解决方案通常涉及使用优先级继承协议，其中 $L$ 会暂时继承 $H$ 的更高优先级，以避免被 $M$ 抢占，从而更快地解决反转问题。</p>
+</blockquote>
+
+<blockquote>
+  <p>[!success]+ Solution:  <strong>Priority-Inheritance Protocol Explained:</strong></p>
+
+  <ol>
+    <li><strong>Protocol Basics:</strong>
+      <ul>
+        <li>All processes accessing resources needed by a higher-priority process inherit the higher priority until they are finished with the resources in question.</li>
+        <li>When these processes complete their tasks involving the resource, their priorities revert to their original values.</li>
+      </ul>
+    </li>
+    <li><strong>Problem Resolution:</strong>
+      <ul>
+        <li>By allowing lower-priority processes (like process $L$ in the earlier example) to inherit the higher priority of a blocked higher-priority process (like process $H$), the system reduces the chance that a medium-priority process (like process $M$) will preempt them.</li>
+        <li>This inheritance ensures that the lower-priority process can complete its use of the resource more quickly, thereby freeing up the resource for the higher-priority process.</li>
+      </ul>
+    </li>
+    <li><strong>Effectiveness:</strong>
+      <ul>
+        <li>This protocol effectively resolves the problem where a lower-priority process blocks a higher-priority one by holding a needed resource, as seen in the previous examples.</li>
+        <li>It reduces the wait time for high-priority processes, ensuring they can proceed with minimal delay, thus adhering more closely to their intended scheduling priorities.</li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]- 优先级继承协议</p>
+  <ul>
+    <li>在优先级继承协议中，当一个低优先级进程使用一个高优先级进程所需的资源时，低优先级进程的优先级会被临时提升到高优先级进程的级别。</li>
+    <li>这样做的目的是防止中等或其他低优先级的进程在此期间抢占资源，从而允许低优先级进程更快地完成对资源的使用并释放它，这样高优先级的进程就可以不受延迟地访问所需的资源。</li>
+  </ul>
+</blockquote>
+
+<h2 id="monitors-管程">Monitors <em>管程</em></h2>
+
+<blockquote>
+  <p>[!info]+  Monitors <code class="language-plaintext highlighter-rouge">管程</code></p>
+  <ul>
+    <li>A high-level abstraction that provides a convenient and effective mechanism for process synchronization
+      <ul>
+        <li>Abstract data type, internal variables only accessible via procedures</li>
+        <li>Only <em>one process may be active</em> within the monitor at a time</li>
+        <li>Can utilize condition variables to suspend or resume processes</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">monitor</span> <span class="n">monitor</span><span class="o">-</span><span class="n">name</span> <span class="p">{</span> <span class="c1">// shared variable declarations</span>
+	<span class="n">procedure</span> <span class="n">P1</span> <span class="p">(...)</span> <span class="p">{...}</span> 
+	<span class="n">procedure</span> <span class="nf">Pn</span> <span class="p">(...)</span> <span class="p">{...}</span> 
+	<span class="n">Initialization</span> <span class="nf">code</span> <span class="p">(...)</span> <span class="p">{...}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>A programmer who needs to write a tailor-made synchronization scheme can define one or more condition variables.</li>
+</ul>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/OperatingSystem/OperatingSystem">OperatingSystem</a><br>
+                    <!-- <div style="font-size: 0.9em">[[OperatingSystem]]
+</div> -->
+                </div>
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/OperatingSystem/Process-Synchronization">Process Synchronization</a><br>
+                    <!-- <div style="font-size: 0.9em">[[Process-Synchronization]]
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+<style>
+  pre.language-vega-lite,
+  code.language-vega-lite {
+    display: none;
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-vega-lite"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+        vegaEmbed(m, JSON.parse(x.textContent));
+      }'
+></script>
+
+
+
+
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+

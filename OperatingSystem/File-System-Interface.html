@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    File System Interface &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="File System Interface" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="[[File-System-Interface]]" />
+<meta property="og:description" content="[[File-System-Interface]]" />
+<link rel="canonical" href="https://allenygy.github.io/OperatingSystem/File-System-Interface" />
+<meta property="og:url" content="https://allenygy.github.io/OperatingSystem/File-System-Interface" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-13T13:40:44+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="File System Interface" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-09-13T13:40:44+08:00","datePublished":"2024-09-13T13:40:44+08:00","description":"[[File-System-Interface]]","headline":"File System Interface","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/OperatingSystem/File-System-Interface"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/OperatingSystem/File-System-Interface"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://allenygy.github.io">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://allenygy.github.io">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/contents">
+        <i class="fa-solid fa-book fa-fw"></i> 目录
+      </a>
+      
+      <a class="sidebar-nav-item" href="/OS">
+        <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DCN">
+        <i class="fa-solid fa-network-wired"></i> 计算机网络
+      </a>
+      
+      <a class="sidebar-nav-item" href="/CO">
+        <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Program">
+        <i class="fa-solid fa-code fa-fw"></i> 编程语言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Math">
+        <i class="fa-solid fa-tools fa-fw"></i> 数学
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DBM">
+        <i class="fa-solid fa-database fa-fw"></i> 数据库
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Tools">
+        <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/links">
+        <i class="fa-solid fa-user-friends fa-fw"></i> 友链
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#file-system-interface">File-System-Interface</a>
+    <ol>
+      <li><a href="#file">File</a>
+        <ol>
+          <li><a href="#file-attributes">File Attributes</a></li>
+          <li><a href="#file-operation">File Operation</a></li>
+          <li><a href="#file-locking">File Locking</a></li>
+          <li><a href="#file-types">File Types</a></li>
+        </ol>
+      </li>
+      <li><a href="#file-access-methods">File Access Methods</a></li>
+      <li><a href="#directory-and-disk-structure">Directory and Disk Structure</a>
+        <ol>
+          <li><a href="#directory-structure">Directory Structure</a></li>
+          <li><a href="#disk-structure">Disk Structure</a></li>
+          <li><a href="#drive">Drive</a></li>
+          <li><a href="#partition">Partition</a></li>
+          <li><a href="#volume">Volume</a></li>
+          <li><a href="#file-system-types">File system types</a></li>
+          <li><a href="#directory-organization">Directory organization</a>
+            <ol>
+              <li><a href="#tree-structured-directories">Tree Structured directories</a></li>
+              <li><a href="#acyclic-graph-directories">Acyclic-Graph Directories</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#file-system-mounting">File System Mounting</a></li>
+      <li><a href="#file-sharing">File Sharing</a></li>
+      <li><a href="#file-protection">File Protection</a>
+        <ol>
+          <li><a href="#access-lists-and-groups">Access Lists and Groups</a></li>
+          <li><a href="#remote-file-sharing">Remote File Sharing</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "03/20/2024 16:27:40")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/ALLENYGY/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        47万
+        
+          
+        
+        6千
+        310字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">File System Interface</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2024-06-11 01:14:00 Tuesday
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2024-05-11 14:08:00 Saturday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        6424字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        22分
+        
+        
+        
+        <br>
+        
+        OS, FileSystem, and NOTE
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="file-system-interface"><a class="internal-link" href="/OperatingSystem/File-System-Interface">File-System-Interface</a></h1>
+
+<blockquote>
+  <p>[!abstract]+ File System Interface</p>
+  <ul>
+    <li>File Concept</li>
+    <li>Access Methods</li>
+    <li>Disk and Directory Structure</li>
+    <li>File System Mounting</li>
+    <li>File Sharing</li>
+    <li>Protection</li>
+  </ul>
+</blockquote>
+
+<h2 id="file">File</h2>
+
+<blockquote>
+  <p>[!question]+ What is File?</p>
+  <ol>
+    <li>A named collection of related information that is recorded on secondary storage.
+      <ul>
+        <li>(e.g. Disk, SSD, Flash, etc.)</li>
+      </ul>
+    </li>
+    <li>A sequence of bits, bytes, lines, or records
+      <ul>
+        <li>the meaning of which is defined by the file’s creator</li>
+      </ul>
+    </li>
+    <li>Smallest logical storage unit for user view</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!tip]+ File Property</p>
+  <ul>
+    <li><em>Contiguous</em> logical address space</li>
+    <li>Represents <em>programs or data</em></li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!success]+ File system resides on secondary storage (disks)</p>
+
+  <ul>
+    <li>Provides user interface to storage, mapping logical to physical.</li>
+    <li>Provides efficient and convenient access to disk by allowing data to be stored, located, retrieved easily.</li>
+  </ul>
+</blockquote>
+
+<h3 id="file-attributes">File Attributes</h3>
+
+<blockquote>
+  <p>[!abstract]+ File attributes</p>
+  <ul>
+    <li>Name – only information kept in human-readable form</li>
+    <li>Identifier – unique tag (number) identifies file within file system</li>
+    <li>Type – needed for systems that support different types</li>
+    <li>Location – pointer to file location on device</li>
+    <li>Size – current file size</li>
+    <li>Protection – controls who can do reading, writing, executing</li>
+    <li>Time, date, and user identification – data for protection, security, and usage monitoring</li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li>Information about files <em>metadata</em> are kept in the directory structure, which is maintained on the disk</li>
+</ul>
+
+<h3 id="file-operation">File Operation</h3>
+
+<blockquote>
+  <p>[!abstract]+ Basic File Operations</p>
+  <ol>
+    <li>Create a file</li>
+    <li>Write a file</li>
+    <li>Read a file</li>
+    <li>Reposition within a file</li>
+    <li>Truncate a file^[截断文件的操作通常用于快速清空文件内容而不删除文件本身，这在需要保留文件但不需要其内容的场景中非常有用。例如，日志文件管理中，当日志文件达到一定大小需要被清空重写时，可以使用截断操作来实现。]
+ 	- File is reset to length zero 
+ 		- 当一个文件被截断时，其内容被清空，文件的长度被重置为零。这意味着文件中原有的所有数据都将被删除。
+ 	- File space is released
+ 		- 截断文件后释放的空间指的是之前文件内容所占用的存储空间被系统回收。这样可以提高存储效率，为其他文件或数据释放空间。
+ 	- File attributes are unchanged
+ 		- 尽管文件的内容和大小发生了改变，文件的属性（如修改时间、访问权限等）保持不变。这意味着文件的元数据，除了与文件大小相关的部分，不会因为截断操作而受到影响。</li>
+    <li>Delete a file</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>Except file creation and deletion, all other operations need to <em>open</em> the file <em>first</em> and then <em>close</em> the file <em>after</em> the operation</p>
+</blockquote>
+
+<h3 id="file-locking">File Locking</h3>
+
+<ul>
+  <li>Lock of file is provided by some operating systems</li>
+  <li><em>Similar to reader writer locks</em></li>
+</ul>
+
+<blockquote>
+  <p>[!abstract]+ Two Kinds of Lock
+<strong>Shared lock</strong></p>
+  <ul>
+    <li><em>Similar to reader lock</em></li>
+    <li>Several processes can acquire concurrently</li>
+  </ul>
+
+  <p><strong>Exclusive lock</strong></p>
+  <ul>
+    <li><em>Similar to writer lock</em></li>
+    <li><em>Mandatory lock</em>
+      <ul>
+        <li>Once a process acquires an exclusive lock, the operating system will prevent any other process from accessing the locked file
+          <ul>
+            <li>Windows</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><em>Advisory lock</em>
+      <ul>
+        <li>it is up to software developers to ensure that locks are appropriately acquired and released
+          <ul>
+            <li>Unix/Linux</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<h3 id="file-types">File Types</h3>
+
+<p><strong>The OS uses the extension to indicate the type of the file.</strong></p>
+
+<blockquote>
+  <p>[!example]- Most common types</p>
+  <ul>
+    <li>.c</li>
+    <li>.exe</li>
+    <li>.docx</li>
+    <li>.pdf</li>
+    <li>.jpg</li>
+    <li>.png</li>
+    <li>.zip</li>
+  </ul>
+</blockquote>
+
+<h2 id="file-access-methods">File Access Methods</h2>
+
+<ul>
+  <li>Sequential Access</li>
+  <li>Direct/Random Access</li>
+</ul>
+
+<blockquote>
+  <p>[!abstract]+ Access Methods</p>
+  <ul>
+    <li>Sequential Access
+      <ul>
+        <li>Commands
+          <ul>
+            <li>read_next</li>
+            <li>write_next</li>
+            <li>reset (to the beginning)</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Direct/Random Access
+      <ul>
+        <li>Commands
+          <ul>
+            <li>read next</li>
+            <li>write next</li>
+            <li>read n</li>
+            <li>write n</li>
+            <li>position to n</li>
+            <li>rewrite n</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><em>n = an index relative to the beginning of the file</em></p>
+  <ul>
+    <li>Index and Relative Files
+      <ul>
+        <li>Keep index in memory for fast determination of location of data to be operated on
+          <ul>
+            <li>E.g., VMS OS</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<h2 id="directory-and-disk-structure">Directory and Disk Structure</h2>
+
+<h3 id="directory-structure">Directory Structure</h3>
+
+<p><strong>A directory structure (per file system) is used to organize the files</strong></p>
+
+<p><em>Both the directory structure and the files reside on disk</em></p>
+
+<h3 id="disk-structure">Disk Structure</h3>
+
+<ul>
+  <li>Drive <em>驱动器</em></li>
+  <li>Partition <em>分区</em></li>
+  <li>Volume <em>卷</em></li>
+</ul>
+
+<h3 id="drive">Drive</h3>
+
+<ul>
+  <li>A drive is a physical block disk.</li>
+  <li>A drive can be subdivided into several logic block disks (partitions)</li>
+</ul>
+
+<h3 id="partition">Partition</h3>
+
+<ul>
+  <li>Disk or partition can be used raw
+    <ul>
+      <li>i.e., without a file system</li>
+    </ul>
+  </li>
+  <li>Partition can be formatted with a file system (cooked)
+    <ul>
+      <li>Root partition contains the OS kernel, and other system files</li>
+      <li>Other partitions can hold other <code class="language-plaintext highlighter-rouge">OSes</code>, other file systems, or be raw.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="volume">Volume</h3>
+
+<ul>
+  <li>A volume is a single accessible storage area with a single file system, a volume can contain multiple partitions</li>
+</ul>
+
+<h3 id="file-system-types">File system types</h3>
+
+<ul>
+  <li>General-purpose file systems
+    <ul>
+      <li>Mostly used, like Windows</li>
+    </ul>
+  </li>
+  <li>Special-purpose file systems
+    <ul>
+      <li>Solaris’s contract file system</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>[!tip]+  Basic operations</p>
+  <ul>
+    <li>Search for a file</li>
+    <li>Create a file</li>
+    <li>Delete a file</li>
+    <li>List a directory</li>
+    <li>Rename a file</li>
+    <li>Traverse the file system</li>
+  </ul>
+</blockquote>
+
+<p><strong>The directory is organized logically to obtain</strong></p>
+<ul>
+  <li>Efficient location of a files</li>
+  <li>Naming convenient to users
+    <ul>
+      <li>Two files in different directories can have the same name</li>
+      <li>The same file can have several different names</li>
+    </ul>
+  </li>
+  <li>Grouping of files with similar properties
+    <ul>
+      <li>put photos in a directory</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="directory-organization">Directory organization</h3>
+
+<ul>
+  <li>Single level directory</li>
+  <li>Two-level directory</li>
+  <li>Tree-structured directories</li>
+  <li>Acyclic graph directories</li>
+</ul>
+
+<h4 id="tree-structured-directories">Tree Structured directories</h4>
+
+<p>Tree structures is a tree of arbitrary height, mostly common directory structure</p>
+<ul>
+  <li>It allows users to create their own subdirectories and to organize their files accordingly.</li>
+  <li>Advantages
+    <ul>
+      <li>Efficient searching</li>
+      <li>Grouping capability</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="acyclic-graph-directories">Acyclic-Graph Directories</h4>
+
+<ul>
+  <li>A tree structure prohibits the sharing of files or directories.</li>
+  <li>An acyclic graph (a graph with no cycles) allows directories to share subdirectories and files</li>
+  <li>A file may have multiple different path names</li>
+  <li>Some <code class="language-plaintext highlighter-rouge">OSes</code> simply do not allow shared directories or links</li>
+</ul>
+
+<blockquote>
+  <p>[!question]+  How do we guarantee no cycles?</p>
+  <ol>
+    <li>
+      <p>Allow only links to file not subdirectories</p>
+    </li>
+    <li>
+      <p>Every time a new link is added, use a cycle detection algorithm to determine whether it is OK. Very expensive.</p>
+    </li>
+  </ol>
+</blockquote>
+
+<h2 id="file-system-mounting">File System Mounting</h2>
+
+<ul>
+  <li>A file system must be mounted before it can be accessed</li>
+  <li>An unmounted file system can be mounted at a mount point</li>
+  <li>The amount point must be an empty directory
+    <ul>
+      <li>i.e., original file system at the mount point must be removed if exists</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="file-sharing">File Sharing</h2>
+
+<ul>
+  <li>A file can be shared by multiple users</li>
+  <li>Access might be protected</li>
+  <li>The owner of a file is the user who can change attributes and grant access and who has the most control over the file.</li>
+  <li>The group attribute defines a subset of users who can share access to the file § The owner and group IDs of a given file (or directory) are stored as part of file attributes
+    <ul>
+      <li>User IDs identify users, allowing permissions and protections for a user</li>
+      <li>Group IDs allow users to be in groups, permitting group access rights</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="file-protection">File Protection</h2>
+
+<ul>
+  <li>When information is stored in a computer system, we want to keep it safe from physical damage (the issue of reliability) and improper access (the issue of protection)</li>
+  <li>File owner/creator should be able to control:
+    <ul>
+      <li>what can be done</li>
+      <li>by whom</li>
+    </ul>
+  </li>
+  <li>Types of access
+    <ul>
+      <li>Read: Read from the file.</li>
+      <li>Write: Write or rewrite the file.</li>
+      <li>Execute: Load the file into memory and execute it.</li>
+      <li>Append: Write new information at the end of the file.</li>
+      <li>Delete: Delete the file and free its space for possible reuse.</li>
+      <li>List: List the name and attributes of the file</li>
+    </ul>
+  </li>
+  <li>Other operations, such as renaming, copying, and editing the file, are high levels, done through read, write access.</li>
+</ul>
+
+<h3 id="access-lists-and-groups">Access Lists and Groups</h3>
+
+<ul>
+  <li>Each file and directory has an access-control list (ACL)</li>
+  <li>lists user names and the types of access allowed for each user.</li>
+  <li>Three modes of access
+    <ul>
+      <li>Read (R),</li>
+      <li>Write (W)</li>
+      <li>Execute (X)</li>
+    </ul>
+  </li>
+  <li>The UNIX system defines three fields (owner, group, public) of three bits (RWX)</li>
+  <li>Three classes of users on Unix / Linux</li>
+</ul>
+
+<p>Three classes of users on Unix / Linux RWX creator</p>
+<ul>
+  <li>Owner access 7  111</li>
+  <li>Group access  6  110</li>
+  <li>Public access  1   001</li>
+</ul>
+
+<h3 id="remote-file-sharing">Remote File Sharing</h3>
+
+<blockquote>
+  <p>[!info]+  Four implementation methods for remote file sharing</p>
+  <ul>
+    <li>Manually transferring files between machines via programs like ftp (file transfer protocol) 4 both anonymous and authenticated access</li>
+    <li>Use a distributed fil system (DFS), in which remote directories are visible from a local machine 4 tighter integration between the machine</li>
+    <li>The World Wide Web, is a reversion to the first. Use a browser to gain access to the remote files, and separate operations (essentially a wrapper for ftp) 4 anonymous access</li>
+    <li>Cloud computing 4 delivers computing, storage, and even applications as a service across a network.</li>
+  </ul>
+</blockquote>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/Management/TaskManagement">Task Management</a><br>
+                    <!-- <div style="font-size: 0.9em">[[TaskManagement]]
+</div> -->
+                </div>
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/OperatingSystem/File-System-Interface">File System Interface</a><br>
+                    <!-- <div style="font-size: 0.9em">[[File-System-Interface]]
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+<style>
+  pre.language-vega-lite,
+  code.language-vega-lite {
+    display: none;
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-vega-lite"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+        vegaEmbed(m, JSON.parse(x.textContent));
+      }'
+></script>
+
+
+
+
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+

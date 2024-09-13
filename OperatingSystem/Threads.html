@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    Threads &middot; AllenYGY的个人小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Threads" />
+<meta name="author" content="AllenYGY" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="[[Threads]]" />
+<meta property="og:description" content="[[Threads]]" />
+<link rel="canonical" href="https://allenygy.github.io/OperatingSystem/Threads" />
+<meta property="og:url" content="https://allenygy.github.io/OperatingSystem/Threads" />
+<meta property="og:site_name" content="AllenYGY的个人小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-13T13:40:44+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Threads" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"AllenYGY"},"dateModified":"2024-09-13T13:40:44+08:00","datePublished":"2024-09-13T13:40:44+08:00","description":"[[Threads]]","headline":"Threads","mainEntityOfPage":{"@type":"WebPage","@id":"https://allenygy.github.io/OperatingSystem/Threads"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png"},"name":"AllenYGY"},"url":"https://allenygy.github.io/OperatingSystem/Threads"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: darkslateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Logo-4.png"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/icon/Myicon-0.png" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:allenygy@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/ALLENYGY">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://allenygy.github.io">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://allenygy.github.io">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/contents">
+        <i class="fa-solid fa-book fa-fw"></i> 目录
+      </a>
+      
+      <a class="sidebar-nav-item" href="/OS">
+        <i class="fa-solid fa-laptop fa-fw"></i> 操作系统
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DCN">
+        <i class="fa-solid fa-network-wired"></i> 计算机网络
+      </a>
+      
+      <a class="sidebar-nav-item" href="/CO">
+        <i class="fa-solid fa-atom fa-fw"></i> 计算机组成原理
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Program">
+        <i class="fa-solid fa-code fa-fw"></i> 编程语言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Math">
+        <i class="fa-solid fa-tools fa-fw"></i> 数学
+      </a>
+      
+      <a class="sidebar-nav-item" href="/DBM">
+        <i class="fa-solid fa-database fa-fw"></i> 数据库
+      </a>
+      
+      <a class="sidebar-nav-item" href="/Tools">
+        <i class="fa-solid fa-tools fa-fw"></i> 编程素养
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/links">
+        <i class="fa-solid fa-user-friends fa-fw"></i> 友链
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#threads">Threads</a>
+    <ol>
+      <li><a href="#process-vs-thread">Process vs. Thread</a>
+        <ol>
+          <li><a href="#thread">Thread</a></li>
+        </ol>
+      </li>
+      <li><a href="#multicore-programming">Multicore Programming</a>
+        <ol>
+          <li><a href="#concurrency-vs-parallelism">Concurrency vs. Parallelism</a></li>
+          <li><a href="#amdahls-law">Amdahl’s Law</a></li>
+          <li><a href="#gustafsons-law">Gustafson’s Law</a></li>
+        </ol>
+      </li>
+      <li><a href="#user-threads-and-kernel-threads">User Threads and Kernel Threads</a>
+        <ol>
+          <li><a href="#user-threads">User Threads</a></li>
+          <li><a href="#kernel-threads">Kernel Threads</a></li>
+        </ol>
+      </li>
+      <li><a href="#multithreading-models">Multithreading Models</a>
+        <ol>
+          <li><a href="#many-to-one">Many-to-One</a></li>
+          <li><a href="#one-to-one">One-to-One</a></li>
+          <li><a href="#many-to-many">Many-to-Many</a></li>
+        </ol>
+      </li>
+      <li><a href="#thread-libraries">Thread Libraries</a>
+        <ol>
+          <li><a href="#pthreads">Pthreads</a></li>
+        </ol>
+      </li>
+      <li><a href="#implicit-threading">Implicit Threading</a>
+        <ol>
+          <li><a href="#thread-pools">Thread Pools</a></li>
+          <li><a href="#fork-join-parallelism">Fork-Join Parallelism</a></li>
+          <li><a href="#openmp">OpenMP</a></li>
+        </ol>
+      </li>
+      <li><a href="#thread-local-storagetls">Thread-Local Storage(TLS)</a></li>
+      <li><a href="#thread-cancellation">Thread Cancellation</a></li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+  </span>天
+  <span id="run_time_hour">
+  </span>时
+  <span id="run_time_minute">
+  </span>分
+  <span id="run_time_second">
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "03/20/2024 16:27:40")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/ALLENYGY/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2024 ALLENYGY
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        46万
+        
+          
+        
+        6千
+        823字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">Threads</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2024-04-08 22:57:00 Monday
+        <br>
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2024-03-20 17:14:00 Wednesday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        10936字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        37分
+        
+        
+        
+        <br>
+        
+        OS, NOTE, and Lec4
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <h1 id="threads"><a class="internal-link" href="/OperatingSystem/Threads">Threads</a></h1>
+
+<h2 id="process-vs-thread">Process vs. Thread</h2>
+
+<h3 id="thread">Thread</h3>
+
+<blockquote>
+  <p>[!question]+ What is Threads?
+ A thread is a single sequence stream within a process.</p>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ Threads Property
+The threads of a process share resources at any given time.
+Resources including</p>
+  <ul>
+    <li>executable code</li>
+    <li>the values of its variables <code class="language-plaintext highlighter-rouge">code section, data section, OS resources</code></li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!question]+ What thread can do?
+Most modern applications are multi-threaded</p>
+  <ul>
+    <li>Kernels are generally multi-threaded</li>
+  </ul>
+
+  <p>Multiple tasks in an application can be implemented by separate threads</p>
+  <ul>
+    <li>Example: The following tasks can do in an application:
+      <ul>
+        <li>Update display</li>
+        <li>Fetch data</li>
+        <li>Spell checking</li>
+        <li>Answer a network request</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!success]+ Advantage of Threads</p>
+  <ol>
+    <li>Economy
+      <ul>
+        <li>Process creation: heavy-weight</li>
+        <li>Thread creation: light-weight</li>
+      </ul>
+    </li>
+    <li>Resource Sharing</li>
+    <li>Efficiency
+      <ul>
+        <li>Can simplify code</li>
+      </ul>
+    </li>
+    <li>Responsiveness
+      <ul>
+        <li>May allow continued execution if part of process is blocked</li>
+        <li>即使进程的部分被阻塞，仍可以继续运行</li>
+      </ul>
+    </li>
+    <li>Scalability
+      <ul>
+        <li>Process can take advantage of multicore architectures, with one or two threads per core</li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!failure]+ Disadvantage of Threads
+More difficult to program with threads
+New categories of bug are possible</p>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ Similarities
+Threads vs. Processes</p>
+  <ul>
+    <li>Threads share CPU and only one thread active (running) at a time. <code class="language-plaintext highlighter-rouge">在一个进程中</code></li>
+    <li>Threads within a processes execute sequentially.</li>
+    <li>Thread can create children.</li>
+    <li>If one thread is blocked, another thread can run.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ Difference</p>
+  <ul>
+    <li>A thread is a component of a process</li>
+    <li>Multiple threads can exist within one process.</li>
+    <li>Multiple threads execute concurrently and share resources such as memory, while different processes do not share these resources.</li>
+  </ul>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Processes</th>
+      <th style="text-align: center">Threads</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Typically independent</td>
+      <td style="text-align: center">Subsets of a process</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">More state information</td>
+      <td style="text-align: center">Share process state and resources</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Separate address spaces</td>
+      <td style="text-align: center">Same address space</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Interact throughIPC models: (shared memory/message passing)</td>
+      <td style="text-align: center">Variables</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Slower  context switching</td>
+      <td style="text-align: center">Faster context switching</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Might or might not assist one another</td>
+      <td style="text-align: center">Designed to assist one another</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="multicore-programming">Multicore Programming</h2>
+
+<p>Multi-core or multi-processor systems putting pressure on programmers</p>
+
+<p>Challenges include:</p>
+<ul>
+  <li>Dividing activities</li>
+  <li>Load Balance Data splitting</li>
+  <li>Data dependency</li>
+  <li>Testing and debugging</li>
+</ul>
+
+<h3 id="concurrency-vs-parallelism">Concurrency vs. Parallelism</h3>
+
+<blockquote>
+  <p>[!question]+ What is Concurrency ? <code class="language-plaintext highlighter-rouge">并发</code></p>
+  <ul>
+    <li>More than one task are progressing</li>
+    <li>Single processor / core, CPU scheduler providing concurrency by doing context switches</li>
+    <li>两个事件或多个事件在同一时间间隔内发生。事件在宏观上同时发生，但微观上是交替发生的
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Concurrency.png" alt="Concurrency " /></li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!question]+ What is Parallelism ? <code class="language-plaintext highlighter-rouge">并行</code></p>
+  <ul>
+    <li>More than one task are progressing</li>
+    <li>Single processor / core, CPU scheduler providing concurrency by doing context switches</li>
+    <li>指两个或者多个事件在同一时刻同时发生
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Parallelism.png" alt="Parallelism" /></li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!info]+ Type of Parallelism</p>
+  <ol>
+    <li><strong>Data parallelism</strong> – distributes subsets of the same data across multiple cores, same operation on each
+      <ul>
+        <li>Example: when doing image processing, two cores can each process half of the image</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Data-Parallelism.png" alt="Data Parallelism" /></li>
+      </ul>
+    </li>
+    <li><strong>Task parallelism</strong> – distributing threads across cores, each thread performing unique operation
+      <ul>
+        <li>Example: when doing sound processing, the sound data can move through each core in sequence, with each core doing a different kind of sound processing (filtering, echo, etc.)</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Task-Parallelism.png" alt="Task Parallelism" /></li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!todo]+ Parallelism implies concurrency, but concurrency does not imply parallelism.</p>
+</blockquote>
+
+<h3 id="amdahls-law">Amdahl’s Law</h3>
+
+<blockquote>
+  <p>[!info]+ Amdahl’s Law
+Identifies performance gains from adding additional cores to an application that has both serial and parallel components
+它是用来估计在给定部分程序能够并行化的前提下，多处理器系统相比于单处理器系统在执行该程序时能达到的最大加速比。
+\(Speedup = \frac{1}{S + \frac{(1-S)}{N}}\)</p>
+  <ul>
+    <li>$Speedup$ 是系统性能的提升倍数。</li>
+    <li>S is serial portion <code class="language-plaintext highlighter-rouge">串行部分</code></li>
+    <li>$N$ processing cores是处理器的数量。</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!tip]+ Proof:</p>
+  <ul>
+    <li><code class="language-plaintext highlighter-rouge">S</code> is serial portion, <code class="language-plaintext highlighter-rouge">P</code> is parallel portion of program.
+So <code class="language-plaintext highlighter-rouge">S + P = = 1</code></li>
+    <li>Assume that running time on one core: $R_1 = S + P = 1$</li>
+    <li>Then running time on <code class="language-plaintext highlighter-rouge">N</code> cores:  $R_N \geq S + \frac{P}{N} = S + \frac{1-S}{N}$
+(≥, not =, because of extra communication required between threads.)</li>
+    <li>Therefore,   $Speedup = \frac{R_1}{R_N} \leq  \frac{1} {S + \frac{1 - S}{N}}$</li>
+  </ul>
+</blockquote>
+
+<h3 id="gustafsons-law">Gustafson’s Law</h3>
+
+<blockquote>
+  <p>[!info]+ Gustafson’s Law
+Gustafson’s law addresses the shortcomings of Amdahl’s law
+It is based on the assumption of a fixed problem size
+\(Speedup = S + P \times N = S+ (1-S) \times N = N+(1-N)*S\)
+$Speedup$: theoretical scaled speedup of the program with parallelism.
+ N,S,P: meanings are same as in Amdahl algorithm.</p>
+</blockquote>
+
+<blockquote>
+  <p>[!summary]+
+ Gustafson’s Law强调了随着问题规模的增加，可以实现更高的并行度
+ Amdahl’s Law则强调了并行计算的理论上限。两者都在并行计算领域提供了重要的视角。</p>
+</blockquote>
+
+<h2 id="user-threads-and-kernel-threads">User Threads and Kernel Threads</h2>
+
+<h3 id="user-threads">User Threads</h3>
+
+<blockquote>
+  <p>[!info]+ User Threads
+Management^[thread creation, thread scheduling, etc.] done by user-level threads library.</p>
+</blockquote>
+
+<blockquote>
+  <p>[!success]+ Advantages
+No need for OS support 
+Works even on very old or very simple OS that does not have system calls for thread management.
+No system call required 
+Fast: only need a library function call.</p>
+</blockquote>
+
+<blockquote>
+  <p>[!failure]+ Disadvantages</p>
+  <ul>
+    <li>A process with only one thread gets as much CPU time as a process with many threads. <code class="language-plaintext highlighter-rouge">分配不合理</code></li>
+    <li>All the thread scheduling inside a process must be done at user level (not done by kernel)
+      <ul>
+        <li>Each thread must be nice and cooperate with the other threads in the process and regularly give CPU time to the other threads.</li>
+        <li>Program more complicated to write.</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<h3 id="kernel-threads">Kernel Threads</h3>
+
+<blockquote>
+  <p>[!info]+ Kernel Threads
+Management^[thread creation, thread scheduling, etc.] supported by the kernel
+Kernel Threads  是处理机分配的单位</p>
+</blockquote>
+
+<blockquote>
+  <p>[!success]+ Advantages
+Kernel knows how many threads each process contains so it can give more CPU time to the processes with many threads. <code class="language-plaintext highlighter-rouge">Kernel更好分配任务</code></p>
+  <ul>
+    <li>No need for threads to cooperate for scheduling
+      <ul>
+        <li>Thread scheduling done automatically by kernel</li>
+        <li>User program simpler to write.</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!failure]+ Disadvantages
+Every thread management operation requires a system call 
+Slower compared to user-level threads.
+ Kernel’s PCB data structures more complex
+ 	- The kernel needs to keep track of both processes and threads inside processes.</p>
+</blockquote>
+
+<h2 id="multithreading-models">Multithreading Models</h2>
+
+<ul>
+  <li>Many-to-One</li>
+  <li>One-to-One</li>
+  <li>Many-to-Many</li>
+</ul>
+
+<h3 id="many-to-one">Many-to-One</h3>
+
+<blockquote>
+  <p>[!info]+ Many-To-One</p>
+  <ul>
+    <li>Many user-level threads mapped to single kernel thread.</li>
+    <li>One thread blocking (waiting for something) causes all threads to block (because their common kernel thread is blocked).</li>
+    <li>Multiple threads may not run in parallel on multicore system because only one may be in kernel at a time.</li>
+    <li>Examples: 1. Solaris Green Threads 2. GNU Portable Threads</li>
+    <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Threads-Many-to-One.png" alt="Many-to-One" /></li>
+  </ul>
+</blockquote>
+
+<p>Few systems currently use this model.</p>
+
+<h3 id="one-to-one">One-to-One</h3>
+
+<blockquote>
+  <p>[!info]+ One-To-One</p>
+  <ul>
+    <li>Each user-level thread maps to kernel thread.</li>
+    <li>Creating a user-level thread creates a kernel thread.</li>
+    <li>More concurrency than many-to-one.</li>
+    <li>Number of threads per process sometimes restricted due to overhead.
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Threads-One-to-One.png" alt="One-to-One " />
+需要在用户态和内核态切换，开销大</li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li>Windows and Linux use this model</li>
+</ul>
+
+<h3 id="many-to-many">Many-to-Many</h3>
+
+<blockquote>
+  <p>[!info]+ Many-To-Many</p>
+  <ul>
+    <li>Allows many user level threads to be mapped to many kernel threads.</li>
+    <li>Allows the operating system to create a sufficient number of kernel threads.</li>
+    <li>Example: Windows with the ThreadFiber package. Otherwise not very common.
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Threads-Many-to-Many.png" alt="Many-to-Many " /></li>
+  </ul>
+</blockquote>
+
+<h2 id="thread-libraries">Thread Libraries</h2>
+
+<blockquote>
+  <p>[!info]+ What is Threads Library?
+Thread library provides programmer with API for creating and managing threads</p>
+</blockquote>
+
+<blockquote>
+  <p>[!tip]+ Two primary ways of implementation
+ Library entirely in user space (user threads only)
+ OS-level library supported by the kernel (user threads mapped to kernel threads, with one-to-one model for example).</p>
+</blockquote>
+
+<blockquote>
+  <p>[!tip]+ Three primary thread libraries:</p>
+  <ol>
+    <li>POSIX Pthreads</li>
+    <li>Windows threads</li>
+    <li>Java threads</li>
+  </ol>
+</blockquote>
+
+<h3 id="pthreads">Pthreads</h3>
+
+<blockquote>
+  <p>[!info]+ Pthreads
+May be provided either as user-level or kernel-level 
+A POSIX standard (IEEE 1003.1c) API for thread creation and synchronization 
+	- Specification, not implementation 
+	- API specifies behavior of the thread library, implementation is up to developers of the library 
+Common in UNIX operating systems (Linux &amp; Mac OS X)</p>
+</blockquote>
+
+<h2 id="implicit-threading">Implicit Threading</h2>
+
+<blockquote>
+  <p>[!info]+ Implicit Threading
+Implicit threading是一种编程方法，其中并行性是由编译器、运行时系统或其他并行编程框架自动管理的，而不是由程序员显式控制。</p>
+</blockquote>
+
+<blockquote>
+  <p>[!tip]+ Five methods explored</p>
+  <ol>
+    <li>Thread Pools</li>
+    <li>Fork-Join</li>
+    <li><a href="http://www.openmp.org/">OpenMP</a></li>
+    <li>Grand Central Dispatch^[a technology developed by Apple Inc. to optimize application support for systems with multi-core processors and other symmetric multiprocessing systems. It is an implementation of task parallelism based on the thread pool pattern.]</li>
+    <li>Intel Threading Building Blocks (TBB)^[Threading Building Blocks (TBB) is a C++ template library developed by Intel for parallel programming on multi-core processors. Using TBB, a computation is broken down into tasks that can run in parallel. The library manages and schedules threads to execute these tasks.]</li>
+  </ol>
+</blockquote>
+
+<h3 id="thread-pools">Thread Pools</h3>
+
+<blockquote>
+  <p>[!info]+ Thread Pools
+Create a number of threads in advance in a pool where they await work</p>
+  <ul>
+    <li>Advantages:
+      <ul>
+        <li>Usually slightly faster to service a request with an existing thread than create a new thread</li>
+        <li>Allows the number of threads in the application(s) to be bound to the size of the pool</li>
+        <li>Separating task to be performed from mechanics of creating task allows different strategies for running task</li>
+      </ul>
+    </li>
+    <li>Windows API supports thread pools:</li>
+    <li>Available in Java as well</li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li>
+    <p><strong>初始化</strong>：创建一个线程池，指定线程数量，通常基于可用的CPU核心数。</p>
+  </li>
+  <li>
+    <p><strong>任务提交</strong>：任务提交给线程池，而不是直接提交给某个线程。这些任务通常保持在一个队列中。</p>
+  </li>
+  <li>
+    <p><strong>任务执行</strong>：线程池中的空闲线程从队列中提取任务并执行。一旦线程完成了任务，它就可以用于另一个任务。</p>
+  </li>
+  <li>
+    <p><strong>优势</strong>：这样可以避免为每个任务创建和销毁线程的开销，这种开销可能很大。它还允许更好地控制活跃线程的数量，防止系统因为太多并发线程而过载。</p>
+  </li>
+  <li>
+    <p><strong>使用场景</strong>：线程池被用于服务器应用程序处理多个客户端连接，在工作队列管理中，以及任何任务可能成批出现并需要由限定数量的工作人员处理的情况。</p>
+  </li>
+</ul>
+
+<p>线程池是隐式线程的一种形式，因为程序员不直接管理线程生命周期或任务到线程的分配。相反，他们使用池和任务的更高级别抽象，而底层实现处理线程管理的细节。</p>
+
+<h3 id="fork-join-parallelism">Fork-Join Parallelism</h3>
+
+<blockquote>
+  <p>[!info]+ Fork-Join Parallelism
+Multiple threads (tasks) are forked, and then joined. 
+	-  Available in Java. （since Java SE7)
+	- Similar to Hadoop MapReduce operation</p>
+  <ul>
+    <li><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Fork-Join-Parallelism.png" alt="Fork-Join Parallelism" /></li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ Explain Fork-Join  Parallelism
+Fork-Join并行模型是一种实现并行处理的编程模式，特别适合于可以递归分解为更小问题的任务。这个模式通常是通过一种显式的方式使用的，但由于其高级的抽象性，它在某些上下文中也可以被看作是隐式线程的一种形式。</p>
+
+  <p><strong>Fork-Join模型解释：</strong></p>
+
+  <p>在Fork-Join模型中，主要的思想是将一个大的任务分解（Fork）成若干个小任务，这些小任务可以并行处理，处理完毕后再将结果合并（Join）起来。这种模型特别适合处理可以递归分解的问题，比如快速排序、归并排序、图像处理等。</p>
+
+  <p>Fork-Join并行模式通常在编程中通过特定的库（如Java中的java.util.concurrent库）来实现，这些库提供了创建任务、同步、以及合并结果的API。程序员需要明确地创建任务，并指定任务之间的分解和合并逻辑。</p>
+
+  <p><strong>为什么Fork-Join有时候被看作隐式线程：</strong></p>
+
+  <p>虽然Fork-Join模型通常需要程序员明确指定任务的拆分和合并，但是在一些现代编程框架中，如Java的Fork/Join框架，程序员不需要直接管理线程，而是通过高层次的任务（比如RecursiveAction和RecursiveTask）来表达并行逻辑。这些任务被提交到一个可以管理这些任务并自动处理线程分配和同步的线程池。在这个意义上，尽管Fork-Join模型需要程序员做一些并行设计，但线程的具体管理是由框架隐式完成的，所以可以认为这有隐式线程的特征。</p>
+</blockquote>
+
+<h3 id="openmp">OpenMP</h3>
+
+<blockquote>
+  <p>[!info]+ OpenMP
+Set of compiler directives and an API for C, C++, FORTRAN 
+Provides support for parallel programming in shared-memory environments 
+Identifies parallel regions – blocks of code that can run in parallel</p>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ Explain OpenMP
+OpenMP（Open Multi-Processing）是一个支持多平台共享内存并行编程的应用程序接口（API），其目的是为高性能计算提供一个便捷的方式来编写多线程的应用程序。它定义了一系列编译器指令、运行时库调用和环境变量，这些可以被用来指定高级别的并行性，无需程序员直接管理线程。</p>
+
+  <p><strong>主要特点</strong>：</p>
+
+  <ol>
+    <li>
+      <p><strong>跨平台</strong>：OpenMP可以在包括UNIX和Windows操作系统在内的多种平台上使用。</p>
+    </li>
+    <li>
+      <p><strong>简易性</strong>：通过编译器指令（通常称为pragma），程序员可以轻松地将串行代码并行化。例如，在C/C++中，一个简单的<code class="language-plaintext highlighter-rouge">#pragma omp parallel</code>就能够将代码块内的指令并行执行。</p>
+    </li>
+    <li>
+      <p><strong>灵活性</strong>：OpenMP允许程序员详细控制线程行为，例如分配和管理数据，以及优化并行执行的性能。</p>
+    </li>
+    <li>
+      <p><strong>可扩展性</strong>：OpenMP可以根据可用的处理器核心数自动调整并行任务的数量。</p>
+    </li>
+  </ol>
+
+  <p><strong>如何工作</strong>：</p>
+
+  <ul>
+    <li>
+      <p><strong>并行区域</strong>：使用<code class="language-plaintext highlighter-rouge">#pragma omp parallel</code>创建并行区域，该区域内的代码将被多个线程并行执行。</p>
+    </li>
+    <li>
+      <p><strong>循环并行化</strong>：对于迭代计算，可以使用<code class="language-plaintext highlighter-rouge">#pragma omp for</code>或<code class="language-plaintext highlighter-rouge">#pragma omp parallel for</code>指令来分配循环迭代给不同的线程。</p>
+    </li>
+    <li>
+      <p><strong>任务并行化</strong>：OpenMP 3.0及以后的版本支持任务并行，允许程序创建可以独立于循环并行化的异步任务。</p>
+    </li>
+    <li>
+      <p><strong>同步机制</strong>：OpenMP提供了多种同步机制，如屏障（<code class="language-plaintext highlighter-rouge">#pragma omp barrier</code>）、临界区（<code class="language-plaintext highlighter-rouge">#pragma omp critical</code>）和原子操作（<code class="language-plaintext highlighter-rouge">#pragma omp atomic</code>），用以控制线程间的执行顺序和数据访问。</p>
+    </li>
+    <li>
+      <p><strong>数据环境</strong>：可以使用<code class="language-plaintext highlighter-rouge">#pragma omp</code>指令的子句来管理数据的作用域（共享或私有）。</p>
+    </li>
+  </ul>
+
+  <p>OpenMP是一个成熟的API，被广泛应用于科学计算、工程模拟和数据分析等领域。由于它提供了一种高层次的抽象，并能自动处理许多与线程管理相关的复杂性，因此可以认为它在某种程度上提供了隐式线程管理。即使是在并行区域中，大部分的线程管理和同步工作都是自动完成的，使得开发者可以专注于算法的并行化，而不必深入底层的线程管理细节。</p>
+</blockquote>
+
+<h2 id="thread-local-storagetls">Thread-Local Storage(TLS)</h2>
+
+<blockquote>
+  <p>[!info]+ TLS</p>
+  <ul>
+    <li>Thread-local storage (TLS) allows each thread to have its own copy of data</li>
+    <li>Useful when you do not have control over the thread creation process (i.e., when using a thread pool)</li>
+    <li>Different from local variables  Local variables visible only during single function invocation
+      <ul>
+        <li>TLS visible across function invocations Similar to static data</li>
+        <li>TLS is unique to each thread</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>Linux declare a TLS variable:</p>
+  <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">_</span> <span class="kr">_thread</span> <span class="kt">int</span> <span class="n">number</span><span class="p">;</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<h2 id="thread-cancellation">Thread Cancellation</h2>
+
+<blockquote>
+  <p>[!info]+ Thread Concellation
+Terminating a thread before it has finished Thread to be canceled is target thread Two general approaches:</p>
+
+  <ol>
+    <li>
+      <p>Asynchronous cancellation terminates the target thread immediately<code class="language-plaintext highlighter-rouge">异步取消会立即终止目标线程</code></p>
+    </li>
+    <li>
+      <p>Deferred cancellation allows the target thread to periodically check if it should be cancelled <code class="language-plaintext highlighter-rouge">延迟取消允许目标线程定期检查是否应该取消</code></p>
+    </li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ 
+Invoking thread cancellation requests cancellation, but actual cancellation depends on thread state
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/OS/Thread-state.png" alt="Thread-state" />
+If thread has cancellation disabled, cancellation remains pending until thread enables it
+Default type is deferred</p>
+  <ul>
+    <li>Cancellation only occurs when thread reaches cancellation point
+      <ul>
+        <li>i.e. pthread_testcancel()</li>
+        <li>Then cleanup handler is invoked</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p>[!example]+ Windows Threads</p>
+  <ul>
+    <li>Windows API – primary API for Windows applications</li>
+    <li>Implements the one-to-one mapping, kernel-level</li>
+    <li>Each thread contains
+      <ul>
+        <li>A thread id</li>
+        <li>Register set representing state of processor</li>
+        <li>Separate user and kernel stacks for when thread runs in user mode or kernel mode</li>
+        <li>Private data storage area used by run-time libraries and dynamic link libraries (DLLs)</li>
+      </ul>
+    </li>
+    <li>The register set, stacks, and private data storage area are known as the context of the thread</li>
+  </ul>
+</blockquote>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/OperatingSystem/OperatingSystem">OperatingSystem</a><br>
+                    <!-- <div style="font-size: 0.9em">[[OperatingSystem]]
+</div> -->
+                </div>
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/OperatingSystem/Threads">Threads</a><br>
+                    <!-- <div style="font-size: 0.9em">[[Threads]]
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+<style>
+  pre.language-vega-lite,
+  code.language-vega-lite {
+    display: none;
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-vega-lite"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+        vegaEmbed(m, JSON.parse(x.textContent));
+      }'
+></script>
+
+
+
+
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+
