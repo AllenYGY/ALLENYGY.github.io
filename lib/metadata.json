@@ -1,6 +1,6 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1726503175155,
+  "lastExport": 1726503539967,
   "pluginVersion": "1.8.03",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd primary-accent-purple secondary-accent-green",
   "useCustomHeadContent": false,
@@ -54,32 +54,15 @@
     "Computer Network/Basic Concepts.md",
     "Computer Network/Application Layer.md",
     "Computer Organization/Assignment/Assignment-1/CO-Assignment-1.md",
-    "Computer Organization/Assignment/Assignment-1/logic.drawio",
-    "Computer Organization/Assignment/Assignment-2/logic.png",
     "Computer Organization/Assignment/Assignment-2/CO-Assignment-2.md",
-    "Computer Organization/Assignment/Assignment-2/k-map.png",
-    "Computer Organization/Assignment/Assignment-2/statediagram.png",
-    "Computer Organization/Assignment/Assignment-2/statediagram-2.png",
-    "Computer Organization/Assignment/Assignment-2/logic.drawio",
-    "Computer Organization/Assignment/Assignment-2/co-as2.png",
-    "Computer Organization/Assignment/Assignment-2/StateDiagram-2.drawio",
-    "Computer Organization/Assignment/Assignment-2/StateDiagram-1.drawio",
-    "Computer Organization/Assignment/Assignment-2/K-MAP.drawio",
     "Computer Organization/Assignment/Assignment-3/CO-Assignment-3.md",
     "Computer Organization/Assignment/Assignment-4/CO-Assignment-4.md",
-    "Computer Organization/Draw/d-sr-latch.png",
-    "Computer Organization/Draw/d-sr-latch.drawio",
     "Computer Organization/Lab/Lab8.md",
     "Computer Organization/Lab/Lab7.md",
     "Computer Organization/Lab/Lab6.md",
     "Computer Organization/Lab/Lab5.md",
     "Computer Organization/Lab/Lab3.md",
     "Computer Organization/Lab/Lab2.md",
-    "Computer Organization/Lecture/Vonneumann-Architecture/register.png",
-    "Computer Organization/Lecture/Vonneumann-Architecture/memory.png",
-    "Computer Organization/Lecture/Vonneumann-Architecture/lc-3.png",
-    "Computer Organization/Lecture/Vonneumann-Architecture/lc-3.drawio",
-    "Computer Organization/Lecture/Vonneumann-Architecture/cu.png",
     "Computer Organization/Lecture/What-is-a-Computer.md",
     "Computer Organization/Lecture/Microarchitecture.md",
     "Computer Organization/Lecture/ISA.md",
@@ -92,7 +75,8 @@
     "Computer Organization/Lecture/Boolean-Algebra-from-Bits-to-Logic.md",
     "Computer Organization/Lecture/Bits-Data-Representation-and-Manipulation.md",
     "Computer Organization/Computer Organization.md",
-    "Computer Organization/Computer-Organization.md",
+    "Computer Vision/Image Pyramid.md",
+    "Computer Vision/Signal and Image Processing.md",
     "Contest/Lanqiao/Train-2.md",
     "Contest/Lanqiao/Train-1.md",
     "Contest/Leetcode/Weekly-Contest-403.md",
@@ -424,217 +408,217 @@
   ],
   "fileInfo": {
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
@@ -646,13 +630,13 @@
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1726503175155,
-      "sourceSize": 373365,
+      "modifiedTime": 1726503539967,
+      "sourceSize": 357625,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
@@ -688,19 +672,19 @@
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
@@ -712,49 +696,49 @@
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 151847,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 320625,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 253,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 1014,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 2112404,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
@@ -1516,7 +1500,7 @@
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1726503175155,
+      "modifiedTime": 1726503539967,
       "sourceSize": 18363,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
@@ -2325,70 +2309,10 @@
       "exportedPath": "projects/dpw/system-design-specification.html",
       "dependencies": []
     },
-    "Computer Organization/Assignment/Assignment-1/logic.drawio": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 7598,
-      "exportedPath": "computer-organization/assignment/assignment-1/logic.drawio",
-      "dependencies": []
-    },
     "Computer Organization/Assignment/Assignment-1/CO-Assignment-1.md": {
       "modifiedTime": 1721931967823,
       "sourceSize": 5541,
       "exportedPath": "computer-organization/assignment/assignment-1/co-assignment-1.html",
-      "dependencies": []
-    },
-    "Computer Organization/Assignment/Assignment-2/logic.png": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 222000,
-      "exportedPath": "computer-organization/assignment/assignment-2/logic.png",
-      "dependencies": []
-    },
-    "Computer Organization/Assignment/Assignment-2/k-map.png": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 32697,
-      "exportedPath": "computer-organization/assignment/assignment-2/k-map.png",
-      "dependencies": []
-    },
-    "Computer Organization/Assignment/Assignment-2/statediagram.png": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 32777,
-      "exportedPath": "computer-organization/assignment/assignment-2/statediagram.png",
-      "dependencies": []
-    },
-    "Computer Organization/Assignment/Assignment-2/logic.drawio": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 107698,
-      "exportedPath": "computer-organization/assignment/assignment-2/logic.drawio",
-      "dependencies": []
-    },
-    "Computer Organization/Assignment/Assignment-2/statediagram-2.png": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 14392,
-      "exportedPath": "computer-organization/assignment/assignment-2/statediagram-2.png",
-      "dependencies": []
-    },
-    "Computer Organization/Assignment/Assignment-2/StateDiagram-2.drawio": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 2555,
-      "exportedPath": "computer-organization/assignment/assignment-2/statediagram-2.drawio",
-      "dependencies": []
-    },
-    "Computer Organization/Assignment/Assignment-2/StateDiagram-1.drawio": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 4299,
-      "exportedPath": "computer-organization/assignment/assignment-2/statediagram-1.drawio",
-      "dependencies": []
-    },
-    "Computer Organization/Assignment/Assignment-2/K-MAP.drawio": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 10994,
-      "exportedPath": "computer-organization/assignment/assignment-2/k-map.drawio",
-      "dependencies": []
-    },
-    "Computer Organization/Assignment/Assignment-2/co-as2.png": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 30795,
-      "exportedPath": "computer-organization/assignment/assignment-2/co-as2.png",
       "dependencies": []
     },
     "Computer Organization/Assignment/Assignment-2/CO-Assignment-2.md": {
@@ -2407,18 +2331,6 @@
       "modifiedTime": 1721931967823,
       "sourceSize": 2394,
       "exportedPath": "computer-organization/assignment/assignment-4/co-assignment-4.html",
-      "dependencies": []
-    },
-    "Computer Organization/Draw/d-sr-latch.png": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 26626,
-      "exportedPath": "computer-organization/draw/d-sr-latch.png",
-      "dependencies": []
-    },
-    "Computer Organization/Draw/d-sr-latch.drawio": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 9342,
-      "exportedPath": "computer-organization/draw/d-sr-latch.drawio",
       "dependencies": []
     },
     "Computer Organization/Lab/Lab8.md": {
@@ -2455,36 +2367,6 @@
       "modifiedTime": 1721931967823,
       "sourceSize": 866,
       "exportedPath": "computer-organization/lab/lab2.html",
-      "dependencies": []
-    },
-    "Computer Organization/Lecture/Vonneumann-Architecture/register.png": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 38418,
-      "exportedPath": "computer-organization/lecture/vonneumann-architecture/register.png",
-      "dependencies": []
-    },
-    "Computer Organization/Lecture/Vonneumann-Architecture/memory.png": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 48960,
-      "exportedPath": "computer-organization/lecture/vonneumann-architecture/memory.png",
-      "dependencies": []
-    },
-    "Computer Organization/Lecture/Vonneumann-Architecture/lc-3.png": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 164455,
-      "exportedPath": "computer-organization/lecture/vonneumann-architecture/lc-3.png",
-      "dependencies": []
-    },
-    "Computer Organization/Lecture/Vonneumann-Architecture/lc-3.drawio": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 62199,
-      "exportedPath": "computer-organization/lecture/vonneumann-architecture/lc-3.drawio",
-      "dependencies": []
-    },
-    "Computer Organization/Lecture/Vonneumann-Architecture/cu.png": {
-      "modifiedTime": 1721931967823,
-      "sourceSize": 11851,
-      "exportedPath": "computer-organization/lecture/vonneumann-architecture/cu.png",
       "dependencies": []
     },
     "Computer Organization/Lecture/Microarchitecture.md": {
@@ -2551,12 +2433,6 @@
       "modifiedTime": 1721931967823,
       "sourceSize": 4053,
       "exportedPath": "computer-organization/lecture/bits-data-representation-and-manipulation.html",
-      "dependencies": []
-    },
-    "Computer Organization/Computer-Organization.md": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 927,
-      "exportedPath": "computer-organization/computer-organization.html",
       "dependencies": []
     },
     "Deep Learning/Decoding Methods.md": {
@@ -2959,6 +2835,18 @@
       "modifiedTime": 1726502840449,
       "sourceSize": 3089,
       "exportedPath": "english/ielts/write/task2/ielts-task2-template.html",
+      "dependencies": []
+    },
+    "Computer Vision/Image Pyramid.md": {
+      "modifiedTime": 1726503539967,
+      "sourceSize": 153,
+      "exportedPath": "computer-vision/image-pyramid.html",
+      "dependencies": []
+    },
+    "Computer Vision/Signal and Image Processing.md": {
+      "modifiedTime": 1726503539967,
+      "sourceSize": 7987,
+      "exportedPath": "computer-vision/signal-and-image-processing.html",
       "dependencies": []
     }
   }

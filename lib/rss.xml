@@ -1,4 +1,138 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 16 Sep 2024 16:13:38 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 16 Sep 2024 16:12:55 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 16 Sep 2024 16:19:01 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 16 Sep 2024 16:18:59 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="Image Pyramid" href="Image Pyramid" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Image Pyramid</a><a data-href="Image Pyramid" href="computer-vision/image-pyramid.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Image Pyramid</a>]]></title><description><![CDATA[ 
+ <br>]]></description><link>https://blog.allenygy.vip/computer-vision/image-pyramid.html</link><guid isPermaLink="false">Computer Vision/Image Pyramid.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 13 Sep 2024 07:22:40 GMT</pubDate></item><item><title><![CDATA[<a data-href="Signal and Image Processing" href="Signal and Image Processing" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Signal and Image Processing</a><a data-href="Signal and Image Processing" href="computer-vision/signal-and-image-processing.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Signal and Image Processing</a>]]></title><description><![CDATA[ 
+ <br><br><br>from matplotlib import pyplot as p
+import numpy.random as r
+I = r.rand(256,256)*0.5;
+p.imshow(I ,cmap='gray', vmin=0.0,vmax=1.0);
+p.show();
+Copy<br>Tip
+
+<br>rand(256,256) 生成一个 256x256 的随机矩阵, 值在 0-1 之间
+<br>cmap = 'gray' 表示使用灰度图显示	
+<br>vmin 和 vmax 分别表示最小值和最大值 
+<br>matplotlib.pyplot.imshow() 函数用于显示图像, 一般可以自动数值normalize到 0-1 之间
+<br>vmin 和 vmax 可以指定normalize的范围
+
+<br><br>8 bit image: 256 gray levels	<br>
+<br>e.g. 256x256 = 65,536 pixels
+<br>256 values ^ 65,536 pixels = 256^65,536	
+<br><br>
+<br>Signal: function depending on some variable with physical meaning.
+<br>Image: sampling of that function.
+
+<br>2 variables: xy coordinates
+<br>3 variables: xy + time (video)
+<br>‘Brightness’ is the value of the function for visible light
+
+
+<br>Can be other physical values too: temperature, pressure, depth …
+
+<br>信号不仅限于亮度，还可以表示其他物理量。例如，红外图像可以表示温度，海洋探测图像可以表示深度，气象图像可以表示压力等。
+
+
+<br><br><br><img alt="Sampling in 1D" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CV/202409111455795.png" referrerpolicy="no-referrer"><br>
+<br>Sampling in 1D takes a function and returns a vector whose elements are values of that function at the sample points.
+<br>等间隔采样<br><br>
+<br>Sampling in 2D takes a function and returns a matrix.
+<br><img alt="Sampling in 2D" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CV/202409111502225.png" referrerpolicy="no-referrer"><br><br>
+<br>Digital values – integer values
+
+<br>Quantization is lossy!! After quantization, the original signal cannot be reconstructed anymore
+<br>In contrast to sampling, as a sampled but not quantized signal can be reconstructed.
+
+
+<br>Simple quantization uses equally spaced levels with k intervals<br>
+量化是一种将连续信号转换为离散值的过程。在简单量化中，整个信号的范围会被均匀地划分为 k 个区间（或称为级别）。这些区间之间的间隔是相同的，因此称为“等间隔”。每个信号的值都会被映射到其对应的区间，最终得到的是有限的离散值，而不是连续的信号。
+<br><br><img alt="Radiometric Resolution" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CV/202409111522999.png" referrerpolicy="no-referrer"><br><br>Four views of filtering<br>
+<br>Image filters in spatial domain 
+<br>Image filters in the frequency domain 
+<br>Image filters in the temporal domain 
+<br>Image pyramids
+<br><br><br>
+<br>Filter is a mathematical operation of a grid of numbers
+<br>Smoothing, sharpening, measuring texture 
+
+<br>平滑、锐化、测量纹理
+
+
+<br><br><br>系数 用于保证整体亮度不发生变化<br>
+<br>Usages
+
+<br>Enhance images
+
+<br>Denoise, resize, increase contrast, etc.
+
+
+<br>Extract information from images
+
+<br>Texture, edges, distinctive points, etc.
+
+
+<br>Detect patterns
+
+<br>Template matching
+
+
+
+
+<br><br>
+<br>
+用于边缘检测
+
+<br>
+Check horizontal edge 横边
+
+<br><br>
+<br>Check Vertical edge 竖边
+<br><br>相当于计算两侧的差值，差值越大，当前位置是边缘<br><br><img alt="Correlation and Convolution" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CV/202409111650837.png" referrerpolicy="no-referrer"><br><br><br>h=scipy.signal.correlated2d(f,I)
+Copy<br><br><br>h=scipy.signal.convolve2d(f,I)
+Copy<br>
+<br>Convolution is the same as correlation with a 180° rotated filter kernel.
+<br>Correlation and convolution are identical when the filter kernel is symmetric.
+<br><br>
+<br>卷积可以看作是相关的一种变体，唯一的区别是卷积中的滤波器会先进行180度的旋转。
+<br>当滤波器是对称的时，卷积和相关是相同的。这是因为旋转180度不会改变滤波器的形状。
+<br><br><br><br>线性滤波器的线性性意味着，对于输入图像  I  以及两个滤波器  f_1  和  f_2 ，对图像应用滤波器的结果等于先将滤波器相加，再应用一次滤波，或者分别应用每个滤波器，再将结果相加。<br>
+换句话说，滤波操作对滤波器的加法是可交换的，可以直接作用于滤波器的线性组合。<br><br><br>平移不变性指的是滤波器的输出与像素位置无关，意思是无论图像中的像素在什么位置，滤波器对强度的操作结果都是相同的。也就是说，滤波器的应用不会因为图像的某个区域平移而改变输出。<br>
+在公式中，如果我们先将滤波器  f  平移，再对图像  I  进行滤波，这与先对图像  I  进行滤波，然后再平移滤波结果是等价的。<br>Any linear, shift-invariant operator can be represented as a convolution.<br><br><br><br>
+<br>Conceptually no difference between filter and signal
+<br>But particular filtering implementations might break this equality
+<br><br><br>
+<br>Often apply several filters one after another: 
+<br>This is equivalent to applying one filter: 
+<br><br><br><br><br><br><br><br><img alt="Gaussian filter" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CV/202409112112890.png" referrerpolicy="no-referrer"><br><br><br>
+<br>Remove high-frequency components from the image (a low-pass filter)
+
+<br>Images become more smooth
+
+
+<br>Gaussian convolved with Gaussian is another Gaussian
+<br>Separable kernel 
+
+<br>Factors into product of two 1D Gaussians
+
+
+<br><br><br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CV/202409112157422.png" referrerpolicy="no-referrer"><br>f = D[ 57:117, 107:167 ]
+f2 = f – np.mean(f)
+D2 = D – np.mean(D)
+I2 = correlate2d( D2, f2, 'same' )
+Copy<br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CV/202409112156877.png" referrerpolicy="no-referrer"><br>Now zero centered.<br>
+Score is higher only when dark parts<br>
+match and when light parts match.<br>通过将图像和子区域的均值归零，相关得分在模板的暗区和亮区与图像相应区域匹配时才会较高。这避免了只匹配亮度（而不考虑结构）的高得分情况。<br><br><br>
+<br>Operates over a window by selecting the median intensity in the window.
+<br>Rank filter as based on ordering of gray levels 
+
+<br>E.G., min, max, range filters
+
+
+<br>选择窗口内的中位数/平均数<br>中值滤波器：<br>
+<br>能够保留图像的边缘和细节。
+<br>有效去除盐噪声和胡椒噪声。
+<br>对异常值有很好的鲁棒性。
+<br>均值滤波器：<br>
+<br>会模糊图像边缘，平滑噪声和细节。
+<br>对极端噪声和异常值处理效果较差。
+]]></description><link>https://blog.allenygy.vip/computer-vision/signal-and-image-processing.html</link><guid isPermaLink="false">Computer Vision/Signal and Image Processing.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 11 Sep 2024 16:44:46 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CV/202409111455795.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/CV/202409111455795.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
  <br><br><br>
 <br><a data-tooltip-position="top" aria-label="Algorithm/Template.md" data-href="Algorithm/Template.md" href="https://blog.allenygy.vip/Algorithm/Template" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Template</a><a data-tooltip-position="top" aria-label="Algorithm/Template.md" data-href="Algorithm/Template.md" href="https://blog.allenygy.vip/algorithm/template.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Template</a>
 <br><a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/Binary Search.md" data-href="Algorithm/BasicAlgorithm/Binary Search.md" href="https://blog.allenygy.vip/Algorithm/BasicAlgorithm/Binary Search" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Binary Search</a><a data-tooltip-position="top" aria-label="Algorithm/BasicAlgorithm/Binary Search.md" data-href="Algorithm/BasicAlgorithm/Binary Search.md" href="https://blog.allenygy.vip/algorithm/basicalgorithm/binary-search.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Binary Search</a>
@@ -897,8 +1031,7 @@ conda install -c conda-forge jupyter jupyterlab
 # 下载和安装 spaCy 语言模型（例如 en_core_web_sm）
 python -m spacy download en_core_web_sm
 Copy]]></description><link>https://blog.allenygy.vip/tools/conda/conda.html</link><guid isPermaLink="false">Tools/Conda/Conda.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 13 Sep 2024 06:33:50 GMT</pubDate></item><item><title><![CDATA[<a data-href="Computer Organization" href="Computer Organization" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Computer Organization</a><a data-href="Computer Organization" href="computer-organization/computer-organization.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Computer Organization</a>]]></title><description><![CDATA[ 
- <br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/computer-organization/computer-organization.html</link><guid isPermaLink="false">Computer Organization/Computer Organization.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 11 Sep 2024 16:44:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="Computer-Organization" href="Computer-Organization" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Computer-Organization</a><a data-href="Computer-Organization" href="computer-organization/computer-organization.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Computer-Organization</a>]]></title><description><![CDATA[ 
- <br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/computer-organization/computer-organization.html</link><guid isPermaLink="false">Computer Organization/Computer-Organization.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 11 Sep 2024 16:40:56 GMT</pubDate></item><item><title><![CDATA[<a data-href="Dropout" href="Dropout" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Dropout</a><a data-href="Dropout" href="deep-learning/00-basic/dropout.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Dropout</a>]]></title><description><![CDATA[ 
+ <br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/computer-organization/computer-organization.html</link><guid isPermaLink="false">Computer Organization/Computer Organization.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 11 Sep 2024 16:44:45 GMT</pubDate></item><item><title><![CDATA[<a data-href="Dropout" href="Dropout" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Dropout</a><a data-href="Dropout" href="deep-learning/00-basic/dropout.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Dropout</a>]]></title><description><![CDATA[ 
  <br><br><br>一个好的模型需要对输入数据的扰动鲁棒<br>
 <br>使用噪音的数据等价于 Tikhonov 正则
 <br>丢弃法：在层之间加入噪音
