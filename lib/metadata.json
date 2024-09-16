@@ -1,8 +1,8 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1726503539967,
+  "lastExport": 1726504213877,
   "pluginVersion": "1.8.03",
-  "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd primary-accent-purple secondary-accent-green",
+  "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd math-booster-preview-enabled primary-accent-purple secondary-accent-green",
   "useCustomHeadContent": false,
   "useCustomFavicon": false,
   "files": [
@@ -43,16 +43,16 @@
     "Algorithm/Algorithm.md",
     "Algorithm/Template.md",
     "Computer Network/Assignment/DCN-Assignment1.md",
+    "Computer Network/Lecture/Transport Layer.md",
+    "Computer Network/Lecture/Standardized Networks.md",
+    "Computer Network/Lecture/Physical Layer.md",
+    "Computer Network/Lecture/Network Layer.md",
+    "Computer Network/Lecture/Data Link Layer.md",
+    "Computer Network/Lecture/Basic Concepts.md",
+    "Computer Network/Lecture/Application Layer.md",
+    "Computer Network/Computer Network Overview.md",
     "Computer Network/USTC L1.md",
-    "Computer Network/Computer Network.md",
-    "Computer Network/Transport Layer.md",
     "Computer Network/DCN Review.md",
-    "Computer Network/Standardized Networks.md",
-    "Computer Network/Physical Layer.md",
-    "Computer Network/Network Layer.md",
-    "Computer Network/Data Link Layer.md",
-    "Computer Network/Basic Concepts.md",
-    "Computer Network/Application Layer.md",
     "Computer Organization/Assignment/Assignment-1/CO-Assignment-1.md",
     "Computer Organization/Assignment/Assignment-2/CO-Assignment-2.md",
     "Computer Organization/Assignment/Assignment-3/CO-Assignment-3.md",
@@ -74,7 +74,7 @@
     "Computer Organization/Lecture/Circuit-Design.md",
     "Computer Organization/Lecture/Boolean-Algebra-from-Bits-to-Logic.md",
     "Computer Organization/Lecture/Bits-Data-Representation-and-Manipulation.md",
-    "Computer Organization/Computer Organization.md",
+    "Computer Organization/Computer Organization Overview.md",
     "Computer Vision/Image Pyramid.md",
     "Computer Vision/Signal and Image Processing.md",
     "Contest/Lanqiao/Train-2.md",
@@ -85,8 +85,9 @@
     "Contest/Leetcode/Weekly-Contest-402.md",
     "Contest/Leetcode/Biweekly-contest-133.md",
     "Contest/Leetcode/Biweekly-Contest-122.md",
-    "Data Analysis/HODA/Hans-On-Data-Analysis-For-Everyone.md",
-    "Data Analysis/Data Analysis.md",
+    "Data Analysis/Big Data Analysis/Map Reduce.md",
+    "Data Analysis/Hands on Data Analysis/Hans-On-Data-Analysis-For-Everyone.md",
+    "Data Analysis/Data Analysis Overview.md",
     "Database Management System/Application/MySQL+Redis.md",
     "Database Management System/Assignment/NoSQL-Assignment-2.md",
     "Database Management System/Assignment/RDBMS-Assignment-2.md",
@@ -209,19 +210,19 @@
     "Math/Probability-Statistics/Hypothesis-Testing-Single-Population.md",
     "Math/Probability-Statistics/Confidence-Interval.md",
     "Math/Math.md",
-    "Operating System/CPU Scheduling.md",
-    "Operating System/Virtual Memory.md",
-    "Operating System/File System Implementation.md",
-    "Operating System/File System Interface.md",
-    "Operating System/Linux Basic Operation.md",
-    "Operating System/Main Memory.md",
-    "Operating System/Operating System Introduction.md",
-    "Operating System/NJU OS PA0.md",
-    "Operating System/Operating System Structure.md",
-    "Operating System/Process Synchronization.md",
-    "Operating System/Threads.md",
-    "Operating System/Process.md",
-    "Operating System/Operating System.md",
+    "Operating System/Extend/Linux Basic Operation.md",
+    "Operating System/Extend/NJU OS PA0.md",
+    "Operating System/Lecture/CPU Scheduling.md",
+    "Operating System/Lecture/Virtual Memory.md",
+    "Operating System/Lecture/File System Implementation.md",
+    "Operating System/Lecture/File System Interface.md",
+    "Operating System/Lecture/Main Memory.md",
+    "Operating System/Lecture/Operating System Introduction.md",
+    "Operating System/Lecture/Operating System Structure.md",
+    "Operating System/Lecture/Process Synchronization.md",
+    "Operating System/Lecture/Threads.md",
+    "Operating System/Lecture/Process.md",
+    "Operating System/Operating System Overview.md",
     "Program/C/Pointers.md",
     "Program/C/Multithreads.md",
     "Program/C/Macro.md",
@@ -303,6 +304,7 @@
     "Friends.md",
     "Home.md",
     "Slides.md",
+    "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
     "lib/fonts/2d5198822ab091ce4305.woff2",
@@ -342,9 +344,15 @@
     "lib/fonts/mathjax_vector-bold.woff",
     "lib/html/file-tree.html",
     "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
     "lib/scripts/minisearch.js",
     "lib/scripts/easy-notice.js",
     "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
     "lib/scripts/img-zoom.js",
     "lib/styles/obsidian.css",
     "lib/styles/other-plugins.css",
@@ -355,6 +363,7 @@
     "lib/styles/snippets.css"
   ],
   "mainDependencies": [
+    "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
     "lib/fonts/2d5198822ab091ce4305.woff2",
@@ -394,9 +403,15 @@
     "lib/fonts/mathjax_vector-bold.woff",
     "lib/html/file-tree.html",
     "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
     "lib/scripts/minisearch.js",
     "lib/scripts/easy-notice.js",
     "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
     "lib/scripts/img-zoom.js",
     "lib/styles/obsidian.css",
     "lib/styles/other-plugins.css",
@@ -408,337 +423,337 @@
   ],
   "fileInfo": {
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1719300971965,
+      "modifiedTime": 1726504213877,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1726503539967,
-      "sourceSize": 357625,
+      "modifiedTime": 1726504213877,
+      "sourceSize": 363382,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1719300971965,
+      "modifiedTime": 1726504213877,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1719300971965,
+      "modifiedTime": 1726504213877,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1719300971965,
+      "modifiedTime": 1726504213877,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1719300971965,
+      "modifiedTime": 1726504213877,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1719300971965,
+      "modifiedTime": 1726504213877,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1719300971965,
-      "sourceSize": 20564,
+      "modifiedTime": 1726504213877,
+      "sourceSize": 27620,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 151847,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 320625,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 253,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 1014,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1726503539967,
-      "sourceSize": 2112404,
+      "modifiedTime": 1726504213877,
+      "sourceSize": 2114067,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
@@ -924,20 +939,20 @@
       "dependencies": []
     },
     "Archive.md": {
-      "modifiedTime": 1726503175155,
-      "sourceSize": 15668,
+      "modifiedTime": 1726504213877,
+      "sourceSize": 15398,
       "exportedPath": "archive.html",
       "dependencies": []
     },
     "Class.md": {
-      "modifiedTime": 1726503175155,
-      "sourceSize": 18581,
+      "modifiedTime": 1726504213877,
+      "sourceSize": 18311,
       "exportedPath": "class.html",
       "dependencies": []
     },
     "Home.md": {
-      "modifiedTime": 1726503175155,
-      "sourceSize": 2966,
+      "modifiedTime": 1726504213877,
+      "sourceSize": 2993,
       "exportedPath": "home.html",
       "dependencies": []
     },
@@ -1500,7 +1515,7 @@
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1726503539967,
+      "modifiedTime": 1726504213877,
       "sourceSize": 18363,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
@@ -1901,70 +1916,10 @@
       "exportedPath": "computer-network/ustc-l1.html",
       "dependencies": []
     },
-    "Computer Network/Transport Layer.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 2135,
-      "exportedPath": "computer-network/transport-layer.html",
-      "dependencies": []
-    },
-    "Computer Network/Standardized Networks.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 4696,
-      "exportedPath": "computer-network/standardized-networks.html",
-      "dependencies": []
-    },
-    "Computer Network/Physical Layer.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 1563,
-      "exportedPath": "computer-network/physical-layer.html",
-      "dependencies": []
-    },
-    "Computer Network/Network Layer.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 8171,
-      "exportedPath": "computer-network/network-layer.html",
-      "dependencies": []
-    },
     "Computer Network/DCN Review.md": {
       "modifiedTime": 1721136250585,
       "sourceSize": 12803,
       "exportedPath": "computer-network/dcn-review.html",
-      "dependencies": []
-    },
-    "Computer Network/Data Link Layer.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 9014,
-      "exportedPath": "computer-network/data-link-layer.html",
-      "dependencies": []
-    },
-    "Computer Network/Computer Network.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 684,
-      "exportedPath": "computer-network/computer-network.html",
-      "dependencies": []
-    },
-    "Computer Network/Basic Concepts.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 15545,
-      "exportedPath": "computer-network/basic-concepts.html",
-      "dependencies": []
-    },
-    "Computer Network/Application Layer.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 200,
-      "exportedPath": "computer-network/application-layer.html",
-      "dependencies": []
-    },
-    "Data Analysis/HODA/Hans-On-Data-Analysis-For-Everyone.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 12618,
-      "exportedPath": "data-analysis/hoda/hans-on-data-analysis-for-everyone.html",
-      "dependencies": []
-    },
-    "Data Analysis/Data Analysis.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 247,
-      "exportedPath": "data-analysis/data-analysis.html",
       "dependencies": []
     },
     "Database Management System/Application/MySQL+Redis.md": {
@@ -2217,78 +2172,6 @@
       "modifiedTime": 1721136250585,
       "sourceSize": 332,
       "exportedPath": "deep-learning/graph-network.html",
-      "dependencies": []
-    },
-    "Operating System/Virtual Memory.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 7242,
-      "exportedPath": "operating-system/virtual-memory.html",
-      "dependencies": []
-    },
-    "Operating System/Threads.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 18753,
-      "exportedPath": "operating-system/threads.html",
-      "dependencies": []
-    },
-    "Operating System/Process Synchronization.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 29248,
-      "exportedPath": "operating-system/process-synchronization.html",
-      "dependencies": []
-    },
-    "Operating System/Process.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 17026,
-      "exportedPath": "operating-system/process.html",
-      "dependencies": []
-    },
-    "Operating System/Operating System Introduction.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 21642,
-      "exportedPath": "operating-system/operating-system-introduction.html",
-      "dependencies": []
-    },
-    "Operating System/Operating System.md": {
-      "modifiedTime": 1724580095054,
-      "sourceSize": 663,
-      "exportedPath": "operating-system/operating-system.html",
-      "dependencies": []
-    },
-    "Operating System/Operating System Structure.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 10901,
-      "exportedPath": "operating-system/operating-system-structure.html",
-      "dependencies": []
-    },
-    "Operating System/Main Memory.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 1931,
-      "exportedPath": "operating-system/main-memory.html",
-      "dependencies": []
-    },
-    "Operating System/NJU OS PA0.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 5695,
-      "exportedPath": "operating-system/nju-os-pa0.html",
-      "dependencies": []
-    },
-    "Operating System/File System Implementation.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 1454,
-      "exportedPath": "operating-system/file-system-implementation.html",
-      "dependencies": []
-    },
-    "Operating System/File System Interface.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 9254,
-      "exportedPath": "operating-system/file-system-interface.html",
-      "dependencies": []
-    },
-    "Operating System/Linux Basic Operation.md": {
-      "modifiedTime": 1721136250585,
-      "sourceSize": 4167,
-      "exportedPath": "operating-system/linux-basic-operation.html",
       "dependencies": []
     },
     "Program/Program Language.md": {
@@ -2591,12 +2474,6 @@
       "exportedPath": "deep-learning/03-multiple-layer-perceptron/mlp.html",
       "dependencies": []
     },
-    "Operating System/CPU Scheduling.md": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 27185,
-      "exportedPath": "operating-system/cpu-scheduling.html",
-      "dependencies": []
-    },
     "Research/CoT/Individual Report.pdf": {
       "modifiedTime": 1724580095054,
       "sourceSize": 1560972,
@@ -2607,12 +2484,6 @@
       "modifiedTime": 1724580095054,
       "sourceSize": 12153,
       "exportedPath": "research/cot/cot-individual-report.html",
-      "dependencies": []
-    },
-    "Computer Organization/Computer Organization.md": {
-      "modifiedTime": 1726104745284,
-      "sourceSize": 938,
-      "exportedPath": "computer-organization/computer-organization.html",
       "dependencies": []
     },
     "Deep Learning/00-Basic/Weight Decay.md": {
@@ -2847,6 +2718,156 @@
       "modifiedTime": 1726503539967,
       "sourceSize": 7987,
       "exportedPath": "computer-vision/signal-and-image-processing.html",
+      "dependencies": []
+    },
+    "Computer Network/Lecture/Transport Layer.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 2135,
+      "exportedPath": "computer-network/lecture/transport-layer.html",
+      "dependencies": []
+    },
+    "Computer Network/Lecture/Standardized Networks.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 4696,
+      "exportedPath": "computer-network/lecture/standardized-networks.html",
+      "dependencies": []
+    },
+    "Computer Network/Lecture/Physical Layer.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 1563,
+      "exportedPath": "computer-network/lecture/physical-layer.html",
+      "dependencies": []
+    },
+    "Computer Network/Lecture/Network Layer.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 8171,
+      "exportedPath": "computer-network/lecture/network-layer.html",
+      "dependencies": []
+    },
+    "Computer Network/Lecture/Data Link Layer.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 9014,
+      "exportedPath": "computer-network/lecture/data-link-layer.html",
+      "dependencies": []
+    },
+    "Computer Network/Lecture/Basic Concepts.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 15545,
+      "exportedPath": "computer-network/lecture/basic-concepts.html",
+      "dependencies": []
+    },
+    "Computer Network/Lecture/Application Layer.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 200,
+      "exportedPath": "computer-network/lecture/application-layer.html",
+      "dependencies": []
+    },
+    "Computer Network/Computer Network Overview.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 701,
+      "exportedPath": "computer-network/computer-network-overview.html",
+      "dependencies": []
+    },
+    "Computer Organization/Computer Organization Overview.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 930,
+      "exportedPath": "computer-organization/computer-organization-overview.html",
+      "dependencies": []
+    },
+    "Data Analysis/Big Data Analysis/Map Reduce.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 145,
+      "exportedPath": "data-analysis/big-data-analysis/map-reduce.html",
+      "dependencies": []
+    },
+    "Data Analysis/Hands on Data Analysis/Hans-On-Data-Analysis-For-Everyone.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 12618,
+      "exportedPath": "data-analysis/hands-on-data-analysis/hans-on-data-analysis-for-everyone.html",
+      "dependencies": []
+    },
+    "Data Analysis/Data Analysis Overview.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 263,
+      "exportedPath": "data-analysis/data-analysis-overview.html",
+      "dependencies": []
+    },
+    "Operating System/Extend/Linux Basic Operation.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 4172,
+      "exportedPath": "operating-system/extend/linux-basic-operation.html",
+      "dependencies": []
+    },
+    "Operating System/Extend/NJU OS PA0.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 5695,
+      "exportedPath": "operating-system/extend/nju-os-pa0.html",
+      "dependencies": []
+    },
+    "Operating System/Lecture/CPU Scheduling.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 27185,
+      "exportedPath": "operating-system/lecture/cpu-scheduling.html",
+      "dependencies": []
+    },
+    "Operating System/Lecture/Virtual Memory.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 7242,
+      "exportedPath": "operating-system/lecture/virtual-memory.html",
+      "dependencies": []
+    },
+    "Operating System/Lecture/File System Implementation.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 1454,
+      "exportedPath": "operating-system/lecture/file-system-implementation.html",
+      "dependencies": []
+    },
+    "Operating System/Lecture/File System Interface.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 9254,
+      "exportedPath": "operating-system/lecture/file-system-interface.html",
+      "dependencies": []
+    },
+    "Operating System/Lecture/Main Memory.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 1931,
+      "exportedPath": "operating-system/lecture/main-memory.html",
+      "dependencies": []
+    },
+    "Operating System/Lecture/Operating System Introduction.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 21642,
+      "exportedPath": "operating-system/lecture/operating-system-introduction.html",
+      "dependencies": []
+    },
+    "Operating System/Lecture/Operating System Structure.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 10901,
+      "exportedPath": "operating-system/lecture/operating-system-structure.html",
+      "dependencies": []
+    },
+    "Operating System/Lecture/Process Synchronization.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 29248,
+      "exportedPath": "operating-system/lecture/process-synchronization.html",
+      "dependencies": []
+    },
+    "Operating System/Lecture/Threads.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 18753,
+      "exportedPath": "operating-system/lecture/threads.html",
+      "dependencies": []
+    },
+    "Operating System/Lecture/Process.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 17026,
+      "exportedPath": "operating-system/lecture/process.html",
+      "dependencies": []
+    },
+    "Operating System/Operating System Overview.md": {
+      "modifiedTime": 1726504213877,
+      "sourceSize": 672,
+      "exportedPath": "operating-system/operating-system-overview.html",
       "dependencies": []
     }
   }
