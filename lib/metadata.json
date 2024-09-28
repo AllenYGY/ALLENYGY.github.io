@@ -1,6 +1,6 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1727543904693,
+  "lastExport": 1727545753815,
   "pluginVersion": "1.8.03",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd primary-accent-purple secondary-accent-green math-booster-preview-enabled",
   "useCustomHeadContent": false,
@@ -303,337 +303,6 @@
     "Web/Javascript/Quick-Start.md",
     "Web/Vue/Vue-Basic.md",
     "Web/Vue/Vue-Application.md",
-    "Weekly/docs/subjects/web.md",
-    "Weekly/docs/subjects/linux.md",
-    "Weekly/docs/subjects/math.md",
-    "Weekly/docs/subjects/go.md",
-    "Weekly/docs/subjects/docker.md",
-    "Weekly/docs/subjects/dev.md",
-    "Weekly/docs/subjects/database.md",
-    "Weekly/docs/subjects/css.md",
-    "Weekly/docs/issue-99.md",
-    "Weekly/docs/issue-98.md",
-    "Weekly/docs/issue-97.md",
-    "Weekly/docs/issue-96.md",
-    "Weekly/docs/issue-95.md",
-    "Weekly/docs/issue-92.md",
-    "Weekly/docs/issue-94.md",
-    "Weekly/docs/issue-93.md",
-    "Weekly/docs/issue-91.md",
-    "Weekly/docs/issue-90.md",
-    "Weekly/docs/issue-87.md",
-    "Weekly/docs/issue-9.md",
-    "Weekly/docs/issue-89.md",
-    "Weekly/docs/issue-88.md",
-    "Weekly/docs/issue-86.md",
-    "Weekly/docs/issue-85.md",
-    "Weekly/docs/issue-84.md",
-    "Weekly/docs/issue-83.md",
-    "Weekly/docs/issue-81.md",
-    "Weekly/docs/issue-82.md",
-    "Weekly/docs/issue-80.md",
-    "Weekly/docs/issue-8.md",
-    "Weekly/docs/issue-79.md",
-    "Weekly/docs/issue-78.md",
-    "Weekly/docs/issue-77.md",
-    "Weekly/docs/issue-76.md",
-    "Weekly/docs/issue-75.md",
-    "Weekly/docs/issue-74.md",
-    "Weekly/docs/issue-73.md",
-    "Weekly/docs/issue-72.md",
-    "Weekly/docs/issue-71.md",
-    "Weekly/docs/issue-70.md",
-    "Weekly/docs/issue-7.md",
-    "Weekly/docs/issue-69.md",
-    "Weekly/docs/issue-68.md",
-    "Weekly/docs/issue-67.md",
-    "Weekly/docs/issue-66.md",
-    "Weekly/docs/issue-65.md",
-    "Weekly/docs/issue-64.md",
-    "Weekly/docs/issue-63.md",
-    "Weekly/docs/issue-62.md",
-    "Weekly/docs/issue-61.md",
-    "Weekly/docs/issue-60.md",
-    "Weekly/docs/issue-6.md",
-    "Weekly/docs/issue-59.md",
-    "Weekly/docs/issue-58.md",
-    "Weekly/docs/issue-57.md",
-    "Weekly/docs/issue-56.md",
-    "Weekly/docs/issue-55.md",
-    "Weekly/docs/issue-54.md",
-    "Weekly/docs/issue-53.md",
-    "Weekly/docs/issue-52.md",
-    "Weekly/docs/issue-51.md",
-    "Weekly/docs/issue-5.md",
-    "Weekly/docs/issue-50.md",
-    "Weekly/docs/issue-49.md",
-    "Weekly/docs/issue-48.md",
-    "Weekly/docs/issue-47.md",
-    "Weekly/docs/issue-43.md",
-    "Weekly/docs/issue-46.md",
-    "Weekly/docs/issue-45.md",
-    "Weekly/docs/issue-44.md",
-    "Weekly/docs/issue-42.md",
-    "Weekly/docs/issue-41.md",
-    "Weekly/docs/issue-40.md",
-    "Weekly/docs/issue-4.md",
-    "Weekly/docs/issue-39.md",
-    "Weekly/docs/issue-38.md",
-    "Weekly/docs/issue-36.md",
-    "Weekly/docs/issue-37.md",
-    "Weekly/docs/issue-35.md",
-    "Weekly/docs/issue-34.md",
-    "Weekly/docs/issue-319.md",
-    "Weekly/docs/issue-32.md",
-    "Weekly/docs/issue-33.md",
-    "Weekly/docs/issue-318.md",
-    "Weekly/docs/issue-317.md",
-    "Weekly/docs/issue-316.md",
-    "Weekly/docs/issue-315.md",
-    "Weekly/docs/issue-313.md",
-    "Weekly/docs/issue-314.md",
-    "Weekly/docs/issue-312.md",
-    "Weekly/docs/issue-311.md",
-    "Weekly/docs/issue-31.md",
-    "Weekly/docs/issue-310.md",
-    "Weekly/docs/issue-309.md",
-    "Weekly/docs/issue-305.md",
-    "Weekly/docs/issue-308.md",
-    "Weekly/docs/issue-307.md",
-    "Weekly/docs/issue-306.md",
-    "Weekly/docs/issue-304.md",
-    "Weekly/docs/issue-303.md",
-    "Weekly/docs/issue-302.md",
-    "Weekly/docs/issue-301.md",
-    "Weekly/docs/issue-300.md",
-    "Weekly/docs/issue-30.md",
-    "Weekly/docs/issue-3.md",
-    "Weekly/docs/issue-298.md",
-    "Weekly/docs/issue-299.md",
-    "Weekly/docs/issue-297.md",
-    "Weekly/docs/issue-295.md",
-    "Weekly/docs/issue-296.md",
-    "Weekly/docs/issue-294.md",
-    "Weekly/docs/issue-293.md",
-    "Weekly/docs/issue-292.md",
-    "Weekly/docs/issue-291.md",
-    "Weekly/docs/issue-290.md",
-    "Weekly/docs/issue-29.md",
-    "Weekly/docs/issue-289.md",
-    "Weekly/docs/issue-288.md",
-    "Weekly/docs/issue-287.md",
-    "Weekly/docs/issue-286.md",
-    "Weekly/docs/issue-285.md",
-    "Weekly/docs/issue-284.md",
-    "Weekly/docs/issue-283.md",
-    "Weekly/docs/issue-282.md",
-    "Weekly/docs/issue-281.md",
-    "Weekly/docs/issue-280.md",
-    "Weekly/docs/issue-28.md",
-    "Weekly/docs/issue-279.md",
-    "Weekly/docs/issue-278.md",
-    "Weekly/docs/issue-274.md",
-    "Weekly/docs/issue-277.md",
-    "Weekly/docs/issue-276.md",
-    "Weekly/docs/issue-275.md",
-    "Weekly/docs/issue-273.md",
-    "Weekly/docs/issue-272.md",
-    "Weekly/docs/issue-271.md",
-    "Weekly/docs/issue-270.md",
-    "Weekly/docs/issue-27.md",
-    "Weekly/docs/issue-269.md",
-    "Weekly/docs/issue-268.md",
-    "Weekly/docs/issue-267.md",
-    "Weekly/docs/issue-266.md",
-    "Weekly/docs/issue-265.md",
-    "Weekly/docs/issue-264.md",
-    "Weekly/docs/issue-263.md",
-    "Weekly/docs/issue-262.md",
-    "Weekly/docs/issue-260.md",
-    "Weekly/docs/issue-261.md",
-    "Weekly/docs/issue-26.md",
-    "Weekly/docs/issue-259.md",
-    "Weekly/docs/issue-258.md",
-    "Weekly/docs/issue-257.md",
-    "Weekly/docs/issue-256.md",
-    "Weekly/docs/issue-255.md",
-    "Weekly/docs/issue-254.md",
-    "Weekly/docs/issue-252.md",
-    "Weekly/docs/issue-253.md",
-    "Weekly/docs/issue-250.md",
-    "Weekly/docs/issue-251.md",
-    "Weekly/docs/issue-25.md",
-    "Weekly/docs/issue-249.md",
-    "Weekly/docs/issue-248.md",
-    "Weekly/docs/issue-247.md",
-    "Weekly/docs/issue-245.md",
-    "Weekly/docs/issue-246.md",
-    "Weekly/docs/issue-244.md",
-    "Weekly/docs/issue-243.md",
-    "Weekly/docs/issue-242.md",
-    "Weekly/docs/issue-24.md",
-    "Weekly/docs/issue-241.md",
-    "Weekly/docs/issue-240.md",
-    "Weekly/docs/issue-238.md",
-    "Weekly/docs/issue-239.md",
-    "Weekly/docs/issue-236.md",
-    "Weekly/docs/issue-237.md",
-    "Weekly/docs/issue-234.md",
-    "Weekly/docs/issue-235.md",
-    "Weekly/docs/issue-233.md",
-    "Weekly/docs/issue-232.md",
-    "Weekly/docs/issue-231.md",
-    "Weekly/docs/issue-230.md",
-    "Weekly/docs/issue-23.md",
-    "Weekly/docs/issue-229.md",
-    "Weekly/docs/issue-228.md",
-    "Weekly/docs/issue-227.md",
-    "Weekly/docs/issue-226.md",
-    "Weekly/docs/issue-225.md",
-    "Weekly/docs/issue-224.md",
-    "Weekly/docs/issue-223.md",
-    "Weekly/docs/issue-222.md",
-    "Weekly/docs/issue-221.md",
-    "Weekly/docs/issue-220.md",
-    "Weekly/docs/issue-22.md",
-    "Weekly/docs/issue-219.md",
-    "Weekly/docs/issue-218.md",
-    "Weekly/docs/issue-217.md",
-    "Weekly/docs/issue-216.md",
-    "Weekly/docs/issue-215.md",
-    "Weekly/docs/issue-214.md",
-    "Weekly/docs/issue-213.md",
-    "Weekly/docs/issue-212.md",
-    "Weekly/docs/issue-210.md",
-    "Weekly/docs/issue-21.md",
-    "Weekly/docs/issue-211.md",
-    "Weekly/docs/issue-209.md",
-    "Weekly/docs/issue-208.md",
-    "Weekly/docs/issue-207.md",
-    "Weekly/docs/issue-206.md",
-    "Weekly/docs/issue-205.md",
-    "Weekly/docs/issue-204.md",
-    "Weekly/docs/issue-203.md",
-    "Weekly/docs/issue-202.md",
-    "Weekly/docs/issue-200.md",
-    "Weekly/docs/issue-201.md",
-    "Weekly/docs/issue-20.md",
-    "Weekly/docs/issue-2.md",
-    "Weekly/docs/issue-199.md",
-    "Weekly/docs/issue-198.md",
-    "Weekly/docs/issue-197.md",
-    "Weekly/docs/issue-196.md",
-    "Weekly/docs/issue-195.md",
-    "Weekly/docs/issue-194.md",
-    "Weekly/docs/issue-193.md",
-    "Weekly/docs/issue-192.md",
-    "Weekly/docs/issue-191.md",
-    "Weekly/docs/issue-190.md",
-    "Weekly/docs/issue-19.md",
-    "Weekly/docs/issue-189.md",
-    "Weekly/docs/issue-188.md",
-    "Weekly/docs/issue-187.md",
-    "Weekly/docs/issue-186.md",
-    "Weekly/docs/issue-185.md",
-    "Weekly/docs/issue-184.md",
-    "Weekly/docs/issue-182.md",
-    "Weekly/docs/issue-183.md",
-    "Weekly/docs/issue-181.md",
-    "Weekly/docs/issue-180.md",
-    "Weekly/docs/issue-18.md",
-    "Weekly/docs/issue-179.md",
-    "Weekly/docs/issue-178.md",
-    "Weekly/docs/issue-176.md",
-    "Weekly/docs/issue-177.md",
-    "Weekly/docs/issue-175.md",
-    "Weekly/docs/issue-174.md",
-    "Weekly/docs/issue-173.md",
-    "Weekly/docs/issue-172.md",
-    "Weekly/docs/issue-168.md",
-    "Weekly/docs/issue-171.md",
-    "Weekly/docs/issue-170.md",
-    "Weekly/docs/issue-17.md",
-    "Weekly/docs/issue-169.md",
-    "Weekly/docs/issue-167.md",
-    "Weekly/docs/issue-166.md",
-    "Weekly/docs/issue-163.md",
-    "Weekly/docs/issue-165.md",
-    "Weekly/docs/issue-164.md",
-    "Weekly/docs/issue-162.md",
-    "Weekly/docs/issue-161.md",
-    "Weekly/docs/issue-160.md",
-    "Weekly/docs/issue-16.md",
-    "Weekly/docs/issue-159.md",
-    "Weekly/docs/issue-158.md",
-    "Weekly/docs/issue-157.md",
-    "Weekly/docs/issue-154.md",
-    "Weekly/docs/issue-156.md",
-    "Weekly/docs/issue-155.md",
-    "Weekly/docs/issue-153.md",
-    "Weekly/docs/issue-152.md",
-    "Weekly/docs/issue-150.md",
-    "Weekly/docs/issue-151.md",
-    "Weekly/docs/issue-15.md",
-    "Weekly/docs/issue-149.md",
-    "Weekly/docs/issue-148.md",
-    "Weekly/docs/issue-147.md",
-    "Weekly/docs/issue-146.md",
-    "Weekly/docs/issue-145.md",
-    "Weekly/docs/issue-144.md",
-    "Weekly/docs/issue-143.md",
-    "Weekly/docs/issue-142.md",
-    "Weekly/docs/issue-141.md",
-    "Weekly/docs/issue-140.md",
-    "Weekly/docs/issue-14.md",
-    "Weekly/docs/issue-139.md",
-    "Weekly/docs/issue-138.md",
-    "Weekly/docs/issue-137.md",
-    "Weekly/docs/issue-136.md",
-    "Weekly/docs/issue-135.md",
-    "Weekly/docs/issue-134.md",
-    "Weekly/docs/issue-133.md",
-    "Weekly/docs/issue-132.md",
-    "Weekly/docs/issue-131.md",
-    "Weekly/docs/issue-130.md",
-    "Weekly/docs/issue-13.md",
-    "Weekly/docs/issue-129.md",
-    "Weekly/docs/issue-127.md",
-    "Weekly/docs/issue-128.md",
-    "Weekly/docs/issue-126.md",
-    "Weekly/docs/issue-125.md",
-    "Weekly/docs/issue-124.md",
-    "Weekly/docs/issue-123.md",
-    "Weekly/docs/issue-122.md",
-    "Weekly/docs/issue-121.md",
-    "Weekly/docs/issue-120.md",
-    "Weekly/docs/issue-12.md",
-    "Weekly/docs/issue-119.md",
-    "Weekly/docs/issue-118.md",
-    "Weekly/docs/issue-117.md",
-    "Weekly/docs/issue-116.md",
-    "Weekly/docs/issue-115.md",
-    "Weekly/docs/issue-114.md",
-    "Weekly/docs/issue-112.md",
-    "Weekly/docs/issue-113.md",
-    "Weekly/docs/issue-111.md",
-    "Weekly/docs/issue-11.md",
-    "Weekly/docs/issue-110.md",
-    "Weekly/docs/issue-109.md",
-    "Weekly/docs/issue-108.md",
-    "Weekly/docs/issue-107.md",
-    "Weekly/docs/issue-106.md",
-    "Weekly/docs/issue-105.md",
-    "Weekly/docs/issue-104.md",
-    "Weekly/docs/issue-103.md",
-    "Weekly/docs/issue-102.md",
-    "Weekly/docs/issue-101.md",
-    "Weekly/docs/issue-100.md",
-    "Weekly/docs/issue-10.md",
-    "Weekly/docs/issue-1.md",
-    "Weekly/docs/free-software.md",
-    "Weekly/docs/free-photos.md",
-    "Weekly/docs/free-music.md",
-    "Weekly/README.md",
     "Archive.md",
     "Class.md",
     "Friends.md",
@@ -688,7 +357,8 @@
     "lib/styles/global-variable-styles.css",
     "lib/styles/supported-plugins.css",
     "lib/styles/main-styles.css",
-    "lib/styles/snippets.css"
+    "lib/styles/snippets.css",
+    "bioinfo/lab/lab-1/image.svg"
   ],
   "mainDependencies": [
     "lib/fonts/94f2f163d4b698242fef.otf",
@@ -2268,307 +1938,307 @@
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 626005,
+      "modifiedTime": 1727545753815,
+      "sourceSize": 377301,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 152004,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 2114067,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 320625,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 1014,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545753815,
       "sourceSize": 25447,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
     },
     "Computer Vision/Lecture/Fourier Transformation.md": {
-      "modifiedTime": 1727543904693,
+      "modifiedTime": 1727545688128,
       "sourceSize": 716,
       "exportedPath": "computer-vision/lecture/fourier-transformation.html",
       "dependencies": []
@@ -2855,1992 +2525,6 @@
       "modifiedTime": 1727543904693,
       "sourceSize": 4299,
       "exportedPath": "computer-organization/assignment/assignment-2/statediagram-1.drawio",
-      "dependencies": []
-    },
-    "Weekly/docs/subjects/web.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 529,
-      "exportedPath": "weekly/docs/subjects/web.html",
-      "dependencies": []
-    },
-    "Weekly/docs/subjects/linux.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 429,
-      "exportedPath": "weekly/docs/subjects/linux.html",
-      "dependencies": []
-    },
-    "Weekly/docs/subjects/math.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 442,
-      "exportedPath": "weekly/docs/subjects/math.html",
-      "dependencies": []
-    },
-    "Weekly/docs/subjects/go.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 208,
-      "exportedPath": "weekly/docs/subjects/go.html",
-      "dependencies": []
-    },
-    "Weekly/docs/subjects/docker.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 339,
-      "exportedPath": "weekly/docs/subjects/docker.html",
-      "dependencies": []
-    },
-    "Weekly/docs/subjects/dev.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 277,
-      "exportedPath": "weekly/docs/subjects/dev.html",
-      "dependencies": []
-    },
-    "Weekly/docs/subjects/database.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 249,
-      "exportedPath": "weekly/docs/subjects/database.html",
-      "dependencies": []
-    },
-    "Weekly/docs/subjects/css.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 341,
-      "exportedPath": "weekly/docs/subjects/css.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-99.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25612,
-      "exportedPath": "weekly/docs/issue-99.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-98.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24904,
-      "exportedPath": "weekly/docs/issue-98.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-97.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24363,
-      "exportedPath": "weekly/docs/issue-97.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-96.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 27414,
-      "exportedPath": "weekly/docs/issue-96.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-95.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26642,
-      "exportedPath": "weekly/docs/issue-95.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-92.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22355,
-      "exportedPath": "weekly/docs/issue-92.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-94.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25917,
-      "exportedPath": "weekly/docs/issue-94.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-93.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25638,
-      "exportedPath": "weekly/docs/issue-93.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-91.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 30237,
-      "exportedPath": "weekly/docs/issue-91.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-90.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 30630,
-      "exportedPath": "weekly/docs/issue-90.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-87.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 30143,
-      "exportedPath": "weekly/docs/issue-87.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-9.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19285,
-      "exportedPath": "weekly/docs/issue-9.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-89.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26211,
-      "exportedPath": "weekly/docs/issue-89.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-88.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26652,
-      "exportedPath": "weekly/docs/issue-88.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-86.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 27384,
-      "exportedPath": "weekly/docs/issue-86.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-85.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 28440,
-      "exportedPath": "weekly/docs/issue-85.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-84.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 27112,
-      "exportedPath": "weekly/docs/issue-84.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-83.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 29848,
-      "exportedPath": "weekly/docs/issue-83.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-81.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25824,
-      "exportedPath": "weekly/docs/issue-81.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-82.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 28545,
-      "exportedPath": "weekly/docs/issue-82.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-80.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25014,
-      "exportedPath": "weekly/docs/issue-80.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-8.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19077,
-      "exportedPath": "weekly/docs/issue-8.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-79.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23133,
-      "exportedPath": "weekly/docs/issue-79.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-78.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24793,
-      "exportedPath": "weekly/docs/issue-78.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-77.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25919,
-      "exportedPath": "weekly/docs/issue-77.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-76.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21579,
-      "exportedPath": "weekly/docs/issue-76.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-75.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26619,
-      "exportedPath": "weekly/docs/issue-75.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-74.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26389,
-      "exportedPath": "weekly/docs/issue-74.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-73.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25850,
-      "exportedPath": "weekly/docs/issue-73.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-72.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26819,
-      "exportedPath": "weekly/docs/issue-72.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-71.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24909,
-      "exportedPath": "weekly/docs/issue-71.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-70.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26499,
-      "exportedPath": "weekly/docs/issue-70.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-7.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 17882,
-      "exportedPath": "weekly/docs/issue-7.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-69.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26600,
-      "exportedPath": "weekly/docs/issue-69.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-68.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24098,
-      "exportedPath": "weekly/docs/issue-68.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-67.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 28142,
-      "exportedPath": "weekly/docs/issue-67.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-66.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26946,
-      "exportedPath": "weekly/docs/issue-66.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-65.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26082,
-      "exportedPath": "weekly/docs/issue-65.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-64.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25962,
-      "exportedPath": "weekly/docs/issue-64.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-63.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25631,
-      "exportedPath": "weekly/docs/issue-63.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-62.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22441,
-      "exportedPath": "weekly/docs/issue-62.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-61.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22961,
-      "exportedPath": "weekly/docs/issue-61.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-60.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24683,
-      "exportedPath": "weekly/docs/issue-60.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-6.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 16452,
-      "exportedPath": "weekly/docs/issue-6.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-59.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24701,
-      "exportedPath": "weekly/docs/issue-59.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-58.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22590,
-      "exportedPath": "weekly/docs/issue-58.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-57.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 27471,
-      "exportedPath": "weekly/docs/issue-57.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-56.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21866,
-      "exportedPath": "weekly/docs/issue-56.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-55.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24270,
-      "exportedPath": "weekly/docs/issue-55.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-54.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22667,
-      "exportedPath": "weekly/docs/issue-54.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-53.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20487,
-      "exportedPath": "weekly/docs/issue-53.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-52.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22755,
-      "exportedPath": "weekly/docs/issue-52.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-51.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22273,
-      "exportedPath": "weekly/docs/issue-51.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-5.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21868,
-      "exportedPath": "weekly/docs/issue-5.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-50.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21090,
-      "exportedPath": "weekly/docs/issue-50.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-49.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21339,
-      "exportedPath": "weekly/docs/issue-49.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-48.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22444,
-      "exportedPath": "weekly/docs/issue-48.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-47.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25681,
-      "exportedPath": "weekly/docs/issue-47.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-43.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23391,
-      "exportedPath": "weekly/docs/issue-43.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-46.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25431,
-      "exportedPath": "weekly/docs/issue-46.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-45.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24633,
-      "exportedPath": "weekly/docs/issue-45.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-44.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25401,
-      "exportedPath": "weekly/docs/issue-44.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-42.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21517,
-      "exportedPath": "weekly/docs/issue-42.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-41.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24693,
-      "exportedPath": "weekly/docs/issue-41.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-40.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22846,
-      "exportedPath": "weekly/docs/issue-40.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-4.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19261,
-      "exportedPath": "weekly/docs/issue-4.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-39.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23566,
-      "exportedPath": "weekly/docs/issue-39.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-38.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24242,
-      "exportedPath": "weekly/docs/issue-38.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-36.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23246,
-      "exportedPath": "weekly/docs/issue-36.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-37.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23657,
-      "exportedPath": "weekly/docs/issue-37.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-35.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23827,
-      "exportedPath": "weekly/docs/issue-35.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-34.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21207,
-      "exportedPath": "weekly/docs/issue-34.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-319.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19276,
-      "exportedPath": "weekly/docs/issue-319.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-32.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24909,
-      "exportedPath": "weekly/docs/issue-32.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-33.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24753,
-      "exportedPath": "weekly/docs/issue-33.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-318.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19617,
-      "exportedPath": "weekly/docs/issue-318.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-317.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18450,
-      "exportedPath": "weekly/docs/issue-317.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-316.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20483,
-      "exportedPath": "weekly/docs/issue-316.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-315.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21351,
-      "exportedPath": "weekly/docs/issue-315.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-313.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21591,
-      "exportedPath": "weekly/docs/issue-313.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-314.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21630,
-      "exportedPath": "weekly/docs/issue-314.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-312.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 17926,
-      "exportedPath": "weekly/docs/issue-312.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-311.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18173,
-      "exportedPath": "weekly/docs/issue-311.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-31.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21466,
-      "exportedPath": "weekly/docs/issue-31.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-310.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19648,
-      "exportedPath": "weekly/docs/issue-310.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-309.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19524,
-      "exportedPath": "weekly/docs/issue-309.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-305.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20980,
-      "exportedPath": "weekly/docs/issue-305.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-308.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21482,
-      "exportedPath": "weekly/docs/issue-308.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-307.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20490,
-      "exportedPath": "weekly/docs/issue-307.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-306.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19305,
-      "exportedPath": "weekly/docs/issue-306.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-304.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23503,
-      "exportedPath": "weekly/docs/issue-304.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-303.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21066,
-      "exportedPath": "weekly/docs/issue-303.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-302.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19830,
-      "exportedPath": "weekly/docs/issue-302.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-301.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20923,
-      "exportedPath": "weekly/docs/issue-301.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-300.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21019,
-      "exportedPath": "weekly/docs/issue-300.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-30.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22127,
-      "exportedPath": "weekly/docs/issue-30.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-3.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 17958,
-      "exportedPath": "weekly/docs/issue-3.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-298.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20676,
-      "exportedPath": "weekly/docs/issue-298.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-299.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22402,
-      "exportedPath": "weekly/docs/issue-299.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-297.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19777,
-      "exportedPath": "weekly/docs/issue-297.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-295.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25645,
-      "exportedPath": "weekly/docs/issue-295.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-296.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22781,
-      "exportedPath": "weekly/docs/issue-296.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-294.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23301,
-      "exportedPath": "weekly/docs/issue-294.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-293.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18905,
-      "exportedPath": "weekly/docs/issue-293.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-292.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21512,
-      "exportedPath": "weekly/docs/issue-292.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-291.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20908,
-      "exportedPath": "weekly/docs/issue-291.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-290.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22206,
-      "exportedPath": "weekly/docs/issue-290.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-29.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23612,
-      "exportedPath": "weekly/docs/issue-29.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-289.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19487,
-      "exportedPath": "weekly/docs/issue-289.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-288.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20247,
-      "exportedPath": "weekly/docs/issue-288.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-287.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24127,
-      "exportedPath": "weekly/docs/issue-287.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-286.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25261,
-      "exportedPath": "weekly/docs/issue-286.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-285.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25810,
-      "exportedPath": "weekly/docs/issue-285.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-284.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18319,
-      "exportedPath": "weekly/docs/issue-284.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-283.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 17130,
-      "exportedPath": "weekly/docs/issue-283.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-282.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20292,
-      "exportedPath": "weekly/docs/issue-282.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-281.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18869,
-      "exportedPath": "weekly/docs/issue-281.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-280.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21975,
-      "exportedPath": "weekly/docs/issue-280.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-28.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20216,
-      "exportedPath": "weekly/docs/issue-28.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-279.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21073,
-      "exportedPath": "weekly/docs/issue-279.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-278.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23495,
-      "exportedPath": "weekly/docs/issue-278.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-274.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18723,
-      "exportedPath": "weekly/docs/issue-274.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-277.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19686,
-      "exportedPath": "weekly/docs/issue-277.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-276.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21622,
-      "exportedPath": "weekly/docs/issue-276.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-275.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22669,
-      "exportedPath": "weekly/docs/issue-275.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-273.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22376,
-      "exportedPath": "weekly/docs/issue-273.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-272.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20672,
-      "exportedPath": "weekly/docs/issue-272.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-271.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19110,
-      "exportedPath": "weekly/docs/issue-271.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-270.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21051,
-      "exportedPath": "weekly/docs/issue-270.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-27.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22312,
-      "exportedPath": "weekly/docs/issue-27.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-269.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20244,
-      "exportedPath": "weekly/docs/issue-269.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-268.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20335,
-      "exportedPath": "weekly/docs/issue-268.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-267.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19932,
-      "exportedPath": "weekly/docs/issue-267.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-266.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18877,
-      "exportedPath": "weekly/docs/issue-266.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-265.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20480,
-      "exportedPath": "weekly/docs/issue-265.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-264.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19886,
-      "exportedPath": "weekly/docs/issue-264.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-263.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18478,
-      "exportedPath": "weekly/docs/issue-263.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-262.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20282,
-      "exportedPath": "weekly/docs/issue-262.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-260.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20411,
-      "exportedPath": "weekly/docs/issue-260.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-261.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21174,
-      "exportedPath": "weekly/docs/issue-261.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-26.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21614,
-      "exportedPath": "weekly/docs/issue-26.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-259.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21257,
-      "exportedPath": "weekly/docs/issue-259.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-258.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19213,
-      "exportedPath": "weekly/docs/issue-258.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-257.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23361,
-      "exportedPath": "weekly/docs/issue-257.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-256.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24661,
-      "exportedPath": "weekly/docs/issue-256.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-255.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18493,
-      "exportedPath": "weekly/docs/issue-255.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-254.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22398,
-      "exportedPath": "weekly/docs/issue-254.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-252.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20270,
-      "exportedPath": "weekly/docs/issue-252.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-253.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18872,
-      "exportedPath": "weekly/docs/issue-253.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-250.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19582,
-      "exportedPath": "weekly/docs/issue-250.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-251.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23670,
-      "exportedPath": "weekly/docs/issue-251.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-25.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20635,
-      "exportedPath": "weekly/docs/issue-25.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-249.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21797,
-      "exportedPath": "weekly/docs/issue-249.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-248.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22292,
-      "exportedPath": "weekly/docs/issue-248.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-247.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20316,
-      "exportedPath": "weekly/docs/issue-247.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-245.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19882,
-      "exportedPath": "weekly/docs/issue-245.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-246.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21453,
-      "exportedPath": "weekly/docs/issue-246.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-244.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22249,
-      "exportedPath": "weekly/docs/issue-244.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-243.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21294,
-      "exportedPath": "weekly/docs/issue-243.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-242.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22339,
-      "exportedPath": "weekly/docs/issue-242.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-24.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22464,
-      "exportedPath": "weekly/docs/issue-24.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-241.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20910,
-      "exportedPath": "weekly/docs/issue-241.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-240.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20715,
-      "exportedPath": "weekly/docs/issue-240.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-238.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19530,
-      "exportedPath": "weekly/docs/issue-238.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-239.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18712,
-      "exportedPath": "weekly/docs/issue-239.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-236.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19151,
-      "exportedPath": "weekly/docs/issue-236.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-237.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22063,
-      "exportedPath": "weekly/docs/issue-237.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-234.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23083,
-      "exportedPath": "weekly/docs/issue-234.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-235.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20339,
-      "exportedPath": "weekly/docs/issue-235.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-233.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22523,
-      "exportedPath": "weekly/docs/issue-233.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-232.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23601,
-      "exportedPath": "weekly/docs/issue-232.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-231.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23417,
-      "exportedPath": "weekly/docs/issue-231.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-230.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26516,
-      "exportedPath": "weekly/docs/issue-230.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-23.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20515,
-      "exportedPath": "weekly/docs/issue-23.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-229.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22701,
-      "exportedPath": "weekly/docs/issue-229.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-228.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23212,
-      "exportedPath": "weekly/docs/issue-228.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-227.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21373,
-      "exportedPath": "weekly/docs/issue-227.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-226.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21816,
-      "exportedPath": "weekly/docs/issue-226.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-225.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19728,
-      "exportedPath": "weekly/docs/issue-225.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-224.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23654,
-      "exportedPath": "weekly/docs/issue-224.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-223.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21194,
-      "exportedPath": "weekly/docs/issue-223.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-222.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19011,
-      "exportedPath": "weekly/docs/issue-222.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-221.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25019,
-      "exportedPath": "weekly/docs/issue-221.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-220.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25205,
-      "exportedPath": "weekly/docs/issue-220.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-22.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20837,
-      "exportedPath": "weekly/docs/issue-22.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-219.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24339,
-      "exportedPath": "weekly/docs/issue-219.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-218.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20471,
-      "exportedPath": "weekly/docs/issue-218.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-217.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20964,
-      "exportedPath": "weekly/docs/issue-217.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-216.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21252,
-      "exportedPath": "weekly/docs/issue-216.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-215.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 27303,
-      "exportedPath": "weekly/docs/issue-215.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-214.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21192,
-      "exportedPath": "weekly/docs/issue-214.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-213.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22099,
-      "exportedPath": "weekly/docs/issue-213.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-212.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22218,
-      "exportedPath": "weekly/docs/issue-212.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-210.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22488,
-      "exportedPath": "weekly/docs/issue-210.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-21.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20740,
-      "exportedPath": "weekly/docs/issue-21.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-211.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23840,
-      "exportedPath": "weekly/docs/issue-211.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-209.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25628,
-      "exportedPath": "weekly/docs/issue-209.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-208.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25426,
-      "exportedPath": "weekly/docs/issue-208.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-207.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26060,
-      "exportedPath": "weekly/docs/issue-207.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-206.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23711,
-      "exportedPath": "weekly/docs/issue-206.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-205.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22214,
-      "exportedPath": "weekly/docs/issue-205.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-204.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23776,
-      "exportedPath": "weekly/docs/issue-204.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-203.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25656,
-      "exportedPath": "weekly/docs/issue-203.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-202.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23926,
-      "exportedPath": "weekly/docs/issue-202.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-200.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25272,
-      "exportedPath": "weekly/docs/issue-200.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-201.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26662,
-      "exportedPath": "weekly/docs/issue-201.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-20.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19497,
-      "exportedPath": "weekly/docs/issue-20.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-2.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 13492,
-      "exportedPath": "weekly/docs/issue-2.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-199.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25141,
-      "exportedPath": "weekly/docs/issue-199.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-198.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23965,
-      "exportedPath": "weekly/docs/issue-198.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-197.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24535,
-      "exportedPath": "weekly/docs/issue-197.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-196.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24152,
-      "exportedPath": "weekly/docs/issue-196.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-195.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25684,
-      "exportedPath": "weekly/docs/issue-195.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-194.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 27095,
-      "exportedPath": "weekly/docs/issue-194.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-193.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23397,
-      "exportedPath": "weekly/docs/issue-193.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-192.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24487,
-      "exportedPath": "weekly/docs/issue-192.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-191.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24103,
-      "exportedPath": "weekly/docs/issue-191.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-190.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25149,
-      "exportedPath": "weekly/docs/issue-190.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-19.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19732,
-      "exportedPath": "weekly/docs/issue-19.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-189.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23873,
-      "exportedPath": "weekly/docs/issue-189.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-188.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22722,
-      "exportedPath": "weekly/docs/issue-188.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-187.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23764,
-      "exportedPath": "weekly/docs/issue-187.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-186.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23227,
-      "exportedPath": "weekly/docs/issue-186.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-185.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23402,
-      "exportedPath": "weekly/docs/issue-185.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-184.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26138,
-      "exportedPath": "weekly/docs/issue-184.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-182.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23452,
-      "exportedPath": "weekly/docs/issue-182.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-183.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23512,
-      "exportedPath": "weekly/docs/issue-183.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-181.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 29552,
-      "exportedPath": "weekly/docs/issue-181.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-180.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24924,
-      "exportedPath": "weekly/docs/issue-180.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-18.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21212,
-      "exportedPath": "weekly/docs/issue-18.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-179.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 28507,
-      "exportedPath": "weekly/docs/issue-179.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-178.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23906,
-      "exportedPath": "weekly/docs/issue-178.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-176.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24322,
-      "exportedPath": "weekly/docs/issue-176.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-177.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24667,
-      "exportedPath": "weekly/docs/issue-177.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-175.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25937,
-      "exportedPath": "weekly/docs/issue-175.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-174.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24466,
-      "exportedPath": "weekly/docs/issue-174.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-173.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24617,
-      "exportedPath": "weekly/docs/issue-173.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-172.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24462,
-      "exportedPath": "weekly/docs/issue-172.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-168.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26459,
-      "exportedPath": "weekly/docs/issue-168.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-171.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 28861,
-      "exportedPath": "weekly/docs/issue-171.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-170.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24223,
-      "exportedPath": "weekly/docs/issue-170.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-17.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23554,
-      "exportedPath": "weekly/docs/issue-17.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-169.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21568,
-      "exportedPath": "weekly/docs/issue-169.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-167.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26399,
-      "exportedPath": "weekly/docs/issue-167.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-166.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25125,
-      "exportedPath": "weekly/docs/issue-166.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-163.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23232,
-      "exportedPath": "weekly/docs/issue-163.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-165.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24415,
-      "exportedPath": "weekly/docs/issue-165.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-164.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21202,
-      "exportedPath": "weekly/docs/issue-164.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-162.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25574,
-      "exportedPath": "weekly/docs/issue-162.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-161.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21398,
-      "exportedPath": "weekly/docs/issue-161.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-160.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 27424,
-      "exportedPath": "weekly/docs/issue-160.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-16.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24844,
-      "exportedPath": "weekly/docs/issue-16.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-159.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22350,
-      "exportedPath": "weekly/docs/issue-159.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-158.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22185,
-      "exportedPath": "weekly/docs/issue-158.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-157.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23748,
-      "exportedPath": "weekly/docs/issue-157.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-154.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22184,
-      "exportedPath": "weekly/docs/issue-154.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-156.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22991,
-      "exportedPath": "weekly/docs/issue-156.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-155.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24300,
-      "exportedPath": "weekly/docs/issue-155.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-153.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21965,
-      "exportedPath": "weekly/docs/issue-153.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-152.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23917,
-      "exportedPath": "weekly/docs/issue-152.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-150.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24095,
-      "exportedPath": "weekly/docs/issue-150.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-151.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23964,
-      "exportedPath": "weekly/docs/issue-151.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-15.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21271,
-      "exportedPath": "weekly/docs/issue-15.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-149.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24822,
-      "exportedPath": "weekly/docs/issue-149.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-148.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26728,
-      "exportedPath": "weekly/docs/issue-148.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-147.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24322,
-      "exportedPath": "weekly/docs/issue-147.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-146.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24798,
-      "exportedPath": "weekly/docs/issue-146.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-145.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25207,
-      "exportedPath": "weekly/docs/issue-145.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-144.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25030,
-      "exportedPath": "weekly/docs/issue-144.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-143.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26572,
-      "exportedPath": "weekly/docs/issue-143.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-142.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24894,
-      "exportedPath": "weekly/docs/issue-142.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-141.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 28009,
-      "exportedPath": "weekly/docs/issue-141.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-140.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23633,
-      "exportedPath": "weekly/docs/issue-140.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-14.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18173,
-      "exportedPath": "weekly/docs/issue-14.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-139.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24482,
-      "exportedPath": "weekly/docs/issue-139.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-138.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 27367,
-      "exportedPath": "weekly/docs/issue-138.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-137.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25331,
-      "exportedPath": "weekly/docs/issue-137.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-136.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25073,
-      "exportedPath": "weekly/docs/issue-136.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-135.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25474,
-      "exportedPath": "weekly/docs/issue-135.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-134.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25341,
-      "exportedPath": "weekly/docs/issue-134.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-133.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26931,
-      "exportedPath": "weekly/docs/issue-133.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-132.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23835,
-      "exportedPath": "weekly/docs/issue-132.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-131.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26072,
-      "exportedPath": "weekly/docs/issue-131.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-130.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22743,
-      "exportedPath": "weekly/docs/issue-130.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-13.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 17956,
-      "exportedPath": "weekly/docs/issue-13.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-129.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26335,
-      "exportedPath": "weekly/docs/issue-129.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-127.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23275,
-      "exportedPath": "weekly/docs/issue-127.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-128.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22826,
-      "exportedPath": "weekly/docs/issue-128.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-126.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21939,
-      "exportedPath": "weekly/docs/issue-126.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-125.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26349,
-      "exportedPath": "weekly/docs/issue-125.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-124.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24674,
-      "exportedPath": "weekly/docs/issue-124.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-123.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23739,
-      "exportedPath": "weekly/docs/issue-123.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-122.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22549,
-      "exportedPath": "weekly/docs/issue-122.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-121.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21987,
-      "exportedPath": "weekly/docs/issue-121.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-120.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 20690,
-      "exportedPath": "weekly/docs/issue-120.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-12.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18713,
-      "exportedPath": "weekly/docs/issue-12.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-119.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22006,
-      "exportedPath": "weekly/docs/issue-119.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-118.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24347,
-      "exportedPath": "weekly/docs/issue-118.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-117.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25834,
-      "exportedPath": "weekly/docs/issue-117.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-116.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 26310,
-      "exportedPath": "weekly/docs/issue-116.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-115.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23681,
-      "exportedPath": "weekly/docs/issue-115.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-114.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24623,
-      "exportedPath": "weekly/docs/issue-114.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-112.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 19954,
-      "exportedPath": "weekly/docs/issue-112.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-113.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 27688,
-      "exportedPath": "weekly/docs/issue-113.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-111.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23303,
-      "exportedPath": "weekly/docs/issue-111.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-11.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 16532,
-      "exportedPath": "weekly/docs/issue-11.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-110.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25655,
-      "exportedPath": "weekly/docs/issue-110.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-109.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24593,
-      "exportedPath": "weekly/docs/issue-109.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-108.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23168,
-      "exportedPath": "weekly/docs/issue-108.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-107.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 23903,
-      "exportedPath": "weekly/docs/issue-107.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-106.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25014,
-      "exportedPath": "weekly/docs/issue-106.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-105.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24382,
-      "exportedPath": "weekly/docs/issue-105.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-104.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24230,
-      "exportedPath": "weekly/docs/issue-104.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-103.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 22437,
-      "exportedPath": "weekly/docs/issue-103.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-102.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 24223,
-      "exportedPath": "weekly/docs/issue-102.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-101.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 25286,
-      "exportedPath": "weekly/docs/issue-101.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-100.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 28487,
-      "exportedPath": "weekly/docs/issue-100.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-10.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 18704,
-      "exportedPath": "weekly/docs/issue-10.html",
-      "dependencies": []
-    },
-    "Weekly/docs/issue-1.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 12771,
-      "exportedPath": "weekly/docs/issue-1.html",
-      "dependencies": []
-    },
-    "Weekly/docs/free-software.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 1216,
-      "exportedPath": "weekly/docs/free-software.html",
-      "dependencies": []
-    },
-    "Weekly/docs/free-photos.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 610,
-      "exportedPath": "weekly/docs/free-photos.html",
-      "dependencies": []
-    },
-    "Weekly/docs/free-music.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 1138,
-      "exportedPath": "weekly/docs/free-music.html",
-      "dependencies": []
-    },
-    "Weekly/README.md": {
-      "modifiedTime": 1727543904693,
-      "sourceSize": 21641,
-      "exportedPath": "weekly/readme.html",
       "dependencies": []
     },
     "bioinfo/lab/lab-1/image.svg": {
