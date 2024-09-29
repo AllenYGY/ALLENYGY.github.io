@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 29 Sep 2024 08:42:20 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 29 Sep 2024 08:42:12 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="Review" href="Review" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Review</a><a data-href="Review" href="math/linear-algebra/review.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Review</a>]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 29 Sep 2024 08:45:19 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 29 Sep 2024 08:45:16 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="Review" href="Review" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Review</a><a data-href="Review" href="math/linear-algebra/review.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Review</a>]]></title><description><![CDATA[ 
  <br><br>公式  是矩阵对角化的基本公式，表示将矩阵  通过相似变换转化为对角矩阵  的过程。要解释这个公式如何得出，我们可以从特征值和特征向量的定义出发，逐步推导。<br><br>给定一个  的矩阵 ，它的特征值  和对应的特征向量  满足：<br><br>其中：<br>
 <br> 是矩阵，
 <br> 是  的特征值，
@@ -11,7 +11,7 @@
 <br>幂运算：对角矩阵的幂次运算非常简单，只需对角线上每个元素单独取幂即可。
 <br>指数矩阵：求矩阵指数  在对角化后可以简化为 。
 <br>简化计算：对角化使得很多矩阵计算变得更加高效，尤其是在高阶矩阵幂次、迭代计算和解方程组时。
-]]></description><link>https://blog.allenygy.vip/math/linear-algebra/review.html</link><guid isPermaLink="false">Math/Linear Algebra/Review.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 29 Sep 2024 06:01:19 GMT</pubDate></item><item><title><![CDATA[<a data-href="Ploidy-review" href="Ploidy-review" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Ploidy-review</a><a data-href="Ploidy-review" href="research/bioinfo/ploidy/ploidy-review.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Ploidy-review</a>]]></title><description><![CDATA[ 
+]]></description><link>https://blog.allenygy.vip/math/linear-algebra/review.html</link><guid isPermaLink="false">Math/Linear Algebra/Review.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 29 Sep 2024 08:42:34 GMT</pubDate></item><item><title><![CDATA[<a data-href="Ploidy-review" href="Ploidy-review" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Ploidy-review</a><a data-href="Ploidy-review" href="research/bioinfo/ploidy/ploidy-review.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Ploidy-review</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>求断点
 <br>预处理断点数据
@@ -52,36 +52,7 @@ This work forms the problem as the inverse of network convolution, and introduce
 <br>Distinguishing direct targets in gene expression regulatory networks 区分基因表达调控网络中的直接目标
 <br>Recognizing directly interacting amino-acid residues for protein structure prediction from sequence alignments 通过序列比对识别直接相互作用的氨基酸残基以预测蛋白质结构
 <br>Distinguishing strong collaborations in co-authorship social networks using connectivity information alone. 仅使用连接信息来区分共同创作社交网络中的强协作。
-]]></description><link>https://blog.allenygy.vip/research/bioinfo/network-deconvolution.html</link><guid isPermaLink="false">Research/BioInfo/Network Deconvolution.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 29 Sep 2024 08:35:03 GMT</pubDate></item><item><title><![CDATA[Network-Deconvolution]]></title><description><![CDATA[ 
- <br><br><br> represents the similarity value between the observed patterns of variables i and j in the network.<br>定义一个观测到的相似度矩阵，矩阵里的值可以是变量的关系，也可以是其他的相似度值<br><br><br>We assume that the observed dependency matrix, , comprises both direct and indirect dependency effects<br><br>观测矩阵包含直接和间接依赖效应<br><br><br>Indirect contributions<br>
-<br>Can be length 2 or higher 
-<br>Can be multiple effects along varying paths 
-<br>Not included  Self-loops 
-<br>间接影响可以是长度为2或更高,可以是沿着不同路径的多个效应,不包括自环<br><br>The power associated with each term in  corresponds to the level of indirection contributed by that term. 幂次指的是间接程度<br><br><br><br>By using the eigen decomposition principle, we have<br><br><br><br><br><br><br><br><br><br>By using the eigen decomposition of the observed network ,<br>
-we have , where<br><br><br><br><br><br><br><br>The observed dependency matrix is scaled linearly so that all eigenvalues of the direct dependency matrix are between −1 and 1.<br>线性缩放使所有特征值在 -1～1 之间<br><br><br><br>The observed dependency matrix Gobs is decomposed to its eigenvalues and eigenvectors such that <br><br>Where:<br>
-<br> is the matrix of eigenvectors,
-<br> is a diagonal matrix containing the eigenvalues of ,
-<br> is the inverse of the eigenvector matrix .
-<br>将观察到的依赖矩阵分解为特征值和特征向量<br><br><br><br>A diagonal eigenvalue matrix   is formed whose  component is<br><br>Then, the output direct dependency matrix  is obtained as<br>
-<br><br>根据公式计算  ，在把其放入对角矩阵中，最后得到直接依赖矩阵 	<br><br><br><br>Abstract
-This work forms the problem as the inverse of network convolution, and introduces an algorithm that removes the combined effect of all indirect paths of arbitrary length in a closed-form solution by exploiting eigen-decomposition and infinite-series sums.
-<br><br><br>
-<br>Distinguishing direct targets in gene expression regulatory networks 
-
-<br>区分基因表达调控网络中的直接目标
-
-
-<br>Recognizing directly interacting amino-acid residues for protein structure prediction from sequence alignments 
-
-<br>通过序列比对识别直接相互作用的氨基酸残基以预测蛋白质结构
-
-
-<br>Distinguishing strong collaborations in co-authorship social networks using connectivity information alone. 
-
-<br>仅使用连接信息来区分共同创作社交网络中的强协作。
-
-
-<br><br>]]></description><link>https://blog.allenygy.vip/slides/network-deconvolution.html</link><guid isPermaLink="false">Slides/Network-Deconvolution.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 29 Sep 2024 08:40:19 GMT</pubDate></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
+]]></description><link>https://blog.allenygy.vip/research/bioinfo/network-deconvolution.html</link><guid isPermaLink="false">Research/BioInfo/Network Deconvolution.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 29 Sep 2024 08:35:03 GMT</pubDate></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
  <br><br><br>
 <br><a data-tooltip-position="top" aria-label="Data Analysis/Big Data Analysis/Lab/BDA Lab 1.md" data-href="Data Analysis/Big Data Analysis/Lab/BDA Lab 1.md" href="https://blog.allenygy.vip/Data Analysis/Big Data Analysis/Lab/BDA Lab 1" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">BDA Lab 1</a><a data-tooltip-position="top" aria-label="Data Analysis/Big Data Analysis/Lab/BDA Lab 1.md" data-href="Data Analysis/Big Data Analysis/Lab/BDA Lab 1.md" href="https://blog.allenygy.vip/data-analysis/big-data-analysis/lab/bda-lab-1.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">BDA Lab 1</a>
 <br><a data-tooltip-position="top" aria-label="Program/Cpp/Bitest.md" data-href="Program/Cpp/Bitest.md" href="https://blog.allenygy.vip/Program/Cpp/Bitest" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Bitest</a><a data-tooltip-position="top" aria-label="Program/Cpp/Bitest.md" data-href="Program/Cpp/Bitest.md" href="https://blog.allenygy.vip/program/cpp/bitest.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Bitest</a>
