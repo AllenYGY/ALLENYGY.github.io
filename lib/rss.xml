@@ -1,4 +1,1199 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 09 Oct 2024 13:58:27 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 09 Oct 2024 13:58:22 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="ML-As-1" href="ML-As-1" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">ML-As-1</a><a data-href="ML-As-1" href="machine-learning/assignment/ml-as-1.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">ML-As-1</a>]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://blog.allenygy.vip/</link><image><url>https://blog.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://blog.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 16 Oct 2024 05:38:45 GMT</lastBuildDate><atom:link href="https://blog.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 16 Oct 2024 05:38:30 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[<a data-href="Algorithm" href="Algorithm" class="original-internal-link" target="_blank" rel="noopener" style="display: none;"><span class="iconize-icon-in-link" title="SiThealgorithms" aria-label="SiThealgorithms" data-icon="SiThealgorithms" aria-hidden="true" style="transform: translateY(20%);"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32px" height="32px"><path d="M8.226,19.857H1.353l1.79-4.225h4.812L13.308,3.21H7.564l-4.226,9.82h2.587c.18.3.511.51.887.51a1.04,1.04,0,0,0,1.038-1.037c0-.572-.467-1.023-1.038-1.023-.421,0-.767.24-.932.602H4.647l3.503-7.94h3.76L7.383,14.684l-4.766.03L0,20.79h8.842L10,18.263h3.835l1.278,2.526H24L15.985,3.211Zm2.27-2.586,1.384-3.023,1.503,3.023zm5.218,2.691-.872-1.759h2.737c.18.33.526.556.917.556a1.04,1.04,0,0,0,1.038-1.037,1.04,1.04,0,0,0-1.038-1.038c-.42,0-.782.256-.947.617H14.42l-2.09-4.06,1.534-3.369,1.729,3.519h.812c.165.346.526.601.932.601a1.04,1.04,0,0,0,1.038-1.037,1.04,1.04,0,0,0-1.038-1.038c-.436,0-.812.271-.962.662h-.3l-1.79-3.64,1.699-3.728,6.677,14.751Z"></path></svg></span>Algorithm</a><a data-href="Algorithm" href="algorithm/algorithm.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="SiThealgorithms" aria-label="SiThealgorithms" data-icon="SiThealgorithms" aria-hidden="true" style="transform: translateY(20%);"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32px" height="32px"><path d="M8.226,19.857H1.353l1.79-4.225h4.812L13.308,3.21H7.564l-4.226,9.82h2.587c.18.3.511.51.887.51a1.04,1.04,0,0,0,1.038-1.037c0-.572-.467-1.023-1.038-1.023-.421,0-.767.24-.932.602H4.647l3.503-7.94h3.76L7.383,14.684l-4.766.03L0,20.79h8.842L10,18.263h3.835l1.278,2.526H24L15.985,3.211Zm2.27-2.586,1.384-3.023,1.503,3.023zm5.218,2.691-.872-1.759h2.737c.18.33.526.556.917.556a1.04,1.04,0,0,0,1.038-1.037,1.04,1.04,0,0,0-1.038-1.038c-.42,0-.782.256-.947.617H14.42l-2.09-4.06,1.534-3.369,1.729,3.519h.812c.165.346.526.601.932.601a1.04,1.04,0,0,0,1.038-1.037,1.04,1.04,0,0,0-1.038-1.038c-.436,0-.812.271-.962.662h-.3l-1.79-3.64,1.699-3.728,6.677,14.751Z"></path></svg></span>Algorithm</a>]]></title><description><![CDATA[ 
+ <br><br><br>#include&lt;bits/stdc++.h&gt;
+
+using namespace std;
+#define all(x) (x).begin(), x.end()
+#define endl '\n'  // 避免刷新缓冲区
+#define inf32 0x3f3f3f3f
+#define inf64 1LL &lt;&lt; 60
+#define max32 INT_MAX
+#define max64 LONG_LONG_MAX
+
+// 类型别名
+using i64 = long long;
+using u64 = unsigned long long;
+using i128 = __int128;
+using pii = std::pair&lt;int, int&gt;;
+
+int read(){
+    int x = 0, f = 1;
+    char ch = getchar();
+    while (ch &lt; '0' || ch &gt; '9'){
+        if (ch == '-')
+            f = -1;
+        ch = getchar();
+    }
+    while (ch &gt;= '0' &amp;&amp; ch &lt;= '9')
+        x = x * 10 + ch - '0', ch = getchar();
+    return x * f;
+}
+ 
+void write(int x){
+    if (x &lt; 0)
+        putchar('-'), x = -x;
+    if (x &gt; 9)
+        write(x / 10);
+    putchar(x % 10 + '0');
+}
+ 
+void solve(){
+       
+}
+ 
+signed main() {
+ 
+    return 0;
+}
+Copy<br><br>// &gt;=
+int index = lower_bound(X.begin(),X.end(),x)-X.begin();
+// &gt;
+int index = lower_bound(X.begin(),X.end(),x+1)-X.begin();
+// &lt;
+int index = max(0,lower_bound(X.begin(),X.end(),x)-1-X.begin());
+//&lt;=
+int index = max(0,lower_bound(X.begin(),X.end(),x+1)-1-X.begin());
+Copy<br><br>int fastpow(int a,int n){
+    int ans=1;
+    while(n){
+        if(n&amp;1) ans*=a;
+        a*=a;
+        n&gt;&gt;=1;
+    }
+    return ans;
+}
+
+int fastpowmod(int a,int n,int mod){
+    int ans=1;
+    a%=mod;
+    while(n){
+        if(n&amp;1) ans = (ans*a)%mod;
+        a = (a*a)%mod;
+        n&gt;&gt;=1;
+    }
+    return ans;
+}
+Copy<br>#include&lt;bits/stdc++.h&gt;
+
+using namespace std;
+
+struct Person {
+    std::string name;
+    int age;
+};
+
+bool compareByName(const Person&amp; a, const Person&amp; b) {
+    return a.name &lt; b.name;  // 按名称升序排序
+}
+
+bool compareByAge(const Person&amp;a,const Person&amp;b){
+    return a.age&lt;b.age;
+}
+
+int main() {
+    std::vector&lt;Person&gt; people = {{"Alice", 25}, {"Bob", 20}, {"Charlie", 30}};
+    sort(people.begin(), people.end(), compareByName);
+    for (const auto&amp; person : people) {
+        std::cout &lt;&lt; person.name &lt;&lt; " - " &lt;&lt; person.age &lt;&lt; std::endl;
+    }
+    return 0;
+}
+Copy]]></description><link>https://blog.allenygy.vip/algorithm/algorithm.html</link><guid isPermaLink="false">Algorithm/Algorithm.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 15 Oct 2024 03:38:40 GMT</pubDate></item><item><title><![CDATA[<a data-href="Bioinfo-Assignment-1" href="Bioinfo-Assignment-1" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Bioinfo-Assignment-1</a><a data-href="Bioinfo-Assignment-1" href="bioinfo/assignment/as-1/bioinfo-assignment-1.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Bioinfo-Assignment-1</a>]]></title><description><![CDATA[ 
+ <br><br><br><img alt="De Bruijin" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/8eogvt.jpg" referrerpolicy="no-referrer"><br>Path:<br>
+<br>ATGCTAG 
+<br>ATGCTGACTAG
+<br><br><img alt="2" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/IlGlO8.png" referrerpolicy="no-referrer"><br><br><br><br><br>: <br>
+: <br>
+:  for a match;  for a mismatch;  for each indel<br><br>: GATC_AGATCGA<br>
+: GGT_AA_A_CGT<br><br>Search genes associated with colon cancer in human genome.<br><br><a data-tooltip-position="top" aria-label="https://www.ncbi.nlm.nih.gov/nuccore/NM_000249.4/?report=fasta" rel="noopener" class="external-link" href="https://www.ncbi.nlm.nih.gov/nuccore/NM_000249.4/?report=fasta" target="_blank">DNA Sequence of <em></em></a>MLH1*<br>&gt;NM_000249.4 Homo sapiens mutL homolog 1 (MLH1), transcript variant 1, mRNA
+AGACGTTTCCTTGGCTCTTCTGGCGCCAAAATGTCGTTCGTGGCAGGGGTTATTCGGCGGCTGGACGAGA
+CAGTGGTGAACCGCATCGCGGCGGGGGAAGTTATCCAGCGGCCAGCTAATGCTATCAAAGAGATGATTGA
+GAACTGTTTAGATGCAAAATCCACAAGTATTCAAGTGATTGTTAAAGAGGGAGGCCTGAAGTTGATTCAG
+ATCCAAGACAATGGCACCGGGATCAGGAAAGAAGATCTGGATATTGTATGTGAAAGGTTCACTACTAGTA
+AACTGCAGTCCTTTGAGGATTTAGCCAGTATTTCTACCTATGGCTTTCGAGGTGAGGCTTTGGCCAGCAT
+AAGCCATGTGGCTCATGTTACTATTACAACGAAAACAGCTGATGGAAAGTGTGCATACAGAGCAAGTTAC
+TCAGATGGAAAACTGAAAGCCCCTCCTAAACCATGTGCTGGCAATCAAGGGACCCAGATCACGGTGGAGG
+ACCTTTTTTACAACATAGCCACGAGGAGAAAAGCTTTAAAAAATCCAAGTGAAGAATATGGGAAAATTTT
+GGAAGTTGTTGGCAGGTATTCAGTACACAATGCAGGCATTAGTTTCTCAGTTAAAAAACAAGGAGAGACA
+GTAGCTGATGTTAGGACACTACCCAATGCCTCAACCGTGGACAATATTCGCTCCATCTTTGGAAATGCTG
+TTAGTCGAGAACTGATAGAAATTGGATGTGAGGATAAAACCCTAGCCTTCAAAATGAATGGTTACATATC
+CAATGCAAACTACTCAGTGAAGAAGTGCATCTTCTTACTCTTCATCAACCATCGTCTGGTAGAATCAACT
+TCCTTGAGAAAAGCCATAGAAACAGTGTATGCAGCCTATTTGCCCAAAAACACACACCCATTCCTGTACC
+TCAGTTTAGAAATCAGTCCCCAGAATGTGGATGTTAATGTGCACCCCACAAAGCATGAAGTTCACTTCCT
+GCACGAGGAGAGCATCCTGGAGCGGGTGCAGCAGCACATCGAGAGCAAGCTCCTGGGCTCCAATTCCTCC
+AGGATGTACTTCACCCAGACTTTGCTACCAGGACTTGCTGGCCCCTCTGGGGAGATGGTTAAATCCACAA
+CAAGTCTGACCTCGTCTTCTACTTCTGGAAGTAGTGATAAGGTCTATGCCCACCAGATGGTTCGTACAGA
+TTCCCGGGAACAGAAGCTTGATGCATTTCTGCAGCCTCTGAGCAAACCCCTGTCCAGTCAGCCCCAGGCC
+ATTGTCACAGAGGATAAGACAGATATTTCTAGTGGCAGGGCTAGGCAGCAAGATGAGGAGATGCTTGAAC
+TCCCAGCCCCTGCTGAAGTGGCTGCCAAAAATCAGAGCTTGGAGGGGGATACAACAAAGGGGACTTCAGA
+AATGTCAGAGAAGAGAGGACCTACTTCCAGCAACCCCAGAAAGAGACATCGGGAAGATTCTGATGTGGAA
+ATGGTGGAAGATGATTCCCGAAAGGAAATGACTGCAGCTTGTACCCCCCGGAGAAGGATCATTAACCTCA
+CTAGTGTTTTGAGTCTCCAGGAAGAAATTAATGAGCAGGGACATGAGGTTCTCCGGGAGATGTTGCATAA
+CCACTCCTTCGTGGGCTGTGTGAATCCTCAGTGGGCCTTGGCACAGCATCAAACCAAGTTATACCTTCTC
+AACACCACCAAGCTTAGTGAAGAACTGTTCTACCAGATACTCATTTATGATTTTGCCAATTTTGGTGTTC
+TCAGGTTATCGGAGCCAGCACCGCTCTTTGACCTTGCCATGCTTGCCTTAGATAGTCCAGAGAGTGGCTG
+GACAGAGGAAGATGGTCCCAAAGAAGGACTTGCTGAATACATTGTTGAGTTTCTGAAGAAGAAGGCTGAG
+ATGCTTGCAGACTATTTCTCTTTGGAAATTGATGAGGAAGGGAACCTGATTGGATTACCCCTTCTGATTG
+ACAACTATGTGCCCCCTTTGGAGGGACTGCCTATCTTCATTCTTCGACTAGCCACTGAGGTGAATTGGGA
+CGAAGAAAAGGAATGTTTTGAAAGCCTCAGTAAAGAATGCGCTATGTTCTATTCCATCCGGAAGCAGTAC
+ATATCTGAGGAGTCGACCCTCTCAGGCCAGCAGAGTGAAGTGCCTGGCTCCATTCCAAACTCCTGGAAGT
+GGACTGTGGAACACATTGTCTATAAAGCCTTGCGCTCACACATTCTGCCTCCTAAACATTTCACAGAAGA
+TGGAAATATCCTGCAGCTTGCTAACCTGCCTGATCTATACAAAGTCTTTGAGAGGTGTTAAATATGGTTA
+TTTATGCACTGTGGGATGTGTTCTTCTTTCTCTGTATTCCGATACAAAGTGTTGTATCAAAGTGTGATAT
+ACAAAGTGTACCAACATAAGTGTTGGTAGCACTTAAGACTTATACTTGCCTTCTGATAGTATTCCTTTAT
+ACACAGTGGATTGATTATAAATAAATAGATGTGTCTTAACATAA
+Copy<br><br><a data-tooltip-position="top" aria-label="https://www.ncbi.nlm.nih.gov/nuccore/NC_000913.3?report=fasta" rel="noopener" class="external-link" href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000913.3?report=fasta" target="_blank">DNA Sequence of <em></em></a>E. coli mismatch repair gene mutS<br>&gt;NC_000913.3:2857093-2859654 Escherichia coli str. K-12 substr. MG1655, complete genome
+ATGAGTGCAATAGAAAATTTCGACGCCCATACGCCCATGATGCAGCAGTATCTCAGGCTGAAAGCCCAGC
+ATCCCGAGATCCTGCTGTTTTACCGGATGGGTGATTTTTATGAACTGTTTTATGACGACGCAAAACGCGC
+GTCGCAACTGCTGGATATTTCACTGACCAAACGCGGTGCTTCGGCGGGAGAGCCGATCCCGATGGCGGGG
+ATTCCCTACCATGCGGTGGAAAACTATCTCGCCAAACTGGTGAATCAGGGAGAGTCCGTTGCCATCTGCG
+AACAAATTGGCGATCCGGCGACCAGCAAAGGTCCGGTTGAGCGCAAAGTTGTGCGTATCGTTACGCCAGG
+CACCATCAGCGATGAAGCCCTGTTGCAGGAGCGTCAGGACAACCTGCTGGCGGCTATCTGGCAGGACAGC
+AAAGGTTTCGGCTACGCGACGCTGGATATCAGTTCCGGGCGTTTTCGCCTGAGCGAACCGGCTGACCGCG
+AAACGATGGCGGCAGAACTGCAACGCACTAATCCTGCGGAACTGCTGTATGCAGAAGATTTTGCTGAAAT
+GTCGTTAATTGAAGGCCGTCGCGGCCTGCGCCGTCGCCCGCTGTGGGAGTTTGAAATCGACACCGCGCGC
+CAGCAGTTGAATCTGCAATTTGGGACCCGCGATCTGGTCGGTTTTGGCGTCGAGAACGCGCCGCGCGGAC
+TTTGTGCTGCCGGTTGTCTGTTGCAGTATGCGAAAGATACCCAACGTACGACTCTGCCGCATATTCGTTC
+CATCACCATGGAACGTGAGCAGGACAGCATCATTATGGATGCCGCGACGCGTCGTAATCTGGAAATCACC
+CAGAACCTGGCGGGTGGTGCGGAAAATACGCTGGCTTCTGTGCTCGACTGCACCGTCACGCCGATGGGCA
+GCCGTATGCTGAAACGCTGGCTGCATATGCCAGTGCGCGATACCCGCGTGTTGCTTGAGCGCCAGCAAAC
+TATTGGCGCATTGCAGGATTTCACCGCCGGGCTACAGCCGGTACTGCGTCAGGTCGGCGACCTGGAACGT
+ATTCTGGCACGTCTGGCTTTACGAACTGCTCGCCCACGCGATCTGGCCCGTATGCGCCACGCTTTCCAGC
+AACTGCCGGAGCTGCGTGCGCAGTTAGAAACTGTCGATAGTGCACCGGTACAGGCGCTACGTGAGAAGAT
+GGGCGAGTTTGCCGAGCTGCGCGATCTGCTGGAGCGAGCAATCATCGACACACCGCCGGTGCTGGTACGC
+GACGGTGGTGTTATCGCATCGGGCTATAACGAAGAGCTGGATGAGTGGCGCGCGCTGGCTGACGGCGCGA
+CCGATTATCTGGAGCGTCTGGAAGTCCGCGAGCGTGAACGTACCGGCCTGGACACGCTGAAAGTTGGCTT
+TAATGCGGTGCACGGCTACTACATTCAAATCAGCCGTGGGCAAAGCCATCTGGCACCCATCAACTACATG
+CGTCGCCAGACGCTGAAAAACGCCGAGCGCTACATCATTCCAGAGCTAAAAGAGTACGAAGATAAAGTTC
+TCACCTCAAAAGGCAAAGCACTGGCACTGGAAAAACAGCTTTATGAAGAGCTGTTCGACCTGCTGTTGCC
+GCATCTGGAAGCGTTGCAACAGAGCGCGAGCGCGCTGGCGGAACTCGACGTGCTGGTTAACCTGGCGGAA
+CGGGCCTATACCCTGAACTACACCTGCCCGACCTTCATTGATAAACCGGGCATTCGCATTACCGAAGGTC
+GCCATCCGGTAGTTGAACAAGTACTGAATGAGCCATTTATCGCCAACCCGCTGAATCTGTCGCCGCAGCG
+CCGCATGTTGATCATCACCGGTCCGAACATGGGCGGTAAAAGTACCTATATGCGCCAGACCGCACTGATT
+GCGCTGATGGCCTACATCGGCAGCTATGTACCGGCACAAAAAGTCGAGATTGGACCTATCGATCGCATCT
+TTACCCGCGTAGGCGCGGCAGATGACCTGGCGTCCGGGCGCTCAACCTTTATGGTGGAGATGACTGAAAC
+CGCCAATATTTTACATAACGCCACCGAATACAGTCTGGTGTTAATGGATGAGATCGGGCGTGGAACGTCC
+ACCTACGATGGTCTGTCGCTGGCGTGGGCGTGCGCGGAAAATCTGGCGAATAAGATTAAGGCATTGACGT
+TATTTGCTACCCACTATTTCGAGCTGACCCAGTTACCGGAGAAAATGGAAGGCGTCGCTAACGTGCATCT
+CGATGCACTGGAGCACGGCGACACCATTGCCTTTATGCACAGCGTGCAGGATGGCGCGGCGAGCAAAAGC
+TACGGCCTGGCGGTTGCAGCTCTGGCAGGCGTGCCAAAAGAGGTTATTAAGCGCGCACGGCAAAAGCTGC
+GTGAGCTGGAAAGCATTTCGCCGAACGCCGCCGCTACGCAAGTGGATGGTACGCAAATGTCTTTGCTGTC
+AGTACCAGAAGAAACTTCGCCTGCGGTCGAAGCTCTGGAAAATCTTGATCCGGATTCACTCACCCCGCGT
+CAGGCGCTGGAGTGGATTTATCGCTTGAAGAGCCTGGTGTAA
+Copy<br><br><img alt="Blastn" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/xOdPD1.png" referrerpolicy="no-referrer"><br><img alt="NJwzTn" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/NJwzTn.png" referrerpolicy="no-referrer"><br><br>Human MLH1 Protein Sequence<br>MSFVAGVIRRLDETVVNRIAAGEVIQRPANAIKEMIENCLDAKSTSIQVIVKEGGLKLIQIQDNGTGIRKEDLDIVCERF
+TTSKLQSFEDLASISTYGFRGEALASISHVAHVTITTKTADGKCAYRASYSDGKLKAPPKPCAGNQGTQITVEDLFYNIA
+TRRKALKNPSEEYGKILEVVGRYSVHNAGISFSVKKQGETVADVRTLPNASTVDNIRSIFGNAVSRELIEIGCEDKTLAF
+KMNGYISNANYSVKKCIFLLFINHRLVESTSLRKAIETVYAAYLPKNTHPFLYLSLEISPQNVDVNVHPTKHEVHFLHEE
+SILERVQQHIESKLLGSNSSRMYFTQTLLPGLAGPSGEMVKSTTSLTSSSTSGSSDKVYAHQMVRTDSREQKLDAFLQPL
+SKPLSSQPQAIVTEDKTDISSGRARQQDEEMLELPAPAEVAAKNQSLEGDTTKGTSEMSEKRGPTSSNPRKRHREDSDVE
+MVEDDSRKEMTAACTPRRRIINLTSVLSLQEEINEQGHEVLREMLHNHSFVGCVNPQWALAQHQTKLYLLNTTKLSEELF
+YQILIYDFANFGVLRLSEPAPLFDLAMLALDSPESGWTEEDGPKEGLAEYIVEFLKKKAEMLADYFSLEIDEEGNLIGLP
+LLIDNYVPPLEGLPIFILRLATEVNWDEEKECFESLSKECAMFYSIRKQYISEESTLSGQQSEVPGSIPNSWKWTVEHIV
+YKALRSHILPPKHFTEDGNILQLANLPDLYKVFERCL
+
+Copy<br><img alt="MLH" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/j9O8tT.png" referrerpolicy="no-referrer"><br>E. coli mismatch repair gene mutS Protein Sequence<br>MSAIENFDAHTPMMQQYLRLKAQHPEILLFYRMGDFYELFYDDAKRASQLLDISLTKRGASAGEPIPMAGIPYHAVENYL
+AKLVNQGESVAICEQIGDPATSKGPVERKVVRIVTPGTISDEALLQERQDNLLAAIWQDSKGFGYATLDISSGRFRLSEP
+ADRETMAAELQRTNPAELLYAEDFAEMSLIEGRRGLRRHPLWEFEIDTARQQLNLQFGTRDLVGFGVENAPRGLCAAGCL
+LQYAKDTQRTTLPHIRSITMEREQDSIIMDAATRRNLEITQNLAGGAENTLASVLDCTVTPMGSRMLKRWLHMPVRDTRV
+LLERQQTIGALQDFTAGLQPVLRQVGDLERILARLALRTARPRDLARMRHAFQQLPELRAQLETVDSAPVQALREKMGEF
+AELRDLLERAIIDTPPVLVRDGGVIASGYNEELDEWRALADGATDYLERLEVRERERTGLDTLKVGFNAVHGYYIQISRG
+QSHLAPINYMRRQTLKNAERYIIPELKEYEDKVLTSKGKALALEKQLYEELFDLLLPHLEALQQSASALAELDVLVNLAE
+RAYTLNYTCPTFIDKPGIRITEGRHPVVEQVLNEPFIANPLNLSPQRRMLIITGPNMGGKSTYMRQTALIALMAYIGSYV
+PAQKVEIGPIDRIFTRVGAADDLASGRSTFMVEMTETANILHNATEYSLVLMDEIGRGTSTYDGLSLAWACAENLANKIK
+ALTLFATHYFELTQLPEKMEGVANVHLDALEHGDTIAFMHSVQDGAASKSYGLAVAALAGVPKEVIKRARQKLRELESIS
+PNAAATQVDGTQMSLLSVPEETSPAVEALENLDPDSLTPRQALEWIYRLKSLV
+Copy<br><img alt="E.coli" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/bSGMBG.png" referrerpolicy="no-referrer"><br><br><img alt="homology sequence" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/qwAifm.png" referrerpolicy="no-referrer"><br>&gt;AAA17374.1 human homolog of E. coli mutL gene product, Swiss-Prot Accession Number P23367 [Homo sapiens]
+MSFVAGVIRRLDETVVNRIAAGEVIQRPANAIKEMIENCLDAKSTSIQVIVKEGGLKLIQIQDNGTGIRKEDLDIVCERF
+TTSKLQSFEDLASISTYGFRGEALASISHVAHVTITTKTADGKCAYRASYSDGKLKAPPKPCAGNQGTQITVEDLFYNIA
+TRRKALKNPSEEYGKILEVVGRYSVHNAGISFSVKKQGETVADVRTLPNASTVDNIRSVFGNAVSRELIEIGCEDKTLAF
+KMNGYISNANYSVKKCIFLLFINHRLVESTSLRKAIETVYAAYLPKNTHPFLYLSLEISPQNVDVNVHPTKHEVHFLHEE
+SILERVQQHIESKLLGSNSSRMYFTQTLLPGLAGPSGEMVKSTTSLTSSSTSGSSDKVYAHQMVRTDSREQKLDAFLQPL
+SKPLSSQPQAIVTEDKTDISSGRARQQDEEMLELPAPAEVAAKNQSLEGDTTKGTSEMSEKRGPTSSNPRKRHREDSDVE
+MVEDDSRKEMTAACTPRRRIINLTSVLSLQEEINEQGHEVLREMLHNHSFVGCVNPQWALAQHQTKLYLLNTTKLSEELF
+YQILIYDFANFGVLRLSEPAPLFDLAMLALDSPESGWTEEDGPKEGLAEYIVEFLKKKAEMLADYFSLEIDEEGNLIGLP
+LLIDNYVPPLEGLPIFILRLATEVNWDEEKECFESLSKECAMFYSIRKQYISEESTLSGQQSEVPGSIPNSWKWTVEHIV
+YKALRSHILPPKHFTEDGNILQLANLPDLYKVFERC
+&gt;NP_000240.1 DNA mismatch repair protein Mlh1 isoform 1 [Homo sapiens]
+MSFVAGVIRRLDETVVNRIAAGEVIQRPANAIKEMIENCLDAKSTSIQVIVKEGGLKLIQIQDNGTGIRKEDLDIVCERF
+TTSKLQSFEDLASISTYGFRGEALASISHVAHVTITTKTADGKCAYRASYSDGKLKAPPKPCAGNQGTQITVEDLFYNIA
+TRRKALKNPSEEYGKILEVVGRYSVHNAGISFSVKKQGETVADVRTLPNASTVDNIRSIFGNAVSRELIEIGCEDKTLAF
+KMNGYISNANYSVKKCIFLLFINHRLVESTSLRKAIETVYAAYLPKNTHPFLYLSLEISPQNVDVNVHPTKHEVHFLHEE
+SILERVQQHIESKLLGSNSSRMYFTQTLLPGLAGPSGEMVKSTTSLTSSSTSGSSDKVYAHQMVRTDSREQKLDAFLQPL
+SKPLSSQPQAIVTEDKTDISSGRARQQDEEMLELPAPAEVAAKNQSLEGDTTKGTSEMSEKRGPTSSNPRKRHREDSDVE
+MVEDDSRKEMTAACTPRRRIINLTSVLSLQEEINEQGHEVLREMLHNHSFVGCVNPQWALAQHQTKLYLLNTTKLSEELF
+YQILIYDFANFGVLRLSEPAPLFDLAMLALDSPESGWTEEDGPKEGLAEYIVEFLKKKAEMLADYFSLEIDEEGNLIGLP
+LLIDNYVPPLEGLPIFILRLATEVNWDEEKECFESLSKECAMFYSIRKQYISEESTLSGQQSEVPGSIPNSWKWTVEHIV
+YKALRSHILPPKHFTEDGNILQLANLPDLYKVFERC
+&gt;AAQ02400.1 mutL-like 1, colon cancer, nonpolyposis type 2, partial [synthetic construct]
+MSFVAGVIRRLDETVVNRIAAGEVIQRPANAIKEMIENCLDAKSTSIQVIVKEGGLKLIQIQDNGTGIRKEDLDIVCERF
+TTSKLQSFEDLASISTYGFRGEALASISHVAHVTITTKTADGKCAYRASYSDGKLKAPPKPCAGNQGTQITVEDLFYNIA
+TRRKALKNPSEEYGKILEVVGRYSVHNAGISFSVKKQGETVADVRTLPNASTVDNIRSIFGNAVSRELIEIGCEDKTLAF
+KMNGYISNANYSVKKCIFLLFINHRLVESTSLRKAIETVYAAYLPKNTHPFLYLSLEISPQNVDVNVHPTKHEVHFLHEE
+SILERVQQHIESKLLGSNSSRMYFTQTLLPGLAGPSGEMVKSTTSLTSSSTSGSSDKVYAHQMVRTDSREQKLDAFLQPL
+SKPLSSQPQAIVTEDKTDISSGRARQQDEEMLELPAPAEVAAKNQSLEGDTTKGTSEMSEKRGPTSSNPRKRHREDSDVE
+MVEDDSRKEMTAACTPRRRIINLTSVLSLQEEINEQGHEVLREMLHNHSFVGCVNPQWALAQHQTKLYLLNTTKLSEELF
+YQILIYDFANFGVLRLSEPAPLFDLAMLALDSPESGWTEEDGPKEGLAEYIVEFLKKKAEMLADYFSLEIDEEGNLIGLP
+LLIDNYVPPLEGLPIFILRLATEVNWDEEKECFESLSKECAMFYSIRKQYISEESTLSGQQSEVPGSIPNSWKWTVEHIV
+YKALRSHILPPKHFTEDGNILQLANLPDLYKVFERCL
+&gt;AKI70020.1 MLH1, partial [synthetic construct]
+MSFVAGVIRRLDETVVNRIAAGEVIQRPANAIKEMIENCLDAKSTSIQVIVKEGGLKLIQIQDNGTGIRKEDLDIVCERF
+TTSKLQSFEDLASISTYGFRGEALASISHVAHVTITTKTADGKCAYRASYSDGKLKAPPKPCAGNQGTQITVEDLFYNIA
+TRRKALKNPSEEYGKILEVVGRYSVHNAGISFSVKKQGETVADVRTLPNASTVDNIRSIFGNAVSRELIEIGCEDKTLAF
+KMNGYISNANYSVKKCIFLLFINHRLVESTSLRKAIETVYAAYLPKNTHPFLYLSLEISPQNVDVNVHPTKHEVHFLHEE
+SILERVQQHIESKLLGSNSSRMYFTQTLLPGLAGPSGEMVKSTTSLTSSSTSGSSDKVYAHQMVRTDSREQKLDAFLQPL
+SKPLSSQPQAIVTEDKTDISSGRARQQDEEMLELPAPAEVAAKNQSLEGDTTKGTSEMSEKRGPTSSNPRKRHREDSDVE
+MVEDDSRKEMTAACTPRRRIINLTSVLSLQEEINEQGHEVLREMLHNHSFVGCVNPQWALAQHQTKLYLLNTTKLSEELF
+YQILIYDFANFGVLRLSEPAPLFDLDMLALDSPESGWTEEDGPKEGLAEYIVEFLKKKAEMLADYFSLEIDEEGNLIGLP
+LLIDNYVPPLEGLPIFILRLATEVNWDEEKECFESLSKECAMFYSIRKQYISEESTLSGQQSEVPGSIPNSWKWTVEHIV
+YKALRSHILPPKHFTEDGNILQLANLPDLYKVFERC
+&gt;BAG35497.1 unnamed protein product [Homo sapiens]
+MSFVAGVIRRLDETVVNRIAAGEVIQRPANAIKEMIENCLDAKSTSIQVIVKEGGLKLIQIQDNGTGIRKEDLDIVCERF
+TTSKLQSFEDLASISTYGFRGEALASISHVAHVTITTKTADGKCAYRASYSDGKLKAPPKPCAGNQGTQITVEDLFYNIA
+TRRKALKNPSEEYGKILEVVGRYSVHNAGISFSVKKQGETVADVRTLPNASTVDNIRSIFGNAVSRELIEIGCEDKTLAF
+KMNGYISNANYSVKKCIFLLFINHRLVESTSLRKAIETVYAAYLPKNTHPFLYLSLEISPQNVDVNVHPTKHEVHFLHEE
+SILERVQQHIESKLLGSNSSRMYFTQTLLPGLAGPSGEVVKSTTSLTSSSTSGSSDKVYAHQMVRTDSREQKLDAFLQPL
+SKPLSSQPQAIVTEDKTDISSGRARQQDEEMLELPAPAEVAAKNQSLEGDTTKGTSEMSEKRGPTSSNPRKRHREDSDVE
+MVEDDSRKEMTAACTPRRRIINLTSVLSLQEEINEQGHEVLREMLHNHSFVGCVNPQWALAQHQTKLYLLNTTKLSEELF
+YQILIYDFANFGVLRLSEPAPLFDLAMLALDSPESGWTEEDGPKEGLAEYIVEFLKKKAEMLADYFSLEIDEEGNLIGLP
+LLIDNYVPPLEGLPIFILRLATEVNWDEEKECFESLSKECAMFYSIRKQYISEESTLSGQQSEVPGSIPNSWKWTVEHIV
+YKALRSHILPPKHFTEDGNILQLANLPDLYKVFERC
+&gt;AKI70018.1 MLH1, partial [synthetic construct]
+MSFVAGVIRRLDETVVNRIAAGEVIQRPANAIKEMIENCLDAKSTSIQVIVKEGGLKLIQIQDNGTGIRKEDLDIVCERF
+TTSKLQSFEDLASISTYGFRGEALASISHVAHVTITTKTADGKCAYRASYSDGKLKAPPKPCAGNQGTQITVEDLFYNIA
+TRRKALKNPSEEYGKILEVVGRYSVHNAGISFSVKKQGETVADVRTLPNASTVDNIRSIFGNAVSRELIEIGCEDKTLAF
+KMNDYISNANYSVKKCIFLLFINHRLVESTSLRKAIETVYAAYLPKNTHPFLYLSLEISPQNVDVNVHPTKHEVHFLHEE
+SILERVQQHIESKLLGSNSSRMYFTQTLLPGLAGPSGEMVKSTTSLTSSSTSGSSDKVYAHQMVRTDSREQKLDAFLQPL
+SKPLSSQPQAIVTEDKTDISSGRARQQDEEMLELPAPAEVAAKNQSLEGDTTKGTSEMSEKRGPTSSNPRKRHREDSDVE
+MVEDDSRKEMTAACTPRRRIINLTSVLSLQEEINEQGHEVLREMLHNHSFVGCVNPQWALAQHQTKLYLLNTTKLSEELF
+YQILIYDFANFGVLRLSEPAPLFDLAMLALDSPESGWTEEDGPKEGLAEYIVEFLKKKAEMLADYFSLEIDEEGNLIGLP
+LLIDNYVPPLEGLPIFILRLATEVNWDEEKECFESLSKECAMFYSIRKQYISEESTLSGQQSEVPGSIPNSWKWTVEHIV
+YKALRSHILPPKHFTEDGNILQLANLPDLYKVFERC
+&gt;AAT44531.1 hypothetical rhabdomyosarcoma antigen MU-RMS-40.5, partial [Homo sapiens]
+SFVAGVIRRLDETVVNRIAAGEVIQRPANAIKEMIENCLDAKSTSIQVIVKEGGLKLIQIQDNGTGIRKEDLDIVCERFT
+TSKLQSFEDLASISTYGFRGEALASISHVAHVTITTKTADGKCAYRASYSDGKLKAPPKPCAGNQGTQITVEDLFYNIAT
+RRKALKNPSEEYGKILEVVGRYSVHNAGISFSVKKQGETVADVRTLPNASTVDNIRSIFGNAVSRELIEIGCEDKTLAFK
+MNGYISNANYSVKKCIFLLFINHRLVESTSLRKAIETVYAAYLPKNTHPFLYLSLEISPQNVDVNVHPTKHEVHFLHEES
+ILERVQQHIESKLLGSNSSRMYFTQTLLPGLAGPSGEMVKSTTSLTSSSTSGSSDKVYAHQMVRTDSREQKLDAFLQPLS
+KPLSSQPQAIVTEDKTDISSGRARQQDEEMLELPAPAEVAAKNQSLEGDTTKGTSEMSEKRGPTSSNPRKRHREDSDVEM
+VEDDSRKEMTAACTPRRRIINLTSVLSLQEEINEQGHEVLREMLHNHSFVGCVNPQWALAQHQTKLYLLNTTKLSEELFY
+QILIYDFANFGVLRLSEPAPLFDLAMLALDSPESGWTEEDGPKEGLAEYIVEFLKKKAEMLADYFSLEIDEEGNLIGLPL
+LIDNYVPPLEGLPIFILRLATEVNWDEEKECFESLSKECAMFYSIRKQYISEESTLSGQQSEVPGSIPNSWKWTVEHIVY
+KALRSHILPPKHFTEDGNILQLANLPDLYKVFERC
+&gt;AKI70017.1 MLH1, partial [synthetic construct]
+MSFVAGVIRRLDETVVNRIAAGEVIQRPANAIKEMIENCLDAKFTSIQVIVKEGGLKLIQIQDNGTGIRKEDLDIVCERF
+TTSKLQSFEDLASISTYGFRGEALASISHVAHVTITTKTADGKCAYRASYSDGKLKAPPKPCAGNQGTQITVEDLFYNIA
+TRRKALKNPSEEYGKILEVVGRYSVHNAGISFSVKKQGETVADVRTLPNASTVDNIRSIFGNAVSRELIEIGCEDKTLAF
+KMNGYISNANYSVKKCIFLLFINHRLVESTSLRKAIETVYAAYLPKNTHPFLYLSLEISPQNVDVNVHPTKHEVHFLHEE
+SILERVQQHIESKLLGSNSSRMYFTQTLLPGLAGPSGEMVKSTTSLTSSSTSGSSDKVYAHQMVRTDSREQKLDAFLQPL
+SKPLSSQPQAIVTEDKTDISSGRARQQDEEMLELPAPAEVAAKNQSLEGDTTKGTSEMSEKRGPTSSNPRKRHREDSDVE
+MVEDDSRKEMTAACTPRRRIINLTSVLSLQEEINEQGHEVLREMLHNHSFVGCVNPQWALAQHQTKLYLLNTTKLSEELF
+YQILIYDFANFGVLRLSEPAPLFDLAMLALDSPESGWTEEDGPKEGLAEYIVEFLKKKAEMLADYFSLEIDEEGNLIGLP
+LLIDNYVPPLEGLPIFILRLATEVNWDEEKECFESLSKECAMFYSIRKQYISEESTLSGQQSEVPGSIPNSWKWTVEHIV
+YKALRSHILPPKHFTEDGNILQLANLPDLYKVFERC
+&gt;AKI70019.1 MLH1, partial [synthetic construct]
+MSFVAGVIRRLDETVVNRIAAGEVIQRPANAIKEMIENCLDAKSTSIQVIVKEGGLKLIQIQDNGTGIRKEDLDIVCERF
+TTSKLQSFEDLASISTYGFRGEALASISHVAHVTITTKTADGKCAYRASYSDGKLKAPPKPCAGNQGTQITVEDLFYNIA
+TRRKALKNPSEEYGKILEVVGRYSVHNAGISFSVKKQGETVADVRTLPNASTVDNIRSIFGNAVSRELIEIGCEDKTLAF
+KMNGYISNANYSVKKCIFLLFINHRLVESTSLRKAIETVYAAYLPKNTHPFLYLSLEISPQNVDVNVHPTKHEVHFLHEE
+SILERVQQHIESKLLGSNSSRMYFTQTLLPGLAGPSGEMVKSTTSLTSSSTSGSSDKVYAHQMVRTDSREQKLDAFLQPL
+SKPLSSQPQAIVTEDKTDISSGRARQQDEEMLELPAPAEVAAKNQSLEGDTTKGTSEMSEKRGPTSSNPRKIHREDSDVE
+MVEDDSRKEMTAACTPRRRIINLTSVLSLQEEINEQGHEVLREMLHNHSFVGCVNPQWALAQHQTKLYLLNTTKLSEELF
+YQILIYDFANFGVLRLSEPAPLFDLAMLALDSPESGWTEEDGPKEGLAEYIVEFLKKKAEMLADYFSLEIDEEGNLIGLP
+LLIDNYVPPLEGLPIFILRLATEVNWDEEKECFESLSKECAMFYSIRKQYISEESTLSGQQSEVPGSIPNSWKWTVEHIV
+YKALRSHILPPKHFTEDGNILQLANLPDLYKVFERC
+&gt;XP_001170433.1 DNA mismatch repair protein Mlh1 isoform X1 [Pan troglodytes]
+MSFVAGVIRRLDETVVNRIAAGEVIQRPANAIKEMIENCLDAKSTSIQVIVKEGGLKLIQIQDNGTGIRKEDLDIVCERF
+TTSKLQSFEDLASISTYGFRGEALASISHVAHVTITTKTADGKCAYRASYSDGKLKAPPKPCAGNQGTQITVEDLFYNIA
+TRRKALKNPSEEYGKILEVVGRYSIHNAGISFSVKKQGETVADVRTLPNASTVDNIRSIFGNAVSRELIEIGCEDKTLAF
+KMNGYISNANYSVKKCIFLLFINHRLVESTSLRKAIETVYAAYLPKNTHPFLYLSLEISPQNVDVNVHPTKHEVHFLHEE
+SILERVQQHIESKLLGSNSSRMYFTQTLLPGLAGPSGEMVKSTTSLTSSSTSGSSDKVYAHQMVRTDSREQKLDAFLQPL
+SKPLSSQPQAIVTEDKTDISSGRARQQDEEMLELPAPAEVTAKNQSLEGDTTKGTSEMSEKRGPTSSNPRKRHREDSDVE
+MVEDDSRKEMTAACTPRRRIINLTSVLSLQEEINERGHEVLREMLHNHSFVGCVNPQWALAQHQTKLYLLNTTKLSEELF
+YQILIYDFANFGVLRLSEPAPLFDLAMLALDSPESGWTEEDGPKEGLAEYIVEFLKKKAEMLADYFSLEIDEEGNLIGLP
+LLIDNYVPPLEGLPIFILRLATEVNWDEEKECFESLSKECAMFYSIRKQYISEESTLSGQQSEVPGSIPNSWKWTVEHIV
+YKALRSHILPPKHFTEDGNILQLANLPDLYKVFERC
+
+Copy<br><br>Write a program to calculate similarity between any pairs of protein sequences in the given input ﬁle “APOBEC3A.fasta”. (global alignment, gap penalty and gap extend penalty=-5). You can download scoring matrix from <a data-tooltip-position="top" aria-label="https://www.ncbi.nlm.nih.gov/IEB/ToolBox/C_DOC/lxr/source/data/BLOSUM62" rel="noopener" class="external-link" href="https://www.ncbi.nlm.nih.gov/IEB/ToolBox/C_DOC/lxr/source/data/BLOSUM62" target="_blank">here</a><br>
+According to your program, which two sequences are most similar?<br>from Bio import SeqIO
+
+def read_fasta(file):
+    sequences = []
+    for record in SeqIO.parse(file, "fasta"):
+        sequences.append(str(record.seq))
+    return sequences
+sequences = read_fasta("APOBEC3A.fasta")
+
+def load_blosum62(file):
+    blosum62 = {}
+    with open(file) as f:
+        lines = f.readlines()
+        amino_acids = lines[0].split() 
+        for line in lines[1:]:
+            parts = line.split()
+            row_acid = parts[0]  
+            scores = list(map(int, parts[1:]))  
+            blosum62[row_acid] = dict(zip(amino_acids, scores))
+    return blosum62
+def needleman_wunsch(seq1, seq2, gap_penalty, blosum62):
+    n = len(seq1)
+    m = len(seq2)
+    score_matrix = [[0] * (m + 1) for _ in range(n + 1)]
+
+    for i in range(1, n + 1):
+        score_matrix[i][0] = gap_penalty * i
+    for j in range(1, m + 1):
+        score_matrix[0][j] = gap_penalty * j
+
+    for i in range(1, n + 1):
+        for j in range(1, m + 1):
+            match = score_matrix[i-1][j-1] + blosum62[seq1[i-1]][seq2[j-1]]
+            delete = score_matrix[i-1][j] + gap_penalty
+            insert = score_matrix[i][j-1] + gap_penalty
+            score_matrix[i][j] = max(match, delete, insert)
+
+    return score_matrix[n][m]
+Copy<br><br>blosum62 = load_blosum62("BLOSUM62.txt")
+gap_penalty = -5
+sequences = read_fasta("APOBEC3A.fasta")
+ans=(0,1)
+res=-1
+for i in range(len(sequences)):
+    for j in range(i + 1, len(sequences)):
+        score = needleman_wunsch(sequences[i], sequences[j], gap_penalty, blosum62)
+        if score&gt;res:
+            res=score
+            ans=(i,j)
+        # print(f"Similarity between sequence {i+1} and {j+1}: {score}")
+
+print(f"The most similar sequences are {ans[0]+1} and {ans[1]+1} with a similarity score of {res}")
+Copy<br><br>The most similar sequences are sequence APOBEC3A_Macaca_fascicularis and sequence APOBEC3A_Macaca_leonina with a similarity score of 1103]]></description><link>https://blog.allenygy.vip/bioinfo/assignment/as-1/bioinfo-assignment-1.html</link><guid isPermaLink="false">Bioinfo/Assignment/As-1/Bioinfo-Assignment-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 09 Oct 2024 11:53:30 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/8eogvt.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/8eogvt.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Lab Report: Image Processing with 2D Discrete Fourier Transform (DFT) and Inverse DFT]]></title><description><![CDATA[ 
+ <br><br><br><br>I start by resizing the image to , which allows it to be divided cleanly into 256 blocks with shape   for DFT analysis.<br>   # Load the grayscale image
+   img_path = "lena.jpg"  # Replace with the actual path to the image
+   image = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
+   image = cv2.resize(image, (128,128))
+   # Convert the image to a 2D list
+   image_list = image.tolist()
+Copy<br><br>According to the formula of 2D Fourier Transform<br><br>This formula transforms the spatial domain image   into the frequency domain representation   . It can be broken down into two main components:<br>
+<br>Spatial Component    - the original image in the spatial domain. 
+<br>Exponential Term  - the Fourier kernel, which captures the transformation from spatial coordinates  to frequency coordinates .
+<br>This exponential term can be precomputed and stored in a 4D matrix to improve computational efficiency. By preprocessing and storing this kernel in memory, we can reuse it when calculating the DFT for each block of the image.<br><br>Take a  gray scales images as an example<br>For an image of size   , if you divide it into 256 blocks with shape , the precomputed kernel matrix will have the shape   . This kernel can then be used to calculate the DFT for all 256 blocks without recalculating the kernel for each one. This preprocessing is especially beneficial because it avoids repetitive computation and accelerates the DFT calculation across multiple blocks.<br><br>Since the similar expression between DFT and IDFT, we can also preprocess the IDFT kernel matrix in the same way.<br><br><br>Here is the code to preprocess the DFT and IDFT kernel matrices:<br>	def preprocess_dft_kernel(M, N):
+	       dft_kernel = [[[[0+0j for _ in range(N)] for _ in range(M)] for _ in range(N)] for _ in range(M)]
+	       for u in range(M):
+	           for v in range(N):
+	               for x in range(M):
+	                   for y in range(N):
+	                       dft_kernel[u][v][x][y] = np.exp(-2j * math.pi * ((u * x) / M + (v * y) / N))
+	       return dft_kernel
+	
+	def preprocess_idft_kernel(M, N):
+	       idft_kernel = [[[[0+0j for _ in range(N)] for _ in range(M)] for _ in range(N)] for _ in range(M)]
+	       for u in range(M):
+	           for v in range(N):
+	               for x in range(M):
+	                   for y in range(N):
+	                       idft_kernel[u][v][x][y] = np.exp(2j * math.pi * ((u * x) / M + (v * y) / N))
+	       return idft_kernel   
+Copy<br><br>Next, I split the resized image into  blocks for localized DFT processing.<br>   def split_into_blocks(matrix, block_size=8):
+       M = len(matrix)
+       N = len(matrix[0])
+       blocks = []
+       for i in range(0, M, block_size):
+           for j in range(0, N, block_size):
+               block = [row[j:j+block_size] for row in matrix[i:i+block_size]]
+               blocks.append(block)
+       return blocks
+   # Split image into blocks
+   block_size = 8
+   blocks = split_into_blocks(image_list, block_size)
+Copy<br><br>By using the preprocessed DFT kernel, I apply the 2D DFT to each block to transform it into the frequency domain.<br>	def dft_2d(block):
+	    M, N = len(block), len(block[0])
+	    global dft_kernel
+	    dft_result = [[0+0j for _ in range(N)] for _ in range(M)]
+	    for u in range(M):
+	        for v in range(N):
+	            sum_val = 0
+	            for x in range(M):
+	                for y in range(N):
+	                    sum_val += block[x][y] * dft_kernel[u][v][x][y]
+	            dft_result[u][v] = sum_val
+	    return dft_result
+	
+	# Preprocess DFT kernel and compute DFT for each block
+	dft_kernel = preprocess_dft_kernel(block_size, block_size)
+	dft_blocks = [dft_2d(block) for block in blocks]
+Copy<br><br>The formulas in the image represent the amplitude and phase of a complex number ( F(u, v) ), typically the result of a Fourier Transform. They are given by:<br><br><br>This is the magnitude of  and can be calculated as:<br><br><br><br>This represents the angle of ( F(u, v) ) in the complex plane, calculated as:<br><br>Here is the code to compute the amplitude and phase for each block:<br>	def compute_amplitude_phase(dft_block):
+		M, N = len(dft_block), len(dft_block[0])
+	    amplitude = [[0 for _ in range(N)] for _ in range(M)]
+	    phase = [[0 for _ in range(N)] for _ in range(M)]
+	    for i in range(M):
+	        for j in range(N):
+	            amplitude[i][j] = (dft_block[i][j].real**2 + dft_block[i][j].imag**2)**0.5
+	            phase[i][j] = math.atan2(dft_block[i][j].imag, dft_block[i][j].real)
+	    return amplitude, phase
+	
+	# Compute amplitude for each DFT block
+	amplitude_blocks = [compute_amplitude_phase(block)[0] for block in dft_blocks]
+	# Compute phase for each DFT block
+	phase_blocks = [compute_amplitude_phase(block)[1] for block in dft_blocks]
+Copy<br><br>Finally, we apply the 2D IDFT to each block, transforming it back to the spatial domain.<br>	def idft_2d(dft_block):
+	    M, N = len(dft_block), len(dft_block[0])
+	    global idft_kernel
+	    idft_result = [[0+0j for _ in range(N)] for _ in range(M)]
+	    for x in range(M):
+	        for y in range(N):
+	        	sum_val = 0
+	            for u in range(M):
+	                for v in range(N):
+	                    sum_val += dft_block[u][v] * idft_kernel[u][v][x][y]  
+	            idft_result[x][y] = sum_val / (M * N)
+	    return idft_result
+	
+	# Preprocess IDFT kernel and compute IDFT for each DFT block
+	idft_kernel = preprocess_idft_kernel(block_size, block_size)
+	idft_blocks = [idft_2d(block) for block in dft_blocks]
+Copy<br><br>After applying the IDFT, I merge the blocks back by the order of division to obtain the reconstructed image and visualize the results.<br>   def merge_blocks(blocks, original_shape, block_size=8):
+       M, N = original_shape
+       merged_matrix = [[0 for _ in range(N)] for _ in range(M)]
+       block_index = 0
+       for i in range(0, M, block_size):
+           for j in range(0, N, block_size):
+               block = blocks[block_index]
+               for x in range(len(block)):
+                   for y in range(len(block[0])):
+                       merged_matrix[i + x][j + y] = block[x][y]
+               block_index += 1
+       return merged_matrix
+
+   # Merge blocks to reconstruct the image
+   reconstructed_image = merge_blocks(idft_blocks, (128, 128), block_size)
+   reconstructed_image_np = np.array([[z.real for z in row] for row in reconstructed_image])
+Copy<br><br>After dividing the (128 \times 128) image into 256 blocks, I performed a Fourier Transform on each individual block. This process resulted in 256 separate amplitude and phase maps, which I then combined into a single composite image for visualization.<br>For the reconstruction of the original image, I applied the inverse Fourier Transform to each block separately. Finally, I reassembled the blocks in their original positions, following the same layout as the initial division, to form the complete reconstructed image. <br><br>Lena reconstructed image:<br><img alt="lena_reconstructed" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/lena_reconstructed.png" referrerpolicy="no-referrer"><br>Lena DFT Phase Blocks image:<br><img alt="lena_phase_blocks" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/lena_phase_blocks.png" referrerpolicy="no-referrer"><br>Lena DFT Amplitude Blocks image:<br><img alt="lena_amplitude_blocks" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/lena_amplitude_blocks.png" referrerpolicy="no-referrer"><br>Lena DFT Blocks image:<br><img alt="lena_dft_blocks" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/lena_dft_blocks.png" referrerpolicy="no-referrer"><br><br>Cartoon Photo reconstructed image:<br><img alt="cartoon_reconstructed" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/cartoon_reconstructed.png" referrerpolicy="no-referrer"><br>Cartoon  Photo DFT Phase Blocks image:<br><img alt="cartoon_phase_blocks" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/cartoon_phase_blocks.png" referrerpolicy="no-referrer"><br>Cartoon Photo DFT Amplitude Blocks image:<br><img alt="cartoon_amplitude_blocks" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/cartoon_amplitude_blocks.png" referrerpolicy="no-referrer"><br>Cartoon Photo DFT Blocks image:<br><img alt="cartoon_dft_blocks" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/cartoon_dft_blocks.png" referrerpolicy="no-referrer"><br><br><img alt="Fourier Transform" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/OgmonS.png" referrerpolicy="no-referrer"><br><img alt="Fourier Transform" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/r7IyAq.png" referrerpolicy="no-referrer">]]></description><link>https://blog.allenygy.vip/computer-vision/assignment/cv-as-1.html</link><guid isPermaLink="false">Computer Vision/Assignment/CV-As-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 09 Oct 2024 11:12:56 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/lena_reconstructed.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/lena_reconstructed.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="CV-HW-3" href="CV-HW-3" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">CV-HW-3</a><a data-href="CV-HW-3" href="computer-vision/homework/cv-hw-3.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">CV-HW-3</a>]]></title><description><![CDATA[ 
+ <br><br><br><br>Using a Gaussian filter to smooth the image and then downsample the image by a factor of 2.<br>
+We can apply twice the 1D Gaussian filter to the image in the x direction and then in the y direction. then we can downsample the image by a factor of 2 in the x direction and then in the y direction.<br><br>Suppose the image is a 2D matrix.<br> with size <br>The Gaussian filter is a 2D matrix <br><br>The Downsample matrix is a 2D matrix.<br><br><br><br><br><br><br>The downsampled image is<br><br>import random
+import numpy as np
+def generate_matrix():
+    matrix = []
+    random.seed(0)
+    for i in range(8):
+        row = []
+        for j in range(8):
+            row.append(random.randint(0, 9))
+        matrix.append(row)
+    return matrix
+def downsample(matrix, G_x, G_y):
+    print("Apply G_x to matrix")
+    new_matrix = np.matmul(G_x, matrix)*0.0625
+    print(new_matrix)
+    print("Apply G_y to new_matrix")
+    new_matrix = np.matmul(new_matrix, G_y)*0.0625
+    print("Downsampled Matrix:")
+    print(new_matrix)
+    return new_matrix
+
+G_x = [[6, 4, 1, 0, 0, 0, 0, 0], [1, 4, 6, 4, 1, 0, 0, 0],   [0, 0, 1, 4, 6, 4, 1, 0], [0, 0, 0, 0, 1, 4, 6, 4]]
+
+G_y = [[6,1,0,0],
+       [4,4,0,0],
+       [1,6,1,0],
+       [0,4,4,0],
+       [0,1,6,1],
+       [0,0,4,4],
+       [0,0,1,6],
+       [0,0,0,4]]
+
+matrix = generate_matrix()
+matrix = np.array(matrix)
+G_x = np.array(G_x)
+G_y = np.array(G_y)
+print("Original Matrix:")
+print(matrix)
+
+print("G_x:")
+print(G_x)
+print("G_y:")
+print(G_y)
+
+downsampled_matrix = downsample(matrix, G_x, G_y)
+Copy<br><br>    Original Matrix (8x8):
+    [[6 6 0 4 8 7 6 4]
+     [7 5 9 3 8 2 4 2]
+     [1 9 4 8 9 2 4 1]
+     [1 5 7 8 1 5 6 5]
+     [9 3 8 7 7 8 4 0]
+     [8 0 1 6 0 9 7 5]
+     [3 5 1 3 9 3 3 2]
+     [8 7 1 1 5 8 7 1]]
+    
+    G_x Filter:
+    [[6 4 1 0 0 0 0 0]
+     [1 4 6 4 1 0 0 0]
+     [0 0 1 4 6 4 1 0]
+     [0 0 0 0 1 4 6 4]]
+    
+    G_y Filter:
+    [[6 1 0 0]
+     [4 4 0 0]
+     [1 6 1 0]
+     [0 4 4 0]
+     [0 1 6 1]
+     [0 0 4 4]
+     [0 0 1 6]
+     [0 0 0 4]]
+    Apply G_x to matrix
+    [[4.0625 4.0625 2.5    2.75   5.5625 3.25   3.5    2.0625]
+     [3.3125 6.4375 6.     6.4375 6.5625 3.4375 4.625  2.375 ]
+     [5.875  3.25   5.3125 6.8125 4.     6.8125 5.1875 2.6875]
+     [5.6875 3.8125 1.375  3.3125 5.0625 5.875  4.875  2.25  ]]
+    Apply G_y to new_matrix
+    Downsampled Matrix:
+    [[2.6953125  3.2421875  3.9609375  2.98828125]
+     [3.2265625  6.0859375  5.59375    3.59765625]
+     [3.34765625 5.125      5.5625     4.5703125 ]
+     [3.171875   2.96875    4.5859375  4.17578125]]
+Copy<br><br><br>Firstly, fill the zeros in the image by the nearest neighbor interpolation.<br>
+Then apply the 2D Gaussian filter to the image.<br>Suppose the image is a 2D matrix  with size .<br>Insert zeros in the image to get a new image  with size .<br>The Gaussian filter is a 2D matrix <br><br><br>import numpy as np
+from scipy.ndimage import convolve
+
+def upsample(matrix, G):
+    print("Original Matrix (4x4):")
+    print(matrix)
+    
+    new_matrix = np.zeros((8, 8))    
+    new_matrix[::2, ::2] = matrix
+    print("\nUpsampled Matrix (Insert Zeros):")
+    print(new_matrix)
+    
+    new_matrix = convolve(new_matrix, G, mode='reflect')
+    
+    print("\nUpsampled Matrix (After Applying Gaussian Filter):")
+    print(new_matrix)
+    
+    return new_matrix
+
+matrix = generate_matrix(4)
+matrix = np.array(matrix)
+
+G = [[1, 2, 1], [2, 4, 2], [1, 2, 1]]
+G = np.array(G)
+
+upsampled_matrix = upsample(matrix, G)
+
+
+
+Copy<br><br>    Original Matrix (4x4):
+    [[6 6 0 4]
+     [8 7 6 4]
+     [7 5 9 3]
+     [8 2 4 2]]
+    
+    Upsampled Matrix (Insert Zeros):
+    [[6. 0. 6. 0. 0. 0. 4. 0.]
+     [0. 0. 0. 0. 0. 0. 0. 0.]
+     [8. 0. 7. 0. 6. 0. 4. 0.]
+     [0. 0. 0. 0. 0. 0. 0. 0.]
+     [7. 0. 5. 0. 9. 0. 3. 0.]
+     [0. 0. 0. 0. 0. 0. 0. 0.]
+     [8. 0. 2. 0. 4. 0. 2. 0.]
+     [0. 0. 0. 0. 0. 0. 0. 0.]]
+    
+    Upsampled Matrix (After Applying Gaussian Filter):
+    [[54. 36. 36. 18.  0. 12. 24. 12.]
+     [42. 27. 26. 19. 12. 14. 16.  8.]
+     [48. 30. 28. 26. 24. 20. 16.  8.]
+     [45. 27. 24. 27. 30. 22. 14.  7.]
+     [42. 24. 20. 28. 36. 24. 12.  6.]
+     [45. 22. 14. 20. 26. 18. 10.  5.]
+     [48. 20.  8. 12. 16. 12.  8.  4.]
+     [24. 10.  4.  6.  8.  6.  4.  2.]]
+Copy<br><br><br>Downsample the image by a factor of 2 and then upsample the image by a factor of 2.<br>
+The Laplacian filter can be get by using the original image minus the upsampled image.<br><br>matrix = generate_matrix(8)
+matrix = np.array(matrix)
+
+downsampled_matrix = downsample(matrix, G_x, G_y)
+upsampled_matrix = upsample(downsampled_matrix, G)
+
+laplacian_matrix = matrix - upsampled_matrix
+
+print("\nLaplacian Matrix:")
+print(laplacian_matrix)
+
+Copy<br><br>
+    Downsampled Matrix:
+    [[2.6953125  3.2421875  3.9609375  2.98828125]
+     [3.2265625  6.0859375  5.59375    3.59765625]
+     [3.34765625 5.125      5.5625     4.5703125 ]
+     [3.171875   2.96875    4.5859375  4.17578125]]
+
+    Upsampled Matrix (Insert Zeros):
+    [[2.6953125  0.         3.2421875  0.         3.9609375  0.
+      2.98828125 0.        ]
+     [0.         0.         0.         0.         0.         0.
+      0.         0.        ]
+     [3.2265625  0.         6.0859375  0.         5.59375    0.
+      3.59765625 0.        ]
+     [0.         0.         0.         0.         0.         0.
+      0.         0.        ]
+     [3.34765625 0.         5.125      0.         5.5625     0.
+      4.5703125  0.        ]
+     [0.         0.         0.         0.         0.         0.
+      0.         0.        ]
+     [3.171875   0.         2.96875    0.         4.5859375  0.
+      4.17578125 0.        ]
+     [0.         0.         0.         0.         0.         0.
+      0.         0.        ]]
+    
+    Upsampled Matrix (After Applying Gaussian Filter):
+    [[24.2578125  17.8125     19.453125   21.609375   23.765625   20.84765625
+      17.9296875   8.96484375]
+     [17.765625   15.25       18.65625    18.8828125  19.109375   16.140625
+      13.171875    6.5859375 ]
+     [19.359375   18.625      24.34375    23.359375   22.375      18.3828125
+      14.390625    7.1953125 ]
+     [19.72265625 17.78515625 22.421875   22.3671875  22.3125     19.32421875
+      16.3359375   8.16796875]
+     [20.0859375  16.9453125  20.5        21.375      22.25       20.265625
+      18.28125     9.140625  ]
+     [19.55859375 14.61328125 16.1875     18.2421875  20.296875   18.89453125
+      17.4921875   8.74609375]
+     [19.03125    12.28125    11.875      15.109375   18.34375    17.5234375
+      16.703125    8.3515625 ]
+     [ 9.515625    6.140625    5.9375      7.5546875   9.171875    8.76171875
+       8.3515625   4.17578125]]
+    
+    Laplacian Matrix:
+    [[-18.2578125  -11.8125     -19.453125   -17.609375   -15.765625
+      -13.84765625 -11.9296875   -4.96484375]
+     [-10.765625   -10.25        -9.65625    -15.8828125  -11.109375
+      -14.140625    -9.171875    -4.5859375 ]
+     [-18.359375    -9.625      -20.34375    -15.359375   -13.375
+      -16.3828125  -10.390625    -6.1953125 ]
+     [-18.72265625 -12.78515625 -15.421875   -14.3671875  -21.3125
+      -14.32421875 -10.3359375   -3.16796875]
+     [-11.0859375  -13.9453125  -12.5        -14.375      -15.25
+      -12.265625   -14.28125     -9.140625  ]
+     [-11.55859375 -14.61328125 -15.1875     -12.2421875  -20.296875
+       -9.89453125 -10.4921875   -3.74609375]
+     [-16.03125     -7.28125    -10.875      -12.109375    -9.34375
+      -14.5234375  -13.703125    -6.3515625 ]
+     [ -1.515625     0.859375    -4.9375      -6.5546875   -4.171875
+       -0.76171875  -1.3515625   -3.17578125]]
+Copy]]></description><link>https://blog.allenygy.vip/computer-vision/homework/cv-hw-3.html</link><guid isPermaLink="false">Computer Vision/Homework/CV-HW-3.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 20 Sep 2024 15:35:38 GMT</pubDate></item><item><title><![CDATA[<a data-href="CV-HW-2" href="CV-HW-2" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">CV-HW-2</a><a data-href="CV-HW-2" href="computer-vision/homework/cv-hw-2.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">CV-HW-2</a>]]></title><description><![CDATA[ 
+ <br><br>Given an image, filter the image with cross-correlation and convolution, respectively.<br>Cross-correlation:<br><br>Filter:<br><br>Result:<br><br>Convolution:<br><br>Filter:<br><br>Result:<br>]]></description><link>https://blog.allenygy.vip/computer-vision/homework/cv-hw-2.html</link><guid isPermaLink="false">Computer Vision/Homework/CV-HW-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 20 Sep 2024 12:20:57 GMT</pubDate></item><item><title><![CDATA[<a data-href="CV-HW-1" href="CV-HW-1" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">CV-HW-1</a><a data-href="CV-HW-1" href="computer-vision/homework/cv-hw-1.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">CV-HW-1</a>]]></title><description><![CDATA[ 
+ <br><br>
+<br>
+How many more colors human can distinguish compared with shrimp? Why?
+
+<br>Humans can distinguish around 10 million colors, while mantis shrimp detect more spectral bands with their 16 photoreceptor types. 
+<br>Humans may be better at distinguishing colors because their brains have more processing power.
+
+
+<br>
+What light spectrum range human can see?
+
+<br>Humans can see light in the range of 400nm to 700nm
+
+
+<br>
+What is hyperspectral imaging? And its applications？
+
+<br>Hyperspectral imaging captures images of many spectral bands beyond visible light.
+<br>It is used in astronomy, precision agriculture and environmental monitoring.
+
+
+<br>
+What’s the history of animal vision? History of computer vision?
+
+<br>Animal vision evolved from simple eye points to complex eyes with rods and cones to detect color and light.
+<br>Computer vision began as basic image recognition in the 1960s and evolved with the development of deep learning in the early 2000s, and is now used in areas such as self-driving cars and medical imaging.
+
+
+]]></description><link>https://blog.allenygy.vip/computer-vision/homework/cv-hw-1.html</link><guid isPermaLink="false">Computer Vision/Homework/CV-HW-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 20 Sep 2024 12:20:50 GMT</pubDate></item><item><title><![CDATA[<a data-href="BDA-Lab-1" href="BDA-Lab-1" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">BDA-Lab-1</a><a data-href="BDA-Lab-1" href="data-analysis/big-data-analysis/lab/bda-lab-1.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">BDA-Lab-1</a>]]></title><description><![CDATA[ 
+ <br><br><br>Summarize the content of a book 《The Davinci Code》 by using MapReduce. <br>Summarize the book from 3 different perspectives: 	<br>
+<br>Word frequency
+<br>Content Sentiment Analysis
+<br>Content Summary
+<br><br>
+<br>MapReduce 
+<br>Pretrained Large language model analysis 
+<br>Navie Bayes Algorithm	
+<br><br>def map(text): #map text to chunks
+    sentences = sent_tokenize(text)
+    chunks = []
+    current_chunk = ""
+    max_chunk_size = 1000
+    for sentence in sentences:
+        if len(current_chunk) + len(sentence) &lt;= max_chunk_size:
+            current_chunk += sentence + " "
+        else:
+            chunks.append(current_chunk.strip())
+            current_chunk = sentence + " "
+    if current_chunk:
+        chunks.append(current_chunk.strip())
+    return chunks
+Copy<br><br>Using NLTK to count the words in the book<br>
+<br>Total Different words : 10873
+<br>def word_count(text):
+    words = [word for word in word_tokenize(text.lower()) if word.isalpha() and word not in stop_words]
+    freq_dist = FreqDist(words)
+    return freq_dist
+Copy<br>In order to facilitate the presentation of the results, the word cloud map was used to display the results<br><img alt="Word Cloud" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/IlhXX6.png" referrerpolicy="no-referrer"><br><br>Divide the book into several parts and use the pretrained model to analyze the sentiment of each part.<br>
+Then get an average sentiment of the book. <br>Average sentiment score: 0.727<br>
+<img alt="Sentiment Analysis" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/CfIHEI.png" referrerpolicy="no-referrer"><br>def reduce_for_text_sentiment(summaries, index):
+    # Combine summaries into one text
+    summary_text = " ".join(summaries)
+    # Split the combined text into manageable chunks
+    chunks = map(summary_text)
+    print(f"Total chunks: {len(chunks)}")
+    # Initialize the sentiment analysis pipeline
+    sentiment_analyzer = pipeline("sentiment-analysis", device=device)
+    # List to hold sentiment results
+    sentiments = []
+    # Analyze sentiment for each chunk
+    for i, chunk in enumerate(chunks):
+        result = sentiment_analyzer(chunk)
+        sentiment = result[0]  # Extract the first result from the analysis
+        print(f"Chunk {i} Sentiment: {sentiment}")
+        sentiments.append(sentiment)
+    # Save sentiment results to xlsx file
+    df = pd.DataFrame(sentiments)
+    df.to_excel(f"sentiments_{index}.xlsx", index=False)
+    return sentiments
+Copy<br><br>Divide the book into several parts and use the pretrained model to summary each part. (twice) <br>Pre-trained models summarize the Da Vinci Code<br>The Da Vinci Code, written by Dan Brown, follows Harvard symbologist Robert Langdon as he becomes entangled in a mysterious murder at the Louvre Museum. Alongside cryptologist Sophie Neveu, Langdon unravels a complex web of codes, symbols, and historical secrets tied to a hidden truth about the Holy Grail and the controversial legacy of Mary Magdalene. The story presents a fictional European secret society, the Priory of Sion, supposedly founded in 1099 and involving famous figures such as Leonardo da Vinci. Another Catholic organization, Opus Dei, emerges in the narrative as a shadowy force, sparking further intrigue. 
+
+The plot unfolds through a series of cryptic messages and objects, including a keystone believed to lead to the Grail’s hidden location. Langdon and Sophie encounter numerous obstacles, including Silas, a devout albino monk, and Leigh Teabing, a Grail historian with his own hidden motives. As they decode symbols like the pentacle and the number PHI, they chase leads through significant historical sites like Westminster Abbey and Rosslyn Chapel. The story weaves themes of faith, power, and historical mystery, ultimately suggesting a hidden lineage of Jesus and Mary Magdalene that could challenge traditional Christian beliefs.
+Copy<br>def reduce_for_text_summary(summaries,index):
+    summary_text = " ".join(summaries) # combine the summaries into one text
+    chunks = map(summary_text)
+    print(f"Total chunks: {len(chunks)}")
+    summaries = []
+    for i,chunk in enumerate(chunks):
+        inputs = tokenizer(chunk, return_tensors="pt", truncation=True, padding="longest").to(device)  
+        summary_ids = model.generate(inputs["input_ids"], max_length=100, min_length=50, do_sample=False)
+        summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
+        print(i)
+        print(summary)
+        summaries.append(summary)
+    save_text(summaries,index)
+    return summaries
+Copy<br><br>According to the pre-classified sentiment dictionary, classify the text by naive Bayes algorithm<br>However the result is not as good as the pretrained model. <br>Average sentiment score: 0.504 <br>This result is almost identical to random score, which means it did not provide a reasonable result. <br><img alt="Sentiment Analysis" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/10cJzi.png" referrerpolicy="no-referrer"><br><br>
+<br>
+By using MapReduce to analyze the book, we can get the word frequency, sentiment analysis, and content summary. 
+
+<br>
+Compare to the traditional way, this approach is more efficient and can be applied to large-scale data processing. 
+
+<br>
+Compare to the navie bayes algorithm, the pretrained model can provide a more accurate and reasonable result. 	
+
+<br><br>For the purpose of this project, the digital version of The Da Vinci Code by Dan Brown is available for access and download through <a data-tooltip-position="top" aria-label="https://archive.org/details/TheDaVinciCode_201308" rel="noopener" class="external-link" href="https://archive.org/details/TheDaVinciCode_201308" target="_blank">this link on the Internet Archive</a>. This novel, a bestseller known for its intricate plot and extensive use of historical and religious references, spans approximately 170,000 words. Given its substantial length and rich content, The Da Vinci Code serves as an excellent resource for detailed literary analysis, sentiment analysis, or natural language processing tasks. The novel’s considerable word count classifies it as a long-form novel, providing ample data for a variety of text-based analyses and studies.<br>.\uic ]]></description><link>https://blog.allenygy.vip/data-analysis/big-data-analysis/lab/bda-lab-1.html</link><guid isPermaLink="false">Data Analysis/Big Data Analysis/Lab/BDA-Lab-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 11 Oct 2024 06:07:18 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/IlhXX6.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/IlhXX6.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="BDA-Pre" href="BDA-Pre" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">BDA-Pre</a><a data-href="BDA-Pre" href="data-analysis/big-data-analysis/bda-pre.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">BDA-Pre</a>]]></title><description><![CDATA[ 
+ <br><br>
+<br>想做什么
+<br>为什么做这个
+<br>参考
+<br><br>Girvan-Newman<br>
+K-means<br>
+Louvain]]></description><link>https://blog.allenygy.vip/data-analysis/big-data-analysis/bda-pre.html</link><guid isPermaLink="false">Data Analysis/Big Data Analysis/BDA-Pre.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 16 Oct 2024 03:27:07 GMT</pubDate></item><item><title><![CDATA[<a data-href="Neo4j" href="Neo4j" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Neo4j</a><a data-href="Neo4j" href="database-management-system/nosql/neo4j.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Neo4j</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DataBase" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DataBase</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Neo4j" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Neo4j</a> 
+ <br><a href="https://blog.allenygy.vip?query=tag:DataBase" class="tag" target="_blank" rel="noopener">#DataBase</a> <a href="https://blog.allenygy.vip?query=tag:NoSQL" class="tag" target="_blank" rel="noopener">#NoSQL</a> <a href="https://blog.allenygy.vip?query=tag:Neo4j" class="tag" target="_blank" rel="noopener">#Neo4j</a> <br><br><br>
+<br>节点（事物）和边（关系）的集合，其中边为节点对的连接
+
+<br>适用于任何相关数据
+
+
+<br>可在节点和关系上附加属性（键值对）与关系
+<br>关系连接两个节点，节点和关系都可以保存为任意数量的键值对
+<br><br>
+<br>Neo4j 是一个高度可扩展的原生图数据库，不仅可以利用数据，还可以利用数据之间的关系。
+<br>图形（即网络）是处理数据的最高效、最直观的方式，它模仿了人类头脑中思想的相互联系。Neo4j 从底层开始构建，旨在利用图形的力量来实时洞察底线。
+<br>它采用直观的适应性数据建模技术。
+<br>使用图形查询语言 Cypher
+<br>Neo4j是一个数据库 
+
+<br>用它来可靠地存储信息并在以后查找它
+<br>Neo4j的数据模型是图，尤其是属性图
+
+
+<br><br><br>
+<br>安装 Neo4J (此处采用 homebrew 包管理器进行安装)
+<br>brew install neo4j
+Copy<br><br>
+<br>MacOS 后台启动 Neo4j
+<br>brew services start neo4j
+Copy<br>
+<br>命令行启动 Neo4j
+<br>cypher-shell
+Copy<br>
+<br>输入用户名密码
+<br><br><br>
+<br>退出命令行
+<br>:exit
+Copy<br>
+<br>关闭 MacOS后台服务
+<br>brew services stop neo4j
+Copy<br><br>Cypher 是一种声明式图形查询语言，可以对图形存储进行高效的查询和更新。<br>
+<br>Cypher 借鉴了 SQL 的结构，使用各种子句建立查询。
+<br>Cypher是Neo4j的图形查询语言（图的SQL！）
+<br>Cypher 是一种声明式查询语言：它描述的是你感兴趣的内容，而不是如何获取这些内容。
+<br>Cypher 具有很强的可读性和表现力
+<br><br>
+<br>Node 节点
+<br>Relationship 关系
+<br>Property 属性
+<br>Label 标签
+<br><br>
+<br>Cypher 使用一对括号（通常包含一个文本字符串），如 (), (foo) 来表示一个节点
+<br>最简单的形式是（），表示一个匿名的、未表征的节点。
+<br>引用其他地方的节点，添加一个变量：（matrix）
+<br>Movie 标签（前缀为冒号）说明了节点的类型或作用。
+<br>属性可用于存储信息和/或限制模式。例如，我们可以 MATCH 和 RETURN 标题为 "The Matrix "的节点。
+<br><br>
+<br>标签允许我们对节点进行分组
+<br>Cypher 使用标签来更好地决定如何优化查询
+<br>MATCH (node:Label) RETURN node
+Copy<br>MATCH(node1:Label) -[:REL_TYPE]-&gt; (node2:Label) RETURN node1, node2
+Copy<br><br>
+<br>关系是一个节点指向另一个节点的箭头，就像 -&gt; 或 &lt;- 。但我们可以根据需要在一对方括号中添加有关它们的细节。
+<br>MATCH(node1:Label) -[:REL_TYPE]-&gt; (node2:Label) RETURN node1, node2
+Copy<br>MATCH(node1:Label) -[REL:TYPE]-&gt; (node2:Label) RETURN rel.property
+Copy<br><br><br>CREATE(node: Label {key:value, ...})
+Copy<br>CREATE (n:Person {name: 'Allen', age: 20})
+Copy<br><br>MATCH (n:Label {key:value})	
+SET n.key = value
+Copy<br><br>MATCH (n1:Label {key:value}), (n2:Label {key:value})	
+CREATE (n1)-[r:RELATIONSHIP]-&gt;(n2)
+Copy<br><br>MATCH (n:Label {key:value})	
+REMOVE n.key
+Copy<br><br>
+<br>DELETE  Node
+<br>MATCH (n:Label {key:value})	
+DELETE n
+Copy<br>
+<br>DELETE Node and Relationship
+<br>MATCH (node {Property:Value})  
+DETACH DELETE node
+Copy<br>MATCH (a:Label {Property: value}) 
+OPTIONAL MATCH (a)-[r]-()				 
+DELETE a, r
+Copy<br>MATCH会返回空<br>
+OPTIONAL MATCH 即使没有匹配到也会返回 NULL<br><br><br>
+<br>在 Cypher 中，使用 ORDER BY 命令很容易对结果进行排序。
+<br>比方说，我们想显示数据库中年龄最大的人。我们可以使用下面的查询：
+<br>MATCH (person:Person)
+RETURN person.name, person.born
+ORDER BY person.born
+Copy<br>
+<br>也可以使用 DESC 关键字来指定降序排序：
+<br>MATCH (person:Person)	
+RETURN person.name, person.born	
+ORDER BY person.born DESC
+Copy<br>
+<br>升序
+<br>MATCH (person:Person)
+RETURN person.name, person.born	
+ORDER BY person.born ASC
+Copy<br><br>
+<br>Cypher 支持对记录集进行简便的分页。
+<br>它使用 LIMIT 和 SKIP 语句来减少返回记录的数量，并允许对结果进行分页。
+<br>LIMIT: 限制返回的记录数
+<br>SKIP: 跳过指定数量的记录	
+<br>MATCH (person:Person)	
+RETURN person.name, person.born		
+ORDER BY person.born DESC
+SKIP 10 LIMIT 5	
+Copy<br>SKIP 10 LIMIT 5	<br>
+<br>从第 10 条记录开始，返回 5 条记录
+<br><br>
+<br>通常，我们要求查询只返回不同的结果
+<br>MATCH (person:Person)	
+RETURN DISTINCT person.born
+Copy<br><br>
+<br>
+选中的节点与边组成的字符串
+
+<br>
+起点和终点都是节点
+
+<br>
+查找图中与Gene Hackman合作过的演员
+
+<br>MATCH (gene:Person)-[:ACTED_IN]-&gt;()&lt;-[:ACTED_IN]-(other:Person)
+WHERE gene.name="Gene Hackman"
+RETURN distinct other
+Copy<br>
+<br>查找所有电影相关演职人员的三种写法
+<br>MATCH (actor:Person)-[:ACTED_IN]-&gt;(movie:Movie)&lt;-[:DIRECTED]-(director:Person)
+RETURN actor.name, movie.title, director.name;
+Copy<br>MATCH (actor:Person)-[:ACTED_IN]-&gt;(movie:Movie),
+      (movie)&lt;-[:DIRECTED]-(director:Person)
+RETURN actor.name, movie.title, director.name;
+Copy<br>MATCH (actor:Person)-[:ACTED_IN]-&gt;(movie:Movie),(director:Person)-[:DIRECTED]-&gt;(movie)
+
+RETURN actor.name, movie.title, director.name;
+Copy<br><br>
+<br>
+跨越任何深度的关系是： (a)-[*]-&gt;(b)
+
+<br>
+特定深度关系的表示方法是：(a)-[*深度]-&gt;(b)，以查找所有深度步长的路径。
+
+<br>
+1到4层深度的关系是这样表示的： (a)-[*1..4]-&gt;(b)
+
+<br>
+距离 3 层的 KNOWS 类型关系：(a)-[:KNOWS*3]-&gt;(b)
+
+<br>
+2 层 KNOWS 或 LIKES 类型的关系：(a)-[:KNOWS|:LIKES*2...]-&gt;(b)
+
+<br>MATCH p =(actor { name: 'Tom Hanks' })-[:ACTED_IN*2]-(co_actor)
+RETURN relationships(p)
+Copy<br><br>
+<br>最短路径是两个节点之间的最短路径。
+<br>MATCH
+	(tom:Person { name: 'Tom Hanks' }),
+	(kevin:Person { name: 'Kevin Bacon' }), 
+	p = shortestPath((tom)-[*..15]-(kevin))
+RETURN p
+Copy<br><br>
+<br>
+Neo4j 不使用索引来加速 JOIN 操作
+
+<br>
+有助于通过值、前缀或范围查找起点
+
+<br>
+创建特定于标签的索引，因为索引绑定到具体的标签-属性组合上
+
+<br>
+示例：根据电影标题有效搜索
+
+<br>CREATE INDEX ON :Movie(title)
+Copy<br>
+<br>要删除索引，请使用以下 Cypher 命令
+<br>DROP INDEX ON :Movie(title)
+Copy<br><br>
+<br>在标有 "人 "的节点上创建索引，按属性名称建立索引：
+<br>CREATE INDEX ON :Person(name)
+Copy<br><br>
+<br>COUNT(x) 
+<br>MIN(x)
+<br>MAX(x)
+<br>AVG(x)
+<br>SUM(x)
+<br>COLLECT(x) 
+<br>MATCH (person:Person)-[:ACTED_IN]-&gt;(movie:Movie)
+RETURN person.name, collect(movie.title)
+Copy<br><br>
+<br>LOAD CSV 语句可将本地或远程文件解析为表示映射（带标题）或列表的一系列行。
+<br>使用任何 Cypher 操作来创建节点或关系，或与现有图结构合并
+<br>由于 CSV 文件通常表示节点或关系列表，因此需要执行多次操作，分别创建节点和关系。
+<br>示例，查询使用 movies.csv 中的数据作为属性创建电影节点
+<br>LOAD CSV WITH HEADERS 
+FROM "" AS line 
+CREATE (:Movie {id: line.id, title: line.title, released: toINT(line.year)})
+Copy]]></description><link>https://blog.allenygy.vip/database-management-system/nosql/neo4j.html</link><guid isPermaLink="false">Database Management System/NoSQL/Neo4j.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 15 Oct 2024 05:15:02 GMT</pubDate></item><item><title><![CDATA[<a data-href="Weight Decay" href="Weight Decay" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Weight Decay</a><a data-href="Weight Decay" href="deep-learning/00-basic/weight-decay.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Weight Decay</a>]]></title><description><![CDATA[ 
+ <br>]]></description><link>https://blog.allenygy.vip/deep-learning/00-basic/weight-decay.html</link><guid isPermaLink="false">Deep Learning/00-Basic/Weight Decay.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 11 Oct 2024 07:33:14 GMT</pubDate></item><item><title><![CDATA[<a data-href="IELTS-Write-Task-1-Material" href="IELTS-Write-Task-1-Material" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">IELTS-Write-Task-1-Material</a><a data-href="IELTS-Write-Task-1-Material" href="english/ielts/write/task1/ielts-write-task-1-material.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">IELTS-Write-Task-1-Material</a>]]></title><description><![CDATA[ 
+ <br><br><br><br><br>
+<br>For Big Changes: significantly, dramatically, considerably, substantially
+
+<br>Example: "The number of users increased significantly over the period."
+
+
+<br>For Small Changes: slightly, gradually, moderately, marginally
+
+<br>Example: "The sales rose slightly in the first quarter."
+
+
+<br><br>
+<br>remain stable/constant
+<br>stay the same
+<br>maintain the same level
+<br>stabilize at
+
+<br>Example: "The figures remained stable throughout the year."
+
+
+<br><br>
+<br>Upward Trends: upward trend, steady rise, growth, upward movement
+
+<br>Example: "There was a steady rise in sales from 2015 to 2020."
+
+
+<br>Downward Trends: downward trend, gradual decline, decreasing trend, downward movement
+
+<br>Example: "The data shows a gradual decline in population."
+
+
+<br><br>
+<br>peak / peaked at
+<br>reach a peak / high of
+<br>hit a low of / lowest point
+<br>bottom out
+
+<br>Example: "The number of visitors peaked at 200,000 in August before declining."
+
+
+<br><br>
+<br>fluctuate / fluctuation
+<br>vary / variation
+<br>oscillate
+<br>undulate (more formal)
+
+<br>Example: "The figures fluctuated over the course of the year."
+
+
+<br><br>
+<br>Comparative Adjectives: higher than, lower than, more significant, less than, greater, fewer
+
+<br>Example: "The sales in 2019 were higher than those in 2018."
+
+
+<br>Superlative Adjectives: the highest, the lowest, the most significant, the least
+
+<br>Example: "June experienced the highest levels of rainfall."
+
+
+<br><br>
+<br>For specific times: in 2010, between 2005 and 2010, during the period, over the years
+
+<br>Example: "Sales rose between 2005 and 2010."
+
+
+<br>For trends over time: over the next decade, in the following years, over the period of time
+
+<br>Example: "Over the next decade, there was a steady increase in demand."
+
+
+<br><br>
+<br>Adding Information: furthermore, additionally, moreover
+
+<br>Example: "Additionally, the number of students enrolling continued to rise."
+
+
+<br>Contrasting Information: however, in contrast, on the other hand
+
+<br>Example: "In contrast, the number of unemployed people decreased slightly."
+
+
+<br>Cause and Effect: as a result, therefore, consequently
+
+<br>Example: "As a result, the overall figures rose sharply."
+
+
+<br><br>Certainly! Here are some useful sentence structures for describing data trends in IELTS Writing Task 1:<br><br>
+<br>[Something] increased from [A] to [B] over a specified period.
+
+<br>Example: "The population increased from 50,000 to 80,000 between 2000 and 2010."
+
+
+<br><br>
+<br>[Something] increased from [A] to [B] between [starting year] and [ending year].
+
+<br>Example: "Internet users rose from 5 million to 20 million between 2015 and 2020."
+
+
+<br><br>
+<br>[Something] increased by [X]% from [A] to [B].
+
+<br>Example: "Car sales increased by 25% from 200,000 to 250,000 units over five years."
+
+
+<br><br>
+<br>[Something] rose considerably, reaching a peak of [B] from [A].
+
+<br>Example: "Electricity consumption rose considerably, reaching a peak of 300,000 kWh from 150,000 kWh."
+
+
+<br><br>
+<br>There was a [adjective] increase in [something] from [A] to [B].
+
+<br>Example: "There was a dramatic increase in renewable energy usage from 10% to 45% over the decade."
+
+
+<br><br>
+<br>[Something] increased by [amount] to reach [B].
+
+<br>Example: "The average salary increased by $5,000 to reach $50,000 in 2019."
+
+
+<br><br>
+<br>[Something] reached a high/low of [B] after increasing from [A].
+
+<br>Example: "The number of graduates reached a high of 1,200 after increasing from 600 in two years."
+
+
+<br>These structures allow you to convey the same information in different ways, keeping your writing varied and dynamic. Would you like more examples on other types of changes?]]></description><link>https://blog.allenygy.vip/english/ielts/write/task1/ielts-write-task-1-material.html</link><guid isPermaLink="false">English/IELTS/Write/Task1/IELTS-Write-Task-1-Material.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 15 Oct 2024 15:52:34 GMT</pubDate></item><item><title><![CDATA[<a data-href="Bar Chart" href="Bar Chart" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Bar Chart</a><a data-href="Bar Chart" href="english/ielts/write/task1/bar-chart.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Bar Chart</a>]]></title><description><![CDATA[ 
+ <br><br>The bar chart shows the divorce rates in two European countries from 2011 to 2015.<br><img alt="Bar Chart" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/prSllw.png" referrerpolicy="no-referrer"><br>Summarize the information by selecting and reporting the main features and make comparisons where relevant.<br><br>The bar chart provides information about the percentages of divorces in Finland and Sweden between 2011 and 2015.<br>shows = provides information about = represents = illustrates <br><br>Major Trends / General information <br>Overall, Sweden experienced a downward trend, while Finland showed an upward trend throughout the period. Both countries' divorce rates had some fluctuations. Although Finland initially had a lower rate, it outraced Sweden at the end of the period.<br><br>  Sweden's divorce rate was about 45% in 2011, being higher than Finland's rate by approximately 8%. Then, it rose to almost fifty percent in 2012. However, the figure showed a gradual decrease to about 47% 2013, and continued to decline steadily to the end of the period, reaching around 45% in 2014 and hitting a low-point of about 37% in 2015.<br>hitting a low-point of x%<br><br>Percentages of divorces in Finland  was less than 40% in 2011, and it decreased in 2012, when about one third of marriages in Finland ended with a divorce (as opposed to almost a half in Sweden). However, the figure experienced a steady growth during the next 2 years.<br>
+It rose to approximately 39% in 2013, then increased by around 3% in 2014, and remained steady for the next year, outracing the rate of Sweden.]]></description><link>https://blog.allenygy.vip/english/ielts/write/task1/bar-chart.html</link><guid isPermaLink="false">English/IELTS/Write/Task1/Bar Chart.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 15 Oct 2024 15:05:31 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/prSllw.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/prSllw.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Hypothesis-Testing-Single-Population" href="Hypothesis-Testing-Single-Population" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Hypothesis-Testing-Single-Population</a><a data-href="Hypothesis-Testing-Single-Population" href="math/probability-statistics/hypothesis-testing-single-population.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Hypothesis-Testing-Single-Population</a>]]></title><description><![CDATA[ 
+ <br><br>
+<br>State the null hypothesis,  and the alternative hypothesis, 
+<br>Choose the level of significance, , and the sample size, n
+<br>Determine the appropriate test statistic and sampling distribution
+<br>Determine the critical values that divide the rejection and non-rejection regions
+<br>Collect data and compute the value of the test statistic
+<br>Make the statistical decision and state the managerial conclusion.  
+
+<br>If the test statistic falls into the non-rejection region, do not reject the null hypothesis .
+<br>If the test statistic falls into the rejection region, reject the null hypothesis.
+<br>Express the managerial conclusion in the context of the problem
+
+
+<br><br>p-value: Probability of obtaining a test statistic more extreme ( or ) than the observed sample value given  is true<br>
+<br>Also called observed level of significance
+<br>Smallest value of  for which  can be rejected
+<br>就是把求出的值代回  求概率<br>If   p-value   ,  reject <br>
+If   p-value ,  do not reject <br>If , then there is some evidence to reject <br>
+If , then there is strong evidence to reject <br>
+If , then there is very strong evidence to reject <br>
+If , then there is extremely strong evidence to reject <br><br><br>Reject a true null hypothesis 原假设是对的却拒绝<br>
+The probability of Type I Error is <br><br>Fail to reject a false null hypothesis 原假设是错的却接受<br>
+Fail to reject a false null hypothesis <br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/Error.png" referrerpolicy="no-referrer"><br>Type I and Type II errors cannot happen at the same time<br>
+<br>Type I error can only occur if  is true
+<br>Type II error can only occur if  is false
+<br>If Type I error probability  then Type II error probability <br>
+If Type I error probability  then Type II error probability <br>
+<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/error-1-2.png" referrerpolicy="no-referrer"><br><br>Performed  Z  Test for the mean ( known)<br>
+Performed  t  Test for the mean ( unknown)<br>
+Performed Z Tests about a Population Proportion<br>
+Discussed  critical value and p–value approaches to hypothesis testing<br>
+Type I &amp; II errors]]></description><link>https://blog.allenygy.vip/math/probability-statistics/hypothesis-testing-single-population.html</link><guid isPermaLink="false">Math/Probability Statistics/Hypothesis-Testing-Single-Population.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 16 Oct 2024 05:23:46 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/Error.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/Error.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Crash Course in Graphical Models" href="Crash Course in Graphical Models" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Crash Course in Graphical Models</a><a data-href="Crash Course in Graphical Models" href="research/bioinfo/crash-course-in-graphical-models.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Crash Course in Graphical Models</a>]]></title><description><![CDATA[ 
+ <br><br>
+<br>Chain Structure 
+<br>Fork Structure   
+<br>Collider Structure 
+<br><br><img alt="Chain Structure" src="https://matheusfacure.github.io/python-causality-handbook/_images/04-Graphical-Causal-Models_4_0.svg" referrerpolicy="no-referrer"><br>Dependence flows in the direction of the arrows.<br>
+The greater the causal expertise, the greater your chances of getting a promotion.<br>
+Also, the greater your chances of promotion, the greater your chance of having causal knowledge.<br><br>&nbsp;if I know that you are good at solving problems, knowing that you know causal inference doesn’t give any further information about your chances of getting a job promotion. In mathematical terms<br><br><br>As a general rule, the dependence flow in the direct path from A to C is blocked when we condition on an intermediary variable B.<br><br><img alt="Fork structure" src="https://matheusfacure.github.io/python-causality-handbook/_images/04-Graphical-Causal-Models_7_0.svg" referrerpolicy="no-referrer"><br><br><br>As a general rule, two variables that share a common cause are dependent, but independent when we condition on the common cause.<br><br><img src="https://matheusfacure.github.io/python-causality-handbook/_images/04-Graphical-Causal-Models_9_0.svg" referrerpolicy="no-referrer"><br><br><br>As a general rule, conditioning on a collider opens the dependence path. Not conditioning on it leaves it closed.<br><img src="https://matheusfacure.github.io/python-causality-handbook/_images/graph-flow.png" referrerpolicy="no-referrer"><br><br>]]></description><link>https://blog.allenygy.vip/research/bioinfo/crash-course-in-graphical-models.html</link><guid isPermaLink="false">Research/BioInfo/Crash Course in Graphical Models.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 14 Oct 2024 09:15:25 GMT</pubDate><enclosure url="https://matheusfacure.github.io/python-causality-handbook/_images/04-Graphical-Causal-Models_4_0.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://matheusfacure.github.io/python-causality-handbook/_images/04-Graphical-Causal-Models_4_0.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Causal Discovery Methods]]></title><description><![CDATA[ 
+ <br><br>
+<br>Constraint-based methods 
+
+<br>PC (assume without confounders)
+<br>Fast Causal Inference FCI
+
+
+<br>Score-based methods (assume without confounders)
+
+<br>Greedy Equivalence Search GES
+
+
+<br><br><br>Assuming no latent confounders which provides a search architecture into which can be plugged many statistical procedures for deciding conditional independence.<br><br><br>
+<br>Form a Complete Undirected Graph
+<br>Eliminate Edges Based on Unconditional Independence
+<br>Conditional Independence Test: Single Conditioning Variable
+<br>Conditional Independence Test: Multiple Conditioning Variables<br>
+...
+<br><br><br><img style="zoom:20%;" alt="PC Example" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/0nPTh8.png" referrerpolicy="no-referrer"><br><br><br>
+<br>Identify Structures: 
+
+<br>For each triple of variables , if  and  are connected, and  and  are connected, but  and  are not connected, the algorithm checks for a v-structure. 
+
+
+<br><br>
+<br>Orientation Propagation:
+
+<br>To further direct the edges, for each triple of variables , where  and  and  are not adjacent, the edge  is oriented as . This step is known as orientation propagation.
+<br>Through orientation propagation, the algorithm directs remaining undirected edges, refining the causal structure.
+
+
+<br><br>]]></description><link>https://blog.allenygy.vip/research/bioinfo/causal-discovery-methods.html</link><guid isPermaLink="false">Research/BioInfo/Causal Discovery Methods.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 14 Oct 2024 09:35:24 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/0nPTh8.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/0nPTh8.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="ML-As-1" href="ML-As-1" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">ML-As-1</a><a data-href="ML-As-1" href="machine-learning/assignment/ml-as-1.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">ML-As-1</a>]]></title><description><![CDATA[ 
  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>When ,  is a symmetric matrix.<br><br>Assume the probability of a certain disease is . The probability of test positive given that a person is infected with the disease is  and the probability of test positive given the person is not infected with the disease is .<br><br>
 <br>: The probability that a person has the disease.
 <br>: The probability of testing positive given that the person has the disease.
@@ -187,85 +1382,7 @@ Species that are closer together, such as orangutans (Pongo pygmaeus) and orangu
 The number next to each species represents genetic distance, with higher values indicating greater differences from a common ancestor.<br>
 The scale (0.10) helps explain these distances.<br>
 Overall, the tree reflects the evolutionary history of these primates.<br><br><br>Based on the phylogenetic tree, select the sequences closest to hAPOBEC3A and generate pairwise sequence alignment, attempt to interpret the speciﬁc diﬀerences between the two sequences (hAPOBEC3A and target sequence).  Closest: Pongo pygmaeus APOBEC3A protein  <br><img alt="Pairwise sequence alignment" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/dHUBrm.png" referrerpolicy="no-referrer"><br>The pairwise alignment between human APOBEC3A and Pongo pygmaeus APOBEC3A shows 88.4% identity and 93.5% similarity, with no gaps. Key differences include substitutions like Aspartic acid (D) to Cysteine (C) at position 15 and Phenylalanine (F) to Glutamic acid (E) at position 155, which could affect protein structure or function but likely don't drastically change its core role due to the high similarity.<br>]]></description><link>https://blog.allenygy.vip/bioinfo/lab/lab-1/bioinfo-lab-1.html</link><guid isPermaLink="false">Bioinfo/Lab/Lab-1/Bioinfo-Lab-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 09 Oct 2024 06:42:13 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/9IPRfp.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@main/uPic/9IPRfp.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Fourier Transformation" href="Fourier Transformation" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Fourier Transformation</a><a data-href="Fourier Transformation" href="computer-vision/lecture/fourier-transformation.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Fourier Transformation</a>]]></title><description><![CDATA[ 
- <br><br>笔者在此文中并不像过多的提及傅里叶变换的数学推导，而是更多的从应用的角度来讲述傅里叶变换的一些基本概念和应用。<br>因此，我们先认为傅里叶变换就是对的<br>那么就可以将信号分解为一系列的正弦和余弦函数的叠加。<br>此时我们只需要用得到不同频率的振幅和相位，就可以表示出该信号的所有信息<br><br><br><br>]]></description><link>https://blog.allenygy.vip/computer-vision/lecture/fourier-transformation.html</link><guid isPermaLink="false">Computer Vision/Lecture/Fourier Transformation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 09 Oct 2024 11:13:24 GMT</pubDate></item><item><title><![CDATA[<a data-href="BDA-Lab-1" href="BDA-Lab-1" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">BDA-Lab-1</a><a data-href="BDA-Lab-1" href="data-analysis/big-data-analysis/lab/bda-lab-1.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">BDA-Lab-1</a>]]></title><description><![CDATA[ 
- <br><br><br>Summarize the content of a book 《The Davinci Code》 by using MapReduce. <br>Summarize the book from 3 different perspectives: 	<br>
-<br>Word frequency
-<br>Content Sentiment Analysis
-<br>Content Summary
-<br><br>
-<br>MapReduce 
-<br>Pretrained Large language model analysis 
-<br>Navie Bayes Algorithm	
-<br><br>def map(text): #map text to chunks
-    sentences = sent_tokenize(text)
-    chunks = []
-    current_chunk = ""
-    max_chunk_size = 1000
-    for sentence in sentences:
-        if len(current_chunk) + len(sentence) &lt;= max_chunk_size:
-            current_chunk += sentence + " "
-        else:
-            chunks.append(current_chunk.strip())
-            current_chunk = sentence + " "
-    if current_chunk:
-        chunks.append(current_chunk.strip())
-    return chunks
-Copy<br><br>Using NLTK to count the words in the book<br>
-<br>Total Different words : 10873
-<br>def word_count(text):
-    words = [word for word in word_tokenize(text.lower()) if word.isalpha() and word not in stop_words]
-    freq_dist = FreqDist(words)
-    return freq_dist
-Copy<br>In order to facilitate the presentation of the results, the word cloud map was used to display the results<br><img alt="Word Cloud" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/IlhXX6.png" referrerpolicy="no-referrer"><br><br>Divide the book into several parts and use the pretrained model to analyze the sentiment of each part.<br>
-Then get an average sentiment of the book. <br>Average sentiment score: 0.727<br>
-<img alt="Sentiment Analysis" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/CfIHEI.png" referrerpolicy="no-referrer"><br>def reduce_for_text_sentiment(summaries, index):
-    # Combine summaries into one text
-    summary_text = " ".join(summaries)
-    # Split the combined text into manageable chunks
-    chunks = map(summary_text)
-    print(f"Total chunks: {len(chunks)}")
-    # Initialize the sentiment analysis pipeline
-    sentiment_analyzer = pipeline("sentiment-analysis", device=device)
-    # List to hold sentiment results
-    sentiments = []
-    # Analyze sentiment for each chunk
-    for i, chunk in enumerate(chunks):
-        result = sentiment_analyzer(chunk)
-        sentiment = result[0]  # Extract the first result from the analysis
-        print(f"Chunk {i} Sentiment: {sentiment}")
-        sentiments.append(sentiment)
-    # Save sentiment results to xlsx file
-    df = pd.DataFrame(sentiments)
-    df.to_excel(f"sentiments_{index}.xlsx", index=False)
-    return sentiments
-Copy<br><br>Divide the book into several parts and use the pretrained model to summary each part. (twice) <br>Pre-trained models summarize the Da Vinci Code<br>The Da Vinci Code, written by Dan Brown, follows Harvard symbologist Robert Langdon as he becomes entangled in a mysterious murder at the Louvre Museum. Alongside cryptologist Sophie Neveu, Langdon unravels a complex web of codes, symbols, and historical secrets tied to a hidden truth about the Holy Grail and the controversial legacy of Mary Magdalene. The story presents a fictional European secret society, the Priory of Sion, supposedly founded in 1099 and involving famous figures such as Leonardo da Vinci. Another Catholic organization, Opus Dei, emerges in the narrative as a shadowy force, sparking further intrigue. 
-
-The plot unfolds through a series of cryptic messages and objects, including a keystone believed to lead to the Grail’s hidden location. Langdon and Sophie encounter numerous obstacles, including Silas, a devout albino monk, and Leigh Teabing, a Grail historian with his own hidden motives. As they decode symbols like the pentacle and the number PHI, they chase leads through significant historical sites like Westminster Abbey and Rosslyn Chapel. The story weaves themes of faith, power, and historical mystery, ultimately suggesting a hidden lineage of Jesus and Mary Magdalene that could challenge traditional Christian beliefs.
-Copy<br>def reduce_for_text_summary(summaries,index):
-    summary_text = " ".join(summaries) # combine the summaries into one text
-    chunks = map(summary_text)
-    print(f"Total chunks: {len(chunks)}")
-    summaries = []
-    for i,chunk in enumerate(chunks):
-        inputs = tokenizer(chunk, return_tensors="pt", truncation=True, padding="longest").to(device)  
-        summary_ids = model.generate(inputs["input_ids"], max_length=100, min_length=50, do_sample=False)
-        summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
-        print(i)
-        print(summary)
-        summaries.append(summary)
-    save_text(summaries,index)
-    return summaries
-Copy<br><br>According to the pre-classified sentiment dictionary, classify the text by naive Bayes algorithm<br>However the result is not as good as the pretrained model. <br>Average sentiment score: 0.504 <br>This result is almost identical to random score, which means it did not provide a reasonable result. <br><img alt="Sentiment Analysis" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/10cJzi.png" referrerpolicy="no-referrer"><br><br>
-<br>
-By using MapReduce to analyze the book, we can get the word frequency, sentiment analysis, and content summary. 
-
-<br>
-Compare to the traditional way, this approach is more efficient and can be applied to large-scale data processing. 
-
-<br>
-Compare to the navie bayes algorithm, the pretrained model can provide a more accurate and reasonable result. 	
-
-<br><br>For the purpose of this project, the digital version of The Da Vinci Code by Dan Brown is available for access and download through <a data-tooltip-position="top" aria-label="https://archive.org/details/TheDaVinciCode_201308" rel="noopener" class="external-link" href="https://archive.org/details/TheDaVinciCode_201308" target="_blank">this link on the Internet Archive</a>. This novel, a bestseller known for its intricate plot and extensive use of historical and religious references, spans approximately 170,000 words. Given its substantial length and rich content, The Da Vinci Code serves as an excellent resource for detailed literary analysis, sentiment analysis, or natural language processing tasks. The novel’s considerable word count classifies it as a long-form novel, providing ample data for a variety of text-based analyses and studies.]]></description><link>https://blog.allenygy.vip/data-analysis/big-data-analysis/lab/bda-lab-1.html</link><guid isPermaLink="false">Data Analysis/Big Data Analysis/Lab/BDA-Lab-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 08 Oct 2024 14:51:57 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/IlhXX6.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/IlhXX6.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
+ <br><br>笔者在此文中并不像过多的提及傅里叶变换的数学推导，而是更多的从应用的角度来讲述傅里叶变换的一些基本概念和应用。<br>因此，我们先认为傅里叶变换就是对的<br>那么就可以将信号分解为一系列的正弦和余弦函数的叠加。<br>此时我们只需要用得到不同频率的振幅和相位，就可以表示出该信号的所有信息<br><br><br><br>]]></description><link>https://blog.allenygy.vip/computer-vision/lecture/fourier-transformation.html</link><guid isPermaLink="false">Computer Vision/Lecture/Fourier Transformation.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 09 Oct 2024 11:13:24 GMT</pubDate></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
  <br><br><br>
 <br><a data-tooltip-position="top" aria-label="BDA-Lab-1" data-href="BDA-Lab-1" href="https://blog.allenygy.vip/BDA-Lab-1" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">BDA-Lab-1</a><a data-tooltip-position="top" aria-label="BDA-Lab-1" data-href="BDA-Lab-1" href="https://blog.allenygy.vip/data-analysis/big-data-analysis/lab/bda-lab-1.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">BDA-Lab-1</a>
 <br><a data-tooltip-position="top" aria-label="Program/Cpp/Bitest.md" data-href="Program/Cpp/Bitest.md" href="https://blog.allenygy.vip/Program/Cpp/Bitest" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Bitest</a><a data-tooltip-position="top" aria-label="Program/Cpp/Bitest.md" data-href="Program/Cpp/Bitest.md" href="https://blog.allenygy.vip/program/cpp/bitest.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Bitest</a>
@@ -1120,39 +2237,7 @@ Copy<br>We can expand the factorial， then cancel out the (n-k)factorial part<b
 <br>Compared two population proportions<br>
 <br>Formed confidence intervals for the difference between two population proportions
 <br>Performed Z-test for two population proportions
-]]></description><link>https://blog.allenygy.vip/math/probability-statistics/hypothesis-testing-two-population.html</link><guid isPermaLink="false">Math/Probability Statistics/Hypothesis-Testing-Two-Population.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 24 Jun 2024 17:27:18 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/twopopulationmeans.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/twopopulationmeans.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Hypothesis-Testing-Single-Population" href="Hypothesis-Testing-Single-Population" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Hypothesis-Testing-Single-Population</a><a data-href="Hypothesis-Testing-Single-Population" href="math/probability-statistics/hypothesis-testing-single-population.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Hypothesis-Testing-Single-Population</a>]]></title><description><![CDATA[ 
- <br><br>
-<br>State the null hypothesis,  and the alternative hypothesis, 
-<br>Choose the level of significance, , and the sample size, n
-<br>Determine the appropriate test statistic and sampling distribution
-<br>Determine the critical values that divide the rejection and non-rejection regions
-<br>Collect data and compute the value of the test statistic
-<br>Make the statistical decision and state the managerial conclusion.  
-
-<br>If the test statistic falls into the non-rejection region, do not reject the null hypothesis .
-<br>If the test statistic falls into the rejection region, reject the null hypothesis.
-<br>Express the managerial conclusion in the context of the problem
-
-
-<br><br>p-value: Probability of obtaining a test statistic more extreme ( or ) than the observed sample value given  is true<br>
-<br>Also called observed level of significance
-<br>Smallest value of  for which  can be rejected
-<br>就是把求出的值代回z/t table求概率<br>If   p-value   ,  reject <br>
-If   p-value ,  do not reject <br>If , then there is some evidence to reject <br>
-If , then there is strong evidence to reject <br>
-If , then there is very strong evidence to reject <br>
-If , then there is extremely strong evidence to reject <br><br><br>Reject a true null hypothesis 原假设是对的却拒绝<br>
-The probability of Type I Error is <br><br>Fail to reject a false null hypothesis 原假设是错的却接受<br>
-Fail to reject a false null hypothesis <br><img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/Error.png" referrerpolicy="no-referrer"><br>Type I and Type II errors cannot happen at the same time<br>
-<br>Type I error can only occur if  is true
-<br>Type II error can only occur if  is false
-<br>If Type I error probability  then Type II error probability <br>
-If Type I error probability  then Type II error probability <br>
-<img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/error-1-2.png" referrerpolicy="no-referrer"><br><br>Performed  Z  Test for the mean ( known)<br>
-Performed  t  Test for the mean ( unknown)<br>
-Performed Z Tests about a Population Proportion<br>
-Discussed  critical value and p–value approaches to hypothesis testing<br>
-Type I &amp; II errors]]></description><link>https://blog.allenygy.vip/math/probability-statistics/hypothesis-testing-single-population.html</link><guid isPermaLink="false">Math/Probability Statistics/Hypothesis-Testing-Single-Population.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 24 Jun 2024 17:26:54 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/Error.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/Error.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Confidence-Interval" href="Confidence-Interval" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Confidence-Interval</a><a data-href="Confidence-Interval" href="math/probability-statistics/confidence-interval.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Confidence-Interval</a>]]></title><description><![CDATA[ 
+]]></description><link>https://blog.allenygy.vip/math/probability-statistics/hypothesis-testing-two-population.html</link><guid isPermaLink="false">Math/Probability Statistics/Hypothesis-Testing-Two-Population.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 24 Jun 2024 17:27:18 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/twopopulationmeans.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/PB/twopopulationmeans.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Confidence-Interval" href="Confidence-Interval" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Confidence-Interval</a><a data-href="Confidence-Interval" href="math/probability-statistics/confidence-interval.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Confidence-Interval</a>]]></title><description><![CDATA[ 
  <br><br>
 <br>z-Based Confidence Intervals for a Population Mean:  Known
 <br>t-Based Confidence Intervals for a Population Mean:  Unknown
@@ -1220,8 +2305,7 @@ e.g.: Test the claim that the population mean weight is 120 pounds
 <br>对每个断点算出所有的 
 <br> 已知<br>
  给定  的每一组  可求
-<br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/research/bioinfo/ploidy/ploidy-review.html</link><guid isPermaLink="false">Research/BioInfo/Ploidy/Ploidy Review.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 29 Sep 2024 08:50:16 GMT</pubDate></item><item><title><![CDATA[<a data-href="FlowSig" href="FlowSig" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">FlowSig</a><a data-href="FlowSig" href="research/bioinfo/flowsig.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">FlowSig</a>]]></title><description><![CDATA[ 
- <br>]]></description><link>https://blog.allenygy.vip/research/bioinfo/flowsig.html</link><guid isPermaLink="false">Research/BioInfo/FlowSig.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 29 Sep 2024 15:11:09 GMT</pubDate></item><item><title><![CDATA[<a data-href="Ploidy" href="Ploidy" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Ploidy</a><a data-href="Ploidy" href="research/bioinfo/ploidy/ploidy.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Ploidy</a>]]></title><description><![CDATA[ 
+<br><br><br><br><br><br><br><br><br>]]></description><link>https://blog.allenygy.vip/research/bioinfo/ploidy/ploidy-review.html</link><guid isPermaLink="false">Research/BioInfo/Ploidy/Ploidy Review.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 29 Sep 2024 08:50:16 GMT</pubDate></item><item><title><![CDATA[<a data-href="Ploidy" href="Ploidy" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Ploidy</a><a data-href="Ploidy" href="research/bioinfo/ploidy/ploidy.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Ploidy</a>]]></title><description><![CDATA[ 
  <br><br><br><br>
 <br>Ploidy traditionally has been investigated by measuring DNA content using flow cytometry
 <br>It can also be inferred from next generation sequencing (NGS) data either by examining k-mer distributions, or by assessing the distribution of allele frequencies at biallelic single nucleotide polymorphisms (SNPs)
@@ -1544,61 +2628,7 @@ Copy]]></description><link>https://blog.allenygy.vip/algorithm/basic-algorithm/d
 <br><a data-tooltip-position="top" aria-label="Discretization" data-href="Discretization" href="https://blog.allenygy.vip/Discretization" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">离散化</a><a data-tooltip-position="top" aria-label="Discretization" data-href="Discretization" href="https://blog.allenygy.vip/algorithm/basic-algorithm/discretization.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">离散化</a>
 <br><a data-href="BinarySearch" href="https://blog.allenygy.vip/BinarySearch" class="internal-link" target="_self" rel="noopener">BinarySearch</a>
 <br><a data-tooltip-position="top" aria-label="SlidingWindow" data-href="SlidingWindow" href="https://blog.allenygy.vip/SlidingWindow" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">双指针</a><a data-tooltip-position="top" aria-label="SlidingWindow" data-href="SlidingWindow" href="https://blog.allenygy.vip/algorithm/basic-algorithm/slidingwindow.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">双指针</a>
-]]></description><link>https://blog.allenygy.vip/algorithm/basic-algorithm/basic-algorithm-overview.html</link><guid isPermaLink="false">Algorithm/Basic Algorithm/Basic-Algorithm-overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 17 Sep 2024 08:18:05 GMT</pubDate></item><item><title><![CDATA[<a data-href="Algorithm" href="Algorithm" class="original-internal-link" target="_blank" rel="noopener" style="display: none;"><span class="iconize-icon-in-link" title="SiThealgorithms" aria-label="SiThealgorithms" data-icon="SiThealgorithms" aria-hidden="true" style="transform: translateY(20%);"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32px" height="32px"><path d="M8.226,19.857H1.353l1.79-4.225h4.812L13.308,3.21H7.564l-4.226,9.82h2.587c.18.3.511.51.887.51a1.04,1.04,0,0,0,1.038-1.037c0-.572-.467-1.023-1.038-1.023-.421,0-.767.24-.932.602H4.647l3.503-7.94h3.76L7.383,14.684l-4.766.03L0,20.79h8.842L10,18.263h3.835l1.278,2.526H24L15.985,3.211Zm2.27-2.586,1.384-3.023,1.503,3.023zm5.218,2.691-.872-1.759h2.737c.18.33.526.556.917.556a1.04,1.04,0,0,0,1.038-1.037,1.04,1.04,0,0,0-1.038-1.038c-.42,0-.782.256-.947.617H14.42l-2.09-4.06,1.534-3.369,1.729,3.519h.812c.165.346.526.601.932.601a1.04,1.04,0,0,0,1.038-1.037,1.04,1.04,0,0,0-1.038-1.038c-.436,0-.812.271-.962.662h-.3l-1.79-3.64,1.699-3.728,6.677,14.751Z"></path></svg></span>Algorithm</a><a data-href="Algorithm" href="algorithm/algorithm.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener"><span class="iconize-icon-in-link" title="SiThealgorithms" aria-label="SiThealgorithms" data-icon="SiThealgorithms" aria-hidden="true" style="transform: translateY(20%);"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32px" height="32px"><path d="M8.226,19.857H1.353l1.79-4.225h4.812L13.308,3.21H7.564l-4.226,9.82h2.587c.18.3.511.51.887.51a1.04,1.04,0,0,0,1.038-1.037c0-.572-.467-1.023-1.038-1.023-.421,0-.767.24-.932.602H4.647l3.503-7.94h3.76L7.383,14.684l-4.766.03L0,20.79h8.842L10,18.263h3.835l1.278,2.526H24L15.985,3.211Zm2.27-2.586,1.384-3.023,1.503,3.023zm5.218,2.691-.872-1.759h2.737c.18.33.526.556.917.556a1.04,1.04,0,0,0,1.038-1.037,1.04,1.04,0,0,0-1.038-1.038c-.42,0-.782.256-.947.617H14.42l-2.09-4.06,1.534-3.369,1.729,3.519h.812c.165.346.526.601.932.601a1.04,1.04,0,0,0,1.038-1.037,1.04,1.04,0,0,0-1.038-1.038c-.436,0-.812.271-.962.662h-.3l-1.79-3.64,1.699-3.728,6.677,14.751Z"></path></svg></span>Algorithm</a>]]></title><description><![CDATA[ 
- <br><br><br>#include&lt;bits/stdc++.h&gt;
-
-using namespace std;
-#define all(x) (x).begin(), x.end()
-#define endl '\n'  // 避免刷新缓冲区
-#define inf32 0x3f3f3f3f
-#define inf64 1LL &lt;&lt; 60
-#define max32 INT_MAX
-#define max64 LONG_LONG_MAX
-
-// 类型别名
-using i64 = long long;
-using u64 = unsigned long long;
-using i128 = __int128;
-using pii = std::pair&lt;int, int&gt;;
-
-int read(){
-    int x = 0, f = 1;
-    char ch = getchar();
-    while (ch &lt; '0' || ch &gt; '9'){
-        if (ch == '-')
-            f = -1;
-        ch = getchar();
-    }
-    while (ch &gt;= '0' &amp;&amp; ch &lt;= '9')
-        x = x * 10 + ch - '0', ch = getchar();
-    return x * f;
-}
- 
-void write(int x){
-    if (x &lt; 0)
-        putchar('-'), x = -x;
-    if (x &gt; 9)
-        write(x / 10);
-    putchar(x % 10 + '0');
-}
- 
-void solve(){
-       
-}
- 
-signed main() {
- 
-    return 0;
-}
-Copy<br>// &gt;=
-int index = lower_bound(X.begin(),X.end(),x)-X.begin();
-// &gt;
-int index = lower_bound(X.begin(),X.end(),x+1)-X.begin();
-// &lt;
-int index = lower_bound(X.begin(),X.end(),x)-1-X.begin();
-//&lt;=
-int index = lower_bound(X.begin(),X.end()+1)-1-X.begin();
-Copy]]></description><link>https://blog.allenygy.vip/algorithm/algorithm.html</link><guid isPermaLink="false">Algorithm/Algorithm.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 18 Sep 2024 08:05:59 GMT</pubDate></item><item><title><![CDATA[<a data-href="Network Layer" href="Network Layer" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Network Layer</a><a data-href="Network Layer" href="computer-network/lecture/network-layer.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Network Layer</a>]]></title><description><![CDATA[ 
+]]></description><link>https://blog.allenygy.vip/algorithm/basic-algorithm/basic-algorithm-overview.html</link><guid isPermaLink="false">Algorithm/Basic Algorithm/Basic-Algorithm-overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 17 Sep 2024 08:18:05 GMT</pubDate></item><item><title><![CDATA[<a data-href="Network Layer" href="Network Layer" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Network Layer</a><a data-href="Network Layer" href="computer-network/lecture/network-layer.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Network Layer</a>]]></title><description><![CDATA[ 
  <br><br><br> An IP datagram consists of a header part and a text part. 
 Copy<br><br><img alt="Ipv4" src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Network/IPv4.png" referrerpolicy="no-referrer"><br>
 <br>IPv4 Header
@@ -2661,10 +3691,7 @@ def dropout_layer(X,dropout):
 	mask = (torch.randn(X.shape) &gt; dropout).float
 	return mask * X / (1.0-dropout)
 	
-Copy]]></description><link>https://blog.allenygy.vip/deep-learning/00-basic/dropout.html</link><guid isPermaLink="false">Deep Learning/00-Basic/Dropout.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 17 Sep 2024 08:18:33 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202408242153171.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202408242153171.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Weight Decay" href="Weight Decay" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Weight Decay</a><a data-href="Weight Decay" href="deep-learning/00-basic/weight-decay.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Weight Decay</a>]]></title><description><![CDATA[ 
- <br><br>Theorem (Title).
-
-<br>	]]></description><link>https://blog.allenygy.vip/deep-learning/00-basic/weight-decay.html</link><guid isPermaLink="false">Deep Learning/00-Basic/Weight Decay.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 17 Sep 2024 08:18:31 GMT</pubDate></item><item><title><![CDATA[<a data-href="Loss Function" href="Loss Function" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Loss Function</a><a data-href="Loss Function" href="deep-learning/00-basic/loss-function.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Loss Function</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:LossFunction" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#LossFunction</a> 
+Copy]]></description><link>https://blog.allenygy.vip/deep-learning/00-basic/dropout.html</link><guid isPermaLink="false">Deep Learning/00-Basic/Dropout.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 17 Sep 2024 08:18:33 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202408242153171.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/DeepLearning/202408242153171.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="Loss Function" href="Loss Function" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Loss Function</a><a data-href="Loss Function" href="deep-learning/00-basic/loss-function.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Loss Function</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DeepLearning" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DeepLearning</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:LossFunction" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#LossFunction</a> 
  <br><a href="https://blog.allenygy.vip?query=tag:DeepLearning" class="tag" target="_blank" rel="noopener">#DeepLearning</a>  <a href="https://blog.allenygy.vip?query=tag:LossFunction" class="tag" target="_blank" rel="noopener">#LossFunction</a><br><br>
 <br>Mean Squared Error (MSE)
 <br>Cross Entropy Loss
@@ -18170,205 +19197,7 @@ Copy<br><br>Cassandra 是：<br>
 <br>集群
 <br>分区器
 <br><br>社交媒体的评论管理<br>
-Cassandra 面向列设计，适合处理大量数据，适合社交媒体评论管理场景，可以快速写入和读取评论数据，支持高并发读写操作。	]]></description><link>https://blog.allenygy.vip/database-management-system/nosql/cassandra.html</link><guid isPermaLink="false">Database Management System/NoSQL/Cassandra.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 14 Jul 2024 12:51:47 GMT</pubDate></item><item><title><![CDATA[<a data-href="Neo4j" href="Neo4j" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">Neo4j</a><a data-href="Neo4j" href="database-management-system/nosql/neo4j.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">Neo4j</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DataBase" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DataBase</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:Neo4j" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Neo4j</a> 
- <br><a href="https://blog.allenygy.vip?query=tag:DataBase" class="tag" target="_blank" rel="noopener">#DataBase</a> <a href="https://blog.allenygy.vip?query=tag:NoSQL" class="tag" target="_blank" rel="noopener">#NoSQL</a> <a href="https://blog.allenygy.vip?query=tag:Neo4j" class="tag" target="_blank" rel="noopener">#Neo4j</a> <br><br><br>
-<br>节点（事物）和边（关系）的集合，其中边为节点对的连接
-
-<br>适用于任何相关数据
-
-
-<br>可在节点和关系上附加属性（键值对）与关系
-<br>关系连接两个节点，节点和关系都可以保存为任意数量的键值对
-<br><br>
-<br>Neo4j 是一个高度可扩展的原生图数据库，不仅可以利用数据，还可以利用数据之间的关系。
-<br>图形（即网络）是处理数据的最高效、最直观的方式，它模仿了人类头脑中思想的相互联系。Neo4j 从底层开始构建，旨在利用图形的力量来实时洞察底线。
-<br>它采用直观的适应性数据建模技术。
-<br>使用图形查询语言 Cypher
-<br>Neo4j是一个数据库 
-
-<br>用它来可靠地存储信息并在以后查找它
-<br>Neo4j的数据模型是图，尤其是属性图
-
-
-<br><br><br>
-<br>安装 Neo4J (此处采用 homebrew 包管理器进行安装)
-<br>brew install neo4j
-Copy<br><br>
-<br>MacOS 后台启动 Neo4j
-<br>brew services start neo4j
-Copy<br>
-<br>命令行启动 Neo4j
-<br>cypher-shell
-Copy<br>
-<br>输入用户名密码
-<br><br><br>
-<br>退出命令行
-<br>:exit
-Copy<br>
-<br>关闭 MacOS后台服务
-<br>brew services stop neo4j
-Copy<br><br>Cypher 是一种声明式图形查询语言，可以对图形存储进行高效的查询和更新。<br>
-<br>Cypher 借鉴了 SQL 的结构，使用各种子句建立查询。
-<br>Cypher是Neo4j的图形查询语言（图的SQL！）
-<br>Cypher 是一种声明式查询语言：它描述的是你感兴趣的内容，而不是如何获取这些内容。
-<br>Cypher 具有很强的可读性和表现力
-<br><br>
-<br>Node 节点
-<br>Relationship 关系
-<br>Property 属性
-<br>Label 标签
-<br><br>
-<br>Cypher 使用一对括号（通常包含一个文本字符串），如 (), (foo) 来表示一个节点
-<br>最简单的形式是（），表示一个匿名的、未表征的节点。
-<br>引用其他地方的节点，添加一个变量：（matrix）
-<br>Movie 标签（前缀为冒号）说明了节点的类型或作用。
-<br>属性可用于存储信息和/或限制模式。例如，我们可以 MATCH 和 RETURN 标题为 "The Matrix "的节点。
-<br><br>
-<br>标签允许我们对节点进行分组
-<br>Cypher 使用标签来更好地决定如何优化查询
-<br>MATCH (node:Label) RETURN node
-Copy<br>MATCH(node1:Label) -[:REL_TYPE]-&gt; (node2:Label) RETURN node1, node2
-Copy<br><br>
-<br>关系是一个节点指向另一个节点的箭头，就像 -&gt; 或 &lt;- 。但我们可以根据需要在一对方括号中添加有关它们的细节。
-<br>MATCH(node1:Label) -[:REL_TYPE]-&gt; (node2:Label) RETURN node1, node2
-Copy<br>MATCH(node1:Label) -[REL:TYPE]-&gt; (node2:Label) RETURN rel.property
-Copy<br><br><br>CREATE(node: Label {key:value, ...})
-Copy<br>CREATE (n:Person {name: 'Allen', age: 20})
-Copy<br><br>MATCH (n:Label {key:value})	
-SET n.key = value
-Copy<br><br>MATCH (n1:Label {key:value}), (n2:Label {key:value})	
-CREATE (n1)-[r:RELATIONSHIP]-&gt;(n2)
-Copy<br><br>MATCH (n:Label {key:value})	
-REMOVE n.key
-Copy<br><br>
-<br>DELETE  Node
-<br>MATCH (n:Label {key:value})	
-DELETE n
-Copy<br>
-<br>DELETE Node and Relationship
-<br>MATCH (node {Property:Value})  
-DETACH DELETE node
-Copy<br>MATCH (a:Label {Property: value}) 
-OPTIONAL MATCH (a)-[r]-()				 
-DELETE a, r
-Copy<br>MATCH会返回空<br>
-OPTIONAL MATCH 即使没有匹配到也会返回 NULL<br><br><br>
-<br>在 Cypher 中，使用 ORDER BY 命令很容易对结果进行排序。
-<br>比方说，我们想显示数据库中年龄最大的人。我们可以使用下面的查询：
-<br>MATCH (person:Person)
-RETURN person.name, person.born
-ORDER BY person.born
-Copy<br>
-<br>也可以使用 DESC 关键字来指定降序排序：
-<br>MATCH (person:Person)	
-RETURN person.name, person.born	
-ORDER BY person.born DESC
-Copy<br>
-<br>升序
-<br>MATCH (person:Person)
-RETURN person.name, person.born	
-ORDER BY person.born ASC
-Copy<br><br>
-<br>Cypher 支持对记录集进行简便的分页。
-<br>它使用 LIMIT 和 SKIP 语句来减少返回记录的数量，并允许对结果进行分页。
-<br>LIMIT: 限制返回的记录数
-<br>SKIP: 跳过指定数量的记录	
-<br>MATCH (person:Person)	
-RETURN person.name, person.born		
-ORDER BY person.born DESC
-SKIP 10 LIMIT 5	
-Copy<br>SKIP 10 LIMIT 5	<br>
-<br>从第 10 条记录开始，返回 5 条记录
-<br><br>
-<br>通常，我们要求查询只返回不同的结果
-<br>MATCH (person:Person)	
-RETURN DISTINCT person.born
-Copy<br><br>
-<br>
-选中的节点与边组成的字符串
-
-<br>
-起点和终点都是节点
-
-<br>
-查找图中与Gene Hackman合作过的演员
-
-<br>MATCH (gene:Person)-[:ACTED_IN]-&gt;()&lt;-[:ACTED_IN]-(other:Person)
-WHERE gene.name="Gene Hackman"
-RETURN distinct other
-Copy<br>
-<br>查找所有电影相关演职人员的三种写法
-<br>MATCH (actor:Person)-[:ACTED_IN]-&gt;(movie:Movie)&lt;-[:DIRECTED]-(director:Person)
-RETURN actor.name, movie.title, director.name;
-Copy<br>MATCH (actor:Person)-[:ACTED_IN]-&gt;(movie:Movie),
-      (movie)&lt;-[:DIRECTED]-(director:Person)
-RETURN actor.name, movie.title, director.name;
-Copy<br>MATCH (actor:Person)-[:ACTED_IN]-&gt;(movie:Movie),(director:Person)-[:DIRECTED]-&gt;(movie)
-
-RETURN actor.name, movie.title, director.name;
-Copy<br><br>
-<br>
-跨越任何深度的关系是： (a)-[*]-&gt;(b)
-
-<br>
-特定深度关系的表示方法是：(a)-[*深度]-&gt;(b)，以查找所有深度步长的路径。
-
-<br>
-1到4层深度的关系是这样表示的： (a)-[*1..4]-&gt;(b)
-
-<br>
-距离 3 层的 KNOWS 类型关系：(a)-[:KNOWS*3]-&gt;(b)
-
-<br>
-2 层 KNOWS 或 LIKES 类型的关系：(a)-[:KNOWS|:LIKES*2...]-&gt;(b)
-
-<br>MATCH p =(actor { name: 'Tom Hanks' })-[:ACTED_IN*2]-(co_actor)
-RETURN relationships(p)
-Copy<br><br>
-<br>最短路径是两个节点之间的最短路径。
-<br>MATCH
-	(tom:Person { name: 'Tom Hanks' }),
-	(kevin:Person { name: 'Kevin Bacon' }), 
-	p = shortestPath((tom)-[*..15]-(kevin))
-RETURN p
-Copy<br><br>
-<br>
-Neo4j 不使用索引来加速 JOIN 操作
-
-<br>
-有助于通过值、前缀或范围查找起点
-
-<br>
-创建特定于标签的索引，因为索引绑定到具体的标签-属性组合上
-
-<br>
-示例：根据电影标题有效搜索
-
-<br>CREATE INDEX ON :Movie(title)
-Copy<br>
-<br>要删除索引，请使用以下 Cypher 命令
-<br>DROP INDEX ON :Movie(title)
-Copy<br><br>
-<br>在标有 "人 "的节点上创建索引，按属性名称建立索引：
-<br>CREATE INDEX ON :Person(name)
-Copy<br><br>
-<br>COUNT(x) 
-<br>MIN(x)
-<br>MAX(x)
-<br>AVG(x)
-<br>SUM(x)
-<br>COLLECT(x) 
-<br>MATCH (person:Person)-[:ACTED_IN]-&gt;(movie:Movie)
-RETURN person.name, collect(movie.title)
-Copy<br><br>
-<br>LOAD CSV 语句可将本地或远程文件解析为表示映射（带标题）或列表的一系列行。
-<br>使用任何 Cypher 操作来创建节点或关系，或与现有图结构合并
-<br>由于 CSV 文件通常表示节点或关系列表，因此需要执行多次操作，分别创建节点和关系。
-<br>示例，查询使用 movies.csv 中的数据作为属性创建电影节点
-<br>LOAD CSV WITH HEADERS 
-FROM "" AS line 
-CREATE (:Movie {id: line.id, title: line.title, released: toINT(line.year)})
-Copy]]></description><link>https://blog.allenygy.vip/database-management-system/nosql/neo4j.html</link><guid isPermaLink="false">Database Management System/NoSQL/Neo4j.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 14 Jul 2024 09:32:09 GMT</pubDate></item><item><title><![CDATA[<a data-href="NoSQL" href="NoSQL" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">NoSQL</a><a data-href="NoSQL" href="database-management-system/nosql/nosql.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">NoSQL</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DataBase" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DataBase</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> 
+Cassandra 面向列设计，适合处理大量数据，适合社交媒体评论管理场景，可以快速写入和读取评论数据，支持高并发读写操作。	]]></description><link>https://blog.allenygy.vip/database-management-system/nosql/cassandra.html</link><guid isPermaLink="false">Database Management System/NoSQL/Cassandra.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 14 Jul 2024 12:51:47 GMT</pubDate></item><item><title><![CDATA[<a data-href="NoSQL" href="NoSQL" class="original-internal-link" target="_blank" rel="noopener" style="display: none;">NoSQL</a><a data-href="NoSQL" href="database-management-system/nosql/nosql.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener">NoSQL</a>]]></title><description><![CDATA[<a class="tag" href="https://blog.allenygy.vip/?query=tag:DataBase" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#DataBase</a> <a class="tag" href="https://blog.allenygy.vip/?query=tag:NoSQL" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#NoSQL</a> 
  <br><a href="https://blog.allenygy.vip?query=tag:DataBase" class="tag" target="_blank" rel="noopener">#DataBase</a>  <a href="https://blog.allenygy.vip?query=tag:NoSQL" class="tag" target="_blank" rel="noopener">#NoSQL</a> <br><br>What is NoSQL
 
 <br>Not Only SQL 
