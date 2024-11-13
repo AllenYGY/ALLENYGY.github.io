@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://www.allenygy.vip/</link><image><url>https://www.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://www.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 13 Nov 2024 15:55:32 GMT</lastBuildDate><atom:link href="https://www.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 13 Nov 2024 15:54:02 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[SlidingWindow]]></title><description><![CDATA[<a class="tag" href="https://www.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://www.allenygy.vip/</link><image><url>https://www.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://www.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 13 Nov 2024 15:58:50 GMT</lastBuildDate><atom:link href="https://www.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 13 Nov 2024 15:58:49 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[SlidingWindow]]></title><description><![CDATA[<a class="tag" href="https://www.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
  <br><br><a href="https://www.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener nofollow">#Experience</a> <br>
 <br>枚举右端点，挪动左端点
 <br>挪动左端点的判断条件一定枚举右端点出发的
@@ -1177,24 +1177,7 @@ Evaluation Metrics: Both the causal inference model and the machine learning mod
 A B 存在因果性， 但不存在相关性
 
 ]]></description><link>https://www.allenygy.vip/data-analysis/big-data-analysis/peoject/bda-pre.html</link><guid isPermaLink="false">Data Analysis/Big Data Analysis/Peoject/BDA-Pre.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 07 Nov 2024 15:23:02 GMT</pubDate></item><item><title><![CDATA[Big Data Analysis Overview]]></title><description><![CDATA[ 
- <br><br>]]></description><link>https://www.allenygy.vip/data-analysis/big-data-analysis/big-data-analysis-overview.html</link><guid isPermaLink="false">Data Analysis/Big Data Analysis/Big Data Analysis Overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 07 Nov 2024 13:35:55 GMT</pubDate></item><item><title><![CDATA[ML-As-4]]></title><description><![CDATA[ 
- <br><br><br>Consider a 3-layer fully connected neural network with the following architecture:<br>
-<br>Input layer: n = 4 neurons
-<br>Hidden layer: m = 3 neurons using a custom activation function 
-<br>Output layer: k = 2 neurons using a softmax activation function 
-<br>The network parameters (weights and biases) are given as:<br>
-<br> and  for the hidden layer.
-<br> and  for the output layer.
-<br>Given the input vector   and target output  . Define the loss function as cross-entropy loss:<br><br>where  is the output after the softmax activation.<br><br><br><br>Forward pass through the network:<br>
-<br>Hidden layer: 	
-<br><br><br>
-<br>Output layer: 
-<br><br><br>
-<br>Loss:
-<br><br><br><br><br>
-<br>Note that  is the net input to the hidden layer,  is the activation output of the hidden layer, and  is the net input to the output layer. (3 pts)
-<br><br><br><br><br><br>Derive the gradient of the loss with respect to each parameter  in the network and obtain the gradient values using results from the first question. Use matrix calculus to express the gradients.<br>
-Hint: You can first calculate the error terms  and  for each layer and use them to express the gradients. (10 pts)<br>Error term <br><br>Gradient of the loss with respect to <br><br>Gradient of the loss with respect to <br><br>Error term <br><br>Gradient of the loss with respect to <br><br>Gradient of the loss with respect to <br><br><br>Suppose the learning rate . Please calculate the updated parameter values after one back propagation process. (4 pts)<br>The general update rule for each parameter  with gradient descent is:<br><br>where  is the learning rate.<br>Updating :<br><br>Updating :<br><br>Updating :<br><br>Updating :<br>]]></description><link>https://www.allenygy.vip/machine-learning/assignment/ml-as-4.html</link><guid isPermaLink="false">Machine Learning/Assignment/ML-As-4.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 12 Nov 2024 14:04:04 GMT</pubDate></item><item><title><![CDATA[ML-As-3]]></title><description><![CDATA[ 
+ <br><br>]]></description><link>https://www.allenygy.vip/data-analysis/big-data-analysis/big-data-analysis-overview.html</link><guid isPermaLink="false">Data Analysis/Big Data Analysis/Big Data Analysis Overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Thu, 07 Nov 2024 13:35:55 GMT</pubDate></item><item><title><![CDATA[ML-As-3]]></title><description><![CDATA[ 
  <br><br><br>You are given the following two sets of data points, each belonging to one of the two classes<br>
 (class 1 and class -1):<br>
 <br>Class 1 (labeled as +1):
