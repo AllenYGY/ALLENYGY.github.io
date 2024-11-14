@@ -1,4 +1,190 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://www.allenygy.vip/</link><image><url>https://www.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://www.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 13 Nov 2024 15:58:50 GMT</lastBuildDate><atom:link href="https://www.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 13 Nov 2024 15:58:49 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[SlidingWindow]]></title><description><![CDATA[<a class="tag" href="https://www.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://www.allenygy.vip/</link><image><url>https://www.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://www.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 14 Nov 2024 03:06:08 GMT</lastBuildDate><atom:link href="https://www.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 14 Nov 2024 03:06:04 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[Compiler Syntax Analysis]]></title><description><![CDATA[ 
+ <br><br>Syntax analysis is the second phase of a compiler.<br>
+<br>Take a stream of tokens from the lexer as input.
+<br>Analyze the structure of the tokens.
+<br>Detect syntax errors.
+<br>Out put a parsing tree to present the structure.
+<br>Use context-free grammar (CFG) for analysis.<br><br>Why CFG?
+
+<br>CFG is more powerful than regular expressions.	
+<br>CFGs are not the most powerful formal language (see Chomsky hierarchy), 
+<br>but CFGs are enough to describe the structures for most of the languages.
+
+<br><br>Context free grammar
+A Context free grammar is a , where 
+
+<br> is a finite set called Variables
+<br> is a finite set, disjoint from , called the terminals,
+<br> is a finite set of production rules, with each rule being a variable  and a string  of  variables and terminals in the form , and 
+<br> is the start variable.
+
+<br>The production rules are same as the rules in the regular definition.<br>We can use the rules to derive the strings in a context-free language.<br>Terminals are the symbols which cannot produce more symbols. In a compiler, they are tokens.<br>Variables only exists when the production is unfinished.<br>
+They are not symbols in the alphabet, neither tokens. Thus, they are not in the strings of the language.<br><br>For example, <br>
+<br> Variables
+<br> Terminals
+<br>
+<br>
+<br>The production rules can also be "combined" and rewritten as<br>
+<br><br>
+The symbol "|" is same as it is in regular expressions, meaning that there are multiple options.
+<br>The rules can be combined only if the LHS are the same.<br>
+Sometimes the set of production rules is enough to define a grammar because<br>
+<br>Variables can be obtained by looking at the LHS of each production rule,
+<br>Terminals are the symbols on the RHS of the rules excluding the variables, and
+<br>The start symbol is usually denoted by .
+<br>Then, the above grammar can be<br><br><br>Derivations
+Given a grammar , we can generate strings in the language  by using a derivation.<br>
+A derivation (informally) is a procedure to apply the production rules from the start symbol to a string which only contains terminals.
+<br>Each production is denoted by .<br>For example, given the grammar<br><br>left-most derivation, meaning that each iteration we replace the left most nonterminal.<br><br><br>Similarly, the right-most derivation replaces the right most nonterminal in each iteration.<br><br>Each sequence of nonterminals and tokens that we derive at each step is called a sentential form.<br>
+<br>
+The last sentential form only contains tokens and is called a sentence, which is a syntactically correct string in the programming language.
+
+<br>
+If  is a sentence and  is the start symbol, we can write<br>
+
+
+<br>
+ means derive in zero or more steps. It also means the RHS is derivable by the LHS.
+
+<br>
+From the above example,<br>
+
+
+<br><br>The grammar  is ambiguous if there is a sentence in  from which it is possible to construct multiple parse trees (using any type of derivation).<br><br>Some properties
+
+<br>Each derivation (left-most, right-most, or otherwise) corresponds to exactly one parse tree, whether the grammar is ambiguous or not.
+<br>每个推导（无论是最左推导、最右推导或其他推导）对应唯一一个语法树，无论语法是否有歧义。
+<br>Each parse tree corresponds to multiple derivations, whether the grammar is ambiguous or not.<br>
+每个语法树可以对应多个推导，无论语法是否有歧义。
+<br>Each parse tree corresponds to exactly one left-most derivation and exactly one right-most derivation, whether the grammar is ambiguous or not.<br>
+每个语法树对应唯一的最左推导和最右推导。
+<br>All derivations of the same sentence correspond to the same parse tree if the grammar is not ambiguous.<br>
+如果语法没有歧义，同一语句的所有推导对应相同的语法树。
+<br>Multiple derivations of the same sentence may not correspond to the same parse tree if the grammar is ambiguous.<br>
+如果语法没有歧义，同一语句的所有推导对应相同的语法树。
+<br>In general, deciding a grammar is ambiguous or not is undecidable, or uncomputable (like the halting problem).
+<br>一般来说，判断一个语法是否有歧义是不可判定或不可计算的。
+
+<br><br>A compiler cannot use an ambiguous grammar because each input program must be parsed to a unique parse tree to show the structure.<br>To remove ambiguity in a grammar, we can transform it by hand into an unambiguous grammar.<br>
+This method is possible in theory but not widely used in practical because of the difficulty.<br>Most compilers use additional information to avoid ambiguity.<br><br><br><br>
+<br>
+To prove a language is not context-free, you need pumping lemma for context free languages.
+
+<br>
+To powerup the CFG/PDA, we can try again to add another stack to the machine, same as what we did to finite automata.
+
+<br>
+This upgrade is ultimate. A finite automata with two stacks is as powerful as a Turing machine, which is the most powerful computational model that human can implement right now.
+
+<br><br>Intuitively, a PDA is a finite automata plus a stack with some modifications on the transitions to fit stack behaviors.<br>
+<br>An NPDA is (formally) a 6-tuple , where
+
+<br> is a finite set of states,
+<br> is a finite set of the input alphabet,
+<br> is a finite set of the stack alphabet,
+<br> is the transition function,
+<br> is the start state, and
+<br> is the set of accept states.
+
+
+<br>For example, the context-free language  has grammar <br><br><br><br>
+<br>
+Now, we want to implement a parser which
+
+<br>takes a sequence of tokens as input;
+<br>analyze the structure of the input;
+<br>generates a parse tree; and
+<br>indicates the syntax errors if there is any.
+
+
+<br>
+There are two types of parsers: 
+
+<br>top-down 
+<br>bottom-up.
+
+
+<br>Top-down parsing tries to construct a sequence of tokens from the grammar which is same as the input.<br>
+Bottom-up parsing tries to match the input tokens with grammar rules.<br><br>Top-down parsing is only for a subset of context-free grammars.<br>
+<br>
+Top-down parsing means that we generate the parse tree from top to bottom.
+
+<br>
+Remember that the internal vertices in a parse tree are the nonterminals (variables), while the leaves are the terminals (tokens).
+
+<br>
+The parse tree construction depends on the production rules in the grammar.
+
+<br>
+If we want to construct the parse tree from top to bottom, the production rules have to be nicely designed.
+
+<br><br>The RHS of each production rule always starts from a different terminal. 	<br>
+The parsing on the left branch always finishes before the right branch.<br>For example, the following grammar parses single variable declarations (if we do not care about types here).<br><br><br>Suppose the input is .<br>
+The input tokens can be uniquely parsed into<br><br><br>However, our life cannot be that easy in most of cases.<br>
+<br>The previous grammar does not allow multiple variable declarations in one statement.
+<br>So, consider this grammar.<br><br><br>and try to parse <br>We have two different choices for the first derivation.<br><br>We cannot decide which production rule can be used for the derivation.	<br>
+The parser will pick a valid rule randomly.<br>If the guess is wrong, the parser cannot proceed parsing on some input tokens and it will backtrack.<br>Actually, you have seen backtracking in other places … Depth First Search.<br>We can express the parsing by using a DFS tree.<br>
+<br>Each vertex in the tree is a valid sentential form (a stream of terminals and nonterminals). In this example, the stream to the RHS of  , given by a step number .
+<br>Each edge is defined by applying a production rule.
+<br>The minor difference here is that we don’t need to go back to the root (as DFS) when the parsing is finished.<br>Note that this DFS is different from the parse tree because a vertex presents a sentential form, which is equivalent to a (partial) parse tree.<br><img alt="DFS" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png" referrerpolicy="no-referrer"><br>Each nonterminal  is implemented by an individual function.<br>
+<br>Iterate on every rule starts with  on LHS.
+<br>Remember to resume the tokens when derivation fails.
+<br><img alt="Implementation" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/VM6ClD.png" referrerpolicy="no-referrer"><br>The parse tree generation can be done at Row 4 and Row 6, when the algorithm continues parsing.<br>You can also record the derivation rules and generate the parse tree when parsing is finished.<br>Resuming the parsed tokens at Row 9 can be implemented by a stack. When a token is matched with a terminal, push the token into the stack. When error occurs, we pop the tokens and put them back to the input.<br>The main routine starts from matching the start variable.<br>The parser reports syntax error when the main routine has tried all possible production rules. A syntax error can be<br>
+<br>the parser receives a token which cannot be parsed;
+<br>after processing all tokens, the parse is incomplete (some leaves are nonterminals); or
+<br>when the parsing is complete (all leaves are terminals), there are some tokens remained in the input.
+<br><br>
+<br>The implementation (in code) can be very complicated/ugly because it needs to try many production rules, imaging many try-catch scopes nested with each other.
+<br>It waste a lot of time on backtracking.
+<br>It needs additional space to store the tokens for resuming purpose.
+<br>In practical, nobody uses recursive descent parser.
+<br><br><br>To avoid backtracking, we want to design a parser which can guess the next token from the input.<br>A correct guess can let the parser uniquely choose a production rule for parsing.<br>The idea is using a temporary space to store some tokens in advanced, like a buffer. Then, use the buffered tokens to make decisions.<br>This technique is very similar to space-time trade-off in the dynamic programming, what we have learned in algorithms.<br>The time complexity of recursions with backtracking can go up to .<br>But, if we can choose rules uniquely, the time complexity becomes .<br><br>Consider the grammar<br><br><br><br>which is equivalent to the above one and try to parse <br>
+<br>
+In the first iteration, the parser has to use the rule .
+
+<br>
+In the second iteration, there are two production rules "" or " "
+
+<br>
+This uncertainty can be easily solved by just “looking” at the next token from the lexer. This token is called lookahead token.
+
+<br>
+Normally, when lexer returns a token to parser, the token is consumed. But the lookahead token remains in the input.
+
+<br>
+The lookahead token in this example is " ". So, the parser knows the rule is .
+
+<br>Because the parser reads tokens from left to right, does leftmost derivation, and looks at most one lookahead token(could not be a non-terminal); this parser/grammar is called  .<br>Some grammars may not be  .<br>
+<br>For example, the one we have seen.
+<br><br>
+<br>
+Looking one token ahead is insufficient for this grammar.
+
+<br>
+ ; and  ,  agree on the first token.
+
+<br>
+If the lookahead token is “”, we cannot decide which rule will be used. Thus, to parse this grammar without recursions, the parser needs to look 2 tokens ahead.
+
+<br>This is  grammar.
+
+
+<br>In general, we can design  grammar, for constant .<br>In practical, more lookahead tokens make no big differences but increase the implementation difficulties.<br>More importantly,   grammar is already powerful enough.<br><br>Left-factoring is a grammar transformation to convert a grammar to  .<br>Back to the example, <br><br>is not  because the first token of the two rules are the same. One lookahead token is not enough to the two productions.<br>We can solve this issue by introducing a new nonterminal .  提取相同的token<br>And convert the grammar to<br><br><br>The new grammar is , which is equivalent to<br><br><br>This conversion is called left-factoring.<br>More formally, for each nonterminal  which has multiple productions starting with the same prefix :<br><br>where  is a non-empty sequence of grammar symbols (terminals and nonterminals),  and  are (possibly empty) sequences of grammar symbols.<br>Create a new nonterminal  and transform the rules as<br><br><br><br>Some grammars are not good enough even after left factoring.<br>
+<br>For example, again to parse the variable declaration 
+<br><br><br>
+<br>No production rule has a same prefix on RHS. But lookahead tokens do not work.
+<br>Suppose, the parser at some point needs to derive the nonterminal .<br>One may try: if the lookahead token is , the parser uses <br>
+If the lookahead token is , it uses .<br>Be careful!   is a nonterminal but not a token. A lexer can never find such a lookahead token.<br>As a result,  ,  will never be used. Obviously, this is wrong.<br>The problem is cause by .$ The RHS starts from a nonterminal, which cannot be used to match with a lookahead token. <br>This type of grammar is called left recursive.<br>Note that this still left-most derivation. Left-most or right-most derivation is not related to grammar itself. It only relates to in which order we derive the nonterminals.<br>Formally, a left recursive grammar has a valid derivation  ,<br>
+where  is a nonterminal and  is a string of grammar symbols.<br>In general, a left recursive production rule has the form<br><br>This production can be derive <br>The parsing stops at  , and can produce as many  as possible.<br>So, we can let  derives  first and followed by some $.<br><br><br>Note that the production from   can be <br>
+But this is not <br>Formally, for each nonterminal  which has one or more productions with RHSs starting with the same nonterminal :<br><br>where  and  are (possibly empty) sequences of grammar symbols.<br>Create a new nonterminal  and transform the grammar as <br><br><br><br>Given the following grammar, try to do left factoring and eliminate left recursions.<br><br><br><br>Ans: <br><br><br><br><br><br>In the last example, the grammar is left associative before conversion, but becomes right associative after conversion.<br>This totally changes the structure of the parse tree for some expressions, like<br>
+“".<br>In fact, top-down parsing cannot solve this issue. We need to either use a bottom-up parser or be stuck into the implementation details.<br>There are also some unambiguous context-free grammar cannot be converted into   even after doing left factoring and left recursion elimination.<br>
+<br>For example, the one we used to show ambiguity elimination
+<br><br><br><br>After left factoring  becomes<br><br><br>Here are some last words about (recursive) predictive parsers.<br>
+<br>A predictive parser can always correctly predict what it has to do next.
+<br>Predictive parsers can always be implemented by a recursive parser without using lookahead tokens.
+<br>Without further specification, we consider recursive parsers and predictive parsers are the same.
+<br>One major disadvantages of (recursive) predictive parsers is that they are not very efficient in implementations. Each production rule is implemented as a function. The parser needs to make many function calls and returns, which consume a lot of resources.
+<br>To avoid the function calls, we introduce nonrecursive predictive parsers.<br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://www.allenygy.vip/compiler-construction/lecture/compiler-syntax-analysis.html</link><guid isPermaLink="false">Compiler Construction/Lecture/Compiler Syntax Analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 13 Nov 2024 16:08:51 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[SlidingWindow]]></title><description><![CDATA[<a class="tag" href="https://www.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
  <br><br><a href="https://www.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener nofollow">#Experience</a> <br>
 <br>枚举右端点，挪动左端点
 <br>挪动左端点的判断条件一定枚举右端点出发的
@@ -681,193 +867,7 @@ c. <br><br>Let  Convert the regular expression &nbsp;to an NFA. (10 marks)<br><i
 <br><br> and  act in the same way, Thus  and  should be in the same group.<br><br>Finally, the minimized DFA is:<br><br>
 <br>
 <br>
-	<br><img alt="4-b-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/9jcEQZ.png" referrerpolicy="no-referrer"><br><br>Consider a new alphabet <br><br><img alt="5-a-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/iXEqxf.png" referrerpolicy="no-referrer"><br><br>]]></description><link>https://www.allenygy.vip/compiler-construction/assignment/compiler-as-1.html</link><guid isPermaLink="false">Compiler Construction/Assignment/Compiler-As-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 05 Nov 2024 16:44:27 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/O1JjaA.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/O1JjaA.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Compiler Syntax Analysis]]></title><description><![CDATA[ 
- <br><br>Syntax analysis is the second phase of a compiler.<br>
-<br>Take a stream of tokens from the lexer as input.
-<br>Analyze the structure of the tokens.
-<br>Detect syntax errors.
-<br>Out put a parsing tree to present the structure.
-<br>Use context-free grammar (CFG) for analysis.<br><br>Why CFG?
-
-<br>CFG is more powerful than regular expressions.	
-<br>CFGs are not the most powerful formal language (see Chomsky hierarchy), 
-<br>but CFGs are enough to describe the structures for most of the languages.
-
-<br><br>Context free grammar
-A Context free grammar is a , where 
-
-<br> is a finite set called Variables
-<br> is a finite set, disjoint from , called the terminals,
-<br> is a finite set of production rules, with each rule being a variable  and a string  of  variables and terminals in the form , and 
-<br> is the start variable.
-
-<br>The production rules are same as the rules in the regular definition.<br>We can use the rules to derive the strings in a context-free language.<br>Terminals are the symbols which cannot produce more symbols. In a compiler, they are tokens.<br>Variables only exists when the production is unfinished.<br>
-They are not symbols in the alphabet, neither tokens. Thus, they are not in the strings of the language.<br><br>For example, <br>
-<br> Variables
-<br> Terminals
-<br>
-<br>
-<br>The production rules can also be "combined" and rewritten as<br>
-<br><br>
-The symbol "|" is same as it is in regular expressions, meaning that there are multiple options.
-<br>The rules can be combined only if the LHS are the same.<br>
-Sometimes the set of production rules is enough to define a grammar because<br>
-<br>Variables can be obtained by looking at the LHS of each production rule,
-<br>Terminals are the symbols on the RHS of the rules excluding the variables, and
-<br>The start symbol is usually denoted by .
-<br>Then, the above grammar can be<br><br><br>Derivations
-Given a grammar , we can generate strings in the language  by using a derivation.<br>
-A derivation (informally) is a procedure to apply the production rules from the start symbol to a string which only contains terminals.
-<br>Each production is denoted by .<br>For example, given the grammar<br><br>left-most derivation, meaning that each iteration we replace the left most nonterminal.<br><br><br>Similarly, the right-most derivation replaces the right most nonterminal in each iteration.<br><br>Each sequence of nonterminals and tokens that we derive at each step is called a sentential form.<br>
-<br>
-The last sentential form only contains tokens and is called a sentence, which is a syntactically correct string in the programming language.
-
-<br>
-If  is a sentence and  is the start symbol, we can write<br>
-
-
-<br>
- means derive in zero or more steps. It also means the RHS is derivable by the LHS.
-
-<br>
-From the above example,<br>
-
-
-<br><br>The grammar  is ambiguous if there is a sentence in  from which it is possible to construct multiple parse trees (using any type of derivation).<br><br>Some properties
-
-<br>Each derivation (left-most, right-most, or otherwise) corresponds to exactly one parse tree, whether the grammar is ambiguous or not.
-<br>每个推导（无论是最左推导、最右推导或其他推导）对应唯一一个语法树，无论语法是否有歧义。
-<br>Each parse tree corresponds to multiple derivations, whether the grammar is ambiguous or not.<br>
-每个语法树可以对应多个推导，无论语法是否有歧义。
-<br>Each parse tree corresponds to exactly one left-most derivation and exactly one right-most derivation, whether the grammar is ambiguous or not.<br>
-每个语法树对应唯一的最左推导和最右推导。
-<br>All derivations of the same sentence correspond to the same parse tree if the grammar is not ambiguous.<br>
-如果语法没有歧义，同一语句的所有推导对应相同的语法树。
-<br>Multiple derivations of the same sentence may not correspond to the same parse tree if the grammar is ambiguous.<br>
-如果语法没有歧义，同一语句的所有推导对应相同的语法树。
-<br>In general, deciding a grammar is ambiguous or not is undecidable, or uncomputable (like the halting problem).
-<br>一般来说，判断一个语法是否有歧义是不可判定或不可计算的。
-
-<br><br>A compiler cannot use an ambiguous grammar because each input program must be parsed to a unique parse tree to show the structure.<br>To remove ambiguity in a grammar, we can transform it by hand into an unambiguous grammar.<br>
-This method is possible in theory but not widely used in practical because of the difficulty.<br>Most compilers use additional information to avoid ambiguity.<br><br><br><br>
-<br>
-To prove a language is not context-free, you need pumping lemma for context free languages.
-
-<br>
-To powerup the CFG/PDA, we can try again to add another stack to the machine, same as what we did to finite automata.
-
-<br>
-This upgrade is ultimate. A finite automata with two stacks is as powerful as a Turing machine, which is the most powerful computational model that human can implement right now.
-
-<br><br>Intuitively, a PDA is a finite automata plus a stack with some modifications on the transitions to fit stack behaviors.<br>
-<br>An NPDA is (formally) a 6-tuple , where
-
-<br> is a finite set of states,
-<br> is a finite set of the input alphabet,
-<br> is a finite set of the stack alphabet,
-<br> is the transition function,
-<br> is the start state, and
-<br> is the set of accept states.
-
-
-<br>For example, the context-free language  has grammar <br><br><br><br>
-<br>
-Now, we want to implement a parser which
-
-<br>takes a sequence of tokens as input;
-<br>analyze the structure of the input;
-<br>generates a parse tree; and
-<br>indicates the syntax errors if there is any.
-
-
-<br>
-There are two types of parsers: 
-
-<br>top-down 
-<br>bottom-up.
-
-
-<br>Top-down parsing tries to construct a sequence of tokens from the grammar which is same as the input.<br>
-Bottom-up parsing tries to match the input tokens with grammar rules.<br><br>Top-down parsing is only for a subset of context-free grammars.<br>
-<br>
-Top-down parsing means that we generate the parse tree from top to bottom.
-
-<br>
-Remember that the internal vertices in a parse tree are the nonterminals (variables), while the leaves are the terminals (tokens).
-
-<br>
-The parse tree construction depends on the production rules in the grammar.
-
-<br>
-If we want to construct the parse tree from top to bottom, the production rules have to be nicely designed.
-
-<br><br>The RHS of each production rule always starts from a different terminal. 	<br>
-The parsing on the left branch always finishes before the right branch.<br>For example, the following grammar parses single variable declarations (if we do not care about types here).<br><br><br>Suppose the input is .<br>
-The input tokens can be uniquely parsed into<br><br><br>However, our life cannot be that easy in most of cases.<br>
-<br>The previous grammar does not allow multiple variable declarations in one statement.
-<br>So, consider this grammar.<br><br><br>and try to parse <br>We have two different choices for the first derivation.<br><br>We cannot decide which production rule can be used for the derivation.	<br>
-The parser will pick a valid rule randomly.<br>If the guess is wrong, the parser cannot proceed parsing on some input tokens and it will backtrack.<br>Actually, you have seen backtracking in other places … Depth First Search.<br>We can express the parsing by using a DFS tree.<br>
-<br>Each vertex in the tree is a valid sentential form (a stream of terminals and nonterminals). In this example, the stream to the RHS of  , given by a step number .
-<br>Each edge is defined by applying a production rule.
-<br>The minor difference here is that we don’t need to go back to the root (as DFS) when the parsing is finished.<br>Note that this DFS is different from the parse tree because a vertex presents a sentential form, which is equivalent to a (partial) parse tree.<br><img alt="DFS" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png" referrerpolicy="no-referrer"><br>Each nonterminal  is implemented by an individual function.<br>
-<br>Iterate on every rule starts with  on LHS.
-<br>Remember to resume the tokens when derivation fails.
-<br><img alt="Implementation" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/VM6ClD.png" referrerpolicy="no-referrer"><br>The parse tree generation can be done at Row 4 and Row 6, when the algorithm continues parsing.<br>You can also record the derivation rules and generate the parse tree when parsing is finished.<br>Resuming the parsed tokens at Row 9 can be implemented by a stack. When a token is matched with a terminal, push the token into the stack. When error occurs, we pop the tokens and put them back to the input.<br>The main routine starts from matching the start variable.<br>The parser reports syntax error when the main routine has tried all possible production rules. A syntax error can be<br>
-<br>the parser receives a token which cannot be parsed;
-<br>after processing all tokens, the parse is incomplete (some leaves are nonterminals); or
-<br>when the parsing is complete (all leaves are terminals), there are some tokens remained in the input.
-<br><br>
-<br>The implementation (in code) can be very complicated/ugly because it needs to try many production rules, imaging many try-catch scopes nested with each other.
-<br>It waste a lot of time on backtracking.
-<br>It needs additional space to store the tokens for resuming purpose.
-<br>In practical, nobody uses recursive descent parser.
-<br><br><br>To avoid backtracking, we want to design a parser which can guess the next token from the input.<br>A correct guess can let the parser uniquely choose a production rule for parsing.<br>The idea is using a temporary space to store some tokens in advanced, like a buffer. Then, use the buffered tokens to make decisions.<br>This technique is very similar to space-time trade-off in the dynamic programming, what we have learned in algorithms.<br>The time complexity of recursions with backtracking can go up to .<br>But, if we can choose rules uniquely, the time complexity becomes .<br><br>Consider the grammar<br><br><br><br>which is equivalent to the above one and try to parse <br>
-<br>
-In the first iteration, the parser has to use the rule .
-
-<br>
-In the second iteration, there are two production rules "" or " "
-
-<br>
-This uncertainty can be easily solved by just “looking” at the next token from the lexer. This token is called lookahead token.
-
-<br>
-Normally, when lexer returns a token to parser, the token is consumed. But the lookahead token remains in the input.
-
-<br>
-The lookahead token in this example is " ". So, the parser knows the rule is .
-
-<br>Because the parser reads tokens from left to right, does leftmost derivation, and looks at most one lookahead token(could not be a non-terminal); this parser/grammar is called  .<br>Some grammars may not be  .<br>
-<br>For example, the one we have seen.
-<br><br>
-<br>
-Looking one token ahead is insufficient for this grammar.
-
-<br>
- ; and  ,  agree on the first token.
-
-<br>
-If the lookahead token is “”, we cannot decide which rule will be used. Thus, to parse this grammar without recursions, the parser needs to look 2 tokens ahead.
-
-<br>This is  grammar.
-
-
-<br>In general, we can design  grammar, for constant .<br>In practical, more lookahead tokens make no big differences but increase the implementation difficulties.<br>More importantly,   grammar is already powerful enough.<br><br>Left-factoring is a grammar transformation to convert a grammar to  .<br>Back to the example, <br><br>is not  because the first token of the two rules are the same. One lookahead token is not enough to the two productions.<br>We can solve this issue by introducing a new nonterminal .  提取相同的token<br>And convert the grammar to<br><br><br>The new grammar is , which is equivalent to<br><br><br>This conversion is called left-factoring.<br>More formally, for each nonterminal  which has multiple productions starting with the same prefix :<br><br>where  is a non-empty sequence of grammar symbols (terminals and nonterminals),  and  are (possibly empty) sequences of grammar symbols.<br>Create a new nonterminal  and transform the rules as<br><br><br><br>Some grammars are not good enough even after left factoring.<br>
-<br>For example, again to parse the variable declaration 
-<br><br><br>
-<br>No production rule has a same prefix on RHS. But lookahead tokens do not work.
-<br>Suppose, the parser at some point needs to derive the nonterminal .<br>One may try: if the lookahead token is , the parser uses <br>
-If the lookahead token is , it uses .<br>Be careful!   is a nonterminal but not a token. A lexer can never find such a lookahead token.<br>As a result,  ,  will never be used. Obviously, this is wrong.<br>The problem is cause by .$ The RHS starts from a nonterminal, which cannot be used to match with a lookahead token. <br>This type of grammar is called left recursive.<br>Note that this still left-most derivation. Left-most or right-most derivation is not related to grammar itself. It only relates to in which order we derive the nonterminals.<br>Formally, a left recursive grammar has a valid derivation  ,<br>
-where  is a nonterminal and  is a string of grammar symbols.<br>In general, a left recursive production rule has the form<br><br>This production can be derive <br>The parsing stops at  , and can produce as many  as possible.<br>So, we can let  derives  first and followed by some $.<br><br><br>Note that the production from   can be <br>
-But this is not <br>Formally, for each nonterminal  which has one or more productions with RHSs starting with the same nonterminal :<br><br>where  and  are (possibly empty) sequences of grammar symbols.<br>Create a new nonterminal  and transform the grammar as <br><br><br><br>Given the following grammar, try to do left factoring and eliminate left recursions.<br><br><br><br>Ans: <br><br><br><br><br><br>In the last example, the grammar is left associative before conversion, but becomes right associative after conversion.<br>This totally changes the structure of the parse tree for some expressions, like<br>
-“".<br>In fact, top-down parsing cannot solve this issue. We need to either use a bottom-up parser or be stuck into the implementation details.<br>There are also some unambiguous context-free grammar cannot be converted into   even after doing left factoring and left recursion elimination.<br>
-<br>For example, the one we used to show ambiguity elimination
-<br><br><br><br>After left factoring  becomes<br><br><br>Here are some last words about (recursive) predictive parsers.<br>
-<br>A predictive parser can always correctly predict what it has to do next.
-<br>Predictive parsers can always be implemented by a recursive parser without using lookahead tokens.
-<br>Without further specification, we consider recursive parsers and predictive parsers are the same.
-<br>One major disadvantages of (recursive) predictive parsers is that they are not very efficient in implementations. Each production rule is implemented as a function. The parser needs to make many function calls and returns, which consume a lot of resources.
-<br>To avoid the function calls, we introduce nonrecursive predictive parsers.<br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://www.allenygy.vip/compiler-construction/lecture/compiler-syntax-analysis.html</link><guid isPermaLink="false">Compiler Construction/Lecture/Compiler Syntax Analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 13 Nov 2024 15:43:19 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Compiler Lexical Analysis]]></title><description><![CDATA[ 
+	<br><img alt="4-b-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/9jcEQZ.png" referrerpolicy="no-referrer"><br><br>Consider a new alphabet <br><br><img alt="5-a-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/iXEqxf.png" referrerpolicy="no-referrer"><br><br>]]></description><link>https://www.allenygy.vip/compiler-construction/assignment/compiler-as-1.html</link><guid isPermaLink="false">Compiler Construction/Assignment/Compiler-As-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 05 Nov 2024 16:44:27 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/O1JjaA.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/O1JjaA.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Compiler Lexical Analysis]]></title><description><![CDATA[ 
  <br><br><br><br><br><br><br>]]></description><link>https://www.allenygy.vip/compiler-construction/lecture/compiler-lexical-analysis.html</link><guid isPermaLink="false">Compiler Construction/Lecture/Compiler Lexical Analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 13 Nov 2024 02:49:31 GMT</pubDate></item><item><title><![CDATA[Compiler Introduction]]></title><description><![CDATA[ 
  <br><br>Compiler Definition
 A compiler is a program that reads a program written in one programming language (the source language) and translates it into an equivalent program in another programming language (the target language).
