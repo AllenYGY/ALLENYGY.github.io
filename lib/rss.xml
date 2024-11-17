@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://www.allenygy.vip/</link><image><url>https://www.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://www.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 14 Nov 2024 03:06:08 GMT</lastBuildDate><atom:link href="https://www.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 14 Nov 2024 03:06:04 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[Compiler Syntax Analysis]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://www.allenygy.vip/</link><image><url>https://www.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://www.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 17 Nov 2024 09:01:11 GMT</lastBuildDate><atom:link href="https://www.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Nov 2024 09:00:58 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[Compiler Syntax Analysis]]></title><description><![CDATA[ 
  <br><br>Syntax analysis is the second phase of a compiler.<br>
 <br>Take a stream of tokens from the lexer as input.
 <br>Analyze the structure of the tokens.
@@ -6,20 +6,20 @@
 <br>Out put a parsing tree to present the structure.
 <br>Use context-free grammar (CFG) for analysis.<br><br>Why CFG?
 
-<br>CFG is more powerful than regular expressions.	
-<br>CFGs are not the most powerful formal language (see Chomsky hierarchy), 
+<br>CFG is more powerful than regular expressions.
+<br>CFGs are not the most powerful formal language (see Chomsky hierarchy),
 <br>but CFGs are enough to describe the structures for most of the languages.
 
 <br><br>Context free grammar
-A Context free grammar is a , where 
+A Context free grammar is a , where
 
 <br> is a finite set called Variables
 <br> is a finite set, disjoint from , called the terminals,
-<br> is a finite set of production rules, with each rule being a variable  and a string  of  variables and terminals in the form , and 
+<br> is a finite set of production rules, with each rule being a variable  and a string  of  variables and terminals in the form , and
 <br> is the start variable.
 
 <br>The production rules are same as the rules in the regular definition.<br>We can use the rules to derive the strings in a context-free language.<br>Terminals are the symbols which cannot produce more symbols. In a compiler, they are tokens.<br>Variables only exists when the production is unfinished.<br>
-They are not symbols in the alphabet, neither tokens. Thus, they are not in the strings of the language.<br><br>For example, <br>
+They are not symbols in the alphabet, neither tokens. Thus, they are not in the strings of the language.<br><br>For example,<br>
 <br> Variables
 <br> Terminals
 <br>
@@ -87,7 +87,7 @@ This upgrade is ultimate. A finite automata with two stacks is as powerful as a 
 <br> is the set of accept states.
 
 
-<br>For example, the context-free language  has grammar <br><br><br><br>
+<br>For example, the context-free language  has grammar<br><br><br><br>
 <br>
 Now, we want to implement a parser which
 
@@ -98,9 +98,9 @@ Now, we want to implement a parser which
 
 
 <br>
-There are two types of parsers: 
+There are two types of parsers:
 
-<br>top-down 
+<br>top-down
 <br>bottom-up.
 
 
@@ -122,7 +122,7 @@ If we want to construct the parse tree from top to bottom, the production rules 
 The parsing on the left branch always finishes before the right branch.<br>For example, the following grammar parses single variable declarations (if we do not care about types here).<br><br><br>Suppose the input is .<br>
 The input tokens can be uniquely parsed into<br><br><br>However, our life cannot be that easy in most of cases.<br>
 <br>The previous grammar does not allow multiple variable declarations in one statement.
-<br>So, consider this grammar.<br><br><br>and try to parse <br>We have two different choices for the first derivation.<br><br>We cannot decide which production rule can be used for the derivation.	<br>
+<br>So, consider this grammar.<br><br><br>and try to parse <br>We have two different choices for the first derivation.<br><br>We cannot decide which production rule can be used for the derivation.<br>
 The parser will pick a valid rule randomly.<br>If the guess is wrong, the parser cannot proceed parsing on some input tokens and it will backtrack.<br>Actually, you have seen backtracking in other places … Depth First Search.<br>We can express the parsing by using a DFS tree.<br>
 <br>Each vertex in the tree is a valid sentential form (a stream of terminals and nonterminals). In this example, the stream to the RHS of  , given by a step number .
 <br>Each edge is defined by applying a production rule.
@@ -169,14 +169,14 @@ If the lookahead token is “”, we cannot decide which rule will be used. Thus
 <br>This is  grammar.
 
 
-<br>In general, we can design  grammar, for constant .<br>In practical, more lookahead tokens make no big differences but increase the implementation difficulties.<br>More importantly,   grammar is already powerful enough.<br><br>Left-factoring is a grammar transformation to convert a grammar to  .<br>Back to the example, <br><br>is not  because the first token of the two rules are the same. One lookahead token is not enough to the two productions.<br>We can solve this issue by introducing a new nonterminal .  提取相同的token<br>And convert the grammar to<br><br><br>The new grammar is , which is equivalent to<br><br><br>This conversion is called left-factoring.<br>More formally, for each nonterminal  which has multiple productions starting with the same prefix :<br><br>where  is a non-empty sequence of grammar symbols (terminals and nonterminals),  and  are (possibly empty) sequences of grammar symbols.<br>Create a new nonterminal  and transform the rules as<br><br><br><br>Some grammars are not good enough even after left factoring.<br>
-<br>For example, again to parse the variable declaration 
+<br>In general, we can design  grammar, for constant .<br>In practical, more lookahead tokens make no big differences but increase the implementation difficulties.<br>More importantly,   grammar is already powerful enough.<br><br>Left-factoring is a grammar transformation to convert a grammar to  .<br>Back to the example,<br><br>is not  because the first token of the two rules are the same. One lookahead token is not enough to the two productions.<br>We can solve this issue by introducing a new nonterminal .  提取相同的token<br>And convert the grammar to<br><br><br>The new grammar is , which is equivalent to<br><br><br>This conversion is called left-factoring.<br>More formally, for each nonterminal  which has multiple productions starting with the same prefix :<br><br>where  is a non-empty sequence of grammar symbols (terminals and nonterminals),  and  are (possibly empty) sequences of grammar symbols.<br>Create a new nonterminal  and transform the rules as<br><br><br><br>Some grammars are not good enough even after left factoring.<br>
+<br>For example, again to parse the variable declaration
 <br><br><br>
 <br>No production rule has a same prefix on RHS. But lookahead tokens do not work.
 <br>Suppose, the parser at some point needs to derive the nonterminal .<br>One may try: if the lookahead token is , the parser uses <br>
-If the lookahead token is , it uses .<br>Be careful!   is a nonterminal but not a token. A lexer can never find such a lookahead token.<br>As a result,  ,  will never be used. Obviously, this is wrong.<br>The problem is cause by .$ The RHS starts from a nonterminal, which cannot be used to match with a lookahead token. <br>This type of grammar is called left recursive.<br>Note that this still left-most derivation. Left-most or right-most derivation is not related to grammar itself. It only relates to in which order we derive the nonterminals.<br>Formally, a left recursive grammar has a valid derivation  ,<br>
+If the lookahead token is , it uses .<br>Be careful!   is a nonterminal but not a token. A lexer can never find such a lookahead token.<br>As a result,  ,  will never be used. Obviously, this is wrong.<br>The problem is cause by .$ The RHS starts from a nonterminal, which cannot be used to match with a lookahead token.<br>This type of grammar is called left recursive.<br>Note that this still left-most derivation. Left-most or right-most derivation is not related to grammar itself. It only relates to in which order we derive the nonterminals.<br>Formally, a left recursive grammar has a valid derivation  ,<br>
 where  is a nonterminal and  is a string of grammar symbols.<br>In general, a left recursive production rule has the form<br><br>This production can be derive <br>The parsing stops at  , and can produce as many  as possible.<br>So, we can let  derives  first and followed by some $.<br><br><br>Note that the production from   can be <br>
-But this is not <br>Formally, for each nonterminal  which has one or more productions with RHSs starting with the same nonterminal :<br><br>where  and  are (possibly empty) sequences of grammar symbols.<br>Create a new nonterminal  and transform the grammar as <br><br><br><br>Given the following grammar, try to do left factoring and eliminate left recursions.<br><br><br><br>Ans: <br><br><br><br><br><br>In the last example, the grammar is left associative before conversion, but becomes right associative after conversion.<br>This totally changes the structure of the parse tree for some expressions, like<br>
+But this is not <br>Formally, for each nonterminal  which has one or more productions with RHSs starting with the same nonterminal :<br><br>where  and  are (possibly empty) sequences of grammar symbols.<br>Create a new nonterminal  and transform the grammar as<br><br><br><br>Given the following grammar, try to do left factoring and eliminate left recursions.<br><br><br><br>Ans:<br><br><br><br><br><br>In the last example, the grammar is left associative before conversion, but becomes right associative after conversion.<br>This totally changes the structure of the parse tree for some expressions, like<br>
 “".<br>In fact, top-down parsing cannot solve this issue. We need to either use a bottom-up parser or be stuck into the implementation details.<br>There are also some unambiguous context-free grammar cannot be converted into   even after doing left factoring and left recursion elimination.<br>
 <br>For example, the one we used to show ambiguity elimination
 <br><br><br><br>After left factoring  becomes<br><br><br>Here are some last words about (recursive) predictive parsers.<br>
@@ -184,7 +184,262 @@ But this is not <br>Formally, for each nonterminal  which has one or more produc
 <br>Predictive parsers can always be implemented by a recursive parser without using lookahead tokens.
 <br>Without further specification, we consider recursive parsers and predictive parsers are the same.
 <br>One major disadvantages of (recursive) predictive parsers is that they are not very efficient in implementations. Each production rule is implemented as a function. The parser needs to make many function calls and returns, which consume a lot of resources.
-<br>To avoid the function calls, we introduce nonrecursive predictive parsers.<br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://www.allenygy.vip/compiler-construction/lecture/compiler-syntax-analysis.html</link><guid isPermaLink="false">Compiler Construction/Lecture/Compiler Syntax Analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 13 Nov 2024 16:08:51 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[SlidingWindow]]></title><description><![CDATA[<a class="tag" href="https://www.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
+<br>To avoid the function calls, we introduce nonrecursive predictive parsers.<br><br>To avoid recursions, we introduce non-recursive predictive parsers.<br>Intuitively, predictions are required when a nonterminal has multiple production rules.<br>The predictions are based on the next token. One token is enough because we are parsing  grammars.<br>However, this method has troubles when the RHS of some rules start with nonterminals.<br>
+<br>For example
+<br><br><br><br>
+<br>We cannot decide whether we are going to use  or 𝐴 without looking at  and .
+<br>Thus, we can "preprocess" the grammar to find the first tokens derived by each nonterminal before parsing the tokens.<br>The result of preprocessing is presented by a table, called parsing table.<br>
+The rows are the nonterminals and the columns are terminals.<br>
+The entry  is a production rule  meaning that if the input token is , we will apply the rule .<br>
+The parser can parse the input tokens by checking the parsing table and using a stack.<br>This method is similar to the push-down automata but presented differently.<br>
+<br>Initially, push $ and  into the stack ( on top of $ ) where  is the first nonterminal.<br>
+Also insert $ to the end of the input stream of tokens.
+<br><br>
+<br>
+In each iteration,
+
+<br>Assume the next input token is ;
+<br>Pop the first item from the stack denoted by ;
+<br>If  is a terminal, then try to match it with the next input token ;
+<br>If  is a nonterminal, then  in the parsing table is a production rule, denoted by . Then, push everything in  to stack from right to left.
+
+
+<br>
+When the stack pops $ and all input tokens are consumed, the parsing halts.
+
+<br>
+$ is an artificial token, means the end of the stream.
+
+<br><br>Given the parsing table and try to parse<br><br><br><br>Some entries  in the parsing table are empty.<br>Meaning that id you try to parse the token  by a nonterminal , the parser returns an error message.<br>For example, assume the input tokens are , the parsing will be stuck somewhere in the middle.<br>The error handling will be discussed at the end.<br>Intuitively, a parsing table enumerates all possible tokens can be derived by a nonterminal.<br>When a parser reads a token from input, it has a unique production rule to apply.<br>Thus, we need to analyze the grammar and find the prefix (the first token) of all possible sentential form derived by each nonterminal.<br><br>By putting all the firstly produced tokens into a set, we defined  .<br>
+<br>For example,
+<br><br><br>
+<br> because 
+<br> because .
+<br> because .
+<br>  because .
+<br>Formally,  for each grammar symbol is computed by<br><img alt="Find_First" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/KoP6hF.png" referrerpolicy="no-referrer"><br>Note: each  on line 3-5 can be either a terminal or a nonterminal.<br><br>When a terminal produces , things get complicated.<br>
+<br>For example,
+<br><br><br><br>
+<br>The parser need to use the rule  to parse .
+<br>However,  is not an input token which can be used for making predictions.<br>To handle this case, we also define , the next token possibly derived by some rules after .<br>
+<br>
+In this example,  because .
+
+<br>
+When the parser receives  as the next token, it knows  is the correct rule.
+
+<br><img alt="Find_Follow" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/BtR5ed.png" referrerpolicy="no-referrer"><br><br>Recall the parsing table  is , where  is the number of nonterminals and  is the number of terminals.<br>The entry  is a production rule that the parser will apply when the current nonterminal is 𝐴 and the next token is .<br>For each production  in the (left factored, non-left recursive) grammar, do the following:<br>
+<br>For each token  in , add the grammar production  to 
+<br>If , then for each token  in , add  to 
+<br>All other entries in the table are left blank and correspond to a syntax error.
+<br>Note that Rule 2 is applied when  is   because  is in .<br>To create a parsing table for a non-recursive parser,<br>
+<br>eliminate any ambiguity from the grammar,
+<br>eliminate left recursion from the grammar,
+<br>left factor the grammar,
+<br>compute the  sets for all tokens and nonterminals,
+<br>compute the  sets for all nonterminals, and
+<br>use those  and  sets to construct the parsing table.
+<br><br><br>Back to the example in Top-Down Parsing. The following grammar is left-recursive.<br><br><br>Thus, top-down parsing needs to eliminate left recursion first.<br><br><br><br>However, the conversion changes the structure of some sentences, like .<br><br><br>Bottom-up parsing is more natural to human.<br>Think about how we analyze the arithmetic expressions.<br>
+First, we calculate the subexpression in parentheses or the operator of the highest precedence.<br>
+Then, the intermediate result will involve in the following calculations.<br>
+The procedure is not from left to right.<br>Same thing happens when we analyze sentences in a program.<br>To the parse tree construction, the bottom-up procedure starts from isolated leaves, merges some of them to form a subtree, and eventually constructs the entire tree by placing a root.<br>The parse tree generated by bottom-up has no difference with by top-down, the internal vertices are nonterminals and leaves are tokens.<br>In fact, you have seen the similar procedure in Algorithm – the construction of Huffman code.<br>Because the bottom-up parsing is an inverse of top-down paring, the basic strategy is to use the LHS of some production rules to replace the RHS after reading some input tokens.<br>Thus, in the bottom-up parsing, there are two basic operations.<br>
+<br>Shift
+
+<br>The parser needs to read more tokens from the input.
+<br>The tokens have already read are insufficient for any production rule.
+
+
+<br>Reduce
+
+<br>The parser has already read enough tokens.
+<br>It can replace the RHS by the LHS of some production rules.
+
+
+<br>The parser is called shift-reduce parser.<br>The parser also needs a stack to hold the tokens which are read but not consumed (reduced) yet.<br><br>
+<br>Let’s look at a small example first. Given the following grammar and try to parse .
+<br><br><br><br><br><br>The above example shows how bottom-up parsing works on a small instance.<br>However, to formally define a bottom-up parser, we need to generalize this procedure to all grammars. Many details will be discussed.<br>Even within this small example, careful reader may find the above procedure has some problems.<br>
+In Step2, we read b. Then, we immediately reduce 𝑏 to A in Step3.<br>
+But the thing is different in Step4. We read b again, but the parser waits until it reads another c and reduces Abc to A.<br>In general, similar to the predictive parser, there might be multiple options in bottom-up parsing. We need to clearly define which option is used under a certain condition.<br><br><br>There are many different ways to solve the above problem, like using recursions (Same as what we did in the predictive parsing, recursions simply enumerate all possible options.)<br>In this course, we only introduce  parsers (k lookahead tokens, LR parser for short) because<br>
+<br> parsers can be used to almost all (but not all) context-free grammars.
+<br>They are the most powerful non-backtracking shift-reduce parsers;
+<br>they can be implemented very efficiently; and
+<br>they are strictly more powerful than  grammars.
+<br>When a reduction is performed, the  of the production rule is already on the stack, which is some additional information to help decision making.<br>The parser puts state symbols into the stack to speedup checking the content on the stack.<br>Imaging that you want to check what’s on the given stack. You need to pop everything out, see if the content is same as what you want, then push everything back. This is very inefficient.<br>Thus, we use a state symbol to indicate the current content on the stack.<br>This symbol is called state symbol because it is exactly same the states in a DFA.<br>We can consider each state in a DFA means that "To reach this state, the input must be some specific strings."<br>Also, each  is corresponds to an , like a pair.<br>To parse a  grammar, you are also given a parsing table.<br>
+This parsing table again enumerates the actions the parser needs to take in all possible situations.<br>Each row in the table represents a state in PDA.<br>
+The columns are split into two individual fields: ACTION and GOTO.<br>
+<br>Each column in ACTION represents a terminal.
+<br>Each column in GOTO represents a nonterminal.
+<br>The value of the entry ACTION  shows the action taken by the parser when the current state is  and the input token is 
+<br>The value are of two types:
+
+<br> , meaning that the parser pushes the next input token into the stack and move to the state ;
+<br>, meaning that the parser reduces some (non)terminals using the production rule .
+
+
+<br>The value of the entry  is a state symbol,  for example, meaning that the parser goes to the state  after it reduces the stack uses a production rule , for some .
+<br>LR Parsing Algorithm
+
+<br>Put the special symbol $ at the end of the input.
+<br>Put state 0 at the bottom of the stack.
+<br>In each iteration, suppose the current configuration is , the current state is , and the next input token is .
+
+<br>If  is "shift S", then the next configuration is .	
+<br>If  is "reduce ", then the next configuration is , where  and . At the same time, the parser outputs .
+<br>If   is "accept" and the current configuration is  , where  is the start symbol of the grammar, the parser accepts the input.
+<br>For all other cases, like   is blank, the parser finds a syntax error and switch to error recovery.
+
+
+
+<br><br><br><br><br>Previously, we have introduced the  parsing algorithm using the parsing table.<br>
+Now, the question is how to construct a parsing table for a given context-free grammar.<br>In fact, there are many ways to construct a parsing table for different 𝐿𝑅 parsers:<br>, ,,  etc. (by increasing power).<br>For  with  are not used in practice because of the complexity.<br>We will focus on  (simple ), then move on to  ,   , and  .<br><br>To construct an  parsing table, we do three things<br>
+<br>augment the context-free grammar;
+<br>construct a DFA based on the computation of set of items;
+<br>represent the DFA using the transition table;
+<br>The construction in  is very similar to transforming an NFA to a DFA, except that it will be based on sets of items of the same behavior instead of sets of NFA states.<br><br>Given a grammar with a start symbol .<br><br><br>we construct the corresponding augmented grammar by artificially introducing a nonterminal  and a production rule.<br><br><br><br>This artificial production rule seems to be useless, but it guarantees that the parser accepts the input when it reduces using .<br><br>The  items are originally defined for   parser, but do the same thing in  .<br>An  item (item, for short)is simply a grammar production with a dot somewhere in its RHS.<br>
+<br>For example, the production  can create 4 items 
+<br><br><br><br><br>As a special case, the production  only generates <br>Each item represents a state that the parser is currently in.<br>
+If the parser is in the state corresponding to , it means the parser has already push  into the stack and expects to match  from the input.<br>If  is a nonterminal and the grammar also has a production , then the parser also expects to see .<br>Thus, the parser state corresponds to  correspond .<br><br>Keep this intuition in mind, we find the closure of a set of items  recursively using the following algorithm.<br>
+<br>
+Every item in  is in .
+
+<br>
+If  is an item in  and if  is a production, where  and  are nonterminals and ,  , and  are any sequence of terminals and nonterminals, then add the item  to .
+
+<br>
+Repeat the above two steps until  does not change.
+
+<br>
+For example,
+
+<br><br><br><br><br><br><br>Then, we define  function.<br>For all the items of the form  in a set of items , where  is an arbitrary grammar symbol (token or nonterminal), we define  as the closure of the set of items of the form .<br>
+<br>
+For example, given the set of items , to find :
+
+<br>the item  does not create any new item by taking "+";
+<br>the item  implies the new item 
+
+
+<br>
+Thus,
+
+<br><br><br>更新时，当一个token 时non-terminal 时，继续传递<br><br><br>Next, we construct the DFA to decide the tokens in the stack.<br>
+This method is called set-of-items construction algorithm.<br>
+Each set of items  represents a state in the DFA.<br>
+<br>Compute  and add the unmarked  to ,  where  is the start symbol of the augmented grammar and  is the set of DFA states.
+<br>While there is an unmarked DFA state , do the following:
+
+<br>For each grammar symbol , do the following:
+
+<br>Compute the DFA state .
+<br>If  and  then add the unmarked  to .
+<br>If  then define .
+
+
+<br>Mark  in .
+
+
+<br><br>For example,<br><br><br>Initially, <br><br>Then, we consider the  function from  by taking each grammar symbol.<br>
+<br>For :<br>
+
+<br><br>Thus, <br>
+<br>
+<br>Similarly,<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+DFA
+
+
+
+<br>In the following,  will be omitted for symbol .<br>
+Consider the  function for <br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br> and  are omitted because they are  for all .
+DFA
+
+
+
+<br><br>We continue computing the  function from new states:<br>
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br><br>
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br><br>
+<br>
+
+
+<br>
+
+
+<br><br><br>In the last iteration<br>
+<br>
+<br><br>Here is the list of sets of items.<br><br><br>In the DFA we constructed above, we don’t need final states.<br>
+Because we use states to show the content in the stack.<br>
+And the stack is reduced if DFA reaches a final state.<br>
+More interestingly, a state, together with the string to reach the state, form a pair in the configuration.<br><br><br>First, we construct the  part of a  parsing table.<br>
+<br>If  (where  is a token) is an item in the set of items  and , then set  to "shift j".
+<br>If  is an item in the set of items , then set  to "reduce " for all  in .
+<br>If  (where S' is the start symbol of the augmented grammar) is an item in the set of items , then set  to accept.
+<br>For item 2, we give a number to each grammar production  and put in the table "reduce" followed by the production's number.<br>Then, we construction the  part.<br>
+<br>If , where  is a nonterminal, then set  to ""
+<br><br>Here are the steps to create a parsing table for an  parser:<br>
+<br>Eliminate any ambiguity from the grammar.
+
+<br>Eliminate left recursion from the grammar.
+<br>Left factor the grammar.
+
+
+<br>Augment the grammar with a new start symbol. 
+<br>Compute the sets of items for the grammar and build the corresponding DFA.
+<br>Number the grammar productions.
+<br>Compute the  sets for all tokens and nonterminals.
+<br>Compute the  sets for all nonterminals.
+<br>Use the sets of items, DFA, and the  sets to construct the parsing table.
+]]></description><link>https://www.allenygy.vip/compiler-construction/lecture/compiler-syntax-analysis.html</link><guid isPermaLink="false">Compiler Construction/Lecture/Compiler Syntax Analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 17 Nov 2024 09:00:34 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[DGIM]]></title><description><![CDATA[ 
+ <br><br>Please describe the mechanism of DGIM. How the error bound is estimated? Is there a way to further reduce this error bound. Submit your response online within the allow time frame.<br>Mechanism<br>When a new bit comes in, drop the last (oldest) bucket if its end-time is prior to N time units before the current time.<br>2 cases: Current bit is 0 or 1<br>
+If the current bit is 0:<br>
+<br>no other changes are needed
+<br>If the current bit is 1:<br>
+<br>Create a new bucket of size 1, for just this bit.
+
+<br>End timestamp = current time
+
+
+<br>If there are now three buckets of size 1, combine the oldest two into a bucket of size 2
+<br>If there are now three buckets of size 2, combine the oldest two into a bucket of size 4
+<br>And so on …
+<br>Solution<br>To reduce the error bound in the DGIM algorithm, consider this:<br>Instead of maintaining 1 or 2 of each size bucket, we allow either r-1 or r buckets (r &gt; 2)<br>
+<br>Except for the largest size buckets; we can have any number between 1 and r of those
+]]></description><link>https://www.allenygy.vip/data-analysis/big-data-analysis/dgim.html</link><guid isPermaLink="false">Data Analysis/Big Data Analysis/DGIM.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 15 Nov 2024 07:22:15 GMT</pubDate></item><item><title><![CDATA[SlidingWindow]]></title><description><![CDATA[<a class="tag" href="https://www.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
  <br><br><a href="https://www.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener nofollow">#Experience</a> <br>
 <br>枚举右端点，挪动左端点
 <br>挪动左端点的判断条件一定枚举右端点出发的
