@@ -1,8 +1,8 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1731868268524,
+  "lastExport": 1731868413453,
   "pluginVersion": "1.8.03",
-  "validBodyClasses": "publish css-settings-manager native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd theme-dark primary-accent-purple secondary-accent-green",
+  "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd primary-accent-purple secondary-accent-green",
   "useCustomHeadContent": false,
   "useCustomFavicon": false,
   "files": [
@@ -11,8 +11,8 @@
     "Algorithm/Basic Algorithm/Binary Search.md",
     "Algorithm/Basic Algorithm/Basic-Algorithm-overview.md",
     "Algorithm/DAA/Algorithm/Union-Find.md",
-    "Algorithm/DAA/Algorithm/Graph-algorithm.md",
     "Algorithm/DAA/Algorithm/Sort.md",
+    "Algorithm/DAA/Algorithm/Graph-algorithm.md",
     "Algorithm/DAA/Algorithm/Enumeration.md",
     "Algorithm/DAA/Algorithm/Enumeration-subset.md",
     "Algorithm/DAA/Algorithm/Divide-and-Conquer.md",
@@ -24,19 +24,19 @@
     "Algorithm/DSA/Assignment/dsa-assignment-2.md",
     "Algorithm/DSA/Assignment/dsa-assignment-1.md",
     "Algorithm/DSA/Assignment/written-assignment-am.md",
-    "Algorithm/DSA/B+Tree.md",
     "Algorithm/DSA/BinaryTree.md",
+    "Algorithm/DSA/B+Tree.md",
     "Algorithm/DSA/AVL.md",
     "Algorithm/DSA/Fenwick.md",
     "Algorithm/Graph/Graph-Overview.md",
     "Algorithm/NumberTheory/Prime-Sieve.md",
-    "Algorithm/Recursion/递推.md",
     "Algorithm/Recursion/递归.md",
+    "Algorithm/Recursion/递推.md",
     "Algorithm/Recursion/递归-二叉树.md",
     "Algorithm/String/Z-Function.md",
     "Algorithm/String/Tire-Tree.md",
-    "Algorithm/String/Manacher-Algorithm.md",
     "Algorithm/String/String-Overview.md",
+    "Algorithm/String/Manacher-Algorithm.md",
     "Algorithm/String/KMP.md",
     "Algorithm/String/Aho-Corasick.md",
     "Algorithm/Algorithm.md",
@@ -50,16 +50,16 @@
     "Compiler Construction/Lecture/Compiler Lexical Analysis.md",
     "Compiler Construction/Lecture/Compiler Introduction.md",
     "Computer Network/Assignment/DCN-Assignment1.md",
+    "Computer Network/Lecture/Data Link Layer.md",
     "Computer Network/Lecture/Transport Layer.md",
     "Computer Network/Lecture/Standardized Networks.md",
     "Computer Network/Lecture/Physical Layer.md",
     "Computer Network/Lecture/Network Layer.md",
-    "Computer Network/Lecture/Data Link Layer.md",
     "Computer Network/Lecture/Basic Concepts.md",
     "Computer Network/Lecture/Application Layer.md",
-    "Computer Network/USTC L1.md",
     "Computer Network/DCN Review.md",
     "Computer Network/Computer Network Overview.md",
+    "Computer Network/USTC L1.md",
     "Computer Organization/Assignment/Assignment-1/CO-Assignment-1.md",
     "Computer Organization/Assignment/Assignment-1/logic.drawio",
     "Computer Organization/Assignment/Assignment-2/CO-Assignment-2.md",
@@ -74,47 +74,47 @@
     "Computer Organization/Assignment/Assignment-2/K-MAP.drawio",
     "Computer Organization/Assignment/Assignment-3/CO-Assignment-3.md",
     "Computer Organization/Assignment/Assignment-4/CO-Assignment-4.md",
-    "Computer Organization/Lab/Lab3.md",
-    "Computer Organization/Lab/Lab8.md",
     "Computer Organization/Lab/Lab7.md",
+    "Computer Organization/Lab/Lab8.md",
     "Computer Organization/Lab/Lab6.md",
-    "Computer Organization/Lab/Lab5.md",
     "Computer Organization/Lab/Lab2.md",
-    "Computer Organization/Lecture/Microarchitecture.md",
-    "Computer Organization/Lecture/Bits-Data-Representation-and-Manipulation.md",
-    "Computer Organization/Lecture/ISA.md",
-    "Computer Organization/Lecture/From-Machine-Language-to-Assembly-Language.md",
-    "Computer Organization/Lecture/Finite-State-Machine.md",
-    "Computer Organization/Lecture/Circuit-Design.md",
+    "Computer Organization/Lab/Lab5.md",
+    "Computer Organization/Lab/Lab3.md",
     "Computer Organization/Lecture/What-is-a-Computer.md",
+    "Computer Organization/Lecture/Microarchitecture.md",
+    "Computer Organization/Lecture/ISA.md",
     "Computer Organization/Lecture/From-Transistors-to-Gates.md",
+    "Computer Organization/Lecture/From-Machine-Language-to-Assembly-Language.md",
     "Computer Organization/Lecture/From-Gates-to-Circuits-II-Sequential-Circuits.md",
     "Computer Organization/Lecture/From-Gates-to-Circuits-I-Combinational-Circuits.md",
+    "Computer Organization/Lecture/Finite-State-Machine.md",
+    "Computer Organization/Lecture/Circuit-Design.md",
     "Computer Organization/Lecture/Boolean-Algebra-from-Bits-to-Logic.md",
+    "Computer Organization/Lecture/Bits-Data-Representation-and-Manipulation.md",
     "Computer Organization/Computer Organization Overview.md",
     "Computer Vision/Assignment/CV-As-1.md",
     "Computer Vision/Assignment/CV-As-2.md",
-    "Computer Vision/Homework/CV-HW-2.md",
     "Computer Vision/Homework/CV-HW-3.md",
+    "Computer Vision/Homework/CV-HW-2.md",
     "Computer Vision/Homework/CV-HW-1.md",
     "Computer Vision/Lecture/VGG.md",
-    "Computer Vision/Lecture/Convolutional Neural Networks.md",
     "Computer Vision/Lecture/Weight Initialization.md",
     "Computer Vision/Lecture/Signal and Image Processing.md",
     "Computer Vision/Lecture/ResNet.md",
     "Computer Vision/Lecture/Normalization Methods.md",
     "Computer Vision/Lecture/Fourier Transformation.md",
+    "Computer Vision/Lecture/Convolutional Neural Networks.md",
     "Computer Vision/Lecture/Back Propagation.md",
     "Computer Vision/Lecture/Image Pyramid.md",
     "Computer Vision/Computer Vision Overview.md",
     "Contest/Lanqiao/Train-2.md",
     "Contest/Lanqiao/Train-1.md",
-    "Contest/Leetcode/Weekly-Contest-402.md",
-    "Contest/Leetcode/Biweekly-Contest-122.md",
     "Contest/Leetcode/Weekly-Contest-403.md",
-    "Contest/Leetcode/Weekly-Contest-381.md",
-    "Contest/Leetcode/Biweekly-contest-133.md",
+    "Contest/Leetcode/Weekly-Contest-402.md",
     "Contest/Leetcode/Biweekly-Contest-123.md",
+    "Contest/Leetcode/Biweekly-contest-133.md",
+    "Contest/Leetcode/Weekly-Contest-381.md",
+    "Contest/Leetcode/Biweekly-Contest-122.md",
     "Data Analysis/Big Data Analysis/Lab/BDA-Lab-2.md",
     "Data Analysis/Big Data Analysis/Lab/BDA-Lab-1.md",
     "Data Analysis/Big Data Analysis/Lecture/Locality-Sensitive Hashing.md",
@@ -129,46 +129,46 @@
     "Data Analysis/Data Analysis Overview.md",
     "Database Management System/Application/MySQL+Redis.md",
     "Database Management System/Assignment/RDBMS-Assignment-3.md",
-    "Database Management System/Assignment/RDBMS-Assignment-2.md",
     "Database Management System/Assignment/RDBMS-Assignment-1.md",
-    "Database Management System/Assignment/NoSQL-Assignment-1.md",
+    "Database Management System/Assignment/RDBMS-Assignment-2.md",
     "Database Management System/Assignment/NoSQL-Assignment-2.md",
-    "Database Management System/MySQL/Data-Definition.md",
-    "Database Management System/MySQL/Set-Operation-&-Where-Subquery.md",
-    "Database Management System/MySQL/Join.md",
-    "Database Management System/MySQL/Null-Subquery.md",
+    "Database Management System/Assignment/NoSQL-Assignment-1.md",
     "Database Management System/MySQL/Division-and-Correlated-Subquery.md",
+    "Database Management System/MySQL/Set-Operation-&-Where-Subquery.md",
+    "Database Management System/MySQL/Null-Subquery.md",
+    "Database Management System/MySQL/Join.md",
     "Database Management System/MySQL/Data-Modification.md",
     "Database Management System/MySQL/Cross-table-Query.md",
-    "Database Management System/MySQL/Aggregation.md",
+    "Database Management System/MySQL/Data-Definition.md",
     "Database Management System/MySQL/Basic-MySQL.md",
+    "Database Management System/MySQL/Aggregation.md",
     "Database Management System/MySQL/Advanced-SQL.md",
-    "Database Management System/NoSQL/Redis.md",
-    "Database Management System/NoSQL/MongoDB.md",
-    "Database Management System/NoSQL/NoSQL.md",
-    "Database Management System/NoSQL/Cassandra.md",
-    "Database Management System/NoSQL/Neo4j.md",
     "Database Management System/NoSQL/NoSQL-Review.md",
+    "Database Management System/NoSQL/Redis.md",
+    "Database Management System/NoSQL/NoSQL.md",
+    "Database Management System/NoSQL/Neo4j.md",
+    "Database Management System/NoSQL/MongoDB.md",
+    "Database Management System/NoSQL/Cassandra.md",
+    "Database Management System/RDBMS/Logical-Design.md",
     "Database Management System/RDBMS/Relational-Database-Design-Purpose-&-First-Normal-Form.md",
     "Database Management System/RDBMS/Relational-Database-Design-Functional-Dependency.md",
     "Database Management System/RDBMS/Relational-Database-Design-BCNF.md",
     "Database Management System/RDBMS/Relational-Database-Design-3rd-Normal-Form.md",
     "Database Management System/RDBMS/NormalForm.md",
     "Database Management System/RDBMS/Key-Concept.md",
-    "Database Management System/RDBMS/Logical-Design.md",
-    "Database Management System/RDBMS/Entity-Relationship-Model-Extended-Features.md",
     "Database Management System/RDBMS/Entity-Relationship-Model-Modeling.md",
+    "Database Management System/RDBMS/Entity-Relationship-Model-Extended-Features.md",
     "Database Management System/RDBMS/Entity-Relationship-Model-Constraints.md",
     "Database Management System/RDBMS/Design-Issues.md",
     "Database Management System/Database Management System Overview.md",
     "Deep Learning/00-Basic/Weight Decay.md",
     "Deep Learning/00-Basic/Softmax and Argmax.md",
+    "Deep Learning/00-Basic/Activation Function.md",
     "Deep Learning/00-Basic/Overfitting and Underfitting.md",
     "Deep Learning/00-Basic/Loss Function.md",
-    "Deep Learning/00-Basic/K Cross Verified.md",
     "Deep Learning/00-Basic/Gradient Descent.md",
+    "Deep Learning/00-Basic/K Cross Verified.md",
     "Deep Learning/00-Basic/Dropout.md",
-    "Deep Learning/00-Basic/Activation Function.md",
     "Deep Learning/01-Linear Regression/Basic torch.md",
     "Deep Learning/02-SoftMax Regression/Softmax Regression.md",
     "Deep Learning/03-Multiple Layer Perceptron/MLP.md",
@@ -195,11 +195,11 @@
     "English/IELTS/Write/Task1/IELTS-Write-Task-1-Exercise.md",
     "English/IELTS/Write/Task1/Dynamic Charts.md",
     "English/IELTS/Write/Task1/Flow Charts.md",
-    "English/IELTS/Write/Task2/Exercise/Robots.md",
     "English/IELTS/Write/Task2/Exercise/Retirement Community.md",
+    "English/IELTS/Write/Task2/Exercise/Robots.md",
     "English/IELTS/Write/Task2/Exercise/Non-academic Subjects.md",
-    "English/IELTS/Write/Task2/Exercise/Generation Gap.md",
     "English/IELTS/Write/Task2/Exercise/Fuel Cost.md",
+    "English/IELTS/Write/Task2/Exercise/Generation Gap.md",
     "English/IELTS/Write/Task2/WRITE Lesson.md",
     "English/IELTS/Write/Task2/Tmp.md",
     "English/IELTS/Write/Task2/IELTS Write Task2 Logical chain.md",
@@ -227,11 +227,11 @@
     "Math/Discrete Structure/Lecture/functions-sequence-and-summations.md",
     "Math/Discrete Structure/Lecture/counting-principles.md",
     "Math/Discrete Structure/Lecture/boolean-expressions.md",
+    "Math/Linear Algebra/Linear Transformations.md",
     "Math/Linear Algebra/Vector Space.md",
     "Math/Linear Algebra/Product.md",
     "Math/Linear Algebra/Orthogonality.md",
     "Math/Linear Algebra/Matrix Operation.md",
-    "Math/Linear Algebra/Linear Transformations.md",
     "Math/Linear Algebra/Judgment.md",
     "Math/Linear Algebra/Eigenvalues and Eigenvectors.md",
     "Math/Linear Algebra/Eigen-Decomposition-Review.md",
@@ -245,24 +245,24 @@
     "Math/Math.md",
     "Operating System/Extend/NJU OS PA0.md",
     "Operating System/Extend/Linux Basic Operation.md",
+    "Operating System/Lecture/CPU Scheduling.md",
     "Operating System/Lecture/Virtual Memory.md",
-    "Operating System/Lecture/Process.md",
     "Operating System/Lecture/Threads.md",
+    "Operating System/Lecture/Process.md",
     "Operating System/Lecture/Process Synchronization.md",
     "Operating System/Lecture/Operating System Structure.md",
     "Operating System/Lecture/Operating System Introduction.md",
     "Operating System/Lecture/Main Memory.md",
     "Operating System/Lecture/File System Interface.md",
     "Operating System/Lecture/File System Implementation.md",
-    "Operating System/Lecture/CPU Scheduling.md",
     "Operating System/Operating System Overview.md",
-    "Program/C/fileoperation.md",
     "Program/C/Pointers.md",
+    "Program/C/fileoperation.md",
     "Program/C/Multithreads.md",
     "Program/C/Macro.md",
+    "Program/Cpp/Iota.md",
     "Program/Cpp/Priority-Queue.md",
     "Program/Cpp/Map.md",
-    "Program/Cpp/Iota.md",
     "Program/Cpp/Bitest.md",
     "Program/Cpp/Algorithm-Library.md",
     "Program/Java/Generics/generics.java",
@@ -298,8 +298,8 @@
     "Program/Python/Python Basic.md",
     "Program/Python/Pandas.md",
     "Program/Python/Numpy.md",
-    "Program/Python/Matplotlib.md",
     "Program/Python/Datetime.md",
+    "Program/Python/Matplotlib.md",
     "Program/Python/Beautiful Soup.md",
     "Program/R/R-Data-Structure.md",
     "Program/R/Basic-R.md",
@@ -324,6 +324,14 @@
     "Share/Network-Deconvolution.html",
     "Theory Of Computation/Assignment/TOC-As-2.md",
     "Theory Of Computation/Assignment/TOC-As-1.md",
+    "Theory Of Computation/Lecture/TOC-Intro.md",
+    "Theory Of Computation/Lecture/TOC-PDA.md",
+    "Theory Of Computation/Lecture/TOC-TM.md",
+    "Theory Of Computation/Lecture/TOC-CFL.md",
+    "Theory Of Computation/Lecture/TOC-Pumping Lemma.md",
+    "Theory Of Computation/Lecture/TOC-RL.md",
+    "Theory Of Computation/Lecture/TOC-Math.md",
+    "Theory Of Computation/Lecture/TOC-Finite Automata.md",
     "Tools/Conda/Conda.md",
     "Tools/Docker/Docker.md",
     "Tools/Git/Git-Workflow-Model.md",
@@ -2374,14 +2382,14 @@
       "dependencies": []
     },
     "Archive.md": {
-      "modifiedTime": 1731868268524,
-      "sourceSize": 15816,
+      "modifiedTime": 1731868413453,
+      "sourceSize": 17731,
       "exportedPath": "archive.html",
       "dependencies": []
     },
     "Class.md": {
-      "modifiedTime": 1731868268524,
-      "sourceSize": 18854,
+      "modifiedTime": 1731868413453,
+      "sourceSize": 21081,
       "exportedPath": "class.html",
       "dependencies": []
     },
@@ -2392,7 +2400,7 @@
       "dependencies": []
     },
     "Home.md": {
-      "modifiedTime": 1730828425324,
+      "modifiedTime": 1731868413453,
       "sourceSize": 2816,
       "exportedPath": "home.html",
       "dependencies": []
@@ -2404,301 +2412,301 @@
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1731868268524,
-      "sourceSize": 383999,
+      "modifiedTime": 1731868413453,
+      "sourceSize": 391979,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 154270,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 2067292,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 320625,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 402,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 1014,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1731868268524,
+      "modifiedTime": 1731868413453,
       "sourceSize": 12705,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
@@ -2767,6 +2775,54 @@
       "modifiedTime": 1731868268524,
       "sourceSize": 903,
       "exportedPath": "algorithm/basic-algorithm/sliding-window.html",
+      "dependencies": []
+    },
+    "Theory Of Computation/Lecture/TOC-Intro.md": {
+      "modifiedTime": 1731868361406,
+      "sourceSize": 4258,
+      "exportedPath": "theory-of-computation/lecture/toc-intro.html",
+      "dependencies": []
+    },
+    "Theory Of Computation/Lecture/TOC-PDA.md": {
+      "modifiedTime": 1731868361406,
+      "sourceSize": 137,
+      "exportedPath": "theory-of-computation/lecture/toc-pda.html",
+      "dependencies": []
+    },
+    "Theory Of Computation/Lecture/TOC-TM.md": {
+      "modifiedTime": 1731868361406,
+      "sourceSize": 776,
+      "exportedPath": "theory-of-computation/lecture/toc-tm.html",
+      "dependencies": []
+    },
+    "Theory Of Computation/Lecture/TOC-CFL.md": {
+      "modifiedTime": 1731868361406,
+      "sourceSize": 491,
+      "exportedPath": "theory-of-computation/lecture/toc-cfl.html",
+      "dependencies": []
+    },
+    "Theory Of Computation/Lecture/TOC-Pumping Lemma.md": {
+      "modifiedTime": 1731868361406,
+      "sourceSize": 1539,
+      "exportedPath": "theory-of-computation/lecture/toc-pumping-lemma.html",
+      "dependencies": []
+    },
+    "Theory Of Computation/Lecture/TOC-RL.md": {
+      "modifiedTime": 1731868361406,
+      "sourceSize": 5115,
+      "exportedPath": "theory-of-computation/lecture/toc-rl.html",
+      "dependencies": []
+    },
+    "Theory Of Computation/Lecture/TOC-Math.md": {
+      "modifiedTime": 1731868361406,
+      "sourceSize": 10338,
+      "exportedPath": "theory-of-computation/lecture/toc-math.html",
+      "dependencies": []
+    },
+    "Theory Of Computation/Lecture/TOC-Finite Automata.md": {
+      "modifiedTime": 1731868361406,
+      "sourceSize": 14338,
+      "exportedPath": "theory-of-computation/lecture/toc-finite-automata.html",
       "dependencies": []
     }
   }
