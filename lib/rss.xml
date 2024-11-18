@@ -1,4 +1,541 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://www.allenygy.vip/</link><image><url>https://www.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://www.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 17 Nov 2024 18:40:03 GMT</lastBuildDate><atom:link href="https://www.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Nov 2024 18:39:58 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[TOC Finite Automata]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://www.allenygy.vip/</link><image><url>https://www.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://www.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 18 Nov 2024 13:33:16 GMT</lastBuildDate><atom:link href="https://www.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 18 Nov 2024 13:33:07 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[TOC-As-2]]></title><description><![CDATA[ 
+ <br><br><br>Convert the following NFA into an equivalent DFA. (20 pt)<br><img alt="Q1" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/ju3fRF.png" referrerpolicy="no-referrer"><br>First iteration<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>Second iteration<br>
+<br>
+<br>
+<br>
+<br>
+<br>Third iteration<br>
+<br>
+<br>
+<br>
+<br>
+<br><br><img alt="twQhiy" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/twQhiy.png" referrerpolicy="no-referrer"><br><br>Let . Give a regular expression for each of the following language. (10 pt for each)<br><br><br><br><br><br><br><br>Determine whether the following languages over  are regular. Prove your answer. Each question has two languages. You don’t need to do both, select one at your favor. In general, the original languages are difficult, the alternative ones are easy. You have your own choice. If you do both, we mark the easy one. (10 pt for each subquestion)<br><br> is not regular.<br>Assume  is regular. Suppose , Let  , which is a string in <br>By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
+<br>
+If  only consists 's
+
+<br>Suppose  consists of  .
+
+<br>Then  or 
+<br>, which is not in .
+
+
+
+
+<br>
+If  only consists 's
+
+<br>Suppose  consists of  .
+
+<br>Then 
+<br>, which is not in .
+
+
+
+
+<br>
+If  consists both 's and 's
+
+<br>Then  and   in  are intersecting with each other, which is not in the form of  Thus, .
+
+
+<br><br><br> is not regular.<br>Assume  is regular. Suppose , Let  , which is a string in <br>By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
+<br>
+If  only consists of 's
+
+<br>Suppose  consists of  .
+
+<br>Then  ,
+
+<br>, which is not in .
+
+
+<br>Or 
+
+<br>, which is not in .
+
+
+
+
+
+
+<br>
+If  only consists of 's
+
+<br>Suppose  consists of  .
+<br>then 
+
+<br>, which is not in .
+
+
+
+
+<br>
+If  consists of both 's and 's
+
+<br>Then  and   in  are intersecting with each other, which is not in the form of  Thus, .
+
+
+<br><br><br> is not regular.<br>Assume  is regular. Suppose , , Let  , which is a string in <br>By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
+<br>
+If  only consists of 's
+
+<br>Suppose  consists of  .
+
+<br>Then  ,
+
+<br>, which is not in .
+
+
+<br>Or 
+
+<br>, which is not in .
+
+
+
+
+
+
+<br>
+If  only consists of 's
+
+<br>Suppose  consists of  .
+
+<br>Then 
+<br>, which is not in .
+
+
+
+
+<br>
+If  consists of both 's and 's
+
+<br>Then  and   in  are intersecting with each other, which is not in the form of  Thus, .
+
+
+<br><br><br> is regular.<br>Since&nbsp; &nbsp; contains every possible string of&nbsp; &nbsp; (all strings with some number of&nbsp;  followed by some number of&nbsp; ), this language is equivalent to:<br><br>Therefore, I can construct a NFA that accepts this language.<br><img alt="3.d." src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/qLW5R5.png" referrerpolicy="no-referrer"><br><br><br>Are the following languages regular? Prove your answer. (10 pt for each)<br><br> is not regular.<br> can be divided into two parts.<br>
+ and <br> is not regular.<br>
+Assume  is regular.<br>
+Suppose , Let  , which is a string in <br>By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
+<br>
+If  only consists of 's
+
+<br>Suppose  consists of  .
+
+<br>Then 
+<br>, which is not in .
+
+
+
+
+<br>
+If  only consists of 's
+
+<br>Suppose  consists of  .
+
+<br>Then 
+<br>, which is not in .
+
+
+
+
+<br>
+If  consists of both 's and 's
+
+<br>Then  and   in  are intersecting with each other, which is not in the form of  Thus, .
+
+
+<br> is regular, because <br>Although  is regular,  is the union of  and , and  is not regular.<br>
+we can not construct a NFA for . Thus,  is not regular.<br><br><br> is not regular.<br> can be divided into two parts.  and .<br>
+Let  and <br> is not regular, the proof has been shown in the previous question.<br> is not regular.<br>
+Assume  is regular. Suppose , Let  , which is a string in <br>By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
+<br>
+If  only consists of 's
+
+<br>Suppose  consists of  .
+
+<br>Then 
+<br>, which is not in .
+
+
+
+
+<br>
+If  only consists of 's
+
+<br>Suppose  consists of  .
+
+<br>Then 
+<br>, which is not in .
+
+
+
+
+<br>
+If  consists of both 's and 's
+
+<br>Then  and   in  are intersecting with each other, which is not in the form of  Thus, .
+
+
+<br> is not regular.  is also not regular. 	<br> is not regular, we can not construct a NFA for . Thus,  is not regular.]]></description><link>https://www.allenygy.vip/theory-of-computation/assignment/toc-as-2.html</link><guid isPermaLink="false">Theory Of Computation/Assignment/TOC-As-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 12:44:44 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/ju3fRF.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/ju3fRF.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[TOC-Pumping Lemma]]></title><description><![CDATA[ 
+ <br><br><br>Lemma (Pumping Lemma)
+If  is a regular language, then there is a positive constant  such that every string  of length at least  can be written as  satisfying the following conditions
+
+<br>for each 
+<br>, and
+<br>.
+
+<br>p is the pumping length.<br>Instead of proving the lemma formally, let's try to understand it.<br>Assume  is regular and  is the  which recognizes .<br>
+Let  be the number of states in .<br>Assume  in  of length .<br>To accept ,  goes through a sequence of states <br>By pigeonhole principle, some states  appears multiple times in the sequence.<br>Assuming , the sequence of states can be <br><br>Then, it's trivial that , , ,  are all in .<br><br>The pumping lemma is used to prove a language is not regular.<br><br>To prove the language  is not regular <br>
+<br>Assume that  is regular.
+<br>Construct a string  of length .
+<br>Show that no matter how  is split into , there is always an  such that  (contradiction).
+<br><br>Theorem
+ is not regular.
+<br>Proof:<br>Assume  is regular. Let , which is a string in . By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
+<br>
+If  only consists of 's, then  (pump  one more time) has more 's than 's. Thus, .
+
+<br>
+If  only consists of 's, same as case 1.
+
+<br>
+If  has both 's and 's, then 's and 's in  are intersecting with each other, which is not in the form of . Thus, .
+
+<br>In summary,  can never be split into  such that  for all . Thus,  is not regular.<br>Here are some notes.<br>The pumping length  depends on the machine. Different machines have different pumping length.<br>But the pumping lemma is "machine independent". Thus you cannot assume the value of .<br>The condition  ensures that the substring being pumped is not empty.<br>
+Otherwise, <br>The condition  ensures that  always can be pumped by a machine.<br>The pumping lemma is only a necessary condition for regular.<br>
+It is not a sufficient condition.<br>
+In other words, if you cannot find a  or such  does not exist to accomplish the proof, you CANNOT say the language is regular. <br><br><br>Answer: Not regular.<br>Proof:<br>Assume  is regular. Consider the string , where  is a prime number and  (where  is a constant from the pumping lemma). By definition, . <br>Since prime numbers are infinite,  is constructible for some . (This point is crucial because, if  were not constructible, the proof could not proceed.)<br>By the pumping lemma,  can be split into three substrings , where:<br>
+<br>,
+<br>,
+<br> for all .
+<br>Here,  consists of only 's. Assume . Then .<br>Now, consider the string  (i.e.,  for ):<br>
+<br>Its length is .
+<br>However,  is not a prime number, because  is a prime number, and  (where ) is an integer greater than 1.<br>Thus, , which contradicts the pumping lemma. Therefore,  is not regular.<br><br>Answer: Not regular.<br>Proof (Sketch):<br>We can express  as:<br>
+<br>
+<br>Here, , and  are regular languages.
+<br>Regular languages are closed under set union and complement.
+<br>If  were regular, then  would also be regular (by closure properties of regular languages).<br>
+However, this contradicts the result from , where  was proven to be not regular.<br>
+Thus,  is not regular.<br><br>Answer: Regular. In fact, .<br>Proof:<br>Consider :<br>
+<br>
+Case 0: If , then .
+
+<br>
+Case 1: If  is a prime, then .
+
+<br>
+Case 2: If  is composite, then , where each  is a prime and  is a positive integer constant.
+
+<br>Next,  for all .
+<br>Thus, .
+
+
+<br>Thus, .<br><br>Answer: Regular. <br>
+<br>.
+<br> is regular.
+<br><br>Answer: Not regular.<br>Proof (Sketch):<br>
+<br>Consider the string .
+<br>Then, .
+]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-pumping-lemma.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-Pumping Lemma.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 13:28:17 GMT</pubDate></item><item><title><![CDATA[TOC-Regular language]]></title><description><![CDATA[ 
+ <br><br><br>Def: regular language 
+A language is regular if it is recognized by a DFA or an NFA.
+<br>To Prove a Language is regular, we need to construct a DFA or an NFA for the language. <br><br>Def: Let  and  be languages. 
+
+<br>Union :  
+<br>Concatenation: 
+
+<br><br> <br>Note:  each  is a string in the language A. And  is the concatenation of  , until .<br>
+Equivalently, <br>Def: Star operator
+Let  be a language. 	 for  is recursively define 
+
+<br>	
+<br>
+
+<br><br>Let .<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br> Theorem (Closure)
+Regular language is closed under union, concatenation, and star.
+<br>if A and B are two regular languages, then , , and  are also regular languages.<br><img alt="EaP8bA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/EaP8bA.png" referrerpolicy="no-referrer"><br><br><img alt="$A\cup B$" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/rW9gPM.png" referrerpolicy="no-referrer"><br><br><br><img alt="$A \circ B$" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/Y0x1Np.png" referrerpolicy="no-referrer"><br><br><br><img alt="$A^{*}$" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/TjkeUi.png" referrerpolicy="no-referrer"><br><br><br>Regular languages can be recursively constructed.<br>
+A regular expression describes the common pattern the strings in a regular language (machine independent).<br>Def: Regular expression (Recursive Definition) 
+ is a regular expression over  if  is<br>
+
+
+<br> for some ,
+<br>, or
+<br>	
+
+
+
+<br>, where  and  are regular expressions,
+<br>, where  and  are regular expressions, or
+<br>, where  is a regular expression.
+
+<br><br>Def: Let  be a regular expression. The language  defined by  is 	
+
+
+<br>,
+<br>, 
+<br>,  .	
+
+
+
+<br>if  , then 
+<br>if  , then 
+<br>if  , then 
+
+<br>Example:<br>Suppose . Describe the language defined by the following regular expressions in English.<br>
+<br>
+<br>
+<br>
+<br>
+<br>   Match nothing
+<br><br>Theorem	
+Regular expressions are equivalent to finite automata.
+<br>The proof has two steps.<br>
+<br>The language defined by a regular expression can be recognized by a finite automaton.
+<br>The conversion is also doable vice versa. 
+<br>The conversion from a regular expression to an NFA is trivially ensured by the closure property .<br>
+So, we only need to convert NFA to regular expressions.<br><br>The Conversion requires generalized NFA, which is a special type of NFA. <br>Only one start state and one final state.<br>
+The start state is different from the final state.<br>
+The transition function is <br>
+<br>
+<br>Suppose <br>
+<br>It means transition from  to  requires .
+<br>If the GNFA has only 2 states  and , then the label on the transition is the regular expression for the language.
+<br>Thus, the conversion recursively merges states and transitions of the generalized NFA.
+<br>
+
+
+Algorithm Convert NFAε_\varepsilonε​ to 2-state gNFA
+
+
+Input: An NFA N=(Q,Σ,δ,q0,F)N = (Q, \Sigma, \delta, q_0, F)N=(Q,Σ,δ,q0​,F)
+
+Output: A regular expression which defines L(N)L(N)L(N)
+
+
+N′←NN' \gets NN′←N // convert the domain and codomain of the transition function
+
+Q′←Q′∪{q0′,qf′}Q' \gets Q' \cup \{q_0', q_f'\}Q′←Q′∪{q0′​,qf′​}
+
+δ′(q0′,q0)=ε\delta'(q_0', q_0) = \varepsilonδ′(q0′​,q0​)=ε
+
+for all q∈Fq \in Fq∈F do
+
+
+δ′(q,qf′)=ε\delta'(q, q_f') = \varepsilonδ′(q,qf′​)=ε
+
+
+end for
+
+for all state qqq in Q′Q'Q′ except q0′q_0'q0′​ and qf′q_f'qf′​ do
+
+
+Q′←Q′∖{q}Q' \gets Q' \setminus \{q\}Q′←Q′∖{q}
+
+for all state qiq_iqi​ in Q′Q'Q′ except qf′q_f'qf′​ do
+
+
+for all state qjq_jqj​ in Q′Q'Q′ except q0′q_0'q0′​ do
+
+
+Suppose δ′(qi,q)=R1\delta'(q_i, q) = R_1δ′(qi​,q)=R1​, δ′(q,q)=R2\delta'(q, q) = R_2δ′(q,q)=R2​, δ′(q,qj)=R3\delta'(q, q_j) = R_3δ′(q,qj​)=R3​, and δ′(qi,qj)=R4\delta'(q_i, q_j) = R_4δ′(qi​,qj​)=R4​
+
+δ′(qi,qj)=((R1)(R2)∗R3)∪(R4)\delta'(q_i, q_j) = ((R_1)(R_2)^* R_3) \cup (R_4)δ′(qi​,qj​)=((R1​)(R2​)∗R3​)∪(R4​)
+
+
+end for
+
+
+end for
+
+
+end for
+
+return δ′(q0′,qf′)\delta'(q_0', q_f')δ′(q0′​,qf′​)
+
+
+
+Export to clipboard]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-rl.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-RL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 06:10:02 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/EaP8bA.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/EaP8bA.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[TOC-Math]]></title><description><![CDATA[ 
+ <br><br>“No one shall expel us from the paradise which Cantor has created for us.” ---David Hilbert, 1926<br><br>Def: A set (naively) is a collection of objects such that
+
+<br>no order and no duplication
+
+<br>An object  is in a set  is denoted as .<br>To represent a set, you need to <br>
+<br>Put all members in a pair of curly brackets ;
+<br>Enumerate all members, e.g. ; or
+<br>Give a member representative and followed by the characteristic of members using a predicate, 
+
+<br>e.g.  .
+
+
+<br>Def: Empty set
+ is an empty set, denoted by .
+<br>"" is a concatenation (always false), Or equivalently,<br>Def: Empty set
+ is an empty set if . 
+<br><br>Def: Universal set	
+A universal set is a set that contains all elements under a certain context.
+<br>A universal set is usually denoted in the blackboard bold font. For example,<br>
+<br>: the set of natural numbers;
+<br>: the set of integers;
+<br>: the set of rational numbers;
+<br>: the set of real numbers;
+<br>: the set of complex numbers;
+<br>: the universal set without a specification.
+<br>: the set of prime numbers.
+<br>Def: subset
+Set  is a subset of set  if  , denoted as .
+<br>Def: Power set
+Let A be a set.  is the power set of A.
+<br>Let  .<br><br>Suppose  and  are two sets.<br>Def: Complement
+A complement is the set .
+<br>Def: Intersection
+A intersection  is the set .
+<br>Def: Union
+A union  is the set .
+<br>Def: Setminus 
+A setminus  is the set .
+<br><br> Suppose  and  are two sets.<br>Def: Cartesian product
+The cartesian product of  and  is the set:<br>
+
+<br>Each object  is a pair or generally a 2-tuple.<br>Def: Relation
+A relation  between  and  is a subset of .
+<br>If , we say  is related to , denoted by .<br>A relation  is on the set  if .<br>Let  be a relation on a set .  is:<br>
+<br>reflexive if ;
+<br>symmetric if ;
+<br>anti-symmetric if ;
+<br>transitive if .
+<br><br>Def: Function
+A relation  between  and  is a function if:
+
+<br>
+<br> is the domain.
+<br> is the co-domain.
+<br> means uniquely exists.
+<br>Such a function is denoted as .
+<br>Def: Image and pre-image
+If  is an object of the function , we denote  and say:
+
+<br> is the image of ;
+<br> is the pre-image of .
+
+<br>To denote a function:<br>
+<br>Surely, one can enumerate all pairs in the function.
+<br>But usually, people present the expression.<br>
+For example,  such that .
+<br>For the same example, one can also write .<br>Please distinguish “” and “”:<br>
+<br>“” is from domain to co-domain.
+<br>“” is from pre-image to image.
+<br>Def: A function  is 
+
+<br>Injection: If  
+
+<br>不同x对应不同y	
+
+
+<br>Surjection: If 
+
+<br>任何y都有对应的x	
+
+
+<br>Bijection: If  is both injection and surjection.
+
+<br>For example, let .<br>
+<br> is an injection but not a surjection.
+<br> is a surjection but not an injection.
+<br> is a bijection.
+<br>Graph
+00.10.20.30.40.50.60.70.80.91−1-0.8-0.6-0.4-0.200.20.40.60.81
+<br><br>To precisely describe mathematics, algorithm, computation, and other procedures, formal languages are used. A language is a set of strings over an alphabet. Formally,<br>Def: Language 	
+A language is a set of strings over a specific alphabet.
+<br>Def: alphabet 
+An alphabet is a nonempty finite set.
+<br>For example, <br><br>Def: string 	
+A string over an alphabet  is a finite sequence of symbols from that alphabet.
+<br>Def: length	
+If  is a string over the alphabet , the length of  is the number of  symbols in , denoted by  .
+<br>Def: Empty string	
+The empty string is the string of length 0, denoted by .
+<br>Let  be a string of length n, where each .<br>Def: Reverse	
+The reverse of a string  is the string , denoted by .
+<br>Def: Substring 
+The string  is a substring of  if  consecutively appears in .
+<br>Def: Concatenation
+The concatenation of two strings  and  is the string  of length .	
+<br>For example, .<br>
+Sometimes, the operator “” is omitted. <br>Language
+A language is a set of strings over a specific alphabet.
+<br><br>In this lecture, we only emphasize several proving techniques.<br>
+<br>Constructive proof 
+<br>Prove by contradiction 
+<br>Induction 
+<br>Diagonal argument
+<br><br>
+<br>Used to prove a predicate with existential quantifiers, like .
+<br>First, construct an object .
+<br>Second, prove  is true.
+<br><br>
+<br>Used to prove a proposition .
+<br>First, assume  is false.
+<br>Then, derive a contradiction.
+<br>Last, claim  is true.
+<br><br>
+<br>To prove a predicate with universal quantifiers, one can use induction.
+<br>Induction has two variants: simple and strong. But, they are equivalent.
+<br>To prove :
+<br><br>
+<br>Prove  as a base case.
+<br>Prove  as an induction.
+<br>In the second step,  is the inductive hypothesis.
+<br><br>
+<br>Prove  as a base case.
+<br>Prove .
+<br>We assume  are all true in the strong induction.
+<br><br>Def: Cardinality
+The cardinality of a set  is the number of objects in , denoted as .
+<br>Def: Cardinality
+The set  and the set  are of the same cardinality if there is a bijection .
+<br><br>
+<br> and  are of the same cardinality because we can define a bijection  such that .
+<br>The set of even numbers  and the set of integers  are also of the same cardinality because of the bijection .
+<br>Note that the cardinality can be finite and infinite.<br><br>Def: Countable
+A set is countable if it is finite or its cardinality is same as the set of natural number .
+<br>Countable means that:<br>
+<br>For every number  in the natural number (no matter how large the number is),
+<br>if we count from 0,
+<br>we can eventually  reach the number  within a finite time.
+<br>In fact, the counting procedure constructs a bijection, mapping a natural number  to the  counted element.<br>We denote the cardinality of  by <br>To proof an infinite set  is countable, you need t construct a bijection <br><br>Georg Cantor developed a method to prove a set is uncountable.  <br>For example:<br>Theorem  
+The set of all real numbers in the open interval  is uncountable.
+<br>The intuition of the proof (by contradiction) is as follows:<br>
+<br>Assume  is countable, then we can "count" the numbers one by one.
+<br>Then, we can list all the numbers that we count in a table.
+<br>Construct a real number in  but cannot be reached in the table.
+<br>Thus, the set of reals in  is uncountable.<br>Suppose we denote a real number as . Then, we build the table in Step 2 of the proof.<br><br>Next, we define a real number  such that:<br>
+<br>We can see  is not in the list:<br>
+<br> and  are different at digit 0.
+<br> and  are different at digit 1.
+<br>
+<br>Thus,  is not counted, and the set of reals in  is uncountable.<br> Here we list some facts about infinite sets:<br>
+<br>The set of real numbers  has cardinality .
+<br>The power set  of  also has cardinality .
+<br> has cardinality .
+<br>You can make such constructions by taking power sets.
+<br>Hypothesis (Continuum Hypothesis - CH)
+There is no set of cardinality strictly between  and .
+<br>So far, people only know:<br>Theorem (Cohen 1964)
+CH is unprovable under ZFC.
+]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-math.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-Math.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 12:04:15 GMT</pubDate></item><item><title><![CDATA[TOC Finite Automata]]></title><description><![CDATA[ 
  <br><br>The computation power of this model is rather weak. Because it can only use a limited (finite) memory. But it is also useful in some applications. <br><br>Deterministic finite automata 
 A deterministic finite automata (DFA) is a 5-tuple   , where
 
@@ -167,7 +704,7 @@ Export to clipboard<br><br>Let’s try to convert this  to .<br><br><br>Suppose 
 <br><br><br><br>
 <br><br><br><br>
 <br><br><br>
-<br><br><br> and  are final states.<br>Rename the states to make the DFA more readable and beautiful: .<br><br> is a trap state because it has no valid transitions.]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-finite-automata.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-Finite Automata.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 17 Nov 2024 18:39:38 GMT</pubDate></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
+<br><br><br> and  are final states.<br>Rename the states to make the DFA more readable and beautiful: .<br><br> is a trap state because it has no valid transitions.]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-finite-automata.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-Finite Automata.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 12:04:36 GMT</pubDate></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
  <br><br><br>
 <br><a data-tooltip-position="top" aria-label="Machine Learning/Project/Topic-Exploration.md" data-href="Machine Learning/Project/Topic-Exploration.md" href="https://www.allenygy.vip/Machine Learning/Project/Topic-Exploration" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Topic-Exploration</a><a data-tooltip-position="top" aria-label="Machine Learning/Project/Topic-Exploration.md" data-href="Machine Learning/Project/Topic-Exploration.md" href="https://www.allenygy.vip/machine-learning/project/topic-exploration.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Topic-Exploration</a>
 <br><a data-tooltip-position="top" aria-label="Computer Vision/Lecture/VGG.md" data-href="Computer Vision/Lecture/VGG.md" href="https://www.allenygy.vip/Computer Vision/Lecture/VGG" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">VGG</a><a data-tooltip-position="top" aria-label="Computer Vision/Lecture/VGG.md" data-href="Computer Vision/Lecture/VGG.md" href="https://www.allenygy.vip/computer-vision/lecture/vgg.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">VGG</a>
@@ -907,336 +1444,7 @@ By the pumping lemma,  Then, we have two cases.<br><br>
 <br>Case 1
 <br>vxy  before the # <br> has more symbols before # then after. <br>
 <br>Case 2
-<br>vxy  before the # <br> <br>more 1's but less 0's]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-cfl.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-CFL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 13 Nov 2024 02:42:42 GMT</pubDate></item><item><title><![CDATA[TOC-Pumping Lemma]]></title><description><![CDATA[ 
- <br><br><br>Lemma (Pumping Lemma)
-If  is a regular language, then there is a positive constant  sunch that every string  of length at least  can be written as  satisfing the following conditions
-
-<br>for each 
-<br>, and
-<br>.
-
-<br><br>To prove the language  is not regular <br>
-<br>Assume that  is regular.
-<br>Construct a string  of length .
-<br>Show that no matter how  is split into , there is always an  such that 
-<br><br>Theorem
- is not regular.
-<br>Proof<br>Assume  is regular. Let , which is a string in . By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
-<br>
-If  only consists of 's, then  (pump  one more time) has more 's than 's. Thus, .
-
-<br>
-If  only consists of 's, same as case 1.
-
-<br>
-If  has both 's and 's, then 's and 's in  are intersecting with each other, which is not in the form of . Thus, .
-
-<br>In summary,  can never be split into  such that  for all . Thus,  is not regular.]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-pumping-lemma.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-Pumping Lemma.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 05 Nov 2024 16:44:27 GMT</pubDate></item><item><title><![CDATA[TOC-Regular language]]></title><description><![CDATA[ 
- <br><br><br>Def: regular language 
-A language is regular if it is recognized by a DFA or an NFA.
-<br>To Prove a Language is regular, we need to construct a DFA or an NFA for the language. <br><br>Def: Let  and  be languages. 
-
-<br>Union :  
-<br>Concatenation: 
-
-<br><br> <br>
-
-<br>Note:  each  is a string in the language A. And  is the concatenation of  , until .<br>
-Equivalently , 
-
-<br>Def: Let  be a language. 	 for  is recursively define 
-
-<br>	
-<br>
-
-<br>Def: 
-
-<br>	
-
-<br>Let .<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br> Theorem
-Regular language is closed under union, concatenation, and star.
-<br>if A and B are two regular languages, then , , and  are also regular languages.<br><img alt="EaP8bA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/EaP8bA.png" referrerpolicy="no-referrer"><br><br><img alt="$A\cup B$" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/rW9gPM.png" referrerpolicy="no-referrer"><br><br><img alt="$A \circ B$" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/Y0x1Np.png" referrerpolicy="no-referrer"><br><br><img alt="$A^{*}$" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/TjkeUi.png" referrerpolicy="no-referrer"><br><br>Def: Regular expression (Recursive Definition) 
- is a regular expression over  if  is<br>
-
-
-<br> for some ,
-<br>, or
-<br>	
-
-
-
-<br>, where  and  are regular expressions,
-<br>, where  and  are regular expressions, or
-<br>, where  is a regular expression.
-
-<br><br>Def: Let  be a regular expression. The language  defined by  is 	
-
-
-<br>,
-<br>, 
-<br>,  .	
-
-
-
-<br>if  , then 
-<br>if  , then 
-<br>if  , then 
-
-<br>Example:<br>Suppose . Describe the language defined by the following regular expressions in English.<br>
-<br>
-<br>
-<br>
-<br>
-<br>   Match nothing
-<br><br>Theorem	
-Regular expressions are equivalent to finite automata.
-<br>The proof has two steps.<br>
-<br>The language defined by a regular expression can be recognized by a finite automaton.
-<br>The conversion is also doable vice versa. 
-<br>The conversion from a regular expression to an NFA is trivially ensured by the closure property .<br><br>The Conversion requires generalized NFA, which is a special type of NFA. <br>
-<br>Only one start state and one final state.
-<br>The start state is different from the final state.
-<br>The transition function is 
-
-<br>
-
-
-<br>Suppose 
-
-<br>It means transition from  to  requires .
-
-
-<br>If the GNFA has only 2 states  and , then the label on the transition is the regular expression for the language.
-<br>Thus, the conversion recursively merges states and transitions of the generalized NFA.
-<br>
-
-
-Algorithm Convert NFAε_\varepsilonε​ to 2-state gNFA
-
-
-Input: An NFA N=(Q,Σ,δ,q0,F)N = (Q, \Sigma, \delta, q_0, F)N=(Q,Σ,δ,q0​,F)
-
-Output: A regular expression which defines L(N)L(N)L(N)
-
-
-N′←NN' \gets NN′←N // convert the domain and codomain of the transition function
-
-Q′←Q′∪{q0′,qf′}Q' \gets Q' \cup \{q_0', q_f'\}Q′←Q′∪{q0′​,qf′​}
-
-δ′(q0′,q0)=ε\delta'(q_0', q_0) = \varepsilonδ′(q0′​,q0​)=ε
-
-for all q∈Fq \in Fq∈F do
-
-
-δ′(q,qf′)=ε\delta'(q, q_f') = \varepsilonδ′(q,qf′​)=ε
-
-
-end for
-
-for all state qqq in Q′Q'Q′ except q0′q_0'q0′​ and qf′q_f'qf′​ do
-
-
-Q′←Q′∖{q}Q' \gets Q' \setminus \{q\}Q′←Q′∖{q}
-
-for all state qiq_iqi​ in Q′Q'Q′ except qf′q_f'qf′​ do
-
-
-for all state qjq_jqj​ in Q′Q'Q′ except q0′q_0'q0′​ do
-
-
-Suppose δ′(qi,q)=R1\delta'(q_i, q) = R_1δ′(qi​,q)=R1​, δ′(q,q)=R2\delta'(q, q) = R_2δ′(q,q)=R2​, δ′(q,qj)=R3\delta'(q, q_j) = R_3δ′(q,qj​)=R3​, and δ′(qi,qj)=R4\delta'(q_i, q_j) = R_4δ′(qi​,qj​)=R4​
-
-δ′(qi,qj)=((R1)(R2)∗R3)∪(R4)\delta'(q_i, q_j) = ((R_1)(R_2)^* R_3) \cup (R_4)δ′(qi​,qj​)=((R1​)(R2​)∗R3​)∪(R4​)
-
-
-end for
-
-
-end for
-
-
-end for
-
-return δ′(q0′,qf′)\delta'(q_0', q_f')δ′(q0′​,qf′​)
-
-
-
-Export to clipboard]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-rl.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-RL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 13 Nov 2024 02:43:06 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/EaP8bA.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/EaP8bA.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[TOC-Math]]></title><description><![CDATA[ 
- <br><br>“No one shall expel us from the paradise which Cantor has created for us.” ---David Hilbert, 1926<br><br>Def: A set (naively) is a collection of objects such that
-
-<br>no order and no duplication
-
-<br>An object  is in a set  is denoted as .<br>To represent a set, you need to <br>
-<br>Put all members in a pair of curly brackets ;
-<br>Enumerate all members, e.g. ; or
-<br>Give a member representative and followed by the characteristic of members using a predicate, 
-
-<br>e.g.  .
-
-
-<br>Def: Empty set
- is an empty set, denoted by .
-<br>"" is a concatenation (always false), Or equivalently,<br>Def: Empty set
- is an empty set if . 
-<br><br>Def: Universal set	
-A universal set is a set that contains all elements under a certain context.
-<br>A universal set is usually denoted in the blackboard bold font. For example,<br>
-<br>: the set of natural numbers;
-<br>: the set of integers;
-<br>: the set of rational numbers;
-<br>: the set of real numbers;
-<br>: the set of complex numbers;
-<br>: the universal set without a specification.
-<br>: the set of prime numbers.
-<br>Def: subset
-Set  is a subset of set  if  , denoted as .
-<br>Def: Power set
-Let A be a set.  is the power set of A.
-<br>Let  .<br><br>Suppose  and  are two sets.<br>Def: Complement
-A complement is the set .
-<br>Def: Intersection
-A intersection  is the set .
-<br>Def: Union
-A union  is the set .
-<br>Def: Setminus 
-A setminus  is the set .
-<br><br> Suppose  and  are two sets.<br>Def: Cartesian product
-The cartesian product of  and  is the set:<br>
-
-<br>Each object  is a pair or generally a 2-tuple.<br>Def: Relation
-A relation  between  and  is a subset of .
-<br>If , we say  is related to , denoted by .<br>A relation  is on the set  if .<br>Let  be a relation on a set .  is:<br>
-<br>reflexive if ;
-<br>symmetric if ;
-<br>anti-symmetric if ;
-<br>transitive if .
-<br><br>Def: Function
-A relation  between  and  is a function if:
-
-<br>
-<br> is the domain.
-<br> is the co-domain.
-<br> means uniquely exists.
-<br>Such a function is denoted as .
-<br>Def: Image and pre-image
-If  is an object of the function , we denote  and say:
-
-<br> is the image of ;
-<br> is the pre-image of .
-
-<br>To denote a function:<br>
-<br>Surely, one can enumerate all pairs in the function.
-<br>But usually, people present the expression.<br>
-For example,  such that .
-<br>For the same example, one can also write .<br>Please distinguish “” and “”:<br>
-<br>“” is from domain to co-domain.
-<br>“” is from pre-image to image.
-<br>Def: A function  is 
-
-<br>Injection: If  
-
-<br>不同x对应不同y	
-
-
-<br>Surjection: If 
-
-<br>任何y都有对应的x	
-
-
-<br>Bijection: If  is both injection and surjection.
-
-<br>For example, let .<br>
-<br> is an injection but not a surjection.
-<br> is a surjection but not an injection.
-<br> is a bijection.
-<br>Graph
-00.10.20.30.40.50.60.70.80.91−1-0.8-0.6-0.4-0.200.20.40.60.81
-<br><br>To precisely describe mathematics, algorithm, computation, and other procedures, formal languages are used. A language is a set of strings over an alphabet. Formally,<br>Def: Language 	
-A language is a set of strings over a specific alphabet.
-<br>Def: alphabet 
-An alphabet is a nonempty finite set.
-<br>For example, <br><br>Def: string 	
-A string over an alphabet  is a finite sequence of symbols from that alphabet.
-<br>Def: length	
-If  is a string over the alphabet , the length of  is the number of  symbols in , denoted by  .
-<br>Def: Empty string	
-The empty string is the string of length 0, denoted by .
-<br>Let  be a string of length n, where each .<br>Def: Reverse	
-The reverse of a string  is the string , denoted by .
-<br>Def: Substring 
-The string  is a substring of  if  consecutively appears in .
-<br>Def: Concatenation
-The concatenation of two strings  and  is the string  of length .	
-<br>For example, .<br>
-Sometimes, the operator “” is omitted. <br>Language
-A language is a set of strings over a specific alphabet.
-<br><br>In this lecture, we only emphasize several proving techniques.<br>
-<br>Constructive proof 
-<br>Prove by contradiction 
-<br>Induction 
-<br>Diagonal argument
-<br><br>
-<br>Used to prove a predicate with existential quantifiers, like .
-<br>First, construct an object .
-<br>Second, prove  is true.
-<br><br>
-<br>Used to prove a proposition .
-<br>First, assume  is false.
-<br>Then, derive a contradiction.
-<br>Last, claim  is true.
-<br><br>
-<br>To prove a predicate with universal quantifiers, one can use induction.
-<br>Induction has two variants: simple and strong. But, they are equivalent.
-<br>To prove :
-<br><br>
-<br>Prove  as a base case.
-<br>Prove  as an induction.
-<br>In the second step,  is the inductive hypothesis.
-<br><br>
-<br>Prove  as a base case.
-<br>Prove .
-<br>We assume  are all true in the strong induction.
-<br><br>Def: Cardinality
-The cardinality of a set  is the number of objects in , denoted as .
-<br>Def: Cardinality
-The set  and the set  are of the same cardinality if there is a bijection .
-<br><br>
-<br> and  are of the same cardinality because we can define a bijection  such that .
-<br>The set of even numbers  and the set of integers  are also of the same cardinality because of the bijection .
-<br>Note that the cardinality can be finite and infinite.<br><br>Def: Countable
-A set is countable if it is finite or its cardinality is same as the set of natural number .
-<br>Countable means that:<br>
-<br>For every number  in the natural number (no matter how large the number is),
-<br>if we count from 0,
-<br>we can eventually  reach the number  within a finite time.
-<br>In fact, the counting procedure constructs a bijection, mapping a natural number  to the  counted element.<br>We denote the cardinality of  by <br>To proof an infinite set  is countable, you need t construct a bijection <br><br>Georg Cantor developed a method to prove a set is uncountable.  <br>For example:<br>Theorem  
-The set of all real numbers in the open interval  is uncountable.
-<br>The intuition of the proof (by contradiction) is as follows:<br>
-<br>Assume  is countable, then we can "count" the numbers one by one.
-<br>Then, we can list all the numbers that we count in a table.
-<br>Construct a real number in  but cannot be reached in the table.
-<br>Thus, the set of reals in  is uncountable.<br>Suppose we denote a real number as . Then, we build the table in Step 2 of the proof.<br><br>Next, we define a real number  such that:<br>
-<br>We can see  is not in the list:<br>
-<br> and  are different at digit 0.
-<br> and  are different at digit 1.
-<br>
-<br>Thus,  is not counted, and the set of reals in  is uncountable.<br> Here we list some facts about infinite sets:<br>
-<br>The set of real numbers  has cardinality .
-<br>The power set  of  also has cardinality .
-<br> has cardinality .
-<br>You can make such constructions by taking power sets.
-<br>Hypothesis (Continuum Hypothesis - CH)
-There is no set of cardinality strictly between  and .
-<br>So far, people only know:<br>Theorem (Cohen 1964)
-CH is unprovable under ZFC.
-]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-math.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-Math.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 17 Nov 2024 15:02:11 GMT</pubDate></item><item><title><![CDATA[Sliding Window]]></title><description><![CDATA[<a class="tag" href="https://www.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
+<br>vxy  before the # <br> <br>more 1's but less 0's]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-cfl.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-CFL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 13 Nov 2024 02:42:42 GMT</pubDate></item><item><title><![CDATA[Sliding Window]]></title><description><![CDATA[<a class="tag" href="https://www.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
  <br><br><a href="https://www.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener nofollow">#Experience</a> <br>
 <br>枚举右端点，挪动左端点
 <br>挪动左端点的判断条件一定枚举右端点出发的
@@ -25006,191 +25214,7 @@ When a user requests data, the application first checks the Redis cache. If the 
 <br><a data-tooltip-position="top" aria-label="https://www.softwaretestinghelp.com/hybrid-database/" rel="noopener nofollow" class="external-link" href="https://www.softwaretestinghelp.com/hybrid-database/" target="_blank">What Is Hybrid Database? List Of The Best Hybrid Databases</a>
 <br><a data-tooltip-position="top" aria-label="https://medium.com/@gouri.benni/an-overview-on-a-hybrid-database-approach-using-graph-and-relational-database-fb216e0a24f1" rel="noopener nofollow" class="external-link" href="https://medium.com/@gouri.benni/an-overview-on-a-hybrid-database-approach-using-graph-and-relational-database-fb216e0a24f1" target="_blank">An Overview on “A Hybrid Database Approach Using Graph and Relational Database”</a>
 <br><a data-tooltip-position="top" aria-label="https://ieeexplore.ieee.org/document/7887957" rel="noopener nofollow" class="external-link" href="https://ieeexplore.ieee.org/document/7887957" target="_blank">MySQL and NoSQL database comparison for IoT application</a>
-]]></description><link>https://www.allenygy.vip/research/database/sql-and-nosql-integration.html</link><guid isPermaLink="false">Research/DataBase/SQL and NoSQL Integration.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 05 Nov 2024 16:44:27 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[TOC-As-2]]></title><description><![CDATA[ 
- <br><br><br>Convert the following NFA into an equivalent DFA. (20 pt)<br><img alt="Q1" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/ju3fRF.png" referrerpolicy="no-referrer"><br>First iteration<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>Second iteration<br>
-<br>
-<br>
-<br>
-<br>
-<br>Third iteration<br>
-<br>
-<br>
-<br>
-<br>
-<br><br><img alt="twQhiy" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/twQhiy.png" referrerpolicy="no-referrer"><br><br>Let . Give a regular expression for each of the following language. (10 pt for each)<br><br><br><br><br><br><br><br>Determine whether the following languages over  are regular. Prove your answer. Each question has two languages. You don’t need to do both, select one at your favor. In general, the original languages are difficult, the alternative ones are easy. You have your own choice. If you do both, we mark the easy one. (10 pt for each subquestion)<br><br> is not regular.<br>Assume  is regular. Suppose , Let  , which is a string in <br>By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
-<br>
-If  only consists of 's
-
-<br>Suppose  consists of  .
-
-<br>Then  or 
-<br>, which is not in .
-
-
-
-
-<br>
-If  only consists of 's
-
-<br>Suppose  consists of  .
-
-<br>Then 
-<br>, which is not in .
-
-
-
-
-<br>
-If  consists of both 's and 's
-
-<br>Then  and   in  are intersecting with each other, which is not in the form of  Thus, .
-
-
-<br><br><br> is not regular.<br>Assume  is regular. Suppose , Let  , which is a string in <br>By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
-<br>
-If  only consists of 's
-
-<br>Suppose  consists of  .
-
-<br>Then  ,
-
-<br>, which is not in .
-
-
-<br>Or 
-
-<br>, which is not in .
-
-
-
-
-
-
-<br>
-If  only consists of 's
-
-<br>Suppose  consists of  .
-<br>then 
-
-<br>, which is not in .
-
-
-
-
-<br>
-If  consists of both 's and 's
-
-<br>Then  and   in  are intersecting with each other, which is not in the form of  Thus, .
-
-
-<br><br><br> is not regular.<br>Assume  is regular. Suppose , , Let  , which is a string in <br>By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
-<br>
-If  only consists of 's
-
-<br>Suppose  consists of  .
-
-<br>Then  ,
-
-<br>, which is not in .
-
-
-<br>Or 
-
-<br>, which is not in .
-
-
-
-
-
-
-<br>
-If  only consists of 's
-
-<br>Suppose  consists of  .
-
-<br>Then 
-<br>, which is not in .
-
-
-
-
-<br>
-If  consists of both 's and 's
-
-<br>Then  and   in  are intersecting with each other, which is not in the form of  Thus, .
-
-
-<br><br><br> is regular.<br>Since&nbsp; &nbsp; contains every possible string of&nbsp; &nbsp; (all strings with some number of&nbsp;  followed by some number of&nbsp; ), this language is equivalent to:<br><br>Therefore, I can construct a NFA that accepts this language.<br><img alt="3.d." src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/qLW5R5.png" referrerpolicy="no-referrer"><br><br><br>Are the following languages regular? Prove your answer. (10 pt for each)<br><br> is not regular.<br> can be divided into two parts.<br>
- and <br> is not regular.<br>
-Assume  is regular.<br>
-Suppose , Let  , which is a string in <br>By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
-<br>
-If  only consists of 's
-
-<br>Suppose  consists of  .
-
-<br>Then 
-<br>, which is not in .
-
-
-
-
-<br>
-If  only consists of 's
-
-<br>Suppose  consists of  .
-
-<br>Then 
-<br>, which is not in .
-
-
-
-
-<br>
-If  consists of both 's and 's
-
-<br>Then  and   in  are intersecting with each other, which is not in the form of  Thus, .
-
-
-<br> is regular, because <br>Although  is regular,  is the union of  and , and  is not regular.<br>
-we can not construct a NFA for . Thus,  is not regular.<br><br><br> is not regular.<br> can be divided into two parts.  and .<br>
-Let  and <br> is not regular, the proof has been shown in the previous question.<br> is not regular.<br>
-Assume  is regular. Suppose , Let  , which is a string in <br>By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
-<br>
-If  only consists of 's
-
-<br>Suppose  consists of  .
-
-<br>Then 
-<br>, which is not in .
-
-
-
-
-<br>
-If  only consists of 's
-
-<br>Suppose  consists of  .
-
-<br>Then 
-<br>, which is not in .
-
-
-
-
-<br>
-If  consists of both 's and 's
-
-<br>Then  and   in  are intersecting with each other, which is not in the form of  Thus, .
-
-
-<br> is not regular.  is also not regular. 	<br> is not regular, we can not construct a NFA for . Thus,  is not regular.]]></description><link>https://www.allenygy.vip/theory-of-computation/assignment/toc-as-2.html</link><guid isPermaLink="false">Theory Of Computation/Assignment/TOC-As-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 05 Nov 2024 16:44:27 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/ju3fRF.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/ju3fRF.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[TOC-As-1]]></title><description><![CDATA[ 
+]]></description><link>https://www.allenygy.vip/research/database/sql-and-nosql-integration.html</link><guid isPermaLink="false">Research/DataBase/SQL and NoSQL Integration.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 05 Nov 2024 16:44:27 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[TOC-As-1]]></title><description><![CDATA[ 
  <br><br><br><br>Construct a counting procedure as below:<br><img style="zoom:67%;" alt="1-a-counting-procedure" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/8aSjkC.png" referrerpolicy="no-referrer"><br>Each pair corresponds to a unique natural number.<br>
 Therefore  is countalbe<br><br><br>If  is a finite set with  element;<br>Then  which is finite. Therefore  is countable.<br><br>If  is a infinite and countable set;<br>
 Then there must be a bijection between  and .<br>And for 2 countable sets  ,  is also a countable set.<br>For any element   , we can write   and    for some  .<br>Therefore,    corresponds to the pair   , which in turn corresponds to the natural number pair  .<br>To establish a one-to-one correspondence, we can use a pairing function that maps each pair    to a unique natural number  k .<br><br>Therefore,  is countable.<br>Since  n times.<br>And  is countable.<br>Therefore  is countable.<br><br>Solution:<br><br><img alt="Solution" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/eEmBAw.png" referrerpolicy="no-referrer"><br><br>Suppose a real number   denote as . Then we build the table as below:<br><br>Next we define a real number  such that<br>
