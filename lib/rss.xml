@@ -1,4 +1,1067 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://www.allenygy.vip/</link><image><url>https://www.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://www.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 18 Nov 2024 13:33:16 GMT</lastBuildDate><atom:link href="https://www.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 18 Nov 2024 13:33:07 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[TOC-As-2]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NOTE]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://www.allenygy.vip/</link><image><url>https://www.allenygy.vip/lib/media/favicon.png</url><title>NOTE</title><link>https://www.allenygy.vip/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 18 Nov 2024 15:10:23 GMT</lastBuildDate><atom:link href="https://www.allenygy.vip/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 18 Nov 2024 15:10:05 GMT</pubDate><copyright><![CDATA[AllenYGY]]></copyright><ttl>60</ttl><dc:creator>AllenYGY</dc:creator><item><title><![CDATA[Compiler Syntax Analysis]]></title><description><![CDATA[ 
+ <br><br>Syntax analysis is the second phase of a compiler.<br>
+<br>Take a stream of tokens from the lexer as input.
+<br>Analyze the structure of the tokens.
+<br>Detect syntax errors.
+<br>Out put a parsing tree to present the structure.
+<br>Use context-free grammar (CFG) for analysis.<br><br>Why CFG?
+
+<br>CFG is more powerful than regular expressions.
+<br>CFGs are not the most powerful formal language (see Chomsky hierarchy),
+<br>but CFGs are enough to describe the structures for most of the languages.
+
+<br><br>Context free grammar
+A Context free grammar is a , where
+
+<br> is a finite set called Variables
+<br> is a finite set, disjoint from , called the terminals,
+<br> is a finite set of production rules, with each rule being a variable  and a string  of  variables and terminals in the form , and
+<br> is the start variable.
+
+<br>The production rules are same as the rules in the regular definition.<br>We can use the rules to derive the strings in a context-free language.<br>Terminals are the symbols which cannot produce more symbols. In a compiler, they are tokens.<br>Variables only exists when the production is unfinished.<br>
+They are not symbols in the alphabet, neither tokens. Thus, they are not in the strings of the language.<br><br>For example,<br>
+<br> Variables
+<br> Terminals
+<br>
+<br>
+<br>The production rules can also be "combined" and rewritten as<br>
+<br><br>
+The symbol "|" is same as it is in regular expressions, meaning that there are multiple options.
+<br>The rules can be combined only if the LHS are the same.<br>
+Sometimes the set of production rules is enough to define a grammar because<br>
+<br>Variables can be obtained by looking at the LHS of each production rule,
+<br>Terminals are the symbols on the RHS of the rules excluding the variables, and
+<br>The start symbol is usually denoted by .
+<br>Then, the above grammar can be<br><br><br>Derivations
+Given a grammar , we can generate strings in the language  by using a derivation.<br>
+A derivation (informally) is a procedure to apply the production rules from the start symbol to a string which only contains terminals.
+<br>Each production is denoted by .<br>For example, given the grammar<br><br>left-most derivation, meaning that each iteration we replace the left most nonterminal.<br><br><br>Similarly, the right-most derivation replaces the right most nonterminal in each iteration.<br><br>Each sequence of nonterminals and tokens that we derive at each step is called a sentential form.<br>
+<br>
+The last sentential form only contains tokens and is called a sentence, which is a syntactically correct string in the programming language.
+
+<br>
+If  is a sentence and  is the start symbol, we can write<br>
+
+
+<br>
+ means derive in zero or more steps. It also means the RHS is derivable by the LHS.
+
+<br>
+From the above example,<br>
+
+
+<br><br>The grammar  is ambiguous if there is a sentence in  from which it is possible to construct multiple parse trees (using any type of derivation).<br><br>Some properties
+
+<br>Each derivation (left-most, right-most, or otherwise) corresponds to exactly one parse tree, whether the grammar is ambiguous or not.
+<br>每个推导（无论是最左推导、最右推导或其他推导）对应唯一一个语法树，无论语法是否有歧义。
+<br>Each parse tree corresponds to multiple derivations, whether the grammar is ambiguous or not.<br>
+每个语法树可以对应多个推导，无论语法是否有歧义。
+<br>Each parse tree corresponds to exactly one left-most derivation and exactly one right-most derivation, whether the grammar is ambiguous or not.<br>
+每个语法树对应唯一的最左推导和最右推导。
+<br>All derivations of the same sentence correspond to the same parse tree if the grammar is not ambiguous.<br>
+如果语法没有歧义，同一语句的所有推导对应相同的语法树。
+<br>Multiple derivations of the same sentence may not correspond to the same parse tree if the grammar is ambiguous.<br>
+如果语法没有歧义，同一语句的所有推导对应相同的语法树。
+<br>In general, deciding a grammar is ambiguous or not is undecidable, or uncomputable (like the halting problem).
+<br>一般来说，判断一个语法是否有歧义是不可判定或不可计算的。
+
+<br><br>A compiler cannot use an ambiguous grammar because each input program must be parsed to a unique parse tree to show the structure.<br>To remove ambiguity in a grammar, we can transform it by hand into an unambiguous grammar.<br>
+This method is possible in theory but not widely used in practical because of the difficulty.<br>Most compilers use additional information to avoid ambiguity.<br><br><br><br>
+<br>
+To prove a language is not context-free, you need pumping lemma for context free languages.
+
+<br>
+To powerup the CFG/PDA, we can try again to add another stack to the machine, same as what we did to finite automata.
+
+<br>
+This upgrade is ultimate. A finite automata with two stacks is as powerful as a Turing machine, which is the most powerful computational model that human can implement right now.
+
+<br><br>Intuitively, a PDA is a finite automata plus a stack with some modifications on the transitions to fit stack behaviors.<br>
+<br>An NPDA is (formally) a 6-tuple , where
+
+<br> is a finite set of states,
+<br> is a finite set of the input alphabet,
+<br> is a finite set of the stack alphabet,
+<br> is the transition function,
+<br> is the start state, and
+<br> is the set of accept states.
+
+
+<br>For example, the context-free language  has grammar<br><br><br><br>
+<br>
+Now, we want to implement a parser which
+
+<br>takes a sequence of tokens as input;
+<br>analyze the structure of the input;
+<br>generates a parse tree; and
+<br>indicates the syntax errors if there is any.
+
+
+<br>
+There are two types of parsers:
+
+<br>top-down
+<br>bottom-up.
+
+
+<br>Top-down parsing tries to construct a sequence of tokens from the grammar which is same as the input.<br>
+Bottom-up parsing tries to match the input tokens with grammar rules.<br><br>Top-down parsing is only for a subset of context-free grammars.<br>
+<br>
+Top-down parsing means that we generate the parse tree from top to bottom.
+
+<br>
+Remember that the internal vertices in a parse tree are the nonterminals (variables), while the leaves are the terminals (tokens).
+
+<br>
+The parse tree construction depends on the production rules in the grammar.
+
+<br>
+If we want to construct the parse tree from top to bottom, the production rules have to be nicely designed.
+
+<br><br>The RHS of each production rule always starts from a different terminal. 	<br>
+The parsing on the left branch always finishes before the right branch.<br>For example, the following grammar parses single variable declarations (if we do not care about types here).<br><br><br>Suppose the input is .<br>
+The input tokens can be uniquely parsed into<br><br><br>However, our life cannot be that easy in most of cases.<br>
+<br>The previous grammar does not allow multiple variable declarations in one statement.
+<br>So, consider this grammar.<br><br><br>and try to parse <br>We have two different choices for the first derivation.<br><br>We cannot decide which production rule can be used for the derivation.<br>
+The parser will pick a valid rule randomly.<br>If the guess is wrong, the parser cannot proceed parsing on some input tokens and it will backtrack.<br>Actually, you have seen backtracking in other places … Depth First Search.<br>We can express the parsing by using a DFS tree.<br>
+<br>Each vertex in the tree is a valid sentential form (a stream of terminals and nonterminals). In this example, the stream to the RHS of  , given by a step number .
+<br>Each edge is defined by applying a production rule.
+<br>The minor difference here is that we don’t need to go back to the root (as DFS) when the parsing is finished.<br>Note that this DFS is different from the parse tree because a vertex presents a sentential form, which is equivalent to a (partial) parse tree.<br><img alt="DFS" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png" referrerpolicy="no-referrer"><br>Each nonterminal  is implemented by an individual function.<br>
+<br>Iterate on every rule starts with  on LHS.
+<br>Remember to resume the tokens when derivation fails.
+<br><img alt="Implementation" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/VM6ClD.png" referrerpolicy="no-referrer"><br>The parse tree generation can be done at Row 4 and Row 6, when the algorithm continues parsing.<br>You can also record the derivation rules and generate the parse tree when parsing is finished.<br>Resuming the parsed tokens at Row 9 can be implemented by a stack. When a token is matched with a terminal, push the token into the stack. When error occurs, we pop the tokens and put them back to the input.<br>The main routine starts from matching the start variable.<br>The parser reports syntax error when the main routine has tried all possible production rules. A syntax error can be<br>
+<br>the parser receives a token which cannot be parsed;
+<br>after processing all tokens, the parse is incomplete (some leaves are nonterminals); or
+<br>when the parsing is complete (all leaves are terminals), there are some tokens remained in the input.
+<br><br>
+<br>The implementation (in code) can be very complicated/ugly because it needs to try many production rules, imaging many try-catch scopes nested with each other.
+<br>It waste a lot of time on backtracking.
+<br>It needs additional space to store the tokens for resuming purpose.
+<br>In practical, nobody uses recursive descent parser.
+<br><br><br>To avoid backtracking, we want to design a parser which can guess the next token from the input.<br>A correct guess can let the parser uniquely choose a production rule for parsing.<br>The idea is using a temporary space to store some tokens in advanced, like a buffer. Then, use the buffered tokens to make decisions.<br>This technique is very similar to space-time trade-off in the dynamic programming, what we have learned in algorithms.<br>The time complexity of recursions with backtracking can go up to .<br>But, if we can choose rules uniquely, the time complexity becomes .<br><br>Consider the grammar<br><br><br><br>which is equivalent to the above one and try to parse <br>
+<br>
+In the first iteration, the parser has to use the rule .
+
+<br>
+In the second iteration, there are two production rules "" or " "
+
+<br>
+This uncertainty can be easily solved by just “looking” at the next token from the lexer. This token is called lookahead token.
+
+<br>
+Normally, when lexer returns a token to parser, the token is consumed. But the lookahead token remains in the input.
+
+<br>
+The lookahead token in this example is " ". So, the parser knows the rule is .
+
+<br>Because the parser reads tokens from left to right, does leftmost derivation, and looks at most one lookahead token(could not be a non-terminal); this parser/grammar is called  .<br>Some grammars may not be  .<br>
+<br>For example, the one we have seen.
+<br><br>
+<br>
+Looking one token ahead is insufficient for this grammar.
+
+<br>
+ ; and  ,  agree on the first token.
+
+<br>
+If the lookahead token is “”, we cannot decide which rule will be used. Thus, to parse this grammar without recursions, the parser needs to look 2 tokens ahead.
+
+<br>This is  grammar.
+
+
+<br>In general, we can design  grammar, for constant .<br>In practical, more lookahead tokens make no big differences but increase the implementation difficulties.<br>More importantly,   grammar is already powerful enough.<br><br>Left-factoring is a grammar transformation to convert a grammar to  .<br>Back to the example,<br><br>is not  because the first token of the two rules are the same. One lookahead token is not enough to the two productions.<br>We can solve this issue by introducing a new nonterminal .  提取相同的token<br>And convert the grammar to<br><br><br>The new grammar is , which is equivalent to<br><br><br>This conversion is called left-factoring.<br>More formally, for each nonterminal  which has multiple productions starting with the same prefix :<br><br>where  is a non-empty sequence of grammar symbols (terminals and nonterminals),  and  are (possibly empty) sequences of grammar symbols.<br>Create a new nonterminal  and transform the rules as<br><br><br><br>Some grammars are not good enough even after left factoring.<br>
+<br>For example, again to parse the variable declaration
+<br><br><br>
+<br>No production rule has a same prefix on RHS. But lookahead tokens do not work.
+<br>Suppose, the parser at some point needs to derive the nonterminal .<br>One may try: if the lookahead token is , the parser uses <br>
+If the lookahead token is , it uses .<br>Be careful!   is a nonterminal but not a token. A lexer can never find such a lookahead token.<br>As a result,  ,  will never be used. Obviously, this is wrong.<br>The problem is cause by .$ The RHS starts from a nonterminal, which cannot be used to match with a lookahead token.<br>This type of grammar is called left recursive.<br>Note that this still left-most derivation. Left-most or right-most derivation is not related to grammar itself. It only relates to in which order we derive the nonterminals.<br>Formally, a left recursive grammar has a valid derivation  ,<br>
+where  is a nonterminal and  is a string of grammar symbols.<br>In general, a left recursive production rule has the form<br><br>This production can be derive <br>The parsing stops at  , and can produce as many  as possible.<br>So, we can let  derives  first and followed by some $.<br><br><br>Note that the production from   can be <br>
+But this is not <br>Formally, for each nonterminal  which has one or more productions with RHSs starting with the same nonterminal :<br><br>where  and  are (possibly empty) sequences of grammar symbols.<br>Create a new nonterminal  and transform the grammar as<br><br><br><br>Given the following grammar, try to do left factoring and eliminate left recursions.<br><br><br><br>Ans:<br><br><br><br><br><br>In the last example, the grammar is left associative before conversion, but becomes right associative after conversion.<br>This totally changes the structure of the parse tree for some expressions, like<br>
+“".<br>In fact, top-down parsing cannot solve this issue. We need to either use a bottom-up parser or be stuck into the implementation details.<br>There are also some unambiguous context-free grammar cannot be converted into   even after doing left factoring and left recursion elimination.<br>
+<br>For example, the one we used to show ambiguity elimination
+<br><br><br><br>After left factoring  becomes<br><br><br>Here are some last words about (recursive) predictive parsers.<br>
+<br>A predictive parser can always correctly predict what it has to do next.
+<br>Predictive parsers can always be implemented by a recursive parser without using lookahead tokens.
+<br>Without further specification, we consider recursive parsers and predictive parsers are the same.
+<br>One major disadvantages of (recursive) predictive parsers is that they are not very efficient in implementations. Each production rule is implemented as a function. The parser needs to make many function calls and returns, which consume a lot of resources.
+<br>To avoid the function calls, we introduce nonrecursive predictive parsers.<br><br>To avoid recursions, we introduce non-recursive predictive parsers.<br>Intuitively, predictions are required when a nonterminal has multiple production rules.<br>The predictions are based on the next token. One token is enough because we are parsing  grammars.<br>However, this method has troubles when the RHS of some rules start with nonterminals.<br>
+<br>For example
+<br><br><br><br>
+<br>We cannot decide whether we are going to use  or 𝐴 without looking at  and .
+<br>Thus, we can "preprocess" the grammar to find the first tokens derived by each nonterminal before parsing the tokens.<br>The result of preprocessing is presented by a table, called parsing table.<br>
+The rows are the nonterminals and the columns are terminals.<br>
+The entry  is a production rule  meaning that if the input token is , we will apply the rule .<br>
+The parser can parse the input tokens by checking the parsing table and using a stack.<br>This method is similar to the push-down automata but presented differently.<br>
+<br>Initially, push $ and  into the stack ( on top of $ ) where  is the first nonterminal.<br>
+Also insert $ to the end of the input stream of tokens.
+<br><br>
+<br>
+In each iteration,
+
+<br>Assume the next input token is ;
+<br>Pop the first item from the stack denoted by ;
+<br>If  is a terminal, then try to match it with the next input token ;
+<br>If  is a nonterminal, then  in the parsing table is a production rule, denoted by . Then, push everything in  to stack from right to left.
+
+
+<br>
+When the stack pops $ and all input tokens are consumed, the parsing halts.
+
+<br>
+$ is an artificial token, means the end of the stream.
+
+<br><br>Given the parsing table and try to parse<br><br><br><br>Some entries  in the parsing table are empty.<br>Meaning that id you try to parse the token  by a nonterminal , the parser returns an error message.<br>For example, assume the input tokens are , the parsing will be stuck somewhere in the middle.<br>The error handling will be discussed at the end.<br>Intuitively, a parsing table enumerates all possible tokens can be derived by a nonterminal.<br>When a parser reads a token from input, it has a unique production rule to apply.<br>Thus, we need to analyze the grammar and find the prefix (the first token) of all possible sentential form derived by each nonterminal.<br><br>By putting all the firstly produced tokens into a set, we defined  .<br>
+<br>For example,
+<br><br><br>
+<br> because 
+<br> because .
+<br> because .
+<br>  because .
+<br>Formally,  for each grammar symbol is computed by<br><img alt="Find_First" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/KoP6hF.png" referrerpolicy="no-referrer"><br>Note: each  on line 3-5 can be either a terminal or a nonterminal.<br><br>When a terminal produces , things get complicated.<br>
+<br>For example,
+<br><br><br><br>
+<br>The parser need to use the rule  to parse .
+<br>However,  is not an input token which can be used for making predictions.<br>To handle this case, we also define , the next token possibly derived by some rules after .<br>
+<br>
+In this example,  because .
+
+<br>
+When the parser receives  as the next token, it knows  is the correct rule.
+
+<br><img alt="Find_Follow" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/BtR5ed.png" referrerpolicy="no-referrer"><br><br>Recall the parsing table  is , where  is the number of nonterminals and  is the number of terminals.<br>The entry  is a production rule that the parser will apply when the current nonterminal is 𝐴 and the next token is .<br>For each production  in the (left factored, non-left recursive) grammar, do the following:<br>
+<br>For each token  in , add the grammar production  to 
+<br>If , then for each token  in , add  to 
+<br>All other entries in the table are left blank and correspond to a syntax error.
+<br>Note that Rule 2 is applied when  is   because  is in .<br>To create a parsing table for a non-recursive parser,<br>
+<br>eliminate any ambiguity from the grammar,
+<br>eliminate left recursion from the grammar,
+<br>left factor the grammar,
+<br>compute the  sets for all tokens and nonterminals,
+<br>compute the  sets for all nonterminals, and
+<br>use those  and  sets to construct the parsing table.
+<br><br><br>Back to the example in Top-Down Parsing. The following grammar is left-recursive.<br><br><br>Thus, top-down parsing needs to eliminate left recursion first.<br><br><br><br>However, the conversion changes the structure of some sentences, like .<br><br><br>Bottom-up parsing is more natural to human.<br>Think about how we analyze the arithmetic expressions.<br>
+First, we calculate the subexpression in parentheses or the operator of the highest precedence.<br>
+Then, the intermediate result will involve in the following calculations.<br>
+The procedure is not from left to right.<br>Same thing happens when we analyze sentences in a program.<br>To the parse tree construction, the bottom-up procedure starts from isolated leaves, merges some of them to form a subtree, and eventually constructs the entire tree by placing a root.<br>The parse tree generated by bottom-up has no difference with by top-down, the internal vertices are nonterminals and leaves are tokens.<br>In fact, you have seen the similar procedure in Algorithm – the construction of Huffman code.<br>Because the bottom-up parsing is an inverse of top-down paring, the basic strategy is to use the LHS of some production rules to replace the RHS after reading some input tokens.<br>Thus, in the bottom-up parsing, there are two basic operations.<br>
+<br>Shift
+
+<br>The parser needs to read more tokens from the input.
+<br>The tokens have already read are insufficient for any production rule.
+
+
+<br>Reduce
+
+<br>The parser has already read enough tokens.
+<br>It can replace the RHS by the LHS of some production rules.
+
+
+<br>The parser is called shift-reduce parser.<br>The parser also needs a stack to hold the tokens which are read but not consumed (reduced) yet.<br><br>
+<br>Let’s look at a small example first. Given the following grammar and try to parse .
+<br><br><br><br><br><br>The above example shows how bottom-up parsing works on a small instance.<br>However, to formally define a bottom-up parser, we need to generalize this procedure to all grammars. Many details will be discussed.<br>Even within this small example, careful reader may find the above procedure has some problems.<br>
+In Step2, we read b. Then, we immediately reduce 𝑏 to A in Step3.<br>
+But the thing is different in Step4. We read b again, but the parser waits until it reads another c and reduces Abc to A.<br>In general, similar to the predictive parser, there might be multiple options in bottom-up parsing. We need to clearly define which option is used under a certain condition.<br><br><br>There are many different ways to solve the above problem, like using recursions (Same as what we did in the predictive parsing, recursions simply enumerate all possible options.)<br>In this course, we only introduce  parsers (k lookahead tokens, LR parser for short) because<br>
+<br> parsers can be used to almost all (but not all) context-free grammars.
+<br>They are the most powerful non-backtracking shift-reduce parsers;
+<br>they can be implemented very efficiently; and
+<br>they are strictly more powerful than  grammars.
+<br>When a reduction is performed, the  of the production rule is already on the stack, which is some additional information to help decision making.<br>The parser puts state symbols into the stack to speedup checking the content on the stack.<br>Imaging that you want to check what’s on the given stack. You need to pop everything out, see if the content is same as what you want, then push everything back. This is very inefficient.<br>Thus, we use a state symbol to indicate the current content on the stack.<br>This symbol is called state symbol because it is exactly same the states in a DFA.<br>We can consider each state in a DFA means that "To reach this state, the input must be some specific strings."<br>Also, each  is corresponds to an , like a pair.<br>To parse a  grammar, you are also given a parsing table.<br>
+This parsing table again enumerates the actions the parser needs to take in all possible situations.<br>Each row in the table represents a state in PDA.<br>
+The columns are split into two individual fields: ACTION and GOTO.<br>
+<br>Each column in ACTION represents a terminal.
+<br>Each column in GOTO represents a nonterminal.
+<br>The value of the entry ACTION  shows the action taken by the parser when the current state is  and the input token is 
+<br>The value are of two types:
+
+<br> , meaning that the parser pushes the next input token into the stack and move to the state ;
+<br>, meaning that the parser reduces some (non)terminals using the production rule .
+
+
+<br>The value of the entry  is a state symbol,  for example, meaning that the parser goes to the state  after it reduces the stack uses a production rule , for some .
+<br>LR Parsing Algorithm
+
+<br>Put the special symbol $ at the end of the input.
+<br>Put state 0 at the bottom of the stack.
+<br>In each iteration, suppose the current configuration is , the current state is , and the next input token is .
+
+<br>If  is "shift S", then the next configuration is .	
+<br>If  is "reduce ", then the next configuration is , where  and . At the same time, the parser outputs .
+<br>If   is "accept" and the current configuration is  , where  is the start symbol of the grammar, the parser accepts the input.
+<br>For all other cases, like   is blank, the parser finds a syntax error and switch to error recovery.
+
+
+
+<br><br><br><br><br>Previously, we have introduced the  parsing algorithm using the parsing table.<br>
+Now, the question is how to construct a parsing table for a given context-free grammar.<br>In fact, there are many ways to construct a parsing table for different 𝐿𝑅 parsers:<br>, ,,  etc. (by increasing power).<br>For  with  are not used in practice because of the complexity.<br>We will focus on  (simple ), then move on to  ,   , and  .<br><br>To construct an  parsing table, we do three things<br>
+<br>augment the context-free grammar;
+<br>construct a DFA based on the computation of set of items;
+<br>represent the DFA using the transition table;
+<br>The construction in  is very similar to transforming an NFA to a DFA, except that it will be based on sets of items of the same behavior instead of sets of NFA states.<br><br>Given a grammar with a start symbol .<br><br><br>we construct the corresponding augmented grammar by artificially introducing a nonterminal  and a production rule.<br><br><br><br>This artificial production rule seems to be useless, but it guarantees that the parser accepts the input when it reduces using .<br><br>The  items are originally defined for   parser, but do the same thing in  .<br>An  item (item, for short)is simply a grammar production with a dot somewhere in its RHS.<br>
+<br>For example, the production  can create 4 items 
+<br><br><br><br><br>As a special case, the production  only generates <br>Each item represents a state that the parser is currently in.<br>
+If the parser is in the state corresponding to , it means the parser has already push  into the stack and expects to match  from the input.<br>If  is a nonterminal and the grammar also has a production , then the parser also expects to see .<br>Thus, the parser state corresponds to  correspond .<br><br>Keep this intuition in mind, we find the closure of a set of items  recursively using the following algorithm.<br>
+<br>
+Every item in  is in .
+
+<br>
+If  is an item in  and if  is a production, where  and  are nonterminals and ,  , and  are any sequence of terminals and nonterminals, then add the item  to .
+
+<br>
+Repeat the above two steps until  does not change.
+
+<br>
+For example,
+
+<br><br><br><br><br><br><br>Then, we define  function.<br>For all the items of the form  in a set of items , where  is an arbitrary grammar symbol (token or nonterminal), we define  as the closure of the set of items of the form .<br>
+<br>
+For example, given the set of items , to find :
+
+<br>the item  does not create any new item by taking "+";
+<br>the item  implies the new item 
+
+
+<br>
+Thus,
+
+<br><br><br>更新时，当一个token 时non-terminal 时，继续传递<br><br><br>Next, we construct the DFA to decide the tokens in the stack.<br>
+This method is called set-of-items construction algorithm.<br>
+Each set of items  represents a state in the DFA.<br>
+<br>Compute  and add the unmarked  to ,  where  is the start symbol of the augmented grammar and  is the set of DFA states.
+<br>While there is an unmarked DFA state , do the following:
+
+<br>For each grammar symbol , do the following:
+
+<br>Compute the DFA state .
+<br>If  and  then add the unmarked  to .
+<br>If  then define .
+
+
+<br>Mark  in .
+
+
+<br><br>For example,<br><br><br>Initially, <br><br>Then, we consider the  function from  by taking each grammar symbol.<br>
+<br>For :<br>
+
+<br><br>Thus, <br>
+<br>
+<br>Similarly,<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+DFA
+
+
+
+<br>In the following,  will be omitted for symbol .<br>
+Consider the  function for <br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br> and  are omitted because they are  for all .
+DFA
+
+
+
+<br><br>We continue computing the  function from new states:<br>
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br><br>
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br><br>
+<br>
+
+
+<br>
+
+
+<br><br><br>In the last iteration<br>
+<br>
+<br><br>Here is the list of sets of items.<br><br><br>In the DFA we constructed above, we don’t need final states.<br>
+Because we use states to show the content in the stack.<br>
+And the stack is reduced if DFA reaches a final state.<br>
+More interestingly, a state, together with the string to reach the state, form a pair in the configuration.<br><br><br>First, we construct the  part of a  parsing table.<br>
+<br>If  (where  is a token) is an item in the set of items  and , then set  to "shift j".
+<br>If  is an item in the set of items , then set  to "reduce " for all  in .
+<br>If  (where S' is the start symbol of the augmented grammar) is an item in the set of items , then set  to accept.
+<br>For item 2, we give a number to each grammar production  and put in the table "reduce" followed by the production's number.<br>Then, we construction the  part.<br>
+<br>If , where  is a nonterminal, then set  to ""
+<br><br>Here are the steps to create a parsing table for an  parser:<br>
+<br>Eliminate any ambiguity from the grammar.
+
+<br>Eliminate left recursion from the grammar.
+<br>Left factor the grammar.
+
+
+<br>Augment the grammar with a new start symbol. 
+<br>Compute the sets of items for the grammar and build the corresponding DFA.
+<br>Number the grammar productions.
+<br>Compute the  sets for all tokens and nonterminals.
+<br>Compute the  sets for all nonterminals.
+<br>Use the sets of items, DFA, and the  sets to construct the parsing table.
+]]></description><link>https://www.allenygy.vip/compiler-construction/lecture/compiler-syntax-analysis.html</link><guid isPermaLink="false">Compiler Construction/Lecture/Compiler Syntax Analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 13:38:02 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Compiler Lexical Analysis]]></title><description><![CDATA[ 
+ <br><br><br><br><br><br><br>]]></description><link>https://www.allenygy.vip/compiler-construction/lecture/compiler-lexical-analysis.html</link><guid isPermaLink="false">Compiler Construction/Lecture/Compiler Lexical Analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 13:37:07 GMT</pubDate></item><item><title><![CDATA[TOC-As-1]]></title><description><![CDATA[ 
+ <br><br><br><br>Construct a counting procedure as below:<br><img style="zoom:67%;" alt="1-a-counting-procedure" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/8aSjkC.png" referrerpolicy="no-referrer"><br>Each pair corresponds to a unique natural number.<br>
+Therefore  is countalbe<br><br><br>If  is a finite set with  element;<br>Then  which is finite. Therefore  is countable.<br><br>If  is a infinite and countable set;<br>
+Then there must be a bijection between  and .<br>And for 2 countable sets  ,  is also a countable set.<br>For any element   , we can write   and    for some  .<br>Therefore,    corresponds to the pair   , which in turn corresponds to the natural number pair  .<br>To establish a one-to-one correspondence, we can use a pairing function that maps each pair    to a unique natural number  k .<br><br>Therefore,  is countable.<br>Since  n times.<br>And  is countable.<br>Therefore  is countable.<br><br>Solution:<br><br><img alt="Solution" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/eEmBAw.png" referrerpolicy="no-referrer"><br><br>Suppose a real number   denote as . Then we build the table as below:<br><br>Next we define a real number  such that<br>
+.  We can see a xis not in the list!<br>
+<br> and  are different at digit 0.
+<br> and  are different at digit 1.
+<br> and  are different at digit 2.
+<br> and  are different at digit 3.<br>
+
+<br>Thus,  is not counted and set of reals in (0, 10) is uncountable.<br><br>Assume that the set of functions from  to  is countable. 	<br>Suppose all such functions can be listed as .<br>Define a function  such that .<br>
+This ensures that   differs from each  at least at position .<br>Since  is not equal to any  in the list, this contradicts the assumption that we have listed all possible functions.<br>Therefore, the set of functions from  to  is uncountable.<br><br>Prove the followings.(1 pt for each)<br><br><br><br>Two sets are isomorphic if they are of the same cardinality. Prove that the number of DFA's (without specifying ) is countable up to set isomorphism.<br><br>Let  Construct a DFA for each of the following languages. (10 pt for each)<br><br><br><img style="zoom:67%;" alt="3-a-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/RUB7TX.png" referrerpolicy="no-referrer"><br><br><br><img style="zoom:67%;" alt="3-b-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/HXpAK1.png" referrerpolicy="no-referrer"><br><br><br><img style="zoom:67%;" alt="3-c-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/mblQ2d.png" referrerpolicy="no-referrer"><br><br><br><img style="zoom: 67%;" alt="3-d-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/CUkK9k.png" referrerpolicy="no-referrer"><br><br>Let  be an arbitrary DFA. We construct a new DFA  as . We need to prove that .<br>Note:  <br>
+<br> is the set difference.  
+<br> is the set complement.
+<br><br>The goal  is understood as set equality.<br>
+Thus, we need to prove , .<br>()<br>
+Assume .<br>
+Then .<br>
+Thus, DFA  rejects .<br>
+In other words, DFA  halts on a non-final state  by consuming all symbols in .<br>
+By the construction of ,  is a final state of .<br>
+Thus,  accepts , and .<br><br>()<br>
+Assume .<br>
+DFA  accepts .<br>
+In other words, DFA  halts on a final state  by consuming all symbols in .<br>
+By the construction of ,  is a non-final state of .<br>
+Thus,  rejects , so .<br>
+Thus, .<br>
+.]]></description><link>https://www.allenygy.vip/theory-of-computation/assignment/toc-as-1.html</link><guid isPermaLink="false">Theory Of Computation/Assignment/TOC-As-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 14:42:57 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/8aSjkC.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/8aSjkC.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[TOC-Intro]]></title><description><![CDATA[ 
+ <br><br>Computation Definition
+A computation is a procedure to calculate the desired output of a computational problem.
+<br>If only solve decision problems, a computation is a procedure to decide whether an element is in a set or not.<br><br>Gottfried Wilhelm Leibniz 1646-1716<br>
+<br>Calculus ratiocinator: a theoretical universal logical calculation framework
+<br>Characteristica universalis: a universal conceptual language
+<br>Gottlob Frege 1848-1925<br>
+<br>Begriffsschrift: (concept-script)
+
+<br>First book on symbolic logical
+<br>To implement calculus ratiocinator
+
+
+<br>Kurt Gödel 1906–1978  <br>
+<br>Incompleteness theorem: if an axiom system contains natural numbers, then  
+
+<br>there is a proposition which is unprovable;  
+<br>and it cannot prove its consistency.
+
+
+<br>Sabota g ed Hilbert’s program
+<br>Alonzo Church 1903-1995<br>
+<br>Lambda calculus
+<br>Alan Turing 1912-1954<br>
+<br>Turing machine
+<br>这段历史概述了数学逻辑与计算机科学发展的几个关键人物及其贡献，涉及从17世纪到20世纪的重要理论基础。这些贡献共同构建了现代逻辑学、数学以及计算机科学的基础，以下是逐步的介绍：<br><br>莱布尼茨是一位德国哲学家、数学家，被认为是现代数学逻辑的奠基人之一。他的两项核心构想对后来的逻辑发展产生了深远影响：<br>
+<br>Calculus ratiocinator（理性演算器）：一个假设性的通用逻辑计算框架，旨在通过数学和逻辑计算解决一切问题。
+<br>Characteristica universalis（通用特征语言）：一种理想化的通用概念语言，试图以形式化的方式表达所有知识。这是莱布尼茨对人类知识进行逻辑编码的梦想，也是后来形式逻辑的前身。
+<br>尽管莱布尼茨的构想在他在世时未能实现，但它为后来的逻辑学家提供了启发。<br><br><br>弗雷格是德国逻辑学家，被称为现代逻辑学的奠基人之一。他的主要贡献体现在：<br>
+<br>Begriffsschrift（概念文字）：这是第一本关于符号逻辑的书，首次提出了一种形式化的逻辑语言，用以表达数学和逻辑推理。这一理论直接落实了莱布尼茨“理性演算器”的思想，是现代形式逻辑的起点。
+<br>他还发展了谓词逻辑，为数学基础提供了更加严谨的框架。
+<br>弗雷格的工作直接影响了后来的逻辑学家，包括罗素和维特根斯坦。<br><br><br>哥德尔是奥地利逻辑学家，以他的不完备性定理闻名，该定理对数学和逻辑的基础提出了深刻的限制：<br>
+<br>不完备性定理指出：在任何包含自然数的公理系统中：
+
+<br>存在一个无法被证明也无法被否定的命题（即“不可判定命题”）。
+<br>这个系统无法证明自身的相容性。
+
+
+<br>哥德尔的工作揭示了数学体系的固有局限性，破坏了希尔伯特“证明数学一致性”的乐观计划（Sabotaged Hilbert’s program）。
+<br>哥德尔的理论对数理逻辑和理论计算机科学产生了重大影响。<br><br><br>丘奇是美国数学家，他的λ演算（Lambda Calculus）为计算理论奠定了重要基础：<br>
+<br>λ演算是一种数学形式系统，用以研究函数定义和计算过程。它与图灵机被认为是等价的，提供了描述计算过程的一种抽象方法。
+<br>丘奇证明了一些问题在形式系统中是不可判定的，这与哥德尔的结果相辅相成。
+<br>λ演算后来成为编程语言理论的重要基础。<br><br><br>图灵是英国数学家、逻辑学家，被誉为计算机科学之父。他的贡献主要包括：<br>
+<br>图灵机：一种假想的计算设备，旨在模拟任何可计算过程。这一模型定义了“可计算性”的概念，被认为是现代计算机的理论基础。
+<br>图灵与哥德尔、丘奇的研究共同确立了计算理论的基本框架。
+<br>图灵还提出了“图灵测试”，作为人工智能的早期概念。]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/01-toc-intro.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/01-TOC-Intro.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 17 Nov 2024 13:05:45 GMT</pubDate></item><item><title><![CDATA[TOC-PDA]]></title><description><![CDATA[ 
+ <br>]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/07-toc-pda.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/07-TOC-PDA.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 13 Nov 2024 02:42:52 GMT</pubDate></item><item><title><![CDATA[TOC-Turing Machine]]></title><description><![CDATA[ 
+ <br><br> is not context free.<br>Problem:<br>
+Input: Given a string  in <br>
+Question: Is ?<br>Algorithm:<br>
+<br>load  on to memory
+<br>Check if  has only one #, reject if no
+<br>Repeat until no unmarked symbol
+
+<br>Find the first unmarked symbol in first half
+<br>Go right, exceed find the first unmarked symbol in second half
+<br>mark s'
+<br>reject if 
+<br>go left exceed find the first unmarked symbol in first half
+
+
+<br>accept if no more in second half.
+<br><br><br><br><br><br><br>]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/08-toc-tm.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/08-TOC-TM.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 15 Nov 2024 07:21:45 GMT</pubDate></item><item><title><![CDATA[TOC-CFL]]></title><description><![CDATA[ 
+ <br><br>Assume L is context-free. Let , which is a string in L.<br>
+By the pumping lemma,  Then, we have two cases.<br><br>
+<br>
+<br>Case 1
+<br>vxy  before the # <br> has more symbols before # then after. <br>
+<br>Case 2
+<br>vxy  before the # <br> <br>more 1's but less 0's]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/06-toc-cfl.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/06-TOC-CFL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 13 Nov 2024 02:42:42 GMT</pubDate></item><item><title><![CDATA[TOC-Pumping Lemma]]></title><description><![CDATA[ 
+ <br><br><br>Lemma (Pumping Lemma)
+If  is a regular language, then there is a positive constant  such that every string  of length at least  can be written as  satisfying the following conditions
+
+<br>for each 
+<br>, and
+<br>.
+
+<br>p is the pumping length.<br>Instead of proving the lemma formally, let's try to understand it.<br>Assume  is regular and  is the  which recognizes .<br>
+Let  be the number of states in .<br>Assume  in  of length .<br>To accept ,  goes through a sequence of states <br>By pigeonhole principle, some states  appears multiple times in the sequence.<br>Assuming , the sequence of states can be <br><br>Then, it's trivial that , , ,  are all in .<br><br>The pumping lemma is used to prove a language is not regular.<br><br>To prove the language  is not regular <br>
+<br>Assume that  is regular.
+<br>Construct a string  of length .
+<br>Show that no matter how  is split into , there is always an  such that  (contradiction).
+<br><br>Theorem
+ is not regular.
+<br>Proof:<br>Assume  is regular. Let , which is a string in . By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
+<br>
+If  only consists of 's, then  (pump  one more time) has more 's than 's. Thus, .
+
+<br>
+If  only consists of 's, same as case 1.
+
+<br>
+If  has both 's and 's, then 's and 's in  are intersecting with each other, which is not in the form of . Thus, .
+
+<br>In summary,  can never be split into  such that  for all . Thus,  is not regular.<br>Here are some notes.<br>The pumping length  depends on the machine. Different machines have different pumping length.<br>But the pumping lemma is "machine independent". Thus you cannot assume the value of .<br>The condition  ensures that the substring being pumped is not empty.<br>
+Otherwise, <br>The condition  ensures that  always can be pumped by a machine.<br>The pumping lemma is only a necessary condition for regular.<br>
+It is not a sufficient condition.<br>
+In other words, if you cannot find a  or such  does not exist to accomplish the proof, you CANNOT say the language is regular. <br><br><br>Answer: Not regular.<br>Proof:<br>Assume  is regular. Consider the string , where  is a prime number and  (where  is a constant from the pumping lemma). By definition, . <br>Since prime numbers are infinite,  is constructible for some . (This point is crucial because, if  were not constructible, the proof could not proceed.)<br>By the pumping lemma,  can be split into three substrings , where:<br>
+<br>,
+<br>,
+<br> for all .
+<br>Here,  consists of only 's. Assume . Then .<br>Now, consider the string  (i.e.,  for ):<br>
+<br>Its length is .
+<br>However,  is not a prime number, because  is a prime number, and  (where ) is an integer greater than 1.<br>Thus, , which contradicts the pumping lemma. Therefore,  is not regular.<br><br>Answer: Not regular.<br>Proof (Sketch):<br>We can express  as:<br>
+<br>
+<br>Here, , and  are regular languages.
+<br>Regular languages are closed under set union and complement.
+<br>If  were regular, then  would also be regular (by closure properties of regular languages).<br>
+However, this contradicts the result from , where  was proven to be not regular.<br>
+Thus,  is not regular.<br><br>Answer: Regular. In fact, .<br>Proof:<br>Consider :<br>
+<br>
+Case 0: If , then .
+
+<br>
+Case 1: If  is a prime, then .
+
+<br>
+Case 2: If  is composite, then , where each  is a prime and  is a positive integer constant.
+
+<br>Next,  for all .
+<br>Thus, .
+
+
+<br>Thus, .<br><br>Answer: Regular. <br>
+<br>.
+<br> is regular.
+<br><br>Answer: Not regular.<br>Proof (Sketch):<br>
+<br>Consider the string .
+<br>Then, .
+]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/05-toc-pumping-lemma.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/05-TOC-Pumping Lemma.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 13:28:17 GMT</pubDate></item><item><title><![CDATA[TOC-Regular language]]></title><description><![CDATA[ 
+ <br><br><br>Def: regular language 
+A language is regular if it is recognized by a DFA or an NFA.
+<br>To Prove a Language is regular, we need to construct a DFA or an NFA for the language. <br><br>Def: Let  and  be languages. 
+
+<br>Union :  
+<br>Concatenation: 
+
+<br><br> <br>Note:  each  is a string in the language A. And  is the concatenation of  , until .<br>
+Equivalently, <br>Def: Star operator
+Let  be a language. 	 for  is recursively define 
+
+<br>	
+<br><br>
+
+
+<br><br>Let  be an arbitrary DFA. And we construct a new DFA . Prove that .<br>Note:  <br>
+<br> is the set difference.  
+<br> is the set complement.
+<br>The goal  is understood as set equality.<br>
+Thus, we need to prove , .<br>()<br>
+Assume .<br>
+Then .<br>
+Thus, DFA  rejects .<br>
+In other words, DFA  halts on a non-final state  by consuming all symbols in .<br>
+By the construction of ,  is a final state of .<br>
+Thus,  accepts , and .<br><br>()<br>
+Assume .<br>
+DFA  accepts .<br>
+In other words, DFA  halts on a final state  by consuming all symbols in .<br>
+By the construction of ,  is a non-final state of .<br>
+Thus,  rejects , so .<br>
+Thus, .<br>.<br><br>Let .<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br> Theorem (Closure)
+Regular language is closed under union, concatenation, star and complement.
+<br>if A and B are two regular languages, then , , and  are also regular languages.<br><img alt="EaP8bA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/EaP8bA.png" referrerpolicy="no-referrer"><br><br><img alt="$A\cup B$" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/rW9gPM.png" referrerpolicy="no-referrer"><br><br><br><img alt="$A \circ B$" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/Y0x1Np.png" referrerpolicy="no-referrer"><br><br><br><img alt="$A^{*}$" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/TjkeUi.png" referrerpolicy="no-referrer"><br><br><br>Regular languages can be recursively constructed.<br>
+A regular expression describes the common pattern the strings in a regular language (machine independent).<br>Def: Regular expression (Recursive Definition) 
+ is a regular expression over  if  is<br>
+
+
+<br> for some ,
+<br>, or
+<br>	
+
+
+
+<br>, where  and  are regular expressions,
+<br>, where  and  are regular expressions, or
+<br>, where  is a regular expression.
+
+<br><br>Def: Let  be a regular expression. The language  defined by  is 	
+
+
+<br>,
+<br>, 
+<br>,  .	
+
+
+
+<br>if  , then 
+<br>if  , then 
+<br>if  , then 
+
+<br>Example:<br>Suppose . Describe the language defined by the following regular expressions in English.<br>
+<br>
+<br>
+<br>
+<br>
+<br>   Match nothing
+<br><br>Theorem	
+Regular expressions are equivalent to finite automata.
+<br>The proof has two steps.<br>
+<br>The language defined by a regular expression can be recognized by a finite automaton.
+<br>The conversion is also doable vice versa. 
+<br>The conversion from a regular expression to an NFA is trivially ensured by the closure property .<br>
+So, we only need to convert NFA to regular expressions.<br><br>The Conversion requires generalized NFA, which is a special type of NFA. <br>Only one start state and one final state.<br>
+The start state is different from the final state.<br>
+The transition function is <br>
+<br>
+<br>Suppose <br>
+<br>It means transition from  to  requires .
+<br>If the GNFA has only 2 states  and , then the label on the transition is the regular expression for the language.
+<br>Thus, the conversion recursively merges states and transitions of the generalized NFA.
+<br>
+
+
+Algorithm Convert NFAε_\varepsilonε​ to 2-state gNFA
+
+
+Input: An NFA N=(Q,Σ,δ,q0,F)N = (Q, \Sigma, \delta, q_0, F)N=(Q,Σ,δ,q0​,F)
+
+Output: A regular expression which defines L(N)L(N)L(N)
+
+
+N′←NN' \gets NN′←N // convert the domain and codomain of the transition function
+
+Q′←Q′∪{q0′,qf′}Q' \gets Q' \cup \{q_0', q_f'\}Q′←Q′∪{q0′​,qf′​}
+
+δ′(q0′,q0)=ε\delta'(q_0', q_0) = \varepsilonδ′(q0′​,q0​)=ε
+
+for all q∈Fq \in Fq∈F do
+
+
+δ′(q,qf′)=ε\delta'(q, q_f') = \varepsilonδ′(q,qf′​)=ε
+
+
+end for
+
+for all state qqq in Q′Q'Q′ except q0′q_0'q0′​ and qf′q_f'qf′​ do
+
+
+Q′←Q′∖{q}Q' \gets Q' \setminus \{q\}Q′←Q′∖{q}
+
+for all state qiq_iqi​ in Q′Q'Q′ except qf′q_f'qf′​ do
+
+
+for all state qjq_jqj​ in Q′Q'Q′ except q0′q_0'q0′​ do
+
+
+Suppose δ′(qi,q)=R1\delta'(q_i, q) = R_1δ′(qi​,q)=R1​, δ′(q,q)=R2\delta'(q, q) = R_2δ′(q,q)=R2​, δ′(q,qj)=R3\delta'(q, q_j) = R_3δ′(q,qj​)=R3​, and δ′(qi,qj)=R4\delta'(q_i, q_j) = R_4δ′(qi​,qj​)=R4​
+
+δ′(qi,qj)=((R1)(R2)∗R3)∪(R4)\delta'(q_i, q_j) = ((R_1)(R_2)^* R_3) \cup (R_4)δ′(qi​,qj​)=((R1​)(R2​)∗R3​)∪(R4​)
+
+
+end for
+
+
+end for
+
+
+end for
+
+return δ′(q0′,qf′)\delta'(q_0', q_f')δ′(q0′​,qf′​)
+
+
+
+Export to clipboard]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/04-toc-rl.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/04-TOC-RL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 14:30:42 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/EaP8bA.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/EaP8bA.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[TOC-Math]]></title><description><![CDATA[ 
+ <br><br>“No one shall expel us from the paradise which Cantor has created for us.” ---David Hilbert, 1926<br><br>Def: A set (naively) is a collection of objects such that
+
+<br>no order and no duplication
+
+<br>An object  is in a set  is denoted as .<br>To represent a set, you need to <br>
+<br>Put all members in a pair of curly brackets ;
+<br>Enumerate all members, e.g. ; or
+<br>Give a member representative and followed by the characteristic of members using a predicate, 
+
+<br>e.g.  .
+
+
+<br>Def: Empty set
+ is an empty set, denoted by .
+<br>"" is a concatenation (always false), Or equivalently,<br>Def: Empty set
+ is an empty set if . 
+<br><br>Def: Universal set	
+A universal set is a set that contains all elements under a certain context.
+<br>A universal set is usually denoted in the blackboard bold font. For example,<br>
+<br>: the set of natural numbers;
+<br>: the set of integers;
+<br>: the set of rational numbers;
+<br>: the set of real numbers;
+<br>: the set of complex numbers;
+<br>: the universal set without a specification.
+<br>: the set of prime numbers.
+<br>Def: subset
+Set  is a subset of set  if  , denoted as .
+<br>Def: Power set
+Let A be a set.  is the power set of A.
+<br>Let  .<br><br>Suppose  and  are two sets.<br>Def: Complement
+A complement is the set .
+<br>Def: Intersection
+A intersection  is the set .
+<br>Def: Union
+A union  is the set .
+<br>Def: Setminus 
+A setminus  is the set .
+<br><br> Suppose  and  are two sets.<br>Def: Cartesian product
+The cartesian product of  and  is the set:<br>
+
+<br>Each object  is a pair or generally a 2-tuple.<br>Def: Relation
+A relation  between  and  is a subset of .
+<br>If , we say  is related to , denoted by .<br>A relation  is on the set  if .<br>Let  be a relation on a set .  is:<br>
+<br>reflexive if ;
+<br>symmetric if ;
+<br>anti-symmetric if ;
+<br>transitive if .
+<br><br>Def: Function
+A relation  between  and  is a function if:
+
+<br>
+<br> is the domain.
+<br> is the co-domain.
+<br> means uniquely exists.
+<br>Such a function is denoted as .
+<br>Def: Image and pre-image
+If  is an object of the function , we denote  and say:
+
+<br> is the image of ;
+<br> is the pre-image of .
+
+<br>To denote a function:<br>
+<br>Surely, one can enumerate all pairs in the function.
+<br>But usually, people present the expression.<br>
+For example,  such that .
+<br>For the same example, one can also write .<br>Please distinguish “” and “”:<br>
+<br>“” is from domain to co-domain.
+<br>“” is from pre-image to image.
+<br>Def: A function  is 
+
+<br>Injection: If  
+
+<br>不同x对应不同y	
+
+
+<br>Surjection: If 
+
+<br>任何y都有对应的x	
+
+
+<br>Bijection: If  is both injection and surjection.
+
+<br>For example, let .<br>
+<br> is an injection but not a surjection.
+<br> is a surjection but not an injection.
+<br> is a bijection.
+<br>Graph
+00.10.20.30.40.50.60.70.80.91−1-0.8-0.6-0.4-0.200.20.40.60.81
+<br><br>To precisely describe mathematics, algorithm, computation, and other procedures, formal languages are used. A language is a set of strings over an alphabet. Formally,<br>Def: Language 	
+A language is a set of strings over a specific alphabet.
+<br>Def: alphabet 
+An alphabet is a nonempty finite set.
+<br>For example, <br><br>Def: string 	
+A string over an alphabet  is a finite sequence of symbols from that alphabet.
+<br>Def: length	
+If  is a string over the alphabet , the length of  is the number of  symbols in , denoted by  .
+<br>Def: Empty string	
+The empty string is the string of length 0, denoted by .
+<br>Let  be a string of length n, where each .<br>Def: Reverse	
+The reverse of a string  is the string , denoted by .
+<br>Def: Substring 
+The string  is a substring of  if  consecutively appears in .
+<br>Def: Concatenation
+The concatenation of two strings  and  is the string  of length .	
+<br>For example, .<br>
+Sometimes, the operator “” is omitted. <br>Language
+A language is a set of strings over a specific alphabet.
+<br><br>In this lecture, we only emphasize several proving techniques.<br>
+<br>Constructive proof 
+<br>Prove by contradiction 
+<br>Induction 
+<br>Diagonal argument
+<br><br>
+<br>Used to prove a predicate with existential quantifiers, like .
+<br>First, construct an object .
+<br>Second, prove  is true.
+<br><br>
+<br>Used to prove a proposition .
+<br>First, assume  is false.
+<br>Then, derive a contradiction.
+<br>Last, claim  is true.
+<br><br>
+<br>To prove a predicate with universal quantifiers, one can use induction.
+<br>Induction has two variants: simple and strong. But, they are equivalent.
+<br>To prove :
+<br><br>
+<br>Prove  as a base case.
+<br>Prove  as an induction.
+<br>In the second step,  is the inductive hypothesis.
+<br><br>
+<br>Prove  as a base case.
+<br>Prove .
+<br>We assume  are all true in the strong induction.
+<br><br>Def: Cardinality
+The cardinality of a set  is the number of objects in , denoted as .
+<br>Def: Cardinality
+The set  and the set  are of the same cardinality if there is a bijection .
+<br><br>
+<br> and  are of the same cardinality because we can define a bijection  such that .
+<br>The set of even numbers  and the set of integers  are also of the same cardinality because of the bijection .
+<br>Note that the cardinality can be finite and infinite.<br><br>Def: Countable
+A set is countable if it is finite or its cardinality is same as the set of natural number .
+<br>Countable means that:<br>
+<br>For every number  in the natural number (no matter how large the number is),
+<br>if we count from 0,
+<br>we can eventually  reach the number  within a finite time.
+<br>In fact, the counting procedure constructs a bijection, mapping a natural number  to the  counted element.<br>We denote the cardinality of  by <br>To proof an infinite set  is countable, you need t construct a bijection <br><br>Georg Cantor developed a method to prove a set is uncountable.  <br>For example:<br>Theorem  
+The set of all real numbers in the open interval  is uncountable.
+<br>The intuition of the proof (by contradiction) is as follows:<br>
+<br>Assume  is countable, then we can "count" the numbers one by one.
+<br>Then, we can list all the numbers that we count in a table.
+<br>Construct a real number in  but cannot be reached in the table.
+<br>Thus, the set of reals in  is uncountable.<br>Suppose we denote a real number as . Then, we build the table in Step 2 of the proof.<br><br>Next, we define a real number  such that:<br>
+<br>We can see  is not in the list:<br>
+<br> and  are different at digit 0.
+<br> and  are different at digit 1.
+<br>
+<br>Thus,  is not counted, and the set of reals in  is uncountable.<br> Here we list some facts about infinite sets:<br>
+<br>The set of real numbers  has cardinality .
+<br>The power set  of  also has cardinality .
+<br> has cardinality .
+<br>You can make such constructions by taking power sets.
+<br>Hypothesis (Continuum Hypothesis - CH)
+There is no set of cardinality strictly between  and .
+<br>So far, people only know:<br>Theorem (Cohen 1964)
+CH is unprovable under ZFC.
+]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/02-toc-math.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/02-TOC-Math.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 12:04:15 GMT</pubDate></item><item><title><![CDATA[TOC Finite Automata]]></title><description><![CDATA[ 
+ <br><br>The computation power of this model is rather weak. Because it can only use a limited (finite) memory. But it is also useful in some applications. <br><br>Deterministic finite automata 
+A deterministic finite automata (DFA) is a 5-tuple   , where
+
+<br> is a finite set called states,
+<br> is a finite set called alphabet,
+<br> is the transition function,
+<br> is the start state (also called initial state), and 
+<br> is the set of accept states (final states).
+
+<br>The transition function  can also be represented as a transition table.<br>
+The table has  rows and  columns.<br>
+The value in each entry is a state.<br>
+ is a total function. So, every entry has a value.<br>
+The input of a DFA is a string in the language .<br>
+The output of a DFA is only accept or reject.<br>Suppose  is a string in . The DFA  accepts  if and only if:<br>
+      <br>Each  is a state of .<br>
+Each  is a transition.<br>
+ is a final state in .<br>The sequence of transitions can also be expressed as:<br>
+<br>Remember, a DFA can be represented as a state graph. The features of the graph are listed:<br>
+<br>A state is in a circle.
+<br>A transition is an arc from the current state to the next state.
+<br>The input symbol required by a transition is the label of the arc.
+<br>The initial state is pointed by an arrow.
+<br>Each final state is double circled.
+<br>Example<br>Let  be a DFA, where the transition function  is:<br><br><br><br>If  is the set of all strings that  accepts, then:<br>
+<br> is the language of machine ;
+<br>;
+<br> recognizes .
+<br>   For example:<br>
+<br>A language is regular if it is recognized by some DFA (Deterministic Finite Automaton).<br><br>Nondeterministic finite automata .
+An NFA (Nondeterministic Finite Automaton) is a 5-tuple , where:
+
+<br> is the set of states;
+<br> is the alphabet;
+<br> is the transition function;
+<br> is the start state; and
+<br> is the set of final states.
+
+<br>Suppose  is an NFA to recognize the language .<br>
+<br>
+If  is a string in the language :
+
+<br>Then there exists a "way" to reach the final state;
+<br>It's also possible to reach a non-final state.
+
+
+<br>
+But if  is not a string in the language :
+
+<br>Then there is no way to reach the final state.
+
+
+<br>Please pay attention to the quantifiers.<br><br>The difference between a DFA and an NFA is the transition function .<br>
+<br>DFA: 
+<br>NFA: 
+
+<br> is the power set of .
+
+
+<br>This difference allows:<br>
+<br>One state to transition to zero, one, or multiple states by taking one input symbol.
+<br><br>Automatas can be further upgraded by a special transition.<br>
+An  is a transition from one state to another state by taking no input symbol.
+<br>Such automata is defined.<br>NFA with 	
+An NFA with ε-moves is the same as an NFA (without ε-moves) except the transition function:<br>
+
+<br>Later, we will see that ε-moves allow us to recursively construct NFAs, which is... elegant.<br><br><br>Let  and  be two computation models.  is as powerful as  if:<br>
+<br>For all languages ,  is recognized by some machines in  if and only if it is recognized by some machines in .
+<br> is more powerful than  if there is a language  which can be recognized by some machines in  but no machine in .<br>Note: A computation model is a set of all machines of the same type.<br> Theorem
+DFA, NFA, and NFA with -moves are of the same computation power.
+<br>For convenience, we denote the ordering on the power by , , , etc. Trivially,<br> Lemma
+
+<br>Next, we only need to show .<br>It seems the content repeats the explanation for converting  to a DFA and introduces the concept of -closure more formally. Here's a summary in Markdown format for your reference:<br>The Intuition of the Proof:<br>
+<br>For every , we can construct a DFA that recognizes the same language.
+<br>This is equivalent to the process of converting an NFA to an equivalent DFA.
+<br>Def:  -closure
+Let  be an .<br>
+The -closure of a state , denoted , is defined as:<br>
+
+<br>
+<br> represents the set of all states that can be reached starting from  only using -transitions.
+<br>This closure includes  itself and any other states reachable via one or more -moves.
+<br>Alternative Name: The -closure is sometimes referred to as the Kleene Star or Kleene Closure.
+<br>Def:  of a Set of States
+ Let  be a set of states for a given NFA. The -closure of , denoted , is:<br>
+
+<br>This means the -closure of  is the union of the -closures of all individual states in .<br>
+ is the set of states reachable from  using only -transitions.<br>Def: -Move of a Set of States:
+Let  be a set of states, and let  be a symbol for a given NFA. The -move of , denoted , is:<br>
+
+<br> This describes all the states reachable by:<br>
+<br>First making an -transition from any state  in , and
+<br>Then taking all -transitions from those resulting states.
+<br>NOTE:  gives the set of states reachable by consuming the symbol .<br><br>Let  be an . We construct a DFA , where:<br>
+<br>
+<br> such that:<br>
+
+<br>
+<br>
+<br><br>States ():<br>
+<br>, the power set of .
+<br>Each state in  is a subset of the states in .
+<br>Transition Function ():<br> , defined as:<br>
+<br>
+<br>For each state  and symbol :
+<br>Find all states  reachable by an -move from some , considering -closures.
+<br>Start State ():<br>
+<br>, the -closure of the initial state  of .
+<br>Final States ():<br>
+<br>.
+<br>A subset  of states is a final state in  if it includes any final state of .
+<br>Ensures  captures all possible behaviors of , including -transitions.<br>
+Uses the power set of  as the state space to simulate nondeterminism deterministically.<br><br><br>
+
+
+Algorithm Convert NFAε_\varepsilonε​ to DFA
+
+
+
+Input: An NFAε_\varepsilonε​ N=(Q,Σ,δ,q0,F)N = (Q, \Sigma, \delta, q_0, F)N=(Q,Σ,δ,q0​,F)
+
+Output: A DFA D=(Q′,Σ,δ′,q0′,F′)D = (Q', \Sigma, \delta', q_0', F')D=(Q′,Σ,δ′,q0′​,F′)
+
+Q′←{E(q0)}Q' \gets \{E(q_0)\}Q′←{E(q0​)}, E(q0)E(q_0)E(q0​) is unmarked, and δ′←∅\delta' \gets \emptysetδ′←∅
+
+while there exists an unmarked state R∈Q′R \in Q'R∈Q′ do
+
+
+Mark RRR
+
+for each symbol a∈Σa \in \Sigmaa∈Σ do
+
+
+U←E(δ(R,a))U \gets E(\delta(R, a))U←E(δ(R,a))
+
+if U∉Q′U \notin Q'U∈/​Q′ then
+
+
+Add UUU to Q′Q'Q′
+
+
+end if
+
+Add δ′(R,a)=U\delta'(R, a) = Uδ′(R,a)=U to δ′\delta'δ′
+
+
+end for
+
+
+end while
+
+q0′←E(q0)q_0' \gets E(q_0)q0′​←E(q0​)
+
+F′←{R∣R&nbsp;has&nbsp;a&nbsp;final&nbsp;state&nbsp;in&nbsp;F}F' \gets \{R \mid R \text{ has a final state in } F\}F′←{R∣R&nbsp;has&nbsp;a&nbsp;final&nbsp;state&nbsp;in&nbsp;F}
+
+
+
+return D←(Q′,Σ,δ′,q0′,F′)D \gets (Q', \Sigma, \delta', q_0', F')D←(Q′,Σ,δ′,q0′​,F′)
+
+
+
+Export to clipboard<br><br>Let’s try to convert this  to .<br><br><br>Suppose the unmarked states are red.<br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br>
+<br><br><br> and  are final states.<br>Rename the states to make the DFA more readable and beautiful: .<br><br> is a trap state because it has no valid transitions.]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/03-toc-finite-automata.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/03-TOC-Finite Automata.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 12:04:36 GMT</pubDate></item><item><title><![CDATA[TOC-As-2]]></title><description><![CDATA[ 
  <br><br><br>Convert the following NFA into an equivalent DFA. (20 pt)<br><img alt="Q1" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/ju3fRF.png" referrerpolicy="no-referrer"><br>First iteration<br>
 <br>
 <br>
@@ -182,529 +1245,7 @@ If  consists of both 's and 's
 <br>Then  and   in  are intersecting with each other, which is not in the form of  Thus, .
 
 
-<br> is not regular.  is also not regular. 	<br> is not regular, we can not construct a NFA for . Thus,  is not regular.]]></description><link>https://www.allenygy.vip/theory-of-computation/assignment/toc-as-2.html</link><guid isPermaLink="false">Theory Of Computation/Assignment/TOC-As-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 12:44:44 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/ju3fRF.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/ju3fRF.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[TOC-Pumping Lemma]]></title><description><![CDATA[ 
- <br><br><br>Lemma (Pumping Lemma)
-If  is a regular language, then there is a positive constant  such that every string  of length at least  can be written as  satisfying the following conditions
-
-<br>for each 
-<br>, and
-<br>.
-
-<br>p is the pumping length.<br>Instead of proving the lemma formally, let's try to understand it.<br>Assume  is regular and  is the  which recognizes .<br>
-Let  be the number of states in .<br>Assume  in  of length .<br>To accept ,  goes through a sequence of states <br>By pigeonhole principle, some states  appears multiple times in the sequence.<br>Assuming , the sequence of states can be <br><br>Then, it's trivial that , , ,  are all in .<br><br>The pumping lemma is used to prove a language is not regular.<br><br>To prove the language  is not regular <br>
-<br>Assume that  is regular.
-<br>Construct a string  of length .
-<br>Show that no matter how  is split into , there is always an  such that  (contradiction).
-<br><br>Theorem
- is not regular.
-<br>Proof:<br>Assume  is regular. Let , which is a string in . By the pumping lemma,  is in the form . The substring  can be of the following three cases.<br>
-<br>
-If  only consists of 's, then  (pump  one more time) has more 's than 's. Thus, .
-
-<br>
-If  only consists of 's, same as case 1.
-
-<br>
-If  has both 's and 's, then 's and 's in  are intersecting with each other, which is not in the form of . Thus, .
-
-<br>In summary,  can never be split into  such that  for all . Thus,  is not regular.<br>Here are some notes.<br>The pumping length  depends on the machine. Different machines have different pumping length.<br>But the pumping lemma is "machine independent". Thus you cannot assume the value of .<br>The condition  ensures that the substring being pumped is not empty.<br>
-Otherwise, <br>The condition  ensures that  always can be pumped by a machine.<br>The pumping lemma is only a necessary condition for regular.<br>
-It is not a sufficient condition.<br>
-In other words, if you cannot find a  or such  does not exist to accomplish the proof, you CANNOT say the language is regular. <br><br><br>Answer: Not regular.<br>Proof:<br>Assume  is regular. Consider the string , where  is a prime number and  (where  is a constant from the pumping lemma). By definition, . <br>Since prime numbers are infinite,  is constructible for some . (This point is crucial because, if  were not constructible, the proof could not proceed.)<br>By the pumping lemma,  can be split into three substrings , where:<br>
-<br>,
-<br>,
-<br> for all .
-<br>Here,  consists of only 's. Assume . Then .<br>Now, consider the string  (i.e.,  for ):<br>
-<br>Its length is .
-<br>However,  is not a prime number, because  is a prime number, and  (where ) is an integer greater than 1.<br>Thus, , which contradicts the pumping lemma. Therefore,  is not regular.<br><br>Answer: Not regular.<br>Proof (Sketch):<br>We can express  as:<br>
-<br>
-<br>Here, , and  are regular languages.
-<br>Regular languages are closed under set union and complement.
-<br>If  were regular, then  would also be regular (by closure properties of regular languages).<br>
-However, this contradicts the result from , where  was proven to be not regular.<br>
-Thus,  is not regular.<br><br>Answer: Regular. In fact, .<br>Proof:<br>Consider :<br>
-<br>
-Case 0: If , then .
-
-<br>
-Case 1: If  is a prime, then .
-
-<br>
-Case 2: If  is composite, then , where each  is a prime and  is a positive integer constant.
-
-<br>Next,  for all .
-<br>Thus, .
-
-
-<br>Thus, .<br><br>Answer: Regular. <br>
-<br>.
-<br> is regular.
-<br><br>Answer: Not regular.<br>Proof (Sketch):<br>
-<br>Consider the string .
-<br>Then, .
-]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-pumping-lemma.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-Pumping Lemma.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 13:28:17 GMT</pubDate></item><item><title><![CDATA[TOC-Regular language]]></title><description><![CDATA[ 
- <br><br><br>Def: regular language 
-A language is regular if it is recognized by a DFA or an NFA.
-<br>To Prove a Language is regular, we need to construct a DFA or an NFA for the language. <br><br>Def: Let  and  be languages. 
-
-<br>Union :  
-<br>Concatenation: 
-
-<br><br> <br>Note:  each  is a string in the language A. And  is the concatenation of  , until .<br>
-Equivalently, <br>Def: Star operator
-Let  be a language. 	 for  is recursively define 
-
-<br>	
-<br>
-
-<br><br>Let .<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br> Theorem (Closure)
-Regular language is closed under union, concatenation, and star.
-<br>if A and B are two regular languages, then , , and  are also regular languages.<br><img alt="EaP8bA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/EaP8bA.png" referrerpolicy="no-referrer"><br><br><img alt="$A\cup B$" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/rW9gPM.png" referrerpolicy="no-referrer"><br><br><br><img alt="$A \circ B$" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/Y0x1Np.png" referrerpolicy="no-referrer"><br><br><br><img alt="$A^{*}$" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/TjkeUi.png" referrerpolicy="no-referrer"><br><br><br>Regular languages can be recursively constructed.<br>
-A regular expression describes the common pattern the strings in a regular language (machine independent).<br>Def: Regular expression (Recursive Definition) 
- is a regular expression over  if  is<br>
-
-
-<br> for some ,
-<br>, or
-<br>	
-
-
-
-<br>, where  and  are regular expressions,
-<br>, where  and  are regular expressions, or
-<br>, where  is a regular expression.
-
-<br><br>Def: Let  be a regular expression. The language  defined by  is 	
-
-
-<br>,
-<br>, 
-<br>,  .	
-
-
-
-<br>if  , then 
-<br>if  , then 
-<br>if  , then 
-
-<br>Example:<br>Suppose . Describe the language defined by the following regular expressions in English.<br>
-<br>
-<br>
-<br>
-<br>
-<br>   Match nothing
-<br><br>Theorem	
-Regular expressions are equivalent to finite automata.
-<br>The proof has two steps.<br>
-<br>The language defined by a regular expression can be recognized by a finite automaton.
-<br>The conversion is also doable vice versa. 
-<br>The conversion from a regular expression to an NFA is trivially ensured by the closure property .<br>
-So, we only need to convert NFA to regular expressions.<br><br>The Conversion requires generalized NFA, which is a special type of NFA. <br>Only one start state and one final state.<br>
-The start state is different from the final state.<br>
-The transition function is <br>
-<br>
-<br>Suppose <br>
-<br>It means transition from  to  requires .
-<br>If the GNFA has only 2 states  and , then the label on the transition is the regular expression for the language.
-<br>Thus, the conversion recursively merges states and transitions of the generalized NFA.
-<br>
-
-
-Algorithm Convert NFAε_\varepsilonε​ to 2-state gNFA
-
-
-Input: An NFA N=(Q,Σ,δ,q0,F)N = (Q, \Sigma, \delta, q_0, F)N=(Q,Σ,δ,q0​,F)
-
-Output: A regular expression which defines L(N)L(N)L(N)
-
-
-N′←NN' \gets NN′←N // convert the domain and codomain of the transition function
-
-Q′←Q′∪{q0′,qf′}Q' \gets Q' \cup \{q_0', q_f'\}Q′←Q′∪{q0′​,qf′​}
-
-δ′(q0′,q0)=ε\delta'(q_0', q_0) = \varepsilonδ′(q0′​,q0​)=ε
-
-for all q∈Fq \in Fq∈F do
-
-
-δ′(q,qf′)=ε\delta'(q, q_f') = \varepsilonδ′(q,qf′​)=ε
-
-
-end for
-
-for all state qqq in Q′Q'Q′ except q0′q_0'q0′​ and qf′q_f'qf′​ do
-
-
-Q′←Q′∖{q}Q' \gets Q' \setminus \{q\}Q′←Q′∖{q}
-
-for all state qiq_iqi​ in Q′Q'Q′ except qf′q_f'qf′​ do
-
-
-for all state qjq_jqj​ in Q′Q'Q′ except q0′q_0'q0′​ do
-
-
-Suppose δ′(qi,q)=R1\delta'(q_i, q) = R_1δ′(qi​,q)=R1​, δ′(q,q)=R2\delta'(q, q) = R_2δ′(q,q)=R2​, δ′(q,qj)=R3\delta'(q, q_j) = R_3δ′(q,qj​)=R3​, and δ′(qi,qj)=R4\delta'(q_i, q_j) = R_4δ′(qi​,qj​)=R4​
-
-δ′(qi,qj)=((R1)(R2)∗R3)∪(R4)\delta'(q_i, q_j) = ((R_1)(R_2)^* R_3) \cup (R_4)δ′(qi​,qj​)=((R1​)(R2​)∗R3​)∪(R4​)
-
-
-end for
-
-
-end for
-
-
-end for
-
-return δ′(q0′,qf′)\delta'(q_0', q_f')δ′(q0′​,qf′​)
-
-
-
-Export to clipboard]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-rl.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-RL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 06:10:02 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/EaP8bA.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/EaP8bA.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[TOC-Math]]></title><description><![CDATA[ 
- <br><br>“No one shall expel us from the paradise which Cantor has created for us.” ---David Hilbert, 1926<br><br>Def: A set (naively) is a collection of objects such that
-
-<br>no order and no duplication
-
-<br>An object  is in a set  is denoted as .<br>To represent a set, you need to <br>
-<br>Put all members in a pair of curly brackets ;
-<br>Enumerate all members, e.g. ; or
-<br>Give a member representative and followed by the characteristic of members using a predicate, 
-
-<br>e.g.  .
-
-
-<br>Def: Empty set
- is an empty set, denoted by .
-<br>"" is a concatenation (always false), Or equivalently,<br>Def: Empty set
- is an empty set if . 
-<br><br>Def: Universal set	
-A universal set is a set that contains all elements under a certain context.
-<br>A universal set is usually denoted in the blackboard bold font. For example,<br>
-<br>: the set of natural numbers;
-<br>: the set of integers;
-<br>: the set of rational numbers;
-<br>: the set of real numbers;
-<br>: the set of complex numbers;
-<br>: the universal set without a specification.
-<br>: the set of prime numbers.
-<br>Def: subset
-Set  is a subset of set  if  , denoted as .
-<br>Def: Power set
-Let A be a set.  is the power set of A.
-<br>Let  .<br><br>Suppose  and  are two sets.<br>Def: Complement
-A complement is the set .
-<br>Def: Intersection
-A intersection  is the set .
-<br>Def: Union
-A union  is the set .
-<br>Def: Setminus 
-A setminus  is the set .
-<br><br> Suppose  and  are two sets.<br>Def: Cartesian product
-The cartesian product of  and  is the set:<br>
-
-<br>Each object  is a pair or generally a 2-tuple.<br>Def: Relation
-A relation  between  and  is a subset of .
-<br>If , we say  is related to , denoted by .<br>A relation  is on the set  if .<br>Let  be a relation on a set .  is:<br>
-<br>reflexive if ;
-<br>symmetric if ;
-<br>anti-symmetric if ;
-<br>transitive if .
-<br><br>Def: Function
-A relation  between  and  is a function if:
-
-<br>
-<br> is the domain.
-<br> is the co-domain.
-<br> means uniquely exists.
-<br>Such a function is denoted as .
-<br>Def: Image and pre-image
-If  is an object of the function , we denote  and say:
-
-<br> is the image of ;
-<br> is the pre-image of .
-
-<br>To denote a function:<br>
-<br>Surely, one can enumerate all pairs in the function.
-<br>But usually, people present the expression.<br>
-For example,  such that .
-<br>For the same example, one can also write .<br>Please distinguish “” and “”:<br>
-<br>“” is from domain to co-domain.
-<br>“” is from pre-image to image.
-<br>Def: A function  is 
-
-<br>Injection: If  
-
-<br>不同x对应不同y	
-
-
-<br>Surjection: If 
-
-<br>任何y都有对应的x	
-
-
-<br>Bijection: If  is both injection and surjection.
-
-<br>For example, let .<br>
-<br> is an injection but not a surjection.
-<br> is a surjection but not an injection.
-<br> is a bijection.
-<br>Graph
-00.10.20.30.40.50.60.70.80.91−1-0.8-0.6-0.4-0.200.20.40.60.81
-<br><br>To precisely describe mathematics, algorithm, computation, and other procedures, formal languages are used. A language is a set of strings over an alphabet. Formally,<br>Def: Language 	
-A language is a set of strings over a specific alphabet.
-<br>Def: alphabet 
-An alphabet is a nonempty finite set.
-<br>For example, <br><br>Def: string 	
-A string over an alphabet  is a finite sequence of symbols from that alphabet.
-<br>Def: length	
-If  is a string over the alphabet , the length of  is the number of  symbols in , denoted by  .
-<br>Def: Empty string	
-The empty string is the string of length 0, denoted by .
-<br>Let  be a string of length n, where each .<br>Def: Reverse	
-The reverse of a string  is the string , denoted by .
-<br>Def: Substring 
-The string  is a substring of  if  consecutively appears in .
-<br>Def: Concatenation
-The concatenation of two strings  and  is the string  of length .	
-<br>For example, .<br>
-Sometimes, the operator “” is omitted. <br>Language
-A language is a set of strings over a specific alphabet.
-<br><br>In this lecture, we only emphasize several proving techniques.<br>
-<br>Constructive proof 
-<br>Prove by contradiction 
-<br>Induction 
-<br>Diagonal argument
-<br><br>
-<br>Used to prove a predicate with existential quantifiers, like .
-<br>First, construct an object .
-<br>Second, prove  is true.
-<br><br>
-<br>Used to prove a proposition .
-<br>First, assume  is false.
-<br>Then, derive a contradiction.
-<br>Last, claim  is true.
-<br><br>
-<br>To prove a predicate with universal quantifiers, one can use induction.
-<br>Induction has two variants: simple and strong. But, they are equivalent.
-<br>To prove :
-<br><br>
-<br>Prove  as a base case.
-<br>Prove  as an induction.
-<br>In the second step,  is the inductive hypothesis.
-<br><br>
-<br>Prove  as a base case.
-<br>Prove .
-<br>We assume  are all true in the strong induction.
-<br><br>Def: Cardinality
-The cardinality of a set  is the number of objects in , denoted as .
-<br>Def: Cardinality
-The set  and the set  are of the same cardinality if there is a bijection .
-<br><br>
-<br> and  are of the same cardinality because we can define a bijection  such that .
-<br>The set of even numbers  and the set of integers  are also of the same cardinality because of the bijection .
-<br>Note that the cardinality can be finite and infinite.<br><br>Def: Countable
-A set is countable if it is finite or its cardinality is same as the set of natural number .
-<br>Countable means that:<br>
-<br>For every number  in the natural number (no matter how large the number is),
-<br>if we count from 0,
-<br>we can eventually  reach the number  within a finite time.
-<br>In fact, the counting procedure constructs a bijection, mapping a natural number  to the  counted element.<br>We denote the cardinality of  by <br>To proof an infinite set  is countable, you need t construct a bijection <br><br>Georg Cantor developed a method to prove a set is uncountable.  <br>For example:<br>Theorem  
-The set of all real numbers in the open interval  is uncountable.
-<br>The intuition of the proof (by contradiction) is as follows:<br>
-<br>Assume  is countable, then we can "count" the numbers one by one.
-<br>Then, we can list all the numbers that we count in a table.
-<br>Construct a real number in  but cannot be reached in the table.
-<br>Thus, the set of reals in  is uncountable.<br>Suppose we denote a real number as . Then, we build the table in Step 2 of the proof.<br><br>Next, we define a real number  such that:<br>
-<br>We can see  is not in the list:<br>
-<br> and  are different at digit 0.
-<br> and  are different at digit 1.
-<br>
-<br>Thus,  is not counted, and the set of reals in  is uncountable.<br> Here we list some facts about infinite sets:<br>
-<br>The set of real numbers  has cardinality .
-<br>The power set  of  also has cardinality .
-<br> has cardinality .
-<br>You can make such constructions by taking power sets.
-<br>Hypothesis (Continuum Hypothesis - CH)
-There is no set of cardinality strictly between  and .
-<br>So far, people only know:<br>Theorem (Cohen 1964)
-CH is unprovable under ZFC.
-]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-math.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-Math.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 12:04:15 GMT</pubDate></item><item><title><![CDATA[TOC Finite Automata]]></title><description><![CDATA[ 
- <br><br>The computation power of this model is rather weak. Because it can only use a limited (finite) memory. But it is also useful in some applications. <br><br>Deterministic finite automata 
-A deterministic finite automata (DFA) is a 5-tuple   , where
-
-<br> is a finite set called states,
-<br> is a finite set called alphabet,
-<br> is the transition function,
-<br> is the start state (also called initial state), and 
-<br> is the set of accept states (final states).
-
-<br>The transition function  can also be represented as a transition table.<br>
-The table has  rows and  columns.<br>
-The value in each entry is a state.<br>
- is a total function. So, every entry has a value.<br>
-The input of a DFA is a string in the language .<br>
-The output of a DFA is only accept or reject.<br>Suppose  is a string in . The DFA  accepts  if and only if:<br>
-      <br>Each  is a state of .<br>
-Each  is a transition.<br>
- is a final state in .<br>The sequence of transitions can also be expressed as:<br>
-<br>Remember, a DFA can be represented as a state graph. The features of the graph are listed:<br>
-<br>A state is in a circle.
-<br>A transition is an arc from the current state to the next state.
-<br>The input symbol required by a transition is the label of the arc.
-<br>The initial state is pointed by an arrow.
-<br>Each final state is double circled.
-<br>Example<br>Let  be a DFA, where the transition function  is:<br><br><br><br>If  is the set of all strings that  accepts, then:<br>
-<br> is the language of machine ;
-<br>;
-<br> recognizes .
-<br>   For example:<br>
-<br>A language is regular if it is recognized by some DFA (Deterministic Finite Automaton).<br><br>Nondeterministic finite automata .
-An NFA (Nondeterministic Finite Automaton) is a 5-tuple , where:
-
-<br> is the set of states;
-<br> is the alphabet;
-<br> is the transition function;
-<br> is the start state; and
-<br> is the set of final states.
-
-<br>Suppose  is an NFA to recognize the language .<br>
-<br>
-If  is a string in the language :
-
-<br>Then there exists a "way" to reach the final state;
-<br>It's also possible to reach a non-final state.
-
-
-<br>
-But if  is not a string in the language :
-
-<br>Then there is no way to reach the final state.
-
-
-<br>Please pay attention to the quantifiers.<br><br>The difference between a DFA and an NFA is the transition function .<br>
-<br>DFA: 
-<br>NFA: 
-
-<br> is the power set of .
-
-
-<br>This difference allows:<br>
-<br>One state to transition to zero, one, or multiple states by taking one input symbol.
-<br><br>Automatas can be further upgraded by a special transition.<br>
-An  is a transition from one state to another state by taking no input symbol.
-<br>Such automata is defined.<br>NFA with 	
-An NFA with ε-moves is the same as an NFA (without ε-moves) except the transition function:<br>
-
-<br>Later, we will see that ε-moves allow us to recursively construct NFAs, which is... elegant.<br><br><br>Let  and  be two computation models.  is as powerful as  if:<br>
-<br>For all languages ,  is recognized by some machines in  if and only if it is recognized by some machines in .
-<br> is more powerful than  if there is a language  which can be recognized by some machines in  but no machine in .<br>Note: A computation model is a set of all machines of the same type.<br> Theorem
-DFA, NFA, and NFA with -moves are of the same computation power.
-<br>For convenience, we denote the ordering on the power by , , , etc. Trivially,<br> Lemma
-
-<br>Next, we only need to show .<br>It seems the content repeats the explanation for converting  to a DFA and introduces the concept of -closure more formally. Here's a summary in Markdown format for your reference:<br>The Intuition of the Proof:<br>
-<br>For every , we can construct a DFA that recognizes the same language.
-<br>This is equivalent to the process of converting an NFA to an equivalent DFA.
-<br>Def:  -closure
-Let  be an .<br>
-The -closure of a state , denoted , is defined as:<br>
-
-<br>
-<br> represents the set of all states that can be reached starting from  only using -transitions.
-<br>This closure includes  itself and any other states reachable via one or more -moves.
-<br>Alternative Name: The -closure is sometimes referred to as the Kleene Star or Kleene Closure.
-<br>Def:  of a Set of States
- Let  be a set of states for a given NFA. The -closure of , denoted , is:<br>
-
-<br>This means the -closure of  is the union of the -closures of all individual states in .<br>
- is the set of states reachable from  using only -transitions.<br>Def: -Move of a Set of States:
-Let  be a set of states, and let  be a symbol for a given NFA. The -move of , denoted , is:<br>
-
-<br> This describes all the states reachable by:<br>
-<br>First making an -transition from any state  in , and
-<br>Then taking all -transitions from those resulting states.
-<br>NOTE:  gives the set of states reachable by consuming the symbol .<br><br>Let  be an . We construct a DFA , where:<br>
-<br>
-<br> such that:<br>
-
-<br>
-<br>
-<br><br>States ():<br>
-<br>, the power set of .
-<br>Each state in  is a subset of the states in .
-<br>Transition Function ():<br> , defined as:<br>
-<br>
-<br>For each state  and symbol :
-<br>Find all states  reachable by an -move from some , considering -closures.
-<br>Start State ():<br>
-<br>, the -closure of the initial state  of .
-<br>Final States ():<br>
-<br>.
-<br>A subset  of states is a final state in  if it includes any final state of .
-<br>Ensures  captures all possible behaviors of , including -transitions.<br>
-Uses the power set of  as the state space to simulate nondeterminism deterministically.<br><br><br>
-
-
-Algorithm Convert NFAε_\varepsilonε​ to DFA
-
-
-
-Input: An NFAε_\varepsilonε​ N=(Q,Σ,δ,q0,F)N = (Q, \Sigma, \delta, q_0, F)N=(Q,Σ,δ,q0​,F)
-
-Output: A DFA D=(Q′,Σ,δ′,q0′,F′)D = (Q', \Sigma, \delta', q_0', F')D=(Q′,Σ,δ′,q0′​,F′)
-
-Q′←{E(q0)}Q' \gets \{E(q_0)\}Q′←{E(q0​)}, E(q0)E(q_0)E(q0​) is unmarked, and δ′←∅\delta' \gets \emptysetδ′←∅
-
-while there exists an unmarked state R∈Q′R \in Q'R∈Q′ do
-
-
-Mark RRR
-
-for each symbol a∈Σa \in \Sigmaa∈Σ do
-
-
-U←E(δ(R,a))U \gets E(\delta(R, a))U←E(δ(R,a))
-
-if U∉Q′U \notin Q'U∈/​Q′ then
-
-
-Add UUU to Q′Q'Q′
-
-
-end if
-
-Add δ′(R,a)=U\delta'(R, a) = Uδ′(R,a)=U to δ′\delta'δ′
-
-
-end for
-
-
-end while
-
-q0′←E(q0)q_0' \gets E(q_0)q0′​←E(q0​)
-
-F′←{R∣R&nbsp;has&nbsp;a&nbsp;final&nbsp;state&nbsp;in&nbsp;F}F' \gets \{R \mid R \text{ has a final state in } F\}F′←{R∣R&nbsp;has&nbsp;a&nbsp;final&nbsp;state&nbsp;in&nbsp;F}
-
-
-
-return D←(Q′,Σ,δ′,q0′,F′)D \gets (Q', \Sigma, \delta', q_0', F')D←(Q′,Σ,δ′,q0′​,F′)
-
-
-
-Export to clipboard<br><br>Let’s try to convert this  to .<br><br><br>Suppose the unmarked states are red.<br>
-<br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
-<br><br><br>
-<br><br><br> and  are final states.<br>Rename the states to make the DFA more readable and beautiful: .<br><br> is a trap state because it has no valid transitions.]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-finite-automata.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-Finite Automata.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 12:04:36 GMT</pubDate></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
+<br> is not regular.  is also not regular. 	<br> is not regular, we can not construct a NFA for . Thus,  is not regular.]]></description><link>https://www.allenygy.vip/theory-of-computation/assignment/toc-as-2.html</link><guid isPermaLink="false">Theory Of Computation/Assignment/TOC-As-2.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Mon, 18 Nov 2024 12:44:44 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/ju3fRF.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/ju3fRF.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Archive]]></title><description><![CDATA[ 
  <br><br><br>
 <br><a data-tooltip-position="top" aria-label="Machine Learning/Project/Topic-Exploration.md" data-href="Machine Learning/Project/Topic-Exploration.md" href="https://www.allenygy.vip/Machine Learning/Project/Topic-Exploration" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Topic-Exploration</a><a data-tooltip-position="top" aria-label="Machine Learning/Project/Topic-Exploration.md" data-href="Machine Learning/Project/Topic-Exploration.md" href="https://www.allenygy.vip/machine-learning/project/topic-exploration.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Topic-Exploration</a>
 <br><a data-tooltip-position="top" aria-label="Computer Vision/Lecture/VGG.md" data-href="Computer Vision/Lecture/VGG.md" href="https://www.allenygy.vip/Computer Vision/Lecture/VGG" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">VGG</a><a data-tooltip-position="top" aria-label="Computer Vision/Lecture/VGG.md" data-href="Computer Vision/Lecture/VGG.md" href="https://www.allenygy.vip/computer-vision/lecture/vgg.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">VGG</a>
@@ -1375,76 +1916,7 @@ Export to clipboard<br><br>Let’s try to convert this  to .<br><br><br>Suppose 
 
 
 
-]]></description><link>https://www.allenygy.vip/home.html</link><guid isPermaLink="false">Home.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 17 Nov 2024 18:33:17 GMT</pubDate></item><item><title><![CDATA[TOC-Intro]]></title><description><![CDATA[ 
- <br><br>Computation Definition
-A computation is a procedure to calculate the desired output of a computational problem.
-<br>If only solve decision problems, a computation is a procedure to decide whether an element is in a set or not.<br><br>Gottfried Wilhelm Leibniz 1646-1716<br>
-<br>Calculus ratiocinator: a theoretical universal logical calculation framework
-<br>Characteristica universalis: a universal conceptual language
-<br>Gottlob Frege 1848-1925<br>
-<br>Begriffsschrift: (concept-script)
-
-<br>First book on symbolic logical
-<br>To implement calculus ratiocinator
-
-
-<br>Kurt Gödel 1906–1978  <br>
-<br>Incompleteness theorem: if an axiom system contains natural numbers, then  
-
-<br>there is a proposition which is unprovable;  
-<br>and it cannot prove its consistency.
-
-
-<br>Sabota g ed Hilbert’s program
-<br>Alonzo Church 1903-1995<br>
-<br>Lambda calculus
-<br>Alan Turing 1912-1954<br>
-<br>Turing machine
-<br>这段历史概述了数学逻辑与计算机科学发展的几个关键人物及其贡献，涉及从17世纪到20世纪的重要理论基础。这些贡献共同构建了现代逻辑学、数学以及计算机科学的基础，以下是逐步的介绍：<br><br>莱布尼茨是一位德国哲学家、数学家，被认为是现代数学逻辑的奠基人之一。他的两项核心构想对后来的逻辑发展产生了深远影响：<br>
-<br>Calculus ratiocinator（理性演算器）：一个假设性的通用逻辑计算框架，旨在通过数学和逻辑计算解决一切问题。
-<br>Characteristica universalis（通用特征语言）：一种理想化的通用概念语言，试图以形式化的方式表达所有知识。这是莱布尼茨对人类知识进行逻辑编码的梦想，也是后来形式逻辑的前身。
-<br>尽管莱布尼茨的构想在他在世时未能实现，但它为后来的逻辑学家提供了启发。<br><br><br>弗雷格是德国逻辑学家，被称为现代逻辑学的奠基人之一。他的主要贡献体现在：<br>
-<br>Begriffsschrift（概念文字）：这是第一本关于符号逻辑的书，首次提出了一种形式化的逻辑语言，用以表达数学和逻辑推理。这一理论直接落实了莱布尼茨“理性演算器”的思想，是现代形式逻辑的起点。
-<br>他还发展了谓词逻辑，为数学基础提供了更加严谨的框架。
-<br>弗雷格的工作直接影响了后来的逻辑学家，包括罗素和维特根斯坦。<br><br><br>哥德尔是奥地利逻辑学家，以他的不完备性定理闻名，该定理对数学和逻辑的基础提出了深刻的限制：<br>
-<br>不完备性定理指出：在任何包含自然数的公理系统中：
-
-<br>存在一个无法被证明也无法被否定的命题（即“不可判定命题”）。
-<br>这个系统无法证明自身的相容性。
-
-
-<br>哥德尔的工作揭示了数学体系的固有局限性，破坏了希尔伯特“证明数学一致性”的乐观计划（Sabotaged Hilbert’s program）。
-<br>哥德尔的理论对数理逻辑和理论计算机科学产生了重大影响。<br><br><br>丘奇是美国数学家，他的λ演算（Lambda Calculus）为计算理论奠定了重要基础：<br>
-<br>λ演算是一种数学形式系统，用以研究函数定义和计算过程。它与图灵机被认为是等价的，提供了描述计算过程的一种抽象方法。
-<br>丘奇证明了一些问题在形式系统中是不可判定的，这与哥德尔的结果相辅相成。
-<br>λ演算后来成为编程语言理论的重要基础。<br><br><br>图灵是英国数学家、逻辑学家，被誉为计算机科学之父。他的贡献主要包括：<br>
-<br>图灵机：一种假想的计算设备，旨在模拟任何可计算过程。这一模型定义了“可计算性”的概念，被认为是现代计算机的理论基础。
-<br>图灵与哥德尔、丘奇的研究共同确立了计算理论的基本框架。
-<br>图灵还提出了“图灵测试”，作为人工智能的早期概念。]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-intro.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-Intro.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 17 Nov 2024 13:05:45 GMT</pubDate></item><item><title><![CDATA[TOC-PDA]]></title><description><![CDATA[ 
- <br>]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-pda.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-PDA.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 13 Nov 2024 02:42:52 GMT</pubDate></item><item><title><![CDATA[TOC-Turing Machine]]></title><description><![CDATA[ 
- <br><br> is not context free.<br>Problem:<br>
-Input: Given a string  in <br>
-Question: Is ?<br>Algorithm:<br>
-<br>load  on to memory
-<br>Check if  has only one #, reject if no
-<br>Repeat until no unmarked symbol
-
-<br>Find the first unmarked symbol in first half
-<br>Go right, exceed find the first unmarked symbol in second half
-<br>mark s'
-<br>reject if 
-<br>go left exceed find the first unmarked symbol in first half
-
-
-<br>accept if no more in second half.
-<br><br><br><br><br><br><br>]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-tm.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-TM.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Fri, 15 Nov 2024 07:21:45 GMT</pubDate></item><item><title><![CDATA[TOC-CFL]]></title><description><![CDATA[ 
- <br><br>Assume L is context-free. Let , which is a string in L.<br>
-By the pumping lemma,  Then, we have two cases.<br><br>
-<br>
-<br>Case 1
-<br>vxy  before the # <br> has more symbols before # then after. <br>
-<br>Case 2
-<br>vxy  before the # <br> <br>more 1's but less 0's]]></description><link>https://www.allenygy.vip/theory-of-computation/lecture/toc-cfl.html</link><guid isPermaLink="false">Theory Of Computation/Lecture/TOC-CFL.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 13 Nov 2024 02:42:42 GMT</pubDate></item><item><title><![CDATA[Sliding Window]]></title><description><![CDATA[<a class="tag" href="https://www.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
+]]></description><link>https://www.allenygy.vip/home.html</link><guid isPermaLink="false">Home.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 17 Nov 2024 18:33:17 GMT</pubDate></item><item><title><![CDATA[Sliding Window]]></title><description><![CDATA[<a class="tag" href="https://www.allenygy.vip/?query=tag:Experience" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Experience</a> 
  <br><br><a href="https://www.allenygy.vip?query=tag:Experience" class="tag" target="_blank" rel="noopener nofollow">#Experience</a> <br>
 <br>枚举右端点，挪动左端点
 <br>挪动左端点的判断条件一定枚举右端点出发的
@@ -1495,433 +1967,7 @@ public:
 <br><a data-tooltip-position="top" aria-label="Discretization" data-href="Discretization" href="https://www.allenygy.vip/Discretization" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">离散化</a><a data-tooltip-position="top" aria-label="Discretization" data-href="Discretization" href="https://www.allenygy.vip/algorithm/basic-algorithm/discretization.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">离散化</a>
 <br><a data-tooltip-position="top" aria-label="Binary Search" data-href="Binary Search" href="https://www.allenygy.vip/Binary Search" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">二分查找</a><a data-tooltip-position="top" aria-label="Binary Search" data-href="Binary Search" href="https://www.allenygy.vip/algorithm/basic-algorithm/binary-search.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">二分查找</a>
 <br><a data-tooltip-position="top" aria-label="Sliding Window" data-href="Sliding Window" href="https://www.allenygy.vip/Sliding Window" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">双指针</a><a data-tooltip-position="top" aria-label="Sliding Window" data-href="Sliding Window" href="https://www.allenygy.vip/algorithm/basic-algorithm/sliding-window.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">双指针</a>
-]]></description><link>https://www.allenygy.vip/algorithm/basic-algorithm/basic-algorithm-overview.html</link><guid isPermaLink="false">Algorithm/Basic Algorithm/Basic-Algorithm-overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 17 Nov 2024 17:35:00 GMT</pubDate></item><item><title><![CDATA[Compiler Syntax Analysis]]></title><description><![CDATA[ 
- <br><br>Syntax analysis is the second phase of a compiler.<br>
-<br>Take a stream of tokens from the lexer as input.
-<br>Analyze the structure of the tokens.
-<br>Detect syntax errors.
-<br>Out put a parsing tree to present the structure.
-<br>Use context-free grammar (CFG) for analysis.<br><br>Why CFG?
-
-<br>CFG is more powerful than regular expressions.
-<br>CFGs are not the most powerful formal language (see Chomsky hierarchy),
-<br>but CFGs are enough to describe the structures for most of the languages.
-
-<br><br>Context free grammar
-A Context free grammar is a , where
-
-<br> is a finite set called Variables
-<br> is a finite set, disjoint from , called the terminals,
-<br> is a finite set of production rules, with each rule being a variable  and a string  of  variables and terminals in the form , and
-<br> is the start variable.
-
-<br>The production rules are same as the rules in the regular definition.<br>We can use the rules to derive the strings in a context-free language.<br>Terminals are the symbols which cannot produce more symbols. In a compiler, they are tokens.<br>Variables only exists when the production is unfinished.<br>
-They are not symbols in the alphabet, neither tokens. Thus, they are not in the strings of the language.<br><br>For example,<br>
-<br> Variables
-<br> Terminals
-<br>
-<br>
-<br>The production rules can also be "combined" and rewritten as<br>
-<br><br>
-The symbol "|" is same as it is in regular expressions, meaning that there are multiple options.
-<br>The rules can be combined only if the LHS are the same.<br>
-Sometimes the set of production rules is enough to define a grammar because<br>
-<br>Variables can be obtained by looking at the LHS of each production rule,
-<br>Terminals are the symbols on the RHS of the rules excluding the variables, and
-<br>The start symbol is usually denoted by .
-<br>Then, the above grammar can be<br><br><br>Derivations
-Given a grammar , we can generate strings in the language  by using a derivation.<br>
-A derivation (informally) is a procedure to apply the production rules from the start symbol to a string which only contains terminals.
-<br>Each production is denoted by .<br>For example, given the grammar<br><br>left-most derivation, meaning that each iteration we replace the left most nonterminal.<br><br><br>Similarly, the right-most derivation replaces the right most nonterminal in each iteration.<br><br>Each sequence of nonterminals and tokens that we derive at each step is called a sentential form.<br>
-<br>
-The last sentential form only contains tokens and is called a sentence, which is a syntactically correct string in the programming language.
-
-<br>
-If  is a sentence and  is the start symbol, we can write<br>
-
-
-<br>
- means derive in zero or more steps. It also means the RHS is derivable by the LHS.
-
-<br>
-From the above example,<br>
-
-
-<br><br>The grammar  is ambiguous if there is a sentence in  from which it is possible to construct multiple parse trees (using any type of derivation).<br><br>Some properties
-
-<br>Each derivation (left-most, right-most, or otherwise) corresponds to exactly one parse tree, whether the grammar is ambiguous or not.
-<br>每个推导（无论是最左推导、最右推导或其他推导）对应唯一一个语法树，无论语法是否有歧义。
-<br>Each parse tree corresponds to multiple derivations, whether the grammar is ambiguous or not.<br>
-每个语法树可以对应多个推导，无论语法是否有歧义。
-<br>Each parse tree corresponds to exactly one left-most derivation and exactly one right-most derivation, whether the grammar is ambiguous or not.<br>
-每个语法树对应唯一的最左推导和最右推导。
-<br>All derivations of the same sentence correspond to the same parse tree if the grammar is not ambiguous.<br>
-如果语法没有歧义，同一语句的所有推导对应相同的语法树。
-<br>Multiple derivations of the same sentence may not correspond to the same parse tree if the grammar is ambiguous.<br>
-如果语法没有歧义，同一语句的所有推导对应相同的语法树。
-<br>In general, deciding a grammar is ambiguous or not is undecidable, or uncomputable (like the halting problem).
-<br>一般来说，判断一个语法是否有歧义是不可判定或不可计算的。
-
-<br><br>A compiler cannot use an ambiguous grammar because each input program must be parsed to a unique parse tree to show the structure.<br>To remove ambiguity in a grammar, we can transform it by hand into an unambiguous grammar.<br>
-This method is possible in theory but not widely used in practical because of the difficulty.<br>Most compilers use additional information to avoid ambiguity.<br><br><br><br>
-<br>
-To prove a language is not context-free, you need pumping lemma for context free languages.
-
-<br>
-To powerup the CFG/PDA, we can try again to add another stack to the machine, same as what we did to finite automata.
-
-<br>
-This upgrade is ultimate. A finite automata with two stacks is as powerful as a Turing machine, which is the most powerful computational model that human can implement right now.
-
-<br><br>Intuitively, a PDA is a finite automata plus a stack with some modifications on the transitions to fit stack behaviors.<br>
-<br>An NPDA is (formally) a 6-tuple , where
-
-<br> is a finite set of states,
-<br> is a finite set of the input alphabet,
-<br> is a finite set of the stack alphabet,
-<br> is the transition function,
-<br> is the start state, and
-<br> is the set of accept states.
-
-
-<br>For example, the context-free language  has grammar<br><br><br><br>
-<br>
-Now, we want to implement a parser which
-
-<br>takes a sequence of tokens as input;
-<br>analyze the structure of the input;
-<br>generates a parse tree; and
-<br>indicates the syntax errors if there is any.
-
-
-<br>
-There are two types of parsers:
-
-<br>top-down
-<br>bottom-up.
-
-
-<br>Top-down parsing tries to construct a sequence of tokens from the grammar which is same as the input.<br>
-Bottom-up parsing tries to match the input tokens with grammar rules.<br><br>Top-down parsing is only for a subset of context-free grammars.<br>
-<br>
-Top-down parsing means that we generate the parse tree from top to bottom.
-
-<br>
-Remember that the internal vertices in a parse tree are the nonterminals (variables), while the leaves are the terminals (tokens).
-
-<br>
-The parse tree construction depends on the production rules in the grammar.
-
-<br>
-If we want to construct the parse tree from top to bottom, the production rules have to be nicely designed.
-
-<br><br>The RHS of each production rule always starts from a different terminal. 	<br>
-The parsing on the left branch always finishes before the right branch.<br>For example, the following grammar parses single variable declarations (if we do not care about types here).<br><br><br>Suppose the input is .<br>
-The input tokens can be uniquely parsed into<br><br><br>However, our life cannot be that easy in most of cases.<br>
-<br>The previous grammar does not allow multiple variable declarations in one statement.
-<br>So, consider this grammar.<br><br><br>and try to parse <br>We have two different choices for the first derivation.<br><br>We cannot decide which production rule can be used for the derivation.<br>
-The parser will pick a valid rule randomly.<br>If the guess is wrong, the parser cannot proceed parsing on some input tokens and it will backtrack.<br>Actually, you have seen backtracking in other places … Depth First Search.<br>We can express the parsing by using a DFS tree.<br>
-<br>Each vertex in the tree is a valid sentential form (a stream of terminals and nonterminals). In this example, the stream to the RHS of  , given by a step number .
-<br>Each edge is defined by applying a production rule.
-<br>The minor difference here is that we don’t need to go back to the root (as DFS) when the parsing is finished.<br>Note that this DFS is different from the parse tree because a vertex presents a sentential form, which is equivalent to a (partial) parse tree.<br><img alt="DFS" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png" referrerpolicy="no-referrer"><br>Each nonterminal  is implemented by an individual function.<br>
-<br>Iterate on every rule starts with  on LHS.
-<br>Remember to resume the tokens when derivation fails.
-<br><img alt="Implementation" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/VM6ClD.png" referrerpolicy="no-referrer"><br>The parse tree generation can be done at Row 4 and Row 6, when the algorithm continues parsing.<br>You can also record the derivation rules and generate the parse tree when parsing is finished.<br>Resuming the parsed tokens at Row 9 can be implemented by a stack. When a token is matched with a terminal, push the token into the stack. When error occurs, we pop the tokens and put them back to the input.<br>The main routine starts from matching the start variable.<br>The parser reports syntax error when the main routine has tried all possible production rules. A syntax error can be<br>
-<br>the parser receives a token which cannot be parsed;
-<br>after processing all tokens, the parse is incomplete (some leaves are nonterminals); or
-<br>when the parsing is complete (all leaves are terminals), there are some tokens remained in the input.
-<br><br>
-<br>The implementation (in code) can be very complicated/ugly because it needs to try many production rules, imaging many try-catch scopes nested with each other.
-<br>It waste a lot of time on backtracking.
-<br>It needs additional space to store the tokens for resuming purpose.
-<br>In practical, nobody uses recursive descent parser.
-<br><br><br>To avoid backtracking, we want to design a parser which can guess the next token from the input.<br>A correct guess can let the parser uniquely choose a production rule for parsing.<br>The idea is using a temporary space to store some tokens in advanced, like a buffer. Then, use the buffered tokens to make decisions.<br>This technique is very similar to space-time trade-off in the dynamic programming, what we have learned in algorithms.<br>The time complexity of recursions with backtracking can go up to .<br>But, if we can choose rules uniquely, the time complexity becomes .<br><br>Consider the grammar<br><br><br><br>which is equivalent to the above one and try to parse <br>
-<br>
-In the first iteration, the parser has to use the rule .
-
-<br>
-In the second iteration, there are two production rules "" or " "
-
-<br>
-This uncertainty can be easily solved by just “looking” at the next token from the lexer. This token is called lookahead token.
-
-<br>
-Normally, when lexer returns a token to parser, the token is consumed. But the lookahead token remains in the input.
-
-<br>
-The lookahead token in this example is " ". So, the parser knows the rule is .
-
-<br>Because the parser reads tokens from left to right, does leftmost derivation, and looks at most one lookahead token(could not be a non-terminal); this parser/grammar is called  .<br>Some grammars may not be  .<br>
-<br>For example, the one we have seen.
-<br><br>
-<br>
-Looking one token ahead is insufficient for this grammar.
-
-<br>
- ; and  ,  agree on the first token.
-
-<br>
-If the lookahead token is “”, we cannot decide which rule will be used. Thus, to parse this grammar without recursions, the parser needs to look 2 tokens ahead.
-
-<br>This is  grammar.
-
-
-<br>In general, we can design  grammar, for constant .<br>In practical, more lookahead tokens make no big differences but increase the implementation difficulties.<br>More importantly,   grammar is already powerful enough.<br><br>Left-factoring is a grammar transformation to convert a grammar to  .<br>Back to the example,<br><br>is not  because the first token of the two rules are the same. One lookahead token is not enough to the two productions.<br>We can solve this issue by introducing a new nonterminal .  提取相同的token<br>And convert the grammar to<br><br><br>The new grammar is , which is equivalent to<br><br><br>This conversion is called left-factoring.<br>More formally, for each nonterminal  which has multiple productions starting with the same prefix :<br><br>where  is a non-empty sequence of grammar symbols (terminals and nonterminals),  and  are (possibly empty) sequences of grammar symbols.<br>Create a new nonterminal  and transform the rules as<br><br><br><br>Some grammars are not good enough even after left factoring.<br>
-<br>For example, again to parse the variable declaration
-<br><br><br>
-<br>No production rule has a same prefix on RHS. But lookahead tokens do not work.
-<br>Suppose, the parser at some point needs to derive the nonterminal .<br>One may try: if the lookahead token is , the parser uses <br>
-If the lookahead token is , it uses .<br>Be careful!   is a nonterminal but not a token. A lexer can never find such a lookahead token.<br>As a result,  ,  will never be used. Obviously, this is wrong.<br>The problem is cause by .$ The RHS starts from a nonterminal, which cannot be used to match with a lookahead token.<br>This type of grammar is called left recursive.<br>Note that this still left-most derivation. Left-most or right-most derivation is not related to grammar itself. It only relates to in which order we derive the nonterminals.<br>Formally, a left recursive grammar has a valid derivation  ,<br>
-where  is a nonterminal and  is a string of grammar symbols.<br>In general, a left recursive production rule has the form<br><br>This production can be derive <br>The parsing stops at  , and can produce as many  as possible.<br>So, we can let  derives  first and followed by some $.<br><br><br>Note that the production from   can be <br>
-But this is not <br>Formally, for each nonterminal  which has one or more productions with RHSs starting with the same nonterminal :<br><br>where  and  are (possibly empty) sequences of grammar symbols.<br>Create a new nonterminal  and transform the grammar as<br><br><br><br>Given the following grammar, try to do left factoring and eliminate left recursions.<br><br><br><br>Ans:<br><br><br><br><br><br>In the last example, the grammar is left associative before conversion, but becomes right associative after conversion.<br>This totally changes the structure of the parse tree for some expressions, like<br>
-“".<br>In fact, top-down parsing cannot solve this issue. We need to either use a bottom-up parser or be stuck into the implementation details.<br>There are also some unambiguous context-free grammar cannot be converted into   even after doing left factoring and left recursion elimination.<br>
-<br>For example, the one we used to show ambiguity elimination
-<br><br><br><br>After left factoring  becomes<br><br><br>Here are some last words about (recursive) predictive parsers.<br>
-<br>A predictive parser can always correctly predict what it has to do next.
-<br>Predictive parsers can always be implemented by a recursive parser without using lookahead tokens.
-<br>Without further specification, we consider recursive parsers and predictive parsers are the same.
-<br>One major disadvantages of (recursive) predictive parsers is that they are not very efficient in implementations. Each production rule is implemented as a function. The parser needs to make many function calls and returns, which consume a lot of resources.
-<br>To avoid the function calls, we introduce nonrecursive predictive parsers.<br><br>To avoid recursions, we introduce non-recursive predictive parsers.<br>Intuitively, predictions are required when a nonterminal has multiple production rules.<br>The predictions are based on the next token. One token is enough because we are parsing  grammars.<br>However, this method has troubles when the RHS of some rules start with nonterminals.<br>
-<br>For example
-<br><br><br><br>
-<br>We cannot decide whether we are going to use  or 𝐴 without looking at  and .
-<br>Thus, we can "preprocess" the grammar to find the first tokens derived by each nonterminal before parsing the tokens.<br>The result of preprocessing is presented by a table, called parsing table.<br>
-The rows are the nonterminals and the columns are terminals.<br>
-The entry  is a production rule  meaning that if the input token is , we will apply the rule .<br>
-The parser can parse the input tokens by checking the parsing table and using a stack.<br>This method is similar to the push-down automata but presented differently.<br>
-<br>Initially, push $ and  into the stack ( on top of $ ) where  is the first nonterminal.<br>
-Also insert $ to the end of the input stream of tokens.
-<br><br>
-<br>
-In each iteration,
-
-<br>Assume the next input token is ;
-<br>Pop the first item from the stack denoted by ;
-<br>If  is a terminal, then try to match it with the next input token ;
-<br>If  is a nonterminal, then  in the parsing table is a production rule, denoted by . Then, push everything in  to stack from right to left.
-
-
-<br>
-When the stack pops $ and all input tokens are consumed, the parsing halts.
-
-<br>
-$ is an artificial token, means the end of the stream.
-
-<br><br>Given the parsing table and try to parse<br><br><br><br>Some entries  in the parsing table are empty.<br>Meaning that id you try to parse the token  by a nonterminal , the parser returns an error message.<br>For example, assume the input tokens are , the parsing will be stuck somewhere in the middle.<br>The error handling will be discussed at the end.<br>Intuitively, a parsing table enumerates all possible tokens can be derived by a nonterminal.<br>When a parser reads a token from input, it has a unique production rule to apply.<br>Thus, we need to analyze the grammar and find the prefix (the first token) of all possible sentential form derived by each nonterminal.<br><br>By putting all the firstly produced tokens into a set, we defined  .<br>
-<br>For example,
-<br><br><br>
-<br> because 
-<br> because .
-<br> because .
-<br>  because .
-<br>Formally,  for each grammar symbol is computed by<br><img alt="Find_First" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/KoP6hF.png" referrerpolicy="no-referrer"><br>Note: each  on line 3-5 can be either a terminal or a nonterminal.<br><br>When a terminal produces , things get complicated.<br>
-<br>For example,
-<br><br><br><br>
-<br>The parser need to use the rule  to parse .
-<br>However,  is not an input token which can be used for making predictions.<br>To handle this case, we also define , the next token possibly derived by some rules after .<br>
-<br>
-In this example,  because .
-
-<br>
-When the parser receives  as the next token, it knows  is the correct rule.
-
-<br><img alt="Find_Follow" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/BtR5ed.png" referrerpolicy="no-referrer"><br><br>Recall the parsing table  is , where  is the number of nonterminals and  is the number of terminals.<br>The entry  is a production rule that the parser will apply when the current nonterminal is 𝐴 and the next token is .<br>For each production  in the (left factored, non-left recursive) grammar, do the following:<br>
-<br>For each token  in , add the grammar production  to 
-<br>If , then for each token  in , add  to 
-<br>All other entries in the table are left blank and correspond to a syntax error.
-<br>Note that Rule 2 is applied when  is   because  is in .<br>To create a parsing table for a non-recursive parser,<br>
-<br>eliminate any ambiguity from the grammar,
-<br>eliminate left recursion from the grammar,
-<br>left factor the grammar,
-<br>compute the  sets for all tokens and nonterminals,
-<br>compute the  sets for all nonterminals, and
-<br>use those  and  sets to construct the parsing table.
-<br><br><br>Back to the example in Top-Down Parsing. The following grammar is left-recursive.<br><br><br>Thus, top-down parsing needs to eliminate left recursion first.<br><br><br><br>However, the conversion changes the structure of some sentences, like .<br><br><br>Bottom-up parsing is more natural to human.<br>Think about how we analyze the arithmetic expressions.<br>
-First, we calculate the subexpression in parentheses or the operator of the highest precedence.<br>
-Then, the intermediate result will involve in the following calculations.<br>
-The procedure is not from left to right.<br>Same thing happens when we analyze sentences in a program.<br>To the parse tree construction, the bottom-up procedure starts from isolated leaves, merges some of them to form a subtree, and eventually constructs the entire tree by placing a root.<br>The parse tree generated by bottom-up has no difference with by top-down, the internal vertices are nonterminals and leaves are tokens.<br>In fact, you have seen the similar procedure in Algorithm – the construction of Huffman code.<br>Because the bottom-up parsing is an inverse of top-down paring, the basic strategy is to use the LHS of some production rules to replace the RHS after reading some input tokens.<br>Thus, in the bottom-up parsing, there are two basic operations.<br>
-<br>Shift
-
-<br>The parser needs to read more tokens from the input.
-<br>The tokens have already read are insufficient for any production rule.
-
-
-<br>Reduce
-
-<br>The parser has already read enough tokens.
-<br>It can replace the RHS by the LHS of some production rules.
-
-
-<br>The parser is called shift-reduce parser.<br>The parser also needs a stack to hold the tokens which are read but not consumed (reduced) yet.<br><br>
-<br>Let’s look at a small example first. Given the following grammar and try to parse .
-<br><br><br><br><br><br>The above example shows how bottom-up parsing works on a small instance.<br>However, to formally define a bottom-up parser, we need to generalize this procedure to all grammars. Many details will be discussed.<br>Even within this small example, careful reader may find the above procedure has some problems.<br>
-In Step2, we read b. Then, we immediately reduce 𝑏 to A in Step3.<br>
-But the thing is different in Step4. We read b again, but the parser waits until it reads another c and reduces Abc to A.<br>In general, similar to the predictive parser, there might be multiple options in bottom-up parsing. We need to clearly define which option is used under a certain condition.<br><br><br>There are many different ways to solve the above problem, like using recursions (Same as what we did in the predictive parsing, recursions simply enumerate all possible options.)<br>In this course, we only introduce  parsers (k lookahead tokens, LR parser for short) because<br>
-<br> parsers can be used to almost all (but not all) context-free grammars.
-<br>They are the most powerful non-backtracking shift-reduce parsers;
-<br>they can be implemented very efficiently; and
-<br>they are strictly more powerful than  grammars.
-<br>When a reduction is performed, the  of the production rule is already on the stack, which is some additional information to help decision making.<br>The parser puts state symbols into the stack to speedup checking the content on the stack.<br>Imaging that you want to check what’s on the given stack. You need to pop everything out, see if the content is same as what you want, then push everything back. This is very inefficient.<br>Thus, we use a state symbol to indicate the current content on the stack.<br>This symbol is called state symbol because it is exactly same the states in a DFA.<br>We can consider each state in a DFA means that "To reach this state, the input must be some specific strings."<br>Also, each  is corresponds to an , like a pair.<br>To parse a  grammar, you are also given a parsing table.<br>
-This parsing table again enumerates the actions the parser needs to take in all possible situations.<br>Each row in the table represents a state in PDA.<br>
-The columns are split into two individual fields: ACTION and GOTO.<br>
-<br>Each column in ACTION represents a terminal.
-<br>Each column in GOTO represents a nonterminal.
-<br>The value of the entry ACTION  shows the action taken by the parser when the current state is  and the input token is 
-<br>The value are of two types:
-
-<br> , meaning that the parser pushes the next input token into the stack and move to the state ;
-<br>, meaning that the parser reduces some (non)terminals using the production rule .
-
-
-<br>The value of the entry  is a state symbol,  for example, meaning that the parser goes to the state  after it reduces the stack uses a production rule , for some .
-<br>LR Parsing Algorithm
-
-<br>Put the special symbol $ at the end of the input.
-<br>Put state 0 at the bottom of the stack.
-<br>In each iteration, suppose the current configuration is , the current state is , and the next input token is .
-
-<br>If  is "shift S", then the next configuration is .	
-<br>If  is "reduce ", then the next configuration is , where  and . At the same time, the parser outputs .
-<br>If   is "accept" and the current configuration is  , where  is the start symbol of the grammar, the parser accepts the input.
-<br>For all other cases, like   is blank, the parser finds a syntax error and switch to error recovery.
-
-
-
-<br><br><br><br><br>Previously, we have introduced the  parsing algorithm using the parsing table.<br>
-Now, the question is how to construct a parsing table for a given context-free grammar.<br>In fact, there are many ways to construct a parsing table for different 𝐿𝑅 parsers:<br>, ,,  etc. (by increasing power).<br>For  with  are not used in practice because of the complexity.<br>We will focus on  (simple ), then move on to  ,   , and  .<br><br>To construct an  parsing table, we do three things<br>
-<br>augment the context-free grammar;
-<br>construct a DFA based on the computation of set of items;
-<br>represent the DFA using the transition table;
-<br>The construction in  is very similar to transforming an NFA to a DFA, except that it will be based on sets of items of the same behavior instead of sets of NFA states.<br><br>Given a grammar with a start symbol .<br><br><br>we construct the corresponding augmented grammar by artificially introducing a nonterminal  and a production rule.<br><br><br><br>This artificial production rule seems to be useless, but it guarantees that the parser accepts the input when it reduces using .<br><br>The  items are originally defined for   parser, but do the same thing in  .<br>An  item (item, for short)is simply a grammar production with a dot somewhere in its RHS.<br>
-<br>For example, the production  can create 4 items 
-<br><br><br><br><br>As a special case, the production  only generates <br>Each item represents a state that the parser is currently in.<br>
-If the parser is in the state corresponding to , it means the parser has already push  into the stack and expects to match  from the input.<br>If  is a nonterminal and the grammar also has a production , then the parser also expects to see .<br>Thus, the parser state corresponds to  correspond .<br><br>Keep this intuition in mind, we find the closure of a set of items  recursively using the following algorithm.<br>
-<br>
-Every item in  is in .
-
-<br>
-If  is an item in  and if  is a production, where  and  are nonterminals and ,  , and  are any sequence of terminals and nonterminals, then add the item  to .
-
-<br>
-Repeat the above two steps until  does not change.
-
-<br>
-For example,
-
-<br><br><br><br><br><br><br>Then, we define  function.<br>For all the items of the form  in a set of items , where  is an arbitrary grammar symbol (token or nonterminal), we define  as the closure of the set of items of the form .<br>
-<br>
-For example, given the set of items , to find :
-
-<br>the item  does not create any new item by taking "+";
-<br>the item  implies the new item 
-
-
-<br>
-Thus,
-
-<br><br><br>更新时，当一个token 时non-terminal 时，继续传递<br><br><br>Next, we construct the DFA to decide the tokens in the stack.<br>
-This method is called set-of-items construction algorithm.<br>
-Each set of items  represents a state in the DFA.<br>
-<br>Compute  and add the unmarked  to ,  where  is the start symbol of the augmented grammar and  is the set of DFA states.
-<br>While there is an unmarked DFA state , do the following:
-
-<br>For each grammar symbol , do the following:
-
-<br>Compute the DFA state .
-<br>If  and  then add the unmarked  to .
-<br>If  then define .
-
-
-<br>Mark  in .
-
-
-<br><br>For example,<br><br><br>Initially, <br><br>Then, we consider the  function from  by taking each grammar symbol.<br>
-<br>For :<br>
-
-<br><br>Thus, <br>
-<br>
-<br>Similarly,<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-DFA
-
-
-
-<br>In the following,  will be omitted for symbol .<br>
-Consider the  function for <br>
-<br>
-<br><br>
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br> and  are omitted because they are  for all .
-DFA
-
-
-
-<br><br>We continue computing the  function from new states:<br>
-<br>
-
-
-<br>
-
-
-<br>
-
-
-<br>
-
-
-<br><br>
-<br>
-
-
-<br>
-
-
-<br>
-
-
-<br><br>
-<br>
-
-
-<br>
-
-
-<br><br><br>In the last iteration<br>
-<br>
-<br><br>Here is the list of sets of items.<br><br><br>In the DFA we constructed above, we don’t need final states.<br>
-Because we use states to show the content in the stack.<br>
-And the stack is reduced if DFA reaches a final state.<br>
-More interestingly, a state, together with the string to reach the state, form a pair in the configuration.<br><br><br>First, we construct the  part of a  parsing table.<br>
-<br>If  (where  is a token) is an item in the set of items  and , then set  to "shift j".
-<br>If  is an item in the set of items , then set  to "reduce " for all  in .
-<br>If  (where S' is the start symbol of the augmented grammar) is an item in the set of items , then set  to accept.
-<br>For item 2, we give a number to each grammar production  and put in the table "reduce" followed by the production's number.<br>Then, we construction the  part.<br>
-<br>If , where  is a nonterminal, then set  to ""
-<br><br>Here are the steps to create a parsing table for an  parser:<br>
-<br>Eliminate any ambiguity from the grammar.
-
-<br>Eliminate left recursion from the grammar.
-<br>Left factor the grammar.
-
-
-<br>Augment the grammar with a new start symbol. 
-<br>Compute the sets of items for the grammar and build the corresponding DFA.
-<br>Number the grammar productions.
-<br>Compute the  sets for all tokens and nonterminals.
-<br>Compute the  sets for all nonterminals.
-<br>Use the sets of items, DFA, and the  sets to construct the parsing table.
-]]></description><link>https://www.allenygy.vip/compiler-construction/lecture/compiler-syntax-analysis.html</link><guid isPermaLink="false">Compiler Construction/Lecture/Compiler Syntax Analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 17 Nov 2024 09:00:34 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/yDXF14.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[DGIM]]></title><description><![CDATA[ 
+]]></description><link>https://www.allenygy.vip/algorithm/basic-algorithm/basic-algorithm-overview.html</link><guid isPermaLink="false">Algorithm/Basic Algorithm/Basic-Algorithm-overview.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Sun, 17 Nov 2024 17:35:00 GMT</pubDate></item><item><title><![CDATA[DGIM]]></title><description><![CDATA[ 
  <br><br>Please describe the mechanism of DGIM. How the error bound is estimated? Is there a way to further reduce this error bound. Submit your response online within the allow time frame.<br>Mechanism<br>When a new bit comes in, drop the last (oldest) bucket if its end-time is prior to N time units before the current time.<br>2 cases: Current bit is 0 or 1<br>
 If the current bit is 0:<br>
 <br>no other changes are needed
@@ -2576,8 +2622,7 @@ c. <br><br>Let  Convert the regular expression &nbsp;to an NFA. (10 marks)<br><i
 <br><br> and  act in the same way, Thus  and  should be in the same group.<br><br>Finally, the minimized DFA is:<br><br>
 <br>
 <br>
-	<br><img alt="4-b-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/9jcEQZ.png" referrerpolicy="no-referrer"><br><br>Consider a new alphabet <br><br><img alt="5-a-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/iXEqxf.png" referrerpolicy="no-referrer"><br><br>]]></description><link>https://www.allenygy.vip/compiler-construction/assignment/compiler-as-1.html</link><guid isPermaLink="false">Compiler Construction/Assignment/Compiler-As-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 05 Nov 2024 16:44:27 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/O1JjaA.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/O1JjaA.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Compiler Lexical Analysis]]></title><description><![CDATA[ 
- <br><br><br><br><br><br><br>]]></description><link>https://www.allenygy.vip/compiler-construction/lecture/compiler-lexical-analysis.html</link><guid isPermaLink="false">Compiler Construction/Lecture/Compiler Lexical Analysis.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Wed, 13 Nov 2024 02:49:31 GMT</pubDate></item><item><title><![CDATA[Compiler Introduction]]></title><description><![CDATA[ 
+	<br><img alt="4-b-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/9jcEQZ.png" referrerpolicy="no-referrer"><br><br>Consider a new alphabet <br><br><img alt="5-a-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/iXEqxf.png" referrerpolicy="no-referrer"><br><br>]]></description><link>https://www.allenygy.vip/compiler-construction/assignment/compiler-as-1.html</link><guid isPermaLink="false">Compiler Construction/Assignment/Compiler-As-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 05 Nov 2024 16:44:27 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/O1JjaA.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/O1JjaA.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Compiler Introduction]]></title><description><![CDATA[ 
  <br><br>Compiler Definition
 A compiler is a program that reads a program written in one programming language (the source language) and translates it into an equivalent program in another programming language (the target language).
 <br><img alt="Compiler" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/b5MFWx.png" referrerpolicy="no-referrer"><br>
@@ -25214,24 +25259,7 @@ When a user requests data, the application first checks the Redis cache. If the 
 <br><a data-tooltip-position="top" aria-label="https://www.softwaretestinghelp.com/hybrid-database/" rel="noopener nofollow" class="external-link" href="https://www.softwaretestinghelp.com/hybrid-database/" target="_blank">What Is Hybrid Database? List Of The Best Hybrid Databases</a>
 <br><a data-tooltip-position="top" aria-label="https://medium.com/@gouri.benni/an-overview-on-a-hybrid-database-approach-using-graph-and-relational-database-fb216e0a24f1" rel="noopener nofollow" class="external-link" href="https://medium.com/@gouri.benni/an-overview-on-a-hybrid-database-approach-using-graph-and-relational-database-fb216e0a24f1" target="_blank">An Overview on “A Hybrid Database Approach Using Graph and Relational Database”</a>
 <br><a data-tooltip-position="top" aria-label="https://ieeexplore.ieee.org/document/7887957" rel="noopener nofollow" class="external-link" href="https://ieeexplore.ieee.org/document/7887957" target="_blank">MySQL and NoSQL database comparison for IoT application</a>
-]]></description><link>https://www.allenygy.vip/research/database/sql-and-nosql-integration.html</link><guid isPermaLink="false">Research/DataBase/SQL and NoSQL Integration.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 05 Nov 2024 16:44:27 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[TOC-As-1]]></title><description><![CDATA[ 
- <br><br><br><br>Construct a counting procedure as below:<br><img style="zoom:67%;" alt="1-a-counting-procedure" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/8aSjkC.png" referrerpolicy="no-referrer"><br>Each pair corresponds to a unique natural number.<br>
-Therefore  is countalbe<br><br><br>If  is a finite set with  element;<br>Then  which is finite. Therefore  is countable.<br><br>If  is a infinite and countable set;<br>
-Then there must be a bijection between  and .<br>And for 2 countable sets  ,  is also a countable set.<br>For any element   , we can write   and    for some  .<br>Therefore,    corresponds to the pair   , which in turn corresponds to the natural number pair  .<br>To establish a one-to-one correspondence, we can use a pairing function that maps each pair    to a unique natural number  k .<br><br>Therefore,  is countable.<br>Since  n times.<br>And  is countable.<br>Therefore  is countable.<br><br>Solution:<br><br><img alt="Solution" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/eEmBAw.png" referrerpolicy="no-referrer"><br><br>Suppose a real number   denote as . Then we build the table as below:<br><br>Next we define a real number  such that<br>
-.  We can see a xis not in the list!<br>
-<br> and  are different at digit 0.
-<br> and  are different at digit 1.
-<br> and  are different at digit 2.
-<br> and  are different at digit 3.<br>
-
-<br>Thus,  is not counted and set of reals in (0, 10) is uncountable.<br><br>Assume that the set of functions from  to  is countable. 	<br>Suppose all such functions can be listed as .<br>Define a function  such that .<br>
-This ensures that   differs from each  at least at position .<br>Since  is not equal to any  in the list, this contradicts the assumption that we have listed all possible functions.<br>Therefore, the set of functions from  to  is uncountable.<br><br>Prove the followings.(1 pt for each)<br><br><br><br>Two sets are isomorphic if they are of the same cardinality. Prove that the number of DFA's (without specifying ) is countable up to set isomorphism.<br><br>Let  Construct a DFA for each of the following languages. (10 pt for each)<br><br><br><img style="zoom:67%;" alt="3-a-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/RUB7TX.png" referrerpolicy="no-referrer"><br><br><br><img style="zoom:67%;" alt="3-b-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/HXpAK1.png" referrerpolicy="no-referrer"><br><br><br><img style="zoom:67%;" alt="3-c-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/mblQ2d.png" referrerpolicy="no-referrer"><br><br><br><img style="zoom: 67%;" alt="3-d-DFA" src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/CUkK9k.png" referrerpolicy="no-referrer"><br><br>Let  be an arbitrary DFA. We construct a new DFA  as . We need to prove that .<br>Proof<br>Language of :<br>
-The language accepted by  is:<br><br>Language of :<br>
-The language accepted by  is:<br><br>Language of :<br>
-The language accepted by  is:<br><br>Therefore,   can not be accepted by .<br>
-Because, <br>
-Therefore, , which can be accepted by .<br>
-So, .]]></description><link>https://www.allenygy.vip/theory-of-computation/assignment/toc-as-1.html</link><guid isPermaLink="false">Theory Of Computation/Assignment/TOC-As-1.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 05 Nov 2024 16:44:27 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/8aSjkC.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/AllenYGY/ImageSpace@main/uPic/8aSjkC.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Tools/Docker/Docker]]></title><description><![CDATA[ 
+]]></description><link>https://www.allenygy.vip/research/database/sql-and-nosql-integration.html</link><guid isPermaLink="false">Research/DataBase/SQL and NoSQL Integration.md</guid><dc:creator><![CDATA[AllenYGY]]></dc:creator><pubDate>Tue, 05 Nov 2024 16:44:27 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ALLENYGY/ImageSpace@master/IMAGE/Database/202407101124185.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Tools/Docker/Docker]]></title><description><![CDATA[ 
  <br><br><br>
 <br>镜像: Image  定义了容器如何构建
 <br>容器: Container  容器是独立运行的一个或一组应用，是镜像运行时的实体
