@@ -1,6 +1,6 @@
 {
   "vaultName": "NOTE",
-  "lastExport": 1735216517644,
+  "lastExport": 1735289848045,
   "pluginVersion": "1.8.03",
   "validBodyClasses": "publish css-settings-manager theme-dark native-scrollbars show-inline-title show-ribbon outliner-plugin-dnd primary-accent-purple secondary-accent-green",
   "useCustomHeadContent": false,
@@ -11,9 +11,9 @@
     "Algorithm/Basic Algorithm/Binary Search.md",
     "Algorithm/Basic Algorithm/Basic-Algorithm-overview.md",
     "Algorithm/DAA/Algorithm/Union-Find.md",
-    "Algorithm/DAA/Algorithm/Enumeration-subset.md",
-    "Algorithm/DAA/Algorithm/Graph-algorithm.md",
     "Algorithm/DAA/Algorithm/Sort.md",
+    "Algorithm/DAA/Algorithm/Graph-algorithm.md",
+    "Algorithm/DAA/Algorithm/Enumeration-subset.md",
     "Algorithm/DAA/Algorithm/Enumeration.md",
     "Algorithm/DAA/Algorithm/Divide-and-Conquer.md",
     "Algorithm/DAA/Assignment/DAA-Programming-Assignment.md",
@@ -24,9 +24,9 @@
     "Algorithm/DSA/Assignment/DSA-As-2.md",
     "Algorithm/DSA/Assignment/DSA-AS-1.md",
     "Algorithm/DSA/Assignment/DSA-AS-am.md",
-    "Algorithm/DSA/AVL.md",
     "Algorithm/DSA/BinaryTree.md",
     "Algorithm/DSA/B+Tree.md",
+    "Algorithm/DSA/AVL.md",
     "Algorithm/DSA/Fenwick.md",
     "Algorithm/Graph/Graph-Overview.md",
     "Algorithm/NumberTheory/Prime-Sieve.md",
@@ -35,10 +35,10 @@
     "Algorithm/Recursion/递归-二叉树.md",
     "Algorithm/String/Z-Function.md",
     "Algorithm/String/Tire-Tree.md",
+    "Algorithm/String/KMP.md",
     "Algorithm/String/String-Overview.md",
     "Algorithm/String/Manacher-Algorithm.md",
     "Algorithm/String/Aho-Corasick.md",
-    "Algorithm/String/KMP.md",
     "Algorithm/Algorithm.md",
     "Bioinfo/Assignment/As-1/Bioinfo-Assignment-1.md",
     "Bioinfo/Lab/Lab-1/Pairwise-sequence-alignment.md",
@@ -47,10 +47,6 @@
     "Bioinfo/Lab/Lab-2/DE_genes.csv",
     "Bioinfo/Lab/Lab-3/Bioinfo-Lab-3.md",
     "Bioinfo/Lab/Lab-4/Bioinfo-Lab-4.md",
-    "Bioinfo/Bioinfo-Network.md",
-    "Bioinfo/Bioinfo-Matrix-Operations.md",
-    "Bioinfo/Bioinfo-Project.md",
-    "Bioinfo/Bioinfo-Midterm-Review.md",
     "Compiler Construction/Assignment/Compiler-As-3.md",
     "Compiler Construction/Assignment/Compiler-As-2.md",
     "Compiler Construction/Assignment/Compiler-As-1.md",
@@ -63,12 +59,12 @@
     "Compiler Construction/Lecture/01-Compiler Introduction.md",
     "Compiler Construction/Project/Compiler-Project-Language-Features.md",
     "Computer Network/Assignment/DCN-As-1.md",
-    "Computer Network/Lecture/DCN Review.md",
     "Computer Network/Lecture/USTC L1.md",
-    "Computer Network/Lecture/04-Network Layer.md",
+    "Computer Network/Lecture/DCN Review.md",
     "Computer Network/Lecture/07-Standardized Networks.md",
     "Computer Network/Lecture/06-Application Layer.md",
     "Computer Network/Lecture/05-Transport Layer.md",
+    "Computer Network/Lecture/04-Network Layer.md",
     "Computer Network/Lecture/03-Data Link Layer.md",
     "Computer Network/Lecture/02-Physical Layer.md",
     "Computer Network/Lecture/01-Basic Concepts.md",
@@ -78,20 +74,20 @@
     "Computer Organization/Assignment/Assignment-2/CO-Assignment-2.md",
     "Computer Organization/Assignment/Assignment-2/logic.png",
     "Computer Organization/Assignment/Assignment-2/k-map.png",
-    "Computer Organization/Assignment/Assignment-2/StateDiagram-1.drawio",
     "Computer Organization/Assignment/Assignment-2/statediagram.png",
     "Computer Organization/Assignment/Assignment-2/statediagram-2.png",
     "Computer Organization/Assignment/Assignment-2/logic.drawio",
     "Computer Organization/Assignment/Assignment-2/co-as2.png",
     "Computer Organization/Assignment/Assignment-2/StateDiagram-2.drawio",
+    "Computer Organization/Assignment/Assignment-2/StateDiagram-1.drawio",
     "Computer Organization/Assignment/Assignment-2/K-MAP.drawio",
     "Computer Organization/Assignment/Assignment-3/CO-Assignment-3.md",
     "Computer Organization/Assignment/Assignment-4/CO-Assignment-4.md",
-    "Computer Organization/Lab/CO-Lab3.md",
+    "Computer Organization/Lab/CO-Lab5.md",
+    "Computer Organization/Lab/CO-Lab6.md",
     "Computer Organization/Lab/CO-Lab8.md",
     "Computer Organization/Lab/CO-Lab7.md",
-    "Computer Organization/Lab/CO-Lab6.md",
-    "Computer Organization/Lab/CO-Lab5.md",
+    "Computer Organization/Lab/CO-Lab3.md",
     "Computer Organization/Lab/CO-Lab2.md",
     "Computer Organization/Lecture/11-From-Machine-Language-to-Assembly-Language.md",
     "Computer Organization/Lecture/10-ISA.md",
@@ -100,8 +96,8 @@
     "Computer Organization/Lecture/07-Circuit-Design.md",
     "Computer Organization/Lecture/06-From-Gates-to-Circuits-II-Sequential-Circuits.md",
     "Computer Organization/Lecture/03-Boolean-Algebra-from-Bits-to-Logic.md",
-    "Computer Organization/Lecture/05-From-Gates-to-Circuits-I-Combinational-Circuits.md",
     "Computer Organization/Lecture/04-From-Transistors-to-Gates.md",
+    "Computer Organization/Lecture/05-From-Gates-to-Circuits-I-Combinational-Circuits.md",
     "Computer Organization/Lecture/02-Bits Data Representation and Manipulation.md",
     "Computer Organization/Lecture/01-What is a Computer.md",
     "Computer Organization/Computer Organization Overview.md",
@@ -115,8 +111,8 @@
     "Computer Vision/Lecture/CV-Generate Model.md",
     "Computer Vision/Lecture/CV-Neural Network.md",
     "Computer Vision/Lecture/CV-Object Detection.md",
-    "Computer Vision/Lecture/CV-Signal and Image Processing.md",
     "Computer Vision/Lecture/CV-Weight Initialization.md",
+    "Computer Vision/Lecture/CV-Signal and Image Processing.md",
     "Computer Vision/Lecture/CV-Normalization Methods.md",
     "Computer Vision/Lecture/CV-Fourier Transformation.md",
     "Computer Vision/Lecture/CV-Convolutional and image filtering.md",
@@ -125,13 +121,13 @@
     "Computer Vision/CV-Review.md",
     "Computer Vision/Computer Vision Overview.md",
     "Computer Vision/CV-Slides-Review.md",
-    "Contest/Lanqiao/Train-1.md",
     "Contest/Lanqiao/Train-2.md",
+    "Contest/Lanqiao/Train-1.md",
     "Contest/Leetcode/Weekly-Contest-402.md",
     "Contest/Leetcode/Weekly-Contest-403.md",
-    "Contest/Leetcode/Biweekly-Contest-122.md",
     "Contest/Leetcode/Weekly-Contest-381.md",
     "Contest/Leetcode/Biweekly-Contest-123.md",
+    "Contest/Leetcode/Biweekly-Contest-122.md",
     "Contest/Leetcode/Biweekly-contest-133.md",
     "Data Analysis/Big Data Analysis/Lab/BDA-Lab-3.md",
     "Data Analysis/Big Data Analysis/Lab/BDA-Lab-2.md",
@@ -159,16 +155,16 @@
     "Database Management System/Assignment/RDBMS-As-1.md",
     "Database Management System/Assignment/NoSQL-As-2.md",
     "Database Management System/Assignment/NoSQL-As-1.md",
+    "Database Management System/MySQL/03-Join.md",
     "Database Management System/MySQL/10-Advanced-SQL.md",
+    "Database Management System/MySQL/01-Basic-MySQL.md",
     "Database Management System/MySQL/09-Division-and-Correlated-Subquery.md",
     "Database Management System/MySQL/08-Set-Operation-&-Where-Subquery.md",
-    "Database Management System/MySQL/06-Data-Modification.md",
     "Database Management System/MySQL/07-Null-Subquery.md",
+    "Database Management System/MySQL/06-Data-Modification.md",
     "Database Management System/MySQL/05-Data-Definition.md",
     "Database Management System/MySQL/04-Aggregation.md",
-    "Database Management System/MySQL/03-Join.md",
     "Database Management System/MySQL/02-Cross-table-Query.md",
-    "Database Management System/MySQL/01-Basic-MySQL.md",
     "Database Management System/MySQL/Set-Operation-&-Where-Subquery.md",
     "Database Management System/MySQL/Division-and-Correlated-Subquery.md",
     "Database Management System/NoSQL/Redis.md",
@@ -211,20 +207,20 @@
     "Deep Learning/Prompting and In Context Learning.md",
     "Deep Learning/Fine-Tuning.md",
     "Deep Learning/Deep Learning.md",
-    "Deep Learning/Activation Function.md",
     "Deep Learning/Attention.md",
-    "English/IELTS/Listen/Listen-1.md",
+    "Deep Learning/Activation Function.md",
     "English/IELTS/Listen/IELTS-Map.md",
+    "English/IELTS/Listen/Listen-1.md",
     "English/IELTS/Speak/Part-2/IELTS ORAL TEST Part-2.md",
     "English/IELTS/Speak/Part-2/IELTS ORAL TEST Part-2 Video.md",
     "English/IELTS/Speak/Record/Part 1/IELTS ORAL TEST Part-1.md",
     "English/IELTS/Speak/IELTS-SPEAK-OVERVIEW.md",
-    "English/IELTS/Write/Task1/Dynamic Charts.md",
     "English/IELTS/Write/Task1/Static Charts.md",
     "English/IELTS/Write/Task1/Map Charts.md",
     "English/IELTS/Write/Task1/IELTS-Write-Task1.md",
-    "English/IELTS/Write/Task1/IELTS-Write-Task-1-Exercise.md",
     "English/IELTS/Write/Task1/IELTS-Write-Task-1-Material.md",
+    "English/IELTS/Write/Task1/IELTS-Write-Task-1-Exercise.md",
+    "English/IELTS/Write/Task1/Dynamic Charts.md",
     "English/IELTS/Write/Task1/Flow Charts.md",
     "English/IELTS/Write/Task2/Exercise/Robots.md",
     "English/IELTS/Write/Task2/Exercise/Retirement Community.md",
@@ -237,10 +233,8 @@
     "English/IELTS/Write/Task2/IELTS Write Task2 Environment.md",
     "English/IELTS/Write/Task2/IELTS Write Substitute word.md",
     "English/IELTS/Write/Task2/IELTS Task2 Template.md",
-    "Machine Learning/Assignment/ML-As-5.md",
     "Machine Learning/Assignment/ML-As-1.md",
     "Machine Learning/Assignment/ML-As-2.md",
-    "Machine Learning/Assignment/ML-As-4.md",
     "Machine Learning/Assignment/ML-As-3.md",
     "Machine Learning/Lecture/ML-Regression.md",
     "Machine Learning/Lecture/ML-Distance Measure.md",
@@ -258,12 +252,10 @@
     "Machine Learning/Lecture/ML-Navie Bayes.md",
     "Machine Learning/Lecture/ML-Cross Validation.md",
     "Machine Learning/Lecture/ML-Bayesian Estimation.md",
-    "Machine Learning/Project/ML-pre.md",
-    "Machine Learning/Project/Comment Filtering System.md",
     "Machine Learning/ML-Cheat-Sheet.md",
-    "Math/Discrete Structure/Assignment/Discrete Mathematics Assignment-7.md",
     "Math/Discrete Structure/Assignment/Discrete Mathematics Tutorial.md",
     "Math/Discrete Structure/Assignment/Discrete Mathematics Assignment-8.md",
+    "Math/Discrete Structure/Assignment/Discrete Mathematics Assignment-7.md",
     "Math/Discrete Structure/Assignment/Discrete Mathematics Assignment-6.md",
     "Math/Discrete Structure/Assignment/Discrete Mathematics Assignment-5.md",
     "Math/Discrete Structure/Assignment/Discrete Mathematics Assignment-3.md",
@@ -271,43 +263,32 @@
     "Math/Discrete Structure/Lecture/tree.md",
     "Math/Discrete Structure/Lecture/sets-and-n-tuple.md",
     "Math/Discrete Structure/Lecture/representing-graph-and-connectivity.md",
-    "Math/Discrete Structure/Lecture/propositional-logic.md",
     "Math/Discrete Structure/Lecture/relation.md",
-    "Math/Discrete Structure/Lecture/logic-circuits.md",
+    "Math/Discrete Structure/Lecture/propositional-logic.md",
     "Math/Discrete Structure/Lecture/propositional-equivalence.md",
+    "Math/Discrete Structure/Lecture/logic-circuits.md",
     "Math/Discrete Structure/Lecture/graph-theory.md",
     "Math/Discrete Structure/Lecture/functions-sequence-and-summations.md",
     "Math/Discrete Structure/Lecture/counting-principles.md",
     "Math/Discrete Structure/Lecture/boolean-expressions.md",
-    "Math/Discrete-Structure/assignment/discrete-mathematics-tutorial.md",
-    "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-8.md",
-    "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-7.md",
-    "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-6.md",
-    "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-5.md",
-    "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-3.md",
-    "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-2.md",
-    "Math/Discrete-Structure/lecture/representing-graph-and-connectivity.md",
-    "Math/Discrete-Structure/lecture/functions-sequence-and-summations.md",
     "Math/Linear Algebra/Vector Space.md",
+    "Math/Linear Algebra/Eigen-Decomposition-Review.md",
     "Math/Linear Algebra/Product.md",
     "Math/Linear Algebra/Orthogonality.md",
     "Math/Linear Algebra/Matrix Operation.md",
     "Math/Linear Algebra/Linear Transformations.md",
     "Math/Linear Algebra/Judgment.md",
     "Math/Linear Algebra/Eigenvalues and Eigenvectors.md",
-    "Math/Linear Algebra/Eigen-Decomposition-Review.md",
     "Math/Optimization/Lagrange Multipliers.md",
+    "Math/Probability Statistics/Poisson-Distribution-Midterm-Pre.md",
     "Math/Probability Statistics/Probability-Theory.md",
-    "Math/Probability Statistics/Poisson-Distribution.md",
-    "Math/Probability Statistics/Hypothesis-Testing-Two-Population.md",
     "Math/Probability Statistics/Hypothesis-Testing-Single-Population.md",
+    "Math/Probability Statistics/Hypothesis-Testing-Two-Population.md",
     "Math/Probability Statistics/Confidence-Interval.md",
     "Math/Probability Statistics/Chi-Square-Tests.md",
-    "Math/Probability-Statistics/Hypothesis-Testing-Two-Population.md",
-    "Math/Probability-Statistics/Hypothesis-Testing-Single-Population.md",
     "Math/Math.md",
-    "Operating System/Extend/NJU OS PA0.md",
     "Operating System/Extend/Linux Basic Operation.md",
+    "Operating System/Extend/NJU OS PA0.md",
     "Operating System/Lecture/10-File System Implementation.md",
     "Operating System/Lecture/09-File System Interface.md",
     "Operating System/Lecture/08-Virtual Memory.md",
@@ -326,18 +307,18 @@
     "Programming/Cpp/Priority-Queue.md",
     "Programming/Cpp/Map.md",
     "Programming/Cpp/Iota.md",
-    "Programming/Cpp/Bitest.md",
     "Programming/Cpp/Algorithm-Library.md",
+    "Programming/Cpp/Bitest.md",
     "Programming/Java/Generics/generics.java",
     "Programming/Java/Interfaces/usb.java",
     "Programming/Java/Interfaces/testdemo.java",
     "Programming/Java/Interfaces/printer.java",
-    "Programming/Java/Interfaces/computer.java",
     "Programming/Java/Interfaces/phone.java",
+    "Programming/Java/Interfaces/computer.java",
     "Programming/Java/Lecture/Unified Modeling Language.md",
+    "Programming/Java/Lecture/Inheritance.md",
     "Programming/Java/Lecture/Java Programming Essentials.md",
     "Programming/Java/Lecture/Java Introduction.md",
-    "Programming/Java/Lecture/Inheritance.md",
     "Programming/Java/Lecture/Exception Handling.md",
     "Programming/Java/Lecture/Creating Java Classes.md",
     "Programming/Java/Lecture/Array and Generics.md",
@@ -347,11 +328,11 @@
     "Programming/Java/test/printer.java",
     "Programming/Java/test/phone.java",
     "Programming/Java/test/computer.java",
-    "Programming/Java/tostringandequalsmethods/test2.java",
     "Programming/Java/tostringandequalsmethods/test4.java",
     "Programming/Java/tostringandequalsmethods/test3.java",
-    "Programming/Java/tostringandequalsmethods/person.java",
+    "Programming/Java/tostringandequalsmethods/test2.java",
     "Programming/Java/tostringandequalsmethods/student.java",
+    "Programming/Java/tostringandequalsmethods/person.java",
     "Programming/Javascript/quick-start.md",
     "Programming/Python/python-exceptions.md",
     "Programming/Python/python-environment-management.md",
@@ -467,7 +448,10 @@
     "lib/styles/global-variable-styles.css",
     "lib/styles/supported-plugins.css",
     "lib/styles/main-styles.css",
-    "lib/styles/snippets.css"
+    "lib/styles/snippets.css",
+    "data-analysis/big-data-analysis/peoject/workflow.png",
+    "data-analysis/big-data-analysis/peoject/auto-encoder-loss.png",
+    "data-analysis/big-data-analysis/peoject/auto-encoder-distribution.png"
   ],
   "mainDependencies": [
     "lib/fonts/94f2f163d4b698242fef.otf",
@@ -1404,12 +1388,6 @@
       "exportedPath": "math/probability-statistics/chi-square-tests.html",
       "dependencies": []
     },
-    "Math/Probability Statistics/Poisson-Distribution.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 4771,
-      "exportedPath": "math/probability-statistics/poisson-distribution.html",
-      "dependencies": []
-    },
     "Math/Probability Statistics/Hypothesis-Testing-Two-Population.md": {
       "modifiedTime": 1735216517644,
       "sourceSize": 5014,
@@ -1651,14 +1629,14 @@
       "dependencies": []
     },
     "Archive.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 16159,
+      "modifiedTime": 1735289692485,
+      "sourceSize": 16152,
       "exportedPath": "archive.html",
       "dependencies": []
     },
     "Class.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 19317,
+      "modifiedTime": 1735289692485,
+      "sourceSize": 19310,
       "exportedPath": "class.html",
       "dependencies": []
     },
@@ -1681,301 +1659,301 @@
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 459523,
+      "modifiedTime": 1735289848045,
+      "sourceSize": 438599,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 50167,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/scripts/easy-notice.js": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 2716,
       "exportedPath": "lib/scripts/easy-notice.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/img-zoom.js": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 4157,
       "exportedPath": "lib/scripts/img-zoom.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 154284,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 2067292,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 320625,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 385,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 1014,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 23492,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1735216517644,
+      "modifiedTime": 1735289848045,
       "sourceSize": 12705,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
@@ -2017,8 +1995,8 @@
       "dependencies": []
     },
     "Theory Of Computation/Lecture/07-TOC-PDA.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 122,
+      "modifiedTime": 1735289692485,
+      "sourceSize": 2500,
       "exportedPath": "theory-of-computation/lecture/07-toc-pda.html",
       "dependencies": []
     },
@@ -2029,14 +2007,14 @@
       "dependencies": []
     },
     "Theory Of Computation/Lecture/06-TOC-CFL.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 477,
+      "modifiedTime": 1735289692485,
+      "sourceSize": 3180,
       "exportedPath": "theory-of-computation/lecture/06-toc-cfl.html",
       "dependencies": []
     },
     "Theory Of Computation/Lecture/05-TOC-Pumping Lemma.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 6006,
+      "modifiedTime": 1735289692485,
+      "sourceSize": 6403,
       "exportedPath": "theory-of-computation/lecture/05-toc-pumping-lemma.html",
       "dependencies": []
     },
@@ -2380,30 +2358,6 @@
       "modifiedTime": 1735216517644,
       "sourceSize": 1723,
       "exportedPath": "bioinfo/lab/lab-4/bioinfo-lab-4.html",
-      "dependencies": []
-    },
-    "Bioinfo/Bioinfo-Network.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 8753,
-      "exportedPath": "bioinfo/bioinfo-network.html",
-      "dependencies": []
-    },
-    "Bioinfo/Bioinfo-Matrix-Operations.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 20568,
-      "exportedPath": "bioinfo/bioinfo-matrix-operations.html",
-      "dependencies": []
-    },
-    "Bioinfo/Bioinfo-Project.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 760,
-      "exportedPath": "bioinfo/bioinfo-project.html",
-      "dependencies": []
-    },
-    "Bioinfo/Bioinfo-Midterm-Review.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 12541,
-      "exportedPath": "bioinfo/bioinfo-midterm-review.html",
       "dependencies": []
     },
     "Compiler Construction/Assignment/Compiler-As-3.md": {
@@ -2794,198 +2748,6 @@
       "exportedPath": "deep-learning/fine-tuning.html",
       "dependencies": []
     },
-    "Machine Learning/Assignment/ML-As-5.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 4541,
-      "exportedPath": "machine-learning/assignment/ml-as-5.html",
-      "dependencies": []
-    },
-    "Machine Learning/Assignment/ML-As-4.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 5492,
-      "exportedPath": "machine-learning/assignment/ml-as-4.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Regression.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 5085,
-      "exportedPath": "machine-learning/lecture/ml-regression.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Distance Measure.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 7175,
-      "exportedPath": "machine-learning/lecture/ml-distance-measure.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Cluster Distance Measure.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 3426,
-      "exportedPath": "machine-learning/lecture/ml-cluster-distance-measure.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Hierarchical Clustering.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 1084,
-      "exportedPath": "machine-learning/lecture/ml-hierarchical-clustering.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-K Means.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 5434,
-      "exportedPath": "machine-learning/lecture/ml-k-means.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Expectation Maximization.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 148,
-      "exportedPath": "machine-learning/lecture/ml-expectation-maximization.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Mean Shift Algorithm.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 714,
-      "exportedPath": "machine-learning/lecture/ml-mean-shift-algorithm.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Density Estimation.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 4689,
-      "exportedPath": "machine-learning/lecture/ml-density-estimation.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Probability and Bayesian Perspective.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 1691,
-      "exportedPath": "machine-learning/lecture/ml-probability-and-bayesian-perspective.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Evaluation of Classifiers.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 2459,
-      "exportedPath": "machine-learning/lecture/ml-evaluation-of-classifiers.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Dimensionality Reduction.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 166,
-      "exportedPath": "machine-learning/lecture/ml-dimensionality-reduction.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-SVM.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 5156,
-      "exportedPath": "machine-learning/lecture/ml-svm.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Statistical Learning.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 3381,
-      "exportedPath": "machine-learning/lecture/ml-statistical-learning.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Navie Bayes.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 665,
-      "exportedPath": "machine-learning/lecture/ml-navie-bayes.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Cross Validation.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 194,
-      "exportedPath": "machine-learning/lecture/ml-cross-validation.html",
-      "dependencies": []
-    },
-    "Machine Learning/Lecture/ML-Bayesian Estimation.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 382,
-      "exportedPath": "machine-learning/lecture/ml-bayesian-estimation.html",
-      "dependencies": []
-    },
-    "Machine Learning/Project/ML-pre.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 1833,
-      "exportedPath": "machine-learning/project/ml-pre.html",
-      "dependencies": []
-    },
-    "Machine Learning/Project/Comment Filtering System.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 2146,
-      "exportedPath": "machine-learning/project/comment-filtering-system.html",
-      "dependencies": []
-    },
-    "Machine Learning/ML-Cheat-Sheet.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 7104,
-      "exportedPath": "machine-learning/ml-cheat-sheet.html",
-      "dependencies": []
-    },
-    "Math/Discrete-Structure/assignment/discrete-mathematics-tutorial.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 1904,
-      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-tutorial.html",
-      "dependencies": []
-    },
-    "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-8.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 3626,
-      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-8.html",
-      "dependencies": []
-    },
-    "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-7.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 6938,
-      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-7.html",
-      "dependencies": []
-    },
-    "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-6.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 2182,
-      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-6.html",
-      "dependencies": []
-    },
-    "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-5.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 2813,
-      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-5.html",
-      "dependencies": []
-    },
-    "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-3.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 4311,
-      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-3.html",
-      "dependencies": []
-    },
-    "Math/Discrete-Structure/assignment/discrete-mathematics-assignment-2.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 3567,
-      "exportedPath": "math/discrete-structure/assignment/discrete-mathematics-assignment-2.html",
-      "dependencies": []
-    },
-    "Math/Discrete-Structure/lecture/representing-graph-and-connectivity.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 4606,
-      "exportedPath": "math/discrete-structure/lecture/representing-graph-and-connectivity.html",
-      "dependencies": []
-    },
-    "Math/Discrete-Structure/lecture/functions-sequence-and-summations.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 3119,
-      "exportedPath": "math/discrete-structure/lecture/functions-sequence-and-summations.html",
-      "dependencies": []
-    },
-    "Math/Probability-Statistics/Hypothesis-Testing-Two-Population.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 5034,
-      "exportedPath": "math/probability-statistics/hypothesis-testing-two-population.html",
-      "dependencies": []
-    },
-    "Math/Probability-Statistics/Hypothesis-Testing-Single-Population.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 2720,
-      "exportedPath": "math/probability-statistics/hypothesis-testing-single-population.html",
-      "dependencies": []
-    },
     "Programming/C/fileoperation.md": {
       "modifiedTime": 1735216517644,
       "sourceSize": 164,
@@ -3287,8 +3049,8 @@
       "dependencies": []
     },
     "Theory Of Computation/Lecture/10-TOC-Undecidability and Reducibility.md": {
-      "modifiedTime": 1735216517644,
-      "sourceSize": 170,
+      "modifiedTime": 1735289692485,
+      "sourceSize": 191,
       "exportedPath": "theory-of-computation/lecture/10-toc-undecidability-and-reducibility.html",
       "dependencies": []
     },
@@ -3314,6 +3076,114 @@
       "modifiedTime": 1735216517644,
       "sourceSize": 44849,
       "exportedPath": "data-analysis/big-data-analysis/peoject/auto-encoder-distribution.png",
+      "dependencies": []
+    },
+    "Math/Probability Statistics/Poisson-Distribution-Midterm-Pre.md": {
+      "modifiedTime": 1735289692485,
+      "sourceSize": 4769,
+      "exportedPath": "math/probability-statistics/poisson-distribution-midterm-pre.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Regression.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 5085,
+      "exportedPath": "machine-learning/lecture/ml-regression.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Distance Measure.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 7175,
+      "exportedPath": "machine-learning/lecture/ml-distance-measure.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Cluster Distance Measure.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 3426,
+      "exportedPath": "machine-learning/lecture/ml-cluster-distance-measure.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Hierarchical Clustering.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 1084,
+      "exportedPath": "machine-learning/lecture/ml-hierarchical-clustering.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-K Means.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 5434,
+      "exportedPath": "machine-learning/lecture/ml-k-means.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Expectation Maximization.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 148,
+      "exportedPath": "machine-learning/lecture/ml-expectation-maximization.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Mean Shift Algorithm.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 714,
+      "exportedPath": "machine-learning/lecture/ml-mean-shift-algorithm.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Density Estimation.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 4689,
+      "exportedPath": "machine-learning/lecture/ml-density-estimation.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Probability and Bayesian Perspective.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 1691,
+      "exportedPath": "machine-learning/lecture/ml-probability-and-bayesian-perspective.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Evaluation of Classifiers.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 2459,
+      "exportedPath": "machine-learning/lecture/ml-evaluation-of-classifiers.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Dimensionality Reduction.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 166,
+      "exportedPath": "machine-learning/lecture/ml-dimensionality-reduction.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-SVM.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 5156,
+      "exportedPath": "machine-learning/lecture/ml-svm.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Statistical Learning.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 3381,
+      "exportedPath": "machine-learning/lecture/ml-statistical-learning.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Navie Bayes.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 665,
+      "exportedPath": "machine-learning/lecture/ml-navie-bayes.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Cross Validation.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 194,
+      "exportedPath": "machine-learning/lecture/ml-cross-validation.html",
+      "dependencies": []
+    },
+    "Machine Learning/Lecture/ML-Bayesian Estimation.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 382,
+      "exportedPath": "machine-learning/lecture/ml-bayesian-estimation.html",
+      "dependencies": []
+    },
+    "Machine Learning/ML-Cheat-Sheet.md": {
+      "modifiedTime": 1735289848045,
+      "sourceSize": 7104,
+      "exportedPath": "machine-learning/ml-cheat-sheet.html",
       "dependencies": []
     }
   }
