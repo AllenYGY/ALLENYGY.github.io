@@ -49,3 +49,5 @@ Thumbs.db
 # Ignore folder
 Weekly/
 *.py
+
+test.css
